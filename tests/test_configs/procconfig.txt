@@ -1,4 +1,0 @@
-flop      PAPI_FP_INS
-memop     PAPI_LST_INS
-tflop     10
-tmemop    250
