@@ -1,0 +1,7 @@
+<map id="sstmac::hw::minimal_adaptive_router" name="sstmac::hw::minimal_adaptive_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="{sstmac::hw::minimal\l_router\n||+ ~minimal_router()\l+ route()\l+ to_string()\l+ finalize_init()\l# route()\l}" alt="" coords="32,881,177,1032"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n||+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="5,637,204,832"/>
+<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="23,336,82,413"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="106,175,333,575"/>
+<area shape="rect" id="node6" href="$classtopology.html" title="{topology\n||}" alt="" coords="100,5,176,83"/>
+</map>

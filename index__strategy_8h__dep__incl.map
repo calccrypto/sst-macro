@@ -1,0 +1,12 @@
+<map id="sstmac/software/launch/index_strategy.h" name="sstmac/software/launch/index_strategy.h">
+<area shape="rect" id="node2" href="$indexing__app__manager_8h.html" title="sstmac/backends/native\l/indexing_app_manager.h" alt="" coords="99,95,286,136"/>
+<area shape="rect" id="node5" href="$block__indexing_8h.html" title="sstmac/software/launch\l/block_indexing.h" alt="" coords="311,95,480,136"/>
+<area shape="rect" id="node6" href="$coordinate__indexing_8h.html" title="sstmac/software/launch\l/coordinate_indexing.h" alt="" coords="504,95,673,136"/>
+<area shape="rect" id="node7" href="$dumpi__indexer_8h.html" title="sstmac/software/launch\l/dumpi_indexer.h" alt="" coords="697,95,867,136"/>
+<area shape="rect" id="node8" href="$hostname__indexer_8h.html" title="sstmac/software/launch\l/hostname_indexer.h" alt="" coords="891,95,1060,136"/>
+<area shape="rect" id="node9" href="$node__id__indexing_8h.html" title="sstmac/software/launch\l/node_id_indexing.h" alt="" coords="1084,95,1253,136"/>
+<area shape="rect" id="node10" href="$random__indexing_8h.html" title="sstmac/software/launch\l/random_indexing.h" alt="" coords="1277,95,1447,136"/>
+<area shape="rect" id="node11" href="$round__robin__indexing_8h.html" title="sstmac/software/launch\l/round_robin_indexing.h" alt="" coords="1471,95,1645,136"/>
+<area shape="rect" id="node3" href="$dumpi__app__manager_8h.html" title="sstmac/backends/native\l/dumpi_app_manager.h" alt="" coords="5,184,177,225"/>
+<area shape="rect" id="node4" href="$skeleton__app__manager_8h.html" title="sstmac/backends/native\l/skeleton_app_manager.h" alt="" coords="202,184,389,225"/>
+</map>

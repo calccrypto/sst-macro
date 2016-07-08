@@ -1,0 +1,9 @@
+<map id="RNG::Combo" name="RNG::Combo">
+<area shape="rect" id="node2" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="533,5,687,229"/>
+<area shape="rect" id="node3" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="493,637,639,876"/>
+<area shape="rect" id="node4" href="$classRNG_1_1CONG.html" title="The congruential random number generator by George Marsaglia (1999; internet posting). " alt="" coords="284,343,403,567"/>
+<area shape="rect" id="node6" href="$classRNG_1_1MWC.html" title="The multiple&#45;with&#45;carry random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="569,336,688,575"/>
+<area shape="rect" id="node7" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="427,358,545,553"/>
+<area shape="rect" id="node9" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="141,402,260,509"/>
+<area shape="rect" id="node8" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="141,667,260,847"/>
+</map>

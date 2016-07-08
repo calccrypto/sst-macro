@@ -1,0 +1,9 @@
+<map id="sstmac::hw::failable" name="sstmac::hw::failable">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="199,160,368,707"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n|# env_\l# os_\l# my_addr_\l# mem_model_\l# proc_\l# nic_\l# ncores_\l# nsocket_\l&#45; launchers_\l&#45; next_outgoing_id_\l|+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="394,226,565,641"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__nic.html" title="Network interface compatible with sending packet trains. " alt="" coords="5,755,175,1037"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="199,762,368,1030"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1null__nic.html" title="{sstmac::hw::null_nic\n||+ ~null_nic()\l+ to_string()\l+ init_factory_params()\l}" alt="" coords="199,1085,368,1192"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1simple__node.html" title="A stand&#45;in node. " alt="" coords="393,799,569,993"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="" coords="396,1085,565,1192"/>
+</map>

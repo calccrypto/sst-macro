@@ -1,0 +1,5 @@
+<map id="sstmac::hw::stat_bytes_sent::clear" name="sstmac::hw::stat_bytes_sent::clear">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#a344acfd3e584c05d895972e7e480d55d" title="sstmac::hw::stat_bytes\l_sent::collect_buffer\l_at_root" alt="" coords="241,5,401,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#a2821fdbbd803365c91685e0aa12b8062" title="sstmac::hw::stat_bytes\l_sent::global_reduce_non_root" alt="" coords="213,86,429,127"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#a864d3479c2262d7dc0dc2ba2d48b17f0" title="sstmac::hw::stat_bytes\l_sent::output_switch" alt="" coords="241,151,401,193"/>
+</map>

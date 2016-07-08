@@ -1,0 +1,7 @@
+<map id="sstmac::hw::minimal_router" name="sstmac::hw::minimal_router">
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="{sstmac::hw::minimal\l_adaptive_router\n||+ to_string()\l+ route()\l+ finalize_init()\l}" alt="" coords="5,653,148,774"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1valiant__router.html" title="{sstmac::hw::valiant\l_router\n||+ ~valiant_router()\l+ route()\l+ route()\l+ to_string()\l+ finalize_init()\l+ first_stage_vc()\l+ second_stage_vc()\l+ num_stages()\l# intermediate_step()\l# initial_step()\l# next_routing_stage()\l# configure_intermediate_path()\l# configure_final_path()\l# route_valiant()\l}" alt="" coords="173,572,397,855"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n|# regtop_\l|+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="81,131,280,325"/>
+<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="151,5,210,83"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1ugal__router.html" title="{sstmac::hw::ugal_router\n|# val_threshold_\l# val_preference_factor_\l|+ init_factory_params()\l+ to_string()\l+ route()\l+ finalize_init()\l# initial_step()\l# first_stage_vc()\l# second_stage_vc()\l# zero_stage_vc()\l# num_stages()\l}" alt="" coords="194,903,375,1112"/>
+</map>

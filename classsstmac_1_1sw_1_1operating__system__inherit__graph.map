@@ -1,0 +1,4 @@
+<map id="sstmac::sw::operating_system" name="sstmac::sw::operating_system">
+<area shape="rect" id="node2" href="$classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n|# parent_\l|+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="12,321,209,545"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="29,5,192,273"/>
+</map>

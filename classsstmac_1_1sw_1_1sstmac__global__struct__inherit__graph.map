@@ -1,0 +1,4 @@
+<map id="sstmac::sw::sstmac_global_struct&lt; T &gt;" name="sstmac::sw::sstmac_global_struct&lt; T &gt;">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1sstmac__global__builtin.html" title="{sstmac::sw::sstmac\l_global_builtin\&lt; T \&gt;\n|&#45; vals_\l&#45; init_\l&#45; isinit_\l|+ sstmac_global_builtin()\l+ sstmac_global_builtin()\l+ sstmac_global_builtin()\l+ ~sstmac_global_builtin()\l+ print_all()\l+ get_val()\l+ to_string()\l+ operator=()\l+ operator+=()\l+ operator&#45;=()\land 28 more...\l&#45; check_init()\l}" alt="" coords="5,145,191,428"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1sstmac__global.html" title="{sstmac::sw::sstmac\l_global\n||# current_context()\l}" alt="" coords="27,5,169,97"/>
+</map>

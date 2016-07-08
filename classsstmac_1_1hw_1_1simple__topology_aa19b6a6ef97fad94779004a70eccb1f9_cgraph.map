@@ -1,0 +1,7 @@
+<map id="sstmac::hw::simple_topology::configure_vc_routing" name="sstmac::hw::simple_topology::configure_vc_routing">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__topology.html#ad8062ef4e0126671d019621afd737528" title="sstmac::hw::simple\l_topology::endpoint\l_to_ejection_switch" alt="" coords="229,5,376,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__topology.html#ab04cebe637256d3343ecf21de74bef0a" title="sstmac::hw::simple\l_topology::endpoint\l_to_injection_switch" alt="" coords="228,85,377,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__topology.html#a68788d9d6e9245b6c2f264bb8fb4ec42" title="sstmac::hw::simple\l_topology::nodes_connected\l_to_switch" alt="" coords="201,165,404,221"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__topology.html#a6d504bc29d702b801afa43aa895adda0" title="sstmac::hw::simple\l_topology::productive_path" alt="" coords="207,246,398,287"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__topology.html#a63ca8175762adb3239eead4f8cfd2b0c" title="sstmac::hw::simple\l_topology::switch_number" alt="" coords="211,311,394,353"/>
+</map>

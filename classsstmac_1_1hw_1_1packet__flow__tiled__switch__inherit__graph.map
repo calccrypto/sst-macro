@@ -1,0 +1,5 @@
+<map id="sstmac::hw::packet_flow_tiled_switch" name="sstmac::hw::packet_flow_tiled_switch">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# params_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l# packet_flow_abstract\l_switch()\l}" alt="" coords="65,131,235,325"/>
+<area shape="rect" id="node3" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,124,83"/>
+<area shape="rect" id="node4" href="$classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="148,5,323,83"/>
+</map>

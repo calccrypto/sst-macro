@@ -1,0 +1,8 @@
+<map id="sstmac::hw::connectable_component" name="sstmac::hw::connectable_component">
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n|# env_\l# os_\l# my_addr_\l# mem_model_\l# proc_\l# nic_\l# ncores_\l# nsocket_\l&#45; launchers_\l&#45; next_outgoing_id_\l|+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="110,792,281,1207"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="5,321,185,604"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="14,5,177,273"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="209,409,381,516"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__node.html" title="A stand&#45;in node. " alt="" coords="107,1255,283,1449"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="" coords="111,1497,280,1604"/>
+</map>

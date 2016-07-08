@@ -1,0 +1,9 @@
+<map id="sstmac::native::serial_runtime::finalize" name="sstmac::native::serial_runtime::finalize">
+<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1serial__runtime.html#a083968360a3afa383c9cc84ae65f6fd8" title="sstmac::native::serial\l_runtime::declare_merge_array" alt="" coords="205,5,423,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1serial__runtime.html#a349d017b472a52d1b2bfeae816770c67" title="sstmac::native::serial\l_runtime::do_send_message" alt="" coords="213,71,415,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1serial__runtime.html#a2496579eb04821062ab7f4a8afbb57bf" title="sstmac::native::serial\l_runtime::do_send_recv\l_messages" alt="" coords="228,137,400,193"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1serial__runtime.html#a219662c4afb9be148ce208194b69f4f0" title="sstmac::native::serial\l_runtime::release_merge_array" alt="" coords="205,217,423,259"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1native_1_1serial__runtime.html#ac1fe9a82a60bbcd1e0d04b12e8ad9edd" title="sstmac::native::serial\l_runtime::send_event" alt="" coords="236,283,392,324"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1native_1_1serial__runtime.html#a349764eb05d90a06dd4179cdfc2962e6" title="sstmac::native::serial\l_runtime::send_recv_messages" alt="" coords="204,348,424,389"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1native_1_1serial__runtime.html#ab7b5b5ebbe14f8031828fbf24fb0c1a7" title="sstmac::native::serial\l_runtime::wait_merge_array" alt="" coords="216,413,412,455"/>
+</map>

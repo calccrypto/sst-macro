@@ -1,0 +1,12 @@
+<map id="sstmac/software/launch/allocation_strategy.h" name="sstmac/software/launch/allocation_strategy.h">
+<area shape="rect" id="node2" href="$indexing__app__manager_8h.html" title="sstmac/backends/native\l/indexing_app_manager.h" alt="" coords="99,95,286,136"/>
+<area shape="rect" id="node5" href="$cart__allocation_8h.html" title="sstmac/software/launch\l/cart_allocation.h" alt="" coords="311,95,480,136"/>
+<area shape="rect" id="node6" href="$coordinate__allocation_8h.html" title="sstmac/software/launch\l/coordinate_allocation.h" alt="" coords="504,95,676,136"/>
+<area shape="rect" id="node7" href="$first__available__allocation_8h.html" title="sstmac/software/launch\l/first_available_allocation.h" alt="" coords="700,95,891,136"/>
+<area shape="rect" id="node8" href="$hostname__allocation_8h.html" title="sstmac/software/launch\l/hostname_allocation.h" alt="" coords="915,95,1084,136"/>
+<area shape="rect" id="node10" href="$node__id__allocation_8h.html" title="sstmac/software/launch\l/node_id_allocation.h" alt="" coords="1108,95,1277,136"/>
+<area shape="rect" id="node11" href="$random__allocation_8h.html" title="sstmac/software/launch\l/random_allocation.h" alt="" coords="1301,95,1471,136"/>
+<area shape="rect" id="node3" href="$dumpi__app__manager_8h.html" title="sstmac/backends/native\l/dumpi_app_manager.h" alt="" coords="5,184,177,225"/>
+<area shape="rect" id="node4" href="$skeleton__app__manager_8h.html" title="sstmac/backends/native\l/skeleton_app_manager.h" alt="" coords="202,184,389,225"/>
+<area shape="rect" id="node9" href="$dumpi__allocation_8h.html" title="sstmac/software/launch\l/dumpi_allocation.h" alt="" coords="915,184,1084,225"/>
+</map>

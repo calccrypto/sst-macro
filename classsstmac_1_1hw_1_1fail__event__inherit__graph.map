@@ -1,0 +1,5 @@
+<map id="sstmac::hw::fail_event" name="sstmac::hw::fail_event">
+<area shape="rect" id="node2" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="9,175,148,325"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,152,127"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; fail_event \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="173,197,395,303"/>
+</map>

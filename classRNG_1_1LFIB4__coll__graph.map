@@ -1,0 +1,4 @@
+<map id="RNG::LFIB4" name="RNG::LFIB4">
+<area shape="rect" id="node2" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="131,292,249,399"/>
+<area shape="rect" id="node3" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="5,5,159,229"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sstmac::hw::abstract_fat_tree::num_leaf_switches" name="sstmac::hw::abstract_fat_tree::num_leaf_switches">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html#a7cd1ec7d654b8abdabd9a0fecd73479b" title="sstmac::hw::abstract\l_fat_tree::nodes_connected\l_to_ejection_switch" alt="" coords="257,5,456,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html#a45f61173ea7212384c658e7c20b72b54" title="sstmac::hw::abstract\l_fat_tree::nodes_connected\l_to_injection_switch" alt="" coords="257,85,456,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html#a32a555bfed96f340ea44148198474dcf" title="sstmac::hw::abstract\l_fat_tree::nodes_connected\l_to_switch" alt="" coords="257,165,456,221"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="sstmac/common/stats/stat_collector.h" name="sstmac/common/stats/stat_collector.h">
+<area shape="rect" id="node4" href="$timestamp_8h.html" title="sstmac/common/timestamp.h" alt="" coords="1679,102,1882,129"/>
+<area shape="rect" id="node46" href="$parallel__runtime__fwd_8h.html" title="sstmac/backends/common\l/parallel_runtime_fwd.h" alt="" coords="2054,95,2241,136"/>
+<area shape="rect" id="node47" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="1900,512,2029,553"/>
+<area shape="rect" id="node7" href="$sstmac_2common_2serializable_8h.html" title="sstmac/common/serializable.h" alt="" coords="1145,184,1353,211"/>
+<area shape="rect" id="node8" href="$sstmac__config_8h.html" title="sstmac/common/sstmac\l_config.h" alt="" coords="1225,259,1395,300"/>
+<area shape="rect" id="node9" href="$serializer__fwd_8h.html" title="sprockit/serializer\l_fwd.h" alt="" coords="1187,601,1319,643"/>
+<area shape="rect" id="node10" href="$sprockit_2sprockit_2serializable_8h.html" title="sprockit/serializable.h" alt="" coords="1420,266,1576,293"/>
+<area shape="rect" id="node15" href="$serialize__serializable_8h.html" title="sprockit/serialize\l_serializable.h" alt="" coords="1175,348,1301,389"/>
+<area shape="rect" id="node16" href="$serializer_8h.html" title="sprockit/serializer.h" alt="" coords="483,609,625,635"/>
+<area shape="rect" id="node11" href="$serializable__type_8h.html" title="sprockit/serializable\l_type.h" alt="" coords="1316,512,1461,553"/>
+<area shape="rect" id="node13" href="$unordered_8h.html" title="sprockit/unordered.h" alt="" coords="808,609,959,635"/>
+<area shape="rect" id="node14" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="1709,1019,1868,1045"/>
+<area shape="rect" id="node34" href="$serialize_8h.html" title="sprockit/serialize.h" alt="" coords="681,437,819,464"/>
+<area shape="rect" id="node44" href="$ptr__type_8h.html" title="sprockit/ptr_type.h" alt="" coords="1789,609,1927,635"/>
+<area shape="rect" id="node17" href="$serialize__packer_8h.html" title="sprockit/serialize\l_packer.h" alt="" coords="743,691,869,732"/>
+<area shape="rect" id="node28" href="$serialize__sizer_8h.html" title="sprockit/serialize\l_sizer.h" alt="" coords="389,691,516,732"/>
+<area shape="rect" id="node29" href="$serialize__unpacker_8h.html" title="sprockit/serialize\l_unpacker.h" alt="" coords="592,691,719,732"/>
+<area shape="rect" id="node18" href="$serialize__buffer__accessor_8h.html" title="sprockit/serialize\l_buffer_accessor.h" alt="" coords="663,780,805,821"/>
+<area shape="rect" id="node20" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="1764,869,1888,896"/>
+<area shape="rect" id="node23" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="2053,944,2207,971"/>
+<area shape="rect" id="node35" href="$debug_8h.html" title="sprockit/debug.h" alt="" coords="1116,519,1240,546"/>
+<area shape="rect" id="node37" href="$serialize__array_8h.html" title="sprockit/serialize\l_array.h" alt="" coords="612,512,739,553"/>
+<area shape="rect" id="node38" href="$serialize__list_8h.html" title="sprockit/serialize\l_list.h" alt="" coords="156,512,283,553"/>
+<area shape="rect" id="node40" href="$serialize__map_8h.html" title="sprockit/serialize\l_map.h" alt="" coords="913,512,1040,553"/>
+<area shape="rect" id="node41" href="$serialize__set_8h.html" title="sprockit/serialize\l_set.h" alt="" coords="763,512,889,553"/>
+<area shape="rect" id="node42" href="$serialize__vector_8h.html" title="sprockit/serialize\l_vector.h" alt="" coords="5,512,132,553"/>
+<area shape="rect" id="node43" href="$serialize__string_8h.html" title="sprockit/serialize\l_string.h" alt="" coords="409,512,536,553"/>
+<area shape="rect" id="node45" href="$refcount__ptr_8h.html" title="sprockit/refcount_ptr.h" alt="" coords="1661,698,1823,725"/>
+<area shape="rect" id="node48" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="1485,609,1612,635"/>
+<area shape="rect" id="node49" href="$sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="2053,601,2229,643"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sstmac::hw::flattened_butterfly" name="sstmac::hw::flattened_butterfly">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html" title="{sstmac::hw::abstract\l_butterfly\n|# kary_\l# nfly_\l# nswitches_per_col_\l|+ ~abstract_butterfly()\l+ init_factory_params()\l+ num_stages()\l+ kary()\l+ nfly()\l+ num_switches_per_col()\l+ num_leaf_switches()\l+ diameter()\l+ productive_path()\l+ configure_vc_routing()\l# compute_switch_coords()\l# switch_number()\l}" alt="" coords="21,608,216,891"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,131,232,560"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="81,5,157,83"/>
+</map>

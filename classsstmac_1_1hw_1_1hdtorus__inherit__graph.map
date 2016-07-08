@@ -1,0 +1,7 @@
+<map id="sstmac::hw::hdtorus" name="sstmac::hw::hdtorus">
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1hypercube.html" title="{sstmac::hw::hypercube\n|# radix_\l# ndim_\l# dim_to_outport_\l|+ to_string()\l+ ~hypercube()\l+ init_factory_params()\l+ productive_path()\l+ name()\l+ minimal_route_to_coords()\l+ connect_objects()\l+ convert_to_port()\l+ minimal_distance()\l}" alt="" coords="5,1211,208,1435"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1tiled__torus.html" title="{sstmac::hw::tiled_torus\n|&#45; ntiles_row_\l&#45; ntiles_col_\l&#45; tile_offsets_\l&#45; rotater_\l|+ init_factory_params()\l+ minimal_routes_to_coords()\l+ default_router()\l+ endpoint_to_injection\l_switch()\l+ endpoint_to_ejection\l_switch()\l+ eject_paths_on_switch()\l# connect_dim()\l&#45; port()\l}" alt="" coords="232,1196,443,1449"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n|# red_\l|+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="118,608,325,759"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="108,131,335,560"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="183,5,259,83"/>
+</map>

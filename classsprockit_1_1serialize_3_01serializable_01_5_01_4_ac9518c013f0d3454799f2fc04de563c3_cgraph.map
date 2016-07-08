@@ -1,0 +1,6 @@
+<map id="sprockit::serialize&lt; serializable * &gt;::operator()" name="sprockit::serialize&lt; serializable * &gt;::operator()">
+<area shape="rect" id="node2" href="$classsprockit_1_1serializer.html#af384996847ab317a2a52b0789e1c1c77" title="sprockit::serializer\l::mode" alt="" coords="193,5,327,47"/>
+<area shape="rect" id="node3" href="$namespacesprockit_1_1pvt.html#a5d8babab7f7f6c6e28517f1733b0440b" title="sprockit::pvt::pack\l_serializable" alt="" coords="194,71,326,112"/>
+<area shape="rect" id="node4" href="$namespacesprockit_1_1pvt.html#a942a6884e90b29221022e2b11326db11" title="sprockit::pvt::size\l_serializable" alt="" coords="197,136,323,177"/>
+<area shape="rect" id="node5" href="$namespacesprockit_1_1pvt.html#a0f643f616a83c72c6be6a3f247f4733d" title="sprockit::pvt::unpack\l_serializable" alt="" coords="187,201,333,243"/>
+</map>

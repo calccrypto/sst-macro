@@ -1,0 +1,5 @@
+<map id="sstmac::hw::hdtorus" name="sstmac::hw::hdtorus">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n||+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="51,637,257,788"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="14,175,241,575"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,81,83"/>
+</map>

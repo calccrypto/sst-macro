@@ -1,0 +1,7 @@
+<map id="sstmac::hw::packet" name="sstmac::hw::packet">
+<area shape="rect" id="node2" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="733,432,872,583"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="608,748,747,928"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="1208,145,1355,267"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="533,329,709,685"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="328,145,507,267"/>
+</map>

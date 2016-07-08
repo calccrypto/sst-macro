@@ -1,0 +1,5 @@
+<map id="compute_scheduler" name="compute_scheduler">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1null__scheduler.html" title="{sstmac::hw::null_scheduler\n||+ to_string()\l+ clone()\l+ handle()\l# find_open_core()\l# start_next_suspended()\l# add_suspended()\l}" alt="" coords="5,167,192,318"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html" title="{sstmac::sw::cpuset\l_compute_scheduler\n|&#45; available_cores_\l&#45; pending_threads_\l|+ cpuset_compute_scheduler()\l+ configure()\l+ reserve_core()\l+ release_core()\l+ clone()\l# clone_into()\l&#45; allocate_core()\l&#45; deallocate_core()\l&#45; available_core()\l}" alt="" coords="216,131,432,355"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1simple__compute__scheduler.html" title="{sstmac::sw::simple\l_compute_scheduler\n|&#45; pending_threads_\l&#45; ncore_active_\l|+ simple_compute_scheduler()\l+ reserve_core()\l+ release_core()\l+ clone()\l}" alt="" coords="457,167,671,318"/>
+</map>

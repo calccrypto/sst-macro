@@ -1,0 +1,5 @@
+<map id="memory_model" name="memory_model">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1null__memory__model.html" title="{sstmac::hw::null_memory\l_model\n||+ null_memory_model()\l+ ~null_memory_model()\l+ init_factory_params()\l+ access()\l+ max_single_bw()\l}" alt="" coords="5,197,184,347"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__memory__model.html" title="{sstmac::hw::packet\l_flow_memory_model\n|&#45; max_single_bw_\l&#45; pending_requests_\l&#45; mem_packetizer_\l&#45; channels_available_\l&#45; nchannels_\l|+ ~packet_flow_memory\l_model()\l+ set_event_parent()\l+ finalize_init()\l+ init_factory_params()\l+ schedule()\l+ notify()\l+ access()\l+ max_single_bw()\l&#45; allocate_channel()\l}" alt="" coords="208,131,384,413"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__memory__model.html" title="{sstmac::hw::simple\l_memory_model\n|# link_\l# bw_\l# lat_\l|+ init_factory_params()\l+ finalize_init()\l+ ~simple_memory_model()\l+ access()\l+ max_single_bw()\l}" alt="" coords="408,182,605,362"/>
+</map>

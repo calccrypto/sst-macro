@@ -1,0 +1,5 @@
+<map id="sstmac::partition::lpid_for_switch" name="sstmac::partition::lpid_for_switch">
+<area shape="rect" id="node2" href="$classsstmac_1_1partition.html#a915dd2ac60e71bb629e548d552480678" title="sstmac::partition::\linit_local_switches" alt="" coords="199,5,338,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1partition.html#ab73fcd76b7b3ed1717a260020ffedfd7" title="sstmac::partition::\lpartition" alt="" coords="204,71,333,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1partition.html#ab06a277bb97abd6da3f7f03f3a1b281a" title="sstmac::partition::\lthread_for_local_switch" alt="" coords="183,136,355,177"/>
+</map>

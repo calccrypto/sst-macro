@@ -1,0 +1,7 @@
+<map id="sstmac::hw::packet_flow_NtoM_queue::queue" name="sstmac::hw::packet_flow_NtoM_queue::queue">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a433e0113fef433f6846891ffdd99e57d" title="sstmac::hw::packet\l_flow_NtoM_queue::input_name" alt="" coords="244,5,467,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#aafc572e923d07f50f8d63c2707c252da" title="sstmac::hw::packet\l_flow_NtoM_queue::local_slot" alt="" coords="251,71,459,112"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a924dde54369f4c2aa2ca713e27da25fc" title="sstmac::hw::packet\l_flow_NtoM_queue::output\l_handler" alt="" coords="262,137,449,193"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a77da85340218e8aa513d6f7d73ca9ace" title="sstmac::hw::packet\l_flow_NtoM_queue::output_name" alt="" coords="240,217,471,259"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a4dd58195f8c0bb3e2349abd8b876b814" title="sstmac::hw::packet\l_flow_NtoM_queue::local_port" alt="" coords="519,71,729,112"/>
+</map>

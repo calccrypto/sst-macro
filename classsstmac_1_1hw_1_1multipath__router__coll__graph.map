@@ -1,0 +1,6 @@
+<map id="sstmac::hw::multipath_router&lt; ParentRouter &gt;" name="sstmac::hw::multipath_router&lt; ParentRouter &gt;">
+<area shape="rect" id="node2" href="$classParentRouter.html" title="{ParentRouter\n||}" alt="" coords="5,674,112,751"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n||+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="339,637,546,788"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="199,175,425,575"/>
+<area shape="rect" id="node6" href="$classtopology.html" title="{topology\n||}" alt="" coords="193,5,269,83"/>
+</map>

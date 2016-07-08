@@ -1,0 +1,4 @@
+<map id="sstmac::location_trace::event" name="sstmac::location_trace::event">
+<area shape="rect" id="node2" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="5,160,168,604"/>
+<area shape="rect" id="node4" href="$structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="192,277,371,487"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sstmac::hw::packet_flow_tiled_switch::demuxer" name="sstmac::hw::packet_flow_tiled_switch::demuxer">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a0de783868712cc24fd91bc3c17fd8375" title="sstmac::hw::packet\l_flow_tiled_switch::\lconnect_ejector" alt="" coords="196,5,339,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#ae0db24d7fa84ef8d017d258ba627e404" title="sstmac::hw::packet\l_flow_tiled_switch::\lconnect_injector" alt="" coords="196,85,339,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a313b49dfed016461f5cb9763cdc2e0b3" title="sstmac::hw::packet\l_flow_tiled_switch::\ldeadlock_check" alt="" coords="196,165,339,221"/>
+</map>

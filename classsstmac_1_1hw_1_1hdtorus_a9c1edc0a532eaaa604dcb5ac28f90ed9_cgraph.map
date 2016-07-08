@@ -1,0 +1,11 @@
+<map id="sstmac::hw::hdtorus::~hdtorus" name="sstmac::hw::hdtorus::~hdtorus">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1hdtorus.html#a15803b6267921fda193f5b2eae95ab57" title="sstmac::hw::hdtorus\l::distance" alt="" coords="210,5,353,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1hdtorus.html#ad4262af62b407f6f6eabca49e5ee847f" title="sstmac::hw::hdtorus\l::down_path" alt="" coords="210,71,353,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1hdtorus.html#aa9c5436140be69fa0b0629e351f33cf2" title="sstmac::hw::hdtorus\l::init_factory_params" alt="" coords="205,136,357,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1hdtorus.html#ab4fb7ada9d386a00c5da6d8ad2290dcd" title="sstmac::hw::hdtorus\l::pick_vc" alt="" coords="210,201,353,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1hdtorus.html#af75d33938125b6b5aa5460da092d5197" title="sstmac::hw::hdtorus\l::productive_path" alt="" coords="210,267,353,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1hdtorus.html#a0658f1b900d529f76dea9dd5163cf0d2" title="sstmac::hw::hdtorus\l::shortest_distance" alt="" coords="210,332,353,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1hdtorus.html#a2b3ba1ecd95020e6d4f14bb959b57895" title="sstmac::hw::hdtorus\l::shortest_path_positive" alt="" coords="196,397,367,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1hdtorus.html#ae1ca40c0f90c225786b381c9af230f06" title="sstmac::hw::hdtorus\l::switch_number" alt="" coords="210,463,353,504"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1hdtorus.html#a9bd4537b12813d23fff896d64f097711" title="sstmac::hw::hdtorus\l::up_path" alt="" coords="210,528,353,569"/>
+</map>

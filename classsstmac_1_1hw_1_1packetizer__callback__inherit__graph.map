@@ -1,0 +1,4 @@
+<map id="sstmac::hw::packetizer_callback" name="sstmac::hw::packetizer_callback">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__memory__model.html" title="{sstmac::hw::packet\l_flow_memory_model\n|&#45; max_single_bw_\l&#45; pending_requests_\l&#45; mem_packetizer_\l&#45; channels_available_\l&#45; nchannels_\l|+ ~packet_flow_memory\l_model()\l+ set_event_parent()\l+ finalize_init()\l+ init_factory_params()\l+ schedule()\l+ notify()\l+ access()\l+ max_single_bw()\l&#45; allocate_channel()\l}" alt="" coords="5,145,181,428"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__nic.html" title="Network interface compatible with sending packet trains. " alt="" coords="206,145,375,428"/>
+</map>

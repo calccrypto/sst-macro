@@ -1,0 +1,4 @@
+<map id="sstmac::hw::network_message::needs_ack" name="sstmac::hw::network_message::needs_ack">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#a7b84b90974ff9d9f088541ef0136b74c" title="sstmac::hw::network\l_message::convert_to_ack" alt="" coords="216,5,407,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#a1fc3dea63276c78a37e454f0f8b4d073" title="Serialize this message during parallel simulation. " alt="" coords="218,71,405,112"/>
+</map>

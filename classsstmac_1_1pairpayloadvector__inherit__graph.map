@@ -1,0 +1,6 @@
+<map id="sstmac::pairpayloadvector&lt; T1, T2 &gt;" name="sstmac::pairpayloadvector&lt; T1, T2 &gt;">
+<area shape="rect" id="node2" href="$classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="91,359,213,612"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,204,136,296"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="6,5,135,141"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="160,189,307,311"/>
+</map>

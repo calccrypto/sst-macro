@@ -1,0 +1,4 @@
+<map id="sstmac::hw::packet_flow_eject_buffer::packet_flow_eject_buffer" name="sstmac::hw::packet_flow_eject_buffer::packet_flow_eject_buffer">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#a4faabc8181e937c7c4317c8cc8b9c541" title="sstmac::hw::packet\l_flow_sender::do_handle\l_payload" alt="" coords="232,5,412,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__handler.html#a779fd6a74efc1f756100ff84e3233b21" title="sstmac::hw::packet\l_flow_handler::handle\l_credit" alt="" coords="242,85,402,141"/>
+</map>

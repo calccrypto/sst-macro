@@ -1,0 +1,4 @@
+<map id="sstmac::hw::routing_info" name="sstmac::hw::routing_info">
+<area shape="rect" id="node3" href="$structsstmac_1_1hw_1_1routing__info_1_1path.html" title="{sstmac::hw::routing\l_info::path\n||+ path()\l+ metadata_bit()\l+ set_metadata_bit()\l+ unset_metadata_bit()\l+ clear_metadata()\l}" alt="" coords="122,432,290,583"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1metadata__bits.html" title="{sprockit::metadata\l_bits\&lt; uint32_t \&gt;\n||+ bit()\l+ clear()\l+ set_bit()\l+ unset_bit()\l+ bit_integer()\l+ set_bit_integer()\l+ metadata_bits()\l+ metadata_bits()\l}" alt="" coords="50,145,189,340"/>
+</map>

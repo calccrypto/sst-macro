@@ -1,0 +1,7 @@
+<map id="sstmac::hw::stat_bytes_sent::set_topology" name="sstmac::hw::stat_bytes_sent::set_topology">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#a136e8f45a476d0d43eb78d9be9dd8b41" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="215,5,394,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#acfb335807fa19c85de70f54a35c99173" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="219,71,390,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#accf1c409cb853f0db0d9a5f2e79e079d" title="sstmac::hw::stat_bytes\l_sent::global_reduce" alt="" coords="225,136,385,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#aec9725e1c4f7d1cab992c051c458e742" title="sstmac::hw::stat_bytes\l_sent::reduce" alt="" coords="225,201,385,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1stat__bytes__sent.html#a7bf2b690277dd2290206d8fffedcc238" title="This is to notify that the statistics collector is done. " alt="" coords="213,267,396,308"/>
+</map>

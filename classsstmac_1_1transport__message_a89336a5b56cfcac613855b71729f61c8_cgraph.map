@@ -1,0 +1,7 @@
+<map id="sstmac::transport_message::buffer" name="sstmac::transport_message::buffer">
+<area shape="rect" id="node2" href="$classsstmac_1_1transport__message.html#a3bc23ad9dba1e6560c76c467fa53f401" title="sstmac::transport_message\l::clone_injection_ack" alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1transport__message.html#a2581a3beee4b47bac5c330b3992325f3" title="sstmac::transport_message\l::clone_into" alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1transport__message.html#acc23dff57ec9b4a4b0f12e2b6b7fc621" title="sstmac::transport_message\l::complete_transfer" alt="" coords="248,136,443,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1transport__message.html#ac9a952e36422a6eecc23bd2f0acba3ba" title="sstmac::transport_message\l::put_on_wire" alt="" coords="248,201,443,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1transport__message.html#a734eaec6969873d3833c9f247b3d8a08" title="sstmac::transport_message\l::reverse" alt="" coords="248,267,443,308"/>
+</map>

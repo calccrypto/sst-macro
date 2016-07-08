@@ -1,0 +1,25 @@
+<map id="sstmac::hw::dragonfly::diameter" name="sstmac::hw::dragonfly::diameter">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1dragonfly.html#a309876a960ea1a44d72f829f54277ac0" title="sstmac::hw::dragonfly\l::bit_complement_partners" alt="" coords="215,5,401,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1dragonfly.html#aa207a09237bf7301c2aa758e74c2e980" title="Compute coordinates (e.g. " alt="" coords="219,71,397,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1dragonfly.html#ab51f1b47b3a6a2f8cd1c57c795b27d34" title="sstmac::hw::dragonfly\l::configure_geometric_paths" alt="" coords="209,136,407,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1dragonfly.html#aec74c0d3ce89e37b8938c9b41101d3ea" title="sstmac::hw::dragonfly\l::configure_vc_routing" alt="" coords="229,201,387,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1dragonfly.html#aa351800ebcef590bfdecaa5bd70213d1" title="sstmac::hw::dragonfly\l::convert_to_port" alt="" coords="231,267,385,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1dragonfly.html#a98ab4c5163d2206527e87afd6bdf000a" title="sstmac::hw::dragonfly\l::find_path_to_group" alt="" coords="231,332,385,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1dragonfly.html#a179ce4ea372cadf91cc205a1a45c920b" title="sstmac::hw::dragonfly\l::find_x_path_to_group" alt="" coords="225,397,391,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1dragonfly.html#a7a62843d163e3a8fe99d09c2a00d3853" title="sstmac::hw::dragonfly\l::find_y_path_to_group" alt="" coords="225,463,391,504"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1dragonfly.html#a993ba7c7b044d5fb9d3f830dc0c13115" title="The function accepts either source or node coordinates. " alt="" coords="231,528,385,569"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1dragonfly.html#abeebbe6e15ee0d3edffc9598d6a4441f" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="215,593,401,635"/>
+<area shape="rect" id="node12" href="$classsstmac_1_1hw_1_1dragonfly.html#ac69271e0879f4828ec15d4e2f3e91abc" title="sstmac::hw::dragonfly\l::minimal_route_to_group" alt="" coords="219,659,397,700"/>
+<area shape="rect" id="node13" href="$classsstmac_1_1hw_1_1dragonfly.html#a382292ed8e361fe520a0243d81f9b082" title="sstmac::hw::dragonfly\l::minimal_route_to_X" alt="" coords="231,724,385,765"/>
+<area shape="rect" id="node14" href="$classsstmac_1_1hw_1_1dragonfly.html#aca91604414392119fad037c53cbf7056" title="sstmac::hw::dragonfly\l::minimal_route_to_Y" alt="" coords="231,789,385,831"/>
+<area shape="rect" id="node15" href="$classsstmac_1_1hw_1_1dragonfly.html#a7e34b4f4cfd9442ebb10fffaa3c21b2e" title="sstmac::hw::dragonfly\l::nearest_neighbor_partners" alt="" coords="208,855,408,896"/>
+<area shape="rect" id="node16" href="$classsstmac_1_1hw_1_1dragonfly.html#a27269efe1a3dc0ad6e35388190d7b5ae" title="sstmac::hw::dragonfly\l::neighbor_at_port" alt="" coords="231,920,385,961"/>
+<area shape="rect" id="node17" href="$classsstmac_1_1hw_1_1dragonfly.html#a5cbdafd6afcf662231c93561326949a2" title="sstmac::hw::dragonfly\l::new_routing_stage" alt="" coords="231,985,385,1027"/>
+<area shape="rect" id="node18" href="$classsstmac_1_1hw_1_1structured__topology.html#a68824aa2f5c0f57c52a2a9498156f590" title="sstmac::hw::structured\l_topology::partners" alt="" coords="229,1051,387,1092"/>
+<area shape="rect" id="node19" href="$classsstmac_1_1hw_1_1dragonfly.html#ab7d0a42b7c4212c0e4389705be078e72" title="sstmac::hw::dragonfly\l::productive_path" alt="" coords="231,1116,385,1157"/>
+<area shape="rect" id="node20" href="$classsstmac_1_1hw_1_1dragonfly.html#a9a8c473ed87f3786352b3705721a4ef6" title="sstmac::hw::dragonfly\l::random_intermediate\l_switch" alt="" coords="227,1182,389,1238"/>
+<area shape="rect" id="node21" href="$classsstmac_1_1hw_1_1dragonfly.html#a809cf7edf5b921e2ba94c469cad50109" title="sstmac::hw::dragonfly\l::tornado_recv_partners" alt="" coords="221,1263,395,1304"/>
+<area shape="rect" id="node22" href="$classsstmac_1_1hw_1_1dragonfly.html#afbfaa5195b6327ad223fb4b9975774fa" title="sstmac::hw::dragonfly\l::tornado_send_partners" alt="" coords="219,1328,397,1369"/>
+<area shape="rect" id="node23" href="$classsstmac_1_1hw_1_1dragonfly.html#a91d30c382d0385b28abed2fe3748ddf6" title="sstmac::hw::dragonfly\l::xy_connected_to_group" alt="" coords="218,1393,398,1435"/>
+<area shape="rect" id="node24" href="$classsstmac_1_1hw_1_1dragonfly.html#a105359b34f109312fc1b4c3cee3beb79" title="sstmac::hw::dragonfly\l::xyg_dir_to_group" alt="" coords="231,1459,385,1500"/>
+</map>

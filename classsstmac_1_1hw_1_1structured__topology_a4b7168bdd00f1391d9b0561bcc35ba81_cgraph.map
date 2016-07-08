@@ -1,0 +1,6 @@
+<map id="sstmac::hw::structured_topology::minimal_routes_to_switch" name="sstmac::hw::structured_topology::minimal_routes_to_switch">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#aa7c8027308e0503eb9fc06da27f42b13" title="sstmac::hw::structured\l_topology::eject_paths\l_on_switch" alt="" coords="263,5,426,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="256,85,433,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#aec8cd9bce8b055082f90b8ca2b8de907" title="sstmac::hw::structured\l_topology::num_hops_to_node" alt="" coords="237,166,452,207"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1routing__info_1_1path__set.html#a5e5367f92a5aa33ae844dd86eaf8e01b" title="sstmac::hw::routing\l_info::path_set::resize" alt="" coords="265,231,424,273"/>
+</map>

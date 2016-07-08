@@ -1,0 +1,7 @@
+<map id="sstmac::hw::tiled_torus::default_router" name="sstmac::hw::tiled_torus::default_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1tiled__torus.html#a61a9089b3e710c6104aad66e6d6e06a2" title="sstmac::hw::tiled_torus\l::connect_dim" alt="" coords="220,5,381,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1tiled__torus.html#ab5e3c0c32e08e0843d8b9fb14ed6981d" title="sstmac::hw::tiled_torus\l::eject_paths_on_switch" alt="" coords="215,71,387,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1tiled__torus.html#af4ecd7d4766f8d019ed2dfee8d05c85f" title="sstmac::hw::tiled_torus\l::endpoint_to_ejection\l_switch" alt="" coords="220,137,381,193"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1tiled__torus.html#a24bb8313c724dbafabd9be1a23b7de23" title="sstmac::hw::tiled_torus\l::endpoint_to_injection\l_switch" alt="" coords="219,217,382,273"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1tiled__torus.html#ab7e4e159043c9c3f739a1954248f3a80" title="sstmac::hw::tiled_torus\l::port" alt="" coords="220,297,381,339"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="sstmac::hw::packet_flow_NtoM_queue::buffer_size" name="sstmac::hw::packet_flow_NtoM_queue::buffer_size">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#aaecaf7a04051e596ba8dd1a53c6337fa" title="sstmac::hw::packet\l_flow_NtoM_queue::configure\l_basic_ports" alt="" coords="271,5,477,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#ac16e33704694dd7ad843b66549b76312" title="sstmac::hw::packet\l_flow_NtoM_queue::configure\l_div_ports" alt="" coords="271,85,477,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a224aa5f6c79927cb5a170806fbcccc85" title="sstmac::hw::packet\l_flow_NtoM_queue::configure\l_mod_ports" alt="" coords="271,165,477,221"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a8f84e3fe3a5b02690b8c77608155924a" title="sstmac::hw::packet\l_flow_NtoM_queue::configure\l_offset_ports" alt="" coords="271,245,477,301"/>
+</map>

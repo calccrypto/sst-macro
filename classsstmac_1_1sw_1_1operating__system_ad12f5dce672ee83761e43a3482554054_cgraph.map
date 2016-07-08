@@ -1,0 +1,12 @@
+<map id="sstmac::sw::operating_system::params" name="sstmac::sw::operating_system::params">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a93fee2079f44c72cd724f80a529bc72d" title="sstmac::sw::operating\l_system::add_thread" alt="" coords="229,5,383,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a2b670cf4fcbe3dda2a92688c6bf5a356" title="sstmac::sw::operating\l_system::current_os_thread\l_context" alt="" coords="208,71,404,127"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1operating__system.html#abe23023a51a0ce6c9db4dbbaa4a7b10c" title="sstmac::sw::operating\l_system::init_startup_libs" alt="" coords="217,152,395,193"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1operating__system.html#a1d27e0e7158b4f4b5772db98cb38c37f" title="sstmac::sw::operating\l_system::init_threading" alt="" coords="223,217,389,259"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#ae96431f7504f59bc13e6044418a893f8" title="sstmac::sw::operating\l_system::kill_node" alt="" coords="229,283,383,324"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1operating__system.html#ae71647a88b537322850720b102e26f5f" title="sstmac::sw::operating\l_system::operating_system" alt="" coords="210,348,402,389"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="229,413,383,455"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1sw_1_1operating__system.html#ad643e9db5af77d2d6224217ba915ff8f" title="sstmac::sw::operating\l_system::sleep" alt="" coords="229,479,383,520"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1sw_1_1operating__system.html#ae627e7a18de4203cf77f96d5b8f22308" title="sstmac::sw::operating\l_system::switch_to_thread" alt="" coords="212,544,400,585"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1sw_1_1operating__system.html#a7d1b4e5e2a3fbb835a733c588ad4b22e" title="sstmac::sw::operating\l_system::unregister_lib" alt="" coords="224,609,388,651"/>
+</map>

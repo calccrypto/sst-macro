@@ -1,0 +1,5 @@
+<map id="sstmac::hw::cartesian_topology::red" name="sstmac::hw::cartesian_topology::red">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html#af39135fa9c7a6f4ce345f0915a0646fd" title="sstmac::hw::cartesian\l_topology::configure\l_geometric_paths" alt="" coords="223,5,377,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1cartesian__topology.html#ad8dcc6227c1689621d3a51d0a734aa51" title="sstmac::hw::cartesian\l_topology::init_factory\l_params" alt="" coords="221,85,379,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1cartesian__topology.html#adfa7032891a348186b769c5855d57dd7" title="sstmac::hw::cartesian\l_topology::minimal_routes\l_to_switch" alt="" coords="208,165,392,221"/>
+</map>

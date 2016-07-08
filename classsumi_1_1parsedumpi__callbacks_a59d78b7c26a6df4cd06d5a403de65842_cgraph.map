@@ -1,0 +1,6 @@
+<map id="sumi::parsedumpi_callbacks::initialized" name="sumi::parsedumpi_callbacks::initialized">
+<area shape="rect" id="node2" href="$classsumi_1_1parsedumpi__callbacks.html#ad5d8252b1d70f3898051602a94801bd7" title="Indicate that we have completed an MPI call. " alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="$classsumi_1_1parsedumpi__callbacks.html#af9bc8d826bd37511af21a3ad0defdda2" title="Initialize maps (datatypes etc.). Called at constrution. " alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="$classsumi_1_1parsedumpi__callbacks.html#a612783ab820378ea3d661e67f4043add" title="Start parsing. " alt="" coords="248,136,443,177"/>
+<area shape="rect" id="node5" href="$classsumi_1_1parsedumpi__callbacks.html#a5dd0c909de1a362cfea799e70d30696d" title="Indicate that we are starting an MPI call. " alt="" coords="248,201,443,243"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="sstmac::generic_event_0_args&lt; Cls, Fxn &gt;" name="sstmac::generic_event_0_args&lt; Cls, Fxn &gt;">
+<area shape="rect" id="node2" href="$classsstmac_1_1generic__event.html" title="{sstmac::generic_event\n||+ to_string()\l+ ~generic_event()\l+ execute()\l# generic_event()\l}" alt="" coords="17,321,180,443"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__queue__entry.html" title="{sstmac::event_queue\l_entry\n|# time_\l# dst_loc_\l# src_loc_\l# seqnum_\l|&#45; NotSerializable()\l&#45; execute()\l&#45; to_string()\l&#45; event_queue_entry()\l&#45; time()\l&#45; set_time()\l&#45; set_seqnum()\l&#45; seqnum()\l&#45; event_location()\l&#45; src_location()\l}" alt="" coords="18,5,179,273"/>
+</map>

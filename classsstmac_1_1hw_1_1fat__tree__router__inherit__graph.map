@@ -1,0 +1,4 @@
+<map id="sstmac::hw::fat_tree_router" name="sstmac::hw::fat_tree_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n|# regtop_\l|+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="21,131,220,325"/>
+<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="91,5,150,83"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="sstmac/software/launch/launch_info_fwd.h" name="sstmac/software/launch/launch_info_fwd.h">
+<area shape="rect" id="node2" href="$app__manager_8h.html" title="sstmac/software/process\l/app_manager.h" alt="" coords="302,95,481,136"/>
+<area shape="rect" id="node3" href="$indexing__app__manager_8h.html" title="sstmac/backends/native\l/indexing_app_manager.h" alt="" coords="202,184,389,225"/>
+<area shape="rect" id="node6" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="413,184,564,225"/>
+<area shape="rect" id="node4" href="$dumpi__app__manager_8h.html" title="sstmac/backends/native\l/dumpi_app_manager.h" alt="" coords="5,273,177,315"/>
+<area shape="rect" id="node5" href="$skeleton__app__manager_8h.html" title="sstmac/backends/native\l/skeleton_app_manager.h" alt="" coords="202,273,389,315"/>
+<area shape="rect" id="node7" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="413,273,564,315"/>
+<area shape="rect" id="node8" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="589,281,698,307"/>
+</map>

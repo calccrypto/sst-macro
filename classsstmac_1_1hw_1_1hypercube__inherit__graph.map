@@ -1,0 +1,6 @@
+<map id="sstmac::hw::hypercube" name="sstmac::hw::hypercube">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="" coords="11,807,227,1148"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n|# red_\l|+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="15,608,222,759"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,131,232,560"/>
+<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="81,5,157,83"/>
+</map>
