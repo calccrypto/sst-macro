@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -67,15 +67,25 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::parallel_runtime:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1parallel__runtime.png" usemap="#sstmac::parallel_5Fruntime_map" alt=""/>
-  <map id="sstmac::parallel_5Fruntime_map" name="sstmac::parallel_runtime_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,175,24"/>
-<area href="classsstmac_1_1lockable.html" alt="sstmac::lockable" shape="rect" coords="185,0,360,24"/>
-<area href="classsstmac_1_1mpi_1_1mpi__runtime.html" alt="sstmac::mpi::mpi_runtime" shape="rect" coords="0,112,175,136"/>
-<area href="classsstmac_1_1native_1_1serial__runtime.html" alt="sstmac::native::serial_runtime" shape="rect" coords="185,112,360,136"/>
+<div class="center"><img src="classsstmac_1_1parallel__runtime__inherit__graph.png" border="0" usemap="#sstmac_1_1parallel__runtime_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1parallel__runtime_inherit__map" id="sstmac_1_1parallel__runtime_inherit__map">
+<area shape="rect" id="node4" href="classsstmac_1_1mpi_1_1mpi__runtime.html" title="{sstmac::mpi::mpi_runtime\n|# requests_\l# merge_requests_\l# max_num_requests_\l# num_sent_\l# array_of_ones_\l# total_num_sent_\l# epoch_\l&#45; finalize_needed_\l|+ to_string()\l+ bcast()\l+ init_factory_params()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 7 more...\l# do_send_recv_messages()\l# do_send_message()\l# do_reduce()\l# finalize_init()\l# do_merge_array()\l# do_collective_merges()\l# reallocate_requests()\l# finalize()\l}" alt="" coords="5,579,212,1023"/>
+<area shape="rect" id="node5" href="classsstmac_1_1native_1_1serial__runtime.html" title="{sstmac::native::serial\l_runtime\n|# merge_refcounts_\l|+ serial_runtime()\l+ to_string()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ gather()\l+ allgather()\land 9 more...\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="236,667,443,935"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="53,5,223,97"/>
+<area shape="rect" id="node3" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="247,5,370,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::parallel_runtime:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1parallel__runtime__coll__graph.png" border="0" usemap="#sstmac_1_1parallel__runtime_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1parallel__runtime_coll__map" id="sstmac_1_1parallel__runtime_coll__map">
+<area shape="rect" id="node8" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="238,924,433,1192"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="87,197,256,289"/>
+<area shape="rect" id="node3" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="409,197,532,289"/>
+<area shape="rect" id="node4" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="922,160,1112,325"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -803,6 +813,16 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1parallel__runtime.html#a23f4ec52188db19f6d5d1d84748d6baf">global_max()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1parallel__runtime_a627ff69f200dc675d535dd0ed56136c9_cgraph.png" border="0" usemap="#classsstmac_1_1parallel__runtime_a627ff69f200dc675d535dd0ed56136c9_cgraph" alt=""/></div>
+<map name="classsstmac_1_1parallel__runtime_a627ff69f200dc675d535dd0ed56136c9_cgraph" id="classsstmac_1_1parallel__runtime_a627ff69f200dc675d535dd0ed56136c9_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1parallel__runtime.html#a23f4ec52188db19f6d5d1d84748d6baf" title="sstmac::parallel_runtime\l::global_max" alt="" coords="225,5,397,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abb1d06029968d41b4f355325334609c8"></a>
@@ -830,6 +850,24 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="parallel__runtime_8h_source.html#l00078">78</a> of file <a class="el" href="parallel__runtime_8h_source.html">parallel_runtime.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1parallel__runtime.html#a54a64344f8c3c0da68437ea64094cf8b">bcast()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a2d8cf63d7d100e1a2d33477181edeecb">bcast_file_stream()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a7c232d4aaa7e8c8c11e47240ceaeebff">bcast_string()</a>, <a class="el" href="parallel__runtime_8h_source.html#l00029">sstmac::parallel_runtime::incoming_msg::buffer</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a5412c08477ebea211813dea2ec53c535">finalize()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a23f4ec52188db19f6d5d1d84748d6baf">global_max()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a6d1e0116f3aa27b12da8117514e17223">init_partition_params()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a4ef4a578906fa5b658c160093a09d513">init_runtime_params()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a7d1b75cf394e2ab53951dc28aacaa152">send_event()</a>, and <a class="el" href="classsstmac_1_1parallel__runtime.html#a2ff311c9f8fde6ab8b81deca2faa15ae">send_recv_messages()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1parallel__runtime_abb1d06029968d41b4f355325334609c8_cgraph.png" border="0" usemap="#classsstmac_1_1parallel__runtime_abb1d06029968d41b4f355325334609c8_cgraph" alt=""/></div>
+<map name="classsstmac_1_1parallel__runtime_abb1d06029968d41b4f355325334609c8_cgraph" id="classsstmac_1_1parallel__runtime_abb1d06029968d41b4f355325334609c8_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1parallel__runtime.html#a54a64344f8c3c0da68437ea64094cf8b" title="sstmac::parallel_runtime\l::bcast" alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1parallel__runtime.html#a2d8cf63d7d100e1a2d33477181edeecb" title="sstmac::parallel_runtime\l::bcast_file_stream" alt="" coords="225,71,397,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1parallel__runtime.html#a7c232d4aaa7e8c8c11e47240ceaeebff" title="sstmac::parallel_runtime\l::bcast_string" alt="" coords="225,136,397,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1parallel__runtime.html#a5412c08477ebea211813dea2ec53c535" title="sstmac::parallel_runtime\l::finalize" alt="" coords="225,201,397,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1parallel__runtime.html#a23f4ec52188db19f6d5d1d84748d6baf" title="sstmac::parallel_runtime\l::global_max" alt="" coords="225,267,397,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1parallel__runtime.html#a6d1e0116f3aa27b12da8117514e17223" title="sstmac::parallel_runtime\l::init_partition_params" alt="" coords="225,332,397,373"/>
+<area shape="rect" id="node8" href="classsstmac_1_1parallel__runtime.html#a4ef4a578906fa5b658c160093a09d513" title="sstmac::parallel_runtime\l::init_runtime_params" alt="" coords="225,397,397,439"/>
+<area shape="rect" id="node9" href="classsstmac_1_1parallel__runtime.html#a7d1b75cf394e2ab53951dc28aacaa152" title="sstmac::parallel_runtime\l::send_event" alt="" coords="225,463,397,504"/>
+<area shape="rect" id="node10" href="classsstmac_1_1parallel__runtime.html#a2ff311c9f8fde6ab8b81deca2faa15ae" title="sstmac::parallel_runtime\l::send_recv_messages" alt="" coords="225,528,397,569"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1315,6 +1353,23 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="parallel__runtime_8h_source.html#l00138">138</a> of file <a class="el" href="parallel__runtime_8h_source.html">parallel_runtime.h</a>.</p>
 
 <p>References <a class="el" href="parallel__runtime_8h_source.html#l00174">buf_size_</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#ac6df186d761d26b032b33d4ee8829fc2">declare_merge_array()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a9518ba47ca585a991a2dfde7c7d3ffd7">do_send_message()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#ac037df9e6b630ab3d5fcdc771efc4b7b">do_send_recv_messages()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#aa1e340f01b5059616008c8854b6e4800">free_recv_buffers()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#ad4e41d8b22e70d4ef512ae62c407cf8e">parallel_runtime()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#adde01633f10cb57cebf54df106b389fa">release_merge_array()</a>, <a class="el" href="classsstmac_1_1parallel__runtime.html#a00708d5620f80cecb9e741d7ad9fe1c3">topology_partition()</a>, and <a class="el" href="classsstmac_1_1parallel__runtime.html#ab34faf9017902466041e0972f9682b85">wait_merge_array()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1parallel__runtime_ae8a2561e465bd16ee1af7b3e66aa9d9c_cgraph.png" border="0" usemap="#classsstmac_1_1parallel__runtime_ae8a2561e465bd16ee1af7b3e66aa9d9c_cgraph" alt=""/></div>
+<map name="classsstmac_1_1parallel__runtime_ae8a2561e465bd16ee1af7b3e66aa9d9c_cgraph" id="classsstmac_1_1parallel__runtime_ae8a2561e465bd16ee1af7b3e66aa9d9c_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1parallel__runtime.html#ac6df186d761d26b032b33d4ee8829fc2" title="sstmac::parallel_runtime\l::declare_merge_array" alt="" coords="235,5,407,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1parallel__runtime.html#a9518ba47ca585a991a2dfde7c7d3ffd7" title="sstmac::parallel_runtime\l::do_send_message" alt="" coords="235,71,407,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1parallel__runtime.html#ac037df9e6b630ab3d5fcdc771efc4b7b" title="sstmac::parallel_runtime\l::do_send_recv_messages" alt="" coords="225,136,416,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1parallel__runtime.html#aa1e340f01b5059616008c8854b6e4800" title="sstmac::parallel_runtime\l::free_recv_buffers" alt="" coords="235,201,407,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1parallel__runtime.html#ad4e41d8b22e70d4ef512ae62c407cf8e" title="sstmac::parallel_runtime\l::parallel_runtime" alt="" coords="235,267,407,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1parallel__runtime.html#adde01633f10cb57cebf54df106b389fa" title="sstmac::parallel_runtime\l::release_merge_array" alt="" coords="235,332,407,373"/>
+<area shape="rect" id="node8" href="classsstmac_1_1parallel__runtime.html#a00708d5620f80cecb9e741d7ad9fe1c3" title="sstmac::parallel_runtime\l::topology_partition" alt="" coords="235,397,407,439"/>
+<area shape="rect" id="node9" href="classsstmac_1_1parallel__runtime.html#ab34faf9017902466041e0972f9682b85" title="sstmac::parallel_runtime\l::wait_merge_array" alt="" coords="235,463,407,504"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

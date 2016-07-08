@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -67,17 +67,27 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::partition:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1partition.png" usemap="#sstmac::partition_map" alt=""/>
-  <map id="sstmac::partition_map" name="sstmac::partition_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="310,0,507,24"/>
-<area href="classsstmac_1_1block__partition.html" alt="sstmac::block_partition" shape="rect" coords="0,112,197,136"/>
-<area href="classsstmac_1_1metis__partition.html" alt="sstmac::metis_partition" shape="rect" coords="207,112,404,136"/>
-<area href="classsstmac_1_1serial__partition.html" alt="sstmac::serial_partition" shape="rect" coords="414,112,611,136"/>
-<area href="classsstmac_1_1topology__partition.html" alt="sstmac::topology_partition" shape="rect" coords="621,112,818,136"/>
-<area href="classsstmac_1_1occupied__block__partition.html" alt="sstmac::occupied_block_partition" shape="rect" coords="0,168,197,192"/>
+<div class="center"><img src="classsstmac_1_1partition__inherit__graph.png" border="0" usemap="#sstmac_1_1partition_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1partition_inherit__map" id="sstmac_1_1partition_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1block__partition.html" title="{sstmac::block_partition\n|# fake_top_\l|+ block_partition()\l+ ~block_partition()\l+ init_factory_params()\l+ finalize_init()\l+ partition_switches()\l}" alt="" coords="25,623,194,759"/>
+<area shape="rect" id="node5" href="classsstmac_1_1metis__partition.html" title="{sstmac::metis_partition\n|# fake_ic_\l|+ ~metis_partition()\l+ init_factory_params()\l+ finalize_init()\l# read_partition()\l}" alt="" coords="218,630,387,751"/>
+<area shape="rect" id="node6" href="classsstmac_1_1serial__partition.html" title="{sstmac::serial_partition\n||+ serial_partition()\l+ ~serial_partition()\l+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="411,630,581,751"/>
+<area shape="rect" id="node7" href="classsstmac_1_1topology__partition.html" title="{sstmac::topology_partition\n|# fake_top_\l# local_switch_to_thread_\l# noccupied_\l|+ topology_partition()\l+ ~topology_partition()\l+ init_factory_params()\l+ finalize_init()\l+ thread_for_local_switch()\l}" alt="" coords="605,608,800,773"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="314,5,483,97"/>
+<area shape="rect" id="node4" href="classsstmac_1_1occupied__block__partition.html" title="{sstmac::occupied_block\l_partition\n|# occupied_switches_\l# unoccupied_switches_\l# occupied_per_lp_\l# unoccupied_per_lp_\l# my_num_occupied_\l# my_num_unoccupied_\l# occupied_per_thread_\l# unoccupied_per_thread_\l|+ occupied_block_partition()\l+ ~occupied_block_partition()\l+ init_factory_params()\l+ partition_switches()\l+ finalize_init()\l+ thread_for_local_switch()\l}" alt="" coords="5,821,213,1089"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::partition:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1partition__coll__graph.png" border="0" usemap="#sstmac_1_1partition_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1partition_coll__map" id="sstmac_1_1partition_coll__map">
+<area shape="rect" id="node5" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="475,696,681,964"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,175,97"/>
+<area shape="rect" id="node7" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="747,417,937,582"/>
+<area shape="rect" id="node6" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="599,453,722,545"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -276,6 +286,16 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1partition.html#a0bd8f6ceab84f795da24c0c5eab3c4c1">init_param1()</a>, and <a class="el" href="sim__partition_8h_source.html#l00119">local_num_switches_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1partition_af42040447bb33a02967e947835c2fe0b_cgraph.png" border="0" usemap="#classsstmac_1_1partition_af42040447bb33a02967e947835c2fe0b_cgraph" alt=""/></div>
+<map name="classsstmac_1_1partition_af42040447bb33a02967e947835c2fe0b_cgraph" id="classsstmac_1_1partition_af42040447bb33a02967e947835c2fe0b_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1partition.html#a0bd8f6ceab84f795da24c0c5eab3c4c1" title="sstmac::partition::\linit_param1" alt="" coords="200,5,329,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a92728edd1091719c41252d5862041206"></a>
@@ -358,6 +378,18 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="sim__partition_8h_source.html#l00091">91</a> of file <a class="el" href="sim__partition_8h_source.html">sim_partition.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1partition.html#a915dd2ac60e71bb629e548d552480678">init_local_switches()</a>, <a class="el" href="sim__partition_8h_source.html#l00117">num_switches_total_</a>, <a class="el" href="classsstmac_1_1partition.html#ab73fcd76b7b3ed1717a260020ffedfd7">partition()</a>, <a class="el" href="errors_8h_source.html#l00037">spkt_throw_printf</a>, <a class="el" href="sim__partition_8h_source.html#l00111">switch_to_lpid_</a>, and <a class="el" href="classsstmac_1_1partition.html#ab06a277bb97abd6da3f7f03f3a1b281a">thread_for_local_switch()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1partition_ade37644356fa33b39c209fd917a2876c_cgraph.png" border="0" usemap="#classsstmac_1_1partition_ade37644356fa33b39c209fd917a2876c_cgraph" alt=""/></div>
+<map name="classsstmac_1_1partition_ade37644356fa33b39c209fd917a2876c_cgraph" id="classsstmac_1_1partition_ade37644356fa33b39c209fd917a2876c_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1partition.html#a915dd2ac60e71bb629e548d552480678" title="sstmac::partition::\linit_local_switches" alt="" coords="199,5,338,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1partition.html#ab73fcd76b7b3ed1717a260020ffedfd7" title="sstmac::partition::\lpartition" alt="" coords="204,71,333,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1partition.html#ab06a277bb97abd6da3f7f03f3a1b281a" title="sstmac::partition::\lthread_for_local_switch" alt="" coords="183,136,355,177"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -522,6 +554,16 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="sim__partition_8h_source.html#l00041">41</a> of file <a class="el" href="sim__partition_8h_source.html">sim_partition.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1partition.html#aa7ee65acd2dbc561490867b55b1fdbdf">~partition()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1partition_a255016c44d4ba1ee84081daa39363dfd_cgraph.png" border="0" usemap="#classsstmac_1_1partition_a255016c44d4ba1ee84081daa39363dfd_cgraph" alt=""/></div>
+<map name="classsstmac_1_1partition_a255016c44d4ba1ee84081daa39363dfd_cgraph" id="classsstmac_1_1partition_a255016c44d4ba1ee84081daa39363dfd_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1partition.html#aa7ee65acd2dbc561490867b55b1fdbdf" title="sstmac::partition::\l~partition" alt="" coords="183,5,312,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

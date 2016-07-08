@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -64,14 +64,25 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::native::serial_runtime:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1native_1_1serial__runtime.png" usemap="#sstmac::native::serial_5Fruntime_map" alt=""/>
-  <map id="sstmac::native::serial_5Fruntime_map" name="sstmac::native::serial_runtime_map">
-<area href="classsstmac_1_1parallel__runtime.html" alt="sstmac::parallel_runtime" shape="rect" coords="92,56,267,80"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,175,24"/>
-<area href="classsstmac_1_1lockable.html" alt="sstmac::lockable" shape="rect" coords="185,0,360,24"/>
+<div class="center"><img src="classsstmac_1_1native_1_1serial__runtime__inherit__graph.png" border="0" usemap="#sstmac_1_1native_1_1serial__runtime_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1native_1_1serial__runtime_inherit__map" id="sstmac_1_1native_1_1serial__runtime_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n|+ global_root\l# nproc_\l# nthread_\l# me_\l# send_buffer_pools_\l# recv_buffer_pool_\l# send_buffers_\l# buf_size_\l# part_\l|+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="72,145,279,531"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,175,97"/>
+<area shape="rect" id="node4" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="199,5,322,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::native::serial_runtime:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1native_1_1serial__runtime__coll__graph.png" border="0" usemap="#sstmac_1_1native_1_1serial__runtime_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1native_1_1serial__runtime_coll__map" id="sstmac_1_1native_1_1serial__runtime_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="493,593,699,861"/>
+<area shape="rect" id="node9" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="728,924,923,1192"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="867,197,1037,289"/>
+<area shape="rect" id="node4" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="5,197,128,289"/>
+<area shape="rect" id="node5" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="518,160,709,325"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -505,6 +516,22 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a083968360a3afa383c9cc84ae65f6fd8">declare_merge_array()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a349d017b472a52d1b2bfeae816770c67">do_send_message()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a2496579eb04821062ab7f4a8afbb57bf">do_send_recv_messages()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a219662c4afb9be148ce208194b69f4f0">release_merge_array()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ac1fe9a82a60bbcd1e0d04b12e8ad9edd">send_event()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a349764eb05d90a06dd4179cdfc2962e6">send_recv_messages()</a>, and <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ab7b5b5ebbe14f8031828fbf24fb0c1a7">wait_merge_array()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1native_1_1serial__runtime_a1e4a5e292839d466138471c83a7ed92d_cgraph.png" border="0" usemap="#classsstmac_1_1native_1_1serial__runtime_a1e4a5e292839d466138471c83a7ed92d_cgraph" alt=""/></div>
+<map name="classsstmac_1_1native_1_1serial__runtime_a1e4a5e292839d466138471c83a7ed92d_cgraph" id="classsstmac_1_1native_1_1serial__runtime_a1e4a5e292839d466138471c83a7ed92d_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1native_1_1serial__runtime.html#a083968360a3afa383c9cc84ae65f6fd8" title="sstmac::native::serial\l_runtime::declare_merge_array" alt="" coords="205,5,423,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1native_1_1serial__runtime.html#a349d017b472a52d1b2bfeae816770c67" title="sstmac::native::serial\l_runtime::do_send_message" alt="" coords="213,71,415,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1native_1_1serial__runtime.html#a2496579eb04821062ab7f4a8afbb57bf" title="sstmac::native::serial\l_runtime::do_send_recv\l_messages" alt="" coords="228,137,400,193"/>
+<area shape="rect" id="node5" href="classsstmac_1_1native_1_1serial__runtime.html#a219662c4afb9be148ce208194b69f4f0" title="sstmac::native::serial\l_runtime::release_merge_array" alt="" coords="205,217,423,259"/>
+<area shape="rect" id="node6" href="classsstmac_1_1native_1_1serial__runtime.html#ac1fe9a82a60bbcd1e0d04b12e8ad9edd" title="sstmac::native::serial\l_runtime::send_event" alt="" coords="236,283,392,324"/>
+<area shape="rect" id="node7" href="classsstmac_1_1native_1_1serial__runtime.html#a349764eb05d90a06dd4179cdfc2962e6" title="sstmac::native::serial\l_runtime::send_recv_messages" alt="" coords="204,348,424,389"/>
+<area shape="rect" id="node8" href="classsstmac_1_1native_1_1serial__runtime.html#ab7b5b5ebbe14f8031828fbf24fb0c1a7" title="sstmac::native::serial\l_runtime::wait_merge_array" alt="" coords="216,413,412,455"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a97d86673ae4b51a83575b3633f086bc4"></a>
@@ -936,6 +963,24 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="serial__runtime_8h_source.html#l00016">16</a> of file <a class="el" href="serial__runtime_8h_source.html">serial_runtime.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ae3e813e0a85ae764f903cc85cd06cc02">allgather()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ac32d06f147bfd49a1e6fbb53a7e2db1e">allreduce_max()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a23d2084fbd760ce45106f467f4cdc027">allreduce_min()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ab604610a007d667b80b4d6d949d8aa41">bcast()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a97d86673ae4b51a83575b3633f086bc4">gather()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a5303e231140d1c4f6c01114a3032a372">global_max()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a0618ddea5c2cd10cc18ec826a483035c">global_sum()</a>, <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#ad5c1569dbabefb9befb33bf34d5604a5">recv()</a>, and <a class="el" href="classsstmac_1_1native_1_1serial__runtime.html#a0e479a896f6c62aa81dab4eb6a919a72">send()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1native_1_1serial__runtime_acc36c12ef274cdaee558521b47a90eec_cgraph.png" border="0" usemap="#classsstmac_1_1native_1_1serial__runtime_acc36c12ef274cdaee558521b47a90eec_cgraph" alt=""/></div>
+<map name="classsstmac_1_1native_1_1serial__runtime_acc36c12ef274cdaee558521b47a90eec_cgraph" id="classsstmac_1_1native_1_1serial__runtime_acc36c12ef274cdaee558521b47a90eec_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1native_1_1serial__runtime.html#ae3e813e0a85ae764f903cc85cd06cc02" title="sstmac::native::serial\l_runtime::allgather" alt="" coords="215,5,366,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1native_1_1serial__runtime.html#ac32d06f147bfd49a1e6fbb53a7e2db1e" title="sstmac::native::serial\l_runtime::allreduce_max" alt="" coords="204,71,377,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1native_1_1serial__runtime.html#a23d2084fbd760ce45106f467f4cdc027" title="sstmac::native::serial\l_runtime::allreduce_min" alt="" coords="206,136,375,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1native_1_1serial__runtime.html#ab604610a007d667b80b4d6d949d8aa41" title="sstmac::native::serial\l_runtime::bcast" alt="" coords="215,201,366,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1native_1_1serial__runtime.html#a97d86673ae4b51a83575b3633f086bc4" title="sstmac::native::serial\l_runtime::gather" alt="" coords="215,267,366,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1native_1_1serial__runtime.html#a5303e231140d1c4f6c01114a3032a372" title="sstmac::native::serial\l_runtime::global_max" alt="" coords="214,332,367,373"/>
+<area shape="rect" id="node8" href="classsstmac_1_1native_1_1serial__runtime.html#a0618ddea5c2cd10cc18ec826a483035c" title="sstmac::native::serial\l_runtime::global_sum" alt="" coords="215,397,367,439"/>
+<area shape="rect" id="node9" href="classsstmac_1_1native_1_1serial__runtime.html#ad5c1569dbabefb9befb33bf34d5604a5" title="sstmac::native::serial\l_runtime::recv" alt="" coords="215,463,366,504"/>
+<area shape="rect" id="node10" href="classsstmac_1_1native_1_1serial__runtime.html#a0e479a896f6c62aa81dab4eb6a919a72" title="sstmac::native::serial\l_runtime::send" alt="" coords="215,528,366,569"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

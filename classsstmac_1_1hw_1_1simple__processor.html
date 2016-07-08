@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -66,14 +66,41 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::simple_processor:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1simple__processor.png" usemap="#sstmac::hw::simple_5Fprocessor_map" alt=""/>
-  <map id="sstmac::hw::simple_5Fprocessor_map" name="sstmac::hw::simple_processor_map">
-<area href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="sstmac::hw::processor" shape="rect" coords="0,56,200,80"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,200,24"/>
-<area href="classsstmac_1_1hw_1_1instruction__processor.html" alt="sstmac::hw::instruction_processor" shape="rect" coords="0,168,200,192"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__processor__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1simple__processor_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1simple__processor_inherit__map" id="sstmac_1_1hw_1_1simple__processor_inherit__map">
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1instruction__processor.html" title="{sstmac::hw::instruction\l_processor\n|# tflop_\l# tintop_\l# tmemseq_\l# tmemrnd_\l# max_single_mem_bw_\l# negligible_time_sec_\l# negligible_bytes_\l# parallelism_\l# noise_model_\l|+ instruction_processor()\l+ to_string()\l+ ~instruction_processor()\l+ init_factory_params()\l+ finalize_init()\l+ do_compute()\l# set_memop_distribution()\l# set_flop_distribution()\l# instruction_time()\l}" alt="" coords="5,631,197,957"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="17,145,186,384"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="17,5,186,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::simple_processor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__processor__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1simple__processor_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1simple__processor_coll__map" id="sstmac_1_1hw_1_1simple__processor_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="2467,773,2637,968"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="2231,1343,2401,1625"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="2011,5,2181,97"/>
+<area shape="rect" id="node13" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="1527,744,1710,997"/>
+<area shape="rect" id="node17" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="2368,219,2515,501"/>
+<area shape="rect" id="node22" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1725,226,1931,494"/>
+<area shape="rect" id="node48" href="classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="947,1754,1117,2169"/>
+<area shape="rect" id="node26" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="3793,1703,4004,2220"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n||+ failed()\l+ fail()\l# failable()\l}" alt="" coords="3057,817,3197,924"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="2219,825,2391,917"/>
+<area shape="rect" id="node9" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="2882,226,3062,494"/>
+<area shape="rect" id="node27" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="2661,759,2859,983"/>
+<area shape="rect" id="node46" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="3149,525,3302,720"/>
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n||+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="1230,307,1402,413"/>
+<area shape="rect" id="node49" href="classsstmac_1_1hw_1_1connectable__subcomponent.html" title="{sstmac::hw::connectable\l_subcomponent\n||}" alt="" coords="946,1438,1118,1530"/>
+<area shape="rect" id="node43" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="3799,2312,3998,2404"/>
+<area shape="rect" id="node50" href="classsstmac_1_1stat__spyplot.html" title="this stat_collector class keeps a spy plot " alt="" coords="98,1021,262,1304"/>
+<area shape="rect" id="node37" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="3446,1328,3610,1640"/>
+<area shape="rect" id="node39" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="3814,1357,3983,1611"/>
+<area shape="rect" id="node40" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="4008,1394,4184,1574"/>
+<area shape="rect" id="node42" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="4389,1365,4563,1603"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -155,6 +182,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="simple__processor_8h_source.html#l00031">31</a> of file <a class="el" href="simple__processor_8h_source.html">simple_processor.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1simple__processor.html#a206f6bf582e8d39410a4a6403bd71909">do_compute()</a>, and <a class="el" href="classsstmac_1_1hw_1_1simple__processor.html#a703ef175d31a0f049a54ae3ac46ac332">finalize_init()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__processor_a83b511e7ce7a24b653aa1494f3fa14f5_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1simple__processor_a83b511e7ce7a24b653aa1494f3fa14f5_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1simple__processor_a83b511e7ce7a24b653aa1494f3fa14f5_cgraph" id="classsstmac_1_1hw_1_1simple__processor_a83b511e7ce7a24b653aa1494f3fa14f5_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1simple__processor.html#a206f6bf582e8d39410a4a6403bd71909" title="sstmac::hw::simple\l_processor::do_compute" alt="" coords="200,5,376,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1simple__processor.html#a703ef175d31a0f049a54ae3ac46ac332" title="sstmac::hw::simple\l_processor::finalize_init" alt="" coords="203,71,373,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -276,6 +314,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="simple__processor_8h_source.html#l00040">40</a> of file <a class="el" href="simple__processor_8h_source.html">simple_processor.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1simple__processor.html#a206f6bf582e8d39410a4a6403bd71909">do_compute()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__processor_a83dc64587eb772f810e886ac10ec6df3_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1simple__processor_a83dc64587eb772f810e886ac10ec6df3_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1simple__processor_a83dc64587eb772f810e886ac10ec6df3_cgraph" id="classsstmac_1_1hw_1_1simple__processor_a83dc64587eb772f810e886ac10ec6df3_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1simple__processor.html#a206f6bf582e8d39410a4a6403bd71909" title="sstmac::hw::simple\l_processor::do_compute" alt="" coords="208,5,384,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

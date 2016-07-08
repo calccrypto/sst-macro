@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -64,13 +64,27 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::dumpi_indexer:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1dumpi__indexer.png" usemap="#sstmac::sw::dumpi_5Findexer_map" alt=""/>
-  <map id="sstmac::sw::dumpi_5Findexer_map" name="sstmac::sw::dumpi_indexer_map">
-<area href="classsstmac_1_1sw_1_1index__strategy.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="sstmac::sw::index_strategy" shape="rect" coords="0,56,159,80"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,159,24"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1dumpi__indexer__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1dumpi__indexer_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1dumpi__indexer_inherit__map" id="sstmac_1_1sw_1_1dumpi__indexer_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1index__strategy.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="18,145,206,340"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="27,5,197,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::dumpi_indexer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1dumpi__indexer__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1dumpi__indexer_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1dumpi__indexer_coll__map" id="sstmac_1_1sw_1_1dumpi__indexer_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1index__strategy.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="63,1217,251,1397"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="45,329,215,421"/>
+<area shape="rect" id="node4" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="459,843,665,1111"/>
+<area shape="rect" id="node10" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="394,1173,589,1441"/>
+<area shape="rect" id="node5" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="605,329,727,421"/>
+<area shape="rect" id="node6" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="752,292,943,457"/>
+<area shape="rect" id="node15" href="classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="1194,175,1421,575"/>
+<area shape="rect" id="node16" href="classtopology.html" title="{topology\n||}" alt="" coords="1285,5,1361,83"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -160,6 +174,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="dumpi__indexer_8h_source.html#l00032">32</a> of file <a class="el" href="dumpi__indexer_8h_source.html">dumpi_indexer.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1dumpi__indexer.html#adaa959027ddb7692ff4ab3028e8820cc">allocate()</a>, <a class="el" href="classsstmac_1_1sw_1_1dumpi__indexer.html#a1445f619d7a72b6f189c2bc0365ef7c8">node_id_from_coordinates()</a>, and <a class="el" href="classsstmac_1_1sw_1_1dumpi__indexer.html#a60d0ab074302b74b4024c5747fbc3ffa">node_id_from_hostname()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1dumpi__indexer_a35a31b9586bef32865649d556620068c_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1dumpi__indexer_a35a31b9586bef32865649d556620068c_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1dumpi__indexer_a35a31b9586bef32865649d556620068c_cgraph" id="classsstmac_1_1sw_1_1dumpi__indexer_a35a31b9586bef32865649d556620068c_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1dumpi__indexer.html#adaa959027ddb7692ff4ab3028e8820cc" title="Assign processes to nodes. " alt="" coords="245,5,432,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1dumpi__indexer.html#a1445f619d7a72b6f189c2bc0365ef7c8" title="sstmac::sw::dumpi_indexer\l::node_id_from_coordinates" alt="" coords="240,71,437,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1dumpi__indexer.html#a60d0ab074302b74b4024c5747fbc3ffa" title="sstmac::sw::dumpi_indexer\l::node_id_from_hostname" alt="" coords="245,136,432,177"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -55,6 +55,13 @@
  <a href="classnic__recv__cq.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="recv__cq_8h_source.html">recv_cq.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for nic_recv_cq:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnic__recv__cq__coll__graph.png" border="0" usemap="#nic__recv__cq_coll__map" alt="Collaboration graph"/></div>
+<map name="nic__recv__cq_coll__map" id="nic__recv__cq_coll__map">
+</map>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Receive Completion Queue. </p>
 <p>Based on packets coming in, it determines when a message has completely arrived. A large message, in some models, is broken up into many #message_chunk objects. When using minimal, in-order routing, tracking message completion is easier because a packet can be marked as the "tail" and used to track when an entire message has arrived. When using adaptive or multipath routing, messages arrive out-of-order. This class tracks whether all packets have been received and signals to some handler that an entire message has fully arrived. </p>

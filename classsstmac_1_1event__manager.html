@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -74,19 +74,31 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::event_manager:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1event__manager.png" usemap="#sstmac::event_5Fmanager_map" alt=""/>
-  <map id="sstmac::event_5Fmanager_map" name="sstmac::event_manager_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="279,0,548,24"/>
-<area href="classsstmac_1_1native_1_1event__container.html" title="An event manager base class using standard containers. " alt="sstmac::native::event_container" shape="rect" coords="279,112,548,136"/>
-<area href="classsstmac_1_1native_1_1event__calendar.html" title="An event manager that relies on the eventcontainer template base class to manage events with a multim..." alt="sstmac::native::event_calendar" shape="rect" coords="0,168,269,192"/>
-<area href="classsstmac_1_1native_1_1event__heap.html" title="An event manager that relies on the eventcontainer template base class to manage events with a priori..." alt="sstmac::native::event_heap" shape="rect" coords="279,168,548,192"/>
-<area href="classsstmac_1_1native_1_1event__map.html" title="An event manager that relies on the eventcontainer template base class to manage events with a multim..." alt="sstmac::native::event_map" shape="rect" coords="558,168,827,192"/>
-<area href="classsstmac_1_1native_1_1clock__cycle__event__map.html" alt="sstmac::native::clock_cycle_event_map" shape="rect" coords="558,224,827,248"/>
-<area href="classsstmac_1_1native_1_1multithreaded__event__container.html" alt="sstmac::native::multithreaded_event_container" shape="rect" coords="418,280,687,304"/>
-<area href="classsstmac_1_1native_1_1multithreaded__subcontainer.html" alt="sstmac::native::multithreaded_subcontainer" shape="rect" coords="697,280,966,304"/>
+<div class="center"><img src="classsstmac_1_1event__manager__inherit__graph.png" border="0" usemap="#sstmac_1_1event__manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1event__manager_inherit__map" id="sstmac_1_1event__manager_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1native_1_1event__container.html" title="An event manager base class using standard containers. " alt="" coords="251,652,421,935"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="251,5,421,97"/>
+<area shape="rect" id="node4" href="classsstmac_1_1native_1_1event__calendar.html" title="An event manager that relies on the eventcontainer template base class to manage events with a multim..." alt="" coords="5,983,216,1383"/>
+<area shape="rect" id="node5" href="classsstmac_1_1native_1_1event__heap.html" title="An event manager that relies on the eventcontainer template base class to manage events with a priori..." alt="" coords="241,1107,431,1258"/>
+<area shape="rect" id="node6" href="classsstmac_1_1native_1_1event__map.html" title="An event manager that relies on the eventcontainer template base class to manage events with a multim..." alt="" coords="456,1107,643,1258"/>
+<area shape="rect" id="node7" href="classsstmac_1_1native_1_1clock__cycle__event__map.html" title="{sstmac::native::clock\l_cycle_event_map\n|# next_time_horizon_\l# lookahead_\l# no_events_left_time_\l# all_incoming_\l# thread_incoming_\l# interconn_\l# epoch_\l|+ ~clock_cycle_event_map()\l+ init_factory_params()\l+ finalize_init()\l+ run()\l+ vote_to_terminate()\l+ set_interconnect()\l+ ipc_schedule()\l# schedule_incoming()\l# do_next_event()\l# next_event_time()\l# vote_next_round()\l# do_vote()\l# receive_incoming_events()\l}" alt="" coords="447,1431,651,1787"/>
+<area shape="rect" id="node8" href="classsstmac_1_1native_1_1multithreaded__event__container.html" title="{sstmac::native::multithreaded\l_event_container\n|# vote_functor_\l# send_recv_functor_\l# subthreads_\l# send_recv_barrier_\l# vote_barrier_\l# pending_event_map_\l# cpu_affinity_\l# me_\l# nproc_\l|+ ~multithreaded_event\l_container()\l+ init_factory_params()\l+ finalize_init()\l+ run()\l+ schedule_stop()\l+ multithread_schedule()\l+ pending_events()\l+ set_interconnect()\l+ receive_incoming_events()\l+ schedule_incoming()\l+ send_recv_barrier()\l+ time_vote_barrier()\l+ vote_next_round()\l+ ev_man_for_thread()\l+ finish_stats()\l}" alt="" coords="327,1835,532,2264"/>
+<area shape="rect" id="node9" href="classsstmac_1_1native_1_1multithreaded__subcontainer.html" title="{sstmac::native::multithreaded\l_subcontainer\n|# parent_\l|+ ~multithreaded_subcontainer()\l+ multithread_schedule()\l+ receive_incoming_events()\l+ vote_next_round()\l+ run()\l+ multithreaded_subcontainer()\l}" alt="" coords="556,1967,783,2132"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::event_manager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager__coll__graph.png" border="0" usemap="#sstmac_1_1event__manager_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1event__manager_coll__map" id="sstmac_1_1event__manager_coll__map">
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="791,197,961,289"/>
+<area shape="rect" id="node9" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1262,681,1469,949"/>
+<area shape="rect" id="node14" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="1197,1137,1392,1405"/>
+<area shape="rect" id="node4" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="376,593,539,1037"/>
+<area shape="rect" id="node11" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="1626,160,1817,325"/>
+<area shape="rect" id="node10" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="1317,197,1440,289"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -530,6 +542,18 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1event__manager.html#adc4d1499a56a87c9ced09bc2f4c95f2f">event_manager()</a>, <a class="el" href="event__manager_8h_source.html#l00210">rt_</a>, <a class="el" href="classsstmac_1_1event__manager.html#ae4d809079e5209dbb7e7c347f3339fe3">schedule_stop()</a>, and <a class="el" href="classsstmac_1_1event__manager.html#aa1bf42380c4ed1e91da13e32fa94a429">set_now()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager_acc6e2adb89cc1a5d5c06b28a3dbf65d4_cgraph.png" border="0" usemap="#classsstmac_1_1event__manager_acc6e2adb89cc1a5d5c06b28a3dbf65d4_cgraph" alt=""/></div>
+<map name="classsstmac_1_1event__manager_acc6e2adb89cc1a5d5c06b28a3dbf65d4_cgraph" id="classsstmac_1_1event__manager_acc6e2adb89cc1a5d5c06b28a3dbf65d4_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1event__manager.html#adc4d1499a56a87c9ced09bc2f4c95f2f" title="sstmac::event_manager\l::event_manager" alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__manager.html#ae4d809079e5209dbb7e7c347f3339fe3" title="sstmac::event_manager\l::schedule_stop" alt="" coords="224,71,395,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event__manager.html#aa1bf42380c4ed1e91da13e32fa94a429" title="sstmac::event_manager\l::set_now" alt="" coords="224,136,395,177"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ad397d49c323d7915f91399b1b81ed226"></a>
@@ -612,6 +636,16 @@ Friends</h2></td></tr>
 <p>Definition at line <a class="el" href="event__manager_8h_source.html#l00060">60</a> of file <a class="el" href="event__manager_8h_source.html">event_manager.h</a>.</p>
 
 <p>References <a class="el" href="event__manager_8h_source.html#l00207">complete_</a>, and <a class="el" href="classsstmac_1_1event__manager.html#a58579bc58a742713ad9c9b6622da3daa">init_factory_params()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager_ad0b9353da8fbb7d7850e94954cf6ad58_cgraph.png" border="0" usemap="#classsstmac_1_1event__manager_ad0b9353da8fbb7d7850e94954cf6ad58_cgraph" alt=""/></div>
+<map name="classsstmac_1_1event__manager_ad0b9353da8fbb7d7850e94954cf6ad58_cgraph" id="classsstmac_1_1event__manager_ad0b9353da8fbb7d7850e94954cf6ad58_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1event__manager.html#a58579bc58a742713ad9c9b6622da3daa" title="sstmac::event_manager\l::init_factory_params" alt="" coords="224,5,395,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -745,6 +779,21 @@ Friends</h2></td></tr>
 
 <p>Referenced by <a class="el" href="event__scheduler_8h_source.html#l00189">sstmac::event_scheduler::now()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager_af9f44ec011e85b5eb6c9f53eefa1cc78_cgraph.png" border="0" usemap="#classsstmac_1_1event__manager_af9f44ec011e85b5eb6c9f53eefa1cc78_cgraph" alt=""/></div>
+<map name="classsstmac_1_1event__manager_af9f44ec011e85b5eb6c9f53eefa1cc78_cgraph" id="classsstmac_1_1event__manager_af9f44ec011e85b5eb6c9f53eefa1cc78_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1event__manager.html#af74d5f1e77b7cebdc3624afe0cb2fca2" title="sstmac::event_manager\l::cancel_all_messages" alt="" coords="273,5,444,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__manager.html#a9a5d8262997dd5be995fd43c466e70a5" title="sstmac::event_manager\l::finish_stats" alt="" coords="273,71,444,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event__manager.html#af4367c4b5467c120024dd9b4c384e545" title="sstmac::event_manager\l::register_stat" alt="" coords="273,136,444,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__manager.html#a830abf11a6de85886b642d5ba9cb105e" title="sstmac::event_manager\l::register_thread_unique_stat" alt="" coords="256,201,461,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__manager.html#a5e9149f95fdb263d7e8e7a378e4bd502" title="sstmac::event_manager\l::runtime" alt="" coords="273,267,444,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__manager.html#aad992011167492fe15cb6df1977daa76" title="sstmac::event_manager\l::topology_partition" alt="" coords="273,332,444,373"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ae308da664c7c8f1339278b28b3ee6136"></a>
@@ -801,6 +850,19 @@ Friends</h2></td></tr>
 
 <p>Referenced by <a class="el" href="event__scheduler_8h_source.html#l00194">sstmac::event_scheduler::nthread()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager_aa2c058a1f8f799370ff9cd7c97b58b46_cgraph.png" border="0" usemap="#classsstmac_1_1event__manager_aa2c058a1f8f799370ff9cd7c97b58b46_cgraph" alt=""/></div>
+<map name="classsstmac_1_1event__manager_aa2c058a1f8f799370ff9cd7c97b58b46_cgraph" id="classsstmac_1_1event__manager_aa2c058a1f8f799370ff9cd7c97b58b46_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1event__manager.html#a42af1b5bf4737b277c8d5ca61a6f7f9f" title="sstmac::event_manager\l::current_thread_id" alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__manager.html#ab5928226a8ee0f93b85636cb15b002bc" title="sstmac::event_manager\l::ev_man_for_thread" alt="" coords="224,71,395,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event__manager.html#a927dab3b1012d674445f11d9ac8dc7bb" title="sstmac::event_manager\l::set_interconnect" alt="" coords="224,136,395,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__manager.html#a913a269988a997fe61fcbae6d268b8b8" title="sstmac::event_manager\l::thread_id" alt="" coords="224,201,395,243"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a2cbd16d372d277969cbe1870c4fcb70e"></a>
@@ -827,6 +889,17 @@ Friends</h2></td></tr>
 <p>Definition at line <a class="el" href="event__manager_8h_source.html#l00146">146</a> of file <a class="el" href="event__manager_8h_source.html">event_manager.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1event__manager.html#ad397d49c323d7915f91399b1b81ed226">ipc_schedule()</a>, <a class="el" href="classsstmac_1_1event__manager.html#a276aea7bc34bf5ce88a2cc1be66077da">multithread_schedule()</a>, <a class="el" href="event__manager_8h_source.html#l00215">nproc_</a>, and <a class="el" href="event__manager_8h_source.html#l00217">nthread_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1event__manager_a2cbd16d372d277969cbe1870c4fcb70e_cgraph.png" border="0" usemap="#classsstmac_1_1event__manager_a2cbd16d372d277969cbe1870c4fcb70e_cgraph" alt=""/></div>
+<map name="classsstmac_1_1event__manager_a2cbd16d372d277969cbe1870c4fcb70e_cgraph" id="classsstmac_1_1event__manager_a2cbd16d372d277969cbe1870c4fcb70e_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1event__manager.html#ad397d49c323d7915f91399b1b81ed226" title="sstmac::event_manager\l::ipc_schedule" alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__manager.html#a276aea7bc34bf5ce88a2cc1be66077da" title="sstmac::event_manager\l::multithread_schedule" alt="" coords="224,71,395,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

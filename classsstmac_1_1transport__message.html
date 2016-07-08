@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -64,18 +64,34 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::transport_message:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1transport__message.png" usemap="#sstmac::transport_5Fmessage_map" alt=""/>
-  <map id="sstmac::transport_5Fmessage_map" name="sstmac::transport_message_map">
-<area href="classsstmac_1_1hw_1_1network__message.html" alt="sstmac::hw::network_message" shape="rect" coords="148,168,435,192"/>
-<area href="classsstmac_1_1library__interface.html" alt="sstmac::library_interface" shape="rect" coords="445,168,732,192"/>
-<area href="classsprockit_1_1serializable__type.html" alt="sprockit::serializable_type&lt; T &gt;" shape="rect" coords="742,168,1029,192"/>
-<area href="classsstmac_1_1message.html" title="A class describing an event. " alt="sstmac::message" shape="rect" coords="0,112,287,136"/>
-<area href="classsprockit_1_1serializable__type.html" alt="sprockit::serializable_type&lt; T &gt;" shape="rect" coords="297,112,584,136"/>
-<area href="classsstmac_1_1event.html" alt="sstmac::event" shape="rect" coords="0,56,287,80"/>
-<area href="classsprockit_1_1serializable.html" alt="sprockit::serializable" shape="rect" coords="0,0,287,24"/>
+<div class="center"><img src="classsstmac_1_1transport__message__inherit__graph.png" border="0" usemap="#sstmac_1_1transport__message_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1transport__message_inherit__map" id="sstmac_1_1transport__message_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html" title="{sstmac::hw::network\l_message\n|+ toaddr_\l+ fromaddr_\l# net_id_\l# needs_ack_\l# route_algo_\l# src_task_\l# dest_task_\l# bytes_\l# type_\l|+ network_message()\l+ network_message()\l+ network_message()\l+ ~network_message()\l+ is_metadata()\l+ clone_injection_ack()\l+ route_algo()\l+ nic_reverse()\l+ set_route_algo()\l+ is_nic_ack()\land 20 more...\l+ tostr()\l+ tostr()\l# clone_into()\l}" alt="" coords="97,601,266,1001"/>
+<area shape="rect" id="node3" href="classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="9,373,148,553"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="9,175,148,325"/>
+<area shape="rect" id="node5" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,152,127"/>
+<area shape="rect" id="node6" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="173,410,395,517"/>
+<area shape="rect" id="node7" href="classsstmac_1_1library__interface.html" title="{sstmac::library_interface\n|# lib_name_\l|+ lib_name()\l+ set_lib_name()\l+ serialize_order()\l# library_interface()\l# library_interface()\l# clone_into()\l}" alt="" coords="291,726,464,877"/>
+<area shape="rect" id="node8" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; transport_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="489,748,711,855"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::transport_message:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1transport__message__coll__graph.png" border="0" usemap="#sstmac_1_1transport__message_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1transport__message_coll__map" id="sstmac_1_1transport__message_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html" title="{sstmac::hw::network\l_message\n||+ network_message()\l+ network_message()\l+ network_message()\l+ ~network_message()\l+ is_metadata()\l+ clone_injection_ack()\l+ route_algo()\l+ nic_reverse()\l+ set_route_algo()\l+ is_nic_ack()\land 20 more...\l+ tostr()\l+ tostr()\l# clone_into()\l}" alt="" coords="682,1020,851,1303"/>
+<area shape="rect" id="node3" href="classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="795,770,933,950"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="515,432,653,583"/>
+<area shape="rect" id="node5" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="43,145,189,267"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="776,329,952,685"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="1097,145,1276,267"/>
+<area shape="rect" id="node14" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="254,807,477,913"/>
+<area shape="rect" id="node17" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="617,763,770,957"/>
+<area shape="rect" id="node20" href="classsstmac_1_1library__interface.html" title="{sstmac::library_interface\n||+ lib_name()\l+ set_lib_name()\l+ serialize_order()\l# library_interface()\l# library_interface()\l# clone_into()\l}" alt="" coords="1087,1086,1260,1237"/>
+<area shape="rect" id="node22" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; transport_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="1285,1108,1507,1215"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -323,6 +339,20 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="message_8h_source.html#l00084">buffer_</a>, <a class="el" href="classsstmac_1_1transport__message.html#a3bc23ad9dba1e6560c76c467fa53f401">clone_injection_ack()</a>, <a class="el" href="classsstmac_1_1transport__message.html#a2581a3beee4b47bac5c330b3992325f3">clone_into()</a>, <a class="el" href="classsstmac_1_1transport__message.html#acc23dff57ec9b4a4b0f12e2b6b7fc621">complete_transfer()</a>, <a class="el" href="classsstmac_1_1transport__message.html#ac9a952e36422a6eecc23bd2f0acba3ba">put_on_wire()</a>, and <a class="el" href="classsstmac_1_1transport__message.html#a734eaec6969873d3833c9f247b3d8a08">reverse()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1transport__message_a89336a5b56cfcac613855b71729f61c8_cgraph.png" border="0" usemap="#classsstmac_1_1transport__message_a89336a5b56cfcac613855b71729f61c8_cgraph" alt=""/></div>
+<map name="classsstmac_1_1transport__message_a89336a5b56cfcac613855b71729f61c8_cgraph" id="classsstmac_1_1transport__message_a89336a5b56cfcac613855b71729f61c8_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1transport__message.html#a3bc23ad9dba1e6560c76c467fa53f401" title="sstmac::transport_message\l::clone_injection_ack" alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1transport__message.html#a2581a3beee4b47bac5c330b3992325f3" title="sstmac::transport_message\l::clone_into" alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1transport__message.html#acc23dff57ec9b4a4b0f12e2b6b7fc621" title="sstmac::transport_message\l::complete_transfer" alt="" coords="248,136,443,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1transport__message.html#ac9a952e36422a6eecc23bd2f0acba3ba" title="sstmac::transport_message\l::put_on_wire" alt="" coords="248,201,443,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1transport__message.html#a734eaec6969873d3833c9f247b3d8a08" title="sstmac::transport_message\l::reverse" alt="" coords="248,267,443,308"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a3bc23ad9dba1e6560c76c467fa53f401"></a>
@@ -457,6 +487,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42">sstmac::hw::network_message::byte_length()</a>, <a class="el" href="classsstmac_1_1transport__message.html#ac1456a208bebe4a36ceba860c96f52f8">serialize_order()</a>, and <a class="el" href="classsstmac_1_1transport__message.html#ab8b77b7f04e1fb790d2949023940c0bf">transport_message()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1transport__message_adf1e1aa06c264a5fce5cd8424feefa24_cgraph.png" border="0" usemap="#classsstmac_1_1transport__message_adf1e1aa06c264a5fce5cd8424feefa24_cgraph" alt=""/></div>
+<map name="classsstmac_1_1transport__message_adf1e1aa06c264a5fce5cd8424feefa24_cgraph" id="classsstmac_1_1transport__message_adf1e1aa06c264a5fce5cd8424feefa24_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="262,5,429,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1transport__message.html#ac1456a208bebe4a36ceba860c96f52f8" title="Serialize this message during parallel simulation. " alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1transport__message.html#ab8b77b7f04e1fb790d2949023940c0bf" title="sstmac::transport_message\l::transport_message" alt="" coords="248,136,443,177"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a6448cc6d6b895c49bb3e14b69d9e46ab"></a>
@@ -483,6 +525,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="message_8h_source.html#l00029">29</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
 
 <p>References <a class="el" href="message_8h_source.html#l00083">payload_</a>, and <a class="el" href="classsstmac_1_1transport__message.html#aa575837f7d5cb16a0c069ce6fa0c24df">to_string()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1transport__message_a6448cc6d6b895c49bb3e14b69d9e46ab_cgraph.png" border="0" usemap="#classsstmac_1_1transport__message_a6448cc6d6b895c49bb3e14b69d9e46ab_cgraph" alt=""/></div>
+<map name="classsstmac_1_1transport__message_a6448cc6d6b895c49bb3e14b69d9e46ab_cgraph" id="classsstmac_1_1transport__message_a6448cc6d6b895c49bb3e14b69d9e46ab_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1transport__message.html#aa575837f7d5cb16a0c069ce6fa0c24df" title="sstmac::transport_message\l::to_string" alt="" coords="248,5,443,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -69,17 +69,28 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::value_payload&lt; T &gt;:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1value__payload.png" usemap="#sstmac::value_5Fpayload_3C_20T_20_3E_map" alt=""/>
-  <map id="sstmac::value_5Fpayload_3C_20T_20_3E_map" name="sstmac::value_payload&lt; T &gt;_map">
-<area href="classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="sstmac::payload" shape="rect" coords="152,112,447,136"/>
-<area href="classsprockit_1_1serializable__type.html" alt="sprockit::serializable_type&lt; T &gt;" shape="rect" coords="457,112,752,136"/>
-<area href="classsprockit_1_1printable__ptr__type.html" alt="sprockit::printable_ptr_type" shape="rect" coords="0,56,295,80"/>
-<area href="classsprockit_1_1serializable.html" alt="sprockit::serializable" shape="rect" coords="305,56,600,80"/>
-<area href="classsprockit_1_1ptr__type.html" alt="sprockit::ptr_type" shape="rect" coords="0,0,295,24"/>
-<area href="classsstmac_1_1bitwisevaluepayload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="sstmac::bitwisevaluepayload&lt; T &gt;" shape="rect" coords="305,224,600,248"/>
+<div class="center"><img src="classsstmac_1_1value__payload__inherit__graph.png" border="0" usemap="#sstmac_1_1value__payload_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1value__payload_3_01T_01_4_inherit__map" id="sstmac_1_1value__payload_3_01T_01_4_inherit__map">
+<area shape="rect" id="node7" href="classsstmac_1_1bitwisevaluepayload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="135,1049,366,1332"/>
+<area shape="rect" id="node2" href="classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="91,359,213,612"/>
+<area shape="rect" id="node3" href="classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,204,136,296"/>
+<area shape="rect" id="node4" href="classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="6,5,135,141"/>
+<area shape="rect" id="node5" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="160,189,307,311"/>
+<area shape="rect" id="node6" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; value_payload\&lt; T \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="238,432,461,539"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::value_payload&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1value__payload__coll__graph.png" border="0" usemap="#sstmac_1_1value__payload_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1value__payload_3_01T_01_4_coll__map" id="sstmac_1_1value__payload_3_01T_01_4_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="131,501,253,755"/>
+<area shape="rect" id="node3" href="classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,345,136,437"/>
+<area shape="rect" id="node4" href="classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n||+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="6,145,135,281"/>
+<area shape="rect" id="node6" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="160,331,307,452"/>
+<area shape="rect" id="node7" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; value_payload\&lt; T \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="278,575,501,681"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -929,6 +940,17 @@ template&lt;typename T&gt; </div>
 
 <p>References <a class="el" href="value__payload_8h_source.html#l00461">sstmac::bool_result&lt; T &gt;::get_false()</a>, <a class="el" href="value__payload_8h_source.html#l00454">sstmac::bool_result&lt; T &gt;::get_true()</a>, and <a class="el" href="ptr__type_8h_source.html#l00085">ptr_safe_cast</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1value__payload_a5623a7cc13060323d1f9f5307d59fc60_cgraph.png" border="0" usemap="#classsstmac_1_1value__payload_a5623a7cc13060323d1f9f5307d59fc60_cgraph" alt=""/></div>
+<map name="classsstmac_1_1value__payload_a5623a7cc13060323d1f9f5307d59fc60_cgraph" id="classsstmac_1_1value__payload_a5623a7cc13060323d1f9f5307d59fc60_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1bool__result.html#abe3372a08d95453a05b351ce971a4a15" title="sstmac::bool_result\l::get_false" alt="" coords="216,5,356,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1bool__result.html#a8ad411163b8745cbf449d462d07f0c55" title="sstmac::bool_result\l::get_true" alt="" coords="216,71,356,112"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aa0a4b0f0b48be043f46f15fd3ef18d48"></a>
@@ -970,6 +992,16 @@ template&lt;typename T&gt; </div>
 
 <p>References <a class="el" href="value__payload_8h_source.html#l00461">sstmac::bool_result&lt; T &gt;::get_false()</a>, and <a class="el" href="ptr__type_8h_source.html#l00085">ptr_safe_cast</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1value__payload_aa0a4b0f0b48be043f46f15fd3ef18d48_cgraph.png" border="0" usemap="#classsstmac_1_1value__payload_aa0a4b0f0b48be043f46f15fd3ef18d48_cgraph" alt=""/></div>
+<map name="classsstmac_1_1value__payload_aa0a4b0f0b48be043f46f15fd3ef18d48_cgraph" id="classsstmac_1_1value__payload_aa0a4b0f0b48be043f46f15fd3ef18d48_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1bool__result.html#abe3372a08d95453a05b351ce971a4a15" title="sstmac::bool_result\l::get_false" alt="" coords="216,5,356,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a351fbda63050353ee2db2e0c50feff94"></a>
@@ -1010,6 +1042,17 @@ template&lt;typename T&gt; </div>
 <p>Definition at line <a class="el" href="value__payload_8h_source.html#l00212">212</a> of file <a class="el" href="value__payload_8h_source.html">value_payload.h</a>.</p>
 
 <p>References <a class="el" href="value__payload_8h_source.html#l00461">sstmac::bool_result&lt; T &gt;::get_false()</a>, <a class="el" href="value__payload_8h_source.html#l00454">sstmac::bool_result&lt; T &gt;::get_true()</a>, and <a class="el" href="ptr__type_8h_source.html#l00085">ptr_safe_cast</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1value__payload_a351fbda63050353ee2db2e0c50feff94_cgraph.png" border="0" usemap="#classsstmac_1_1value__payload_a351fbda63050353ee2db2e0c50feff94_cgraph" alt=""/></div>
+<map name="classsstmac_1_1value__payload_a351fbda63050353ee2db2e0c50feff94_cgraph" id="classsstmac_1_1value__payload_a351fbda63050353ee2db2e0c50feff94_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1bool__result.html#abe3372a08d95453a05b351ce971a4a15" title="sstmac::bool_result\l::get_false" alt="" coords="216,5,356,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1bool__result.html#a8ad411163b8745cbf449d462d07f0c55" title="sstmac::bool_result\l::get_true" alt="" coords="216,71,356,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

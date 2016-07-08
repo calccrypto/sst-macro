@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -66,19 +66,46 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::node:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1node.png" usemap="#sstmac::hw::node_map" alt=""/>
-  <map id="sstmac::hw::node_map" name="sstmac::hw::node_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,112,215,136"/>
-<area href="classsstmac_1_1hw_1_1failable.html" alt="sstmac::hw::failable" shape="rect" coords="225,112,440,136"/>
-<area href="classsstmac_1_1hw_1_1connectable__component.html" alt="sstmac::hw::connectable_component" shape="rect" coords="450,112,665,136"/>
-<area href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="sstmac::event_scheduler" shape="rect" coords="337,56,552,80"/>
-<area href="classsstmac_1_1hw_1_1connectable.html" alt="sstmac::hw::connectable" shape="rect" coords="562,56,777,80"/>
-<area href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="sstmac::event_handler" shape="rect" coords="337,0,552,24"/>
-<area href="classsstmac_1_1hw_1_1simple__node.html" title="A stand-in node. " alt="sstmac::hw::simple_node" shape="rect" coords="225,224,440,248"/>
-<area href="classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="sstmac::hw::null_node" shape="rect" coords="225,280,440,304"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1node__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1node_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1node_inherit__map" id="sstmac_1_1hw_1_1node_inherit__map">
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1simple__node.html" title="A stand&#45;in node. " alt="" coords="181,1269,357,1464"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,659,175,751"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n|# failed_\l|+ failed()\l+ fail()\l# failable()\l}" alt="" coords="199,652,339,759"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="363,659,535,751"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="259,321,439,604"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="267,5,430,273"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="463,409,635,516"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="" coords="184,1512,353,1619"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::node:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1node__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1node_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1node_coll__map" id="sstmac_1_1hw_1_1node_coll__map">
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="1543,2136,1713,2331"/>
+<area shape="rect" id="node27" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="3083,1975,3293,2492"/>
+<area shape="rect" id="node48" href="classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="787,2026,957,2441"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="2743,241,2913,333"/>
+<area shape="rect" id="node14" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="1766,1255,1949,1508"/>
+<area shape="rect" id="node18" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="2683,729,2829,1012"/>
+<area shape="rect" id="node23" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="2955,737,3162,1005"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n||+ failed()\l+ fail()\l# failable()\l}" alt="" coords="2230,1328,2370,1435"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="897,1335,1069,1427"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="758,737,938,1005"/>
+<area shape="rect" id="node28" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="675,1269,872,1493"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="639,175,801,399"/>
+<area shape="rect" id="node10" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n||+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="426,817,598,924"/>
+<area shape="rect" id="node44" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="2222,2584,2421,2676"/>
+<area shape="rect" id="node50" href="classsstmac_1_1stat__spyplot.html" title="this stat_collector class keeps a spy plot " alt="" coords="179,423,343,705"/>
+<area shape="rect" id="node47" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="1269,1036,1422,1231"/>
+<area shape="rect" id="node49" href="classsstmac_1_1hw_1_1connectable__subcomponent.html" title="{sstmac::hw::connectable\l_subcomponent\n||}" alt="" coords="426,1695,598,1787"/>
+<area shape="rect" id="node38" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="4825,1585,4989,1897"/>
+<area shape="rect" id="node40" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="2341,1615,2510,1868"/>
+<area shape="rect" id="node41" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="2535,1651,2711,1831"/>
+<area shape="rect" id="node43" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="2915,1622,3090,1861"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -363,6 +390,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1node.html#aaf7ccc9d30599582887da9b41a720098">compute()</a>, <a class="el" href="classsstmac_1_1hw_1_1node.html#a72e1bdb9f82e636bc123897c84dcd784">fail_stop()</a>, and <a class="el" href="node_8h_source.html#l00198">my_addr_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1node_aa6658c71b51c80be302d24cea3d984ca_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1node_aa6658c71b51c80be302d24cea3d984ca_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1node_aa6658c71b51c80be302d24cea3d984ca_cgraph" id="classsstmac_1_1hw_1_1node_aa6658c71b51c80be302d24cea3d984ca_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html#aaf7ccc9d30599582887da9b41a720098" title="sstmac::hw::node::compute" alt="" coords="216,5,403,32"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1node.html#a72e1bdb9f82e636bc123897c84dcd784" title="Cause the node to crash. " alt="" coords="216,56,403,83"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a956340bfeaaa99ca7bef5b06bc5639bd"></a>
@@ -392,6 +430,21 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="node_8h_source.html#l00143">143</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1node.html#a1b8cd90e5d341ebbc5db1db20c210db6">connect_nic()</a>, <a class="el" href="classsstmac_1_1hw_1_1node.html#a581338eddf75b84820010aee897b419a">execute_kernel()</a>, <a class="el" href="classsstmac_1_1hw_1_1node.html#ad3104f43870dd1dca21e5232c636032a">handle()</a>, <a class="el" href="classsstmac_1_1hw_1_1node.html#a5697ad5e45bfe18d40722b08b9169331">kernel_supported()</a>, <a class="el" href="node_8h_source.html#l00215">next_outgoing_id_</a>, <a class="el" href="classsstmac_1_1hw_1_1node.html#a7fa3fb812c2612d30a92e07f255e848f">node()</a>, and <a class="el" href="classsstmac_1_1hw_1_1node.html#a3593ebf83b6f40fa1b2e80d09994546b">send_to_nic()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1node_a956340bfeaaa99ca7bef5b06bc5639bd_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1node_a956340bfeaaa99ca7bef5b06bc5639bd_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1node_a956340bfeaaa99ca7bef5b06bc5639bd_cgraph" id="classsstmac_1_1hw_1_1node_a956340bfeaaa99ca7bef5b06bc5639bd_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html#a1b8cd90e5d341ebbc5db1db20c210db6" title="sstmac::hw::node::connect_nic" alt="" coords="236,5,447,32"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1node.html#a581338eddf75b84820010aee897b419a" title="Make the node execute a particular compute function. " alt="" coords="250,57,433,98"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1node.html#ad3104f43870dd1dca21e5232c636032a" title="sstmac::hw::node::handle" alt="" coords="253,123,430,149"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1node.html#a5697ad5e45bfe18d40722b08b9169331" title="sstmac::hw::node::kernel\l_supported" alt="" coords="255,174,428,215"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1node.html#a7fa3fb812c2612d30a92e07f255e848f" title="sstmac::hw::node::node" alt="" coords="258,240,425,267"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1node.html#a3593ebf83b6f40fa1b2e80d09994546b" title="Push a network message (operation at the MTL layer) onto the NIC. " alt="" coords="259,291,424,333"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -893,6 +946,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="node_8h_source.html#l00196">os_</a>, and <a class="el" href="classsstmac_1_1hw_1_1node.html#a9de09e229595e290e39dc2827341b11d">to_string()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1node_a6f34b6cda18d213ab6ebfd0b66dab966_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1node_a6f34b6cda18d213ab6ebfd0b66dab966_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1node_a6f34b6cda18d213ab6ebfd0b66dab966_cgraph" id="classsstmac_1_1hw_1_1node_a6f34b6cda18d213ab6ebfd0b66dab966_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html#a9de09e229595e290e39dc2827341b11d" title="sstmac::hw::node::to\l_string" alt="" coords="203,5,349,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a3593ebf83b6f40fa1b2e80d09994546b"></a>
@@ -998,6 +1061,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="node_8h_source.html#l00083">83</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1node.html#a068a06a3f7676272d528301c7c79a77a">connect()</a>, and <a class="el" href="node_8h_source.html#l00204">nic_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1node_a591d207c54c2e6ab3f003294cc4ae0cb_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1node_a591d207c54c2e6ab3f003294cc4ae0cb_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1node_a591d207c54c2e6ab3f003294cc4ae0cb_cgraph" id="classsstmac_1_1hw_1_1node_a591d207c54c2e6ab3f003294cc4ae0cb_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html#a068a06a3f7676272d528301c7c79a77a" title="sstmac::hw::node::connect" alt="" coords="232,5,416,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

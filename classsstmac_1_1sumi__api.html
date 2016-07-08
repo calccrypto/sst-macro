@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -64,16 +64,40 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sumi_api:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sumi__api.png" usemap="#sstmac::sumi_5Fapi_map" alt=""/>
-  <map id="sstmac::sumi_5Fapi_map" name="sstmac::sumi_api_map">
-<area href="classsstmac_1_1sw_1_1api.html" alt="sstmac::sw::api" shape="rect" coords="94,56,272,80"/>
-<area href="classsstmac_1_1sw_1_1process__manager.html" alt="sstmac::sw::process_manager" shape="rect" coords="282,56,460,80"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,178,24"/>
-<area href="classsstmac_1_1sw_1_1library.html" alt="sstmac::sw::library" shape="rect" coords="188,0,366,24"/>
-<area href="classsumi_1_1sumi__transport.html" alt="sumi::sumi_transport" shape="rect" coords="188,168,366,192"/>
+<div class="center"><img src="classsstmac_1_1sumi__api__inherit__graph.png" border="0" usemap="#sstmac_1_1sumi__api_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sumi__api_inherit__map" id="sstmac_1_1sumi__api_inherit__map">
+<area shape="rect" id="node6" href="classsumi_1_1sumi__transport.html" title="{sumi::sumi_transport\n||+ sumi_transport()\l+ init()\l+ finalize()\l+ init_factory_params()\l+ finalize_init()\l+ ~sumi_transport()\l+ handle()\l+ collective_block()\l+ cq_notify()\l+ wall_time()\l+ block_until_message()\l+ block_until_message()\l+ ping_timeout()\l+ incoming_event()\l# do_smsg_send()\l# do_rdma_put()\l# do_rdma_get()\l# do_nvram_get()\l# do_send_terminate()\l# do_send_ping_request()\l# delayed_transport_handle()\l# schedule_ping_timeout()\l# schedule_next_heartbeat()\l# go_die()\l# go_revive()\l}" alt="" coords="174,1100,385,1529"/>
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1api.html" title="{sstmac::sw::api\n|# timer_\l# startcount_\l# endcount_\l# compute_\l# sid_\l# hostcompute_\l|+ api()\l+ api()\l+ ~api()\l+ init_os()\l+ init_param1()\l+ now()\l+ schedule()\l+ schedule_delay()\l+ init_factory_params()\l+ start_api_call()\l+ end_api_call()\l}" alt="" coords="99,365,268,663"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,115,175,207"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n|# os_\l# libname_\l# key_cat_\l|+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ ~library()\l+ construct_lib()\l+ construct_lib()\l+ register_builder()\l# library()\l# register_lib()\l# supported()\l# builder()\l}" alt="" coords="199,5,357,317"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1process__manager.html" title="{sstmac::sw::process\l_manager\n|&#45; my_addr_\l&#45; my_os_\l&#45; sid_\l&#45; node_map_\l&#45; proc_map_\l|+ init_param1()\l+ init_os()\l+ ~process_manager()\l+ get_partner()\l+ my_addr()\l+ kill_node()\l+ kill_process()\l}" alt="" coords="292,395,459,633"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sumi_api:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sumi__api__coll__graph.png" border="0" usemap="#sstmac_1_1sumi__api_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sumi__api_coll__map" id="sstmac_1_1sumi__api_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1api.html" title="{sstmac::sw::api\n||+ api()\l+ api()\l+ ~api()\l+ init_os()\l+ init_param1()\l+ now()\l+ schedule()\l+ schedule_delay()\l+ init_factory_params()\l+ start_api_call()\l+ end_api_call()\l}" alt="" coords="330,2559,499,2783"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1053,219,1222,311"/>
+<area shape="rect" id="node19" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="1551,1215,1721,1497"/>
+<area shape="rect" id="node20" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="1574,884,1757,1137"/>
+<area shape="rect" id="node24" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="801,524,948,807"/>
+<area shape="rect" id="node33" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1691,531,1898,799"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n||+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ ~library()\l+ construct_lib()\l+ construct_lib()\l+ register_builder()\l# library()\l# register_lib()\l# supported()\l# builder()\l}" alt="" coords="394,2213,553,2496"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="1653,1589,1864,2107"/>
+<area shape="rect" id="node43" href="classsstmac_1_1sw_1_1process__manager.html" title="{sstmac::sw::process\l_manager\n||+ init_param1()\l+ init_os()\l+ ~process_manager()\l+ get_partner()\l+ my_addr()\l+ kill_node()\l+ kill_process()\l}" alt="" coords="1222,2265,1389,2445"/>
+<area shape="rect" id="node48" href="classsstmac_1_1sumi__queue.html" title="{sstmac::sumi_queue\n||+ to_string()\l+ sumi_queue()\l+ sumi_queue()\l+ poll_until_message()\l+ poll_until_message()\l+ put_message()\l+ blocked()\l}" alt="" coords="3692,2272,3857,2437"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="2845,1244,3043,1468"/>
+<area shape="rect" id="node25" href="structsstmac_1_1sw_1_1software__id.html" title="A wrapper for an appid, taskid pair. " alt="" coords="60,211,228,318"/>
+<area shape="rect" id="node39" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="197,379,376,500"/>
+<area shape="rect" id="node28" href="classsstmac_1_1sw_1_1lib__compute__time.html" title="{sstmac::sw::lib_compute_time\n||+ lib_compute_time()\l+ lib_compute_time()\l+ ~lib_compute_time()\l+ incoming_event()\l+ compute()\l+ supported()\l+ construct()\l+ construct()\l}" alt="" coords="311,175,513,355"/>
+<area shape="rect" id="node29" href="classlib__compute.html" title="{lib_compute\n||}" alt="" coords="364,5,460,83"/>
+<area shape="rect" id="node37" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="2477,1200,2641,1512"/>
+<area shape="rect" id="node40" href="classsstmac_1_1sw_1_1Timer.html" title="{sstmac::sw::Timer\n||+ Timer()\l+ tic()\l+ toc()\l+ reset()\l+ getTime()\l}" alt="" coords="184,2287,315,2423"/>
+<area shape="rect" id="node46" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="3491,2566,3669,2775"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -259,6 +283,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="sumi__api_8h_source.html#l00070">70</a> of file <a class="el" href="sumi__api_8h_source.html">sumi_api.h</a>.</p>
 
 <p>References <a class="el" href="namespacesprockit.html#a3eefcad72186acf5f514109f72f00624">sprockit::byte_length()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sumi__api_a58cd77423fc12286ad08a287efa89837_cgraph.png" border="0" usemap="#classsstmac_1_1sumi__api_a58cd77423fc12286ad08a287efa89837_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sumi__api_a58cd77423fc12286ad08a287efa89837_cgraph" id="classsstmac_1_1sumi__api_a58cd77423fc12286ad08a287efa89837_cgraph">
+<area shape="rect" id="node2" href="namespacesprockit.html#a3eefcad72186acf5f514109f72f00624" title="sprockit::byte_length" alt="" coords="187,13,337,39"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

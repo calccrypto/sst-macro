@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -67,15 +67,40 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::app_manager:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1app__manager.png" usemap="#sstmac::sw::app_5Fmanager_map" alt=""/>
-  <map id="sstmac::sw::app_5Fmanager_map" name="sstmac::sw::app_manager_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="118,0,345,24"/>
-<area href="classsstmac_1_1native_1_1indexing__app__manager.html" alt="sstmac::native::indexing_app_manager" shape="rect" coords="118,112,345,136"/>
-<area href="classsstmac_1_1native_1_1dumpi__app__manager.html" alt="sstmac::native::dumpi_app_manager" shape="rect" coords="0,168,227,192"/>
-<area href="classsstmac_1_1native_1_1skeleton__app__manager.html" alt="sstmac::native::skeleton_app_manager" shape="rect" coords="237,168,464,192"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1app__manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1app__manager_inherit__map" id="sstmac_1_1sw_1_1app__manager_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1native_1_1indexing__app__manager.html" title="{sstmac::native::indexing\l_app_manager\n|# allocator_\l# indexer_\l# rank_to_node_indexing_\l# node_to_rank_indexing_\l# linfo_\l# nproc_\l|+ init_factory_params()\l+ ~indexing_app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ launch_info()\l+ allocate_and_index_jobs()\l+ set_interconnect()\l# init_launch_info()\l# do_allocate_and_index_jobs()\l}" alt="" coords="125,608,349,905"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="152,5,321,97"/>
+<area shape="rect" id="node4" href="classsstmac_1_1native_1_1dumpi__app__manager.html" title="{sstmac::native::dumpi\l_app_manager\n|# metafile_\l# meta_\l|+ init_factory_params()\l+ to_string()\l&#45; do_allocate_and_index_jobs()\l}" alt="" coords="5,968,225,1104"/>
+<area shape="rect" id="node5" href="classsstmac_1_1native_1_1skeleton__app__manager.html" title="{sstmac::native::skeleton\l_app_manager\n|# procs_per_node_\l|+ init_factory_params()\l+ to_string()\l+ parse_launch_cmd()\l# parse_launch_cmd()\l# parse_aprun()\l&#45; do_allocate_and_index_jobs()\l}" alt="" coords="249,953,469,1119"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::app_manager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1app__manager_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1app__manager_coll__map" id="sstmac_1_1sw_1_1app__manager_coll__map">
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="3893,490,4063,582"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="1863,2003,2010,2285"/>
+<area shape="rect" id="node42" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="3528,1107,3735,1375"/>
+<area shape="rect" id="node46" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="3534,1657,3729,1925"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1thread.html" title="{sstmac::sw::thread\n|+ no_core_affinity\l&#45; aid_\l|+ to_string()\l+ set_api()\l+ build_api()\l+ init_os()\l+ add_api()\l+ get_api()\l+ parent_app()\l+ clear_subthread_from\l_parent_app()\l+ ~thread()\l+ get_state()\land 37 more...\l+ current()\l# thread()\l# unregister_all_libs()\l# now()\l# physical_address()\l# set_sid()\l&#45; cleanup()\l&#45; run_routine()\l}" alt="" coords="961,2348,1133,2719"/>
+<area shape="rect" id="node23" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="2663,1063,2839,1419"/>
+<area shape="rect" id="node11" href="structsstmac_1_1sw_1_1process__context.html" title="{sstmac::sw::process\l_context\n||+ process_context()\l+ operator=()\l+ operator long()\l+ operator==()\l}" alt="" coords="747,1463,897,1599"/>
+<area shape="rect" id="node28" href="classsstmac_1_1sw_1_1lib__compute__memmove.html" title="{sstmac::sw::lib_compute\l_memmove\n||+ ~lib_compute_memmove()\l+ lib_compute_memmove()\l+ lib_compute_memmove()\l+ unregister_all_libs()\l+ supported()\l+ consume_params()\l+ incoming_event()\l+ read()\l+ write()\l+ copy()\l+ static_name()\l# init()\l# do_access()\l}" alt="" coords="1825,1107,2024,1375"/>
+<area shape="rect" id="node13" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="1026,277,1237,795"/>
+<area shape="rect" id="node33" href="classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n||+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ ~library()\l+ construct_lib()\l+ construct_lib()\l+ register_builder()\l# library()\l# register_lib()\l# supported()\l# builder()\l}" alt="" coords="2220,1099,2379,1382"/>
+<area shape="rect" id="node24" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="2245,475,2423,597"/>
+<area shape="rect" id="node27" href="classsstmac_1_1sw_1_1lib__compute__loops.html" title="{sstmac::sw::lib_compute\l_loops\n||+ ~lib_compute_loops()\l+ lib_compute_loops()\l+ lib_compute_loops()\l+ compute_array_init()\l+ compute_loop()\l+ compute_loop2()\l+ compute_loop3()\l+ compute_loop4()\l+ compute_loop5()\l+ compute_loop6()\l+ compute_loop7()\l+ compute_fft()\l# supported()\l# consume_params()\l# compute_loop_work()\l}" alt="" coords="1795,1643,1966,1940"/>
+<area shape="rect" id="node31" href="structsstmac_1_1sw_1_1software__id.html" title="A wrapper for an appid, taskid pair. " alt="" coords="2859,875,3027,982"/>
+<area shape="rect" id="node44" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="3036,453,3227,619"/>
+<area shape="rect" id="node18" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="763,5,939,185"/>
+<area shape="rect" id="node32" href="classsstmac_1_1sw_1_1lib__sleep.html" title="{sstmac::sw::lib_sleep\n||+ ~lib_sleep()\l+ lib_sleep()\l+ lib_sleep()\l+ incoming_event()\l+ sleep()\l+ supported()\l}" alt="" coords="2755,1716,2905,1867"/>
+<area shape="rect" id="node29" href="classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ supported()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="1579,439,1777,633"/>
+<area shape="rect" id="node39" href="classsstmac_1_1sw_1_1lib__compute__time.html" title="{sstmac::sw::lib_compute_time\n||+ lib_compute_time()\l+ lib_compute_time()\l+ ~lib_compute_time()\l+ incoming_event()\l+ compute()\l+ supported()\l+ construct()\l+ construct()\l}" alt="" coords="1379,1701,1582,1881"/>
+<area shape="rect" id="node43" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="3251,490,3374,582"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -495,6 +520,22 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#ad737594fcdb7ff5df3e51ef0c97ad6bb">init_factory_params()</a>, <a class="el" href="app__manager_8h_source.html#l00073">interconn()</a>, <a class="el" href="app__manager_8h_source.html#l00120">rt_</a>, and <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a5a8d759153e7c1ec4dd879458f2e33a0">set_interconnect()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager_a99860d933aff94c82b18fdbf18cf4497_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1app__manager_a99860d933aff94c82b18fdbf18cf4497_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1app__manager_a99860d933aff94c82b18fdbf18cf4497_cgraph" id="classsstmac_1_1sw_1_1app__manager_a99860d933aff94c82b18fdbf18cf4497_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1app__manager.html#ad737594fcdb7ff5df3e51ef0c97ad6bb" title="sstmac::sw::app_manager\l::init_factory_params" alt="" coords="236,39,419,80"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1app__manager.html#a592c87eae842d4082ba75dafc149f560" title="sstmac::sw::app_manager\l::interconn" alt="" coords="236,104,419,145"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1app__manager.html#a5a8d759153e7c1ec4dd879458f2e33a0" title="sstmac::sw::app_manager\l::set_interconnect" alt="" coords="236,169,419,211"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1app__manager.html#ad80f9e214f89ff9d3a57bda72c95735d" title="sstmac::sw::app_manager\l::node_at" alt="" coords="467,5,650,47"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1app__manager.html#a00c584133f5d448e25e36bf908fc5fef" title="sstmac::sw::app_manager\l::allocate_and_index_jobs" alt="" coords="467,71,651,112"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1app__manager.html#a1155e0bfd5cfbc889217388ae61c8a17" title="sstmac::sw::app_manager\l::launch_info" alt="" coords="467,136,650,177"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1app__manager.html#a17101ea4732019c7b71cecf31e38b7d4" title="sstmac::sw::app_manager\l::add_hostname" alt="" coords="467,201,650,243"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a592c87eae842d4082ba75dafc149f560"></a>
@@ -523,6 +564,19 @@ Static Private Attributes</h2></td></tr>
 <p>References <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a17101ea4732019c7b71cecf31e38b7d4">add_hostname()</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a00c584133f5d448e25e36bf908fc5fef">allocate_and_index_jobs()</a>, <a class="el" href="app__manager_8h_source.html#l00124">interconn_</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a1155e0bfd5cfbc889217388ae61c8a17">launch_info()</a>, and <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#ad80f9e214f89ff9d3a57bda72c95735d">node_at()</a>.</p>
 
 <p>Referenced by <a class="el" href="app__manager_8h_source.html#l00057">init_param2()</a>, and <a class="el" href="indexing__app__manager_8h_source.html#l00039">sstmac::native::indexing_app_manager::launch_info()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager_a592c87eae842d4082ba75dafc149f560_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1app__manager_a592c87eae842d4082ba75dafc149f560_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1app__manager_a592c87eae842d4082ba75dafc149f560_cgraph" id="classsstmac_1_1sw_1_1app__manager_a592c87eae842d4082ba75dafc149f560_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1app__manager.html#a17101ea4732019c7b71cecf31e38b7d4" title="sstmac::sw::app_manager\l::add_hostname" alt="" coords="237,5,419,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1app__manager.html#a00c584133f5d448e25e36bf908fc5fef" title="sstmac::sw::app_manager\l::allocate_and_index_jobs" alt="" coords="236,71,420,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1app__manager.html#a1155e0bfd5cfbc889217388ae61c8a17" title="sstmac::sw::app_manager\l::launch_info" alt="" coords="237,136,419,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1app__manager.html#ad80f9e214f89ff9d3a57bda72c95735d" title="sstmac::sw::app_manager\l::node_at" alt="" coords="237,201,419,243"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -748,6 +802,16 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="app__manager_8h_source.html#l00134">nodeids_</a>, and <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a2ec3d502cc7de9e062151905a248f854">static_app_manager()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager_a6d86d8fc922e93efb2f3c3b90c9232a4_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1app__manager_a6d86d8fc922e93efb2f3c3b90c9232a4_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1app__manager_a6d86d8fc922e93efb2f3c3b90c9232a4_cgraph" id="classsstmac_1_1sw_1_1app__manager_a6d86d8fc922e93efb2f3c3b90c9232a4_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1app__manager.html#a2ec3d502cc7de9e062151905a248f854" title="sstmac::sw::app_manager\l::static_app_manager" alt="" coords="236,5,419,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a857d63be9882501667949b55beb9788c"></a>
@@ -785,6 +849,19 @@ Static Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="app__manager_8h_source.html#l00090">90</a> of file <a class="el" href="app__manager_8h_source.html">app_manager.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a96330dcd9f7c013e420f41e151ab8925">getenv()</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#aa9573f9392c4dc9cdffb6620731396fa">hostname()</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a2f8ad3a96cea0fffeed2576f41640e4d">node_address()</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#ac2f7558f5e988ddda628b9a0035a4604">node_for_task()</a>, and <a class="el" href="app__manager_8h_source.html#l00140">shell_env_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1app__manager_a857d63be9882501667949b55beb9788c_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1app__manager_a857d63be9882501667949b55beb9788c_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1app__manager_a857d63be9882501667949b55beb9788c_cgraph" id="classsstmac_1_1sw_1_1app__manager_a857d63be9882501667949b55beb9788c_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1app__manager.html#a96330dcd9f7c013e420f41e151ab8925" title="sstmac::sw::app_manager\l::getenv" alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1app__manager.html#aa9573f9392c4dc9cdffb6620731396fa" title="sstmac::sw::app_manager\l::hostname" alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1app__manager.html#a2f8ad3a96cea0fffeed2576f41640e4d" title="sstmac::sw::app_manager\l::node_address" alt="" coords="236,136,419,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1app__manager.html#ac2f7558f5e988ddda628b9a0035a4604" title="sstmac::sw::app_manager\l::node_for_task" alt="" coords="236,201,419,243"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -66,19 +66,46 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::simple_node:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1simple__node.png" usemap="#sstmac::hw::simple_5Fnode_map" alt=""/>
-  <map id="sstmac::hw::simple_5Fnode_map" name="sstmac::hw::simple_node_map">
-<area href="classsstmac_1_1hw_1_1node.html" alt="sstmac::hw::node" shape="rect" coords="225,168,440,192"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,112,215,136"/>
-<area href="classsstmac_1_1hw_1_1failable.html" alt="sstmac::hw::failable" shape="rect" coords="225,112,440,136"/>
-<area href="classsstmac_1_1hw_1_1connectable__component.html" alt="sstmac::hw::connectable_component" shape="rect" coords="450,112,665,136"/>
-<area href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="sstmac::event_scheduler" shape="rect" coords="337,56,552,80"/>
-<area href="classsstmac_1_1hw_1_1connectable.html" alt="sstmac::hw::connectable" shape="rect" coords="562,56,777,80"/>
-<area href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="sstmac::event_handler" shape="rect" coords="337,0,552,24"/>
-<area href="classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="sstmac::hw::null_node" shape="rect" coords="225,280,440,304"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__node__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1simple__node_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1simple__node_inherit__map" id="sstmac_1_1hw_1_1simple__node_inherit__map">
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1null__node.html" title="A null node. " alt="" coords="184,1512,353,1619"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n|# env_\l# os_\l# my_addr_\l# mem_model_\l# proc_\l# nic_\l# ncores_\l# nsocket_\l&#45; launchers_\l&#45; next_outgoing_id_\l|+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="183,807,354,1221"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,659,175,751"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n|# failed_\l|+ failed()\l+ fail()\l# failable()\l}" alt="" coords="199,652,339,759"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="363,659,535,751"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="259,321,439,604"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="267,5,430,273"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="463,409,635,516"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::simple_node:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1simple__node__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1simple__node_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1simple__node_coll__map" id="sstmac_1_1hw_1_1simple__node_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="2160,1343,2330,1625"/>
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="338,1879,507,2073"/>
+<area shape="rect" id="node27" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="3762,1717,3973,2235"/>
+<area shape="rect" id="node48" href="classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="2032,1769,2202,2183"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="379,5,548,97"/>
+<area shape="rect" id="node14" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="1311,744,1494,997"/>
+<area shape="rect" id="node18" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="2150,219,2297,501"/>
+<area shape="rect" id="node23" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1552,226,1759,494"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n||+ failed()\l+ fail()\l# failable()\l}" alt="" coords="2102,817,2242,924"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="2574,825,2746,917"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="3175,226,3355,494"/>
+<area shape="rect" id="node28" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="3330,759,3528,983"/>
+<area shape="rect" id="node47" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="2964,525,3118,720"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n||+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="2574,307,2746,413"/>
+<area shape="rect" id="node49" href="classsstmac_1_1hw_1_1connectable__subcomponent.html" title="{sstmac::hw::connectable\l_subcomponent\n||}" alt="" coords="2450,1438,2622,1530"/>
+<area shape="rect" id="node44" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="3768,2327,3967,2419"/>
+<area shape="rect" id="node50" href="classsstmac_1_1stat__spyplot.html" title="this stat_collector class keeps a spy plot " alt="" coords="663,1021,827,1304"/>
+<area shape="rect" id="node38" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="4658,1328,4822,1640"/>
+<area shape="rect" id="node40" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="5026,1357,5195,1611"/>
+<area shape="rect" id="node41" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="5220,1394,5396,1574"/>
+<area shape="rect" id="node43" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="2698,1365,2872,1603"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

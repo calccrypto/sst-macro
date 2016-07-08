@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -65,17 +65,47 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::packet_flow_netlink:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1packet__flow__netlink.png" usemap="#sstmac::hw::packet_5Fflow_5Fnetlink_map" alt=""/>
-  <map id="sstmac::hw::packet_5Fflow_5Fnetlink_map" name="sstmac::hw::packet_flow_netlink_map">
-<area href="classsstmac_1_1hw_1_1netlink.html" alt="sstmac::hw::netlink" shape="rect" coords="198,112,386,136"/>
-<area href="classpacket__flow__component.html" alt="packet_flow_component" shape="rect" coords="396,112,584,136"/>
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,56,188,80"/>
-<area href="classsstmac_1_1hw_1_1connectable.html" alt="sstmac::hw::connectable" shape="rect" coords="198,56,386,80"/>
-<area href="classsstmac_1_1event__subscheduler.html" alt="sstmac::event_subscheduler" shape="rect" coords="396,56,584,80"/>
-<area href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="sstmac::event_handler" shape="rect" coords="396,0,584,24"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__netlink__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__netlink_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1packet__flow__netlink_inherit__map" id="sstmac_1_1hw_1_1packet__flow__netlink_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1netlink.html" title="{sstmac::hw::netlink\n|# num_eject_\l# num_inject_\l# id_\l|+ init_factory_params()\l+ node_port()\l+ switch_port()\l+ init_param1()\l}" alt="" coords="200,593,369,744"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,387,175,479"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="199,380,371,487"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n|# parent_\l|+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="395,321,593,545"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="413,5,575,273"/>
+<area shape="rect" id="node7" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="393,630,568,707"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::packet_flow_netlink:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__netlink__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__netlink_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1packet__flow__netlink_coll__map" id="sstmac_1_1hw_1_1packet__flow__netlink_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1netlink.html" title="{sstmac::hw::netlink\n||+ init_factory_params()\l+ node_port()\l+ switch_port()\l+ init_param1()\l}" alt="" coords="735,2165,905,2287"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1181,197,1350,289"/>
+<area shape="rect" id="node11" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="922,1129,1145,1412"/>
+<area shape="rect" id="node17" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="495,681,702,949"/>
+<area shape="rect" id="node21" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="529,1137,724,1405"/>
+<area shape="rect" id="node31" href="classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="2195,1137,2365,1405"/>
+<area shape="rect" id="node37" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html" title="{sstmac::hw::packet\l_flow_bandwidth_arbitrator\n||+ arbitrate()\l+ to_string()\l+ ~packet_flow_bandwidth\l_arbitrator()\l+ set_outgoing_bw()\l+ outgoing_bw()\l+ init_noise_model()\l+ partition()\l+ clone()\l+ bytes_sending()\l+ credit_delay()\l# packet_flow_bandwidth\l_arbitrator()\l}" alt="" coords="2819,681,3011,949"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n||+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="26,406,198,513"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="1244,1159,1407,1383"/>
+<area shape="rect" id="node19" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="657,160,847,325"/>
+<area shape="rect" id="node27" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html" title="{sstmac::hw::packet\l_flow_NtoM_queue\n||+ ~packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ thread_id()\l+ do_handle_payload()\l+ set_input()\l+ set_output()\l+ handle_credit()\l+ start_message()\l+ init_credits()\land 11 more...\l# handle_routed_payload()\l# send_payload()\l# build_blocked_messages()\l&#45; credit()\l&#45; resize()\l&#45; queue()\l&#45; input_name()\l&#45; output_name()\l&#45; output_handler()\l}" alt="" coords="2299,2812,2515,3183"/>
+<area shape="rect" id="node30" href="classsstmac_1_1stat__spyplot.html" title="this stat_collector class keeps a spy plot " alt="" coords="2249,1482,2413,1765"/>
+<area shape="rect" id="node44" href="classsstmac_1_1stat__global__int.html" title="{sstmac::stat_global_int\n||+ stat_global_int()\l+ collect()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ clear()\l+ reduce()\l+ init_factory_params()\l+ clone_me()\l+ clone()\l+ set_label()\l# dump()\l# clone_into()\l}" alt="" coords="2441,1489,2610,1757"/>
+<area shape="rect" id="node49" href="classsstmac_1_1hw_1_1stat__bytes__sent_1_1aggregation.html" title="{sstmac::hw::stat_bytes\l_sent::aggregation\n||+ aggregation()\l+ append()\l+ num_counts()\l+ num_entries()\l+ ser_size()\l+ max_sid()\l+ entries()\l}" alt="" coords="1960,1181,2120,1361"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="1032,1849,1229,2073"/>
+<area shape="rect" id="node29" href="classsstmac_1_1hw_1_1packet__flow__handler.html" title="{sstmac::hw::packet\l_flow_handler\n||+ packet_flow_handler()\l+ to_string()\l+ ~packet_flow_handler()\l+ handle()\l+ handle_credit()\l+ handle_payload()\l+ thread_id()\l}" alt="" coords="1291,2136,1475,2316"/>
+<area shape="rect" id="node10" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="962,1489,1142,1757"/>
+<area shape="rect" id="node28" href="classsstmac_1_1hw_1_1packet__flow__sender.html" title="{sstmac::hw::packet\l_flow_sender\n||+ ~packet_flow_sender()\l+ set_acker()\l+ set_input()\l+ set_output()\l+ init_credits()\l+ num_initial_credits()\l+ handle_payload()\l+ set_event_location()\l+ set_event_location()\l+ set_congestion_spyplot()\l+ accumulate_delay()\l+ set_accumulate_delay()\l+ to_string()\l+ packet_flow_name()\l+ set_update_vc()\l# packet_flow_sender()\l# packet_flow_sender()\l# send_credit()\l# send()\l# do_handle_payload()\l}" alt="" coords="2209,2379,2404,2749"/>
+<area shape="rect" id="node8" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="1547,711,1725,920"/>
+<area shape="rect" id="node13" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="1983,593,2145,1037"/>
+<area shape="rect" id="node18" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="872,197,995,289"/>
+<area shape="rect" id="node25" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="1802,3289,1977,3367"/>
+<area shape="rect" id="node26" href="classsstmac_1_1hw_1_1packet__flow__crossbar.html" title="{sstmac::hw::packet\l_flow_crossbar\n||+ packet_flow_crossbar()\l+ packet_flow_crossbar()\l+ do_handle_payload()\l+ set_bytes_sent_collector()\l+ set_byte_hops_collector()\l+ packet_flow_name()\l}" alt="" coords="1577,3245,1778,3411"/>
+<area shape="rect" id="node45" href="classsstmac_1_1hw_1_1stat__bytes__sent.html" title="{sstmac::hw::stat_bytes_sent\n|&#45; FRIEND_SERIALIZATION\l|+ stat_bytes_sent()\l+ record()\l+ set_topology()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ reduce()\l+ clone()\l+ clear()\l# clone_into()\l&#45; global_reduce_non_root()\l&#45; collect_buffer_at_root()\l&#45; output_switch()\l&#45; collect_counts_at_root()\l&#45; global_reduce_root()\l}" alt="" coords="1625,1475,1820,1772"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -332,6 +362,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="namespacesstmac.html#a7f9d64758abf24ae691844fee382ae7e">sstmac::init()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__netlink_a8a414638edf5cf3bf53c416312523d3e_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__netlink_a8a414638edf5cf3bf53c416312523d3e_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1packet__flow__netlink_a8a414638edf5cf3bf53c416312523d3e_cgraph" id="classsstmac_1_1hw_1_1packet__flow__netlink_a8a414638edf5cf3bf53c416312523d3e_cgraph">
+<area shape="rect" id="node2" href="namespacesstmac.html#a7f9d64758abf24ae691844fee382ae7e" title="sstmac::init" alt="" coords="207,13,297,39"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a59d3fd8bee69edc175e75a04371b4c11"></a>
@@ -459,6 +499,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="namespacesstmac.html#a7f9d64758abf24ae691844fee382ae7e">sstmac::init()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__netlink_a987f9e1b30c92813ee7e2b6e21527571_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__netlink_a987f9e1b30c92813ee7e2b6e21527571_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1packet__flow__netlink_a987f9e1b30c92813ee7e2b6e21527571_cgraph" id="classsstmac_1_1hw_1_1packet__flow__netlink_a987f9e1b30c92813ee7e2b6e21527571_cgraph">
+<area shape="rect" id="node2" href="namespacesstmac.html#a7f9d64758abf24ae691844fee382ae7e" title="sstmac::init" alt="" coords="209,13,300,39"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abf369e458b0c5733b5e892b4377e9d6d"></a>
@@ -521,6 +571,19 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="packet__flow__nic_8h_source.html#l00096">96</a> of file <a class="el" href="packet__flow__nic_8h_source.html">packet_flow_nic.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1packet__flow__nic.html#ac5607e833db87528a24a130beed87cfb">sstmac::hw::packet_flow_nic::connect()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__nic.html#a8e48997f2e610e1f337065a7ce07adf0">sstmac::hw::packet_flow_nic::handle()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__nic.html#ac4bdb5428557a0988a9fc7f390e7dd36">sstmac::hw::packet_flow_nic::init_factory_params()</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__nic.html#a1295b19493d2f769cecad4c384b4c155">sstmac::hw::packet_flow_nic::set_event_parent()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__netlink_af18ce2292b9c121ef79f54465d53d89b_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__netlink_af18ce2292b9c121ef79f54465d53d89b_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1packet__flow__netlink_af18ce2292b9c121ef79f54465d53d89b_cgraph" id="classsstmac_1_1hw_1_1packet__flow__netlink_af18ce2292b9c121ef79f54465d53d89b_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__nic.html#ac5607e833db87528a24a130beed87cfb" title="sstmac::hw::packet\l_flow_nic::connect" alt="" coords="227,5,366,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packet__flow__nic.html#a8e48997f2e610e1f337065a7ce07adf0" title="sstmac::hw::packet\l_flow_nic::handle" alt="" coords="227,71,366,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__nic.html#ac4bdb5428557a0988a9fc7f390e7dd36" title="Initialize all member variables from the parameters object. " alt="" coords="219,137,375,193"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__nic.html#a1295b19493d2f769cecad4c384b4c155" title="Set the eventmanager for this scheduler. " alt="" coords="222,217,371,273"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

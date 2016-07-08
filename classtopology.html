@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -53,28 +53,34 @@
 <div class="dynheader">
 Inheritance diagram for topology:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classtopology.png" usemap="#topology_map" alt=""/>
-  <map id="topology_map" name="topology_map">
-<area href="classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well-defined structure..." alt="sstmac::hw::structured_topology" shape="rect" coords="1150,56,1340,80"/>
-<area href="classsstmac_1_1hw_1_1abstract__butterfly.html" alt="sstmac::hw::abstract_butterfly" shape="rect" coords="100,112,290,136"/>
-<area href="classsstmac_1_1hw_1_1abstract__fat__tree.html" alt="sstmac::hw::abstract_fat_tree" shape="rect" coords="500,112,690,136"/>
-<area href="classsstmac_1_1hw_1_1cartesian__topology.html" alt="sstmac::hw::cartesian_topology" shape="rect" coords="950,112,1140,136"/>
-<area href="classsstmac_1_1hw_1_1crossbar.html" title="The crossbar network generates a network which connects all nodes with only two hops: those to and fr..." alt="sstmac::hw::crossbar" shape="rect" coords="1150,112,1340,136"/>
-<area href="classsstmac_1_1hw_1_1fake__topology.html" alt="sstmac::hw::fake_topology" shape="rect" coords="1350,112,1540,136"/>
-<area href="classsstmac_1_1hw_1_1simple__topology.html" alt="sstmac::hw::simple_topology" shape="rect" coords="1550,112,1740,136"/>
-<area href="classsstmac_1_1hw_1_1xpress__ring.html" alt="sstmac::hw::xpress_ring" shape="rect" coords="1750,112,1940,136"/>
-<area href="classsstmac_1_1hw_1_1butterfly.html" alt="sstmac::hw::butterfly" shape="rect" coords="0,168,190,192"/>
-<area href="classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="sstmac::hw::flattened_butterfly" shape="rect" coords="200,168,390,192"/>
-<area href="classsstmac_1_1hw_1_1fat__tree.html" title="The fat tree network generates a k-ary fat tree with l tiers. " alt="sstmac::hw::fat_tree" shape="rect" coords="400,168,590,192"/>
-<area href="classsstmac_1_1hw_1_1simple__fat__tree.html" alt="sstmac::hw::simple_fat_tree" shape="rect" coords="600,168,790,192"/>
-<area href="classsstmac_1_1hw_1_1dragonfly.html" alt="sstmac::hw::dragonfly" shape="rect" coords="800,168,990,192"/>
-<area href="classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="sstmac::hw::hdtorus" shape="rect" coords="1100,168,1290,192"/>
-<area href="classsstmac_1_1hw_1_1tiled__dragonfly.html" alt="sstmac::hw::tiled_dragonfly" shape="rect" coords="800,224,990,248"/>
-<area href="classsstmac_1_1hw_1_1hypercube.html" alt="sstmac::hw::hypercube" shape="rect" coords="1000,224,1190,248"/>
-<area href="classsstmac_1_1hw_1_1tiled__torus.html" alt="sstmac::hw::tiled_torus" shape="rect" coords="1200,224,1390,248"/>
+<div class="center"><img src="classtopology__inherit__graph.png" border="0" usemap="#topology_inherit__map" alt="Inheritance graph"/></div>
+<map name="topology_inherit__map" id="topology_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="1119,131,1345,560"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1abstract__butterfly.html" title="{sstmac::hw::abstract\l_butterfly\n|# kary_\l# nfly_\l# nswitches_per_col_\l|+ ~abstract_butterfly()\l+ init_factory_params()\l+ num_stages()\l+ kary()\l+ nfly()\l+ num_switches_per_col()\l+ num_leaf_switches()\l+ diameter()\l+ productive_path()\l+ configure_vc_routing()\l# compute_switch_coords()\l# switch_number()\l}" alt="" coords="236,630,431,913"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1abstract__fat__tree.html" title="{sstmac::hw::abstract\l_fat_tree\n|# l_\l# k_\l# numleafswitches_\l# toplevel_\l|+ name()\l+ l()\l+ k()\l+ init_factory_params()\l+ ndimensions()\l+ diameter()\l+ num_leaf_switches()\l+ nodes_connected_to\l_injection_switch()\l+ nodes_connected_to\l_ejection_switch()\l+ pow()\l# nodes_connected_to\l_switch()\l}" alt="" coords="702,608,871,935"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n|# red_\l|+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="903,696,1110,847"/>
+<area shape="rect" id="node15" href="classsstmac_1_1hw_1_1crossbar.html" title="The crossbar network generates a network which connects all nodes with only two hops: those to and fr..." alt="" coords="1135,652,1329,891"/>
+<area shape="rect" id="node16" href="classsstmac_1_1hw_1_1fake__topology.html" title="{sstmac::hw::fake_topology\n||+ to_string()\l+ ~fake_topology()\l+ switch_number()\l+ productive_path()\l+ num_hops()\l+ connect_objects()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ radix()\l+ ndimensions()\land 8 more...\l# compute_switch_coords()\l}" alt="" coords="1353,652,1556,891"/>
+<area shape="rect" id="node17" href="classsstmac_1_1hw_1_1simple__topology.html" title="{sstmac::hw::simple\l_topology\n|# num_switches_\l# num_nodes_\l# num_switches_with_extra\l_node_\l# actual_topology_\l|+ to_string()\l+ ~simple_topology()\l+ init_factory_params()\l+ finalize_init()\l+ num_leaf_switches()\l+ num_switches()\l+ num_endpoints()\l+ num_nodes()\l+ compute_switch_coords()\l+ convert_to_port()\land 14 more...\l}" alt="" coords="1581,623,1777,920"/>
+<area shape="rect" id="node18" href="classsstmac_1_1hw_1_1xpress__ring.html" title="{sstmac::hw::xpress_ring\n|# ring_size_\l# jump_size_\l|+ ~xpress_ring()\l+ to_string()\l+ init_factory_params()\l+ connect_objects()\l+ num_leaf_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ ndimensions()\l+ switch_number()\l+ productive_path()\l+ radix()\l+ num_switches()\l+ diameter()\l+ convert_to_port()\l# compute_switch_coords()\l# num_hops()\l}" alt="" coords="1801,615,2004,927"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1butterfly.html" title="{sstmac::hw::butterfly\n|# last_col_index_start_\l|+ to_string()\l+ init_factory_params()\l+ ~butterfly()\l+ last_col_index_start()\l+ num_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ switch_number()\l+ connect_objects()\l+ endpoint_to_ejection\l_switch()\land 6 more...\l# compute_switch_coords()\l}" alt="" coords="5,1071,208,1324"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="" coords="232,1071,435,1324"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1fat__tree.html" title="The fat tree network generates a k&#45;ary fat tree with l tiers. " alt="" coords="459,1034,661,1361"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1simple__fat__tree.html" title="{sstmac::hw::simple\l_fat_tree\n|# level_offsets_\l# num_switches_\l# tapering_\l|+ to_string()\l+ ~simple_fat_tree()\l+ init_factory_params()\l+ connect_objects()\l+ default_router()\l+ num_switches()\l+ convert_to_port()\l+ partition()\l+ minimal_route_to_coords()\l+ switch_number()\land 7 more...\l&#45; num_hops()\l&#45; num_hops_to_node()\l}" alt="" coords="685,1049,888,1346"/>
+<area shape="rect" id="node10" href="classsstmac_1_1hw_1_1dragonfly.html" title="{sstmac::hw::dragonfly\n|# x_\l# y_\l# g_\l# group_con_\l# true_random_intermediate_\l|+ to_string()\l+ dim_for_port()\l+ ~dragonfly()\l+ init_factory_params()\l+ init_common_params()\l+ ndimensions()\l+ numX()\l+ numY()\l+ numG()\l+ group_con()\land 20 more...\l# minimal_route_to_group()\l# find_path_to_group()\l# minimal_route_to_X()\l# minimal_route_to_Y()\l# compute_switch_coords()\l# find_y_path_to_group()\l# find_x_path_to_group()\l# xy_connected_to_group()\l# xyg_dir_to_group()\l# set_string()\l}" alt="" coords="912,983,1120,1412"/>
+<area shape="rect" id="node12" href="classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="" coords="1147,1027,1363,1368"/>
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1tiled__dragonfly.html" title="{sstmac::hw::tiled_dragonfly\n|&#45; intragrp_conns_\l&#45; intergrp_conns_\l&#45; intragrp_conn_map_\l&#45; intergrp_conn_map_\l&#45; intragroup_file_\l&#45; intergroup_file_\l&#45; tiles_x_\l&#45; tiles_y_\l&#45; tiles_inj_\l&#45; injection_ports_\l&#45; port_to_geomid_\l&#45; switch_to_connected\l_groups_\l&#45; n_tiles_\l|+ to_string()\l+ ~tiled_dragonfly()\l+ init_factory_params()\l+ connect_objects()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l+ minimal_routes_to_coords()\l+ xy_connected_to_group()\l+ endpoint_to_injection\l_switch()\l+ endpoint_to_ejection\l_switch()\l+ eject_paths_on_switch()\l+ minimal_route_to_coords()\l+ port()\l+ convert_to_port()\l+ default_router()\l&#45; xy_to_int()\l&#45; read_intragroup_connections()\l&#45; read_intergroup_connections()\l&#45; make_intragroup_connections()\l&#45; make_intergroup_connections()\l&#45; make_geomid()\l&#45; check_switch_x()\l&#45; check_switch_y()\l&#45; check_switch_g()\l&#45; check_port_x()\l&#45; check_port_y()\l&#45; check_switch_xyg()\l&#45; check_port_xy()\l}" alt="" coords="898,1460,1129,2168"/>
+<area shape="rect" id="node13" href="classsstmac_1_1hw_1_1hypercube.html" title="{sstmac::hw::hypercube\n|# radix_\l# ndim_\l# dim_to_outport_\l|+ to_string()\l+ ~hypercube()\l+ init_factory_params()\l+ productive_path()\l+ name()\l+ minimal_route_to_coords()\l+ connect_objects()\l+ convert_to_port()\l+ minimal_distance()\l}" alt="" coords="1153,1702,1356,1926"/>
+<area shape="rect" id="node14" href="classsstmac_1_1hw_1_1tiled__torus.html" title="{sstmac::hw::tiled_torus\n|&#45; ntiles_row_\l&#45; ntiles_col_\l&#45; tile_offsets_\l&#45; rotater_\l|+ init_factory_params()\l+ minimal_routes_to_coords()\l+ default_router()\l+ endpoint_to_injection\l_switch()\l+ endpoint_to_ejection\l_switch()\l+ eject_paths_on_switch()\l# connect_dim()\l&#45; port()\l}" alt="" coords="1380,1687,1591,1941"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for topology:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtopology__coll__graph.png" border="0" usemap="#topology_coll__map" alt="Collaboration graph"/></div>
+<map name="topology_coll__map" id="topology_coll__map">
+</map>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>sstmac/hardware/topology/<a class="el" href="structured__topology_8h_source.html">structured_topology.h</a></li>
 </ul>

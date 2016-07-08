@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -67,28 +67,35 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::structured_topology:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1structured__topology.png" usemap="#sstmac::hw::structured_5Ftopology_map" alt=""/>
-  <map id="sstmac::hw::structured_5Ftopology_map" name="sstmac::hw::structured_topology_map">
-<area href="classtopology.html" alt="topology" shape="rect" coords="1150,0,1340,24"/>
-<area href="classsstmac_1_1hw_1_1abstract__butterfly.html" alt="sstmac::hw::abstract_butterfly" shape="rect" coords="100,112,290,136"/>
-<area href="classsstmac_1_1hw_1_1abstract__fat__tree.html" alt="sstmac::hw::abstract_fat_tree" shape="rect" coords="500,112,690,136"/>
-<area href="classsstmac_1_1hw_1_1cartesian__topology.html" alt="sstmac::hw::cartesian_topology" shape="rect" coords="950,112,1140,136"/>
-<area href="classsstmac_1_1hw_1_1crossbar.html" title="The crossbar network generates a network which connects all nodes with only two hops: those to and fr..." alt="sstmac::hw::crossbar" shape="rect" coords="1150,112,1340,136"/>
-<area href="classsstmac_1_1hw_1_1fake__topology.html" alt="sstmac::hw::fake_topology" shape="rect" coords="1350,112,1540,136"/>
-<area href="classsstmac_1_1hw_1_1simple__topology.html" alt="sstmac::hw::simple_topology" shape="rect" coords="1550,112,1740,136"/>
-<area href="classsstmac_1_1hw_1_1xpress__ring.html" alt="sstmac::hw::xpress_ring" shape="rect" coords="1750,112,1940,136"/>
-<area href="classsstmac_1_1hw_1_1butterfly.html" alt="sstmac::hw::butterfly" shape="rect" coords="0,168,190,192"/>
-<area href="classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="sstmac::hw::flattened_butterfly" shape="rect" coords="200,168,390,192"/>
-<area href="classsstmac_1_1hw_1_1fat__tree.html" title="The fat tree network generates a k-ary fat tree with l tiers. " alt="sstmac::hw::fat_tree" shape="rect" coords="400,168,590,192"/>
-<area href="classsstmac_1_1hw_1_1simple__fat__tree.html" alt="sstmac::hw::simple_fat_tree" shape="rect" coords="600,168,790,192"/>
-<area href="classsstmac_1_1hw_1_1dragonfly.html" alt="sstmac::hw::dragonfly" shape="rect" coords="800,168,990,192"/>
-<area href="classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="sstmac::hw::hdtorus" shape="rect" coords="1100,168,1290,192"/>
-<area href="classsstmac_1_1hw_1_1tiled__dragonfly.html" alt="sstmac::hw::tiled_dragonfly" shape="rect" coords="800,224,990,248"/>
-<area href="classsstmac_1_1hw_1_1hypercube.html" alt="sstmac::hw::hypercube" shape="rect" coords="1000,224,1190,248"/>
-<area href="classsstmac_1_1hw_1_1tiled__torus.html" alt="sstmac::hw::tiled_torus" shape="rect" coords="1200,224,1390,248"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1structured__topology_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1structured__topology_inherit__map" id="sstmac_1_1hw_1_1structured__topology_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1abstract__butterfly.html" title="{sstmac::hw::abstract\l_butterfly\n|# kary_\l# nfly_\l# nswitches_per_col_\l|+ ~abstract_butterfly()\l+ init_factory_params()\l+ num_stages()\l+ kary()\l+ nfly()\l+ num_switches_per_col()\l+ num_leaf_switches()\l+ diameter()\l+ productive_path()\l+ configure_vc_routing()\l# compute_switch_coords()\l# switch_number()\l}" alt="" coords="236,630,431,913"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1abstract__fat__tree.html" title="{sstmac::hw::abstract\l_fat_tree\n|# l_\l# k_\l# numleafswitches_\l# toplevel_\l|+ name()\l+ l()\l+ k()\l+ init_factory_params()\l+ ndimensions()\l+ diameter()\l+ num_leaf_switches()\l+ nodes_connected_to\l_injection_switch()\l+ nodes_connected_to\l_ejection_switch()\l+ pow()\l# nodes_connected_to\l_switch()\l}" alt="" coords="702,608,871,935"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1cartesian__topology.html" title="{sstmac::hw::cartesian\l_topology\n|# red_\l|+ red()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l# init_factory_params()\l}" alt="" coords="903,696,1110,847"/>
+<area shape="rect" id="node15" href="classsstmac_1_1hw_1_1crossbar.html" title="The crossbar network generates a network which connects all nodes with only two hops: those to and fr..." alt="" coords="1135,652,1329,891"/>
+<area shape="rect" id="node16" href="classsstmac_1_1hw_1_1fake__topology.html" title="{sstmac::hw::fake_topology\n||+ to_string()\l+ ~fake_topology()\l+ switch_number()\l+ productive_path()\l+ num_hops()\l+ connect_objects()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ radix()\l+ ndimensions()\land 8 more...\l# compute_switch_coords()\l}" alt="" coords="1353,652,1556,891"/>
+<area shape="rect" id="node17" href="classsstmac_1_1hw_1_1simple__topology.html" title="{sstmac::hw::simple\l_topology\n|# num_switches_\l# num_nodes_\l# num_switches_with_extra\l_node_\l# actual_topology_\l|+ to_string()\l+ ~simple_topology()\l+ init_factory_params()\l+ finalize_init()\l+ num_leaf_switches()\l+ num_switches()\l+ num_endpoints()\l+ num_nodes()\l+ compute_switch_coords()\l+ convert_to_port()\land 14 more...\l}" alt="" coords="1581,623,1777,920"/>
+<area shape="rect" id="node18" href="classsstmac_1_1hw_1_1xpress__ring.html" title="{sstmac::hw::xpress_ring\n|# ring_size_\l# jump_size_\l|+ ~xpress_ring()\l+ to_string()\l+ init_factory_params()\l+ connect_objects()\l+ num_leaf_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ ndimensions()\l+ switch_number()\l+ productive_path()\l+ radix()\l+ num_switches()\l+ diameter()\l+ convert_to_port()\l# compute_switch_coords()\l# num_hops()\l}" alt="" coords="1801,615,2004,927"/>
+<area shape="rect" id="node2" href="classtopology.html" title="{topology\n||}" alt="" coords="1194,5,1270,83"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1butterfly.html" title="{sstmac::hw::butterfly\n|# last_col_index_start_\l|+ to_string()\l+ init_factory_params()\l+ ~butterfly()\l+ last_col_index_start()\l+ num_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ switch_number()\l+ connect_objects()\l+ endpoint_to_ejection\l_switch()\land 6 more...\l# compute_switch_coords()\l}" alt="" coords="5,1071,208,1324"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="" coords="232,1071,435,1324"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1fat__tree.html" title="The fat tree network generates a k&#45;ary fat tree with l tiers. " alt="" coords="459,1034,661,1361"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1simple__fat__tree.html" title="{sstmac::hw::simple\l_fat_tree\n|# level_offsets_\l# num_switches_\l# tapering_\l|+ to_string()\l+ ~simple_fat_tree()\l+ init_factory_params()\l+ connect_objects()\l+ default_router()\l+ num_switches()\l+ convert_to_port()\l+ partition()\l+ minimal_route_to_coords()\l+ switch_number()\land 7 more...\l&#45; num_hops()\l&#45; num_hops_to_node()\l}" alt="" coords="685,1049,888,1346"/>
+<area shape="rect" id="node10" href="classsstmac_1_1hw_1_1dragonfly.html" title="{sstmac::hw::dragonfly\n|# x_\l# y_\l# g_\l# group_con_\l# true_random_intermediate_\l|+ to_string()\l+ dim_for_port()\l+ ~dragonfly()\l+ init_factory_params()\l+ init_common_params()\l+ ndimensions()\l+ numX()\l+ numY()\l+ numG()\l+ group_con()\land 20 more...\l# minimal_route_to_group()\l# find_path_to_group()\l# minimal_route_to_X()\l# minimal_route_to_Y()\l# compute_switch_coords()\l# find_y_path_to_group()\l# find_x_path_to_group()\l# xy_connected_to_group()\l# xyg_dir_to_group()\l# set_string()\l}" alt="" coords="912,983,1120,1412"/>
+<area shape="rect" id="node12" href="classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="" coords="1147,1027,1363,1368"/>
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1tiled__dragonfly.html" title="{sstmac::hw::tiled_dragonfly\n|&#45; intragrp_conns_\l&#45; intergrp_conns_\l&#45; intragrp_conn_map_\l&#45; intergrp_conn_map_\l&#45; intragroup_file_\l&#45; intergroup_file_\l&#45; tiles_x_\l&#45; tiles_y_\l&#45; tiles_inj_\l&#45; injection_ports_\l&#45; port_to_geomid_\l&#45; switch_to_connected\l_groups_\l&#45; n_tiles_\l|+ to_string()\l+ ~tiled_dragonfly()\l+ init_factory_params()\l+ connect_objects()\l+ configure_geometric\l_paths()\l+ minimal_routes_to_switch()\l+ minimal_routes_to_coords()\l+ xy_connected_to_group()\l+ endpoint_to_injection\l_switch()\l+ endpoint_to_ejection\l_switch()\l+ eject_paths_on_switch()\l+ minimal_route_to_coords()\l+ port()\l+ convert_to_port()\l+ default_router()\l&#45; xy_to_int()\l&#45; read_intragroup_connections()\l&#45; read_intergroup_connections()\l&#45; make_intragroup_connections()\l&#45; make_intergroup_connections()\l&#45; make_geomid()\l&#45; check_switch_x()\l&#45; check_switch_y()\l&#45; check_switch_g()\l&#45; check_port_x()\l&#45; check_port_y()\l&#45; check_switch_xyg()\l&#45; check_port_xy()\l}" alt="" coords="898,1460,1129,2168"/>
+<area shape="rect" id="node13" href="classsstmac_1_1hw_1_1hypercube.html" title="{sstmac::hw::hypercube\n|# radix_\l# ndim_\l# dim_to_outport_\l|+ to_string()\l+ ~hypercube()\l+ init_factory_params()\l+ productive_path()\l+ name()\l+ minimal_route_to_coords()\l+ connect_objects()\l+ convert_to_port()\l+ minimal_distance()\l}" alt="" coords="1153,1702,1356,1926"/>
+<area shape="rect" id="node14" href="classsstmac_1_1hw_1_1tiled__torus.html" title="{sstmac::hw::tiled_torus\n|&#45; ntiles_row_\l&#45; ntiles_col_\l&#45; tile_offsets_\l&#45; rotater_\l|+ init_factory_params()\l+ minimal_routes_to_coords()\l+ default_router()\l+ endpoint_to_injection\l_switch()\l+ endpoint_to_ejection\l_switch()\l+ eject_paths_on_switch()\l# connect_dim()\l&#45; port()\l}" alt="" coords="1380,1687,1591,1941"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::structured_topology:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1structured__topology_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1structured__topology_coll__map" id="sstmac_1_1hw_1_1structured__topology_coll__map">
+<area shape="rect" id="node2" href="classtopology.html" title="{topology\n||}" alt="" coords="5,5,81,83"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -246,6 +253,21 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="structured__topology_8h_source.html#l00040">40</a> of file <a class="el" href="structured__topology_8h_source.html">structured_topology.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#aa37f84e812c79e64c17e096b8169f509">build_endpoint_connectables()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab074f49df7bd9c3b3e0fc7de197785d0">build_interface_connectables()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ae949b4b3d3b908f4c1846b50cdbac558">build_internal_connectables()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a09b2f8bc54771473d47044b337cc4a55">connect_objects()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#adefd56fd0e01b2399fe8887965c1e0c6">minimal_route_to_coords()</a>, and <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67">num_leaf_switches()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_adad583b4f4134e493ec0bd3f403ec81d_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_adad583b4f4134e493ec0bd3f403ec81d_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_adad583b4f4134e493ec0bd3f403ec81d_cgraph" id="classsstmac_1_1hw_1_1structured__topology_adad583b4f4134e493ec0bd3f403ec81d_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#aa37f84e812c79e64c17e096b8169f509" title="sstmac::hw::structured\l_topology::build_endpoint\l_connectables" alt="" coords="227,5,409,61"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#ab074f49df7bd9c3b3e0fc7de197785d0" title="sstmac::hw::structured\l_topology::build_interface\l_connectables" alt="" coords="227,85,409,141"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#ae949b4b3d3b908f4c1846b50cdbac558" title="sstmac::hw::structured\l_topology::build_internal\l_connectables" alt="" coords="231,165,405,221"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1structured__topology.html#a09b2f8bc54771473d47044b337cc4a55" title="Given a set of connectables, connect them appropriately. " alt="" coords="222,246,414,287"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1structured__topology.html#adefd56fd0e01b2399fe8887965c1e0c6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="229,312,407,368"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="213,393,423,434"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -642,6 +664,26 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a68b2616cbf6e9711f0d4a9b12c8f3c8e">bit_complement_partners()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a374f83b892f658b2b7bf0121c76403f3">compute_switch_coords()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ad265792bfbc35ac6fd84b8f52d96e39b">configure_injection_geometry()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a047b25477ebf100133b3e9837a6700f2">nearest_neighbor_partners()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85">nodes_connected_to_switch()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a68824aa2f5c0f57c52a2a9498156f590">partners()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a6357faecda58686e23bf7300df55b9fd">recv_partners()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a32b854bf1d01c01c900599b3460216cf">send_partners()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#afb6de1cb6531cb9a5bf33b02c9a109cc">structured_topology()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a48d8d353bb2508e599be4093c6a182df">tornado_recv_partners()</a>, and <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a2b72610c3a4e96ec0a284c45b314b3bb">tornado_send_partners()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_ab61232f9838be4768a10ae87bae61c64_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_ab61232f9838be4768a10ae87bae61c64_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_ab61232f9838be4768a10ae87bae61c64_cgraph" id="classsstmac_1_1hw_1_1structured__topology_ab61232f9838be4768a10ae87bae61c64_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#a68b2616cbf6e9711f0d4a9b12c8f3c8e" title="sstmac::hw::structured\l_topology::bit_complement\l_partners" alt="" coords="241,5,429,61"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#a374f83b892f658b2b7bf0121c76403f3" title="Compute coordinates (e.g. " alt="" coords="239,85,430,141"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#ad265792bfbc35ac6fd84b8f52d96e39b" title="sstmac::hw::structured\l_topology::configure_injection\l_geometry" alt="" coords="231,165,439,221"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1structured__topology.html#a047b25477ebf100133b3e9837a6700f2" title="sstmac::hw::structured\l_topology::nearest_neighbor\l_partners" alt="" coords="234,245,435,301"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="233,325,436,381"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1structured__topology.html#a68824aa2f5c0f57c52a2a9498156f590" title="sstmac::hw::structured\l_topology::partners" alt="" coords="255,406,414,447"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1structured__topology.html#a6357faecda58686e23bf7300df55b9fd" title="sstmac::hw::structured\l_topology::recv_partners" alt="" coords="245,471,424,513"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1structured__topology.html#a32b854bf1d01c01c900599b3460216cf" title="sstmac::hw::structured\l_topology::send_partners" alt="" coords="243,537,426,578"/>
+<area shape="rect" id="node10" href="classsstmac_1_1hw_1_1structured__topology.html#afb6de1cb6531cb9a5bf33b02c9a109cc" title="sstmac::hw::structured\l_topology::structured\l_topology" alt="" coords="255,603,414,659"/>
+<area shape="rect" id="node11" href="classsstmac_1_1hw_1_1structured__topology.html#a48d8d353bb2508e599be4093c6a182df" title="sstmac::hw::structured\l_topology::tornado_recv\l_partners" alt="" coords="247,683,422,739"/>
+<area shape="rect" id="node12" href="classsstmac_1_1hw_1_1structured__topology.html#a2b72610c3a4e96ec0a284c45b314b3bb" title="sstmac::hw::structured\l_topology::tornado_send\l_partners" alt="" coords="245,763,424,819"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a9c12f3474058f16541ab9cc9a9419322"></a>
@@ -886,6 +928,19 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="structured__topology_8h_source.html#l00222">222</a> of file <a class="el" href="structured__topology_8h_source.html">structured_topology.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#af35c6287320d85a66b30350bef122ccb">finalize_init()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a94c2a2e73c91725c4a7f7729fb7bfe83">label()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c">minimal_route_to_switch()</a>, and <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#adf96e2ed4ca8f50f76dace40ab69fc24">productive_paths()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_a6962bc2c9f9deb29e776f084e5a15f91_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_a6962bc2c9f9deb29e776f084e5a15f91_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_a6962bc2c9f9deb29e776f084e5a15f91_cgraph" id="classsstmac_1_1hw_1_1structured__topology_a6962bc2c9f9deb29e776f084e5a15f91_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#af35c6287320d85a66b30350bef122ccb" title="sstmac::hw::structured\l_topology::finalize_init" alt="" coords="238,5,398,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#a94c2a2e73c91725c4a7f7729fb7bfe83" title="sstmac::hw::structured\l_topology::label" alt="" coords="239,71,397,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="229,137,407,193"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1structured__topology.html#adf96e2ed4ca8f50f76dace40ab69fc24" title="sstmac::hw::structured\l_topology::productive_paths" alt="" coords="219,217,417,259"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1202,6 +1257,23 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a9c12f3474058f16541ab9cc9a9419322">diameter()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a0f43d2fd6842be613ea679f64bfbe3e1">init_factory_params()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a18e483fe72cec95a9fe33d0e6b7d12b9">minimal_distance()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#adefd56fd0e01b2399fe8887965c1e0c6">minimal_route_to_coords()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a08c3f0b471022d60bf2a9e5014c6e271">ndimensions()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab8554f9ca833b9b640fba9fed5fd6f1d">productive_path()</a>, <a class="el" href="routing__info_8h_source.html#l00084">sstmac::hw::routing_info::path_set::resize()</a>, and <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#afa38620188dda97c0edf708502031c08">switch_number()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_aa45e840cb6254513c206011333a223dd_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_aa45e840cb6254513c206011333a223dd_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_aa45e840cb6254513c206011333a223dd_cgraph" id="classsstmac_1_1hw_1_1structured__topology_aa45e840cb6254513c206011333a223dd_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#a9c12f3474058f16541ab9cc9a9419322" title="sstmac::hw::structured\l_topology::diameter" alt="" coords="257,5,416,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#a0f43d2fd6842be613ea679f64bfbe3e1" title="sstmac::hw::structured\l_topology::init_factory\l_params" alt="" coords="257,71,416,127"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#a18e483fe72cec95a9fe33d0e6b7d12b9" title="The function accepts either source or node coordinates. " alt="" coords="237,152,436,193"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1structured__topology.html#adefd56fd0e01b2399fe8887965c1e0c6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="248,218,425,274"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1structured__topology.html#a08c3f0b471022d60bf2a9e5014c6e271" title="The number of distinct &#39;dimensions&#39; in the topology. " alt="" coords="252,299,421,340"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1structured__topology.html#ab8554f9ca833b9b640fba9fed5fd6f1d" title="sstmac::hw::structured\l_topology::productive_path" alt="" coords="241,364,432,405"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1routing__info_1_1path__set.html#a5e5367f92a5aa33ae844dd86eaf8e01b" title="sstmac::hw::routing\l_info::path_set::resize" alt="" coords="257,429,416,471"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1structured__topology.html#afa38620188dda97c0edf708502031c08" title="sstmac::hw::structured\l_topology::switch_number" alt="" coords="245,495,428,536"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a4b7168bdd00f1391d9b0561bcc35ba81"></a>
@@ -1253,6 +1325,19 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="structured__topology_8h_source.html#l00258">258</a> of file <a class="el" href="structured__topology_8h_source.html">structured_topology.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#aa7c8027308e0503eb9fc06da27f42b13">eject_paths_on_switch()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c">minimal_route_to_switch()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#aec8cd9bce8b055082f90b8ca2b8de907">num_hops_to_node()</a>, and <a class="el" href="routing__info_8h_source.html#l00084">sstmac::hw::routing_info::path_set::resize()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_a4b7168bdd00f1391d9b0561bcc35ba81_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_a4b7168bdd00f1391d9b0561bcc35ba81_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_a4b7168bdd00f1391d9b0561bcc35ba81_cgraph" id="classsstmac_1_1hw_1_1structured__topology_a4b7168bdd00f1391d9b0561bcc35ba81_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#aa7c8027308e0503eb9fc06da27f42b13" title="sstmac::hw::structured\l_topology::eject_paths\l_on_switch" alt="" coords="263,5,426,61"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="256,85,433,141"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#aec8cd9bce8b055082f90b8ca2b8de907" title="sstmac::hw::structured\l_topology::num_hops_to_node" alt="" coords="237,166,452,207"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1routing__info_1_1path__set.html#a5e5367f92a5aa33ae844dd86eaf8e01b" title="sstmac::hw::routing\l_info::path_set::resize" alt="" coords="265,231,424,273"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1495,6 +1580,18 @@ Protected Attributes</h2></td></tr>
 
 <p>Referenced by <a class="el" href="butterfly_8h_source.html#l00153">sstmac::hw::butterfly::ndimensions()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_a9ea0e2fc322754b034c775606b625f6a_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_a9ea0e2fc322754b034c775606b625f6a_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_a9ea0e2fc322754b034c775606b625f6a_cgraph" id="classsstmac_1_1hw_1_1structured__topology_a9ea0e2fc322754b034c775606b625f6a_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#a5cbb74f77d1c7a523c31e9e5e6ba30f0" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="258,5,457,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="278,71,437,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="256,137,459,193"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a5fc551885f54f826bfa6cdb163479248"></a>
@@ -1526,6 +1623,16 @@ Protected Attributes</h2></td></tr>
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85">nodes_connected_to_switch()</a>.</p>
 
 <p>Referenced by <a class="el" href="butterfly_8h_source.html#l00153">sstmac::hw::butterfly::ndimensions()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_a5fc551885f54f826bfa6cdb163479248_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_a5fc551885f54f826bfa6cdb163479248_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_a5fc551885f54f826bfa6cdb163479248_cgraph" id="classsstmac_1_1hw_1_1structured__topology_a5fc551885f54f826bfa6cdb163479248_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="256,5,459,61"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1583,6 +1690,23 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="structured__topology_8h_source.html#l00178">178</a> of file <a class="el" href="structured__topology_8h_source.html">structured_topology.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a86c4588a8f8e7913c51b58bbd1ea1a16">endpoint_coords()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a255faa2507959b37f9dc3ce18c7157c1">endpoint_to_ejection_port()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#abb2915db7da874713885635da6d80ed4">endpoint_to_ejection_switch()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a93bdc243f49295a54638699ed40892c1">endpoint_to_injection_port()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a20cec02dc7da5e2d924557170f082fb2">endpoint_to_injection_switch()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ac34a01d92f8beb4161ece4517fb3b954">node_coords()</a>, <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67">num_leaf_switches()</a>, and <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab8ffa1beac0507c4cddc47cf99d18303">switch_coords()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_aa41c21313b624d1f1e0de0b724a2a511_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_aa41c21313b624d1f1e0de0b724a2a511_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_aa41c21313b624d1f1e0de0b724a2a511_cgraph" id="classsstmac_1_1hw_1_1structured__topology_aa41c21313b624d1f1e0de0b724a2a511_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#a86c4588a8f8e7913c51b58bbd1ea1a16" title="sstmac::hw::structured\l_topology::endpoint_coords" alt="" coords="247,5,443,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1structured__topology.html#a255faa2507959b37f9dc3ce18c7157c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_port" alt="" coords="262,71,427,127"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1structured__topology.html#abb2915db7da874713885635da6d80ed4" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_switch" alt="" coords="262,151,427,207"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1structured__topology.html#a93bdc243f49295a54638699ed40892c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_port" alt="" coords="262,231,427,287"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1structured__topology.html#a20cec02dc7da5e2d924557170f082fb2" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_switch" alt="" coords="262,311,427,367"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1structured__topology.html#ac34a01d92f8beb4161ece4517fb3b954" title="Compute coordinates (e.g. " alt="" coords="258,392,431,433"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="240,457,449,499"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1structured__topology.html#ab8ffa1beac0507c4cddc47cf99d18303" title="Compute coordinates (e.g. " alt="" coords="255,523,435,564"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1680,6 +1804,16 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="structured__topology_8h_source.html#l00173">173</a> of file <a class="el" href="structured__topology_8h_source.html">structured_topology.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67">num_leaf_switches()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1structured__topology_afbf51462d908791182c18e601428fcb2_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1structured__topology_afbf51462d908791182c18e601428fcb2_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1structured__topology_afbf51462d908791182c18e601428fcb2_cgraph" id="classsstmac_1_1hw_1_1structured__topology_afbf51462d908791182c18e601428fcb2_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="216,5,425,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

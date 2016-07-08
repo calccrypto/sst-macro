@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -68,19 +68,30 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::allocation_strategy:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1allocation__strategy.png" usemap="#sstmac::sw::allocation_5Fstrategy_map" alt=""/>
-  <map id="sstmac::sw::allocation_5Fstrategy_map" name="sstmac::sw::allocation_strategy_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="681,0,898,24"/>
-<area href="classsstmac_1_1sw_1_1cart__allocation.html" alt="sstmac::sw::cart_allocation" shape="rect" coords="0,112,217,136"/>
-<area href="classsstmac_1_1sw_1_1coordinate__allocation.html" alt="sstmac::sw::coordinate_allocation" shape="rect" coords="227,112,444,136"/>
-<area href="classsstmac_1_1sw_1_1dumpi__allocation.html" alt="sstmac::sw::dumpi_allocation" shape="rect" coords="454,112,671,136"/>
-<area href="classsstmac_1_1sw_1_1first__available__allocation.html" alt="sstmac::sw::first_available_allocation" shape="rect" coords="681,112,898,136"/>
-<area href="classsstmac_1_1sw_1_1hostname__allocation.html" alt="sstmac::sw::hostname_allocation" shape="rect" coords="908,112,1125,136"/>
-<area href="classsstmac_1_1sw_1_1node__id__allocation.html" alt="sstmac::sw::node_id_allocation" shape="rect" coords="1135,112,1352,136"/>
-<area href="classsstmac_1_1sw_1_1random__allocation.html" alt="sstmac::sw::random_allocation" shape="rect" coords="1362,112,1579,136"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1allocation__strategy_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1allocation__strategy_inherit__map" id="sstmac_1_1sw_1_1allocation__strategy_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1cart__allocation.html" title="{sstmac::sw::cart_allocation\n|&#45; sizes_\l&#45; offsets_\l&#45; regtop_\l&#45; auto_allocate_\l|+ set_topology()\l+ init_factory_params()\l+ ~cart_allocation()\l+ allocate()\l&#45; insert()\l&#45; allocate_dim()\l}" alt="" coords="5,461,192,656"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1coordinate__allocation.html" title="{sstmac::sw::coordinate\l_allocation\n|# regtop_\l# coord_file_\l|+ set_topology()\l+ init_factory_params()\l+ ~coordinate_allocation()\l+ allocate()\l+ read_coordinate_file()\l}" alt="" coords="217,476,405,641"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1dumpi__allocation.html" title="{sstmac::sw::dumpi_allocation\n|# metafile_\l# regtop_\l|+ set_topology()\l+ init_factory_params()\l+ allocate()\l+ ~dumpi_allocation()\l}" alt="" coords="429,491,629,627"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1first__available__allocation.html" title="{sstmac::sw::first_available\l_allocation\n||+ ~first_available_allocation()\l+ allocate()\l}" alt="" coords="654,505,861,612"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1hostname__allocation.html" title="{sstmac::sw::hostname\l_allocation\n|+ hostnamemap_\l+ nodenum_to_host_map_\l# mapfile_\l# regtop_\l|+ set_topology()\l+ init_factory_params()\l+ allocate()\l+ ~hostname_allocation()\l+ read_map_file()\l}" alt="" coords="885,461,1075,656"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1node__id__allocation.html" title="{sstmac::sw::node_id\l_allocation\n|# coord_file_\l|+ init_factory_params()\l+ ~node_id_allocation()\l+ allocate()\l+ read_coordinate_file()\l}" alt="" coords="1099,491,1274,627"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1random__allocation.html" title="{sstmac::sw::random\l_allocation\n|# rng_\l|+ init_factory_params()\l+ ~random_allocation()\l+ allocate()\l}" alt="" coords="1298,498,1467,619"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="673,5,842,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::allocation_strategy:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1allocation__strategy_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1allocation__strategy_coll__map" id="sstmac_1_1sw_1_1allocation__strategy_coll__map">
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="975,197,1144,289"/>
+<area shape="rect" id="node3" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="518,593,724,861"/>
+<area shape="rect" id="node9" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="448,924,642,1192"/>
+<area shape="rect" id="node4" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="248,197,370,289"/>
+<area shape="rect" id="node5" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="760,160,951,325"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -214,6 +225,16 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="allocation__strategy_8h_source.html#l00091">91</a> of file <a class="el" href="allocation__strategy_8h_source.html">allocation_strategy.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a22664c345e055ec055872e156c56f441">validate_num_nodes()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy_ab51f533edf44571f7be87384ca7e83b7_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1allocation__strategy_ab51f533edf44571f7be87384ca7e83b7_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1allocation__strategy_ab51f533edf44571f7be87384ca7e83b7_cgraph" id="classsstmac_1_1sw_1_1allocation__strategy_ab51f533edf44571f7be87384ca7e83b7_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html#a22664c345e055ec055872e156c56f441" title="sstmac::sw::allocation\l_strategy::validate_num_nodes" alt="" coords="208,13,425,54"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -407,6 +428,16 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a1b0f7412b322fbb73d23baccd44794b4">init_factory_params()</a>, and <a class="el" href="allocation__strategy_8h_source.html#l00097">topology_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy_ad7578219e4706bde2e90462c25392cf8_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1allocation__strategy_ad7578219e4706bde2e90462c25392cf8_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1allocation__strategy_ad7578219e4706bde2e90462c25392cf8_cgraph" id="classsstmac_1_1sw_1_1allocation__strategy_ad7578219e4706bde2e90462c25392cf8_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html#a1b0f7412b322fbb73d23baccd44794b4" title="sstmac::sw::allocation\l_strategy::init_factory\l_params" alt="" coords="221,5,377,61"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="af081f64bbbcd52a3b9eca51c3596950a"></a>
@@ -433,6 +464,18 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="allocation__strategy_8h_source.html#l00067">67</a> of file <a class="el" href="allocation__strategy_8h_source.html">allocation_strategy.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a41ae7f78f0a7ffcae8fa55624b1cabf6">allocate()</a>, <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a24143314f7857977d60e5eb550ae577c">release()</a>, and <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a16be656da0618986f5d6bca13be936d7">~allocation_strategy()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy_af081f64bbbcd52a3b9eca51c3596950a_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1allocation__strategy_af081f64bbbcd52a3b9eca51c3596950a_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1allocation__strategy_af081f64bbbcd52a3b9eca51c3596950a_cgraph" id="classsstmac_1_1sw_1_1allocation__strategy_af081f64bbbcd52a3b9eca51c3596950a_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html#a41ae7f78f0a7ffcae8fa55624b1cabf6" title="Get nodes. " alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1allocation__strategy.html#a24143314f7857977d60e5eb550ae577c" title="Release a set of nodes back into the allocation. " alt="" coords="208,71,363,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1allocation__strategy.html#a16be656da0618986f5d6bca13be936d7" title="sstmac::sw::allocation\l_strategy::~allocation\l_strategy" alt="" coords="208,137,363,193"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -461,6 +504,16 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="allocation__strategy_8h_source.html#l00051">51</a> of file <a class="el" href="allocation__strategy_8h_source.html">allocation_strategy.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#abde7c4dfe97d1572879049042d0eb18f">set_interconnect()</a>, and <a class="el" href="allocation__strategy_8h_source.html#l00097">topology_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1allocation__strategy_a07774107e18d9bb94ec4114895b69d31_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1allocation__strategy_a07774107e18d9bb94ec4114895b69d31_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1allocation__strategy_a07774107e18d9bb94ec4114895b69d31_cgraph" id="classsstmac_1_1sw_1_1allocation__strategy_a07774107e18d9bb94ec4114895b69d31_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html#abde7c4dfe97d1572879049042d0eb18f" title="sstmac::sw::allocation\l_strategy::set_interconnect" alt="" coords="208,5,400,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -64,16 +64,46 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::api:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1api.png" usemap="#sstmac::sw::api_map" alt=""/>
-  <map id="sstmac::sw::api_map" name="sstmac::sw::api_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="0,0,133,24"/>
-<area href="classsstmac_1_1sw_1_1library.html" alt="sstmac::sw::library" shape="rect" coords="143,0,276,24"/>
-<area href="classsstmac_1_1sumi__api.html" alt="sstmac::sumi_api" shape="rect" coords="0,112,133,136"/>
-<area href="classsstmac_1_1sw_1_1blas__api.html" alt="sstmac::sw::blas_api" shape="rect" coords="143,112,276,136"/>
-<area href="classsumi_1_1sumi__transport.html" alt="sumi::sumi_transport" shape="rect" coords="0,168,133,192"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1api__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1api_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1api_inherit__map" id="sstmac_1_1sw_1_1api_inherit__map">
+<area shape="rect" id="node4" href="classsstmac_1_1sumi__api.html" title="{sstmac::sumi_api\n|# loc_\l# rank_\l# nproc_\l&#45; server_libname_\l&#45; sid_\l&#45; env_\l&#45; queue_\l|+ sumi_api()\l+ init()\l+ finalize()\l+ ~sumi_api()\l+ init_param1()\l+ init_os()\l+ init_factory_params()\l+ poll_until_notification()\l+ poll_until_notification()\l+ handle()\l+ incoming_message()\l+ transport_send()\l+ blocked()\l}" alt="" coords="23,711,199,1052"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1blas__api.html" title="{sstmac::sw::blas_api\n|# lib_compute_\l# id_\l# ddot_kernel_\l# dgemm_kernel_\l# dgemv_kernel_\l# daxpy_kernel_\l|+ blas_api()\l+ ~blas_api()\l+ init_os()\l+ init_factory_params()\l+ finalize_init()\l+ init_param1()\l+ dgemm()\l+ dgemv()\l+ daxpy()\l+ ddot()\l+ incoming_event()\l# init_kernels()\l}" alt="" coords="223,725,393,1037"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="31,115,201,207"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n|# os_\l# libname_\l# key_cat_\l|+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ ~library()\l+ construct_lib()\l+ construct_lib()\l+ register_builder()\l# library()\l# register_lib()\l# supported()\l# builder()\l}" alt="" coords="225,5,383,317"/>
+<area shape="rect" id="node5" href="classsumi_1_1sumi__transport.html" title="{sumi::sumi_transport\n||+ sumi_transport()\l+ init()\l+ finalize()\l+ init_factory_params()\l+ finalize_init()\l+ ~sumi_transport()\l+ handle()\l+ collective_block()\l+ cq_notify()\l+ wall_time()\l+ block_until_message()\l+ block_until_message()\l+ ping_timeout()\l+ incoming_event()\l# do_smsg_send()\l# do_rdma_put()\l# do_rdma_get()\l# do_nvram_get()\l# do_send_terminate()\l# do_send_ping_request()\l# delayed_transport_handle()\l# schedule_ping_timeout()\l# schedule_next_heartbeat()\l# go_die()\l# go_revive()\l}" alt="" coords="5,1100,216,1529"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::api:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1api__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1api_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1api_coll__map" id="sstmac_1_1sw_1_1api_coll__map">
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="355,656,524,748"/>
+<area shape="rect" id="node20" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="879,1516,1050,1799"/>
+<area shape="rect" id="node23" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="789,2081,959,2276"/>
+<area shape="rect" id="node26" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="733,1086,916,1339"/>
+<area shape="rect" id="node30" href="classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="1104,1971,1273,2386"/>
+<area shape="rect" id="node33" href="classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="4241,1079,4411,1347"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n||+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ ~library()\l+ construct_lib()\l+ construct_lib()\l+ register_builder()\l# library()\l# register_lib()\l# supported()\l# builder()\l}" alt="" coords="5173,2529,5332,2812"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="2497,1920,2707,2437"/>
+<area shape="rect" id="node43" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="1520,2625,1719,2717"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="1961,1101,2158,1325"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="1606,175,1769,399"/>
+<area shape="rect" id="node8" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="1411,568,1591,836"/>
+<area shape="rect" id="node45" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="4789,423,4967,544"/>
+<area shape="rect" id="node46" href="structsstmac_1_1sw_1_1software__id.html" title="A wrapper for an appid, taskid pair. " alt="" coords="5329,1371,5497,1477"/>
+<area shape="rect" id="node22" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="1289,1167,1461,1259"/>
+<area shape="rect" id="node29" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="915,860,1068,1055"/>
+<area shape="rect" id="node21" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n||+ failed()\l+ fail()\l# failable()\l}" alt="" coords="1625,1159,1765,1266"/>
+<area shape="rect" id="node47" href="classsstmac_1_1sw_1_1Timer.html" title="{sstmac::sw::Timer\n||+ Timer()\l+ tic()\l+ toc()\l+ reset()\l+ getTime()\l}" alt="" coords="4730,2111,4861,2247"/>
+<area shape="rect" id="node32" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="3852,1501,4016,1813"/>
+<area shape="rect" id="node38" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="4547,1531,4716,1784"/>
+<area shape="rect" id="node42" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="4261,1538,4436,1777"/>
+<area shape="rect" id="node40" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="3265,1567,3441,1747"/>
+<area shape="rect" id="node49" href="classsstmac_1_1sw_1_1lib__compute__time.html" title="{sstmac::sw::lib_compute_time\n||+ lib_compute_time()\l+ lib_compute_time()\l+ ~lib_compute_time()\l+ incoming_event()\l+ compute()\l+ supported()\l+ construct()\l+ construct()\l}" alt="" coords="4946,2581,5149,2761"/>
+<area shape="rect" id="node50" href="classlib__compute.html" title="{lib_compute\n||}" alt="" coords="5015,2140,5111,2217"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

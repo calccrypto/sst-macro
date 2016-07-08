@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -68,13 +68,41 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::operating_system:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1operating__system.png" usemap="#sstmac::sw::operating_5Fsystem_map" alt=""/>
-  <map id="sstmac::sw::operating_5Fsystem_map" name="sstmac::sw::operating_system_map">
-<area href="classsstmac_1_1event__subscheduler.html" alt="sstmac::event_subscheduler" shape="rect" coords="0,56,175,80"/>
-<area href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="sstmac::event_handler" shape="rect" coords="0,0,175,24"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1operating__system_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1operating__system_inherit__map" id="sstmac_1_1sw_1_1operating__system_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n|# parent_\l|+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="12,321,209,545"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="29,5,192,273"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::operating_system:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1operating__system_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1operating__system_coll__map" id="sstmac_1_1sw_1_1operating__system_coll__map">
+<area shape="rect" id="node20" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="4591,2268,4761,2551"/>
+<area shape="rect" id="node47" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="785,2833,983,2925"/>
+<area shape="rect" id="node48" href="classsstmac_1_1sw_1_1thread.html" title="{sstmac::sw::thread\n|+ no_core_affinity\l&#45; aid_\l|+ to_string()\l+ set_api()\l+ build_api()\l+ init_os()\l+ add_api()\l+ get_api()\l+ parent_app()\l+ clear_subthread_from\l_parent_app()\l+ ~thread()\l+ get_state()\land 37 more...\l+ current()\l# thread()\l# unregister_all_libs()\l# now()\l# physical_address()\l# set_sid()\l&#45; cleanup()\l&#45; run_routine()\l}" alt="" coords="502,2224,674,2595"/>
+<area shape="rect" id="node2" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="3791,1328,3988,1552"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="4165,351,4328,575"/>
+<area shape="rect" id="node6" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="4061,781,4241,1049"/>
+<area shape="rect" id="node33" href="classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="4285,2672,4454,3087"/>
+<area shape="rect" id="node4" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="4472,5,4651,215"/>
+<area shape="rect" id="node7" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="3843,321,4066,604"/>
+<area shape="rect" id="node23" href="classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n||+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="4570,628,4742,735"/>
+<area shape="rect" id="node27" href="classsstmac_1_1sw_1_1app__manager.html" title="{sstmac::sw::app_manager\n||+ ~app_manager()\l+ nproc()\l+ node_assignment()\l+ rank_assignment()\l+ init_param1()\l+ init_param2()\l+ set_interconnect()\l+ init_factory_params()\l+ topol()\l+ interconn()\land 10 more...\l+ static_app_manager()\l# app_manager()\l}" alt="" coords="5025,336,5207,589"/>
+<area shape="rect" id="node36" href="classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="2883,329,3053,597"/>
+<area shape="rect" id="node22" href="classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="4531,1394,4703,1486"/>
+<area shape="rect" id="node8" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="4793,64,4962,156"/>
+<area shape="rect" id="node24" href="classsstmac_1_1hw_1_1processor.html" title="An interface for processor models. " alt="" coords="4886,2782,5055,2977"/>
+<area shape="rect" id="node21" href="classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n||+ failed()\l+ fail()\l# failable()\l}" alt="" coords="4125,1849,4265,1956"/>
+<area shape="rect" id="node49" href="classsstmac_1_1sw_1_1stack__alloc.html" title="A management type to handle dividing mmap&#45;ed memory for use as ucontext stack(s). ..." alt="" coords="5,1798,171,2007"/>
+<area shape="rect" id="node32" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="4485,1095,4638,1289"/>
+<area shape="rect" id="node35" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="1195,759,1359,1071"/>
+<area shape="rect" id="node41" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="1354,1313,1523,1567"/>
+<area shape="rect" id="node45" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="3541,1321,3715,1559"/>
+<area shape="rect" id="node43" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="759,1350,935,1530"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -665,6 +693,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="operating__system_8h_source.html#l00200">200</a> of file <a class="el" href="operating__system_8h_source.html">operating_system.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aec7e1c61bc3029514fa307f264084aa2">current_threadid()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a56e995fe65ab9fd37b2c8d65193ac300">print_libs()</a>, and <a class="el" href="operating__system_8h_source.html#l00304">threadstack_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_a33cbb47f1141035bf2afdf8987d80708_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_a33cbb47f1141035bf2afdf8987d80708_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_a33cbb47f1141035bf2afdf8987d80708_cgraph" id="classsstmac_1_1sw_1_1operating__system_a33cbb47f1141035bf2afdf8987d80708_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#aec7e1c61bc3029514fa307f264084aa2" title="sstmac::sw::operating\l_system::current_threadid" alt="" coords="232,5,416,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1operating__system.html#a56e995fe65ab9fd37b2c8d65193ac300" title="sstmac::sw::operating\l_system::print_libs" alt="" coords="247,71,401,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1290,6 +1329,25 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Referenced by <a class="el" href="operating__system_8h_source.html#l00069">static_os_thread_context()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_ad12f5dce672ee83761e43a3482554054_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_ad12f5dce672ee83761e43a3482554054_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_ad12f5dce672ee83761e43a3482554054_cgraph" id="classsstmac_1_1sw_1_1operating__system_ad12f5dce672ee83761e43a3482554054_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#a93fee2079f44c72cd724f80a529bc72d" title="sstmac::sw::operating\l_system::add_thread" alt="" coords="229,5,383,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1operating__system.html#a2b670cf4fcbe3dda2a92688c6bf5a356" title="sstmac::sw::operating\l_system::current_os_thread\l_context" alt="" coords="208,71,404,127"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1operating__system.html#abe23023a51a0ce6c9db4dbbaa4a7b10c" title="sstmac::sw::operating\l_system::init_startup_libs" alt="" coords="217,152,395,193"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1operating__system.html#a1d27e0e7158b4f4b5772db98cb38c37f" title="sstmac::sw::operating\l_system::init_threading" alt="" coords="223,217,389,259"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1operating__system.html#ae96431f7504f59bc13e6044418a893f8" title="sstmac::sw::operating\l_system::kill_node" alt="" coords="229,283,383,324"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1operating__system.html#ae71647a88b537322850720b102e26f5f" title="sstmac::sw::operating\l_system::operating_system" alt="" coords="210,348,402,389"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="229,413,383,455"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1operating__system.html#ad643e9db5af77d2d6224217ba915ff8f" title="sstmac::sw::operating\l_system::sleep" alt="" coords="229,479,383,520"/>
+<area shape="rect" id="node10" href="classsstmac_1_1sw_1_1operating__system.html#ae627e7a18de4203cf77f96d5b8f22308" title="sstmac::sw::operating\l_system::switch_to_thread" alt="" coords="212,544,400,585"/>
+<area shape="rect" id="node11" href="classsstmac_1_1sw_1_1operating__system.html#a7d1b4e5e2a3fbb835a733c588ad4b22e" title="sstmac::sw::operating\l_system::unregister_lib" alt="" coords="224,609,388,651"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a56e995fe65ab9fd37b2c8d65193ac300"></a>
@@ -1432,6 +1490,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a69210b5bf75022379dbc774aba5a363f">add_application()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a552b24cc3640b28973ab231d691c0071">add_task()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a2d10e4ce90b03446dfe2b8ec9f119dcb">app_ptr()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a08855c6c67b81ee1738fcb7525420474">app_ptrs()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ae2898106a07983aef6524550d8a95a17">block()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a844c3b95e26d0e96f6a74edbebd35972">complete_thread()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a9ebe0716796c80d61bda702db3297c96">env()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aee5ca0142615594cf92af31f3f42bbab">execute_kernel()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#adb857e5bfd864f666797e338ee96a47d">handle_event()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a014c64dea95d9321a6133bd8b312d73e">is_task_here()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a08b9ac9fa11129ff08bccc349c15e50b">join_thread()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ae637506e905703536d8ed5b4e0c10e52">kernel_supported()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a003ad695dac5c0a3c562222a92fd0220">lib()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aec88813c6e4748a004300ac38e4449fc">my_addr()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae">register_lib()</a>, <a class="el" href="operating__system_8h_source.html#l00308">restarting_</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a961efea0d62d72b3cd37f4a08b14633e">set_event_parent()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ae96b6d635a4796d7b8aceb6a7ffcf9ef">set_ncores()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a307b3813226ecc0f379375aa1fedd886">stack_check()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a52b5d87308076e7f55700935a96e5e0b">start_app()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abc09c5048b81ea6accb8904e753e2e7c">start_thread()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#acec9cf8b1a91fb750b68a4e31c43263e">task_addr()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aebe24b696d4430333eb18fbc52bd1ac9">task_threadid()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a47348d8ae17e6caa7bbdfac85ec09217">unblock()</a>, and <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a43801583bcf9b729d5dda943023d3e45">unregister_all_libs()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_af5a9971c1b248ef999b420f3f14c0369_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_af5a9971c1b248ef999b420f3f14c0369_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_af5a9971c1b248ef999b420f3f14c0369_cgraph" id="classsstmac_1_1sw_1_1operating__system_af5a9971c1b248ef999b420f3f14c0369_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#a69210b5bf75022379dbc774aba5a363f" title="sstmac::sw::operating\l_system::add_application" alt="" coords="215,5,395,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1operating__system.html#a552b24cc3640b28973ab231d691c0071" title="sstmac::sw::operating\l_system::add_task" alt="" coords="227,71,382,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1operating__system.html#a2d10e4ce90b03446dfe2b8ec9f119dcb" title="sstmac::sw::operating\l_system::app_ptr" alt="" coords="227,136,382,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1operating__system.html#a08855c6c67b81ee1738fcb7525420474" title="sstmac::sw::operating\l_system::app_ptrs" alt="" coords="227,201,382,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1operating__system.html#ae2898106a07983aef6524550d8a95a17" title="sstmac::sw::operating\l_system::block" alt="" coords="227,267,382,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1operating__system.html#a844c3b95e26d0e96f6a74edbebd35972" title="sstmac::sw::operating\l_system::complete_thread" alt="" coords="211,332,398,373"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1operating__system.html#a9ebe0716796c80d61bda702db3297c96" title="sstmac::sw::operating\l_system::env" alt="" coords="227,397,382,439"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1operating__system.html#aee5ca0142615594cf92af31f3f42bbab" title="sstmac::sw::operating\l_system::execute_kernel" alt="" coords="217,463,393,504"/>
+<area shape="rect" id="node10" href="classsstmac_1_1sw_1_1operating__system.html#adb857e5bfd864f666797e338ee96a47d" title="sstmac::sw::operating\l_system::handle_event" alt="" coords="221,528,388,569"/>
+<area shape="rect" id="node11" href="classsstmac_1_1sw_1_1operating__system.html#a014c64dea95d9321a6133bd8b312d73e" title="sstmac::sw::operating\l_system::is_task_here" alt="" coords="224,593,385,635"/>
+<area shape="rect" id="node12" href="classsstmac_1_1sw_1_1operating__system.html#a08b9ac9fa11129ff08bccc349c15e50b" title="sstmac::sw::operating\l_system::join_thread" alt="" coords="227,659,382,700"/>
+<area shape="rect" id="node13" href="classsstmac_1_1sw_1_1operating__system.html#ae637506e905703536d8ed5b4e0c10e52" title="sstmac::sw::operating\l_system::kernel_supported" alt="" coords="209,724,400,765"/>
+<area shape="rect" id="node14" href="classsstmac_1_1sw_1_1operating__system.html#a003ad695dac5c0a3c562222a92fd0220" title="sstmac::sw::operating\l_system::lib" alt="" coords="227,789,382,831"/>
+<area shape="rect" id="node15" href="classsstmac_1_1sw_1_1operating__system.html#aec88813c6e4748a004300ac38e4449fc" title="sstmac::sw::operating\l_system::my_addr" alt="" coords="227,855,382,896"/>
+<area shape="rect" id="node16" href="classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="227,920,382,961"/>
+<area shape="rect" id="node17" href="classsstmac_1_1sw_1_1operating__system.html#a961efea0d62d72b3cd37f4a08b14633e" title="Set the eventmanager for this scheduler. " alt="" coords="209,985,400,1027"/>
+<area shape="rect" id="node18" href="classsstmac_1_1sw_1_1operating__system.html#ae96b6d635a4796d7b8aceb6a7ffcf9ef" title="sstmac::sw::operating\l_system::set_ncores" alt="" coords="227,1051,382,1092"/>
+<area shape="rect" id="node19" href="classsstmac_1_1sw_1_1operating__system.html#a307b3813226ecc0f379375aa1fedd886" title="sstmac::sw::operating\l_system::stack_check" alt="" coords="225,1116,384,1157"/>
+<area shape="rect" id="node20" href="classsstmac_1_1sw_1_1operating__system.html#a52b5d87308076e7f55700935a96e5e0b" title="sstmac::sw::operating\l_system::start_app" alt="" coords="227,1181,382,1223"/>
+<area shape="rect" id="node21" href="classsstmac_1_1sw_1_1operating__system.html#abc09c5048b81ea6accb8904e753e2e7c" title="sstmac::sw::operating\l_system::start_thread" alt="" coords="226,1247,383,1288"/>
+<area shape="rect" id="node22" href="classsstmac_1_1sw_1_1operating__system.html#acec9cf8b1a91fb750b68a4e31c43263e" title="sstmac::sw::operating\l_system::task_addr" alt="" coords="227,1312,382,1353"/>
+<area shape="rect" id="node23" href="classsstmac_1_1sw_1_1operating__system.html#aebe24b696d4430333eb18fbc52bd1ac9" title="sstmac::sw::operating\l_system::task_threadid" alt="" coords="221,1377,388,1419"/>
+<area shape="rect" id="node24" href="classsstmac_1_1sw_1_1operating__system.html#a47348d8ae17e6caa7bbdfac85ec09217" title="sstmac::sw::operating\l_system::unblock" alt="" coords="227,1443,382,1484"/>
+<area shape="rect" id="node25" href="classsstmac_1_1sw_1_1operating__system.html#a43801583bcf9b729d5dda943023d3e45" title="sstmac::sw::operating\l_system::unregister_all_libs" alt="" coords="208,1508,401,1549"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a763f6c85b325b5a19c225ee8750c6d9d"></a>
@@ -1505,6 +1596,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="operating__system_8h_source.html#l00226">226</a> of file <a class="el" href="operating__system_8h_source.html">operating_system.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aaadd66fe067d3bf3f915f292eff1a70a">add_blocker()</a>, <a class="el" href="operating__system_8h_source.html#l00221">addr()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a96940aa8b44bff021fb5f956e6973a84">free_thread_stack()</a>, <a class="el" href="event__handler_8h_source.html#l00090">sstmac::event_handler::init_loc_id()</a>, <a class="el" href="operating__system_8h_source.html#l00298">my_addr_</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a7bb9cc11d130e8ca7fe7cacd72b9bb55">remove_blocker()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a763f6c85b325b5a19c225ee8750c6d9d">schedule_timeout()</a>, and <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a9397c3eb4251bb36ec52cf1cab7fb97c">schedule_unblock_now()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_aa25166fa0477c6703ea29575e08b11ff_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_aa25166fa0477c6703ea29575e08b11ff_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_aa25166fa0477c6703ea29575e08b11ff_cgraph" id="classsstmac_1_1sw_1_1operating__system_aa25166fa0477c6703ea29575e08b11ff_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#aaadd66fe067d3bf3f915f292eff1a70a" title="sstmac::sw::operating\l_system::add_blocker" alt="" coords="242,5,399,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1operating__system.html#a21c7cf2a4dea7311674f0861770019cb" title="sstmac::sw::operating\l_system::addr" alt="" coords="243,71,398,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1operating__system.html#a96940aa8b44bff021fb5f956e6973a84" title="sstmac::sw::operating\l_system::free_thread_stack" alt="" coords="223,136,418,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="239,201,402,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1operating__system.html#a7bb9cc11d130e8ca7fe7cacd72b9bb55" title="sstmac::sw::operating\l_system::remove_blocker" alt="" coords="231,267,411,308"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1operating__system.html#a763f6c85b325b5a19c225ee8750c6d9d" title="sstmac::sw::operating\l_system::schedule_timeout" alt="" coords="226,332,415,373"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1operating__system.html#a9397c3eb4251bb36ec52cf1cab7fb97c" title="sstmac::sw::operating\l_system::schedule_unblock_now" alt="" coords="208,397,433,439"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1693,6 +1800,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="operating__system_8h_source.html#l00055">sstmac::sw::operating_system::os_thread_context::current_thread</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#aef556feefedcb8ea41ea0c8f823e1ff9">simulation_done()</a>, and <a class="el" href="operating__system_8h_source.html#l00344">stacksize_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_ac8a96f220d3cdf0e8a471a87ab647ae2_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_ac8a96f220d3cdf0e8a471a87ab647ae2_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_ac8a96f220d3cdf0e8a471a87ab647ae2_cgraph" id="classsstmac_1_1sw_1_1operating__system_ac8a96f220d3cdf0e8a471a87ab647ae2_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#aef556feefedcb8ea41ea0c8f823e1ff9" title="sstmac::sw::operating\l_system::simulation_done" alt="" coords="208,5,391,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a52b5d87308076e7f55700935a96e5e0b"></a>
@@ -1755,6 +1872,38 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="operating__system_8h_source.html#l00069">69</a> of file <a class="el" href="operating__system_8h_source.html">operating_system.h</a>.</p>
 
 <p>References <a class="el" href="operating__system_8h_source.html#l00059">sstmac::sw::operating_system::os_thread_context::current_aid</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a9bb6cf08b0222a64e6e3c2cd793d3e43">current_env()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a881809bac8e547ec4c9f1bb531b132d6">current_hostname()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abf2caabbbe102e503ed2a2726894fc39">current_library()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a90c820da741055ddd6c5ea5780ab65bc">current_node_id()</a>, <a class="el" href="operating__system_8h_source.html#l00057">sstmac::sw::operating_system::os_thread_context::current_os</a>, <a class="el" href="thread__info_8h_source.html#l00018">sstmac::thread_info::current_physical_thread_id()</a>, <a class="el" href="operating__system_8h_source.html#l00060">sstmac::sw::operating_system::os_thread_context::current_tid</a>, <a class="el" href="operating__system_8h_source.html#l00345">cxa_finalizing_</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ac04b144568e4c979097240e243f5bf02">delete_statics()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a40fc298a4cac39fef30c11a56ca06ff4">finalize_init()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abb45d45b2e8e0bb7bcd7f53d9a01ca74">init_factory_params()</a>, <a class="el" href="operating__system_8h_source.html#l00335">os_thread_context_</a>, <a class="el" href="operating__system_8h_source.html#l00258">params()</a>, <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ab837aa9d49b47365aa494a0208fc206c">remote_node()</a>, and <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abe90f73e5c0e4dc481cdabb2e0c659c5">switch_to_context()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1operating__system_a62225fa68c6fe1eef7498d9d33ff3af1_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1operating__system_a62225fa68c6fe1eef7498d9d33ff3af1_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1operating__system_a62225fa68c6fe1eef7498d9d33ff3af1_cgraph" id="classsstmac_1_1sw_1_1operating__system_a62225fa68c6fe1eef7498d9d33ff3af1_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1operating__system.html#a9bb6cf08b0222a64e6e3c2cd793d3e43" title="sstmac::sw::operating\l_system::current_env" alt="" coords="261,5,415,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1operating__system.html#a881809bac8e547ec4c9f1bb531b132d6" title="sstmac::sw::operating\l_system::current_hostname" alt="" coords="241,71,435,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1operating__system.html#abf2caabbbe102e503ed2a2726894fc39" title="sstmac::sw::operating\l_system::current_library" alt="" coords="253,136,423,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1operating__system.html#a90c820da741055ddd6c5ea5780ab65bc" title="sstmac::sw::operating\l_system::current_node_id" alt="" coords="247,201,429,243"/>
+<area shape="rect" id="node6" href="classsstmac_1_1thread__info.html#a707bd868d2d8026e5d734ff1a5ad0b7f" title="sstmac::thread_info\l::current_physical_thread_id" alt="" coords="239,267,437,308"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1operating__system.html#ac04b144568e4c979097240e243f5bf02" title="sstmac::sw::operating\l_system::delete_statics" alt="" coords="255,332,421,373"/>
+<area shape="rect" id="node10" href="classsstmac_1_1sw_1_1operating__system.html#a40fc298a4cac39fef30c11a56ca06ff4" title="sstmac::sw::operating\l_system::finalize_init" alt="" coords="261,397,415,439"/>
+<area shape="rect" id="node11" href="classsstmac_1_1sw_1_1operating__system.html#abb45d45b2e8e0bb7bcd7f53d9a01ca74" title="sstmac::sw::operating\l_system::init_factory\l_params" alt="" coords="261,463,415,519"/>
+<area shape="rect" id="node12" href="classsstmac_1_1sw_1_1operating__system.html#ad12f5dce672ee83761e43a3482554054" title="sstmac::sw::operating\l_system::params" alt="" coords="261,544,415,585"/>
+<area shape="rect" id="node23" href="classsstmac_1_1sw_1_1operating__system.html#ab837aa9d49b47365aa494a0208fc206c" title="sstmac::sw::operating\l_system::remote_node" alt="" coords="256,609,420,651"/>
+<area shape="rect" id="node24" href="classsstmac_1_1sw_1_1operating__system.html#abe90f73e5c0e4dc481cdabb2e0c659c5" title="sstmac::sw::operating\l_system::switch_to_context" alt="" coords="241,675,435,716"/>
+<area shape="rect" id="node7" href="classsstmac_1_1thread__info.html#a8bdd785d0dcd1ec6bf7ab1f9e9558969" title="sstmac::thread_info\l::kernel_space_thread_id" alt="" coords="493,169,674,211"/>
+<area shape="rect" id="node8" href="classsstmac_1_1thread__info.html#a8fddaa6d399dbf239595850c5c643ebb" title="sstmac::thread_info\l::user_space_thread_id" alt="" coords="499,235,668,276"/>
+<area shape="rect" id="node13" href="classsstmac_1_1sw_1_1operating__system.html#a93fee2079f44c72cd724f80a529bc72d" title="sstmac::sw::operating\l_system::add_thread" alt="" coords="506,300,661,341"/>
+<area shape="rect" id="node14" href="classsstmac_1_1sw_1_1operating__system.html#a2b670cf4fcbe3dda2a92688c6bf5a356" title="sstmac::sw::operating\l_system::current_os_thread\l_context" alt="" coords="485,366,681,422"/>
+<area shape="rect" id="node15" href="classsstmac_1_1sw_1_1operating__system.html#abe23023a51a0ce6c9db4dbbaa4a7b10c" title="sstmac::sw::operating\l_system::init_startup_libs" alt="" coords="495,447,672,488"/>
+<area shape="rect" id="node16" href="classsstmac_1_1sw_1_1operating__system.html#a1d27e0e7158b4f4b5772db98cb38c37f" title="sstmac::sw::operating\l_system::init_threading" alt="" coords="500,512,667,553"/>
+<area shape="rect" id="node17" href="classsstmac_1_1sw_1_1operating__system.html#ae96431f7504f59bc13e6044418a893f8" title="sstmac::sw::operating\l_system::kill_node" alt="" coords="506,577,661,619"/>
+<area shape="rect" id="node18" href="classsstmac_1_1sw_1_1operating__system.html#ae71647a88b537322850720b102e26f5f" title="sstmac::sw::operating\l_system::operating_system" alt="" coords="487,643,679,684"/>
+<area shape="rect" id="node19" href="classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="506,708,661,749"/>
+<area shape="rect" id="node20" href="classsstmac_1_1sw_1_1operating__system.html#ad643e9db5af77d2d6224217ba915ff8f" title="sstmac::sw::operating\l_system::sleep" alt="" coords="506,773,661,815"/>
+<area shape="rect" id="node21" href="classsstmac_1_1sw_1_1operating__system.html#ae627e7a18de4203cf77f96d5b8f22308" title="sstmac::sw::operating\l_system::switch_to_thread" alt="" coords="489,839,677,880"/>
+<area shape="rect" id="node22" href="classsstmac_1_1sw_1_1operating__system.html#a7d1b4e5e2a3fbb835a733c588ad4b22e" title="sstmac::sw::operating\l_system::unregister_lib" alt="" coords="501,904,665,945"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

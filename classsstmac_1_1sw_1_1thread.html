@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -71,17 +71,42 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::thread:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1thread.png" usemap="#sstmac::sw::thread_map" alt=""/>
-  <map id="sstmac::sw::thread_map" name="sstmac::sw::thread_map">
-<area href="classsstmac_1_1sumi__thread.html" alt="sstmac::sumi_thread" shape="rect" coords="0,56,229,80"/>
-<area href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="sstmac::sw::app" shape="rect" coords="239,56,468,80"/>
-<area href="classsstmac_1_1sw_1_1pthread__runner.html" alt="sstmac::sw::pthread_runner" shape="rect" coords="478,56,707,80"/>
-<area href="classsstmac_1_1sw_1_1user__app__cxx__empty__main.html" alt="sstmac::sw::user_app_cxx_empty_main" shape="rect" coords="0,112,229,136"/>
-<area href="classsstmac_1_1sw_1_1user__app__cxx__full__main.html" alt="sstmac::sw::user_app_cxx_full_main" shape="rect" coords="239,112,468,136"/>
-<area href="classsumi_1_1parsedumpi.html" title="A refactored dumpi parser to read the newer binary-format dumpi trace files. " alt="sumi::parsedumpi" shape="rect" coords="478,112,707,136"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1thread__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1thread_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1thread_inherit__map" id="sstmac_1_1sw_1_1thread_inherit__map">
+<area shape="rect" id="node2" href="classsstmac_1_1sumi__thread.html" title="{sstmac::sumi_thread\n|&#45; compute_\l&#45; num_threads_\l|+ sumi_thread()\l+ start()\l+ compute()\l&#45; run()\l}" alt="" coords="9,915,158,1051"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="182,747,353,1220"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1pthread__runner.html" title="{sstmac::sw::pthread\l_runner\n|# start_routine_\l# arg_\l|+ run()\l+ clear_subthread_from\l_parent_app()\l+ pthread_runner()\l}" alt="" coords="377,908,549,1059"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1user__app__cxx__empty__main.html" title="{sstmac::sw::user_app\l_cxx_empty_main\n|&#45; fxn_\l&#45; empty_main_fxns_\l|+ consume_params()\l+ clone_type()\l+ skeleton_main()\l+ register_main_fxn()\l}" alt="" coords="5,1312,164,1463"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1user__app__cxx__full__main.html" title="{sstmac::sw::user_app\l_cxx_full_main\n|&#45; fxn_\l&#45; main_fxns_\l&#45; argv_map_\l|+ skeleton_main()\l+ consume_params()\l+ clone_type()\l+ register_main_fxn()\l&#45; init_argv()\l}" alt="" coords="188,1297,347,1477"/>
+<area shape="rect" id="node6" href="classsumi_1_1parsedumpi.html" title="A refactored dumpi parser to read the newer binary&#45;format dumpi trace files. " alt="" coords="371,1268,527,1507"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::thread:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1thread_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1thread_coll__map" id="sstmac_1_1sw_1_1thread_coll__map">
+<area shape="rect" id="node30" href="structsstmac_1_1sw_1_1operating__system_1_1os__thread__context.html" title="{sstmac::sw::operating\l_system::os_thread_context\n||}" alt="" coords="955,2018,1154,2110"/>
+<area shape="rect" id="node33" href="classsstmac_1_1sw_1_1app.html" title="The app derived class adds to the thread base class by providing facilities to allow applications to ..." alt="" coords="3905,1923,4052,2205"/>
+<area shape="rect" id="node48" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="3807,593,3983,949"/>
+<area shape="rect" id="node5" href="structsstmac_1_1sw_1_1process__context.html" title="{sstmac::sw::process\l_context\n||+ process_context()\l+ operator=()\l+ operator long()\l+ operator==()\l}" alt="" coords="2216,703,2365,839"/>
+<area shape="rect" id="node26" href="classsstmac_1_1event__trace.html" title="{sstmac::event_trace\n||+ event_trace()\l+ simulation_finished()\l+ collect()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ init_factory_params()\l+ clear()\l+ ~event_trace()\l+ clone()\l+ clone_me()\l# clone_into()\l}" alt="" coords="1529,973,1698,1227"/>
+<area shape="rect" id="node29" href="classsstmac_1_1sw_1_1ftq__calendar.html" title="{sstmac::sw::ftq_calendar\n||+ ftq_calendar()\l+ init()\l+ ~ftq_calendar()\l+ collect()\l+ get_calendar()\l+ register_app()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ clear()\land 6 more...\l# clone_into()\l}" alt="" coords="1707,1645,1882,1884"/>
+<area shape="rect" id="node35" href="classsstmac_1_1sw_1_1lib__compute__memmove.html" title="{sstmac::sw::lib_compute\l_memmove\n||+ ~lib_compute_memmove()\l+ lib_compute_memmove()\l+ lib_compute_memmove()\l+ unregister_all_libs()\l+ supported()\l+ consume_params()\l+ incoming_event()\l+ read()\l+ write()\l+ copy()\l+ static_name()\l# init()\l# do_access()\l}" alt="" coords="4573,637,4771,905"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1operating__system.html" title="{sstmac::sw::operating\l_system\n||+ ~operating_system()\l+ init_factory_params()\l+ finalize_init()\l+ restarting()\l+ execute_kernel()\l+ execute_kernel()\l+ kernel_supported()\l+ kernel_supported()\l+ block()\l+ unblock()\land 34 more...\l+ construct()\l+ static_os_thread_context()\l+ delete_statics()\l+ switch_to_context()\l+ current_os()\l+ current_aid()\l+ current_tid()\l+ current_library()\l+ current_node_id()\l+ remote_node()\land 6 more...\l&#45; operating_system()\l&#45; add_thread()\l&#45; switch_to_thread()\l&#45; init_threading()\l&#45; init_startup_libs()\l&#45; current_os_thread_context()\l&#45; register_lib()\l&#45; unregister_lib()\l}" alt="" coords="1461,2312,1672,2829"/>
+<area shape="rect" id="node21" href="classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n||+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="1415,2892,1585,3175"/>
+<area shape="rect" id="node8" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="2659,1952,2856,2176"/>
+<area shape="rect" id="node34" href="classsstmac_1_1sw_1_1lib__compute__loops.html" title="{sstmac::sw::lib_compute\l_loops\n||+ ~lib_compute_loops()\l+ lib_compute_loops()\l+ lib_compute_loops()\l+ compute_array_init()\l+ compute_loop()\l+ compute_loop2()\l+ compute_loop3()\l+ compute_loop4()\l+ compute_loop5()\l+ compute_loop6()\l+ compute_loop7()\l+ compute_fft()\l# supported()\l# consume_params()\l# compute_loop_work()\l}" alt="" coords="4408,1287,4579,1585"/>
+<area shape="rect" id="node37" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="4116,211,4295,333"/>
+<area shape="rect" id="node38" href="structsstmac_1_1sw_1_1software__id.html" title="A wrapper for an appid, taskid pair. " alt="" coords="4943,428,5111,535"/>
+<area shape="rect" id="node22" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="3249,1390,3418,1482"/>
+<area shape="rect" id="node24" href="classsstmac_1_1sw_1_1graph__viz.html" title="{sstmac::sw::graph_viz\n||+ graph_viz()\l+ to_string()\l+ ~graph_viz()\l+ simulation_finished()\l+ clear()\l+ reduce()\l+ dump_local_data()\l+ dump_global_data()\l+ clone_me()\l+ global_reduce()\l+ clone()\l+ count_trace()\l+ allocate_trace()\l+ delete_trace()\l+ delete_statics()\l&#45; add_call()\l&#45; get_trace()\l}" alt="" coords="1485,1908,1649,2220"/>
+<area shape="rect" id="node27" href="classsstmac_1_1sw_1_1threading__interface.html" title="{sstmac::sw::threading\l_interface\n||+ ~threading_interface()\l+ copy()\l+ init_context()\l+ destroy_context()\l+ start_context()\l+ swap_context()\l+ complete_context()\l}" alt="" coords="1891,681,2067,861"/>
+<area shape="rect" id="node36" href="classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ supported()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="4794,175,4993,369"/>
+<area shape="rect" id="node39" href="classsstmac_1_1sw_1_1lib__sleep.html" title="{sstmac::sw::lib_sleep\n||+ ~lib_sleep()\l+ lib_sleep()\l+ lib_sleep()\l+ incoming_event()\l+ sleep()\l+ supported()\l}" alt="" coords="4051,1025,4202,1175"/>
+<area shape="rect" id="node44" href="classsstmac_1_1sw_1_1lib__compute__time.html" title="{sstmac::sw::lib_compute_time\n||+ lib_compute_time()\l+ lib_compute_time()\l+ ~lib_compute_time()\l+ incoming_event()\l+ compute()\l+ supported()\l+ construct()\l+ construct()\l}" alt="" coords="3977,1346,4180,1526"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -503,6 +528,16 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00345">apis_</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a8039db874ccc04a27d14edab7858cb08">current()</a>, and <a class="el" href="errors_8h_source.html#l00037">spkt_throw_printf</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a9c242222fcc3ccc66830d9d50e43913e_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a9c242222fcc3ccc66830d9d50e43913e_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a9c242222fcc3ccc66830d9d50e43913e_cgraph" id="classsstmac_1_1sw_1_1thread_a9c242222fcc3ccc66830d9d50e43913e_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a8039db874ccc04a27d14edab7858cb08" title="sstmac::sw::thread\l::current" alt="" coords="189,5,325,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a62dfa6d693fcf933f98965a5db54326b"></a>
@@ -603,6 +638,17 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00210">210</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1thread.html#aa828a68ce861bcfab64fc4f2268452a4">append_backtrace()</a>, <a class="el" href="thread_8h_source.html#l00364">bt_nfxn_</a>, and <a class="el" href="classsstmac_1_1sw_1_1thread.html#ac554fffc46990fe97509273a00117e94">pop_backtrace()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a754a976f34caa7b7c78ad85932dc062e_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a754a976f34caa7b7c78ad85932dc062e_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a754a976f34caa7b7c78ad85932dc062e_cgraph" id="classsstmac_1_1sw_1_1thread_a754a976f34caa7b7c78ad85932dc062e_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#aa828a68ce861bcfab64fc4f2268452a4" title="sstmac::sw::thread\l::append_backtrace" alt="" coords="189,5,335,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#ac554fffc46990fe97509273a00117e94" title="sstmac::sw::thread\l::pop_backtrace" alt="" coords="194,71,330,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -845,6 +891,16 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00345">apis_</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880">build_api()</a>, and <a class="el" href="errors_8h_source.html#l00037">spkt_throw_printf</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a8b161c0fb908983cba38d6afa67b225d_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a8b161c0fb908983cba38d6afa67b225d_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a8b161c0fb908983cba38d6afa67b225d_cgraph" id="classsstmac_1_1sw_1_1thread_a8b161c0fb908983cba38d6afa67b225d_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880" title="sstmac::sw::thread\l::build_api" alt="" coords="189,5,325,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a9d5034ed5c42b3a68bcbcc19bfa0242a"></a>
@@ -1043,6 +1099,16 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00057">CANCELED</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#aa8cee40f0c9d9b3ca7534942a327e71b">kill()</a>, and <a class="el" href="thread_8h_source.html#l00348">state_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a97d8e1393cbda0e0e5badb2c959518c3_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a97d8e1393cbda0e0e5badb2c959518c3_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a97d8e1393cbda0e0e5badb2c959518c3_cgraph" id="classsstmac_1_1sw_1_1thread_a97d8e1393cbda0e0e5badb2c959518c3_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#aa8cee40f0c9d9b3ca7534942a327e71b" title="sstmac::sw::thread\l::kill" alt="" coords="189,5,325,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a6e8fd9d52bac082020140af5b279d779"></a>
@@ -1071,6 +1137,16 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00261">261</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="thread_8h_source.html#l00053">INITIALIZED</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a0ce04c5f7969c4a5eee69f5d69738cc9">register_lib()</a>, and <a class="el" href="thread_8h_source.html#l00348">state_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a6e8fd9d52bac082020140af5b279d779_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a6e8fd9d52bac082020140af5b279d779_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a6e8fd9d52bac082020140af5b279d779_cgraph" id="classsstmac_1_1sw_1_1thread_a6e8fd9d52bac082020140af5b279d779_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a0ce04c5f7969c4a5eee69f5d69738cc9" title="sstmac::sw::thread\l::register_lib" alt="" coords="189,5,325,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1197,6 +1273,16 @@ template&lt;class T &gt; </div>
 
 <p>Referenced by <a class="el" href="thread_8h_source.html#l00067">set_api()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a8b18c795fbaf472cbe967539b8d36f49_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a8b18c795fbaf472cbe967539b8d36f49_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a8b18c795fbaf472cbe967539b8d36f49_cgraph" id="classsstmac_1_1sw_1_1thread_a8b18c795fbaf472cbe967539b8d36f49_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a5dc81c60fd203c68347da4b1e60571c7" title="sstmac::sw::thread::env" alt="" coords="211,5,376,32"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="afc6c05ceb2d695c4f4ba5e880febf68b"></a>
@@ -1225,6 +1311,16 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00117">117</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1thread.html#afafa0ce599cb0eceaef24e394101535a">clear_subthread_from_parent_app()</a>, and <a class="el" href="thread_8h_source.html#l00355">parent_app_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_afc6c05ceb2d695c4f4ba5e880febf68b_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_afc6c05ceb2d695c4f4ba5e880febf68b_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_afc6c05ceb2d695c4f4ba5e880febf68b_cgraph" id="classsstmac_1_1sw_1_1thread_afc6c05ceb2d695c4f4ba5e880febf68b_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#afafa0ce599cb0eceaef24e394101535a" title="sstmac::sw::thread\l::clear_subthread_from\l_parent_app" alt="" coords="189,5,355,61"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1430,6 +1526,17 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00275">add_affinity()</a>, and <a class="el" href="thread_8h_source.html#l00280">zero_affinity()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a7f7085a725e8b66955aaeeb99aa806cd_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a7f7085a725e8b66955aaeeb99aa806cd_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a7f7085a725e8b66955aaeeb99aa806cd_cgraph" id="classsstmac_1_1sw_1_1thread_a7f7085a725e8b66955aaeeb99aa806cd_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a4ce0065191447956331d964681583389" title="sstmac::sw::thread\l::add_affinity" alt="" coords="189,5,325,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#a357f584c470d56b8f9767fbff293b538" title="sstmac::sw::thread\l::zero_affinity" alt="" coords="189,71,325,112"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ae2d0862ab1098bbb28a60893220c2324"></a>
@@ -1457,6 +1564,20 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00067">67</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="thread_8h_source.html#l00143">aid()</a>, <a class="el" href="thread_8h_source.html#l00345">apis_</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880">build_api()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#ab66a5144c1ffe6cf186d6fa5c821ec0b">init_os()</a>, and <a class="el" href="thread_8h_source.html#l00182">os()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_ae2d0862ab1098bbb28a60893220c2324_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_ae2d0862ab1098bbb28a60893220c2324_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_ae2d0862ab1098bbb28a60893220c2324_cgraph" id="classsstmac_1_1sw_1_1thread_ae2d0862ab1098bbb28a60893220c2324_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a62dfa6d693fcf933f98965a5db54326b" title="sstmac::sw::thread::aid" alt="" coords="189,5,351,32"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880" title="sstmac::sw::thread\l::build_api" alt="" coords="202,57,338,98"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1thread.html#ab66a5144c1ffe6cf186d6fa5c821ec0b" title="sstmac::sw::thread\l::init_os" alt="" coords="202,122,338,163"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1thread.html#a8b18c795fbaf472cbe967539b8d36f49" title="sstmac::sw::thread::os" alt="" coords="191,188,349,215"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1thread.html#a5dc81c60fd203c68347da4b1e60571c7" title="sstmac::sw::thread::env" alt="" coords="399,188,564,215"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1486,6 +1607,22 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00362">backtrace_</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#aa7dcd534a35d3a4b88d7404715020cc8">collect_backtrace()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#ae2be4850832f498182849753a56b330d">init_thread()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a04252a31c3ad0062df698f9090a9ccf4">join()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a59d998d76d2800eb5f280c537357c7bb">run()</a>, <a class="el" href="thread_8h_source.html#l00190">stack()</a>, <a class="el" href="thread_8h_source.html#l00195">stacksize()</a>, and <a class="el" href="classsstmac_1_1sw_1_1thread.html#a3170d57e832c62a25160c9477f8dc891">start_thread()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a6761a0d5cf7beb6cd91364c5d11afe83_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a6761a0d5cf7beb6cd91364c5d11afe83_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a6761a0d5cf7beb6cd91364c5d11afe83_cgraph" id="classsstmac_1_1sw_1_1thread_a6761a0d5cf7beb6cd91364c5d11afe83_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#aa7dcd534a35d3a4b88d7404715020cc8" title="sstmac::sw::thread\l::collect_backtrace" alt="" coords="202,5,339,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#ae2be4850832f498182849753a56b330d" title="sstmac::sw::thread\l::init_thread" alt="" coords="203,71,339,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1thread.html#a04252a31c3ad0062df698f9090a9ccf4" title="sstmac::sw::thread\l::join" alt="" coords="203,136,339,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1thread.html#a59d998d76d2800eb5f280c537357c7bb" title="Derived types need to override this method. " alt="" coords="189,202,352,229"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1thread.html#a493253f84c694a0aa5c9dc9b073193f7" title="sstmac::sw::thread\l::stack" alt="" coords="203,253,339,295"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1thread.html#af5e227fd636df4cf35e889eb89d70fdc" title="sstmac::sw::thread\l::stacksize" alt="" coords="203,319,339,360"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1thread.html#a3170d57e832c62a25160c9477f8dc891" title="A convenience request to start a new thread. " alt="" coords="203,384,339,425"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a0453c949a02be0f4f7eb8fdf497b3210"></a>
@@ -1514,6 +1651,16 @@ template&lt;class T &gt; </div>
 
 <p>References <a class="el" href="thread_8h_source.html#l00290">cpumask()</a>, and <a class="el" href="thread_8h_source.html#l00392">cpumask_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_a0453c949a02be0f4f7eb8fdf497b3210_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_a0453c949a02be0f4f7eb8fdf497b3210_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_a0453c949a02be0f4f7eb8fdf497b3210_cgraph" id="classsstmac_1_1sw_1_1thread_a0453c949a02be0f4f7eb8fdf497b3210_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a1a6e3f97c083653a3f34e9310853d4ec" title="sstmac::sw::thread\l::cpumask" alt="" coords="189,5,325,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ad799d39b236a263c90d71fa98dda1709"></a>
@@ -1541,6 +1688,24 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00306">306</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1thread.html#a5dfc6675c8710f9c7b73bcdcd00c0f2d">cleanup()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a758ec514771c97783680246ad29281b0">get_tls_value()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#ae8ddec710010625480fdf063d2161572">now()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a18052994e0f0e5c868c1ef53095d0b94">physical_address()</a>, <a class="el" href="thread_8h_source.html#l00368">pthread_map_</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#affe8053d7839a2fabe1db2eab0d82abe">run_routine()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#ad5093d663463c9c040f31050548a3cfc">set_sid()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a533b1eea12295209159e2fabd144dcbd">set_tls_value()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#a46f8d70378416cf115695873fd84d563">thread()</a>, and <a class="el" href="classsstmac_1_1sw_1_1thread.html#ac97748e5f9b81ba38175b379c4ba1110">unregister_all_libs()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_ad799d39b236a263c90d71fa98dda1709_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_ad799d39b236a263c90d71fa98dda1709_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_ad799d39b236a263c90d71fa98dda1709_cgraph" id="classsstmac_1_1sw_1_1thread_ad799d39b236a263c90d71fa98dda1709_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a5dfc6675c8710f9c7b73bcdcd00c0f2d" title="This should only ever be invoked by the delete thread event. " alt="" coords="208,5,344,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#a758ec514771c97783680246ad29281b0" title="sstmac::sw::thread\l::get_tls_value" alt="" coords="208,71,344,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1thread.html#ae8ddec710010625480fdf063d2161572" title="sstmac::sw::thread::now" alt="" coords="192,137,360,163"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1thread.html#a18052994e0f0e5c868c1ef53095d0b94" title="sstmac::sw::thread\l::physical_address" alt="" coords="207,188,345,229"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1thread.html#affe8053d7839a2fabe1db2eab0d82abe" title="Run routine that defines the initial context for this task. " alt="" coords="208,253,344,295"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1thread.html#ad5093d663463c9c040f31050548a3cfc" title="sstmac::sw::thread\l::set_sid" alt="" coords="208,319,344,360"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1thread.html#a533b1eea12295209159e2fabd144dcbd" title="sstmac::sw::thread\l::set_tls_value" alt="" coords="208,384,344,425"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1thread.html#a46f8d70378416cf115695873fd84d563" title="sstmac::sw::thread\l::thread" alt="" coords="208,449,344,491"/>
+<area shape="rect" id="node10" href="classsstmac_1_1sw_1_1thread.html#ac97748e5f9b81ba38175b379c4ba1110" title="sstmac::sw::thread\l::unregister_all_libs" alt="" coords="205,515,347,556"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1746,6 +1911,17 @@ template&lt;class T &gt; </div>
 <p>Definition at line <a class="el" href="thread_8h_source.html#l00147">147</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1thread.html#a53120272dbc67859239fccd869c07056">init_id()</a>, <a class="el" href="classsstmac_1_1sw_1_1thread.html#acf3e860a734aebdda467151eaa7196e1">spawn()</a>, and <a class="el" href="thread_8h_source.html#l00379">tid_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1thread_ab476a276db67676fddd730f6aab106f2_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1thread_ab476a276db67676fddd730f6aab106f2_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1thread_ab476a276db67676fddd730f6aab106f2_cgraph" id="classsstmac_1_1sw_1_1thread_ab476a276db67676fddd730f6aab106f2_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1thread.html#a53120272dbc67859239fccd869c07056" title="sstmac::sw::thread\l::init_id" alt="" coords="211,5,347,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1thread.html#acf3e860a734aebdda467151eaa7196e1" title="sstmac::sw::thread\l::spawn" alt="" coords="211,71,347,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

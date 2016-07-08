@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -67,16 +67,29 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::hw::network_message:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1hw_1_1network__message.png" usemap="#sstmac::hw::network_5Fmessage_map" alt=""/>
-  <map id="sstmac::hw::network_5Fmessage_map" name="sstmac::hw::network_message_map">
-<area href="classsstmac_1_1message.html" title="A class describing an event. " alt="sstmac::message" shape="rect" coords="0,112,281,136"/>
-<area href="classsprockit_1_1serializable__type.html" alt="sprockit::serializable_type&lt; T &gt;" shape="rect" coords="291,112,572,136"/>
-<area href="classsstmac_1_1event.html" alt="sstmac::event" shape="rect" coords="0,56,281,80"/>
-<area href="classsprockit_1_1serializable.html" alt="sprockit::serializable" shape="rect" coords="0,0,281,24"/>
-<area href="classsstmac_1_1transport__message.html" alt="sstmac::transport_message" shape="rect" coords="145,224,426,248"/>
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1network__message_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1hw_1_1network__message_inherit__map" id="sstmac_1_1hw_1_1network__message_inherit__map">
+<area shape="rect" id="node6" href="classsstmac_1_1transport__message.html" title="{sstmac::transport_message\n|&#45; payload_\l&#45; buffer_\l|# clone_into()\l# reverse()\l&#45; ImplementSerializable()\l&#45; transport_message()\l&#45; serialize_order()\l&#45; payload()\l&#45; to_string()\l&#45; dest()\l&#45; set_dest()\l&#45; src()\l&#45; set_src()\l&#45; set_buffer()\l&#45; buffer()\l&#45; put_on_wire()\l&#45; complete_transfer()\l&#45; clone_injection_ack()\l}" alt="" coords="84,1049,279,1361"/>
+<area shape="rect" id="node2" href="classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="9,373,148,553"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="9,175,148,325"/>
+<area shape="rect" id="node4" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,152,127"/>
+<area shape="rect" id="node5" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="173,410,395,517"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::hw::network_message:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1network__message_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1hw_1_1network__message_coll__map" id="sstmac_1_1hw_1_1network__message_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="637,770,776,950"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="233,432,372,583"/>
+<area shape="rect" id="node4" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,145,152,267"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="619,329,795,685"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="272,145,451,267"/>
+<area shape="rect" id="node13" href="classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="1386,807,1609,913"/>
+<area shape="rect" id="node16" href="structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="1877,763,2030,957"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -394,6 +407,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#afa3bc2976f0b4aaed0804b7ef110e417">is_metadata()</a>, and <a class="el" href="classsstmac_1_1hw_1_1network__message.html#aedd2646764babed66c463384d0136ef7">tostr()</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_a279cd3755102f0d92b4234ccaac469f4_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_a279cd3755102f0d92b4234ccaac469f4_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_a279cd3755102f0d92b4234ccaac469f4_cgraph" id="classsstmac_1_1hw_1_1network__message_a279cd3755102f0d92b4234ccaac469f4_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#afa3bc2976f0b4aaed0804b7ef110e417" title="sstmac::hw::network\l_message::is_metadata" alt="" coords="269,5,440,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1network__message.html#aedd2646764babed66c463384d0136ef7" title="sstmac::hw::network\l_message::tostr" alt="" coords="281,71,428,112"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -453,6 +477,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="network__message_8h_source.html#l00064">64</a> of file <a class="el" href="network__message_8h_source.html">network_message.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#ad8b15494a4db745101eda335142991b8">clone_into()</a>, and <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a21f2471b52d8429f302de0c69faa8dab">network_message()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_a750a8e74e5ac72e281e0ffd729676484_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_a750a8e74e5ac72e281e0ffd729676484_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_a750a8e74e5ac72e281e0ffd729676484_cgraph" id="classsstmac_1_1hw_1_1network__message_a750a8e74e5ac72e281e0ffd729676484_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#ad8b15494a4db745101eda335142991b8" title="sstmac::hw::network\l_message::clone_into" alt="" coords="295,5,454,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1network__message.html#a21f2471b52d8429f302de0c69faa8dab" title="sstmac::hw::network\l_message::network_message" alt="" coords="271,71,479,112"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -632,6 +667,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a7b84b90974ff9d9f088541ef0136b74c">convert_to_ack()</a>, <a class="el" href="network__message_8h_source.html#l00184">needs_ack_</a>, <a class="el" href="network__message_8h_source.html#l00033">payload</a>, <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a1fc3dea63276c78a37e454f0f8b4d073">serialize_order()</a>, and <a class="el" href="network__message_8h_source.html#l00194">type_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_ac618a4a7134d8caa84001847d3143ea8_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_ac618a4a7134d8caa84001847d3143ea8_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_ac618a4a7134d8caa84001847d3143ea8_cgraph" id="classsstmac_1_1hw_1_1network__message_ac618a4a7134d8caa84001847d3143ea8_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#a7b84b90974ff9d9f088541ef0136b74c" title="sstmac::hw::network\l_message::convert_to_ack" alt="" coords="216,5,407,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1network__message.html#a1fc3dea63276c78a37e454f0f8b4d073" title="Serialize this message during parallel simulation. " alt="" coords="218,71,405,112"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ad448f73ce88c0d4221849644b72a0657"></a>
@@ -765,6 +811,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="network__message_8h_source.html#l00071">71</a> of file <a class="el" href="network__message_8h_source.html">network_message.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a759f170693ad1a66b18c76075c79d2a6">nic_reverse()</a>, and <a class="el" href="network__message_8h_source.html#l00186">route_algo_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_ac405c73f0101dc45b1bd021f20ec86a9_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_ac405c73f0101dc45b1bd021f20ec86a9_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_ac405c73f0101dc45b1bd021f20ec86a9_cgraph" id="classsstmac_1_1hw_1_1network__message_ac405c73f0101dc45b1bd021f20ec86a9_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#a759f170693ad1a66b18c76075c79d2a6" title="sstmac::hw::network\l_message::nic_reverse" alt="" coords="213,5,380,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -916,6 +972,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a836b52dafd66728fe6da1b89243a6087">is_nic_ack()</a>, and <a class="el" href="network__message_8h_source.html#l00186">route_algo_</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_af16669bee491d1e52655a3cbc20d66ca_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_af16669bee491d1e52655a3cbc20d66ca_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_af16669bee491d1e52655a3cbc20d66ca_cgraph" id="classsstmac_1_1hw_1_1network__message_af16669bee491d1e52655a3cbc20d66ca_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#a836b52dafd66728fe6da1b89243a6087" title="sstmac::hw::network\l_message::is_nic_ack" alt="" coords="240,5,399,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aa9d9e92c66e2c8339543d8e6d55b21b9"></a>
@@ -971,6 +1037,19 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="network__message_8h_source.html#l00157">157</a> of file <a class="el" href="network__message_8h_source.html">network_message.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42">byte_length()</a>, <a class="el" href="classsstmac_1_1hw_1_1network__message.html#ac5436c934b01aa5dc8aaf41382d3ed3d">dest_thread()</a>, <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a82bbf810dd7c3d21e9b416c4589aeaa1">reverse()</a>, <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a451b59bf467eb5ab1a419d951314675a">source_thread()</a>, and <a class="el" href="network__message_8h_source.html#l00194">type_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_a74d9dc913cc70da13a4b7ce4d3f5977c_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_a74d9dc913cc70da13a4b7ce4d3f5977c_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_a74d9dc913cc70da13a4b7ce4d3f5977c_cgraph" id="classsstmac_1_1hw_1_1network__message_a74d9dc913cc70da13a4b7ce4d3f5977c_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="209,5,375,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1network__message.html#ac5436c934b01aa5dc8aaf41382d3ed3d" title="sstmac::hw::network\l_message::dest_thread" alt="" coords="207,71,377,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1network__message.html#a82bbf810dd7c3d21e9b416c4589aeaa1" title="sstmac::hw::network\l_message::reverse" alt="" coords="219,136,365,177"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1network__message.html#a451b59bf467eb5ab1a419d951314675a" title="sstmac::hw::network\l_message::source_thread" alt="" coords="200,201,384,243"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1045,6 +1124,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="network__message_8h_source.html#l00087">87</a> of file <a class="el" href="network__message_8h_source.html">network_message.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1hw_1_1network__message.html#ac4efef52631f08aba53830cc4b133dc9">put_on_wire()</a>, and <a class="el" href="network__message_8h_source.html#l00173">toaddr_</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1hw_1_1network__message_a3a41480c4b7a150feefb67e520feaa69_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1network__message_a3a41480c4b7a150feefb67e520feaa69_cgraph" alt=""/></div>
+<map name="classsstmac_1_1hw_1_1network__message_a3a41480c4b7a150feefb67e520feaa69_cgraph" id="classsstmac_1_1hw_1_1network__message_a3a41480c4b7a150feefb67e520feaa69_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1network__message.html#ac4efef52631f08aba53830cc4b133dc9" title="sstmac::hw::network\l_message::put_on_wire" alt="" coords="200,5,371,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

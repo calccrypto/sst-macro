@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -68,19 +68,30 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::sw::index_strategy:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1sw_1_1index__strategy.png" usemap="#sstmac::sw::index_5Fstrategy_map" alt=""/>
-  <map id="sstmac::sw::index_5Fstrategy_map" name="sstmac::sw::index_strategy_map">
-<area href="classsprockit_1_1factory__type.html" alt="sprockit::factory_type" shape="rect" coords="630,0,830,24"/>
-<area href="classsstmac_1_1sw_1_1block__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="sstmac::sw::block_indexing" shape="rect" coords="0,112,200,136"/>
-<area href="classsstmac_1_1sw_1_1coordinate__indexing.html" alt="sstmac::sw::coordinate_indexing" shape="rect" coords="210,112,410,136"/>
-<area href="classsstmac_1_1sw_1_1dumpi__indexer.html" alt="sstmac::sw::dumpi_indexer" shape="rect" coords="420,112,620,136"/>
-<area href="classsstmac_1_1sw_1_1hostname__indexer.html" alt="sstmac::sw::hostname_indexer" shape="rect" coords="630,112,830,136"/>
-<area href="classsstmac_1_1sw_1_1node__id__indexing.html" alt="sstmac::sw::node_id_indexing" shape="rect" coords="840,112,1040,136"/>
-<area href="classsstmac_1_1sw_1_1random__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="sstmac::sw::random_indexing" shape="rect" coords="1050,112,1250,136"/>
-<area href="classsstmac_1_1sw_1_1round__robin__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="sstmac::sw::round_robin_indexing" shape="rect" coords="1260,112,1460,136"/>
+<div class="center"><img src="classsstmac_1_1sw_1_1index__strategy__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1index__strategy_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1sw_1_1index__strategy_inherit__map" id="sstmac_1_1sw_1_1index__strategy_inherit__map">
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1block__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="" coords="5,425,193,517"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1coordinate__indexing.html" title="{sstmac::sw::coordinate\l_indexing\n|# listfile_\l|+ ~coordinate_indexing()\l+ allocate()\l+ init_factory_params()\l}" alt="" coords="218,410,399,531"/>
+<area shape="rect" id="node5" href="classsstmac_1_1sw_1_1dumpi__indexer.html" title="{sstmac::sw::dumpi_indexer\n|# metaname_\l# regtop_\l|+ set_topology()\l+ init_factory_params()\l+ ~dumpi_indexer()\l+ allocate()\l# node_id_from_hostname()\l# node_id_from_coordinates()\l}" alt="" coords="423,388,637,553"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1hostname__indexer.html" title="{sstmac::sw::hostname\l_indexer\n|# listfile_\l|+ init_factory_params()\l+ ~hostname_indexer()\l+ allocate()\l}" alt="" coords="661,410,831,531"/>
+<area shape="rect" id="node7" href="classsstmac_1_1sw_1_1node__id__indexing.html" title="{sstmac::sw::node_id\l_indexing\n|# listfile_\l|+ ~node_id_indexing()\l+ init_factory_params()\l+ allocate()\l}" alt="" coords="856,410,1025,531"/>
+<area shape="rect" id="node8" href="classsstmac_1_1sw_1_1random__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="" coords="1049,410,1219,531"/>
+<area shape="rect" id="node9" href="classsstmac_1_1sw_1_1round__robin__indexing.html" title="An index strategy that allocates indices using a round robin. " alt="" coords="1243,417,1433,524"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="661,5,831,97"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::sw::index_strategy:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1index__strategy__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1index__strategy_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1sw_1_1index__strategy_coll__map" id="sstmac_1_1sw_1_1index__strategy_coll__map">
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="861,197,1031,289"/>
+<area shape="rect" id="node3" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="597,593,804,861"/>
+<area shape="rect" id="node9" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="914,924,1109,1192"/>
+<area shape="rect" id="node4" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="586,197,709,289"/>
+<area shape="rect" id="node5" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="371,160,561,325"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -197,6 +208,16 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="index__strategy_8h_source.html#l00081">81</a> of file <a class="el" href="index__strategy_8h_source.html">index_strategy.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a872bc37ec68ac500ae0b3684c6e0114b">validate_nproc()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1index__strategy_a18707b9b01ca4edf484192a2e9f7b7a9_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1index__strategy_a18707b9b01ca4edf484192a2e9f7b7a9_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1index__strategy_a18707b9b01ca4edf484192a2e9f7b7a9_cgraph" id="classsstmac_1_1sw_1_1index__strategy_a18707b9b01ca4edf484192a2e9f7b7a9_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1index__strategy.html#a872bc37ec68ac500ae0b3684c6e0114b" title="sstmac::sw::index_strategy\l::validate_nproc" alt="" coords="241,5,429,47"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -330,6 +351,18 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="index__strategy_8h_source.html#l00052">52</a> of file <a class="el" href="index__strategy_8h_source.html">index_strategy.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a268436ce559c60d9476ab0b09dbd9de9">allocate()</a>, <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a4bf316feffcf221e812ebcffb840d537">init_factory_params()</a>, <a class="el" href="index__strategy_8h_source.html#l00089">rt_</a>, and <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a10cc9d96d0e70155d37c862f1b525591">~index_strategy()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1sw_1_1index__strategy_a6f979aee28c2b40c7132c4fd09e4f67a_cgraph.png" border="0" usemap="#classsstmac_1_1sw_1_1index__strategy_a6f979aee28c2b40c7132c4fd09e4f67a_cgraph" alt=""/></div>
+<map name="classsstmac_1_1sw_1_1index__strategy_a6f979aee28c2b40c7132c4fd09e4f67a_cgraph" id="classsstmac_1_1sw_1_1index__strategy_a6f979aee28c2b40c7132c4fd09e4f67a_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1index__strategy.html#a268436ce559c60d9476ab0b09dbd9de9" title="Assign processes to nodes. " alt="" coords="241,5,429,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1sw_1_1index__strategy.html#a4bf316feffcf221e812ebcffb840d537" title="sstmac::sw::index_strategy\l::init_factory_params" alt="" coords="241,71,429,112"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1index__strategy.html#a10cc9d96d0e70155d37c862f1b525591" title="sstmac::sw::index_strategy\l::~index_strategy" alt="" coords="241,136,429,177"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

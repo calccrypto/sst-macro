@@ -40,7 +40,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -66,16 +66,26 @@
 <div class="dynheader">
 Inheritance diagram for sstmac::message:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classsstmac_1_1message.png" usemap="#sstmac::message_map" alt=""/>
-  <map id="sstmac::message_map" name="sstmac::message_map">
-<area href="classsstmac_1_1event.html" alt="sstmac::event" shape="rect" coords="94,56,272,80"/>
-<area href="classsprockit_1_1serializable.html" alt="sprockit::serializable" shape="rect" coords="94,0,272,24"/>
-<area href="classsstmac_1_1hw_1_1memory__message.html" alt="sstmac::hw::memory_message" shape="rect" coords="0,168,178,192"/>
-<area href="classsstmac_1_1hw_1_1network__message.html" alt="sstmac::hw::network_message" shape="rect" coords="188,168,366,192"/>
-<area href="classsstmac_1_1transport__message.html" alt="sstmac::transport_message" shape="rect" coords="188,224,366,248"/>
+<div class="center"><img src="classsstmac_1_1message__inherit__graph.png" border="0" usemap="#sstmac_1_1message_inherit__map" alt="Inheritance graph"/></div>
+<map name="sstmac_1_1message_inherit__map" id="sstmac_1_1message_inherit__map">
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1memory__message.html" title="{sstmac::hw::memory\l_message\n|&#45; id_\l&#45; bytes_\l&#45; max_bw_\l|&#45; NotSerializable()\l&#45; byte_length()\l&#45; unique_id()\l&#45; toaddr()\l&#45; fromaddr()\l&#45; max_bw()\l}" alt="" coords="5,704,152,899"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1network__message.html" title="{sstmac::hw::network\l_message\n|+ toaddr_\l+ fromaddr_\l# net_id_\l# needs_ack_\l# route_algo_\l# src_task_\l# dest_task_\l# bytes_\l# type_\l|+ network_message()\l+ network_message()\l+ network_message()\l+ ~network_message()\l+ is_metadata()\l+ clone_injection_ack()\l+ route_algo()\l+ nic_reverse()\l+ set_route_algo()\l+ is_nic_ack()\land 20 more...\l+ tostr()\l+ tostr()\l# clone_into()\l}" alt="" coords="177,601,346,1001"/>
+<area shape="rect" id="node2" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="100,175,239,325"/>
+<area shape="rect" id="node3" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="96,5,243,127"/>
+<area shape="rect" id="node6" href="classsstmac_1_1transport__message.html" title="{sstmac::transport_message\n|&#45; payload_\l&#45; buffer_\l|# clone_into()\l# reverse()\l&#45; ImplementSerializable()\l&#45; transport_message()\l&#45; serialize_order()\l&#45; payload()\l&#45; to_string()\l&#45; dest()\l&#45; set_dest()\l&#45; src()\l&#45; set_src()\l&#45; set_buffer()\l&#45; buffer()\l&#45; put_on_wire()\l&#45; complete_transfer()\l&#45; clone_injection_ack()\l}" alt="" coords="164,1049,359,1361"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for sstmac::message:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1message__coll__graph.png" border="0" usemap="#sstmac_1_1message_coll__map" alt="Collaboration graph"/></div>
+<map name="sstmac_1_1message_coll__map" id="sstmac_1_1message_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="315,432,453,583"/>
+<area shape="rect" id="node3" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,145,152,267"/>
+<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="631,329,807,685"/>
+<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="477,145,656,267"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -301,6 +311,21 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="sst__message_8h_source.html#l00041">41</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
 
 <p>References <a class="el" href="classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca">byte_length()</a>, <a class="el" href="classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3">fromaddr()</a>, <a class="el" href="classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09">message()</a>, <a class="el" href="classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c">serialize_order()</a>, <a class="el" href="classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9">toaddr()</a>, and <a class="el" href="classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20">unique_id()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph.png" border="0" usemap="#classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph" alt=""/></div>
+<map name="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph" id="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph">
+<area shape="rect" id="node2" href="classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca" title="Virtual function to return size. " alt="" coords="217,5,378,47"/>
+<area shape="rect" id="node3" href="classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3" title="sstmac::message::fromaddr" alt="" coords="201,71,393,98"/>
+<area shape="rect" id="node4" href="classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09" title="sstmac::message::message" alt="" coords="201,122,393,149"/>
+<area shape="rect" id="node5" href="classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c" title="Serialize this message during parallel simulation. " alt="" coords="204,173,391,215"/>
+<area shape="rect" id="node6" href="classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9" title="sstmac::message::toaddr" alt="" coords="209,239,385,266"/>
+<area shape="rect" id="node7" href="classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20" title="sstmac::message::unique_id" alt="" coords="200,290,395,317"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
