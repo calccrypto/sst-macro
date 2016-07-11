@@ -61,6 +61,105 @@ abstract_fat_tree::init_factory_params(sprockit::sim_parameters *params)
    */
   toplevel_ = l_ - 1;
   numleafswitches_ = pow(k_, l_ - 1);
+
+  level_offsets_.resize(l_);
+  num_switches_ = 0;
+  while (nswitches >= 1){
+    level_offsets_[level] = offset;
+    top_debug("fat_tree: setting level offset %d to %d", level, offset);
+    offset += nswitches;
+    num_switches_ += nswitches;
+    nswitches /= k_;
+    level++;
+  }
+}
+
+int
+abstract_fat_tree::level(switch_id sid) const
+{
+  int level_stop = level_offsets_.size() - 1;
+  for (int i=0; i < level_stop; ++i){
+    if (sid >= level_offsets_[i] && sid < level_offsets_[i+1]){
+      return i;
+    }
+  }
+  return toplevel_;
+}
+
+// minimal route going up
+void
+fat_tree::minimal_route_to_switch_up(
+  switch_id current_sw_addr,
+  switch_id dst_sw_addr,
+  routing_info::path & path,
+  int src_level,
+  int dst_level) const {
+    path.outport = k_;
+    path.vc = 0;
+    top_debug("fat_tree: routing up to get to s=%d,l=%d from s=%d,l=%d",
+            int(dest_sw_addr), dst_level,
+            int(current_sw_addr), src_level);
+}
+
+// dmodk route (going up)
+void
+fat_tree::dmodk_up(
+  switch_id current_sw_addr,
+  switch_id dst_sw_addr,
+  routing_info::path & path,
+  int src_level,
+  int dst_level) const {
+
+    // walk up from the destination switch to get offset at level of this switch
+    int dstLevelOffset = dest_sw_addr - level_offsets_[dst_level];
+    int dstLevelTmp = dst_level;
+    int downPort;
+    while (dstLevelTmp < src_level){
+      downPort = dstLevelOffset % k_;
+      dstLevelOffset /= k_;
+      dstLevelTmp++;
+    }
+
+    top_debug("fat_tree: routing up to get to s=%d,l=%d from s=%d,l=%d",
+              int(dest_sw_addr), dst_level,
+              int(current_sw_addr), src_level);
+    path.outport = dstLevelOffset % k_; // mod k towards offset
+    path.vc = 0;                        // go up
+}
+
+// minimal route going down
+void
+fat_tree::minimal_route_to_switch_down(
+  switch_id current_sw_addr,
+  switch_id dst_sw_addr,
+  routing_info::path & path,
+  int src_level,
+  int dst_level) const {
+    //walk up from the destination switch - see if it hits the source
+    int dstLevelOffset = dest_sw_addr - level_offsets_[dst_level];
+    int dstLevelTmp = dst_level;
+    int downPort;
+    while (dstLevelTmp < src_level){
+      downPort = dstLevelOffset % k_;
+      dstLevelOffset /= k_;
+      dstLevelTmp++;
+    }
+    int parentAtSrcLevel = dstLevelOffset + level_offsets_[src_level];
+    if (parentAtSrcLevel == current_sw_addr){
+      top_debug("fat_tree: routing down to get to s=%d,l=%d from s=%d,l=%d on port %d",
+              int(dest_sw_addr), dst_level,
+              int(current_sw_addr), src_level,
+              downPort);
+      //yep, we can hit the dest switch on the way down
+      path.outport = downPort;
+      path.vc = 1; //down, down
+    } else {
+      top_debug("fat_tree: routing up to get to s=%d,l=%d from s=%d,l=%d",
+              int(dest_sw_addr), dst_level,
+              int(current_sw_addr), src_level);
+      path.outport = k_;
+      path.vc = 0;
+    }
 }
 
 void
@@ -69,7 +168,37 @@ fat_tree::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_switch");
+  int src_level = level(current_sw_addr);
+  int dst_level = level(dest_sw_addr);
+
+  // go up
+  if (dst_level >= src_level){
+      switch (path.algo){
+      case minimal:
+          minimal_route_to_switch_up(current_sw_addr, dest_sw_addr, path, src_level, dst_level);
+          break;
+      case dmodk:
+          dmodk_up(current_sw_addr, dest_sw_addr, path, src_level, dst_level);
+          break;
+      case SDN:
+      default:
+          spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", to_str(path.algo));
+          break;
+      }
+  }
+  // go down
+  else{
+      switch (path.algo){
+      case minimal:
+      case dmodk:
+          minimal_route_to_switch_down(current_sw_addr, dest_sw_addr, path, src_level, dst_level);
+          break;
+      case SDN:
+      default:
+          spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", to_str(path.algo));
+          break;
+      }
+  }
 }
 
 std::vector<node_id>
@@ -327,7 +456,7 @@ simple_fat_tree::partition(
         int thr = worker % nthread;
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -344,7 +473,7 @@ simple_fat_tree::partition(
       if (lp == me){
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -500,17 +629,6 @@ simple_fat_tree::connect_objects(internal_connectable_map &switches)
   }
 }
 
-int
-simple_fat_tree::level(switch_id sid) const
-{
-  int level_stop = level_offsets_.size() - 1;
-  for (int i=0; i < level_stop; ++i){
-    if (sid >= level_offsets_[i] && sid < level_offsets_[i+1]){
-      return i;
-    }
-  }
-  return toplevel_;
-}
 
 void
 simple_fat_tree::minimal_route_to_switch(
@@ -632,4 +750,3 @@ simple_fat_tree::switch_number(const coordinates &coords) const
 
 }
 } //end of namespace sstmac
-

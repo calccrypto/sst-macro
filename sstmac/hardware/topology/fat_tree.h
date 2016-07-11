@@ -85,6 +85,8 @@ class abstract_fat_tree :
  protected:
   int l_, k_, numleafswitches_;
   int toplevel_;
+  std::vector<int> level_offsets_;
+  int num_switches_;
 };
 
 /**
@@ -137,6 +139,33 @@ class fat_tree :
     const coordinates &src,
     const coordinates &dst,
     routing_info::path& path) const;
+
+  // original part of minimal_route_to_switch going up
+  void
+  minimal_route_to_switch_up(
+      switch_id current_sw_addr,
+      switch_id dst_sw_addr,
+      routing_info::path & path,
+      int src_level,
+      int dst_level) const;
+
+  // destination mod k, going up only; down uses minimal_route_to_switch_down
+  void
+  dmodk_up(
+      switch_id current_sw_addr,
+      switch_id dst_sw_addr,
+      routing_info::path & path,
+      int src_level,
+      int dst_level) const;
+
+  // original part of minimal_route_to_switch going down
+  void
+  minimal_route_to_switch_down(
+      switch_id current_sw_addr,
+      switch_id dst_sw_addr,
+      routing_info::path & path,
+      int src_level,
+      int dst_level) const;
 
   void
   minimal_route_to_switch(
@@ -254,12 +283,7 @@ class simple_fat_tree : public abstract_fat_tree
   int num_hops_to_node(node_id src, node_id dst) const;
 
  protected:
-  std::vector<int> level_offsets_;
-
-  int num_switches_;
-
   std::vector<double> tapering_;
-
 
 };
 
@@ -267,4 +291,3 @@ class simple_fat_tree : public abstract_fat_tree
 } //end of namespace sstmac
 
 #endif
-
