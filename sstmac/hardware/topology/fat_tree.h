@@ -142,15 +142,15 @@ class fat_tree :
   void
   original_minimal_route_to_switch(
       switch_id current_sw_addr,
-      switch_id dst_sw_addr,
-      routing_info::path & path) const;
+      switch_id dest_sw_addr,
+      routing_info::path &path) const;
 
   // destination mod k
   void
   dmodk(
       switch_id current_sw_addr,
-      switch_id dst_sw_addr,
-      routing_info::path & path) const;
+      switch_id dest_sw_addr,
+      routing_info::path &path) const;
 
   void
   minimal_route_to_switch(
@@ -162,7 +162,7 @@ class fat_tree :
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    routing_info::path& path) const;
+    routing_info::path &path) const;
 
   int
   minimal_distance(

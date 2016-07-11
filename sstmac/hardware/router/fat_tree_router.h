@@ -36,15 +36,13 @@ class fat_tree_router :
   number_paths(message* msg) const;
 
   virtual void
-  path_is_good(node_id goingto, int fromport, int toport) {
-  }
+  path_is_good(node_id goingto, int fromport, int toport) {}
 
   void
   productive_paths_to_switch(switch_id dst, routing_info::path_set &paths);
 
   virtual void
-  path_teardown(int fromport, int toport) {
-  }
+  path_teardown(int fromport, int toport) {}
 
   void
   init_factory_params(sprockit::sim_parameters *params);
@@ -68,6 +66,11 @@ class fat_tree_router :
 
   void
   minimal_route_to_switch(
+    switch_id sw_addr,
+    routing_info::path& path);
+
+  void
+  dmodk_route_to_switch(
     switch_id sw_addr,
     routing_info::path& path);
 
@@ -104,4 +107,3 @@ class fat_tree_router :
 }
 }
 #endif
-

@@ -61,83 +61,39 @@ abstract_fat_tree::init_factory_params(sprockit::sim_parameters *params)
    */
   toplevel_ = l_ - 1;
   numleafswitches_ = pow(k_, l_ - 1);
-
-  level_offsets_.resize(l_);
-  num_switches_ = 0;
-  while (nswitches >= 1){
-    level_offsets_[level] = offset;
-    top_debug("fat_tree: setting level offset %d to %d", level, offset);
-    offset += nswitches;
-    num_switches_ += nswitches;
-    nswitches /= k_;
-    level++;
-  }
 }
 
 // simple_fat_tree::minimal_route_to_switch
 void
 fat_tree::original_minimal_route_to_switch(
   switch_id current_sw_addr,
-  switch_id dst_sw_addr,
-  routing_info::path & path) const {
-
-  int src_level = level(current_sw_addr);
-  int dst_level = level(dest_sw_addr);
-
-  // go up
-  if (dst_level >= src_level){
-    path.outport = k_;
-    path.vc = 0;
-    top_debug("fat_tree: routing up to get to s=%d,l=%d from s=%d,l=%d",
-            int(dest_sw_addr), dst_level,
-            int(current_sw_addr), src_level);
-  } else {
-    //walk up from the destination switch - see if it hits the source
-    int dstLevelOffset = dest_sw_addr - level_offsets_[dst_level];
-    int dstLevelTmp = dst_level;
-    int downPort;
-    while (dstLevelTmp < src_level){
-      downPort = dstLevelOffset % k_;
-      dstLevelOffset /= k_;
-      dstLevelTmp++;
-    }
-    int parentAtSrcLevel = dstLevelOffset + level_offsets_[src_level];
-    if (parentAtSrcLevel == current_sw_addr){
-      top_debug("fat_tree: routing down to get to s=%d,l=%d from s=%d,l=%d on port %d",
-              int(dest_sw_addr), dst_level,
-              int(current_sw_addr), src_level,
-              downPort);
-      //yep, we can hit the dest switch on the way down
-      path.outport = downPort;
-      path.vc = 1; //down, down
-    } else {
-      top_debug("fat_tree: routing up to get to s=%d,l=%d from s=%d,l=%d",
-              int(dest_sw_addr), dst_level,
-              int(current_sw_addr), src_level);
-      path.outport = k_;
-      path.vc = 0;
-    }
+  switch_id dest_sw_addr,
+  routing_info::path & path) const
+{
+  spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_switch");
 }
 
 // dmodk routing
 void
 fat_tree::dmodk(
   switch_id current_sw_addr,
-  switch_id dst_sw_addr,
-  routing_info::path & path) const {
-    // get current switch coordinates
-    coordinates src;
-    compute_switch_coords(currnet_sw_addr, dst);
+  switch_id dest_sw_addr,
+  routing_info::path & path) const
+{
+  // get current switch coordinates
+  coordinates src;
+  compute_switch_coords(current_sw_addr, src);
 
-    // get destination switch coordinates
-    coordinates dst;
-    compute_switch_coords(dst_sw_addr, dst);
+  // get destination switch coordinates
+  coordinates dst;
+  compute_switch_coords(dest_sw_addr, dst);
 
-    top_debug("fat_tree: dmodk routing to get to s=%d,l=%d from s=%d,l=%d",
-              int(dest_sw_addr), dst_level,
-              int(current_sw_addr), src_level);
-    path.outport = dst[1] % k_;   // mod k towards destination column
-    path.vc = (src[1] == dst[1]); // if columns are the same, go down; otherwise, go up
+  path.outport = dst[1] % k_;   // mod k towards destination column
+  path.vc = (src[1] == dst[1]); // if columns are the same, go down; otherwise, go up
+
+  top_debug("fat_tree: dmodk routing to get to %d from %d",
+            int(dest_sw_addr),
+            int(current_sw_addr));
 }
 
 void
@@ -146,16 +102,16 @@ fat_tree::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  switch (path.algo){
-  case minimal:
+  switch (routing::SDN){ // need to get routing algorithm somehow
+  case routing::minimal:
       original_minimal_route_to_switch(current_sw_addr, dest_sw_addr, path);
       break;
-  case dmodk:
+  case routing::dmodk:
       dmodk(current_sw_addr, dest_sw_addr, path);
       break;
-  case SDN:
+  case routing::SDN:
   default:
-      spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", to_str(path.algo));
+      spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", routing::tostr(routing::SDN));
       break;
   }
 }
