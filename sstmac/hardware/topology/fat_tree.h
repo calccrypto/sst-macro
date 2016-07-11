@@ -78,6 +78,10 @@ class abstract_fat_tree :
   std::vector<node_id>
   nodes_connected_to_ejection_switch(switch_id swaddr) const;
 
+  // which level this switch is on
+  int
+  level(switch_id sid) const;
+
  protected:
   std::vector<node_id>
   nodes_connected_to_switch(switch_id swaddr) const;
@@ -140,32 +144,19 @@ class fat_tree :
     const coordinates &dst,
     routing_info::path& path) const;
 
-  // original part of minimal_route_to_switch going up
+  // simple_fat_tree::minimal_route_to_switch
   void
-  minimal_route_to_switch_up(
+  original_minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dst_sw_addr,
-      routing_info::path & path,
-      int src_level,
-      int dst_level) const;
+      routing_info::path & path) const;
 
-  // destination mod k, going up only; down uses minimal_route_to_switch_down
+  // destination mod k
   void
-  dmodk_up(
+  dmodk(
       switch_id current_sw_addr,
       switch_id dst_sw_addr,
-      routing_info::path & path,
-      int src_level,
-      int dst_level) const;
-
-  // original part of minimal_route_to_switch going down
-  void
-  minimal_route_to_switch_down(
-      switch_id current_sw_addr,
-      switch_id dst_sw_addr,
-      routing_info::path & path,
-      int src_level,
-      int dst_level) const;
+      routing_info::path & path) const;
 
   void
   minimal_route_to_switch(
@@ -273,9 +264,6 @@ class simple_fat_tree : public abstract_fat_tree
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
     routing_info::path& path) const;
-
-  int
-  level(switch_id sid) const;
 
  private:
   int num_hops(int srcLevel, int srcOffset, int dstLevel, int dstOffset) const;
