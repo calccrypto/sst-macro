@@ -11,7 +11,7 @@ namespace sstmac {
     valiant,
     ugal,
     dmodk,
-    SDN,
+    sdn,
     deflt
   } algorithm_t;
 

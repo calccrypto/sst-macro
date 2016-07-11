@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2009 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 
@@ -13,7 +13,7 @@ include $(top_srcdir)/Makefile.common
 
 noinst_LTLIBRARIES = libsstmac_hw.la
 
-libsstmac_hw_la_LDFLAGS = 
+libsstmac_hw_la_LDFLAGS =
 
 library_includedir=$(includedir)/sstmac/hardware
 
@@ -105,7 +105,7 @@ nobase_library_include_HEADERS = \
   router/structured_router.h \
   router/ugal_routing.h \
   router/valiant_routing.h \
-  router/fat_tree_router.h 
+  router/fat_tree_router.h
 
 libsstmac_hw_la_SOURCES =  \
   analytic/simple/null_nic.cc \
@@ -171,7 +171,4 @@ libsstmac_hw_la_SOURCES =  \
   router/routing_info.cc \
   topology/structured_topology.cc \
   topology/cartesian_topology.cc \
-  topology/topology.cc 
-
-
-
+  topology/topology.cc

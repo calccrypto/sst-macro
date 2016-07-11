@@ -102,16 +102,16 @@ fat_tree::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  switch (routing::SDN){ // need to get routing algorithm somehow
+  switch (routing::sdn){ // need to get routing algorithm somehow
   case routing::minimal:
       original_minimal_route_to_switch(current_sw_addr, dest_sw_addr, path);
       break;
   case routing::dmodk:
       dmodk(current_sw_addr, dest_sw_addr, path);
       break;
-  case routing::SDN:
+  case routing::sdn:
   default:
-      spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", routing::tostr(routing::SDN));
+      spkt_throw(sprockit::value_error, "fat_tree Bad topology value: %s", routing::tostr(routing::sdn));
       break;
   }
 }

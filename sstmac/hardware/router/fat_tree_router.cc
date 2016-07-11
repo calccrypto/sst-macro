@@ -53,21 +53,22 @@ fat_tree_router::init_factory_params(sprockit::sim_parameters *params)
 void
 fat_tree_router::route(packet* pkt)
 {
-    switch (pkt -> interface<routable>()->rinfo().route_algo()){
-    case routing::minimal:
-        minimal_route_to_node(pkt->toaddr(),
-                              pkt->interface<routable>()->rinfo().current_path());
-        break;
-    case routing::dmodk:
-        dmodk_route_to_node(pkt->toaddr(),
-                              pkt->interface<routable>()->rinfo().current_path());
-        break;
-    case routing::SDN:
-        break;
-    defaut:
-        break;
-
-    };
+//  switch (pkt->interface<routable>()->rinfo().route_algo()){
+//  case routing::dmodk:
+//    dmodk_route_to_node(pkt->toaddr(),
+//      pkt->interface<routable>()->rinfo().current_path());
+//    break;
+//  case routing::sdn:
+//      spkt_throw_printf(sprockit::value_error,
+//        "fat tree router got invalid routing type %s",
+//        routing::tostr(pkt->interface<routable>()->rinfo().route_algo()));
+//      break;
+//  case routing::minimal:
+//  default:
+    minimal_route_to_node(pkt->toaddr(),
+      pkt->interface<routable>()->rinfo().current_path());
+//     break;
+//  }
 }
 
 void
@@ -128,6 +129,23 @@ fat_tree_router::minimal_route_to_switch(
 }
 
 void
+fat_tree_router::dmodk_route_to_node(
+  node_id dest_node_addr,
+  routing_info::path& path)
+{
+  netlink_id endpoint_id(dest_node_addr / top_->num_nodes_per_netlink());
+  switch_id ej_addr = regtop_->endpoint_to_ejection_switch(endpoint_id, path.outport);
+  rter_debug("structured router going to switch %d to node %d with eject on %d",
+    int(my_addr_), int(dest_node_addr), int(ej_addr));
+  if (ej_addr == my_addr_) {
+    path.vc = 0;
+  }
+  else {
+    dmodk_route_to_switch(ej_addr, path);
+  }
+}
+
+void
 fat_tree_router::dmodk_route_to_switch(
   switch_id ej_addr,
   routing_info::path& path)
@@ -137,7 +155,8 @@ fat_tree_router::dmodk_route_to_switch(
     int(my_addr_), top_->switch_coords(my_addr_).to_string().c_str(),
     int(ej_addr), top_->switch_coords(ej_addr).to_string().c_str());
 
-  int pathDim, pathDir;
+  int pathDim;
+  int pathDir = ej_addr % k_; // destination mod k
   int ej_id = ej_addr;
 
   // route down
@@ -145,19 +164,18 @@ fat_tree_router::dmodk_route_to_switch(
     pathDim = fat_tree::down_dimension;
     path.vc = 1;
     long relative_ej_id = ej_id - min_reachable_leaf_id_;
-    pathDir = ej_addr % k_;
     ftree_rter_debug("routing down with dir %d: eject-id=%ld rel-eject-id=%ld",
         pathDir, ej_id, relative_ej_id);
   }
   else {
     //route up
     pathDim = fat_tree::up_dimension;
-    pathDir = ej_addr % k_;
     path.vc = 0;
     ftree_rter_debug("routing up with dir %d", pathDir);
   }
   path.outport = regtop_->convert_to_port(pathDim, pathDir);
 }
+
 
 int
 fat_tree_router::choose_up_path()

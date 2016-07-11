@@ -54,4 +54,3 @@ class structured_router
 }
 
 #endif // REGULAR_ROUTER_H
-
