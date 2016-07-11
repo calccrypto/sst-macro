@@ -78,10 +78,6 @@ class abstract_fat_tree :
   std::vector<node_id>
   nodes_connected_to_ejection_switch(switch_id swaddr) const;
 
-  // which level this switch is on
-  int
-  level(switch_id sid) const;
-
  protected:
   std::vector<node_id>
   nodes_connected_to_switch(switch_id swaddr) const;
@@ -89,8 +85,6 @@ class abstract_fat_tree :
  protected:
   int l_, k_, numleafswitches_;
   int toplevel_;
-  std::vector<int> level_offsets_;
-  int num_switches_;
 };
 
 /**
@@ -265,12 +259,19 @@ class simple_fat_tree : public abstract_fat_tree
     switch_id dest_sw_addr,
     routing_info::path& path) const;
 
+  int
+  level(switch_id sid) const;
+
  private:
   int num_hops(int srcLevel, int srcOffset, int dstLevel, int dstOffset) const;
 
   int num_hops_to_node(node_id src, node_id dst) const;
 
  protected:
+  std::vector<int> level_offsets_;
+
+  int num_switches_;
+
   std::vector<double> tapering_;
 
 };
