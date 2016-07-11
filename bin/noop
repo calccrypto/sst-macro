@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import os
@@ -11,4 +11,3 @@ print cmd
 rc = os.system(cmd)
 if not rc == 0:
   sys.exit(1)
-

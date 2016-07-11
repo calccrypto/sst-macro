@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import signal
@@ -21,7 +21,7 @@ verbose = 0
 debugger = None
 try: verbose = int(os.environ["VERBOSE"])
 except: pass
-try: 
+try:
     debugger = os.environ["DEBUGGER"]
 except: pass
 timeout = int(sys.argv[1])
@@ -83,7 +83,3 @@ else:
         pass #already printed stuff
     else:
         print bcolors.FAIL, "ERROR/EXCEPTION: %s" % outputFile, bcolors.ENDC
-
-
-
-

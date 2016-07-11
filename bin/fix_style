@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import os.path
 import os
@@ -59,12 +59,10 @@ def visit(args, dirname, files):
     for fname in files:
         format_file(fname)
     os.chdir(topdir)
-        
+
 if len(sys.argv) > 1:
     fname = sys.argv[1]
     format_file(fname)
 else: #fix all
     cwd = os.getcwd()
     os.path.walk(".", visit, cwd)
-
-

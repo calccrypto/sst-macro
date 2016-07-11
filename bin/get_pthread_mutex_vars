@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import re
@@ -8,7 +8,7 @@ import commands
 source = """
 #include <pthread.h>
 int main(int argc, char** argv){
-  pthread_mutex_t grab_me = PTHREAD_MUTEX_INITIALIZER; 
+  pthread_mutex_t grab_me = PTHREAD_MUTEX_INITIALIZER;
   return 0;
 }
 """
@@ -31,4 +31,3 @@ if not match:
     sys.exit("Could not process pthread.h")
 
 print match.groups()[0]
-

@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import os
@@ -54,6 +54,3 @@ exe_args.append('-p "launch_app1_argv=%s"' % " ".join(app_args))
 cmd = " ".join(exe_args)
 print cmd
 os.system(cmd)
-
-    
-

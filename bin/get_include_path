@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import re
@@ -12,7 +12,7 @@ if len(sys.argv) > 3:
 
 cmd = "echo '#include <%s>' | %s %s -E -xc++ -" % (header, cxx, cppflags)
 text = commands.getoutput(cmd)
-    
+
 retext = r'[#]\s+\d+\s+["](.*?/%s)["]\s+\d+' % header
 regexp = re.compile(retext)
 match = regexp.search(text)
@@ -21,4 +21,3 @@ if not match:
     sys.exit("Could not locate include path for header <%s>" % header)
 
 print match.groups()[0]
-

@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import re
 
@@ -23,7 +23,7 @@ regexp = re.compile(retext,re.VERBOSE)
 class Router:
     nx = 16
     ny = 6
-    def __init__(self,x,y,g):   
+    def __init__(self,x,y,g):
         self.x = x
         self.y = y
         self.g = g
@@ -72,7 +72,7 @@ class Router:
             if entry and entry.g == g:
                 out.append(entry)
         return out
-        
+
 
     def has_g_connection(self,g):
         for entry in self.outputs:
@@ -88,10 +88,10 @@ class Router:
 class RouterSet:
     def __init__(self):
         self.routers = [None]*1600
-    
+
     def __getitem__(self,idx):
         return self.routers[idx]
-    
+
     def __setitem__(self,idx,item):
         self.routers[idx] = item
 
@@ -113,18 +113,18 @@ class Group:
             if rtr.has_g_connection(g):
                 out.append(rtr)
         return out
-            
+
 
 routers = RouterSet()
 
 def extract(match):
-    #0-3 are cabinet stuff 
+    #0-3 are cabinet stuff
     #srcport = int(match[4])
     srcport = int("%s%s" % (match[4],match[5]) )
     srcport_xy = (match[4],match[5])
     srcg, srcy, srcx = map(int, match[6:9])
     #9 = color
-    #10-13 are cabinet stuff 
+    #10-13 are cabinet stuff
     #print "match14 %s match15 %s" % (match[14], match[15])
     dstport = int("%s%s" % (match[14],match[15]) )
     dstport_xy = (match[14],match[15])
@@ -150,7 +150,7 @@ def extract(match):
     rsrc.outputs_port_xy[srcport] = dstport_xy
     rdst.inputs[dstport] = rsrc
     rdst.inputs_xy[dstport] = dstport_xy
-    
+
 
 matches = regexp.findall(text)
 for m in matches:

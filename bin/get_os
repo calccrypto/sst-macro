@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import commands
 
@@ -15,7 +15,3 @@ if not os:
     os = "linux"
 
 print os
-        
-
-
-

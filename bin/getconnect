@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import re
 import sys
@@ -83,7 +83,7 @@ class Path:
 class Router:
     nx = 16
     ny = 6
-    def __init__(self,x,y,g):   
+    def __init__(self,x,y,g):
         self.x = x
         self.y = y
         self.g = g
@@ -164,7 +164,7 @@ class Router:
             if link and link.dst.g == g:
                 out.append(entry)
         return out
-        
+
 
     def has_output_to_group(self,g):
         for link in self.outputs:
@@ -214,10 +214,10 @@ class Link:
 class RouterSet:
     def __init__(self):
         self.routers = [None]*1600
-    
+
     def __getitem__(self,idx):
         return self.routers[idx]
-    
+
     def __setitem__(self,idx,item):
         self.routers[idx] = item
 
@@ -239,16 +239,16 @@ class Group:
             if rtr.has_output_to_group(g):
                 out.append(rtr)
         return out
-            
+
 
 routers = RouterSet()
 
 def extract(match):
-    #0-3 are cabinet stuff 
+    #0-3 are cabinet stuff
     srcport = int(match[4])
     srcg, srcy, srcx = map(int, match[5:8])
     #8 = color
-    #9-12 are cabinet stuff 
+    #9-12 are cabinet stuff
     dstport = int(match[13])
     dstg, dsty, dstx = map(int, match[14:17])
 
@@ -266,9 +266,9 @@ def extract(match):
         routers[nid_dst] = rdst
 
     link = Link(srcport, rsrc, dstport, rdst)
-    rsrc.outputs[srcport] = link 
+    rsrc.outputs[srcport] = link
     rdst.inputs[dstport] = link
-    
+
 
 matches = regexp.findall(text)
 for m in matches:
@@ -317,7 +317,7 @@ def find_conflicts(lset, rset):
             if conflict:
                 conflicts.append(conflict)
     return conflicts
-            
+
 
 
 #print "Router 0 0 0"
@@ -386,5 +386,3 @@ for ly in range(6):
           conflict_test(ly,lx,m,ry,rx)
           if num_printed >= 20:
             sys.exit()
-
-

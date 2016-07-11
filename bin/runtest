@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import signal
@@ -207,7 +207,7 @@ if debugger:
 
 #fork off a child process to run the test
 try: exepid = os.fork()
-except OSError: 
+except OSError:
   print bcolors.FAIL, "TEST FORK FAILED"
   sys.exit(111)
 if exepid == 0:
@@ -215,7 +215,7 @@ if exepid == 0:
   sys.exit()
 
 try: waiterpid = os.fork()
-except OSError: 
+except OSError:
   print bcolors.FAIL, "TEST FORK FAILED"
   sys.exit(111)
 if waiterpid == 0:
@@ -255,7 +255,3 @@ else:
         text = "ERROR/EXCEPTION: %s" % outputFile
         print bcolors.FAIL, text, bcolors.ENDC
         open(outputFile,"w").write(text)
-
-
-
-

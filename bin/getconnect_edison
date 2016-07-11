@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2
 
 from __future__ import print_function
 import re
@@ -24,7 +24,7 @@ regexp = re.compile(retext,re.VERBOSE)
 class Router:
     nx = 16
     ny = 6
-    def __init__(self,x,y,g):   
+    def __init__(self,x,y,g):
         self.x = x
         self.y = y
         self.g = g
@@ -73,7 +73,7 @@ class Router:
             if entry and entry.g == g:
                 out.append(entry)
         return out
-        
+
 
     def has_g_connection(self,g):
         for entry in self.outputs:
@@ -89,10 +89,10 @@ class Router:
 class RouterSet:
     def __init__(self):
         self.routers = [None]*1600
-    
+
     def __getitem__(self,idx):
         return self.routers[idx]
-    
+
     def __setitem__(self,idx,item):
         self.routers[idx] = item
 
@@ -114,17 +114,17 @@ class Group:
             if rtr.has_g_connection(g):
                 out.append(rtr)
         return out
-            
+
 
 routers = RouterSet()
 
 def extract(match):
-    #0-3 are cabinet stuff 
+    #0-3 are cabinet stuff
     srcport = int("%s%s" % (match[4],match[5]) )
     srcport_xy = (match[5],match[4])
     srcg, srcy, srcx = map(int, match[6:9])
     #9 = color
-    #10-13 are cabinet stuff 
+    #10-13 are cabinet stuff
     dstport = int("%s%s" % (match[14],match[15]) )
     dstport_xy = (match[15],match[14])
     dstg, dsty, dstx = map(int, match[16:19])
@@ -146,7 +146,7 @@ def extract(match):
     rsrc.outputs_port_xy[srcport] = dstport_xy
     rdst.inputs[dstport] = rsrc
     rdst.inputs_xy[dstport] = dstport_xy
-    
+
 matches = regexp.findall(text)
 for m in matches:
     extract(m)
@@ -186,7 +186,7 @@ def print_grp_conns(srcg,dstg):
 #        if out:
 #            out_port = rtr.outputs_port[p]
 #            print "%s : %2d -> %s : %2d" % (rtr, p, out, out_port)
-             
+
 
 # Print all outputs for a given router by port number
 def print_ports_xy(x,y,z,handle):
@@ -213,7 +213,7 @@ def print_ig_ports_xy(x,y,z,handle):
             if rtr.g != out.g:
               if rtr.g > 12:
                 rtr_g = rtr.g - 1
-              else: 
+              else:
                 rtr_g = rtr.g
               if out.g > 12:
                 out_g = out.g - 1
@@ -234,4 +234,3 @@ f_inter = open('intragroup.txt', 'w')
 for x in range(16):
   for y in range(6):
     print_ports_xy(x,y,0,f_inter)
-
