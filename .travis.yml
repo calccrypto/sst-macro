@@ -1,4 +1,4 @@
-B1;2802;0clanguage: cpp
+language: cpp
 
 compiler:
   - gcc
