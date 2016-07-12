@@ -105,7 +105,10 @@ nobase_library_include_HEADERS = \
   router/structured_router.h \
   router/ugal_routing.h \
   router/valiant_routing.h \
-  router/fat_tree_router.h
+  router/fat_tree_router.h \
+  \
+  router/sdn_router.h \
+  packet_flow/sdn_packet.h
 
 libsstmac_hw_la_SOURCES =  \
   analytic/simple/null_nic.cc \
@@ -171,4 +174,7 @@ libsstmac_hw_la_SOURCES =  \
   router/routing_info.cc \
   topology/structured_topology.cc \
   topology/cartesian_topology.cc \
-  topology/topology.cc
+  topology/topology.cc \
+  \
+  router/sdn_router.cc \
+  packet_flow/sdn_packet.cc

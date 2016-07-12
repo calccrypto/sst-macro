@@ -76,6 +76,16 @@ class network_message :
   nic_reverse(type_t newtype);
 
   void
+  set_app_id(const int app_id);
+
+  int app_id() const;
+
+  void
+  set_flow_id(const int flow_id);
+
+  int flow_id() const;
+
+  void
   set_route_algo(routing::algorithm_t algo) {
     route_algo_ = algo;
   }
@@ -179,6 +189,9 @@ class network_message :
   clone_into(network_message* cln) const;
 
  protected:
+  int app_id_;      // which application this packet belongs to
+  int flow_id_;     // which flow within the application this packet is from
+
   network_id net_id_;
 
   bool needs_ack_;
@@ -198,4 +211,3 @@ class network_message :
 }
 }
 #endif // NETWORK_MESSAGE_H
-

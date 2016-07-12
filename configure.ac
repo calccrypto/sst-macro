@@ -1,11 +1,11 @@
-dnl 
-dnl   This file is part of SST/macroscale: 
+dnl
+dnl   This file is part of SST/macroscale:
 dnl                The macroscale architecture simulator from the SST suite.
 dnl   Copyright (c) 2009 Sandia Corporation.
 dnl   This software is distributed under the BSD License.
 dnl   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 dnl   the U.S. Government retains certain rights in this software.
-dnl   For more information, see the LICENSE file in the top 
+dnl   For more information, see the LICENSE file in the top
 dnl   SST/macroscale directory.
 dnl
 
@@ -85,7 +85,7 @@ m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 #-------------------------------------------------
-# Environment 
+# Environment
 #-------------------------------------------------
 
 # Find out if this is running Mac OS X.
@@ -145,7 +145,7 @@ CHECK_THREADING()
 # Check for whether to support event calendar optimizations
 CHECK_EVENT_CALENDAR()
 
-# MiniMD uses atomic builtins that may not be there.  We fake it if needed.  
+# MiniMD uses atomic builtins that may not be there.  We fake it if needed.
 CHECK_ATOMICS()
 
 # Check what debugging features to enable
@@ -192,13 +192,13 @@ AC_CONFIG_SUBDIRS([sst-dumpi])
 AC_CONFIG_SUBDIRS([sumi])
 
 #-------------------------------------------------
-# Custom new.  Make sure this is last otherwise 
+# Custom new.  Make sure this is last otherwise
 # configure tests will fail.
 #-------------------------------------------------
 CHECK_CUSTOM_NEW()
 
 #-------------------------------------------------
-# Finalize 
+# Finalize
 #-------------------------------------------------
 
 dnl Don't reorder options.
@@ -227,6 +227,7 @@ AC_CONFIG_FILES([
  sstmac/common/Makefile
  sstmac/replacements/Makefile
  sstmac/replacements/mpi.h
+ sstmac/statistics/Makefile
  bin/Makefile
  python/Makefile
  configurations/Makefile
@@ -256,7 +257,7 @@ echo "C++ compiler       $CXX"
 
 echo "OS                 $os"
 
-echo "Graphviz Trace     $enable_graphviz" 
+echo "Graphviz Trace     $enable_graphviz"
 
 dnl --- threading ---
 echo "Threading:"
@@ -273,4 +274,3 @@ echo "CPPFLAGS           $CPPFLAGS"
 echo "LDFLAGS            $LDFLAGS"
 
 echo "---------------------------------------------------------------"
-
