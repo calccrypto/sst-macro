@@ -4,8 +4,6 @@ compiler:
   - gcc
 
 branches:
-  only:
-    - lanl
   except:
     - gh-pages
 
@@ -28,6 +26,8 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10
 
 before_script:
+  # manually change to lanl branch
+  - git checkout lanl
   - ./bootstrap.sh
   - ./configure --with-boost --enable-mpiparallel --enable-multithread --enable-cpp11
 
