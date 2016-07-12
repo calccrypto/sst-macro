@@ -60,7 +60,7 @@ fat_tree_router::route(packet* pkt)
     break;
   case routing::sdn:
     spkt_throw_printf(sprockit::value_error,
-      "fat tree router got invalid routing type %s",
+     "fat tree router got invalid routing type %s",
       routing::tostr(pkt->interface<routable>()->rinfo().route_algo()));
     break;
   case routing::minimal:

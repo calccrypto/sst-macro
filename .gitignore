@@ -80,6 +80,7 @@ docs/developer/developer.out
 docs/developer/developer.pdf
 docs/developer/developer.synctex.gz
 docs/developer/developer.toc
+docs/doxygen.cfg
 docs/manual/index.html
 docs/manual/manual.aux
 docs/manual/manual.log
@@ -92,3 +93,16 @@ docs/manual/manual.toc
 *.pyc
 
 sstmac_repo.h
+
+*.o
+*.lo
+*.la
+*.bin
+*.meta
+*.ERROR
+*.chk-out
+*.tmp-out
+.deps/
+.libs/
+.dirstamp
+Makefile
