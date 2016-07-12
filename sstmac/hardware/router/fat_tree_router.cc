@@ -53,22 +53,22 @@ fat_tree_router::init_factory_params(sprockit::sim_parameters *params)
 void
 fat_tree_router::route(packet* pkt)
 {
-//  switch (pkt->interface<routable>()->rinfo().route_algo()){
-//  case routing::dmodk:
-//    dmodk_route_to_node(pkt->toaddr(),
-//      pkt->interface<routable>()->rinfo().current_path());
-//    break;
-//  case routing::sdn:
-//      spkt_throw_printf(sprockit::value_error,
-//        "fat tree router got invalid routing type %s",
-//        routing::tostr(pkt->interface<routable>()->rinfo().route_algo()));
-//      break;
-//  case routing::minimal:
-//  default:
+  switch (pkt->interface<routable>()->rinfo().route_algo()){
+  case routing::dmodk:
+    dmodk_route_to_node(pkt->toaddr(),
+      pkt->interface<routable>()->rinfo().current_path());
+    break;
+  case routing::sdn:
+    spkt_throw_printf(sprockit::value_error,
+      "fat tree router got invalid routing type %s",
+      routing::tostr(pkt->interface<routable>()->rinfo().route_algo()));
+    break;
+  case routing::minimal:
+  default:
     minimal_route_to_node(pkt->toaddr(),
       pkt->interface<routable>()->rinfo().current_path());
-//     break;
-//  }
+    break;
+  }
 }
 
 void
