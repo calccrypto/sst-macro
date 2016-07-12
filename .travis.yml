@@ -15,12 +15,13 @@ before_install:
 
 install:
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo add-apt-repository -y ppa:boost-latest/ppa
   - sudo apt-get update -y
-  - sudo apt-get install -y git g++ automake autoconf libtool libboost-all-dev openmpi-bin  libopenmpi-dev doxygen graphviz python2.7
+  - sudo apt-get install -y git g++ automake autoconf libtool libboost1.55-all-dev openmpi-bin  libopenmpi-dev doxygen graphviz python2.7
   - sudo apt-get remove -y python3
 
 before_script:
-  - ./bootstrap
+  - ./bootstrap.sh
   - ./configure --with-boost --enable-mpiparallel --enable-multithread --enable-cpp11
 
 script:
