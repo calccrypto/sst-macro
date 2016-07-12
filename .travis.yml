@@ -20,6 +20,9 @@ install:
   - sudo apt-get install -y git g++-4.9  automake autoconf libtool libboost1.55-all-dev openmpi-bin  libopenmpi-dev doxygen graphviz python2.7
   - sudo apt-get remove -y python3
 
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 10
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10
+
 before_script:
   - ./bootstrap.sh
   - ./configure --with-boost --enable-mpiparallel --enable-multithread --enable-cpp11
