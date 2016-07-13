@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2009 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 
@@ -14,9 +14,9 @@ include $(top_srcdir)/Makefile.common
 AM_CPPFLAGS += -I$(top_builddir)/sst-dumpi -I$(top_srcdir)/sst-dumpi
 
 noinst_LTLIBRARIES = libsstmac_sw.la
-libsstmac_sw_la_LDFLAGS = 
+libsstmac_sw_la_LDFLAGS =
 
-libsstmac_sw_la_LIBADD = 
+libsstmac_sw_la_LIBADD =
 
 libsstmac_sw_la_SOURCES = \
   ami/ami.cc \
@@ -69,7 +69,8 @@ libsstmac_sw_la_SOURCES = \
   launch/round_robin_indexing.cc \
   launch/node_id_indexing.cc \
   launch/launcher.cc \
-  launch/launch_info.cc 
+  launch/launch_info.cc \
+  launch/sdn_launcher.cc
 
 
 library_includedir=$(includedir)/sstmac/software
@@ -161,21 +162,19 @@ nobase_library_include_HEADERS = \
   launch/launch_info_fwd.h  \
   launch/launch_event.h  \
   launch/launch_event_fwd.h  \
-  launch/machine_descriptor.h 
+  launch/machine_descriptor.h \
+  launch/sdn_launcher.h
 
 if HAVE_UCONTEXT
   libsstmac_sw_la_SOURCES += \
-     threading/threading_ucontext.cc 
+     threading/threading_ucontext.cc
   nobase_library_include_HEADERS += \
-    threading/threading_ucontext.h 
+    threading/threading_ucontext.h
 endif
 
 if HAVE_PTH
   libsstmac_sw_la_SOURCES += \
-     threading/threading_pth.cc 
+     threading/threading_pth.cc
   nobase_library_include_HEADERS += \
-    threading/threading_pth.h 
+    threading/threading_pth.h
 endif
-
-
-
