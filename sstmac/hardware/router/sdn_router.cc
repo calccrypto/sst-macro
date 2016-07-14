@@ -12,7 +12,7 @@ using namespace sstmac::hw;
 
 bool
 sdn_router::Packet_Metadata::operator<(const Packet_Metadata & right) const {
-    return (data < right.data);
+    return ((app_id < right.app_id)?true:((flow_id < right.flow_id)?true:((toaddr < right.toaddr)?true:(fromaddr < right.fromaddr))));
 }
 
 sdn_router::sdn_router()
@@ -29,7 +29,6 @@ sdn_router::route(sstmac::hw::packet* pkt_)
     assert(pkt_ != nullptr);
     sdn_packet* pkt = dynamic_cast<sdn_packet*>(pkt_);
 
-
     //TODO your routing logic
 
     // check if packet routing algorithm is SDN?
@@ -40,7 +39,7 @@ sdn_router::route(sstmac::hw::packet* pkt_)
         return;
     }
 
-    // pkt -> outport = rtable[*metadata];
+//    pkt -> outport = rtable[*metadata];
     return;
 }
 

@@ -323,9 +323,11 @@ class structured_topology : public topology
     @param swid The unique index defining a switch location
     @param coords [inout] The unique coordinates of the switch
   */
+ public:
   virtual void
   compute_switch_coords(switch_id swid, coordinates& coords) const = 0;
 
+ protected:
   void
   partners(
     bool get_send_partner,
@@ -367,4 +369,3 @@ class structured_topology : public topology
 }
 
 #endif
-

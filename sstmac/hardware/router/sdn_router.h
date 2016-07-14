@@ -18,6 +18,11 @@ public:
     // packet metadata to match against
     struct Packet_Metadata {
         int * data;
+        sstmac::sw::app_id app_id;
+        sstmac::sw::flow_id flow_id;
+        sstmac::node_id toaddr;
+        sstmac::node_id fromaddr;
+
         bool operator<(const Packet_Metadata & right) const;
     };
 
@@ -38,7 +43,7 @@ public:
 
 private:
     Packet_Metadata *
-    get_packet_metadata(sdn_packet * pkt) const;       // get key value for comparing with routing table
+    get_packet_metadata(sdn_packet * pkt) const;                     // get key value for comparing with routing table
 
 public:
     int

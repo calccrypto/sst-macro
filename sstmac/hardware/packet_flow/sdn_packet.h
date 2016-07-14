@@ -3,6 +3,7 @@
 
 #include <sstmac/hardware/packet_flow/packet_flow.h>
 #include <sstmac/software/process/app_id.h>
+#include <sstmac/software/process/flow_id.h>
 #include <sstmac/hardware/network/network_message.h>
 
 /**
@@ -22,7 +23,8 @@ class sdn_packet : public sstmac::hw::packet_flow_payload
    * @param offset
    */
   sdn_packet(sstmac::hw::network_message* parent, int num_bytes, long offset) :
-    aid_(parent->app_id()),
+    app_id_(parent->app_id()),
+    flow_id_(parent -> flow_id()),
     toaddr_(parent->toaddr()),
     fromaddr_(parent->fromaddr()),
     packet_flow_payload(parent, num_bytes, offset)
@@ -51,15 +53,24 @@ class sdn_packet : public sstmac::hw::packet_flow_payload
   }
 
   sstmac::sw::app_id
-  aid() const {
-    return aid_;
+  app_id() const {
+    return app_id_;
   }
+
+  sstmac::sw::flow_id
+  flow_id() const {
+    return flow_id_;
+  }
+
 
  protected:
   /** Add extra routing metadata */
-  sstmac::sw::app_id aid_;
+  sstmac::sw::app_id app_id_;
+  sstmac::sw::flow_id flow_id_;
   sstmac::node_id toaddr_;
   sstmac::node_id fromaddr_;
+
+
 
   /** Add extra stats metadata */
 

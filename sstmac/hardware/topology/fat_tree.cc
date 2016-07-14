@@ -63,55 +63,13 @@ abstract_fat_tree::init_factory_params(sprockit::sim_parameters *params)
   numleafswitches_ = pow(k_, l_ - 1);
 }
 
-// simple_fat_tree::minimal_route_to_switch
-void
-fat_tree::original_minimal_route_to_switch(
-  switch_id current_sw_addr,
-  switch_id dest_sw_addr,
-  routing_info::path & path) const
-{
-  spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_switch");
-}
-
-// dmodk routing
-void
-fat_tree::dmodk(
-  switch_id current_sw_addr,
-  switch_id dest_sw_addr,
-  routing_info::path & path) const
-{
-  // get current switch coordinates
-  coordinates src;
-  compute_switch_coords(current_sw_addr, src);
-
-  // get destination switch coordinates
-  coordinates dst;
-  compute_switch_coords(dest_sw_addr, dst);
-
-  path.outport = dst[1] % k_;   // mod k towards destination column
-  path.vc = (src[1] == dst[1]); // if columns are the same, go down; otherwise, go up
-
-  top_debug("fat_tree: dmodk routing to get to %d from %d",
-            int(dest_sw_addr),
-            int(current_sw_addr));
-}
-
 void
 fat_tree::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  switch (routing::sdn){ // need to get routing algorithm somehow
-  case routing::dmodk:
-    dmodk(current_sw_addr, dest_sw_addr, path);
-    break;
-  case routing::sdn:
-  case routing::minimal:
-  default:
-    original_minimal_route_to_switch(current_sw_addr, dest_sw_addr, path);
-    break;
-  }
+  spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_switch");
 }
 
 std::vector<node_id>
@@ -125,6 +83,7 @@ abstract_fat_tree::nodes_connected_to_ejection_switch(switch_id swaddr) const
 {
   return nodes_connected_to_switch(swaddr);
 }
+
 
 std::vector<node_id>
 abstract_fat_tree::nodes_connected_to_switch(switch_id swaddr) const
@@ -368,7 +327,7 @@ simple_fat_tree::partition(
         int thr = worker % nthread;
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
+        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -385,7 +344,7 @@ simple_fat_tree::partition(
       if (lp == me){
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
+        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -673,3 +632,4 @@ simple_fat_tree::switch_number(const coordinates &coords) const
 
 }
 } //end of namespace sstmac
+

@@ -138,33 +138,19 @@ class fat_tree :
     const coordinates &dst,
     routing_info::path& path) const;
 
-  // simple_fat_tree::minimal_route_to_switch
-  void
-  original_minimal_route_to_switch(
-      switch_id current_sw_addr,
-      switch_id dest_sw_addr,
-      routing_info::path &path) const;
-
-  // destination mod k
-  void
-  dmodk(
-      switch_id current_sw_addr,
-      switch_id dest_sw_addr,
-      routing_info::path &path) const;
-
-  void
+  virtual void
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
     routing_info::path& path) const;
 
-  void
+  virtual void
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    routing_info::path &path) const;
+    routing_info::path& path) const;
 
-  int
+  virtual int
   minimal_distance(
     const coordinates& src_coords,
     const coordinates& dest_coords) const;
@@ -273,6 +259,7 @@ class simple_fat_tree : public abstract_fat_tree
   int num_switches_;
 
   std::vector<double> tapering_;
+
 
 };
 
