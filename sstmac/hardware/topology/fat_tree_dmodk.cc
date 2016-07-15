@@ -36,10 +36,10 @@ fat_tree_dmodk::dmodk(
 
   // if columns are the same
   if (path.vc = (curr[1] == dst[1])){
-      path.outport = convert_to_port(curr[0] - 1, dst[1] % k_);          // go downwards; add k_ to get lower level ports
+      path.outport = dst[1] % k_;          // go downwards; add k_ to get lower level ports
   }
   else{
-      path.outport = convert_to_port(curr[0] + 1, (dst[1] % k_) + k_);   // go up and mod k towards destination column; port range is [k, 2k)
+      path.outport = (dst[1] % k_) + k_;   // go up and mod k towards destination column; up port range is [k, 2k)
   }
 
   top_debug("fat_tree: dmodk routing to get to %d from %d",
