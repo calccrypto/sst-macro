@@ -327,7 +327,7 @@ simple_fat_tree::partition(
         int thr = worker % nthread;
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -344,7 +344,7 @@ simple_fat_tree::partition(
       if (lp == me){
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -632,4 +632,3 @@ simple_fat_tree::switch_number(const coordinates &coords) const
 
 }
 } //end of namespace sstmac
-

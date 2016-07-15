@@ -33,5 +33,3 @@ coordinates::to_string() const
 
 }
 }
-
-

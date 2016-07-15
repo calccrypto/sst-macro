@@ -311,7 +311,7 @@ class topology :
      @return A random switch different from current_sw
   */
   virtual switch_id
-  random_intermediate_switch(switch_id current_sw, 
+  random_intermediate_switch(switch_id current_sw,
                              switch_id dest_sw = switch_id(-1));
 
   /**
@@ -518,4 +518,3 @@ DeclareFactory(topology);
 }
 
 #endif
-
