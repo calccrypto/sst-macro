@@ -1,5 +1,5 @@
-#ifndef SDN_ROUTER_H
-#define SDN_ROUTER_H
+#ifndef FAT_TREE_SDN_ROUTER_H
+#define FAT_TREE_SDN_ROUTER_H
 
 #include <map>
 
@@ -8,11 +8,11 @@
 
 
 /**
- * @brief The sdn_router class
+ * @brief The fat_tree_sdn_router class
  * Your custom router that will make routing decisions based on tables
  * and will operate on sdn_packet types
  */
-class sdn_router : public sstmac::hw::router
+class fat_tree_sdn_router : public sstmac::hw::router
 {
 public:
     // packet metadata to match against
@@ -32,14 +32,19 @@ private:
     std::size_t rtable_max_size;
 
 public:
-    sdn_router();
-    ~sdn_router();
+    fat_tree_sdn_router();
+    ~fat_tree_sdn_router();
 
     virtual void
     route(sstmac::hw::packet *pkt_);
 
     virtual void
     init_factory_params(sprockit::sim_parameters *params);
+
+    virtual void
+    productive_paths_to_switch(
+        sstmac::switch_id dst,
+        sstmac::hw::routing_info::path_set& paths){}
 
 private:
     Packet_Metadata *
@@ -57,4 +62,4 @@ public:
 
 };
 
-#endif // SDN_ROUTER_H
+#endif // FAT_TREE_SDN_ROUTER_H

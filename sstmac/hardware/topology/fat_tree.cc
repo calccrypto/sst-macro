@@ -166,6 +166,9 @@ fat_tree::connect_objects(internal_connectable_map& objects)
         int up_port = convert_to_port(up_dimension, k);
         int down_port = convert_to_port(down_dimension, myBranch % k_);
 
+        printf("fattree: connecting up=(%d,%d:%d) to down=(%d,%d:%d)\n",
+                row, col, up_port, row+1, upColumn, down_port);
+
         top_debug("fattree: connecting up=(%d,%d:%d) to down=(%d,%d:%d)",
                 row, col, up_port, row+1, upColumn, down_port);
 

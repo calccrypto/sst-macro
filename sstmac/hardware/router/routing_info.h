@@ -18,6 +18,8 @@
 #include <sstmac/hardware/router/routing_enum.h>
 #include <sstmac/common/node_address.h>
 #include <sstmac/common/serializable.h>
+#include <sstmac/software/process/app_id.h>
+#include <sstmac/software/process/flow_id.h>
 #include <vector>
 
 namespace sstmac {
@@ -41,8 +43,13 @@ class routing_info
     int geometric_id;
     sprockit::metadata_bits<uint32_t> metadata;
 
+    sw::app_id app_id;
+    sw::flow_id flow_id;
+
     path() :
       outport(uninitialized),
+      app_id(-1),
+      flow_id(-1),
 #if SSTMAC_SANITY_CHECK
       vc(uninitialized)
 #else
@@ -191,4 +198,3 @@ class serialize<sstmac::hw::routing_info::path>
 END_SERIALIZATION_NAMESPACE
 
 #endif
-

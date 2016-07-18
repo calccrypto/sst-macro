@@ -107,10 +107,10 @@ nobase_library_include_HEADERS = \
   router/valiant_routing.h \
   router/fat_tree_router.h \
   \
-  router/fat_tree_dmodk_router.h \
   topology/fat_tree_dmodk.h \
+  topology/fat_tree_sdn.h \
   \
-  router/sdn_router.h \
+  router/fat_tree_sdn_router.h \
   packet_flow/sdn_packet.h
 
 libsstmac_hw_la_SOURCES =  \
@@ -179,8 +179,8 @@ libsstmac_hw_la_SOURCES =  \
   topology/cartesian_topology.cc \
   topology/topology.cc \
   \
-  router/fat_tree_dmodk_router.cc \
   topology/fat_tree_dmodk.cc \
+  topology/fat_tree_sdn.cc \
   \
-  router/sdn_router.cc \
+  router/fat_tree_sdn_router.cc \
   packet_flow/sdn_packet.cc

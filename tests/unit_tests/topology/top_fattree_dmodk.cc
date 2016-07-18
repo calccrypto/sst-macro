@@ -1,6 +1,5 @@
 #include "test_topology.h"
 #include <sstmac/hardware/topology/fat_tree_dmodk.h>
-#include <sstmac/hardware/router/fat_tree_dmodk_router.h>
 #include <sprockit/util.h>
 
 using namespace sstmac;

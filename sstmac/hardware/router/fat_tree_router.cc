@@ -163,4 +163,3 @@ fat_tree_router::number_paths(message* msg) const
 
 }
 }
-

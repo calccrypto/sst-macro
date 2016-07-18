@@ -10,8 +10,6 @@
  */
 
 #include <sstmac/hardware/topology/fat_tree_dmodk.h>
-#include <sstmac/hardware/router/router.h>
-#include <sprockit/sim_parameters.h>
 
 namespace sstmac {
 namespace hw {

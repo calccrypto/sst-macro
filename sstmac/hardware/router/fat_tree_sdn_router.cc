@@ -1,6 +1,6 @@
 #include <cassert>
 
-#include "sstmac/hardware/router/sdn_router.h"
+#include "sstmac/hardware/router/fat_tree_sdn_router.h"
 #include "sprockit/sim_parameters.h"
 
 using namespace sstmac;
@@ -8,21 +8,21 @@ using namespace sstmac::sw;
 using namespace sstmac::hw;
 
 
-// SpktRegister("sdn | SDN", router, sdn_router);
+SpktRegister("fat_tree_sdn", router, fat_tree_sdn_router);
 
 bool
-sdn_router::Packet_Metadata::operator<(const Packet_Metadata & right) const {
+fat_tree_sdn_router::Packet_Metadata::operator<(const Packet_Metadata & right) const {
     return ((app_id < right.app_id)?true:((flow_id < right.flow_id)?true:((toaddr < right.toaddr)?true:(fromaddr < right.fromaddr))));
 }
 
-sdn_router::sdn_router()
+fat_tree_sdn_router::fat_tree_sdn_router()
     : rtable_max_size(0)
 {}
 
-sdn_router::~sdn_router(){}
+fat_tree_sdn_router::~fat_tree_sdn_router(){}
 
 void
-sdn_router::route(sstmac::hw::packet* pkt_)
+fat_tree_sdn_router::route(sstmac::hw::packet* pkt_)
 {
     // Cast to expected packet type
     // Now you can you use whatever metadata you want to route
@@ -44,7 +44,7 @@ sdn_router::route(sstmac::hw::packet* pkt_)
 }
 
 void
-sdn_router::init_factory_params(sprockit::sim_parameters *params)
+fat_tree_sdn_router::init_factory_params(sprockit::sim_parameters *params)
 {
     //always call up to parent first
     router::init_factory_params(params);
@@ -53,8 +53,8 @@ sdn_router::init_factory_params(sprockit::sim_parameters *params)
     rtable_max_size = params -> get_optional_int_param("rtable_max_size", (1 << ((sizeof(int) << 3) - 1) - 1));
 }
 
-sdn_router::Packet_Metadata *
-sdn_router::get_packet_metadata(sdn_packet * pkt) const {
+fat_tree_sdn_router::Packet_Metadata *
+fat_tree_sdn_router::get_packet_metadata(sdn_packet * pkt) const {
     if (!pkt){
         return nullptr;
     }
@@ -65,7 +65,7 @@ sdn_router::get_packet_metadata(sdn_packet * pkt) const {
 }
 
 int
-sdn_router::add_new_route(sdn_packet * pkt, const int outport){
+fat_tree_sdn_router::add_new_route(sdn_packet * pkt, const int outport){
     Packet_Metadata * metadata = get_packet_metadata(pkt);
     if (!metadata){
         return -1;
@@ -77,7 +77,7 @@ sdn_router::add_new_route(sdn_packet * pkt, const int outport){
 }
 
 int
-sdn_router::add_new_route(sdn_router::Packet_Metadata & metadata, const int outport){
+fat_tree_sdn_router::add_new_route(fat_tree_sdn_router::Packet_Metadata & metadata, const int outport){
     // prevent routing table from getting too big (currently no recent usage replacement policy)
     if (rtable.size() >= rtable_max_size){
         return -1;
@@ -88,6 +88,6 @@ sdn_router::add_new_route(sdn_router::Packet_Metadata & metadata, const int outp
 }
 
 int
-sdn_router::default_route(sdn_router::Packet_Metadata & metadata) const {
+fat_tree_sdn_router::default_route(fat_tree_sdn_router::Packet_Metadata & metadata) const {
     return -1;
 }

@@ -1,10 +1,10 @@
 #ifndef PACKET_H
 #define PACKET_H
 
+#include <sstmac/hardware/network/network_message.h>
 #include <sstmac/hardware/packet_flow/packet_flow.h>
 #include <sstmac/software/process/app_id.h>
 #include <sstmac/software/process/flow_id.h>
-#include <sstmac/hardware/network/network_message.h>
 
 /**
  * @brief The sdn_packet class
