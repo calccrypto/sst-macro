@@ -106,3 +106,4 @@ sstmac_repo.h
 .libs/
 .dirstamp
 Makefile
+\#*
