@@ -252,4 +252,3 @@ map_env_params(sprockit::sim_parameters* params)
     params->add_param_override("smp_single_copy_size", "99999999999");
   }
 }
-

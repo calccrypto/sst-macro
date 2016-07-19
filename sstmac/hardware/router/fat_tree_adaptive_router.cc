@@ -1,6 +1,6 @@
 #include <cassert>
 
-#include "sstmac/hardware/router/fat_tree_sdn_router.h"
+#include "sstmac/hardware/router/fat_tree_adaptive_router.h"
 #include "sprockit/sim_parameters.h"
 
 using namespace sstmac;

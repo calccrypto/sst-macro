@@ -22,7 +22,7 @@
 namespace sstmac {
 namespace hw {
 
-SpktRegister("fattree | ftree", router, fat_tree_router);
+SpktRegister("fattree | ftree | fattree_dmodk | fattree_adaptive", router, fat_tree_router);
 
 void
 fat_tree_router::build_rng()

@@ -24,6 +24,7 @@ fat_tree_dmodk::dmodk(
   switch_id dest_sw_addr,
   routing_info::path & path) const
 {
+
   // get current switch coordinates
   coordinates curr(2);
   compute_switch_coords(current_sw_addr, curr);
@@ -34,10 +35,10 @@ fat_tree_dmodk::dmodk(
 
   // if columns are the same
   if (path.vc = (curr[1] == dst[1])){
-      path.outport = dst[1] % k_;          // go downwards; add k_ to get lower level ports
+    path.outport = dst[1] % k_;          // go downwards [0, k_);
   }
   else{
-      path.outport = (dst[1] % k_) + k_;   // go up and mod k towards destination column; up port range is [k, 2k)
+    path.outport = (dst[1] % k_) + k_;   // go up and mod k towards destination column; up port range is [k, 2k)
   }
 
   top_debug("fat_tree: dmodk routing to get to %d from %d",

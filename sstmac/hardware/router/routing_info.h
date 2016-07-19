@@ -31,7 +31,7 @@ class routing_info
   typedef enum {
     valiant_stage,
     final_stage,
-    crossed_timeline
+    crossed_timeline,
   } metadata_slot;
 
   static const int uninitialized = -123;
@@ -43,8 +43,8 @@ class routing_info
     int geometric_id;
     sprockit::metadata_bits<uint32_t> metadata;
 
-    sw::app_id app_id;
-    sw::flow_id flow_id;
+    sw::app_id app_id;      // application id
+    sw::flow_id flow_id;    // flow id within a job
 
     path() :
       outport(uninitialized),

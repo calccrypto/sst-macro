@@ -9,40 +9,40 @@
  *  SST/macroscale directory.
  */
 
-#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_DMODK_H_INCLUDED
-#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_DMODK_H_INCLUDED
+#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_ADAPTIVE_H_INCLUDED
+#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_ADAPTIVE_H_INCLUDED
+
+#include <map>
 
 #include <sstmac/hardware/topology/fat_tree.h>
+#include <sstmac/software/process/app_id.h>
+#include <sstmac/software/process/flow_id.h>
 
 namespace sstmac {
 namespace hw {
 
 /**
- * @class fat_tree with dmodk routing
+ * @class fat_tree with multipath adaptive routing
  * The fat tree network generates a k-ary fat tree with l tiers
  */
-class fat_tree_dmodk :
+class fat_tree_adaptive :
   public fat_tree
 {
-
  public:
   virtual std::string
   to_string() const {
-    return "fat tree topology (dmodk)";
+    return "fat tree topology (adaptive)";
   }
 
-  fat_tree_dmodk(){printf("fattree_dmodk\n");}
-  virtual ~fat_tree_dmodk() {}
+  virtual ~fat_tree_adaptive() {}
 
   std::string
   default_router() const {
-    return "fattree_dmodk";
+    return "fattree_adaptive";
   }
 
-  // destination mod k
   void
-  dmodk(
-      switch_id current_sw_addr,
+  adaptive(switch_id current_sw_addr,
       switch_id dest_sw_addr,
       routing_info::path &path) const;
 
@@ -52,7 +52,6 @@ class fat_tree_dmodk :
       switch_id dest_sw_addr,
       routing_info::path& path) const;
 };
-
 
 }
 } //end of namespace sstmac

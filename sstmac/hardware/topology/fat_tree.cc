@@ -84,7 +84,6 @@ abstract_fat_tree::nodes_connected_to_ejection_switch(switch_id swaddr) const
   return nodes_connected_to_switch(swaddr);
 }
 
-
 std::vector<node_id>
 abstract_fat_tree::nodes_connected_to_switch(switch_id swaddr) const
 {
@@ -166,9 +165,6 @@ fat_tree::connect_objects(internal_connectable_map& objects)
         int up_port = convert_to_port(up_dimension, k);
         int down_port = convert_to_port(down_dimension, myBranch % k_);
 
-        printf("fattree: connecting up=(%d,%d:%d) to down=(%d,%d:%d)\n",
-                row, col, up_port, row+1, upColumn, down_port);
-
         top_debug("fattree: connecting up=(%d,%d:%d) to down=(%d,%d:%d)",
                 row, col, up_port, row+1, upColumn, down_port);
 
@@ -234,7 +230,7 @@ fat_tree::minimal_route_to_coords(
 }
 
 coordinates
-fat_tree::neighbor_at_port(switch_id sid, int port)
+fat_tree::neighbor_at_port(switch_id sid, int port) const
 {
   coordinates my_coords = switch_coords(sid);
   if (is_injection_port(port)){
@@ -264,19 +260,20 @@ fat_tree::neighbor_at_port(switch_id sid, int port)
 int
 fat_tree::convert_to_port(int dim, int dir) const
 {
-  return (dim * k_ + dir);
+  return (dim * k_ + dir); // down = [0, k_); up = [k_, 2 k_)
 }
 
 int
-fat_tree::minimal_distance(const coordinates &src_coords,
-                           const coordinates &dest_coords) const
+fat_tree::nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const coordinates & dest_coords) const
 {
-  int srcRow = src_coords[0];
-  int dstRow = dest_coords[0];
-  int startRow = std::min(srcRow, dstRow);
+  const int srcRow = src_coords[0];
+  const int dstRow = dest_coords[0];
+  const int startRow = std::min(srcRow, dstRow);
+  const int srcCol = src_coords[1];
+  const int dstCol = dest_coords[1];
   int branchSize = pow(k_, startRow);
-  int srcCol = src_coords[1];
-  int dstCol = dest_coords[1];
   int srcBranch = srcCol / branchSize;
   int dstBranch = dstCol / branchSize;
   int stopRow = startRow;
@@ -287,9 +284,57 @@ fat_tree::minimal_distance(const coordinates &src_coords,
     dstBranch = dstCol / branchSize;
     ++stopRow;
   }
+  return stopRow;
+}
 
-  int distance = (stopRow - srcRow)  + (stopRow - dstRow);
-  return distance;
+int
+fat_tree::nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const switch_id & dst_sw_addr) const {
+
+    // convert source switch id to coordinates
+    coordinates src_coords(2);
+    compute_switch_coords(src_sw_addr, src_coords);
+
+    // convert destination  switch id to coordinates
+    coordinates dst_coords(2);
+    compute_switch_coords(dst_sw_addr, dst_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
+fat_tree::nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const switch_id & dst_sw_addr) const {
+
+    // convert destination  switch id to coordinates
+    coordinates dst_coords(2);
+    compute_switch_coords(dst_sw_addr, dst_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
+fat_tree::nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const coordinates & dst_coords) const {
+
+    // convert source switch id to coordinates
+    coordinates src_coords(2);
+    compute_switch_coords(src_sw_addr, src_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
+fat_tree::minimal_distance(const coordinates &src_coords,
+                           const coordinates &dest_coords) const
+{
+  const int stopRow = nearest_common_ancestor_level(src_coords, dest_coords);
+  return (stopRow - src_coords[0]) + (stopRow - dest_coords[0]);
+//  int distance = (stopRow - srcRow)  + (stopRow - dstRow);
+//  return distance;
 }
 
 void
@@ -435,6 +480,7 @@ simple_fat_tree::init_factory_params(sprockit::sim_parameters *params)
 void
 simple_fat_tree::connect_objects(internal_connectable_map &switches)
 {
+
   int nswitches = numleafswitches_;
   connectable::config cfg;
   cfg.ty = connectable::WeightedConnection;
@@ -570,7 +616,7 @@ simple_fat_tree::compute_switch_coords(switch_id swid, coordinates &coords) cons
 }
 
 coordinates
-simple_fat_tree::neighbor_at_port(switch_id sid, int port)
+simple_fat_tree::neighbor_at_port(switch_id sid, int port) const
 {
   coordinates coords(2);
   int srcLevel = level(sid);

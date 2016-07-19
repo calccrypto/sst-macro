@@ -196,6 +196,9 @@ structured_topology::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
+
+  printf("structured\n");
+
   coordinates src_coords = switch_coords(current_sw_addr);
   coordinates dest_coords = switch_coords(dest_sw_addr);
   minimal_route_to_coords(src_coords, dest_coords, path);
@@ -431,5 +434,3 @@ structured_topology::label(switch_id sid) const
 
 }
 }
-
-

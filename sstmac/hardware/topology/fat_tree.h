@@ -123,7 +123,7 @@ class fat_tree :
   }
 
   coordinates
-  neighbor_at_port(switch_id sid, int port);
+  neighbor_at_port(switch_id sid, int port) const;
 
   void
   configure_vc_routing(std::map<routing::algorithm_t, int> &m) const;
@@ -149,6 +149,27 @@ class fat_tree :
     const coordinates &src_coords,
     const coordinates &dest_coords,
     routing_info::path& path) const;
+
+  // takes in switch coordinates and figures out how high packets need to go up in the tree
+  virtual int nearest_common_ancestor_level(
+      const coordinates & src_coords,
+      const coordinates & dest_coords) const;
+
+  // combinations of switch_id and coordinates, which end up calling above function
+  int
+  nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const switch_id & dst_sw_addr) const;
+
+  int
+  nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const switch_id & dst_sw_addr) const;
+
+  int
+  nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const coordinates & dst_coords) const;
 
   virtual int
   minimal_distance(
@@ -234,7 +255,7 @@ class simple_fat_tree : public abstract_fat_tree
   compute_switch_coords(switch_id swid, coordinates &coords) const;
 
   coordinates
-  neighbor_at_port(switch_id sid, int port);
+  neighbor_at_port(switch_id sid, int port) const;
 
   void
   configure_vc_routing(std::map<routing::algorithm_t, int> &m) const;
