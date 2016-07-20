@@ -23,7 +23,7 @@ void
 fat_tree_adaptive::adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path & path) const
+  routing_info::path & path)
 {
   coordinates dest_coords;
   compute_switch_coords(dest_sw_addr, dest_coords);
@@ -37,8 +37,8 @@ fat_tree_adaptive::adaptive(
   if (path.vc = (ncal == dest_coords[0])){
     for(int p = 0; p < k_; p++){
       const coordinates below = neighbor_at_port(current_sw_addr, p);
-      if ((below == dest_coords) ||                                         // the switch is the destination
-          (ncal == nearest_common_ancestor_level(below, dest_sw_addr))){    // the switch and the destination have the same ancestor (are in the same branch)
+      if ((below == dest_coords) ||                                               // the switch is the destination
+          ((ncal - 1) == nearest_common_ancestor_level(below, dest_sw_addr))){    // the switch and the destination have the same ancestor (are in the same branch)
         // if (clone_map[p].get_stat() < clone_map[path.outport].get_stat()){
         //   path.outport = p;
         // }
@@ -48,7 +48,7 @@ fat_tree_adaptive::adaptive(
   else{
     for(int p = k_; p < (2 * k_); p++){
       const coordinates above = neighbor_at_port(current_sw_addr, p);
-      if (ncal == nearest_common_ancestor_level(above, dest_sw_addr)){  // the switch and the destination have the same ancestor (are in the same branch)
+      if ((ncal - 1) == nearest_common_ancestor_level(above, dest_sw_addr)){     // the switch and the destination have the same ancestor (are in the same branch)
         // if (clone_map[p].get_stat() < clone_map[path.outport].get_stat()){
         //     path.outport = p;
         // }
@@ -67,7 +67,7 @@ fat_tree_adaptive::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  adaptive(current_sw_addr, dest_sw_addr, path);
+//  adaptive(current_sw_addr, dest_sw_addr, path);
 }
 
 

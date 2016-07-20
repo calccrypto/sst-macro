@@ -126,7 +126,7 @@ dragonfly::compute_switch_coords(switch_id uid, coordinates& coords) const
 }
 
 coordinates
-dragonfly::neighbor_at_port(switch_id sid, int port)
+dragonfly::neighbor_at_port(switch_id sid, int port) const
 {
   coordinates coords;
   compute_switch_coords(sid, coords);
@@ -252,7 +252,7 @@ dragonfly::find_path_to_group(int myX, int myY, int myG,
     return;
   }
 
-  int x_or_y = 0; 
+  int x_or_y = 0;
   //try to find x,y path first
   int x_first = 0;
   if (x_or_y == x_first) {
@@ -271,7 +271,7 @@ dragonfly::find_path_to_group(int myX, int myY, int myG,
   }
 
   //both x and y need to change
-  int xstart = 0; 
+  int xstart = 0;
   for (int xx = 0; xx < x_; ++xx) {
     dstx = (xstart + xx) % x_;
     dsty = find_y_path_to_group(dstx, myG, dstg);
@@ -295,7 +295,7 @@ dragonfly::minimal_route_to_group(int myX, int myY, int myG,
   debug_printf(sprockit::dbg::router,
     "Minimal route to group from src (%d,%d,%d) goes through (%d,%d,%d)",
     myX, myY, myG, dstx, dsty, dstg);
-    
+
 
   if (dstx != myX) {
     dim = dragonfly::x_dimension;
@@ -657,6 +657,3 @@ dragonfly::xyg_dir_to_group(int myX, int myY, int myG, int dir) const
 
 }
 } //end of namespace sstmac
-
-
-

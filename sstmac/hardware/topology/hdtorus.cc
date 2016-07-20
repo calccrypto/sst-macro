@@ -71,7 +71,7 @@ hdtorus::init_factory_params(sprockit::sim_parameters* params)
 }
 
 coordinates
-hdtorus::neighbor_at_port(switch_id sid, int port)
+hdtorus::neighbor_at_port(switch_id sid, int port) const
 {
   coordinates my_coords = switch_coords(sid);
   if (port < 0){
@@ -288,7 +288,7 @@ hdtorus::minimal_route_to_coords(
 {
   //deadlock rules require + dir first
   for (int i=0; i < src_coords.size(); ++i) {
-    if (src_coords[i] != dest_coords[i] && 
+    if (src_coords[i] != dest_coords[i] &&
       shortest_path_positive(i, src_coords, dest_coords)) {
         up_path(i, src_coords, dest_coords, path);
         return;
@@ -564,4 +564,3 @@ hdtorus::bit_complement_partners(
 
 }
 } //end of namespace sstmac
-

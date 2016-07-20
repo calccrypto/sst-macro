@@ -115,7 +115,7 @@ class dragonfly : public cartesian_topology
   }
 
   coordinates
-  neighbor_at_port(switch_id sid, int port);
+  neighbor_at_port(switch_id sid, int port) const;
 
   virtual switch_id
   random_intermediate_switch(switch_id current_sw,
@@ -218,4 +218,3 @@ class dragonfly : public cartesian_topology
 } //end of namespace sstmac
 
 #endif
-

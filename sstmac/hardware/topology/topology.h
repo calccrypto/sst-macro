@@ -23,7 +23,7 @@
 #include <sprockit/debug.h>
 #include <sprockit/factories/factory.h>
 #include <sprockit/unordered.h>
-#include <typeinfo>
+
 DeclareDebugSlot(topology)
 
 #define top_debug(...) \

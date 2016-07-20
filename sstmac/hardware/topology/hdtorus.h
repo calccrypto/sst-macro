@@ -100,7 +100,7 @@ class hdtorus :
   }
 
   coordinates
-  neighbor_at_port(switch_id sid, int port);
+  neighbor_at_port(switch_id sid, int port) const;
 
   virtual int
   num_switches() const {
@@ -192,4 +192,3 @@ class hdtorus :
 } //end of namespace sstmac
 
 #endif
-

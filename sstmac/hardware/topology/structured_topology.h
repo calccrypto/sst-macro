@@ -284,7 +284,7 @@ class structured_topology : public topology
   }
 
   virtual coordinates
-  neighbor_at_port(switch_id sid, int port);
+  neighbor_at_port(switch_id sid, int port) const;
 
   virtual node_id
   node_addr(const coordinates& coords) const;
