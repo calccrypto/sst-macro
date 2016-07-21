@@ -44,7 +44,7 @@ class fat_tree_adaptive :
   void
   adaptive(switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      routing_info::path &path);
+      routing_info::path &path) const;
 
   virtual void
   minimal_route_to_switch(
