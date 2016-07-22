@@ -23,7 +23,7 @@ void
 fat_tree_adaptive::adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path & path) const
+  routing_info::path & path)
 {
   coordinates dest_coords;
   compute_switch_coords(dest_sw_addr, dest_coords);
@@ -67,7 +67,7 @@ fat_tree_adaptive::minimal_route_to_switch(
   switch_id dest_sw_addr,
   routing_info::path& path) const
 {
-  adaptive(current_sw_addr, dest_sw_addr, path);
+//  adaptive(current_sw_addr, dest_sw_addr, path);
 }
 
 
