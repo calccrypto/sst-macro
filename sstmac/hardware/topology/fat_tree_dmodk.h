@@ -31,7 +31,6 @@ class fat_tree_dmodk :
     return "fat tree topology (dmodk)";
   }
 
-  fat_tree_dmodk(){printf("fattree_dmodk\n");}
   virtual ~fat_tree_dmodk() {}
 
   std::string
