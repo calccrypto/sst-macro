@@ -244,5 +244,3 @@ packet_flow_netlink::init()
 
 }
 } // end of namespace sstmac.
-
-

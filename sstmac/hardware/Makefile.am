@@ -108,7 +108,8 @@ nobase_library_include_HEADERS = \
   router/fat_tree_router.h \
   \
   topology/fat_tree_dmodk.h \
-  topology/fat_tree_adaptive.h \
+  topology/fat_tree_local_adaptive.h \
+  topology/fat_tree_global_adaptive.h \
   \
   router/fat_tree_adaptive_router.h \
   packet_flow/sdn_packet.h
@@ -180,7 +181,8 @@ libsstmac_hw_la_SOURCES =  \
   topology/topology.cc \
   \
   topology/fat_tree_dmodk.cc \
-  topology/fat_tree_adaptive.cc \
+  topology/fat_tree_local_adaptive.cc \
+  topology/fat_tree_global_adaptive.cc \
   \
   router/fat_tree_adaptive_router.cc \
   packet_flow/sdn_packet.cc

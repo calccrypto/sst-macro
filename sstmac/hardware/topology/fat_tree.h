@@ -151,7 +151,8 @@ class fat_tree :
     routing_info::path& path) const;
 
   // takes in switch coordinates and figures out how high packets need to go up in the tree
-  virtual int nearest_common_ancestor_level(
+  virtual int
+  nearest_common_ancestor_level(
       const coordinates & src_coords,
       const coordinates & dest_coords) const;
 

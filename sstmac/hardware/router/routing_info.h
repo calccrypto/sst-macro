@@ -36,6 +36,10 @@ class routing_info
 
   static const int uninitialized = -123;
 
+  // one of these, if not both, should be static
+  static sw::app_id APP_ID;
+  static sw::flow_id FLOW_ID;
+
   struct path {
     int outport;
     int vc;
@@ -43,13 +47,26 @@ class routing_info
     int geometric_id;
     sprockit::metadata_bits<uint32_t> metadata;
 
-    sw::app_id app_id;      // application id
-    sw::flow_id flow_id;    // flow id within a job
+//    // flow info
+//    sw::app_id app_id;                                 // application id
+//    sw::flow_id flow_id;                               // flow id within a job
+
+    struct Hop {
+        switch_id sw_id;                                 // at this switch
+        int outport;                                     // go out this port
+        int vc;                                          // in this direction
+
+        Hop(switch_id sw, int op, int dir)
+            : sw_id(sw), outport(op), vc(dir)
+            {}
+    };
+
+    std::vector <Hop> chosen;                            // chosen path
 
     path() :
       outport(uninitialized),
-      app_id(-1),
-      flow_id(-1),
+//      app_id(APP_ID++),
+//      flow_id(FLOW_ID++),
 #if SSTMAC_SANITY_CHECK
       vc(uninitialized)
 #else

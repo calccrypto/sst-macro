@@ -294,7 +294,7 @@ class topology :
   connect_topology(MapType& objects) {
     typedef typename MapType::mapped_type cls_type;
     typedef typename MapType::value_type val_type;
-    // internal_connectable_map clone_map;
+    internal_connectable_map clone_map;
     copy_map(objects, clone_map);
     connect_objects(clone_map);
   }
@@ -507,8 +507,6 @@ class topology :
   int max_ports_injection_;
 
   static topology* main_top_;
-
-  internal_connectable_map clone_map;
 
  private:
   static topology* static_topology_;

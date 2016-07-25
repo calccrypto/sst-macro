@@ -143,7 +143,7 @@ fat_tree::downColumnConnection(int k, int myColumn, int downPort, int myBranchSi
   int lowerReplicaID = myReplicaID % lowerBranchSize;
   return myVirtualBranch*k + downPort*lowerBranchSize + lowerReplicaID;
 }
-
+#include <typeinfo>
 void
 fat_tree::connect_objects(internal_connectable_map& objects)
 {

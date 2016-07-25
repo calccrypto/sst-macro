@@ -9,8 +9,8 @@
  *  SST/macroscale directory.
  */
 
-#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_ADAPTIVE_H_INCLUDED
-#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_ADAPTIVE_H_INCLUDED
+#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_LOCAL_ADAPTIVE_H_INCLUDED
+#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_LOCAL_ADAPTIVE_H_INCLUDED
 
 #include <map>
 
@@ -25,7 +25,7 @@ namespace hw {
  * @class fat_tree with multipath adaptive routing
  * The fat tree network generates a k-ary fat tree with l tiers
  */
-class fat_tree_adaptive :
+class fat_tree_local_adaptive :
   public fat_tree
 {
  public:
@@ -34,11 +34,11 @@ class fat_tree_adaptive :
     return "fat tree topology (adaptive)";
   }
 
-  virtual ~fat_tree_adaptive() {}
+  virtual ~fat_tree_local_adaptive() {}
 
   std::string
   default_router() const {
-    return "fattree_adaptive";
+    return "fattree_local_adaptive";
   }
 
   void

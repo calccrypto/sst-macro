@@ -11,16 +11,16 @@
 
 #include <climits>
 
-#include <sstmac/hardware/topology/fat_tree_adaptive.h>
+#include <sstmac/hardware/topology/fat_tree_local_adaptive.h>
 
 namespace sstmac {
 namespace hw {
 
-SpktRegister("fattree_adaptive", topology, fat_tree_adaptive,
+SpktRegister("fattree_local_adaptive", topology, fat_tree_local_adaptive,
              "Fat tree topology with L levels, radix K, and multipath adaptive routing.");
 
 void
-fat_tree_adaptive::adaptive(
+fat_tree_local_adaptive::adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
   routing_info::path & path)
@@ -62,7 +62,7 @@ fat_tree_adaptive::adaptive(
 }
 
 void
-fat_tree_adaptive::minimal_route_to_switch(
+fat_tree_local_adaptive::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
   routing_info::path& path) const

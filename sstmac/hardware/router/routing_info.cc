@@ -17,6 +17,9 @@ namespace hw {
 
 #define enumcase(x) case x: return #x
 
+sw::app_id routing_info::APP_ID = 0;
+sw::flow_id routing_info::FLOW_ID = 0;
+
 namespace routing {
 
 const char*
@@ -38,4 +41,3 @@ tostr(routing::algorithm_t algo)
 }
 }
 }
-
