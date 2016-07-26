@@ -21,6 +21,7 @@
 #include <sstmac/software/process/app_id.h>
 #include <sstmac/software/process/flow_id.h>
 #include <vector>
+#include <iostream>
 
 namespace sstmac {
 namespace hw {
@@ -56,7 +57,7 @@ class routing_info
         int outport;                                     // go out this port
         int vc;                                          // in this direction
 
-        Hop(switch_id sw, int op, int dir)
+        Hop(switch_id sw = -1, int op = -1, int dir = -1)
             : sw_id(sw), outport(op), vc(dir)
             {}
     };

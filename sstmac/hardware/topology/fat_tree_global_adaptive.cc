@@ -17,10 +17,63 @@ namespace hw {
 SpktRegister("fattree_global_adaptive", topology, fat_tree_global_adaptive,
              "Fat tree topology with L levels, radix K, and GLOBAL_ADAPTIVE routing.");
 
-void
-fat_tree_global_adaptive::connect_objects(internal_connectable_map& switches){
-    fat_tree::connect_objects(switches);
-    switch_copy = switches; // save a copy of the switches
+std::ostream & operator<<(std::ostream & stream, const routing_info::path::Hop & hop){
+    return stream << "(" << hop.sw_id << " " <<  (hop.vc?std::string("down"):std::string("up")) << " port " << hop.outport << ")";
+}
+
+unsigned int
+fat_tree_global_adaptive::cheapest_path(
+    const std::size_t current_index,
+    const unsigned int current_cost,
+    const std::size_t mid_point,
+    const switch_id dst,
+    std::vector <routing_info::path::Hop> & path) const
+{
+    // at the end of the path; only allow paths that reach destination to be chosen from
+    if ((current_index + 1) == path.size()){
+        return (path.back().sw_id == dst)?
+                                          0:       // this should be cost to get to the destination
+                                          INT_MAX;
+    }
+
+    int offset;
+    if (current_index < mid_point){
+        path[current_index].vc = 0; // if the current index is before the mid point, keep going up
+        offset = k_;                // up ports are [k_, 2 k_)
+    }
+    else{
+        path[current_index].vc = 1; // otherwise, go downwards
+        offset = 0;                 // down ports are [0, k_)
+    }
+
+    // depth first search through ports for cheapest path to destination
+    int outport = -1;
+    int cheapest = INT_MAX;
+    for(int k = 0; k < k_; k++){
+        // set current outport to the port
+        path[current_index].outport = k + offset;
+
+        // set next switch id to the switch that is the neighbor at the port
+       path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, path[current_index].outport));
+
+        // get cost to get to next switch
+        const int this_hop_cost = 0;
+
+        // get cheapest cost going down this port at this switch
+        const int next_hop_cost = cheapest_path(current_index + 1, current_cost + this_hop_cost, mid_point, dst, path);
+
+        // compare costs of going down each port at this switch
+        if (next_hop_cost < cheapest){
+            outport = k + offset;
+            cheapest = next_hop_cost;
+        }
+    }
+
+    // set the path to go out the cheapest port, overwriting recursion data
+    path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, outport));
+    path[current_index].outport = outport;
+
+    return cheapest;
 }
 
 // global_adaptive routing
@@ -30,15 +83,18 @@ fat_tree_global_adaptive::global_adaptive(
   switch_id dest_sw_addr,
   routing_info::path & path) const
 {
-  // if path has not been selected, select one before pushing to outport
+  // if path has not been selected, select one before pushing to outpor
+  // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-      // assume current_sw_addr is the source switch
-      set_path(current_sw_addr, dest_sw_addr, path);
-  }
+      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-  // get current switch coordinates
-  coordinates curr(2);
-  compute_switch_coords(current_sw_addr, curr);
+      // allocate space for path, starting with source
+      path.chosen.clear();
+      path.chosen.resize((ncal << 1) + 1);
+      path.chosen.front() = routing_info::path::Hop(current_sw_addr, -1, 0);
+
+      cheapest_path(0, 0, ncal, dest_sw_addr, path.chosen);
+  }
 
   // linear search on path
   bool found = false;
@@ -67,32 +123,6 @@ fat_tree_global_adaptive::minimal_route_to_switch(
   routing_info::path& path) const
 {
   global_adaptive(current_sw_addr, dest_sw_addr, path);
-}
-
-void
-fat_tree_global_adaptive::set_path(
-  switch_id src,
-  switch_id dst,
-  routing_info::path & path) const
-{
-    cheapest_path(src, dst, path.chosen);
-}
-
-void
-fat_tree_global_adaptive::cheapest_path(
-      switch_id src,
-      switch_id dst,
-      std::vector <routing_info::path::Hop> & path) const
-{
-
-//    // start at source
-//    path.chosen.push_back(routing_info::path::Hop(src, -1, 0));
-
-//    // fill in middle
-
-//    // end at dest (really don't need dst, since route function shouldnt be called at destination)
-//    path.chosen.push_back(routing_info::path::Hop(dst, -1, 1));
-
 }
 
 }

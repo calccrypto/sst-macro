@@ -12,6 +12,7 @@
 #ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_GLOBAL_ADAPTIVE_H_INCLUDED
 #define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_GLOBAL_ADAPTIVE_H_INCLUDED
 
+#include <climits>
 #include <map>
 
 #include <sstmac/hardware/topology/fat_tree.h>
@@ -40,9 +41,17 @@ class fat_tree_global_adaptive :
     return "fattree";
   }
 
-  virtual void
-  connect_objects(internal_connectable_map& switches);
+  // sets the routing_info::path::chosen variable
 
+  unsigned int
+  cheapest_path(
+    const std::size_t current_index,
+    const unsigned int current_cost,
+    const std::size_t mid_point,
+    const switch_id dst,
+    std::vector <routing_info::path::Hop> & path) const;
+
+  // linear search on chosen path
   void
   global_adaptive(
       switch_id current_sw_addr,
@@ -54,23 +63,6 @@ class fat_tree_global_adaptive :
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
       routing_info::path& path) const;
-
- private:
-  // calls recursive function, generating all paths from src to dst and picking one
-  // sets the routing_info::path::chosen variable
-  virtual void
-  set_path(
-      switch_id src,
-      switch_id dst,
-      routing_info::path & path) const;
-
-  virtual void
-  cheapest_path(
-      switch_id src,
-      switch_id dst,
-      std::vector <routing_info::path::Hop> & path) const;
-
-  internal_connectable_map switch_copy; // copy of the switches in this interconnect
 };
 
 
