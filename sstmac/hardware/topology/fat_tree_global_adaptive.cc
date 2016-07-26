@@ -15,11 +15,7 @@ namespace sstmac {
 namespace hw {
 
 SpktRegister("fattree_global_adaptive", topology, fat_tree_global_adaptive,
-             "Fat tree topology with L levels, radix K, and GLOBAL_ADAPTIVE routing.");
-
-std::ostream & operator<<(std::ostream & stream, const routing_info::path::Hop & hop){
-    return stream << "(" << hop.sw_id << " " <<  (hop.vc?std::string("down"):std::string("up")) << " port " << hop.outport << ")";
-}
+             "Fat tree topology with L levels, radix K, and global adaptive routing.");
 
 unsigned int
 fat_tree_global_adaptive::cheapest_path(
