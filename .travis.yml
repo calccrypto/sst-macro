@@ -2,34 +2,42 @@ language: cpp
 
 compiler:
   - g++
+  - clang
 
 branches:
   except:
     - gh-pages
 
 before_install:
-  - test -n $CC  && unset CC
-  - test -n $CXX && unset CXX
-
-install:
   # have newer versions of g++ available
-  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - if [ "$CXX" == "g++" ]; then sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test; fi
+  
+    # have latest clang
+  - if [ "$CXX" == "clang++" ]; then sudo add-apt-repository -y ppa:h-rayflood/llvm; fi
 
   # have newer versions of boost available
   - sudo add-apt-repository -y ppa:boost-latest/ppa
 
   # install packages
   - sudo apt-get update -y
-  - sudo apt-get install -y git g++-4.9 automake autoconf libtool libboost1.55-all-dev openmpi-bin libopenmpi-dev python2.7
+  - sudo apt-get install -y git automake autoconf libtool libboost1.55-all-dev openmpi-bin libopenmpi-dev python2.7
 
-  # force g++ to be g++-4.9
-  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 10
-  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10
+  # install and make default g++-4.9
+  - if [ "$CXX" == "g++" ]; then sudo apt-get install -y g++-4.9; fi 
+  - if [ "$CXX" == "g++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10; fi
+
+  # install and make default clang++3.5
+  - if [ "$CXX" == "clang++" ]; then sudo apt-get install -y clang++-3.5; fi
+  - if [ "$CXX" == "clang++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/clang++-3.5 10; fi
+
+  # https://docs.travis-ci.com/user/languages/c#MPI-projects
+  - test -n $CC  && unset CC
+  - test -n $CXX && unset CXX
 
 before_script:
   - git checkout lanl
   - ./bootstrap.sh
-  - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel --enable-doxygen LDFLAGS=-Wl,--no-as-needed
+  - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel LDFLAGS=-Wl,--no-as-needed
 
 script:
   - make check
