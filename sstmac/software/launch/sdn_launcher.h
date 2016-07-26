@@ -3,7 +3,6 @@
 #include <sstmac/hardware/interconnect/switch_interconnect.h>
 #include <sstmac/hardware/switch/network_switch.h>
 #include <sstmac/hardware/router/router.h>
-#include "sstmac/hardware/router/fat_tree_adaptive_router.h"
 #include <cassert>
 /*
 class sdn_job_launcher :
