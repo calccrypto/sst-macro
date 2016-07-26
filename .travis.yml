@@ -28,14 +28,14 @@ before_install:
 
   # install and make default clang++3.5
   - if [ "$CXX" == "clang++" ]; then sudo apt-get install -y clang++-3.5; fi
-  - if [ "$CXX" == "clang++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/clang++-3.5 10; fi
+  - if [ "$CXX" == "clang++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/clang++ 10; fi
 
   # https://docs.travis-ci.com/user/languages/c#MPI-projects
   - test -n $CC  && unset CC
   - test -n $CXX && unset CXX
 
 before_script:
-  - git checkout lanl
+  - git checkout test
   - ./bootstrap.sh
   - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel LDFLAGS=-Wl,--no-as-needed
 
