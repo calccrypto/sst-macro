@@ -54,7 +54,7 @@ fat_tree_global_adaptive::cheapest_path(
         path[current_index].outport = k + offset;
 
         // set next switch id to the switch that is the neighbor at the port
-       path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, path[current_index].outport));
+        path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, path[current_index].outport));
 
         // get cost to get to next switch
         const int this_hop_cost = 0;
