@@ -46,7 +46,6 @@ class fat_tree_global_adaptive :
   unsigned int
   cheapest_path(
     const std::size_t current_index,
-    const unsigned int current_cost,
     const std::size_t mid_point,
     const switch_id dst,
     std::vector <geometry_routable::path::Hop> & path) const;

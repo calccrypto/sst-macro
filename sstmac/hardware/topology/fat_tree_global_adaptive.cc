@@ -20,7 +20,6 @@ SpktRegister("fattree_global_adaptive", topology, fat_tree_global_adaptive,
 unsigned int
 fat_tree_global_adaptive::cheapest_path(
     const std::size_t current_index,
-    const unsigned int current_cost,
     const std::size_t mid_point,
     const switch_id dst,
     std::vector <geometry_routable::path::Hop> & path) const
@@ -56,7 +55,7 @@ fat_tree_global_adaptive::cheapest_path(
         const int this_hop_cost = 0;
 
         // get cheapest cost going down this port at this switch
-        const int next_hop_cost = cheapest_path(current_index + 1, current_cost + this_hop_cost, mid_point, dst, path);
+        const int next_hop_cost = this_hop_cost + cheapest_path(current_index + 1, mid_point, dst, path);
 
         // compare costs of going down each port at this switch
         if (next_hop_cost < cheapest){
@@ -89,7 +88,7 @@ fat_tree_global_adaptive::global_adaptive(
       path.chosen.resize((ncal << 1) + 1);
       path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
-      cheapest_path(0, 0, ncal, dest_sw_addr, path.chosen);
+      cheapest_path(0, ncal, dest_sw_addr, path.chosen);
   }
 
   // linear search on path
