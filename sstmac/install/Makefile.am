@@ -32,8 +32,7 @@ libsstmac_la_LIBADD = \
   ../main/libsstmac_driver.la \
   ../skeletons/libsstmac_skeletons.la \
   ../software/libsstmac_sw.la \
-  ../../sumi-mpi/libsstmac_mpi.la \
-  ../statistics/libsstmac_stat.la
+  ../../sumi-mpi/libsstmac_mpi.la
 
 if USE_MPIPARALLEL
 libsstmac_la_LIBADD += ../backends/mpi/libsstmac_mpi_runtime.la

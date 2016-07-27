@@ -15,7 +15,6 @@ STD_SUBDIRS = \
   dumpi_util \
   software \
   hardware \
-  statistics \
   backends \
   main \
   libraries \

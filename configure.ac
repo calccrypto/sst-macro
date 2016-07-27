@@ -227,7 +227,6 @@ AC_CONFIG_FILES([
  sstmac/common/Makefile
  sstmac/replacements/Makefile
  sstmac/replacements/mpi.h
- sstmac/statistics/Makefile
  bin/Makefile
  python/Makefile
  configurations/Makefile
