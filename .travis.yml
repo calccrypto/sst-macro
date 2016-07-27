@@ -31,5 +31,8 @@ before_script:
   - ./bootstrap.sh
   - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel --enable-doxygen LDFLAGS=-Wl,--no-as-needed
 
+  - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel --enable-spinlock --enable-cpu-affinity LDFLAGS=-Wl,--no-as-needed
+
+
 script:
   - make check
