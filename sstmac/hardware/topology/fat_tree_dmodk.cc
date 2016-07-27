@@ -22,7 +22,7 @@ void
 fat_tree_dmodk::dmodk(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path & path) const
+  geometry_routable::path & path) const
 {
 
   // get current switch coordinates
@@ -50,7 +50,7 @@ void
 fat_tree_dmodk::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path& path) const
+  geometry_routable::path& path) const
 {
   dmodk(current_sw_addr, dest_sw_addr, path);
 }

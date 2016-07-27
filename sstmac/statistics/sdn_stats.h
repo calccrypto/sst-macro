@@ -1,5 +1,4 @@
 #include <sstmac/hardware/packet_flow/packet_flow_stats.h>
-#include <sstmac/hardware/packet_flow/sdn_packet.h>
 
 /**
  * @brief The sdn_stats class

@@ -10,8 +10,6 @@
 
 include $(top_srcdir)/Makefile.common
 
-EXTRA_DIST = test/test.model
-
 noinst_LTLIBRARIES = libsstmac_skeletons.la
 library_includedir=$(includedir)/sstmac/skeletons
 
@@ -25,6 +23,10 @@ libsstmac_skeletons_la_SOURCES = \
   test/app_hello_world.cc \
   test/mpi_ping_all.cc \
   test/global_test.cc 
+
+nobase_library_include_HEADERS = \
+  sumi_undumpi/parsedumpi.h \
+  sumi_undumpi/parsedumpi_callbacks.h 
 
 libsstmac_skeletons_la_SOURCES += \
   sumi_undumpi/parsedumpi.cc \

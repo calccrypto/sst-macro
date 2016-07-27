@@ -136,19 +136,19 @@ class fat_tree :
     int dim,
     const coordinates &src,
     const coordinates &dst,
-    routing_info::path& path) const;
+    geometry_routable::path& path) const;
 
   virtual void
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    routing_info::path& path) const;
+    geometry_routable::path& path) const;
 
   virtual void
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    routing_info::path& path) const;
+    geometry_routable::path& path) const;
 
   // takes in switch coordinates and figures out how high packets need to go up in the tree
   virtual int
@@ -238,7 +238,7 @@ class simple_fat_tree : public abstract_fat_tree
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    routing_info::path &path) const;
+    geometry_routable::path &path) const;
 
   switch_id
   switch_number(const coordinates &coords) const;
@@ -250,7 +250,7 @@ class simple_fat_tree : public abstract_fat_tree
   productive_path(int dim,
     const coordinates &src,
     const coordinates &dst,
-    routing_info::path &path) const;
+    geometry_routable::path &path) const;
 
   void
   compute_switch_coords(switch_id swid, coordinates &coords) const;
@@ -265,7 +265,7 @@ class simple_fat_tree : public abstract_fat_tree
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    routing_info::path& path) const;
+    geometry_routable::path& path) const;
 
   int
   level(switch_id sid) const;

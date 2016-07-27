@@ -7,60 +7,34 @@ namespace sstmac {
 namespace hw {
 
 network_message::network_message()
-  : app_id_(-1),
-    flow_id_(-1),
-    needs_ack_(true),
+  : needs_ack_(true),
     type_(null_netmsg_type),
-    route_algo_(routing::deflt),
     bytes_(0)
 {
 }
 
-network_message::network_message(long payload_bytes)
-  : app_id_(-1),
-    flow_id_(-1),
-    bytes_(payload_bytes),
-    needs_ack_(true),
-    type_(null_netmsg_type),
-    route_algo_(routing::deflt)
+network_message::network_message(sw::app_id aid, long payload_bytes) :
+  bytes_(payload_bytes),
+  needs_ack_(true),
+  type_(null_netmsg_type),
+  aid_(aid)
 {
 }
 
 network_message::network_message(
-  node_id toaddr, node_id fromaddr,
+  sw::app_id aid,
+  node_id to, node_id from,
   sw::task_id src, sw::task_id dst,
   long bytes)
-  : app_id_(-1),
-    flow_id_(-1),
-    needs_ack_(true),
-    route_algo_(routing::deflt),
-    toaddr_(toaddr),
-    fromaddr_(fromaddr),
+  : needs_ack_(true),
+    toaddr_(to),
+    fromaddr_(from),
     src_task_(src),
     dest_task_(dst),
     bytes_(bytes),
-    type_(null_netmsg_type)
+    type_(null_netmsg_type),
+    aid_(aid)
 {
-}
-
-void
-network_message::set_app_id(const int aid){
-    app_id_ = aid;
-}
-
-int
-network_message::app_id() const {
-    return app_id_;
-}
-
-void
-network_message::set_flow_id(const int fid){
-    flow_id_ = fid;
-}
-
-int
-network_message::flow_id() const {
-    return flow_id_;
 }
 
 bool
@@ -167,14 +141,11 @@ void
 network_message::serialize_order(serializer& ser)
 {
   ser & needs_ack_;
-  ser & route_algo_;
   ser & toaddr_;
   ser & fromaddr_;
   ser & src_task_;
   ser & dest_task_;
   ser & net_id_;
-  ser & flow_id_;
-  ser & app_id_;
   ser & bytes_;
   ser & type_;
   message::serialize_order(ser);
@@ -232,14 +203,11 @@ void
 network_message::clone_into(network_message* cln) const
 {
   cln->needs_ack_ = needs_ack_;
-  cln->route_algo_ = route_algo_;
   cln->toaddr_ = toaddr_;
   cln->fromaddr_ = fromaddr_;
   cln->src_task_ = src_task_;
   cln->dest_task_ = dest_task_;
   cln->net_id_ = net_id_;
-  cln->flow_id_ = flow_id_;
-  cln->app_id_ = app_id_;
   cln->bytes_ = bytes_;
   cln->type_ = type_;
 }

@@ -41,7 +41,7 @@ class fat_tree_global_adaptive :
     return "fattree";
   }
 
-  // sets the routing_info::path::chosen variable
+  // sets the geometry_routable::path::chosen variable
 
   unsigned int
   cheapest_path(
@@ -49,20 +49,20 @@ class fat_tree_global_adaptive :
     const unsigned int current_cost,
     const std::size_t mid_point,
     const switch_id dst,
-    std::vector <routing_info::path::Hop> & path) const;
+    std::vector <geometry_routable::path::Hop> & path) const;
 
   // linear search on chosen path
   void
   global_adaptive(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      routing_info::path &path) const;
+      geometry_routable::path &path) const;
 
   virtual void
   minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      routing_info::path& path) const;
+      geometry_routable::path& path) const;
 };
 
 

@@ -15,8 +15,6 @@
 #include <map>
 
 #include <sstmac/hardware/topology/fat_tree.h>
-#include <sstmac/software/process/app_id.h>
-#include <sstmac/software/process/flow_id.h>
 
 namespace sstmac {
 namespace hw {
@@ -44,13 +42,13 @@ class fat_tree_local_adaptive :
   void
   adaptive(switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      routing_info::path &path);
+      geometry_routable::path &path);
 
   virtual void
   minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      routing_info::path& path) const;
+      geometry_routable::path& path) const;
 };
 
 }

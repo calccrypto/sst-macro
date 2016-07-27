@@ -23,7 +23,7 @@ fat_tree_global_adaptive::cheapest_path(
     const unsigned int current_cost,
     const std::size_t mid_point,
     const switch_id dst,
-    std::vector <routing_info::path::Hop> & path) const
+    std::vector <geometry_routable::path::Hop> & path) const
 {
     // at the end of the path; only allow paths that reach destination to be chosen from
     if ((current_index + 1) == path.size()){
@@ -77,7 +77,7 @@ void
 fat_tree_global_adaptive::global_adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path & path) const
+  geometry_routable::path & path) const
 {
   // if path has not been selected, select one before pushing to outpor
   // assume current_sw_addr is the source switch
@@ -87,14 +87,14 @@ fat_tree_global_adaptive::global_adaptive(
       // allocate space for path, starting with source
       path.chosen.clear();
       path.chosen.resize((ncal << 1) + 1);
-      path.chosen.front() = routing_info::path::Hop(current_sw_addr, -1, 0);
+      path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
       cheapest_path(0, 0, ncal, dest_sw_addr, path.chosen);
   }
 
   // linear search on path
   bool found = false;
-  for(routing_info::path::Hop const & p : path.chosen){
+  for(geometry_routable::path::Hop const & p : path.chosen){
       if (p.sw_id == current_sw_addr){
           path.outport = p.outport;
           path.vc = p.vc;
@@ -116,7 +116,7 @@ void
 fat_tree_global_adaptive::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  routing_info::path& path) const
+  geometry_routable::path& path) const
 {
   global_adaptive(current_sw_addr, dest_sw_addr, path);
 }

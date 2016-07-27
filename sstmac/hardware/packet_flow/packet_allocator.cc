@@ -1,30 +1,66 @@
-#include "sstmac/hardware/packet_flow/packet_allocator.h"
+#include <sstmac/hardware/packet_flow/packet_allocator.h>
+#include <sstmac/hardware/packet_flow/packet_flow.h>
+#include <sstmac/hardware/router/routable.h>
+#include <sprockit/sim_parameters.h>
 
-using namespace sstmac;
-using namespace sstmac::sw;
-using namespace sstmac::hw;
 
-SpktRegister("sdn", sstmac::hw::packet_allocator, sdn_packet_allocator);
+ImplementFactory(sstmac::hw::packet_allocator);
 
-packet_flow_payload*
-sdn_packet_allocator::new_packet(int bytes, long byte_offset, message *msg)
+namespace sstmac {
+namespace hw {
+
+class geometry_routable_packet_flow :
+ public packet_flow_payload,
+ public geometry_routable
 {
-  //if you need more app data, we can dicuss ways to get more information
-  //about the message (flow) being sent
-  network_message* netmsg = dynamic_cast<network_message*>(msg);
-  assert(netmsg != nullptr);
+  NotSerializable(geometry_routable_packet_flow)
 
-  //the app id can now be tacked onto packets
-  app_id aid = netmsg->aid();
+  public:
+   geometry_routable_packet_flow(
+     message* parent,
+     int num_bytes,
+     long offset) :
+    packet_flow_payload(parent, num_bytes, offset),
+    geometry_routable(parent->toaddr(), parent->fromaddr())
+  {
+  }
 
-  //you can use the ctor I have - or make your own
-  return new sdn_packet(netmsg, bytes, byte_offset);
+  node_id
+  toaddr() const {
+   return geometry_routable::toaddr();
+  }
+
+  node_id
+  fromaddr() const {
+    return geometry_routable::fromaddr();
+  }
+
+  int
+  next_port() const {
+    return geometry_routable::port();
+  }
+
+  int
+  next_vc() const {
+    return geometry_routable::vc();
+  }
+
+};
+
+class geometry_routable_packet_allocator :
+ public packet_allocator
+{
+ public:
+  virtual packet_flow_payload*
+  new_packet(int bytes, long byte_offset, message *msg){
+    return new geometry_routable_packet_flow(msg, bytes, byte_offset);
+  }
+
+  virtual void
+  init_factory_params(sprockit::sim_parameters *params){}
+};
+
+SpktRegister("geometry_routable", packet_allocator, geometry_routable_packet_allocator);
+
 }
-
-void
-sdn_packet_allocator::init_factory_params(sprockit::sim_parameters *params)
-{
-  //always call up to parent
-  packet_allocator::init_factory_params(params);
-  //TODO read in params
 }
