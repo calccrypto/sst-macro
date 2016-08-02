@@ -1,8 +1,8 @@
 <map id="sstmac::hw::fat_tree::default_router" name="sstmac::hw::fat_tree::default_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a18e483fe72cec95a9fe33d0e6b7d12b9" title="The function accepts either source or node coordinates. " alt="" coords="199,5,397,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#adefd56fd0e01b2399fe8887965c1e0c6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="209,71,387,127"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#ab45b992cfb4af38ae73d305f890c023c" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="209,151,387,207"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a5cbb74f77d1c7a523c31e9e5e6ba30f0" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="199,232,397,273"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#ab8554f9ca833b9b640fba9fed5fd6f1d" title="sstmac::hw::structured\l_topology::productive_path" alt="" coords="203,297,393,339"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#afa38620188dda97c0edf708502031c08" title="sstmac::hw::structured\l_topology::switch_number" alt="" coords="207,363,389,404"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a18e483fe72cec95a9fe33d0e6b7d12b9" title="The function accepts either source or node coordinates. " alt="" coords="196,5,383,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a4687caa4468207f7f492f9c8e21b9255" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="206,70,373,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#aec3c61476877e51a1c4bbe47dddc10b7" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="206,150,373,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a9e03a48429fb1862c587fe1c345d8610" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="198,229,381,271"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#afe40cfb17898ee4987e724403ae4aa9c" title="sstmac::hw::structured\l_topology::productive_path" alt="" coords="200,295,379,336"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#afa38620188dda97c0edf708502031c08" title="sstmac::hw::structured\l_topology::switch_number" alt="" coords="202,360,377,401"/>
 </map>

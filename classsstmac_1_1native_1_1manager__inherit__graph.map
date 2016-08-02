@@ -1,4 +1,4 @@
 <map id="sstmac::native::manager" name="sstmac::native::manager">
-<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1macro__manager.html" title="{sstmac::native::macro\l_manager\n|# event_manager_\l# running_\l|+ macro_manager()\l+ ~macro_manager()\l+ init_factory_params()\l+ run()\l+ finish()\l# launch_app()\l# launch_apps()\l&#45; start()\l&#45; stop()\l}" alt="" coords="37,491,206,715"/>
-<area shape="rect" id="node2" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="37,5,206,97"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1macro__manager.html" title="{sstmac::native::macro\l_manager\n|&#45; event_manager_\l&#45; running_\l&#45; launcher_\l|+ macro_manager()\l+ ~macro_manager()\l+ init_factory_params()\l+ run()\l+ finish()\l&#45; launch_app()\l&#45; launch_apps()\l&#45; start()\l&#45; stop()\l}" alt="" coords="34,476,190,715"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="34,5,190,97"/>
 </map>

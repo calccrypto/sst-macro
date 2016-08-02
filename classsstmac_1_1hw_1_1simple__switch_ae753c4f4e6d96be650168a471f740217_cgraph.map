@@ -1,8 +1,8 @@
 <map id="sstmac::hw::simple_switch::queue_length" name="sstmac::hw::simple_switch::queue_length">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__switch.html#a6ae6afef5b0d68acf4b07fc7ba53cb1b" title="sstmac::hw::simple\l_switch::connect_input" alt="" coords="233,5,396,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__switch.html#a5385e133c64993f3949dad43e2ff9cb2" title="sstmac::hw::simple\l_switch::connect_output" alt="" coords="229,71,400,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__switch.html#ab838b3d3f1c671cb65eee26021d621ec" title="sstmac::hw::simple\l_switch::connected_switches" alt="" coords="213,136,416,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__switch.html#a84da8fbd598b55182791dc9baa166ac3" title="Cast message and pass to #send. " alt="" coords="247,201,383,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__switch.html#a4703083b0f747a5d77fca06a50d509ac" title="sstmac::hw::simple\l_switch::set_event_manager" alt="" coords="214,267,415,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1simple__switch.html#a0f3d8e1902754ddda7fea147139876b2" title="sstmac::hw::simple\l_switch::set_topology" alt="" coords="237,332,393,373"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__switch.html#a6ae6afef5b0d68acf4b07fc7ba53cb1b" title="sstmac::hw::simple\l_switch::connect_input" alt="" coords="225,5,381,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__switch.html#a5385e133c64993f3949dad43e2ff9cb2" title="sstmac::hw::simple\l_switch::connect_output" alt="" coords="221,71,385,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__switch.html#ab838b3d3f1c671cb65eee26021d621ec" title="sstmac::hw::simple\l_switch::connected_switches" alt="" coords="205,136,400,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__switch.html#a84da8fbd598b55182791dc9baa166ac3" title="Cast message and pass to #send. " alt="" coords="235,201,371,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__switch.html#a4703083b0f747a5d77fca06a50d509ac" title="sstmac::hw::simple\l_switch::set_event_manager" alt="" coords="208,267,397,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1simple__switch.html#a0f3d8e1902754ddda7fea147139876b2" title="sstmac::hw::simple\l_switch::set_topology" alt="" coords="228,332,377,373"/>
 </map>

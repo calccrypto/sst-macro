@@ -1,5 +1,5 @@
 <map id="sstmac::hw::structured_topology::nodes_connected_to_ejection_switch" name="sstmac::hw::structured_topology::nodes_connected_to_ejection_switch">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a5cbb74f77d1c7a523c31e9e5e6ba30f0" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="258,5,457,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="278,71,437,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="256,137,459,193"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a9e03a48429fb1862c587fe1c345d8610" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="244,5,427,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="257,71,413,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="241,135,429,191"/>
 </map>

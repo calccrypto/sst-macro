@@ -1,7 +1,7 @@
 <map id="sstmac::hw::simple_switch::hop_bandwidth" name="sstmac::hw::simple_switch::hop_bandwidth">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__switch.html#a2ce56e1edc95fb553f59cab20a799daf" title="sstmac::hw::simple\l_switch::add_switch" alt="" coords="240,5,387,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__switch.html#a848bad5939fa7a6a1db69777b0ecf1ef" title="sstmac::hw::simple\l_switch::connect_ejector" alt="" coords="225,71,401,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__switch.html#a5535b676e3614683f157848ae88425f2" title="sstmac::hw::simple\l_switch::connect_injector" alt="" coords="224,136,403,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__switch.html#a2c90763d627366cef54b4e3c65eff6cd" title="sstmac::hw::simple\l_switch::finalize_init" alt="" coords="241,201,386,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__switch.html#a9920feda3c76cb58c075e2f091375792" title="sstmac::hw::simple\l_switch::init_factory\l_params" alt="" coords="241,267,385,323"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__switch.html#a2ce56e1edc95fb553f59cab20a799daf" title="sstmac::hw::simple\l_switch::add_switch" alt="" coords="231,5,372,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__switch.html#a848bad5939fa7a6a1db69777b0ecf1ef" title="sstmac::hw::simple\l_switch::connect_ejector" alt="" coords="218,71,385,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__switch.html#a5535b676e3614683f157848ae88425f2" title="sstmac::hw::simple\l_switch::connect_injector" alt="" coords="216,136,387,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__switch.html#a2c90763d627366cef54b4e3c65eff6cd" title="sstmac::hw::simple\l_switch::finalize_init" alt="" coords="231,201,371,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1simple__switch.html#a9920feda3c76cb58c075e2f091375792" title="sstmac::hw::simple\l_switch::init_factory\l_params" alt="" coords="232,266,371,322"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="sstmac::hw::node::allocate_unique_id" name="sstmac::hw::node::allocate_unique_id">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1node.html#a1b8cd90e5d341ebbc5db1db20c210db6" title="sstmac::hw::node::connect_nic" alt="" coords="236,5,447,32"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1node.html#a581338eddf75b84820010aee897b419a" title="Make the node execute a particular compute function. " alt="" coords="250,57,433,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1node.html#ad3104f43870dd1dca21e5232c636032a" title="sstmac::hw::node::handle" alt="" coords="253,123,430,149"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1node.html#a5697ad5e45bfe18d40722b08b9169331" title="sstmac::hw::node::kernel\l_supported" alt="" coords="255,174,428,215"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1node.html#a7fa3fb812c2612d30a92e07f255e848f" title="sstmac::hw::node::node" alt="" coords="258,240,425,267"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1node.html#a3593ebf83b6f40fa1b2e80d09994546b" title="Push a network message (operation at the MTL layer) onto the NIC. " alt="" coords="259,291,424,333"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1node.html#a1b8cd90e5d341ebbc5db1db20c210db6" title="sstmac::hw::node::connect_nic" alt="" coords="232,5,436,32"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1node.html#a581338eddf75b84820010aee897b419a" title="Make the node execute a particular compute function. " alt="" coords="244,57,424,98"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1node.html#ad3104f43870dd1dca21e5232c636032a" title="sstmac::hw::node::handle" alt="" coords="248,123,420,149"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1node.html#a5697ad5e45bfe18d40722b08b9169331" title="sstmac::hw::node::kernel\l_supported" alt="" coords="249,174,419,215"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1node.html#a7fa3fb812c2612d30a92e07f255e848f" title="sstmac::hw::node::node" alt="" coords="253,240,415,267"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1node.html#a3593ebf83b6f40fa1b2e80d09994546b" title="Push a network message (operation at the MTL layer) onto the NIC. " alt="" coords="253,291,415,333"/>
 </map>

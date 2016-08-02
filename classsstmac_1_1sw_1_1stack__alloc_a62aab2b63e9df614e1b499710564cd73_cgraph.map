@@ -1,8 +1,8 @@
 <map id="sstmac::sw::stack_alloc::chunksize" name="sstmac::sw::stack_alloc::chunksize">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1stack__alloc.html#ad12a9a4ec32565d5accf47be1c856f05" title="Get a stack memory region. " alt="" coords="219,5,384,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1stack__alloc.html#af2e1cd15aacf81217585f0761d6cb07f" title="Return the given memory region. " alt="" coords="219,71,384,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1stack__alloc.html#a5bdc41eff33f3a7c315baf194d3c0683" title="sstmac::sw::stack_alloc\l::init" alt="" coords="219,136,384,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1stack__alloc.html#af86bfd3c93090b3d5d1ab4ce46a1982a" title="sstmac::sw::stack_alloc\l::stacksize" alt="" coords="219,201,384,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1stack__alloc.html#ad0b9c39e08b6c015b32028e740c5d104" title="sstmac::sw::stack_alloc\l::use_mprot" alt="" coords="219,267,384,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1stack__alloc.html#ac0967426efd04a15689125f99c0b2ebc" title="Goodbye. " alt="" coords="219,332,384,373"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1stack__alloc.html#ad12a9a4ec32565d5accf47be1c856f05" title="Get a stack memory region. " alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1stack__alloc.html#af2e1cd15aacf81217585f0761d6cb07f" title="Return the given memory region. " alt="" coords="217,71,381,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1stack__alloc.html#a5bdc41eff33f3a7c315baf194d3c0683" title="sstmac::sw::stack_alloc\l::init" alt="" coords="217,136,381,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1stack__alloc.html#af86bfd3c93090b3d5d1ab4ce46a1982a" title="sstmac::sw::stack_alloc\l::stacksize" alt="" coords="217,201,381,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1stack__alloc.html#ad0b9c39e08b6c015b32028e740c5d104" title="sstmac::sw::stack_alloc\l::use_mprot" alt="" coords="217,267,381,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1stack__alloc.html#ac0967426efd04a15689125f99c0b2ebc" title="Goodbye. " alt="" coords="217,332,381,373"/>
 </map>

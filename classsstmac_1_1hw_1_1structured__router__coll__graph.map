@@ -1,5 +1,5 @@
 <map id="sstmac::hw::structured_router" name="sstmac::hw::structured_router">
-<area shape="rect" id="node2" href="$classrouter.html" title="{router\n||}" alt="" coords="23,336,82,413"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="106,175,333,575"/>
-<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="100,5,176,83"/>
+<area shape="rect" id="node2" href="$classrouter.html" title="{router\n||}" alt="" coords="22,329,77,406"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="100,175,311,560"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="91,5,162,83"/>
 </map>

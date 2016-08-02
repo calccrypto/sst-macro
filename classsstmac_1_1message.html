@@ -52,7 +52,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classsstmac_1_1message-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sstmac::message Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -68,11 +67,12 @@ Inheritance diagram for sstmac::message:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1message__inherit__graph.png" border="0" usemap="#sstmac_1_1message_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1message_inherit__map" id="sstmac_1_1message_inherit__map">
-<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1memory__message.html" title="{sstmac::hw::memory\l_message\n|&#45; id_\l&#45; bytes_\l&#45; max_bw_\l|&#45; NotSerializable()\l&#45; byte_length()\l&#45; unique_id()\l&#45; toaddr()\l&#45; fromaddr()\l&#45; max_bw()\l}" alt="" coords="5,704,152,899"/>
-<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1network__message.html" title="{sstmac::hw::network\l_message\n|+ toaddr_\l+ fromaddr_\l# net_id_\l# needs_ack_\l# route_algo_\l# src_task_\l# dest_task_\l# bytes_\l# type_\l|+ network_message()\l+ network_message()\l+ network_message()\l+ ~network_message()\l+ is_metadata()\l+ clone_injection_ack()\l+ route_algo()\l+ nic_reverse()\l+ set_route_algo()\l+ is_nic_ack()\land 20 more...\l+ tostr()\l+ tostr()\l# clone_into()\l}" alt="" coords="177,601,346,1001"/>
-<area shape="rect" id="node2" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="100,175,239,325"/>
-<area shape="rect" id="node3" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="96,5,243,127"/>
-<area shape="rect" id="node6" href="classsstmac_1_1transport__message.html" title="{sstmac::transport_message\n|&#45; payload_\l&#45; buffer_\l|# clone_into()\l# reverse()\l&#45; ImplementSerializable()\l&#45; transport_message()\l&#45; serialize_order()\l&#45; payload()\l&#45; to_string()\l&#45; dest()\l&#45; set_dest()\l&#45; src()\l&#45; set_src()\l&#45; set_buffer()\l&#45; buffer()\l&#45; put_on_wire()\l&#45; complete_transfer()\l&#45; clone_injection_ack()\l}" alt="" coords="164,1049,359,1361"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1memory__message.html" title="{sstmac::hw::memory\l_message\n|&#45; id_\l&#45; bytes_\l&#45; max_bw_\l|&#45; NotSerializable()\l&#45; byte_length()\l&#45; unique_id()\l&#45; to_string()\l&#45; toaddr()\l&#45; fromaddr()\l&#45; max_bw()\l}" alt="" coords="5,778,151,987"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1network__message.html" title="{sstmac::hw::network\l_message\n|+ toaddr_\l+ fromaddr_\l# app_id_\l# flow_id_\l# net_id_\l# aid_\l# needs_ack_\l# src_task_\l# dest_task_\l# bytes_\l# type_\l|+ network_message()\l+ network_message()\l+ network_message()\l+ to_string()\l+ ~network_message()\l+ is_metadata()\l+ clone_injection_ack()\l+ nic_reverse()\l+ is_nic_ack()\l+ toaddr()\land 20 more...\l+ tostr()\l+ tostr()\l# clone_into()\l}" alt="" coords="175,668,331,1097"/>
+<area shape="rect" id="node2" href="classsstmac_1_1flow.html" title="{sstmac::flow\n||+ unique_id()\l+ byte_length()\l}" alt="" coords="110,373,219,465"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="101,175,228,325"/>
+<area shape="rect" id="node4" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="94,5,235,127"/>
+<area shape="rect" id="node7" href="classsstmac_1_1transport__message.html" title="{sstmac::transport_message\n|&#45; payload_\l&#45; buffer_\l|# clone_into()\l# reverse()\l&#45; ImplementSerializable()\l&#45; transport_message()\l&#45; serialize_order()\l&#45; payload()\l&#45; to_string()\l&#45; dest()\l&#45; set_dest()\l&#45; src()\l&#45; set_src()\l&#45; set_buffer()\l&#45; buffer()\l&#45; put_on_wire()\l&#45; complete_transfer()\l&#45; clone_injection_ack()\l}" alt="" coords="161,1145,345,1457"/>
 </map>
 </div>
 <div class="dynheader">
@@ -80,10 +80,9 @@ Collaboration diagram for sstmac::message:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1message__coll__graph.png" border="0" usemap="#sstmac_1_1message_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1message_coll__map" id="sstmac_1_1message_coll__map">
-<area shape="rect" id="node2" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="315,432,453,583"/>
-<area shape="rect" id="node3" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,145,152,267"/>
-<area shape="rect" id="node4" href="classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="631,329,807,685"/>
-<area shape="rect" id="node6" href="classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="477,145,656,267"/>
+<area shape="rect" id="node2" href="classsstmac_1_1flow.html" title="{sstmac::flow\n||+ unique_id()\l+ byte_length()\l}" alt="" coords="21,373,131,465"/>
+<area shape="rect" id="node3" href="classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="13,175,139,325"/>
+<area shape="rect" id="node4" href="classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,147,127"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -91,23 +90,19 @@ Collaboration diagram for sstmac::message:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2deb7759454fbb47de5f3a5dbb4a327"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#ae2deb7759454fbb47de5f3a5dbb4a327">~message</a> ()</td></tr>
 <tr class="separator:ae2deb7759454fbb47de5f3a5dbb4a327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af278c46c099b3bbb0ba65373b61fc814"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#af278c46c099b3bbb0ba65373b61fc814">to_string</a> () const </td></tr>
-<tr class="separator:af278c46c099b3bbb0ba65373b61fc814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac665b6c605ba8d2090f18b05f0e6fb09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09">message</a> ()</td></tr>
-<tr class="separator:ac665b6c605ba8d2090f18b05f0e6fb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82f1e99df3d8d2f1517da80f375fbca"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca">byte_length</a> () const =0</td></tr>
-<tr class="memdesc:aa82f1e99df3d8d2f1517da80f375fbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function to return size.  <a href="#aa82f1e99df3d8d2f1517da80f375fbca">More...</a><br /></td></tr>
-<tr class="separator:aa82f1e99df3d8d2f1517da80f375fbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788cf8639f5a017f2c847614dd581f2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c">serialize_order</a> (<a class="el" href="classsprockit_1_1serializer.html">serializer</a> &amp;ser)</td></tr>
-<tr class="memdesc:a788cf8639f5a017f2c847614dd581f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this message during parallel simulation.  <a href="#a788cf8639f5a017f2c847614dd581f2c">More...</a><br /></td></tr>
-<tr class="separator:a788cf8639f5a017f2c847614dd581f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115508a22049254316aa1853dfefc8d9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9">toaddr</a> () const =0</td></tr>
 <tr class="separator:a115508a22049254316aa1853dfefc8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb7462e1dc58d9e5b251b09e7145fc3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3">fromaddr</a> () const =0</td></tr>
 <tr class="separator:a6bb7462e1dc58d9e5b251b09e7145fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c22e0b6139b29ace8e6c5ed8e4ab20"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20">unique_id</a> () const =0</td></tr>
-<tr class="separator:a84c22e0b6139b29ace8e6c5ed8e4ab20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsstmac_1_1flow"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsstmac_1_1flow')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsstmac_1_1flow.html">sstmac::flow</a></td></tr>
+<tr class="memitem:afcbca94068152eb5d6b4daf6ed1f4b31 inherit pub_methods_classsstmac_1_1flow"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1flow.html#afcbca94068152eb5d6b4daf6ed1f4b31">unique_id</a> () const =0</td></tr>
+<tr class="separator:afcbca94068152eb5d6b4daf6ed1f4b31 inherit pub_methods_classsstmac_1_1flow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7c9b78976b26c7618ede857f9d9075 inherit pub_methods_classsstmac_1_1flow"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1flow.html#ace7c9b78976b26c7618ede857f9d9075">byte_length</a> () const =0</td></tr>
+<tr class="memdesc:ace7c9b78976b26c7618ede857f9d9075 inherit pub_methods_classsstmac_1_1flow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function to return size.  <a href="#ace7c9b78976b26c7618ede857f9d9075">More...</a><br /></td></tr>
+<tr class="separator:ace7c9b78976b26c7618ede857f9d9075 inherit pub_methods_classsstmac_1_1flow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsstmac_1_1event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsstmac_1_1event')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsstmac_1_1event.html">sstmac::event</a></td></tr>
+<tr class="memitem:aaed20906de348032a10f06182bb6a598 inherit pub_methods_classsstmac_1_1event"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1event.html#aaed20906de348032a10f06182bb6a598">to_string</a> () const =0</td></tr>
+<tr class="separator:aaed20906de348032a10f06182bb6a598 inherit pub_methods_classsstmac_1_1event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab30a847f9945da4c2912ea854c5d0db6 inherit pub_methods_classsstmac_1_1event"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1event.html#ab30a847f9945da4c2912ea854c5d0db6">serialize_order</a> (<a class="el" href="classsprockit_1_1serializer.html">serializer</a> &amp;ser)</td></tr>
 <tr class="separator:ab30a847f9945da4c2912ea854c5d0db6 inherit pub_methods_classsstmac_1_1event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0dd9011c891c51701ba037f9cd68336 inherit pub_methods_classsstmac_1_1event"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1event.html#ae0dd9011c891c51701ba037f9cd68336">is_packet</a> () const </td></tr>
@@ -128,11 +123,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a520c65032ada3ba77428a1b7e1ee24fd inherit pub_methods_classsprockit_1_1serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsprockit_1_1serializable.html#a520c65032ada3ba77428a1b7e1ee24fd">~serializable</a> ()</td></tr>
 <tr class="separator:a520c65032ada3ba77428a1b7e1ee24fd inherit pub_methods_classsprockit_1_1serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ae7d243dabc34f09f1c3a8440978498c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1sw_1_1key.html">sw::key</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1message.html#ae7d243dabc34f09f1c3a8440978498c6">key_</a></td></tr>
-<tr class="separator:ae7d243dabc34f09f1c3a8440978498c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_classsprockit_1_1serializable"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classsprockit_1_1serializable')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classsprockit_1_1serializable.html">sprockit::serializable</a></td></tr>
@@ -143,7 +133,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class describing an event. </p>
 
-<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00032">32</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
+<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00047">47</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae2deb7759454fbb47de5f3a5dbb4a327"></a>
 <div class="memitem">
@@ -166,58 +156,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00038">38</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac665b6c605ba8d2090f18b05f0e6fb09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sstmac::message::message </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
+<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00052">52</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa82f1e99df3d8d2f1517da80f375fbca"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual long sstmac::message::byte_length </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual function to return size. </p>
-<p>Child classes should impement this if they want any size tracked / modeled. </p><dl class="section return"><dt>Returns</dt><dd>Zero size, meant to be implemented by children. </dd></dl>
-
-<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42">sstmac::hw::network_message</a>, and <a class="el" href="classsstmac_1_1hw_1_1memory__message.html#aeefedf81bf8da535785a653dcbe4bd77">sstmac::hw::memory_message</a>.</p>
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a6bb7462e1dc58d9e5b251b09e7145fc3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -240,92 +183,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1network__message.html#aa026d3b632e091123b1481db418e435c">sstmac::hw::network_message</a>, and <a class="el" href="classsstmac_1_1hw_1_1memory__message.html#ac2cae9abd9d1f92970735b8d93bd86d5">sstmac::hw::memory_message</a>.</p>
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a788cf8639f5a017f2c847614dd581f2c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void sstmac::message::serialize_order </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsprockit_1_1serializer.html">serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>ser</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize this message during parallel simulation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ser</td><td>The serializer to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classsprockit_1_1serializable.html#adea4dc5900f30a7fe7a9e810c5b54829">sprockit::serializable</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a1fc3dea63276c78a37e454f0f8b4d073">sstmac::hw::network_message</a>, and <a class="el" href="classsstmac_1_1transport__message.html#ac1456a208bebe4a36ceba860c96f52f8">sstmac::transport_message</a>.</p>
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af278c46c099b3bbb0ba65373b61fc814"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string sstmac::message::to_string </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classsstmac_1_1event.html#aaed20906de348032a10f06182bb6a598">sstmac::event</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classsstmac_1_1transport__message.html#aa575837f7d5cb16a0c069ce6fa0c24df">sstmac::transport_message</a>.</p>
-
-<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00041">41</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
-
-<p>References <a class="el" href="classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca">byte_length()</a>, <a class="el" href="classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3">fromaddr()</a>, <a class="el" href="classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09">message()</a>, <a class="el" href="classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c">serialize_order()</a>, <a class="el" href="classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9">toaddr()</a>, and <a class="el" href="classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20">unique_id()</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph.png" border="0" usemap="#classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph" alt=""/></div>
-<map name="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph" id="classsstmac_1_1message_af278c46c099b3bbb0ba65373b61fc814_cgraph">
-<area shape="rect" id="node2" href="classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca" title="Virtual function to return size. " alt="" coords="217,5,378,47"/>
-<area shape="rect" id="node3" href="classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3" title="sstmac::message::fromaddr" alt="" coords="201,71,393,98"/>
-<area shape="rect" id="node4" href="classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09" title="sstmac::message::message" alt="" coords="201,122,393,149"/>
-<area shape="rect" id="node5" href="classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c" title="Serialize this message during parallel simulation. " alt="" coords="204,173,391,215"/>
-<area shape="rect" id="node6" href="classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9" title="sstmac::message::toaddr" alt="" coords="209,239,385,266"/>
-<area shape="rect" id="node7" href="classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20" title="sstmac::message::unique_id" alt="" coords="200,290,395,317"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -351,58 +208,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a3a41480c4b7a150feefb67e520feaa69">sstmac::hw::network_message</a>, and <a class="el" href="classsstmac_1_1hw_1_1memory__message.html#a1fb1f969fbb4cd06a2627fc4180955d7">sstmac::hw::memory_message</a>.</p>
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a84c22e0b6139b29ace8e6c5ed8e4ab20"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual uint64_t sstmac::message::unique_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1network__message.html#aab07c8f4bc4d8fc465f79a8da99fcf97">sstmac::hw::network_message</a>, and <a class="el" href="classsstmac_1_1hw_1_1memory__message.html#a2f2b0ec369eaa94c1b24d5b6c29a6dea">sstmac::hw::memory_message</a>.</p>
-
-<p>Referenced by <a class="el" href="sst__message_8h_source.html#l00041">to_string()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae7d243dabc34f09f1c3a8440978498c6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1sw_1_1key.html">sw::key</a>* sstmac::message::key_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sst__message_8h_source.html#l00075">75</a> of file <a class="el" href="sst__message_8h_source.html">sst_message.h</a>.</p>
 
 </div>
 </div>

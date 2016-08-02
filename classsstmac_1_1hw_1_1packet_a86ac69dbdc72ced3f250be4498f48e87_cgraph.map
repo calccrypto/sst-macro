@@ -1,4 +1,4 @@
 <map id="sstmac::hw::packet::add_delay_us" name="sstmac::hw::packet::add_delay_us">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet.html#a7c3899754e4b979f4016605a1d58016a" title="sstmac::hw::packet\l::delay_us" alt="" coords="192,5,331,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet.html#af17d20d3de8619b4b9e990bb93776cdf" title="sstmac::hw::packet\l::serialize_order" alt="" coords="379,5,517,47"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet.html#a7c3899754e4b979f4016605a1d58016a" title="sstmac::hw::packet\l::delay_us" alt="" coords="191,5,328,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet.html#af17d20d3de8619b4b9e990bb93776cdf" title="sstmac::hw::packet\l::serialize_order" alt="" coords="376,5,513,47"/>
 </map>

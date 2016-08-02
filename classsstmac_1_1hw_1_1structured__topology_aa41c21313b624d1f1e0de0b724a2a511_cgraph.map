@@ -1,10 +1,10 @@
 <map id="sstmac::hw::structured_topology::num_endpoints" name="sstmac::hw::structured_topology::num_endpoints">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a86c4588a8f8e7913c51b58bbd1ea1a16" title="sstmac::hw::structured\l_topology::endpoint_coords" alt="" coords="247,5,443,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a255faa2507959b37f9dc3ce18c7157c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_port" alt="" coords="262,71,427,127"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#abb2915db7da874713885635da6d80ed4" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_switch" alt="" coords="262,151,427,207"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a93bdc243f49295a54638699ed40892c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_port" alt="" coords="262,231,427,287"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#a20cec02dc7da5e2d924557170f082fb2" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_switch" alt="" coords="262,311,427,367"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#ac34a01d92f8beb4161ece4517fb3b954" title="Compute coordinates (e.g. " alt="" coords="258,392,431,433"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="240,457,449,499"/>
-<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1structured__topology.html#ab8ffa1beac0507c4cddc47cf99d18303" title="Compute coordinates (e.g. " alt="" coords="255,523,435,564"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a86c4588a8f8e7913c51b58bbd1ea1a16" title="sstmac::hw::structured\l_topology::endpoint_coords" alt="" coords="237,5,418,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a255faa2507959b37f9dc3ce18c7157c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_port" alt="" coords="249,70,405,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#abb2915db7da874713885635da6d80ed4" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_switch" alt="" coords="249,150,405,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a93bdc243f49295a54638699ed40892c1" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_port" alt="" coords="249,230,405,286"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#a20cec02dc7da5e2d924557170f082fb2" title="sstmac::hw::structured\l_topology::endpoint_to\l_injection_switch" alt="" coords="249,310,405,366"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#ac34a01d92f8beb4161ece4517fb3b954" title="Compute coordinates (e.g. " alt="" coords="247,389,407,431"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="228,455,427,496"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1structured__topology.html#ab8ffa1beac0507c4cddc47cf99d18303" title="Compute coordinates (e.g. " alt="" coords="242,520,413,561"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sstmac::location_trace::to_string" name="sstmac::location_trace::to_string">
-<area shape="rect" id="node2" href="$classsstmac_1_1location__trace.html#a1f7a208ec83bcf2b443a35273c1ac8e0" title="sstmac::location_trace\l::collect" alt="" coords="215,5,376,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1location__trace.html#a859cabb7e614aeea2aef132bbefe5879" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="215,71,376,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1location__trace.html#a1939f389c44f79d9cd1e07bbaa023f58" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="215,136,376,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1location__trace.html#ae8b3d7380500a18bff53909ffb4d4428" title="sstmac::location_trace\l::global_reduce" alt="" coords="215,201,376,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1location__trace.html#ab33fd4da66fe7cc1412f7d6e45ecf4a4" title="sstmac::location_trace\l::read" alt="" coords="215,267,376,308"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1location__trace.html#a1f7a208ec83bcf2b443a35273c1ac8e0" title="sstmac::location_trace\l::collect" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1location__trace.html#a859cabb7e614aeea2aef132bbefe5879" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="208,71,363,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1location__trace.html#a1939f389c44f79d9cd1e07bbaa023f58" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="208,136,363,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1location__trace.html#ae8b3d7380500a18bff53909ffb4d4428" title="sstmac::location_trace\l::global_reduce" alt="" coords="208,201,363,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1location__trace.html#ab33fd4da66fe7cc1412f7d6e45ecf4a4" title="sstmac::location_trace\l::read" alt="" coords="208,267,363,308"/>
 </map>

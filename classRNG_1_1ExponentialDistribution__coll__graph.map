@@ -1,4 +1,4 @@
 <map id="RNG::ExponentialDistribution" name="RNG::ExponentialDistribution">
-<area shape="rect" id="node3" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="111,292,230,487"/>
-<area shape="rect" id="node4" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="25,5,178,229"/>
+<area shape="rect" id="node3" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="108,292,217,487"/>
+<area shape="rect" id="node4" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="23,5,169,229"/>
 </map>

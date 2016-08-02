@@ -210,11 +210,11 @@
 <li>spkt_find_if
 : <a class="el" href="sprockit_2sprockit_2util_8h.html#a948a12030d3b94a9369ead1fa5fd24e7">util.h</a>
 </li>
+<li>SPKT_HAVE_BOOST
+: <a class="el" href="spkt__config_8h.html#a136cc3f13538d971de33be2cacb58538">spkt_config.h</a>
+</li>
 <li>SPKT_HAVE_CPP11
 : <a class="el" href="spkt__config_8h.html#a8a63876febab09b53661df0b8fe4e0dc">spkt_config.h</a>
-</li>
-<li>SPKT_HAVE_CXX11
-: <a class="el" href="spkt__config_8h.html#a5f29f65efccf3ed7e184ed891022d415">spkt_config.h</a>
 </li>
 <li>SPKT_HAVE_DLFCN_H
 : <a class="el" href="spkt__config_8h.html#a4a09f87eaa4346af5f07520f17acb307">spkt_config.h</a>
@@ -333,11 +333,11 @@
 <li>SSTMAC_ALLOW_LARGE_PAYLOADS
 : <a class="el" href="sstmac__config_8h.html#a40f45a7bc9fde4cd435419abd21fe429">sstmac_config.h</a>
 </li>
-<li>sstmac_compute()
-: <a class="el" href="compute__api_8h.html#aac9ab9b9ec301494a87818ee54b8b30b">compute_api.h</a>
-</li>
 <li>SSTMAC_compute()
 : <a class="el" href="sstmac__compute_8h.html#ad98631ce0bdf746efcbf12f38b1cd167">sstmac_compute.h</a>
+</li>
+<li>sstmac_compute()
+: <a class="el" href="compute__api_8h.html#aac9ab9b9ec301494a87818ee54b8b30b">compute_api.h</a>
 </li>
 <li>SSTMAC_compute_block_read()
 : <a class="el" href="sstmac__compute_8h.html#a5dce76505da177081bf0e03d5061101a">sstmac_compute.h</a>
@@ -465,6 +465,9 @@
 <li>SSTMAC_HARDWARE_NETWORK_TOPOLOGY_HDTORUS_H_INCLUDED
 : <a class="el" href="simple__topology_8h.html#add88cebf1e294fba08c55cf95acc6b66">simple_topology.h</a>
 </li>
+<li>SSTMAC_HAVE_BOOST
+: <a class="el" href="sstmac__config_8h.html#afcbc2a6b1e9922e8044b095c6696dc5f">sstmac_config.h</a>
+</li>
 <li>SSTMAC_HAVE_CXX11
 : <a class="el" href="sstmac__config_8h.html#afd7316c19554bf4b31e5d07c24202f73">sstmac_config.h</a>
 </li>
@@ -476,9 +479,6 @@
 </li>
 <li>SSTMAC_HAVE_EXECINFO_H
 : <a class="el" href="sstmac__config_8h.html#adb39f241b0c6459ad5fc32ad122e5bb5">sstmac_config.h</a>
-</li>
-<li>SSTMAC_HAVE_GNU_PTH
-: <a class="el" href="sstmac__config_8h.html#a2eff31533f05cb9220bb2192d4137c36">sstmac_config.h</a>
 </li>
 <li>SSTMAC_HAVE_GRAPHVIZ
 : <a class="el" href="sstmac__config_8h.html#a64fa4793c8dbfc7e1457ff63280dc789">sstmac_config.h</a>
@@ -838,7 +838,7 @@
 : <a class="el" href="lib__hybrid__compute_8h.html#afc88fca8e332dc92e25c73d3a439b84a">lib_hybrid_compute.h</a>
 </li>
 <li>SSTMAC_SOFTWARE_SERVICES_LAUNCH_INDEXING_FROMFILEINDEXER_H_INCLUDED
-: <a class="el" href="coordinate__indexing_8h.html#a579b86ae912319f8f20eb7dfeadec7a2">coordinate_indexing.h</a>
+: <a class="el" href="coordinate__task__mapper_8h.html#a579b86ae912319f8f20eb7dfeadec7a2">coordinate_task_mapper.h</a>
 </li>
 <li>SSTMAC_STDC_HEADERS
 : <a class="el" href="sstmac__config_8h.html#a2cd4b299f0584429c17307ab2c03be57">sstmac_config.h</a>
@@ -867,6 +867,12 @@
 <li>SSTMAC_USE_CPU_AFFINITY
 : <a class="el" href="sstmac__config_8h.html#abcd2bc7c797826250d6e8a0f6b8b41ec">sstmac_config.h</a>
 </li>
+<li>SSTMAC_USE_MULTITHREAD
+: <a class="el" href="sstmac__config_8h.html#ad86005330bc0802dc9cda402a859015e">sstmac_config.h</a>
+</li>
+<li>SSTMAC_USE_SPINLOCK
+: <a class="el" href="sstmac__config_8h.html#add7918dd3dd0fc73b008d8e65d056aa3">sstmac_config.h</a>
+</li>
 <li>sstmac_usleep()
 : <a class="el" href="compute__api_8h.html#ada102425a93182e301f60f40e7bb86c5">compute_api.h</a>
 </li>
@@ -883,10 +889,10 @@
 : <a class="el" href="sstmac_2common_2serializable_8h.html#ad0dbc1e521ca14b2b96ffe5fcd41d6a9">serializable.h</a>
 </li>
 <li>static_fxn()
-: <a class="el" href="fxn_8h.html#afd6d5e927fc87f20729ffd15b62ab670">fxn.h</a>
+: <a class="el" href="fxn_8h.html#abb66f2a3594312ae0d388c54ce9f1282">fxn.h</a>
 </li>
 <li>STATIC_INIT_APP_MANAGER
-: <a class="el" href="app__manager_8h.html#a086748b8b1e72bd102cd7d910808ad13">app_manager.h</a>
+: <a class="el" href="app__launch_8h.html#a086748b8b1e72bd102cd7d910808ad13">app_launch.h</a>
 </li>
 <li>STATIC_INIT_INTERCONNECT
 : <a class="el" href="interconnect_8h.html#a7dc7acc575682246e9c7120e552f6681">interconnect.h</a>
@@ -895,11 +901,11 @@
 : <a class="el" href="interconnect_8h.html#abdca8067479549efeeecf51a173c5302">interconnect.h</a>
 </li>
 <li>STDC_HEADERS
-: <a class="el" href="sprockitconfig-generated_8h.html#a550e5c272cc3cf3814651721167dcd23">sprockitconfig-generated.h</a>
-, <a class="el" href="config_8h.html#a550e5c272cc3cf3814651721167dcd23">config.h</a>
+: <a class="el" href="config_8h.html#a550e5c272cc3cf3814651721167dcd23">config.h</a>
+, <a class="el" href="sprockitconfig-generated_8h.html#a550e5c272cc3cf3814651721167dcd23">sprockitconfig-generated.h</a>
 </li>
 <li>stl_string()
-: <a class="el" href="stl__string_8h.html#a0b62145cd23f6e0b5ac5a2b5183ef62f">stl_string.h</a>
+: <a class="el" href="stl__string_8h.html#aa361d0b80bd01daf4246365a0728caab">stl_string.h</a>
 </li>
 <li>String
 : <a class="el" href="uq_8h.html#a9ac485f852fe43fec7e84169ba04ea7dade17ec82ff106e0c2b4417f5ca231eae">uq.h</a>

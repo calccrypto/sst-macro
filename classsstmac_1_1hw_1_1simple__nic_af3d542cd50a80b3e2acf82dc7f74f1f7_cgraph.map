@@ -1,6 +1,6 @@
 <map id="sstmac::hw::simple_nic::~simple_nic" name="sstmac::hw::simple_nic::~simple_nic">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__nic.html#ad18a0f139061e0aaac90ea916340e97c" title="sstmac::hw::simple\l_nic::connect" alt="" coords="211,5,347,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__nic.html#aeccc265799fa762d956619d34b050b66" title="A final initialization function called for the object after all parameters have been read..." alt="" coords="211,71,347,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__nic.html#a226354422594c24e4a40b45b5c4121b3" title="sstmac::hw::simple\l_nic::handle" alt="" coords="211,136,347,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__nic.html#ae6b9f5929a3a9a4c2132647df27685b1" title="Initialize all member variables from the parameters object. " alt="" coords="189,201,368,243"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__nic.html#ad18a0f139061e0aaac90ea916340e97c" title="connect " alt="" coords="205,5,341,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__nic.html#aeccc265799fa762d956619d34b050b66" title="A final initialization function called for the object after all parameters have been read..." alt="" coords="205,71,341,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__nic.html#a226354422594c24e4a40b45b5c4121b3" title="sstmac::hw::simple\l_nic::handle" alt="" coords="205,136,341,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__nic.html#ae6b9f5929a3a9a4c2132647df27685b1" title="Initialize all member variables from the parameters object. " alt="" coords="189,201,357,243"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="sstmac::sw::cart_allocation::~cart_allocation" name="sstmac::sw::cart_allocation::~cart_allocation">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1cart__allocation.html#a168e86f274bca3a6ad888444426f513a" title="Get nodes. " alt="" coords="240,5,427,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cart__allocation.html#ade2e3717ac25240833a6f08c81e169c6" title="sstmac::sw::cart_allocation\l::allocate_dim" alt="" coords="240,71,427,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1cart__allocation.html#a4874e6c668f28ab6bdcd0c12d10c7d77" title="sstmac::sw::cart_allocation\l::insert" alt="" coords="240,136,427,177"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1cart__allocation.html#a542fb13b5579925bce1a05110fbe6a01" title="allocate " alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cart__allocation.html#a50ffb26e94a757675f6d176384dde815" title="allocate_dim Recursive method for looping dimensions in the block and adding them to the allocation ..." alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1cart__allocation.html#a12c4257965358e8d317ac47294914a32" title="insert " alt="" coords="236,136,419,177"/>
 </map>

@@ -1,2 +1,7 @@
 <map id="sstmac/replacements/mpi.h" name="sstmac/replacements/mpi.h">
+<area shape="rect" id="node3" href="$sstmac_2util_8h.html" title="sstmac/util.h" alt="" coords="193,95,291,121"/>
+<area shape="rect" id="node4" href="$compute_8h.html" title="sstmac/compute.h" alt="" coords="315,95,446,121"/>
+<area shape="rect" id="node7" href="$skeleton_8h.html" title="sstmac/skeleton.h" alt="" coords="469,95,599,121"/>
+<area shape="rect" id="node5" href="$sstmac__compute_8h.html" title="sstmac/software/libraries\l/compute/sstmac_compute.h" alt="" coords="183,169,373,211"/>
+<area shape="rect" id="node6" href="$compute__api_8h.html" title="sstmac/software/libraries\l/compute/compute_api.h" alt="" coords="398,169,566,211"/>
 </map>

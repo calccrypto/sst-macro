@@ -1,9 +1,9 @@
 <map id="sstmac/hardware/noise/noise.h" name="sstmac/hardware/noise/noise.h">
-<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="381,95,510,136"/>
-<area shape="rect" id="node17" href="$rng_8h.html" title="sstmac/common/rng.h" alt="" coords="897,102,1055,129"/>
-<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="226,191,350,218"/>
-<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="345,348,503,375"/>
-<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="433,191,559,218"/>
-<area shape="rect" id="node15" href="$sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="584,184,760,225"/>
-<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="203,273,357,300"/>
+<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="369,95,491,136"/>
+<area shape="rect" id="node17" href="$rng_8h.html" title="sstmac/common/rng.h" alt="" coords="866,102,1018,129"/>
+<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="220,191,336,218"/>
+<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="332,348,483,375"/>
+<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="418,191,541,218"/>
+<area shape="rect" id="node15" href="$sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="565,184,730,225"/>
+<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="197,273,343,300"/>
 </map>

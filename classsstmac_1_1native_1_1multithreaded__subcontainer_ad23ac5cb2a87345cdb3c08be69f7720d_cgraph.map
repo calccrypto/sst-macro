@@ -1,8 +1,8 @@
 <map id="sstmac::native::multithreaded_subcontainer::~multithreaded_subcontainer" name="sstmac::native::multithreaded_subcontainer::~multithreaded_subcontainer">
-<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#a3ad8ba314a730e16cea2c8acb1265373" title="sstmac::native::multithreaded\l_subcontainer::multithread\l_schedule" alt="" coords="300,5,501,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#aaef2fd9b3760aa7579259c9179db90fe" title="sstmac::native::multithreaded\l_subcontainer::multithreaded\l_subcontainer" alt="" coords="300,85,501,141"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#ae766c9358490e0201204294bc9016190" title="sstmac::native::multithreaded\l_subcontainer::receive_incoming_events" alt="" coords="263,166,539,207"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#a702eec690bc78c2147cd0869b712df0e" title="Run the eventmanager. " alt="" coords="300,231,501,273"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1event__manager.html#a913a269988a997fe61fcbae6d268b8b8" title="sstmac::event_manager\l::thread_id" alt="" coords="315,297,486,338"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#af497b005819f95af7fe57dbaf5861f01" title="sstmac::native::multithreaded\l_subcontainer::vote_next_round" alt="" coords="289,362,512,403"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#a3ad8ba314a730e16cea2c8acb1265373" title="sstmac::native::multithreaded\l_subcontainer::multithread\l_schedule" alt="" coords="283,5,477,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#aaef2fd9b3760aa7579259c9179db90fe" title="sstmac::native::multithreaded\l_subcontainer::multithreaded\l_subcontainer" alt="" coords="283,85,477,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#ae766c9358490e0201204294bc9016190" title="sstmac::native::multithreaded\l_subcontainer::receive_incoming_events" alt="" coords="251,165,509,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#a702eec690bc78c2147cd0869b712df0e" title="Run the eventmanager. " alt="" coords="283,230,477,271"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1event__manager.html#a913a269988a997fe61fcbae6d268b8b8" title="sstmac::event_manager\l::thread_id" alt="" coords="299,295,461,337"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1native_1_1multithreaded__subcontainer.html#af497b005819f95af7fe57dbaf5861f01" title="sstmac::native::multithreaded\l_subcontainer::vote_next_round" alt="" coords="277,361,483,402"/>
 </map>

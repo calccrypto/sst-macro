@@ -93,13 +93,15 @@
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>id()
-: <a class="el" href="classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494">sstmac::stat_collector</a>
+: <a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html#acbd3cc3fcb10bfe76988901cde3ea7b6">sstmac::hw::packet_sent_stats</a>
+, <a class="el" href="classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494">sstmac::stat_collector</a>
 , <a class="el" href="classsstmac_1_1sw_1_1API.html#a949c1a209abadeda8c79394360f6c4c0">sstmac::sw::API&lt; T &gt;</a>
 , <a class="el" href="classsstmac_1_1sw_1_1key_1_1category.html#af9bb9f896269b94e8540d2cdf57bc1c9">sstmac::sw::key::category</a>
 </li>
 <li>id_
 : <a class="el" href="classsstmac_1_1hw_1_1memory__message.html#a71568f0a1314cdbd0c06f531681f04a0">sstmac::hw::memory_message</a>
 , <a class="el" href="classsstmac_1_1hw_1_1netlink.html#af664c3f961e71bab34ac403575de37f3">sstmac::hw::netlink</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html#adb2b0e4b0697ec4515c52264fdda7312">sstmac::hw::packet_sent_stats</a>
 , <a class="el" href="classsstmac_1_1stat__collector.html#a1ceba139dcf8ea7d0d1ef8887bb6a2f9">sstmac::stat_collector</a>
 , <a class="el" href="classsstmac_1_1sw_1_1app.html#ae3796e71736726612880a9632758c656">sstmac::sw::app</a>
 , <a class="el" href="classsstmac_1_1sw_1_1blas__api.html#a7c0d6958f2cf0f9178acbd6d5f95f7a9">sstmac::sw::blas_api</a>
@@ -150,6 +152,9 @@
 <li>in_locks_
 : <a class="el" href="classsstmac_1_1native_1_1thread__barrier.html#ab59596f8681da0ab07825f6bc794b0a5">sstmac::native::thread_barrier</a>
 </li>
+<li>incoming_bw
+: <a class="el" href="structsstmac_1_1hw_1_1packet__stats__st.html#aab856e584c738eed2d115803834c7f3f">sstmac::hw::packet_stats_st</a>
+</li>
 <li>incoming_event()
 : <a class="el" href="classsstmac_1_1sumi__server.html#a2d5395f73bf6ddee383b786be516b94a">sstmac::sumi_server</a>
 , <a class="el" href="classsstmac_1_1sw_1_1blas__api.html#a90499f35234fe3848bb5a7d1c6eed752">sstmac::sw::blas_api</a>
@@ -172,23 +177,14 @@
 : <a class="el" href="classsprockit_1_1ptr__type.html#a86d5b47e1ee36aeee9892e5829c18a27">sprockit::ptr_type</a>
 , <a class="el" href="classsprockit_1_1refcount__ptr.html#a5288c913a42cc4c4027c5524e9883751">sprockit::refcount_ptr&lt; T &gt;</a>
 </li>
-<li>index_strategy()
-: <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a18707b9b01ca4edf484192a2e9f7b7a9">sstmac::sw::index_strategy</a>
+<li>index_allocation()
+: <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#ac03098b4fafffa9226ac67f1aeabc25c">sstmac::sw::app_launch</a>
 </li>
 <li>indexer_
-: <a class="el" href="classsstmac_1_1native_1_1indexing__app__manager.html#a3e1133f65f68ec0663e78d418ee28845">sstmac::native::indexing_app_manager</a>
-</li>
-<li>inet_addrs_
-: <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#aca6f51bbb7b366406b55d4bc43f469c7">sstmac::sw::app_manager</a>
+: <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#aeb2bca11006071d55b1fcb01060d7ac2">sstmac::sw::app_launch</a>
 </li>
 <li>infile_
 : <a class="el" href="classsstmac_1_1sw_1_1dumpi__meta.html#a7ddf4fcdf1a74be7e246ed00b584024e">sstmac::sw::dumpi_meta</a>
-</li>
-<li>info()
-: <a class="el" href="classsstmac_1_1sw_1_1launch__event.html#a2b186e48fa8046998e70e10aa459002d">sstmac::sw::launch_event</a>
-</li>
-<li>info_
-: <a class="el" href="classsstmac_1_1sw_1_1launch__event.html#ad24827f2ba3774a4727d98ca41d77626">sstmac::sw::launch_event</a>
 </li>
 <li>info_png
 : <a class="el" href="structLodePNGState.html#a08d9ac43c995fcf34d72b1d37047b6fa">LodePNGState</a>
@@ -242,9 +238,6 @@
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a8e9d912729ada16a65b6f00542222713">sstmac::hw::packet_flow_NtoM_queue</a>
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__sender.html#ab2c7e7e3254cb7880f823579acd36c75">sstmac::hw::packet_flow_sender</a>
 </li>
-<li>init_default_algo()
-: <a class="el" href="classsstmac_1_1hw_1_1routing__info.html#a5ae9c1af004cfac5e56e125ab9421fae">sstmac::hw::routing_info</a>
-</li>
 <li>init_err0()
 : <a class="el" href="classsprockit_1_1output.html#ae37a05a0e18962df63d5b6b9bf78d90a">sprockit::output</a>
 </li>
@@ -259,8 +252,11 @@
 , <a class="el" href="classsstmac_1_1hw_1_1abstract__butterfly.html#adfaf1d54c9adb7013bd9edc522a45075">sstmac::hw::abstract_butterfly</a>
 , <a class="el" href="classsstmac_1_1hw_1_1abstract__fat__tree.html#aefacb42d4531403c7608bdac3656ae58">sstmac::hw::abstract_fat_tree</a>
 , <a class="el" href="classsstmac_1_1hw_1_1butterfly.html#a438167ed6680243313bf0f5d09e743de">sstmac::hw::butterfly</a>
+, <a class="el" href="classsstmac_1_1hw_1_1byte__hop__collector.html#ab9880f411b0a12f57bc32fee207a2b0b">sstmac::hw::byte_hop_collector</a>
+, <a class="el" href="classsstmac_1_1hw_1_1bytes__sent__collector.html#a0ff965c54e7813fece5c99eea3dcbf7d">sstmac::hw::bytes_sent_collector</a>
 , <a class="el" href="classsstmac_1_1hw_1_1cartesian__topology.html#ad8dcc6227c1689621d3a51d0a734aa51">sstmac::hw::cartesian_topology</a>
 , <a class="el" href="classsstmac_1_1hw_1_1crossbar.html#add7aac9e43ba8bc5b71e3604d3c28300">sstmac::hw::crossbar</a>
+, <a class="el" href="classsstmac_1_1hw_1_1delay__histogram.html#a815fd81d2e6058d77c882067c74f9ce0">sstmac::hw::delay_histogram</a>
 , <a class="el" href="classsstmac_1_1hw_1_1dragonfly.html#ae81f3e64145c1eb271ca1a9386528e03">sstmac::hw::dragonfly</a>
 , <a class="el" href="classsstmac_1_1hw_1_1fat__tree.html#a54cc807c17ca0662266e4e39dfda5495">sstmac::hw::fat_tree</a>
 , <a class="el" href="classsstmac_1_1hw_1_1fat__tree__router.html#aed0b2df6c9a90f9cab3572206a6853ad">sstmac::hw::fat_tree_router</a>
@@ -286,6 +282,7 @@
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__nic__packetizer.html#a3d7193674788bfcdd3f695b848aa8580">sstmac::hw::packet_flow_nic_packetizer</a>
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#aba03eb6eefd55f450b1ceccf42dde036">sstmac::hw::packet_flow_switch</a>
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a6d5a74a7e28c1edbae58de754f78f8b8">sstmac::hw::packet_flow_tiled_switch</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html#a392217563d079dd5c1c33a489656617b">sstmac::hw::packet_sent_stats</a>
 , <a class="el" href="classsstmac_1_1hw_1_1packetizer.html#ac00279bb3bfa5fd8badf900f05c16e52">sstmac::hw::packetizer</a>
 , <a class="el" href="classsstmac_1_1hw_1_1processor.html#a0e5673e2ffa2a0c34d232e99f99db2ec">sstmac::hw::processor</a>
 , <a class="el" href="classsstmac_1_1hw_1_1simple__fat__tree.html#a7375978202847f179c517c3d1eba98ca">sstmac::hw::simple_fat_tree</a>
@@ -295,6 +292,8 @@
 , <a class="el" href="classsstmac_1_1hw_1_1simple__node.html#af6f799ca3a9eb69912e6fd8a35e118db">sstmac::hw::simple_node</a>
 , <a class="el" href="classsstmac_1_1hw_1_1simple__switch.html#a9920feda3c76cb58c075e2f091375792">sstmac::hw::simple_switch</a>
 , <a class="el" href="classsstmac_1_1hw_1_1simple__topology.html#a9c5575e393a6ee953f696f22281950ea">sstmac::hw::simple_topology</a>
+, <a class="el" href="classsstmac_1_1hw_1_1spyplot__and__delay__stats.html#aa9cd274b3ebd3f4b637dd3e78caccd5d">sstmac::hw::spyplot_and_delay_stats</a>
+, <a class="el" href="classsstmac_1_1hw_1_1stat__bytes__sent.html#afce4777dc44301d6df66824e3398ee31">sstmac::hw::stat_bytes_sent</a>
 , <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#a0f43d2fd6842be613ea679f64bfbe3e1">sstmac::hw::structured_topology</a>
 , <a class="el" href="classsstmac_1_1hw_1_1tiled__dragonfly.html#a859d6c0eefda85512436f44ddd89b65a">sstmac::hw::tiled_dragonfly</a>
 , <a class="el" href="classsstmac_1_1hw_1_1tiled__torus.html#af51a7f57e54296c73a6dd83bbf5df7db">sstmac::hw::tiled_torus</a>
@@ -303,44 +302,42 @@
 , <a class="el" href="classsstmac_1_1metis__partition.html#a237421156f545e2ef95d8730f62b574e">sstmac::metis_partition</a>
 , <a class="el" href="classsstmac_1_1mpi_1_1mpi__runtime.html#a4e15a50858ff122fd4286c4b50e5b0cd">sstmac::mpi::mpi_runtime</a>
 , <a class="el" href="classsstmac_1_1native_1_1clock__cycle__event__map.html#a6ad46dda1e15cfb4fc27e41c50383490">sstmac::native::clock_cycle_event_map</a>
-, <a class="el" href="classsstmac_1_1native_1_1dumpi__app__manager.html#a6de4215ee058c7fbac30c5b49f804779">sstmac::native::dumpi_app_manager</a>
 , <a class="el" href="classsstmac_1_1native_1_1event__calendar.html#ad52d7216c3437db3ad89d2222b655cd4">sstmac::native::event_calendar</a>
 , <a class="el" href="classsstmac_1_1native_1_1event__container.html#a88ed707d97f825c3f6591425ce0ddc77">sstmac::native::event_container</a>
-, <a class="el" href="classsstmac_1_1native_1_1indexing__app__manager.html#a50d654027c4904a0ea4a918e662160dd">sstmac::native::indexing_app_manager</a>
 , <a class="el" href="classsstmac_1_1native_1_1macro__manager.html#ac33d715e03327e3a750d3cb8bc9886c0">sstmac::native::macro_manager</a>
 , <a class="el" href="classsstmac_1_1native_1_1manager.html#aa586e5594d5ca1680b3cc4ff1498b624">sstmac::native::manager</a>
 , <a class="el" href="classsstmac_1_1native_1_1multithreaded__event__container.html#ae0d379ab67080f53d587aad09943cba0">sstmac::native::multithreaded_event_container</a>
-, <a class="el" href="classsstmac_1_1native_1_1skeleton__app__manager.html#a202eab4e6a9e28a0eeef9d122de18d2f">sstmac::native::skeleton_app_manager</a>
 , <a class="el" href="classsstmac_1_1occupied__block__partition.html#abc047a7c086aeb8c3c8a64b9a256acfc">sstmac::occupied_block_partition</a>
 , <a class="el" href="classsstmac_1_1parallel__runtime.html#af05d3c2e9ad4886ac5aba04e82ba1cc9">sstmac::parallel_runtime</a>
 , <a class="el" href="classsstmac_1_1serial__partition.html#ac840c9270fa50e0f736fbc92b1c4fadc">sstmac::serial_partition</a>
 , <a class="el" href="classsstmac_1_1SSTIntegratedComponent.html#a24d86eb0a89663fe406f01d643fe08f3">sstmac::SSTIntegratedComponent</a>
-, <a class="el" href="classsstmac_1_1stat__collector.html#a21cf9d57d1780c17fd52f8d2398ec984">sstmac::stat_collector</a>
+, <a class="el" href="classsstmac_1_1stat__collector.html#aa033ca30357a6c139540415597feb1a3">sstmac::stat_collector</a>
 , <a class="el" href="classsstmac_1_1stat__global__int.html#a4b275f3f95538e3b0ab35c170296673d">sstmac::stat_global_int</a>
 , <a class="el" href="classsstmac_1_1stat__histogram.html#aefe2897abe26b6634679bf947ebbc5b4">sstmac::stat_histogram</a>
 , <a class="el" href="classsstmac_1_1stat__local__double.html#ab44f29e8ddab67f28d2c4710f59e39b4">sstmac::stat_local_double</a>
 , <a class="el" href="classsstmac_1_1stat__local__int.html#ac3463fbae6d41c7ec1c641e936cd599a">sstmac::stat_local_int</a>
 , <a class="el" href="classsstmac_1_1stat__spyplot__png.html#a46d0b8fb6fa708995042a6937abb6fe1">sstmac::stat_spyplot_png</a>
 , <a class="el" href="classsstmac_1_1sumi__api.html#a046d43ddc3eb27b640dac934cd8f1422">sstmac::sumi_api</a>
-, <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a1b0f7412b322fbb73d23baccd44794b4">sstmac::sw::allocation_strategy</a>
 , <a class="el" href="classsstmac_1_1sw_1_1api.html#aa31e6e041bf7bd2205c8617f8f0f4e6c">sstmac::sw::api</a>
 , <a class="el" href="classsstmac_1_1sw_1_1app.html#adbae3579e65491fce57ce5d25f4da319">sstmac::sw::app</a>
-, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#ad737594fcdb7ff5df3e51ef0c97ad6bb">sstmac::sw::app_manager</a>
+, <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#a1826c8fdb3abe89dcf0ade716b55d7dd">sstmac::sw::app_launch</a>
 , <a class="el" href="classsstmac_1_1sw_1_1blas__api.html#a3a79b7acc578e24a1d52e5331a71a5d1">sstmac::sw::blas_api</a>
 , <a class="el" href="classsstmac_1_1sw_1_1cart__allocation.html#a5f8eb3713587f8db96f5cd609cdc633e">sstmac::sw::cart_allocation</a>
 , <a class="el" href="classsstmac_1_1sw_1_1coordinate__allocation.html#a2b09fce2310f13650384da005880b5b2">sstmac::sw::coordinate_allocation</a>
-, <a class="el" href="classsstmac_1_1sw_1_1coordinate__indexing.html#a5eebb34d074cbcc725dffe33f3d71070">sstmac::sw::coordinate_indexing</a>
+, <a class="el" href="classsstmac_1_1sw_1_1coordinate__task__mapper.html#ac58784e28c19b0b6ebfcc7122272e53e">sstmac::sw::coordinate_task_mapper</a>
 , <a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#abdf86b1be96a04559b2cfff193db071a">sstmac::sw::dumpi_allocation</a>
-, <a class="el" href="classsstmac_1_1sw_1_1dumpi__indexer.html#a770a90f4bf0a841e413c175067c27aac">sstmac::sw::dumpi_indexer</a>
+, <a class="el" href="classsstmac_1_1sw_1_1dumpi__task__mapper.html#ac2836a5e92ed7e29f1980a360d834e54">sstmac::sw::dumpi_task_mapper</a>
 , <a class="el" href="classsstmac_1_1sw_1_1ftq__calendar.html#a769fa4ee7518435aed4f7a290cd1d95d">sstmac::sw::ftq_calendar</a>
 , <a class="el" href="classsstmac_1_1sw_1_1hostname__allocation.html#a115a6f0f1f329043f8c635669732c847">sstmac::sw::hostname_allocation</a>
-, <a class="el" href="classsstmac_1_1sw_1_1hostname__indexer.html#a700d149587b72fdfa5f514c8db26504c">sstmac::sw::hostname_indexer</a>
-, <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a4bf316feffcf221e812ebcffb840d537">sstmac::sw::index_strategy</a>
+, <a class="el" href="classsstmac_1_1sw_1_1hostname__task__mapper.html#aa283716a00c7547fca1be0fedd76f21e">sstmac::sw::hostname_task_mapper</a>
+, <a class="el" href="classsstmac_1_1sw_1_1job__launcher.html#af4821c606e523e99fef1c1d0c6fba10c">sstmac::sw::job_launcher</a>
+, <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a77a3c1daaaba010e0b9f65ce826fd916">sstmac::sw::node_allocator</a>
 , <a class="el" href="classsstmac_1_1sw_1_1node__id__allocation.html#aa3e8782b67116f476ccd6b9a54626f7a">sstmac::sw::node_id_allocation</a>
-, <a class="el" href="classsstmac_1_1sw_1_1node__id__indexing.html#acf70fc7c683d42fd7f4ef53b209cc030">sstmac::sw::node_id_indexing</a>
+, <a class="el" href="classsstmac_1_1sw_1_1node__id__task__mapper.html#a177a0ae6d84d62956bf245fb6e2fdd62">sstmac::sw::node_id_task_mapper</a>
 , <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abb45d45b2e8e0bb7bcd7f53d9a01ca74">sstmac::sw::operating_system</a>
 , <a class="el" href="classsstmac_1_1sw_1_1random__allocation.html#a4596cd9bc1be42c1563b7ed549f831e8">sstmac::sw::random_allocation</a>
-, <a class="el" href="classsstmac_1_1sw_1_1random__indexing.html#abb5eaa0e86f2616c960d77b210046c76">sstmac::sw::random_indexing</a>
+, <a class="el" href="classsstmac_1_1sw_1_1random__task__mapper.html#a2599badbfc4c83bd678c4d34eb9577f7">sstmac::sw::random_task_mapper</a>
+, <a class="el" href="classsstmac_1_1sw_1_1task__mapper.html#a80f3db2f751bfc9c088dd8be30f60b14">sstmac::sw::task_mapper</a>
 , <a class="el" href="classsstmac_1_1topology__partition.html#aec127aa90d31016d49b38f893ca96ce7">sstmac::topology_partition</a>
 , <a class="el" href="classsstmac_1_1tutorial_1_1actor.html#a550f86828453c8cb997bcde8023ee998">sstmac::tutorial::actor</a>
 , <a class="el" href="classsstmac_1_1tutorial_1_1christopher__guest.html#af73958d6712021c62e97f08d168e6247">sstmac::tutorial::christopher_guest</a>
@@ -354,7 +351,7 @@
 : <a class="el" href="classsstmac_1_1sw_1_1blas__api.html#a7296fda5100144049ade562fe5394282">sstmac::sw::blas_api</a>
 </li>
 <li>init_launch_info()
-: <a class="el" href="classsstmac_1_1native_1_1indexing__app__manager.html#a2124a7d85b3b3341b50c201034f84071">sstmac::native::indexing_app_manager</a>
+: <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#a7c5a7b24677499f6988281949c48310a">sstmac::sw::app_launch</a>
 </li>
 <li>init_level()
 : <a class="el" href="classsstmac_1_1native_1_1thread__barrier.html#a858a0e036f2f6e8570db87b614734a81">sstmac::native::thread_barrier</a>
@@ -398,16 +395,16 @@
 , <a class="el" href="classsstmac_1_1hw_1_1processor.html#a77da7398539c8f56060493fbf58970c5">sstmac::hw::processor</a>
 , <a class="el" href="classsstmac_1_1partition.html#a0bd8f6ceab84f795da24c0c5eab3c4c1">sstmac::partition</a>
 , <a class="el" href="classsstmac_1_1sumi__api.html#a596081b1ae7409d649142847cfee82ea">sstmac::sumi_api</a>
-, <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#ac159894fe8c9794bef6688c4d6ad0596">sstmac::sw::allocation_strategy</a>
 , <a class="el" href="classsstmac_1_1sw_1_1api.html#a8d3de5e108a45670e34a6a5f0879c7c4">sstmac::sw::api</a>
-, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a4a05f3cb25e0c734a94a262078571459">sstmac::sw::app_manager</a>
+, <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#a857ab5002b71c369fa14e04f1cac162d">sstmac::sw::app_launch</a>
 , <a class="el" href="classsstmac_1_1sw_1_1blas__api.html#af9e7e804c761577acc223aadc10c553a">sstmac::sw::blas_api</a>
-, <a class="el" href="classsstmac_1_1sw_1_1index__strategy.html#a6f979aee28c2b40c7132c4fd09e4f67a">sstmac::sw::index_strategy</a>
+, <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a7e83b19b638cc06aeb455074bedbfe91">sstmac::sw::node_allocator</a>
 , <a class="el" href="classsstmac_1_1sw_1_1process__manager.html#ae4abbfcf3e8e94534af2b4de07c6fdeb">sstmac::sw::process_manager</a>
+, <a class="el" href="classsstmac_1_1sw_1_1task__mapper.html#a9ac5c9dfb2a0dc765f5cbced1e7b7ad9">sstmac::sw::task_mapper</a>
 </li>
 <li>init_param2()
 : <a class="el" href="classsstmac_1_1hw_1_1processor.html#a295879df9b065644f1897e5ac9e08350">sstmac::hw::processor</a>
-, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a99860d933aff94c82b18fdbf18cf4497">sstmac::sw::app_manager</a>
+, <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#ae1ac3cc3b2204f71432a15a5d43fa5e1">sstmac::sw::app_launch</a>
 </li>
 <li>init_partition_params()
 : <a class="el" href="classsstmac_1_1parallel__runtime.html#a6d1e0116f3aa27b12da8117514e17223">sstmac::parallel_runtime</a>
@@ -446,8 +443,8 @@
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a95c32c391c188f75f2f428f47986288d">sstmac::hw::packet_flow_tiled_switch</a>
 </li>
 <li>initial_step()
-: <a class="el" href="classsstmac_1_1hw_1_1ugal__router.html#a4746c9bc62183c65fb689af3c8ea71f3">sstmac::hw::ugal_router</a>
-, <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#a101ec58dcda5937430f0564bf989af8f">sstmac::hw::valiant_router</a>
+: <a class="el" href="classsstmac_1_1hw_1_1ugal__router.html#a03caff29f7afdc58e814735b1e14d988">sstmac::hw::ugal_router</a>
+, <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#a17e16a9e7e5d8b9e91799fc4908f5435">sstmac::hw::valiant_router</a>
 </li>
 <li>initialize()
 : <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a0968eec06e95366bd7eb481bc1b55b4b">sstmac::hw::packet_flow_abstract_switch</a>
@@ -536,13 +533,13 @@
 : <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a6ec1b73dfba6233eb99854c50c21807e">sstmac::hw::packet_flow_NtoM_queue</a>
 </li>
 <li>input_name()
-: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a433e0113fef433f6846891ffdd99e57d">sstmac::hw::packet_flow_NtoM_queue</a>
+: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a2c7821e6784bb63870aface455b20585">sstmac::hw::packet_flow_NtoM_queue</a>
 </li>
 <li>inputs_
 : <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a599e13f132bc51420cac845142de0576">sstmac::hw::packet_flow_NtoM_queue</a>
 </li>
 <li>insert()
-: <a class="el" href="classsstmac_1_1sw_1_1cart__allocation.html#a4874e6c668f28ab6bdcd0c12d10c7d77">sstmac::sw::cart_allocation</a>
+: <a class="el" href="classsstmac_1_1sw_1_1cart__allocation.html#a12c4257965358e8d317ac47294914a32">sstmac::sw::cart_allocation</a>
 </li>
 <li>instruction_processor()
 : <a class="el" href="classsstmac_1_1hw_1_1instruction__processor.html#a8924655be0b951c1260aa831d4f7561b">sstmac::hw::instruction_processor</a>
@@ -555,16 +552,14 @@
 </li>
 <li>interconn()
 : <a class="el" href="classsstmac_1_1native_1_1manager.html#acd20cf1cfbeda8639e4af64720167c91">sstmac::native::manager</a>
-, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a592c87eae842d4082ba75dafc149f560">sstmac::sw::app_manager</a>
 </li>
 <li>interconn_
 : <a class="el" href="classsstmac_1_1hw_1_1nic.html#a7711029ba82df0189ffc9bea20d2cea6">sstmac::hw::nic</a>
 , <a class="el" href="classsstmac_1_1native_1_1clock__cycle__event__map.html#a6880163ab0f665a1e61b2478a98f251d">sstmac::native::clock_cycle_event_map</a>
-, <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a70b409d2b5588f48880e760e8a91c1f2">sstmac::sw::allocation_strategy</a>
-, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html#a5a14352abd760614955871a9e330d8f0">sstmac::sw::app_manager</a>
 </li>
 <li>interconnect_
 : <a class="el" href="classsstmac_1_1native_1_1manager.html#a7cd7487662cb4c724765b19f3ddbfc52">sstmac::native::manager</a>
+, <a class="el" href="classsstmac_1_1sw_1_1job__launcher.html#ae6da9a5eb6ee42b5462de98bf3805abb">sstmac::sw::job_launcher</a>
 </li>
 <li>interface()
 : <a class="el" href="classsstmac_1_1event.html#ac74913269653a2964cdaffd14e9c8780">sstmac::event</a>
@@ -582,7 +577,7 @@
 : <a class="el" href="structLodePNGInfo.html#a80207e3e53c959b2285636496a3dd3f1">LodePNGInfo</a>
 </li>
 <li>intermediate_step()
-: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#af69b0d6bc4464c7520d3e801ef3647a8">sstmac::hw::valiant_router</a>
+: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#a31cef00c6dced83286bbd8a194b4a6d7">sstmac::hw::valiant_router</a>
 </li>
 <li>intermediate_switch
 : <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#afa236273358b89046acfe6cfd28f8eeea5b9154ea4758a8342de2a163c38c834f">sstmac::hw::valiant_router</a>

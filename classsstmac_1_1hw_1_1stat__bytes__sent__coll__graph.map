@@ -1,5 +1,5 @@
 <map id="sstmac::hw::stat_bytes_sent" name="sstmac::hw::stat_bytes_sent">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="287,189,456,457"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="511,13,680,105"/>
-<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1stat__bytes__sent_1_1aggregation.html" title="{sstmac::hw::stat_bytes\l_sent::aggregation\n||+ aggregation()\l+ append()\l+ num_counts()\l+ num_entries()\l+ ser_size()\l+ max_sid()\l+ entries()\l}" alt="" coords="102,233,262,413"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="274,189,430,457"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="483,13,639,105"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1stat__bytes__sent_1_1aggregation.html" title="{sstmac::hw::stat_bytes\l_sent::aggregation\n||+ aggregation()\l+ append()\l+ num_counts()\l+ num_entries()\l+ ser_size()\l+ max_sid()\l+ entries()\l}" alt="" coords="91,233,250,413"/>
 </map>

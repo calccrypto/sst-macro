@@ -1,10 +1,10 @@
 <map id="sprockit/sprockit/serialize_array.h" name="sprockit/sprockit/serialize_array.h">
-<area shape="rect" id="node2" href="$serializer_8h.html" title="sprockit/serializer.h" alt="" coords="525,95,668,121"/>
-<area shape="rect" id="node3" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="5,497,164,524"/>
-<area shape="rect" id="node4" href="$serialize__packer_8h.html" title="sprockit/serialize\l_packer.h" alt="" coords="171,169,297,211"/>
-<area shape="rect" id="node15" href="$serialize__sizer_8h.html" title="sprockit/serialize\l_sizer.h" alt="" coords="321,169,448,211"/>
-<area shape="rect" id="node16" href="$serialize__unpacker_8h.html" title="sprockit/serialize\l_unpacker.h" alt="" coords="472,169,599,211"/>
-<area shape="rect" id="node5" href="$serialize__buffer__accessor_8h.html" title="sprockit/serialize\l_buffer_accessor.h" alt="" coords="253,259,394,300"/>
-<area shape="rect" id="node7" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="260,348,384,375"/>
-<area shape="rect" id="node10" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="239,423,394,449"/>
+<area shape="rect" id="node2" href="$serializer_8h.html" title="sprockit/serializer.h" alt="" coords="505,95,640,121"/>
+<area shape="rect" id="node3" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="5,497,156,524"/>
+<area shape="rect" id="node4" href="$serialize__packer_8h.html" title="sprockit/serialize\l_packer.h" alt="" coords="166,169,286,211"/>
+<area shape="rect" id="node15" href="$serialize__sizer_8h.html" title="sprockit/serialize\l_sizer.h" alt="" coords="310,169,430,211"/>
+<area shape="rect" id="node16" href="$serialize__unpacker_8h.html" title="sprockit/serialize\l_unpacker.h" alt="" coords="454,169,574,211"/>
+<area shape="rect" id="node5" href="$serialize__buffer__accessor_8h.html" title="sprockit/serialize\l_buffer_accessor.h" alt="" coords="246,259,379,300"/>
+<area shape="rect" id="node7" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="252,348,368,375"/>
+<area shape="rect" id="node10" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="231,423,378,449"/>
 </map>

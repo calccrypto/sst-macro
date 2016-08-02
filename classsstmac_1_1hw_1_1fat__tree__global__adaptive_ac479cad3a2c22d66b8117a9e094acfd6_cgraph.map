@@ -1,0 +1,5 @@
+<map id="sstmac::hw::fat_tree_global_adaptive::default_router" name="sstmac::hw::fat_tree_global_adaptive::default_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive.html#a3a7e73e0497e1ede823740d048f59414" title="sstmac::hw::fat_tree\l_global_adaptive::cheapest_path" alt="" coords="220,5,432,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive.html#aea749ada0ddfa7ef863883337d9de757" title="sstmac::hw::fat_tree\l_global_adaptive::global\l_adaptive" alt="" coords="245,70,407,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive.html#a502c952af1eb94ed70f05fc8771b00e0" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="240,150,412,206"/>
+</map>

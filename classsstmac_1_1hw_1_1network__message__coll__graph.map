@@ -1,9 +1,8 @@
 <map id="sstmac::hw::network_message" name="sstmac::hw::network_message">
-<area shape="rect" id="node2" href="$classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="637,770,776,950"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="233,432,372,583"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,145,152,267"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="619,329,795,685"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="272,145,451,267"/>
-<area shape="rect" id="node13" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="1386,807,1609,913"/>
-<area shape="rect" id="node16" href="$structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="1877,763,2030,957"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="13,589,139,696"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1flow.html" title="{sstmac::flow\n||+ unique_id()\l+ byte_length()\l}" alt="" coords="21,376,131,468"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="13,176,139,327"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,147,127"/>
+<area shape="rect" id="node6" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; network_message \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="164,589,369,696"/>
+<area shape="rect" id="node10" href="$structsstmac_1_1hw_1_1unique__msg__id.html" title="{sstmac::hw::unique\l_msg_id\n||+ unique_msg_id()\l+ unique_msg_id()\l+ operator uint64_t()\l+ to_string()\l+ set_src_node()\l+ set_seed()\l+ operator++()\l+ operator++()\l}" alt="" coords="512,545,651,740"/>
 </map>

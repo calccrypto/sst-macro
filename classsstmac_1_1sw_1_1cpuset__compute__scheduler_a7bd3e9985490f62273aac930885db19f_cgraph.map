@@ -1,8 +1,8 @@
 <map id="sstmac::sw::cpuset_compute_scheduler::clone" name="sstmac::sw::cpuset_compute_scheduler::clone">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#ade4d2c281350dbd0e64ccfa38b9e8d2e" title="sstmac::sw::cpuset\l_compute_scheduler::\lclone_into" alt="" coords="263,25,421,81"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a4d6b73e6c771cc7f07854e79f17297a3" title="sstmac::sw::cpuset\l_compute_scheduler::\lcpuset_compute_scheduler" alt="" coords="245,145,439,201"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a68597ef25de817bb0ac674d1acf3f97b" title="sstmac::sw::cpuset\l_compute_scheduler::\lavailable_core" alt="" coords="487,5,645,61"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a52653e4b9467e44c637aca8db1893a06" title="sstmac::sw::cpuset\l_compute_scheduler::\lconfigure" alt="" coords="487,85,645,141"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a9cf991c9a04597ec99d894f3d16b1f80" title="sstmac::sw::cpuset\l_compute_scheduler::\lrelease_core" alt="" coords="487,165,645,221"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#aa44820b9f091507f56100e8a6e053aa2" title="sstmac::sw::cpuset\l_compute_scheduler::\lreserve_core" alt="" coords="487,245,645,301"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#ade4d2c281350dbd0e64ccfa38b9e8d2e" title="sstmac::sw::cpuset\l_compute_scheduler::\lclone_into" alt="" coords="250,25,401,81"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a4d6b73e6c771cc7f07854e79f17297a3" title="sstmac::sw::cpuset\l_compute_scheduler::\lcpuset_compute_scheduler" alt="" coords="235,145,416,201"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a68597ef25de817bb0ac674d1acf3f97b" title="sstmac::sw::cpuset\l_compute_scheduler::\lavailable_core" alt="" coords="464,5,615,61"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a52653e4b9467e44c637aca8db1893a06" title="sstmac::sw::cpuset\l_compute_scheduler::\lconfigure" alt="" coords="464,85,615,141"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#a9cf991c9a04597ec99d894f3d16b1f80" title="sstmac::sw::cpuset\l_compute_scheduler::\lrelease_core" alt="" coords="464,165,615,221"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html#aa44820b9f091507f56100e8a6e053aa2" title="sstmac::sw::cpuset\l_compute_scheduler::\lreserve_core" alt="" coords="464,245,615,301"/>
 </map>

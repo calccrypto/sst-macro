@@ -1,5 +1,5 @@
 <map id="sstmac::hw::macro_switch_interconnect" name="sstmac::hw::macro_switch_interconnect">
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__interconnect.html" title="{sstmac::hw::simple\l_interconnect\n|# inverse_bw_\l# hop_latency_\l# inj_latency_\l|+ init_factory_params()\l+ to_string()\l+ event_location()\l}" alt="" coords="33,660,203,811"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n|# hop_bw_\l# hop_latency_\l# injection_latency_\l# lookahead_\l|# send_delay()\l}" alt="" coords="45,131,191,267"/>
-<area shape="rect" id="node3" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="49,5,187,83"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__interconnect.html" title="{sstmac::hw::simple\l_interconnect\n|# inverse_bw_\l# hop_latency_\l# inj_latency_\l|+ init_factory_params()\l+ to_string()\l+ event_location()\l}" alt="" coords="32,675,188,825"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n|# hop_bw_\l# hop_latency_\l# injection_latency_\l# lookahead_\l|# send_delay()\l}" alt="" coords="41,131,179,267"/>
+<area shape="rect" id="node3" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="46,5,174,83"/>
 </map>

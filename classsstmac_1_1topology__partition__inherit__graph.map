@@ -1,4 +1,4 @@
 <map id="sstmac::topology_partition" name="sstmac::topology_partition">
-<area shape="rect" id="node2" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="5,145,200,560"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="18,5,187,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="5,145,184,560"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="17,5,173,97"/>
 </map>

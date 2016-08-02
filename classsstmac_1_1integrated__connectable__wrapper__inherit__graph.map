@@ -1,4 +1,4 @@
 <map id="sstmac::integrated_connectable_wrapper" name="sstmac::integrated_connectable_wrapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="5,86,177,193"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="202,5,365,273"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="5,86,173,193"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="197,5,352,273"/>
 </map>

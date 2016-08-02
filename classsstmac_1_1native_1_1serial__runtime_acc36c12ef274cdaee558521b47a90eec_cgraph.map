@@ -1,11 +1,11 @@
 <map id="sstmac::native::serial_runtime::to_string" name="sstmac::native::serial_runtime::to_string">
-<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1serial__runtime.html#ae3e813e0a85ae764f903cc85cd06cc02" title="sstmac::native::serial\l_runtime::allgather" alt="" coords="215,5,366,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1serial__runtime.html#ac32d06f147bfd49a1e6fbb53a7e2db1e" title="sstmac::native::serial\l_runtime::allreduce_max" alt="" coords="204,71,377,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1serial__runtime.html#a23d2084fbd760ce45106f467f4cdc027" title="sstmac::native::serial\l_runtime::allreduce_min" alt="" coords="206,136,375,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1serial__runtime.html#ab604610a007d667b80b4d6d949d8aa41" title="sstmac::native::serial\l_runtime::bcast" alt="" coords="215,201,366,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1native_1_1serial__runtime.html#a97d86673ae4b51a83575b3633f086bc4" title="sstmac::native::serial\l_runtime::gather" alt="" coords="215,267,366,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1native_1_1serial__runtime.html#a5303e231140d1c4f6c01114a3032a372" title="sstmac::native::serial\l_runtime::global_max" alt="" coords="214,332,367,373"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1native_1_1serial__runtime.html#a0618ddea5c2cd10cc18ec826a483035c" title="sstmac::native::serial\l_runtime::global_sum" alt="" coords="215,397,367,439"/>
-<area shape="rect" id="node9" href="$classsstmac_1_1native_1_1serial__runtime.html#ad5c1569dbabefb9befb33bf34d5604a5" title="sstmac::native::serial\l_runtime::recv" alt="" coords="215,463,366,504"/>
-<area shape="rect" id="node10" href="$classsstmac_1_1native_1_1serial__runtime.html#a0e479a896f6c62aa81dab4eb6a919a72" title="sstmac::native::serial\l_runtime::send" alt="" coords="215,528,366,569"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1serial__runtime.html#ae3e813e0a85ae764f903cc85cd06cc02" title="sstmac::native::serial\l_runtime::allgather" alt="" coords="209,5,355,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1serial__runtime.html#ac32d06f147bfd49a1e6fbb53a7e2db1e" title="sstmac::native::serial\l_runtime::allreduce_max" alt="" coords="200,71,364,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1serial__runtime.html#a23d2084fbd760ce45106f467f4cdc027" title="sstmac::native::serial\l_runtime::allreduce_min" alt="" coords="202,136,362,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1serial__runtime.html#ab604610a007d667b80b4d6d949d8aa41" title="sstmac::native::serial\l_runtime::bcast" alt="" coords="209,201,355,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1native_1_1serial__runtime.html#a97d86673ae4b51a83575b3633f086bc4" title="sstmac::native::serial\l_runtime::gather" alt="" coords="209,267,355,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1native_1_1serial__runtime.html#a5303e231140d1c4f6c01114a3032a372" title="sstmac::native::serial\l_runtime::global_max" alt="" coords="209,332,355,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1native_1_1serial__runtime.html#a0618ddea5c2cd10cc18ec826a483035c" title="sstmac::native::serial\l_runtime::global_sum" alt="" coords="209,397,355,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1native_1_1serial__runtime.html#ad5c1569dbabefb9befb33bf34d5604a5" title="sstmac::native::serial\l_runtime::recv" alt="" coords="209,463,355,504"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1native_1_1serial__runtime.html#a0e479a896f6c62aa81dab4eb6a919a72" title="sstmac::native::serial\l_runtime::send" alt="" coords="209,528,355,569"/>
 </map>

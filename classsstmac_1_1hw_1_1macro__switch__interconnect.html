@@ -68,9 +68,9 @@ Inheritance diagram for sstmac::hw::macro_switch_interconnect:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1macro__switch__interconnect__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1macro__switch__interconnect_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1macro__switch__interconnect_inherit__map" id="sstmac_1_1hw_1_1macro__switch__interconnect_inherit__map">
-<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1simple__interconnect.html" title="{sstmac::hw::simple\l_interconnect\n|# inverse_bw_\l# hop_latency_\l# inj_latency_\l|+ init_factory_params()\l+ to_string()\l+ event_location()\l}" alt="" coords="33,660,203,811"/>
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n|# hop_bw_\l# hop_latency_\l# injection_latency_\l# lookahead_\l|# send_delay()\l}" alt="" coords="45,131,191,267"/>
-<area shape="rect" id="node3" href="classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="49,5,187,83"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1simple__interconnect.html" title="{sstmac::hw::simple\l_interconnect\n|# inverse_bw_\l# hop_latency_\l# inj_latency_\l|+ init_factory_params()\l+ to_string()\l+ event_location()\l}" alt="" coords="32,675,188,825"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n|# hop_bw_\l# hop_latency_\l# injection_latency_\l# lookahead_\l|# send_delay()\l}" alt="" coords="41,131,179,267"/>
+<area shape="rect" id="node3" href="classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="46,5,174,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -78,9 +78,9 @@ Collaboration diagram for sstmac::hw::macro_switch_interconnect:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1macro__switch__interconnect__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1macro__switch__interconnect_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1hw_1_1macro__switch__interconnect_coll__map" id="sstmac_1_1hw_1_1macro__switch__interconnect_coll__map">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="127,718,273,810"/>
-<area shape="rect" id="node3" href="classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,343,144,421"/>
-<area shape="rect" id="node5" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="256,160,419,604"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="120,718,256,810"/>
+<area shape="rect" id="node3" href="classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,343,133,421"/>
+<area shape="rect" id="node5" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="242,160,393,604"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26b08db657d6e964636015c0904e0117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed463e89737f69fa26f88e7717bbe11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnetwork__switch.html">network_switch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#abed463e89737f69fa26f88e7717bbe11">switch_at</a> (<a class="el" href="namespacesstmac.html#a5c5c6ffa97c47b40a7c19a16f6b4af27">switch_id</a> id) const </td></tr>
 <tr class="separator:abed463e89737f69fa26f88e7717bbe11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84882a701ad1f799ec0bdd9e54b53376"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#a1925e67006bcf8fc36d3c3a56f969690">switch_map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#a84882a701ad1f799ec0bdd9e54b53376">switches</a> () const </td></tr>
+<tr class="separator:a84882a701ad1f799ec0bdd9e54b53376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb51cf1b3203437d0a4d42567664b247"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#aeb51cf1b3203437d0a4d42567664b247">immediate_send</a> (<a class="el" href="classsstmac_1_1event__scheduler.html">event_scheduler</a> *src, <a class="el" href="classsstmac_1_1message.html">message</a> *msg, <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> start) const </td></tr>
 <tr class="separator:aeb51cf1b3203437d0a4d42567664b247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55fb8aca0ef2988dc515a4914b3316f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#a55fb8aca0ef2988dc515a4914b3316f8">write_graph_file</a> (const std::string &amp;graph_file)</td></tr>
@@ -239,7 +241,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00114">114</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
+<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00119">119</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
 
 <p>References <a class="el" href="event__location_8h_source.html#l00011">sstmac::event_loc_id::null</a>.</p>
 
@@ -266,7 +268,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00104">104</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
+<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00109">109</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
 
 <p>References <a class="el" href="switch__interconnect_8h_source.html#l00036">sstmac::hw::switch_interconnect_base::hop_latency_</a>.</p>
 
@@ -359,7 +361,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00109">109</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
+<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00114">114</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
 
 <p>References <a class="el" href="switch__interconnect_8h_source.html#l00040">sstmac::hw::switch_interconnect_base::lookahead_</a>.</p>
 
@@ -452,6 +454,31 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00085">85</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84882a701ad1f799ec0bdd9e54b53376"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsstmac_1_1hw_1_1macro__switch__interconnect.html#a1925e67006bcf8fc36d3c3a56f969690">switch_map</a>&amp; sstmac::hw::macro_switch_interconnect::switches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00095">95</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +600,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00127">127</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
+<p>Definition at line <a class="el" href="switch__interconnect_8h_source.html#l00132">132</a> of file <a class="el" href="switch__interconnect_8h_source.html">switch_interconnect.h</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,5 @@
 <map id="sstmac::hw::dist_dummy_switch::connected_switches" name="sstmac::hw::dist_dummy_switch::connected_switches">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a8553f2742d563691bb2ac54ae08b7e87" title="sstmac::hw::dist_dummy\l_switch::hop_bandwidth" alt="" coords="256,5,427,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a47d54821f0723a92fb82c17ec8118d88" title="sstmac::hw::dist_dummy\l_switch::hop_latency" alt="" coords="256,71,427,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a2e327cf870ad31d75b8afe10a80a31b2" title="sstmac::hw::dist_dummy\l_switch::lookahead" alt="" coords="256,136,427,177"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a8553f2742d563691bb2ac54ae08b7e87" title="sstmac::hw::dist_dummy\l_switch::hop_bandwidth" alt="" coords="248,5,417,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a47d54821f0723a92fb82c17ec8118d88" title="sstmac::hw::dist_dummy\l_switch::hop_latency" alt="" coords="248,71,417,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1dist__dummy__switch.html#a2e327cf870ad31d75b8afe10a80a31b2" title="sstmac::hw::dist_dummy\l_switch::lookahead" alt="" coords="248,136,417,177"/>
 </map>

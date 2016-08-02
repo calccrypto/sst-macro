@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structsstmac_1_1sw_1_1software__id.html" title="A wrapper for an appid, taskid pair. " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node1" href="$classsstmac_1_1sw_1_1sstmac__global.html" title="sstmac::sw::sstmac\l_global" alt="" coords="5,107,147,148"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1sstmac__global__builtin.html" title="sstmac::sw::sstmac\l_global_builtin\&lt; T \&gt;" alt="" coords="197,5,338,47"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1sstmac__global__builtin_3_01T_01_5_01_4.html" title="sstmac::sw::sstmac\l_global_builtin\&lt; T * \&gt;" alt="" coords="195,71,340,112"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1sstmac__global__builtin__arr.html" title="sstmac::sw::sstmac\l_global_builtin_arr\l\&lt; T, N \&gt;" alt="" coords="197,135,338,191"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1sstmac__global__builtin__arr_3_01T_01_5_00_01N_01_4.html" title="sstmac::sw::sstmac\l_global_builtin_arr\l\&lt; T *, N \&gt;" alt="" coords="197,215,338,271"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1sstmac__global__struct.html" title="sstmac::sw::sstmac\l_global_struct\&lt; T \&gt;" alt="" coords="393,5,534,47"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1sstmac__global__struct_3_01T_01_5_01_4.html" title="sstmac::sw::sstmac\l_global_struct\&lt; T * \&gt;" alt="" coords="391,71,535,112"/>
+<area shape="rect" id="node7" href="$structglobal__arr.html" title="global_arr\&lt; T, N \&gt;" alt="" coords="399,150,527,177"/>
+<area shape="rect" id="node9" href="$structglobal__ptr__arr.html" title="global_ptr_arr\&lt; T, N \&gt;" alt="" coords="388,230,539,257"/>
 </map>

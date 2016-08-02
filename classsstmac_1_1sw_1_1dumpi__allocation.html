@@ -65,8 +65,8 @@ Inheritance diagram for sstmac::sw::dumpi_allocation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1sw_1_1dumpi__allocation__inherit__graph.png" border="0" usemap="#sstmac_1_1sw_1_1dumpi__allocation_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1sw_1_1dumpi__allocation_inherit__map" id="sstmac_1_1sw_1_1dumpi__allocation_inherit__map">
-<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html" title="Strategy type for assigning processes to nodes in a parallel run. " alt="" coords="18,145,193,413"/>
-<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="21,5,190,97"/>
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1node__allocator.html" title="Strategy type for assigning processes to nodes in a parallel run. " alt="" coords="11,145,194,325"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="25,5,181,97"/>
 </map>
 </div>
 <div class="dynheader">
@@ -74,42 +74,33 @@ Collaboration diagram for sstmac::sw::dumpi_allocation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1sw_1_1dumpi__allocation__coll__graph.png" border="0" usemap="#sstmac_1_1sw_1_1dumpi__allocation_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1sw_1_1dumpi__allocation_coll__map" id="sstmac_1_1sw_1_1dumpi__allocation_coll__map">
-<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1allocation__strategy.html" title="Strategy type for assigning processes to nodes in a parallel run. " alt="" coords="1246,1188,1421,1427"/>
-<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1177,329,1346,421"/>
-<area shape="rect" id="node4" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="749,843,955,1111"/>
-<area shape="rect" id="node10" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="695,1173,889,1441"/>
-<area shape="rect" id="node5" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="868,329,991,421"/>
-<area shape="rect" id="node6" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="653,292,843,457"/>
-<area shape="rect" id="node16" href="classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="1371,175,1597,575"/>
-<area shape="rect" id="node17" href="classtopology.html" title="{topology\n||}" alt="" coords="1402,5,1478,83"/>
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1node__allocator.html" title="Strategy type for assigning processes to nodes in a parallel run. " alt="" coords="583,975,765,1141"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="828,197,984,289"/>
+<area shape="rect" id="node4" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="579,593,769,861"/>
+<area shape="rect" id="node10" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="879,924,1058,1192"/>
+<area shape="rect" id="node5" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="561,197,683,289"/>
+<area shape="rect" id="node6" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="360,160,537,325"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acaddb5cef042ce333f0dab6c1a4ffe49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#acaddb5cef042ce333f0dab6c1a4ffe49">set_topology</a> (hw::topology *top)</td></tr>
-<tr class="separator:acaddb5cef042ce333f0dab6c1a4ffe49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf86b1be96a04559b2cfff193db071a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#abdf86b1be96a04559b2cfff193db071a">init_factory_params</a> (sprockit::sim_parameters *params)</td></tr>
 <tr class="separator:abdf86b1be96a04559b2cfff193db071a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0ed85a538e158fcaac28658680da22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#a0b0ed85a538e158fcaac28658680da22">allocate</a> (int nnode_requested, <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a7f14c1bda9bf0f51fea74b79a8faa4f9">node_set</a> &amp;allocation)</td></tr>
-<tr class="memdesc:a0b0ed85a538e158fcaac28658680da22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get nodes.  <a href="#a0b0ed85a538e158fcaac28658680da22">More...</a><br /></td></tr>
-<tr class="separator:a0b0ed85a538e158fcaac28658680da22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19dcec29d45761097e04693d6de810ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#a19dcec29d45761097e04693d6de810ae">allocate</a> (int nnode_requested, const <a class="el" href="namespacesstmac_1_1sw.html#a85b9ca4ffd66a71e88797f8ed6b504e7">ordered_node_set</a> &amp;available, <a class="el" href="namespacesstmac_1_1sw.html#a85b9ca4ffd66a71e88797f8ed6b504e7">ordered_node_set</a> &amp;allocation) const </td></tr>
+<tr class="memdesc:a19dcec29d45761097e04693d6de810ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get nodes.  <a href="#a19dcec29d45761097e04693d6de810ae">More...</a><br /></td></tr>
+<tr class="separator:a19dcec29d45761097e04693d6de810ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055e8ffb226a1a03ea7f1bf0dedd74c1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#a055e8ffb226a1a03ea7f1bf0dedd74c1">~dumpi_allocation</a> ()  throw ()</td></tr>
 <tr class="separator:a055e8ffb226a1a03ea7f1bf0dedd74c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsstmac_1_1sw_1_1allocation__strategy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html">sstmac::sw::allocation_strategy</a></td></tr>
-<tr class="memitem:ac159894fe8c9794bef6688c4d6ad0596 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#ac159894fe8c9794bef6688c4d6ad0596">init_param1</a> (<a class="el" href="classsstmac_1_1parallel__runtime.html">parallel_runtime</a> *rt)</td></tr>
-<tr class="separator:ac159894fe8c9794bef6688c4d6ad0596 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07774107e18d9bb94ec4114895b69d31 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a07774107e18d9bb94ec4114895b69d31">topol</a> () const </td></tr>
-<tr class="separator:a07774107e18d9bb94ec4114895b69d31 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde7c4dfe97d1572879049042d0eb18f inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#abde7c4dfe97d1572879049042d0eb18f">set_interconnect</a> (hw::interconnect *ic)</td></tr>
-<tr class="separator:abde7c4dfe97d1572879049042d0eb18f inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af081f64bbbcd52a3b9eca51c3596950a inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#af081f64bbbcd52a3b9eca51c3596950a">to_string</a> () const </td></tr>
-<tr class="separator:af081f64bbbcd52a3b9eca51c3596950a inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16be656da0618986f5d6bca13be936d7 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a16be656da0618986f5d6bca13be936d7">~allocation_strategy</a> ()  throw ()</td></tr>
-<tr class="separator:a16be656da0618986f5d6bca13be936d7 inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24143314f7857977d60e5eb550ae577c inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a24143314f7857977d60e5eb550ae577c">release</a> (const <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a7f14c1bda9bf0f51fea74b79a8faa4f9">node_set</a> &amp;alloc)</td></tr>
-<tr class="memdesc:a24143314f7857977d60e5eb550ae577c inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a set of nodes back into the allocation.  <a href="#a24143314f7857977d60e5eb550ae577c">More...</a><br /></td></tr>
-<tr class="separator:a24143314f7857977d60e5eb550ae577c inherit pub_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsstmac_1_1sw_1_1node__allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsstmac_1_1sw_1_1node__allocator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html">sstmac::sw::node_allocator</a></td></tr>
+<tr class="memitem:a7e83b19b638cc06aeb455074bedbfe91 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a7e83b19b638cc06aeb455074bedbfe91">init_param1</a> (<a class="el" href="classsstmac_1_1parallel__runtime.html">parallel_runtime</a> *rt)</td></tr>
+<tr class="separator:a7e83b19b638cc06aeb455074bedbfe91 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdc88a6a18c7edc472453d874f48816 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#abbdc88a6a18c7edc472453d874f48816">set_topology</a> (hw::topology *top)</td></tr>
+<tr class="separator:abbdc88a6a18c7edc472453d874f48816 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a1ddee151b75caaf12975d6106dbc0 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a82a1ddee151b75caaf12975d6106dbc0">to_string</a> () const </td></tr>
+<tr class="separator:a82a1ddee151b75caaf12975d6106dbc0 inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1f6d4d4d1d2b2ef0a8a38af772bece inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a8b1f6d4d4d1d2b2ef0a8a38af772bece">~node_allocator</a> ()  throw ()</td></tr>
+<tr class="separator:a8b1f6d4d4d1d2b2ef0a8a38af772bece inherit pub_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsprockit_1_1factory__type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsprockit_1_1factory__type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsprockit_1_1factory__type.html">sprockit::factory_type</a></td></tr>
 <tr class="memitem:a180a93e1e8d2ee5c8623958e577c947c inherit pub_methods_classsprockit_1_1factory__type"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsprockit_1_1factory__type.html#a180a93e1e8d2ee5c8623958e577c947c">init_factory_params</a> (sim_parameters *params)</td></tr>
 <tr class="separator:a180a93e1e8d2ee5c8623958e577c947c inherit pub_methods_classsprockit_1_1factory__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,26 +111,17 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab92f7a1c4b74fa03b6d4df1a86b82990"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#ab92f7a1c4b74fa03b6d4df1a86b82990">metafile_</a></td></tr>
 <tr class="separator:ab92f7a1c4b74fa03b6d4df1a86b82990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c6676255a8298da8127f9b2d6f1b92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1structured__topology.html">sstmac::hw::structured_topology</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1dumpi__allocation.html#a04c6676255a8298da8127f9b2d6f1b92">regtop_</a></td></tr>
-<tr class="separator:a04c6676255a8298da8127f9b2d6f1b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsstmac_1_1sw_1_1allocation__strategy')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html">sstmac::sw::allocation_strategy</a></td></tr>
-<tr class="memitem:adb624439a8204f921fadc1f23bb469c9 inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#adb624439a8204f921fadc1f23bb469c9">topology_</a></td></tr>
-<tr class="separator:adb624439a8204f921fadc1f23bb469c9 inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b409d2b5588f48880e760e8a91c1f2 inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">hw::interconnect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a70b409d2b5588f48880e760e8a91c1f2">interconn_</a></td></tr>
-<tr class="separator:a70b409d2b5588f48880e760e8a91c1f2 inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ae1361aca8c32d256765ae8c0d341f inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1parallel__runtime.html">parallel_runtime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#ae5ae1361aca8c32d256765ae8c0d341f">rt_</a></td></tr>
-<tr class="separator:ae5ae1361aca8c32d256765ae8c0d341f inherit pro_attribs_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classsstmac_1_1sw_1_1node__allocator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsstmac_1_1sw_1_1node__allocator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html">sstmac::sw::node_allocator</a></td></tr>
+<tr class="memitem:a417b66e5f4a51cf9594484f2ab78a759 inherit pro_attribs_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a417b66e5f4a51cf9594484f2ab78a759">topology_</a></td></tr>
+<tr class="separator:a417b66e5f4a51cf9594484f2ab78a759 inherit pro_attribs_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951b609ad049c6936e40979e7d33a4b1 inherit pro_attribs_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1parallel__runtime.html">parallel_runtime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a951b609ad049c6936e40979e7d33a4b1">rt_</a></td></tr>
+<tr class="separator:a951b609ad049c6936e40979e7d33a4b1 inherit pro_attribs_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_classsstmac_1_1sw_1_1allocation__strategy"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classsstmac_1_1sw_1_1allocation__strategy')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html">sstmac::sw::allocation_strategy</a></td></tr>
-<tr class="memitem:a7f14c1bda9bf0f51fea74b79a8faa4f9 inherit pro_types_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a7f14c1bda9bf0f51fea74b79a8faa4f9">node_set</a></td></tr>
-<tr class="separator:a7f14c1bda9bf0f51fea74b79a8faa4f9 inherit pro_types_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classsstmac_1_1sw_1_1allocation__strategy"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsstmac_1_1sw_1_1allocation__strategy')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html">sstmac::sw::allocation_strategy</a></td></tr>
-<tr class="memitem:ab51f533edf44571f7be87384ca7e83b7 inherit pro_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#ab51f533edf44571f7be87384ca7e83b7">allocation_strategy</a> ()</td></tr>
-<tr class="separator:ab51f533edf44571f7be87384ca7e83b7 inherit pro_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22664c345e055ec055872e156c56f441 inherit pro_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a22664c345e055ec055872e156c56f441">validate_num_nodes</a> (int num_nodes, const char *type)</td></tr>
-<tr class="separator:a22664c345e055ec055872e156c56f441 inherit pro_methods_classsstmac_1_1sw_1_1allocation__strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classsstmac_1_1sw_1_1node__allocator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsstmac_1_1sw_1_1node__allocator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html">sstmac::sw::node_allocator</a></td></tr>
+<tr class="memitem:a9288c021a8a589efafcddbef5495215c inherit pro_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a9288c021a8a589efafcddbef5495215c">node_allocator</a> ()</td></tr>
+<tr class="separator:a9288c021a8a589efafcddbef5495215c inherit pro_methods_classsstmac_1_1sw_1_1node__allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -172,12 +154,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dumpi__allocation_8h_source.html#l00037">37</a> of file <a class="el" href="dumpi__allocation_8h_source.html">dumpi_allocation.h</a>.</p>
+<p>Definition at line <a class="el" href="dumpi__allocation_8h_source.html#l00035">35</a> of file <a class="el" href="dumpi__allocation_8h_source.html">dumpi_allocation.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0b0ed85a538e158fcaac28658680da22"></a>
+<a class="anchor" id="a19dcec29d45761097e04693d6de810ae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,13 +175,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a7f14c1bda9bf0f51fea74b79a8faa4f9">node_set</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacesstmac_1_1sw.html#a85b9ca4ffd66a71e88797f8ed6b504e7">ordered_node_set</a> &amp;&#160;</td>
+          <td class="paramname"><em>available</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesstmac_1_1sw.html#a85b9ca4ffd66a71e88797f8ed6b504e7">ordered_node_set</a> &amp;&#160;</td>
           <td class="paramname"><em>allocation</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -213,18 +201,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nnode</td><td>number of nodes requested </td></tr>
+    <tr><td class="paramname">available</td><td>the set of nodes that can be given </td></tr>
     <tr><td class="paramname">allocation</td><td>returns the nodes that have been allocated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">value_error</td><td>If not enough nodes are available, then this will throw. Nodes are removed from available and put into allocated. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the allocation succeeded based on available nodes </dd></dl>
 
-<p>Implements <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a41ae7f78f0a7ffcae8fa55624b1cabf6">sstmac::sw::allocation_strategy</a>.</p>
+<p>Implements <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a29aee5577ebbc89d97eb71a56d7a3b73">sstmac::sw::node_allocator</a>.</p>
 
 </div>
 </div>
@@ -250,33 +234,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#a1b0f7412b322fbb73d23baccd44794b4">sstmac::sw::allocation_strategy</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acaddb5cef042ce333f0dab6c1a4ffe49"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void sstmac::sw::dumpi_allocation::set_topology </td>
-          <td>(</td>
-          <td class="paramtype">hw::topology *&#160;</td>
-          <td class="paramname"><em>top</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classsstmac_1_1sw_1_1allocation__strategy.html#ad7578219e4706bde2e90462c25392cf8">sstmac::sw::allocation_strategy</a>.</p>
+<p>Reimplemented from <a class="el" href="classsstmac_1_1sw_1_1node__allocator.html#a77a3c1daaaba010e0b9f65ce826fd916">sstmac::sw::node_allocator</a>.</p>
 
 </div>
 </div>
@@ -299,29 +257,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dumpi__allocation_8h_source.html#l00041">41</a> of file <a class="el" href="dumpi__allocation_8h_source.html">dumpi_allocation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a04c6676255a8298da8127f9b2d6f1b92"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1hw_1_1structured__topology.html">sstmac::hw::structured_topology</a>* sstmac::sw::dumpi_allocation::regtop_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="dumpi__allocation_8h_source.html#l00043">43</a> of file <a class="el" href="dumpi__allocation_8h_source.html">dumpi_allocation.h</a>.</p>
+<p>Definition at line <a class="el" href="dumpi__allocation_8h_source.html#l00039">39</a> of file <a class="el" href="dumpi__allocation_8h_source.html">dumpi_allocation.h</a>.</p>
 
 </div>
 </div>

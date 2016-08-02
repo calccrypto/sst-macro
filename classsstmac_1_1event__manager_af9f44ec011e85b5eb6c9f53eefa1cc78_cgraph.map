@@ -1,8 +1,8 @@
 <map id="sstmac::event_manager::now" name="sstmac::event_manager::now">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__manager.html#af74d5f1e77b7cebdc3624afe0cb2fca2" title="sstmac::event_manager\l::cancel_all_messages" alt="" coords="273,5,444,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__manager.html#a9a5d8262997dd5be995fd43c466e70a5" title="sstmac::event_manager\l::finish_stats" alt="" coords="273,71,444,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1event__manager.html#af4367c4b5467c120024dd9b4c384e545" title="sstmac::event_manager\l::register_stat" alt="" coords="273,136,444,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1event__manager.html#a830abf11a6de85886b642d5ba9cb105e" title="sstmac::event_manager\l::register_thread_unique_stat" alt="" coords="256,201,461,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1event__manager.html#a5e9149f95fdb263d7e8e7a378e4bd502" title="sstmac::event_manager\l::runtime" alt="" coords="273,267,444,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1event__manager.html#aad992011167492fe15cb6df1977daa76" title="sstmac::event_manager\l::topology_partition" alt="" coords="273,332,444,373"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__manager.html#af74d5f1e77b7cebdc3624afe0cb2fca2" title="sstmac::event_manager\l::cancel_all_messages" alt="" coords="262,5,425,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__manager.html#a9a5d8262997dd5be995fd43c466e70a5" title="sstmac::event_manager\l::finish_stats" alt="" coords="262,71,425,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event__manager.html#af4367c4b5467c120024dd9b4c384e545" title="sstmac::event_manager\l::register_stat" alt="" coords="262,136,425,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1event__manager.html#a830abf11a6de85886b642d5ba9cb105e" title="sstmac::event_manager\l::register_thread_unique_stat" alt="" coords="248,201,439,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1event__manager.html#a5e9149f95fdb263d7e8e7a378e4bd502" title="sstmac::event_manager\l::runtime" alt="" coords="262,267,425,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1event__manager.html#aad992011167492fe15cb6df1977daa76" title="sstmac::event_manager\l::topology_partition" alt="" coords="262,332,425,373"/>
 </map>

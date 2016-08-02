@@ -66,32 +66,27 @@ Collaboration diagram for sstmac::runtime:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1runtime__coll__graph.png" border="0" usemap="#sstmac_1_1runtime_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1runtime_coll__map" id="sstmac_1_1runtime_coll__map">
+<area shape="rect" id="node2" href="classsstmac_1_1sw_1_1job__launcher.html" title="The job_launcher class performs the combined operations a queue scheduler like PBS or MOAB and a job ..." alt="" coords="336,748,543,913"/>
+<area shape="rect" id="node3" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,513,161,605"/>
+<area shape="rect" id="node4" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="186,447,341,671"/>
+<area shape="rect" id="node5" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="7,145,173,355"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6e32de807b314f0b2927c4799681a1f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ae6e32de807b314f0b2927c4799681a1f">register_node</a> (<a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a> aid, <a class="el" href="namespacesstmac_1_1sw.html#a441d0ce5815a90f9f21eb4740ef5204f">sw::task_id</a> tid, <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a> nid)</td></tr>
-<tr class="separator:ae6e32de807b314f0b2927c4799681a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a18a19cdb8d3fa66c6830ee4f42f357"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a2a18a19cdb8d3fa66c6830ee4f42f357">register_app_manager</a> (<a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a> aid, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a> *appman)</td></tr>
-<tr class="separator:a2a18a19cdb8d3fa66c6830ee4f42f357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7afece205fe72b3177853458dcade917"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a7afece205fe72b3177853458dcade917">node_for_task</a> (<a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a> aid, <a class="el" href="namespacesstmac_1_1sw.html#a441d0ce5815a90f9f21eb4740ef5204f">sw::task_id</a> tid)</td></tr>
 <tr class="separator:a7afece205fe72b3177853458dcade917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0670e79fe0b427b9550169c288651eea"><td class="memItemLeft" align="right" valign="top">static hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a0670e79fe0b427b9550169c288651eea">current_topology</a> ()</td></tr>
 <tr class="separator:a0670e79fe0b427b9550169c288651eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02b0298e7ed28d35f2b4adc4d45a928"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ad02b0298e7ed28d35f2b4adc4d45a928">set_topology</a> (hw::topology *top)</td></tr>
+<tr class="separator:ad02b0298e7ed28d35f2b4adc4d45a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8da81eb5a61143c2cd44c1ee0788e95"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ac8da81eb5a61143c2cd44c1ee0788e95">delete_statics</a> ()</td></tr>
 <tr class="separator:ac8da81eb5a61143c2cd44c1ee0788e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba3b0d22721c2ff7b30dc9ef61c835a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#afba3b0d22721c2ff7b30dc9ef61c835a">set_temp_topology</a> (hw::topology *top)</td></tr>
-<tr class="memdesc:afba3b0d22721c2ff7b30dc9ef61c835a"><td class="mdescLeft">&#160;</td><td class="mdescRight">During initialization we need a temp topology because no applications exist yet.  <a href="#afba3b0d22721c2ff7b30dc9ef61c835a">More...</a><br /></td></tr>
-<tr class="separator:afba3b0d22721c2ff7b30dc9ef61c835a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea70373093a6a7d660b305db20c62d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a5ea70373093a6a7d660b305db20c62d3">clear_temp_topology</a> ()</td></tr>
-<tr class="separator:a5ea70373093a6a7d660b305db20c62d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e7d856a2768b9b6dda555ddde97511"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1hw_1_1node.html">hw::node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a63e7d856a2768b9b6dda555ddde97511">current_node</a> ()</td></tr>
-<tr class="separator:a63e7d856a2768b9b6dda555ddde97511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7396eb719f0866e86775601684c7d04e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a7396eb719f0866e86775601684c7d04e">current_app_manager</a> ()</td></tr>
-<tr class="separator:a7396eb719f0866e86775601684c7d04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec64b575657223d27b71e61aa819640"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a9ec64b575657223d27b71e61aa819640">app_mgr</a> (<a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a> aid)</td></tr>
-<tr class="separator:a9ec64b575657223d27b71e61aa819640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c6d9efc3df993ac8f7033968060a2d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a64c6d9efc3df993ac8f7033968060a2d">current_node</a> ()</td></tr>
+<tr class="separator:a64c6d9efc3df993ac8f7033968060a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab0f85f186bcf08f348724d2d6c0532"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a4ab0f85f186bcf08f348724d2d6c0532">launcher</a> ()</td></tr>
+<tr class="separator:a4ab0f85f186bcf08f348724d2d6c0532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e931eed541a8451de5ace92138e878"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ac8e931eed541a8451de5ace92138e878">finish</a> ()</td></tr>
 <tr class="separator:ac8e931eed541a8451de5ace92138e878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62be10fb1795c2f864de2889a81969ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a62be10fb1795c2f864de2889a81969ba">enter_deadlock_region</a> ()</td></tr>
@@ -102,6 +97,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0bc434a63a16f0e0508a27a9bb5d97ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf77647cbaed0d75019c71c6bc754371"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#abf77647cbaed0d75019c71c6bc754371">add_deadlock_check</a> (<a class="el" href="classsstmac_1_1deadlock__check.html">deadlock_check</a> *c)</td></tr>
 <tr class="separator:abf77647cbaed0d75019c71c6bc754371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3964978f21cb5f59e39a9f13bcf61578"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a3964978f21cb5f59e39a9f13bcf61578">set_job_launcher</a> (<a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a> *<a class="el" href="classsstmac_1_1runtime.html#a4ab0f85f186bcf08f348724d2d6c0532">launcher</a>)</td></tr>
+<tr class="separator:a3964978f21cb5f59e39a9f13bcf61578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -109,46 +106,22 @@ Protected Types</h2></td></tr>
 <tr class="separator:a4974e347137e8dcb0ddd86677dd3e3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd7ff589819cc9ca4ae0d225974e9d6"><td class="memItemLeft" align="right" valign="top">typedef spkt_unordered_map&lt; <a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>, <a class="el" href="classsstmac_1_1runtime.html#a4974e347137e8dcb0ddd86677dd3e3b7">task_to_nodeid_map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#aacd7ff589819cc9ca4ae0d225974e9d6">app_to_task_map</a></td></tr>
 <tr class="separator:aacd7ff589819cc9ca4ae0d225974e9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57546825dd5337ad75836a603db28742"><td class="memItemLeft" align="right" valign="top">typedef spkt_unordered_map&lt; <a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a57546825dd5337ad75836a603db28742">app_to_manager_map</a></td></tr>
-<tr class="separator:a57546825dd5337ad75836a603db28742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:ac79bc9c7890a7f21d0c041ed0ba4cfa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1runtime.html#a57546825dd5337ad75836a603db28742">app_to_manager_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ac79bc9c7890a7f21d0c041ed0ba4cfa0">app_managers_</a></td></tr>
-<tr class="separator:ac79bc9c7890a7f21d0c041ed0ba4cfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a5989268d7aed93ade5b057fe922d5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a73a5989268d7aed93ade5b057fe922d5">do_deadlock_check_</a></td></tr>
 <tr class="separator:a73a5989268d7aed93ade5b057fe922d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae802a5a16e9ad94e5a38b3ab104da8c5"><td class="memItemLeft" align="right" valign="top">static hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#ae802a5a16e9ad94e5a38b3ab104da8c5">tmp_topology_</a></td></tr>
-<tr class="separator:ae802a5a16e9ad94e5a38b3ab104da8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9e87e72dac266c8ed8a1e3c903aff7"><td class="memItemLeft" align="right" valign="top">static hw::topology *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#aec9e87e72dac266c8ed8a1e3c903aff7">topology_</a></td></tr>
+<tr class="separator:aec9e87e72dac266c8ed8a1e3c903aff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1867ad285dd38c429e647333f15267b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a1867ad285dd38c429e647333f15267b3">launcher_</a></td></tr>
+<tr class="separator:a1867ad285dd38c429e647333f15267b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c913d9213988572cbcc7fa68ccc4292"><td class="memItemLeft" align="right" valign="top">static std::list&lt; <a class="el" href="classsstmac_1_1deadlock__check.html">deadlock_check</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1runtime.html#a9c913d9213988572cbcc7fa68ccc4292">deadlock_checks_</a></td></tr>
 <tr class="separator:a9c913d9213988572cbcc7fa68ccc4292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00040">40</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00041">41</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a57546825dd5337ad75836a603db28742"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef spkt_unordered_map&lt;<a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>, <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a>*&gt; <a class="el" href="classsstmac_1_1runtime.html#a57546825dd5337ad75836a603db28742">sstmac::runtime::app_to_manager_map</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00045">45</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aacd7ff589819cc9ca4ae0d225974e9d6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +140,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00044">44</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00045">45</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +162,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00043">43</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00044">44</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -216,31 +189,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00095">95</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9ec64b575657223d27b71e61aa819640"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a>* sstmac::runtime::app_mgr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>&#160;</td>
-          <td class="paramname"><em>aid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00085">85</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +216,7 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ea70373093a6a7d660b305db20c62d3"></a>
+<a class="anchor" id="a64c6d9efc3df993ac8f7033968060a2d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,53 +224,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void sstmac::runtime::clear_temp_topology </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7396eb719f0866e86775601684c7d04e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a>* sstmac::runtime::current_app_manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a63e7d856a2768b9b6dda555ddde97511"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classsstmac_1_1hw_1_1node.html">hw::node</a>* sstmac::runtime::current_node </td>
+          <td class="memname">static <a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a> sstmac::runtime::current_node </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -352,10 +255,12 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00052">52</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +308,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00085">85</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00075">75</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +333,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00089">89</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00079">79</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -452,6 +357,31 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ab0f85f186bcf08f348724d2d6c0532"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a>* sstmac::runtime::launcher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00068">68</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +419,7 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a18a19cdb8d3fa66c6830ee4f42f357"></a>
+<a class="anchor" id="a3964978f21cb5f59e39a9f13bcf61578"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -497,33 +427,25 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void sstmac::runtime::register_app_manager </td>
+          <td class="memname">static void sstmac::runtime::set_job_launcher </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>&#160;</td>
-          <td class="paramname"><em>aid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a> *&#160;</td>
+          <td class="paramname"><em>launcher</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1sw_1_1app__manager.html">sw::app_manager</a> *&#160;</td>
-          <td class="paramname"><em>appman</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00090">90</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ae6e32de807b314f0b2927c4799681a1f"></a>
+<a class="anchor" id="ad02b0298e7ed28d35f2b4adc4d45a928"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -531,47 +453,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void sstmac::runtime::register_node </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacesstmac_1_1sw.html#a2b1ba4e309e1aae490d52607124edf4c">sw::app_id</a>&#160;</td>
-          <td class="paramname"><em>aid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacesstmac_1_1sw.html#a441d0ce5815a90f9f21eb4740ef5204f">sw::task_id</a>&#160;</td>
-          <td class="paramname"><em>tid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacesstmac.html#ad3b3a81b81c6b3f1d201e2c2f039cd3e">node_id</a>&#160;</td>
-          <td class="paramname"><em>nid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afba3b0d22721c2ff7b30dc9ef61c835a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void sstmac::runtime::set_temp_topology </td>
+          <td class="memname">static void sstmac::runtime::set_topology </td>
           <td>(</td>
           <td class="paramtype">hw::topology *&#160;</td>
           <td class="paramname"><em>top</em></td><td>)</td>
@@ -580,38 +462,16 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>During initialization we need a temp topology because no applications exist yet. </p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00057">57</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ac79bc9c7890a7f21d0c041ed0ba4cfa0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1runtime.html#a57546825dd5337ad75836a603db28742">app_to_manager_map</a> sstmac::runtime::app_managers_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00047">47</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a9c913d9213988572cbcc7fa68ccc4292"></a>
 <div class="memitem">
 <div class="memproto">
@@ -630,7 +490,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00104">104</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00101">101</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
@@ -652,11 +512,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00100">100</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00095">95</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae802a5a16e9ad94e5a38b3ab104da8c5"></a>
+<a class="anchor" id="a1867ad285dd38c429e647333f15267b3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -664,7 +524,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">hw::topology* sstmac::runtime::tmp_topology_</td>
+          <td class="memname"><a class="el" href="classsstmac_1_1sw_1_1job__launcher.html">sw::job_launcher</a>* sstmac::runtime::launcher_</td>
         </tr>
       </table>
   </td>
@@ -674,7 +534,29 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="runtime_8h_source.html#l00102">102</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00099">99</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec9e87e72dac266c8ed8a1e3c903aff7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hw::topology* sstmac::runtime::topology_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="runtime_8h_source.html#l00097">97</a> of file <a class="el" href="runtime_8h_source.html">runtime.h</a>.</p>
 
 </div>
 </div>

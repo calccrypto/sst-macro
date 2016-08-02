@@ -111,6 +111,10 @@
 <li>category()
 : <a class="el" href="classsstmac_1_1sw_1_1key_1_1category.html#a1c56a277b310e849949adcbcccac24ba">sstmac::sw::key::category</a>
 </li>
+<li>cheapest_path()
+: <a class="el" href="classsstmac_1_1hw_1_1fat__tree__global__adaptive.html#a3a7e73e0497e1ede823740d048f59414">sstmac::hw::fat_tree_global_adaptive</a>
+, <a class="el" href="classsstmac_1_1hw_1_1fat__tree__sdn.html#a75dc85b5c40f411c51f087b2e37e2e65">sstmac::hw::fat_tree_sdn</a>
+</li>
 <li>check()
 : <a class="el" href="structsprockit_1_1is__base__of.html#abcac45e3af24c470899ddd99bad21719">sprockit::is_base_of&lt; T, S &gt;</a>
 </li>
@@ -153,7 +157,7 @@
 : <a class="el" href="classsstmac_1_1logger.html#a9502970edb3332667d6f2759804af72a">sstmac::logger</a>
 </li>
 <li>check_vc()
-: <a class="el" href="classsstmac_1_1hw_1_1routing__info.html#a9c639fda7434041b84880f3258be9535">sstmac::hw::routing_info</a>
+: <a class="el" href="classsstmac_1_1hw_1_1geometry__routable.html#a5613b5e21e3f8a9894eea3a6744e0d57">sstmac::hw::geometry_routable</a>
 </li>
 <li>choose_up_path()
 : <a class="el" href="classsstmac_1_1hw_1_1fat__tree__router.html#aa70b5805b1649bcca3e11a0f33148b84">sstmac::hw::fat_tree_router</a>
@@ -199,7 +203,7 @@
 : <a class="el" href="classsstmac_1_1sw_1_1app__factory.html#ae8d8a8c7c8dc66eeef9941197e580e8d">sstmac::sw::app_factory</a>
 </li>
 <li>clear_metadata()
-: <a class="el" href="structsstmac_1_1hw_1_1routing__info_1_1path.html#a5cd54a9afdc141add980d631647a6767">sstmac::hw::routing_info::path</a>
+: <a class="el" href="structsstmac_1_1hw_1_1geometry__routable_1_1path.html#accab770ddc6c4a6bd7def86ea6349bea">sstmac::hw::geometry_routable::path</a>
 </li>
 <li>clear_port()
 : <a class="el" href="structsstmac_1_1hw_1_1payload__arbitration__slot.html#a053cef1f3499afc68a7234dce8f27153">sstmac::hw::payload_arbitration_slot</a>
@@ -208,9 +212,6 @@
 : <a class="el" href="classsstmac_1_1sw_1_1app.html#a0a3876e63c6c55a12c12cdae784488d3">sstmac::sw::app</a>
 , <a class="el" href="classsstmac_1_1sw_1_1pthread__runner.html#a76817d8036bf967eed8d5e64b2e844ed">sstmac::sw::pthread_runner</a>
 , <a class="el" href="classsstmac_1_1sw_1_1thread.html#afafa0ce599cb0eceaef24e394101535a">sstmac::sw::thread</a>
-</li>
-<li>clear_temp_topology()
-: <a class="el" href="classsstmac_1_1runtime.html#a5ea70373093a6a7d660b305db20c62d3">sstmac::runtime</a>
 </li>
 <li>clone()
 : <a class="el" href="classsstmac_1_1bitwisevaluepayload.html#abe89371a1f838fd7696dd10269146411">sstmac::bitwisevaluepayload&lt; T &gt;</a>
@@ -292,6 +293,7 @@
 </li>
 <li>collect()
 : <a class="el" href="classsstmac_1_1event__trace.html#adbf2b167ef4a13c96615a18cf0ea7ad8">sstmac::event_trace</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__delay__stats.html#a05a5003773980f335583334d192a89f1">sstmac::hw::packet_delay_stats</a>
 , <a class="el" href="classsstmac_1_1location__trace.html#a1f7a208ec83bcf2b443a35273c1ac8e0">sstmac::location_trace</a>
 , <a class="el" href="classsstmac_1_1stat__global__int.html#ad161ee1988c46b803e18419423ea95d9">sstmac::stat_global_int</a>
 , <a class="el" href="classsstmac_1_1stat__histogram.html#a49cd7a02729268bab3510f42c5b23a74">sstmac::stat_histogram</a>
@@ -310,6 +312,20 @@
 </li>
 <li>collect_counts_at_root()
 : <a class="el" href="classsstmac_1_1hw_1_1stat__bytes__sent.html#a6ad2afc3361003b4150052f64d3b7b48">sstmac::hw::stat_bytes_sent</a>
+</li>
+<li>collect_final_event()
+: <a class="el" href="classsstmac_1_1hw_1_1delay__histogram.html#a7b251c37f5bbff113446b448a97240d9">sstmac::hw::delay_histogram</a>
+, <a class="el" href="classsstmac_1_1hw_1_1null__stats.html#a35aa87c89c60129a3b4295c536a606e8">sstmac::hw::null_stats</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html#a3ebfed8e76481da0402a3144138d9329">sstmac::hw::packet_sent_stats</a>
+</li>
+<li>collect_single_event()
+: <a class="el" href="classsstmac_1_1hw_1_1byte__hop__collector.html#a13e1cf91bee1ab2f1c58a170d062c2c6">sstmac::hw::byte_hop_collector</a>
+, <a class="el" href="classsstmac_1_1hw_1_1bytes__sent__collector.html#a0c2b177773f5d453d7c9eb329c4a1328">sstmac::hw::bytes_sent_collector</a>
+, <a class="el" href="classsstmac_1_1hw_1_1delay__histogram.html#a538aeb382f8c8837bcba727e0e5ed701">sstmac::hw::delay_histogram</a>
+, <a class="el" href="classsstmac_1_1hw_1_1null__stats.html#a45534f296a5301e565f8134bec28dbdb">sstmac::hw::null_stats</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__delay__stats.html#a14e7bd8a3a7173277bd2389c7101c052">sstmac::hw::packet_delay_stats</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html#ada8cc7ca7658becfaa5cbfc0c0984cb0">sstmac::hw::packet_sent_stats</a>
+, <a class="el" href="classsstmac_1_1hw_1_1spyplot__and__delay__stats.html#ad34444711b4e21babf04df8d2e5fe4c3">sstmac::hw::spyplot_and_delay_stats</a>
 </li>
 <li>collective_block()
 : <a class="el" href="classsumi_1_1sumi__transport.html#a6014f6362795aefcf8b379012ddff4ea">sumi::sumi_transport</a>
@@ -440,7 +456,7 @@
 : <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#ac16e33704694dd7ad843b66549b76312">sstmac::hw::packet_flow_NtoM_queue</a>
 </li>
 <li>configure_final_path()
-: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#aafc545ac13b9e9c74629804ff79a961d">sstmac::hw::valiant_router</a>
+: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#ad87af71d24317055507821c63f6e58c9">sstmac::hw::valiant_router</a>
 </li>
 <li>configure_geometric_paths()
 : <a class="el" href="classsstmac_1_1hw_1_1cartesian__topology.html#af39135fa9c7a6f4ce345f0915a0646fd">sstmac::hw::cartesian_topology</a>
@@ -452,7 +468,7 @@
 : <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ad265792bfbc35ac6fd84b8f52d96e39b">sstmac::hw::structured_topology</a>
 </li>
 <li>configure_intermediate_path()
-: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#ab20786737789c7dc38130dfc617c70ef">sstmac::hw::valiant_router</a>
+: <a class="el" href="classsstmac_1_1hw_1_1valiant__router.html#a74e9655d7bd5b898320f60598b813fc9">sstmac::hw::valiant_router</a>
 </li>
 <li>configure_mod_ports()
 : <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a224aa5f6c79927cb5a170806fbcccc85">sstmac::hw::packet_flow_NtoM_queue</a>
@@ -473,7 +489,7 @@
 , <a class="el" href="classsstmac_1_1hw_1_1simple__topology.html#aa19b6a6ef97fad94779004a70eccb1f9">sstmac::hw::simple_topology</a>
 </li>
 <li>CONG()
-: <a class="el" href="classRNG_1_1CONG.html#ae3a149bf9702a7e5a294045b36974f9b">RNG::CONG</a>
+: <a class="el" href="classRNG_1_1CONG.html#ab4f85ccc956fdf7c8028520c47b0beb2">RNG::CONG</a>
 </li>
 <li>connect()
 : <a class="el" href="classsstmac_1_1connectable__proxy__component.html#ac6691e8e1fbc72a5d47e89365a7d128b">sstmac::connectable_proxy_component</a>
@@ -530,7 +546,7 @@
 <li>connect_output()
 : <a class="el" href="classsstmac_1_1hw_1_1dist__dummy__switch.html#a8707f81b0f9e35023e5a8c164f3b50a5">sstmac::hw::dist_dummy_switch</a>
 , <a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#ae93a2f74771fce4b3308598d6273d905">sstmac::hw::packet_flow_switch</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a88284db99220aeb88c6a07dd6d48797f">sstmac::hw::packet_flow_tiled_switch</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html#a2291b02f5216358af1534b5253dd8e18">sstmac::hw::packet_flow_tiled_switch</a>
 , <a class="el" href="classsstmac_1_1hw_1_1simple__switch.html#a5385e133c64993f3949dad43e2ff9cb2">sstmac::hw::simple_switch</a>
 </li>
 <li>connected_switches()
@@ -541,26 +557,26 @@
 </li>
 <li>construct()
 : <a class="el" href="classRNG_1_1Combo.html#a1e361bb318bb8760bb39b7320762b5a2">RNG::Combo</a>
-, <a class="el" href="classRNG_1_1CONG.html#a8b4a42f0c64734c933d0ff51f6ae319c">RNG::CONG</a>
+, <a class="el" href="classRNG_1_1CONG.html#a5b728f63267b5878042bfcfc4ab5bb1b">RNG::CONG</a>
 , <a class="el" href="classRNG_1_1LFIB4.html#a5bd74eadc1f724a224cb5330fe0c52d9">RNG::LFIB4</a>
 , <a class="el" href="classRNG_1_1mersenne__twister.html#a977669ec12fe1b276a3d35cfdfb37184">RNG::mersenne_twister</a>
 , <a class="el" href="classRNG_1_1MWC.html#ae6160cf02fa3fa59b9dd469dc8212e59">RNG::MWC</a>
-, <a class="el" href="classRNG_1_1SHR3.html#ae45899fa4d99ee70eb24a5b60c41b115">RNG::SHR3</a>
-, <a class="el" href="classRNG_1_1SimpleCombo.html#a50cde0b2a68ec5d79f6f114c0c44b4aa">RNG::SimpleCombo</a>
+, <a class="el" href="classRNG_1_1SHR3.html#ae219e00056d82d0c4f17c250d94ad400">RNG::SHR3</a>
+, <a class="el" href="classRNG_1_1SimpleCombo.html#ad6674d6ca120c9bc128fd4dea81d4c4d">RNG::SimpleCombo</a>
 , <a class="el" href="classRNG_1_1SWB.html#a399635ca02c9049925b035f2ea73b6c9">RNG::SWB</a>
-, <a class="el" href="classsstmac_1_1bitwisevaluepayload.html#aed1cea8a424b22384c2fb8f58cc100d6">sstmac::bitwisevaluepayload&lt; T &gt;</a>
+, <a class="el" href="classsstmac_1_1bitwisevaluepayload.html#a31ecd132a182b2e3e014936a64c1e330">sstmac::bitwisevaluepayload&lt; T &gt;</a>
 , <a class="el" href="classsstmac_1_1pair__payload.html#ac27cd4e8f5cf443e2b5bf3f2e198a0b2">sstmac::pair_payload&lt; T1, T2 &gt;</a>
 , <a class="el" href="classsstmac_1_1pairpayloadvector.html#a879598222ef404807042253f083a4844">sstmac::pairpayloadvector&lt; T1, T2 &gt;</a>
 , <a class="el" href="classsstmac_1_1sim__thread__lock.html#a101c871fe2b2a7e204ce8c4dab81776a">sstmac::sim_thread_lock</a>
 , <a class="el" href="classsstmac_1_1sw_1_1key.html#a27c3ec5c5b6142507062bab0bb3f2d31">sstmac::sw::key</a>
-, <a class="el" href="classsstmac_1_1sw_1_1lib__compute__time.html#ad3db9fb3d8827e78389d996b493ec777">sstmac::sw::lib_compute_time</a>
+, <a class="el" href="classsstmac_1_1sw_1_1lib__compute__time.html#aab86cd0f8b198bd07efac8aea1db3cfa">sstmac::sw::lib_compute_time</a>
 , <a class="el" href="classsstmac_1_1sw_1_1library__builder.html#ad8af814a29941a0ef9a1c35c65b499fd">sstmac::sw::library_builder</a>
 , <a class="el" href="classsstmac_1_1sw_1_1library__builder__tmpl.html#a10b608a43c5dc154ed112b6094e387ec">sstmac::sw::library_builder_tmpl&lt; T &gt;</a>
 , <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#ab2e099b14a8ff9c474512a417f3d0304">sstmac::sw::operating_system</a>
 , <a class="el" href="classsstmac_1_1tutorial_1_1mandy__patinkin.html#a1b9b5b4fdc25b0e8fcaa8de5e5873a0a">sstmac::tutorial::mandy_patinkin</a>
 , <a class="el" href="classsstmac_1_1value__payload.html#a3f1da62039894e265850892ff995ff33">sstmac::value_payload&lt; T &gt;</a>
-, <a class="el" href="classsstmac_1_1vector1__payload.html#a1a7a7e21a645dd2ad910e4ec626c7cb9">sstmac::vector1_payload&lt; Type, VectorType &gt;</a>
-, <a class="el" href="classsstmac_1_1wrapper__payload.html#a50ec344c421554aef059e9405a1d6d11">sstmac::wrapper_payload</a>
+, <a class="el" href="classsstmac_1_1vector1__payload.html#a9f30b8d8c4b7c904f7eb4ce7e42bd8fa">sstmac::vector1_payload&lt; Type, VectorType &gt;</a>
+, <a class="el" href="classsstmac_1_1wrapper__payload.html#a9efc706fba7fbb3b0645fd41545bc403">sstmac::wrapper_payload</a>
 </li>
 <li>construct_lib()
 : <a class="el" href="classsstmac_1_1sw_1_1library.html#a50c4e35d93cf1c68b4eb538e1da4122e">sstmac::sw::library</a>
@@ -602,7 +618,7 @@
 : <a class="el" href="structsstmac_1_1event__loc__id.html#aa71477e8fb307e629e1a4383370cf58d">sstmac::event_loc_id</a>
 </li>
 <li>coordinates()
-: <a class="el" href="classsstmac_1_1hw_1_1coordinates.html#a71a10b400b058ec49a5fa5360da0e78a">sstmac::hw::coordinates</a>
+: <a class="el" href="classsstmac_1_1hw_1_1coordinates.html#a0ee99ed9d070a8a782aa1137f0e9146e">sstmac::hw::coordinates</a>
 </li>
 <li>copy()
 : <a class="el" href="classsstmac_1_1sw_1_1lib__compute__memmove.html#a13e1ac2af74c10238e7837f421fc2523">sstmac::sw::lib_compute_memmove</a>
@@ -612,8 +628,11 @@
 <li>core()
 : <a class="el" href="classsstmac_1_1sw_1_1compute__event.html#a67a0c38df36e0968dba0c84359e17ff6">sstmac::sw::compute_event</a>
 </li>
+<li>core_affinities()
+: <a class="el" href="classsstmac_1_1sw_1_1app__launch.html#a1c7fa5e0833e53ddc6bc7e9a8df7e9d7">sstmac::sw::app_launch</a>
+</li>
 <li>core_affinity()
-: <a class="el" href="classsstmac_1_1sw_1_1launch__info.html#ab5ccf211c7bca5df3767b5eab48148c9">sstmac::sw::launch_info</a>
+: <a class="el" href="classsstmac_1_1sw_1_1launch__event.html#a0438c6e90c21085ed466602a10a8bb02">sstmac::sw::launch_event</a>
 </li>
 <li>correct_round_off()
 : <a class="el" href="classsstmac_1_1timestamp.html#a8d924d5203f9afaafaf670c93806d5d7">sstmac::timestamp</a>
@@ -645,24 +664,15 @@
 <li>current_aid()
 : <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a4974861d8ded9c6b86c464f71163e42f">sstmac::sw::operating_system</a>
 </li>
-<li>current_app_manager()
-: <a class="el" href="classsstmac_1_1runtime.html#a7396eb719f0866e86775601684c7d04e">sstmac::runtime</a>
-</li>
 <li>current_context()
 : <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a33cbb47f1141035bf2afdf8987d80708">sstmac::sw::operating_system</a>
 , <a class="el" href="classsstmac_1_1sw_1_1sstmac__global.html#a61b0664ec9f8a8b3ace779ec87cafb0c">sstmac::sw::sstmac_global</a>
-</li>
-<li>current_env()
-: <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a9bb6cf08b0222a64e6e3c2cd793d3e43">sstmac::sw::operating_system</a>
-</li>
-<li>current_hostname()
-: <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a881809bac8e547ec4c9f1bb531b132d6">sstmac::sw::operating_system</a>
 </li>
 <li>current_library()
 : <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#abf2caabbbe102e503ed2a2726894fc39">sstmac::sw::operating_system</a>
 </li>
 <li>current_node()
-: <a class="el" href="classsstmac_1_1runtime.html#a63e7d856a2768b9b6dda555ddde97511">sstmac::runtime</a>
+: <a class="el" href="classsstmac_1_1runtime.html#a64c6d9efc3df993ac8f7033968060a2d">sstmac::runtime</a>
 </li>
 <li>current_node_id()
 : <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a90c820da741055ddd6c5ea5780ab65bc">sstmac::sw::operating_system</a>
@@ -674,7 +684,7 @@
 : <a class="el" href="classsstmac_1_1sw_1_1operating__system.html#a2b670cf4fcbe3dda2a92688c6bf5a356">sstmac::sw::operating_system</a>
 </li>
 <li>current_path()
-: <a class="el" href="classsstmac_1_1hw_1_1routing__info.html#a56300596225828563ad69c9d6e101d2f">sstmac::hw::routing_info</a>
+: <a class="el" href="classsstmac_1_1hw_1_1geometry__routable.html#a1c4bfea0fe323d919451788aec558fe6">sstmac::hw::geometry_routable</a>
 </li>
 <li>current_physical_thread_id()
 : <a class="el" href="classsstmac_1_1thread__info.html#a707bd868d2d8026e5d734ff1a5ad0b7f">sstmac::thread_info</a>

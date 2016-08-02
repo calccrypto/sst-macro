@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsprockit_1_1pvt_1_1ser__array__wrapper.html" title="sprockit::pvt::ser\l_array_wrapper\&lt; TPtr,\l IntType \&gt;" alt="" coords="5,5,171,61"/>
+<area shape="rect" id="node1" href="$classsprockit_1_1pvt_1_1ser__buffer__accessor.html" title="sprockit::pvt::ser\l_buffer_accessor" alt="" coords="5,39,128,80"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__packer.html" title="sprockit::pvt::ser\l_packer" alt="" coords="176,5,296,47"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__unpacker.html" title="sprockit::pvt::ser\l_unpacker" alt="" coords="176,71,296,112"/>
 </map>

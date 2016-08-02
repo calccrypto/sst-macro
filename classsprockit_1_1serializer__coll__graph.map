@@ -1,6 +1,6 @@
 <map id="sprockit::serializer" name="sprockit::serializer">
-<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__packer.html" title="{sprockit::pvt::ser\l_packer\n||+ pack()\l+ pack_buffer()\l+ pack_string()\l}" alt="" coords="5,568,128,689"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__buffer__accessor.html" title="{sprockit::pvt::ser\l_buffer_accessor\n||+ next()\l+ next_str()\l+ size()\l+ max_size()\l+ init()\l+ clear()\l+ reset()\l# ser_buffer_accessor()\l}" alt="" coords="83,160,255,355"/>
-<area shape="rect" id="node6" href="$classsprockit_1_1pvt_1_1ser__unpacker.html" title="{sprockit::pvt::ser\l_unpacker\n||+ unpack()\l+ unpack_buffer()\l+ unpack_string()\l}" alt="" coords="152,568,285,689"/>
-<area shape="rect" id="node8" href="$classsprockit_1_1pvt_1_1ser__sizer.html" title="{sprockit::pvt::ser\l_sizer\n||+ ser_sizer()\l+ size()\l+ size_string()\l+ add()\l+ size()\l+ reset()\l}" alt="" coords="272,379,395,544"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__packer.html" title="{sprockit::pvt::ser\l_packer\n||+ pack()\l+ pack_buffer()\l+ pack_string()\l}" alt="" coords="5,568,125,689"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__buffer__accessor.html" title="{sprockit::pvt::ser\l_buffer_accessor\n||+ next()\l+ next_str()\l+ size()\l+ max_size()\l+ init()\l+ clear()\l+ reset()\l# ser_buffer_accessor()\l}" alt="" coords="87,160,246,355"/>
+<area shape="rect" id="node6" href="$classsprockit_1_1pvt_1_1ser__unpacker.html" title="{sprockit::pvt::ser\l_unpacker\n||+ unpack()\l+ unpack_buffer()\l+ unpack_string()\l}" alt="" coords="150,568,274,689"/>
+<area shape="rect" id="node8" href="$classsprockit_1_1pvt_1_1ser__sizer.html" title="{sprockit::pvt::ser\l_sizer\n||+ ser_sizer()\l+ size()\l+ size_string()\l+ add()\l+ size()\l+ reset()\l}" alt="" coords="263,379,383,544"/>
 </map>

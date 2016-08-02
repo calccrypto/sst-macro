@@ -189,6 +189,10 @@
 <li>default_router()
 : <a class="el" href="classsstmac_1_1hw_1_1butterfly.html#ad6611283566c1f200140d81f3051a80e">sstmac::hw::butterfly</a>
 , <a class="el" href="classsstmac_1_1hw_1_1fat__tree.html#a32a87d760fb5378945af779ab39ef3cf">sstmac::hw::fat_tree</a>
+, <a class="el" href="classsstmac_1_1hw_1_1fat__tree__dmodk.html#a02f022f5c30ed6b69eb6eb7bf234ad2a">sstmac::hw::fat_tree_dmodk</a>
+, <a class="el" href="classsstmac_1_1hw_1_1fat__tree__global__adaptive.html#ac479cad3a2c22d66b8117a9e094acfd6">sstmac::hw::fat_tree_global_adaptive</a>
+, <a class="el" href="classsstmac_1_1hw_1_1fat__tree__local__adaptive.html#aeb1c0902e2e5bdc51c983cbdbdb48f7a">sstmac::hw::fat_tree_local_adaptive</a>
+, <a class="el" href="classsstmac_1_1hw_1_1fat__tree__sdn.html#a6d827dc2e791655a8184e0d0dda5578d">sstmac::hw::fat_tree_sdn</a>
 , <a class="el" href="classsstmac_1_1hw_1_1simple__fat__tree.html#aff0fa7b688e1090eab9dbb1bd01f341f">sstmac::hw::simple_fat_tree</a>
 , <a class="el" href="classsstmac_1_1hw_1_1structured__topology.html#ab61232f9838be4768a10ae87bae61c64">sstmac::hw::structured_topology</a>
 , <a class="el" href="classsstmac_1_1hw_1_1tiled__dragonfly.html#a235f9c5a8d31f6df8dc70b279c4a52a0">sstmac::hw::tiled_dragonfly</a>
@@ -251,10 +255,10 @@
 : <a class="el" href="classsstmac_1_1transport__message.html#a49b31f36f4a6dad959384f7a769986bf">sstmac::transport_message</a>
 </li>
 <li>dest_switch()
-: <a class="el" href="classsstmac_1_1hw_1_1routing__info.html#a887a160b1b03cde45e383ecce2218894">sstmac::hw::routing_info</a>
+: <a class="el" href="classsstmac_1_1hw_1_1geometry__routable.html#a36bf23f750f2f3e36870706a5f2eb4ed">sstmac::hw::geometry_routable</a>
 </li>
 <li>dest_switch_
-: <a class="el" href="classsstmac_1_1hw_1_1routing__info.html#af55506ec35514a67564995f44c578a2c">sstmac::hw::routing_info</a>
+: <a class="el" href="classsstmac_1_1hw_1_1geometry__routable.html#a6a3f31232e3fa305eb4604812a5f5513">sstmac::hw::geometry_routable</a>
 </li>
 <li>dest_task()
 : <a class="el" href="classsstmac_1_1hw_1_1network__message.html#a4c9756f37f40bdf0066fefdb59e83487">sstmac::hw::network_message</a>
@@ -336,16 +340,14 @@
 <li>distance()
 : <a class="el" href="classsstmac_1_1hw_1_1hdtorus.html#a15803b6267921fda193f5b2eae95ab57">sstmac::hw::hdtorus</a>
 </li>
+<li>dmodk()
+: <a class="el" href="classsstmac_1_1hw_1_1fat__tree__dmodk.html#aa59bf15823b1b9ef66a1f716328baa87">sstmac::hw::fat_tree_dmodk</a>
+</li>
 <li>do_access()
 : <a class="el" href="classsstmac_1_1sw_1_1lib__compute__memmove.html#a0806ed5189b789d338ce39295f65f09c">sstmac::sw::lib_compute_memmove</a>
 </li>
-<li>do_allocate_and_index_jobs()
-: <a class="el" href="classsstmac_1_1native_1_1dumpi__app__manager.html#ae133e710d52f6e7ffa617d4d18796260">sstmac::native::dumpi_app_manager</a>
-, <a class="el" href="classsstmac_1_1native_1_1indexing__app__manager.html#a7d88b43017422773196c3c6e6729ec8d">sstmac::native::indexing_app_manager</a>
-, <a class="el" href="classsstmac_1_1native_1_1skeleton__app__manager.html#a9b87aaa0a714fb9cbc5f228693bc0ef3">sstmac::native::skeleton_app_manager</a>
-</li>
 <li>do_arbitrate()
-: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#a02818f51821bfe5e60837172bf6c5a3b">sstmac::hw::packet_flow_cut_through_arbitrator</a>
+: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#afc368b0be3e0ab6874ffa5ed58c114ef">sstmac::hw::packet_flow_cut_through_arbitrator</a>
 </li>
 <li>do_collective_merges()
 : <a class="el" href="classsstmac_1_1mpi_1_1mpi__runtime.html#a8feb73b5fb5953f8bb3e3fed212141d2">sstmac::mpi::mpi_runtime</a>
@@ -353,18 +355,17 @@
 <li>do_compute()
 : <a class="el" href="classsstmac_1_1hw_1_1instruction__processor.html#a2658e0307885beef7458104b02261bc8">sstmac::hw::instruction_processor</a>
 , <a class="el" href="classsstmac_1_1hw_1_1processor.html#af510b72093cdda60fc27b8fa2aad3f8e">sstmac::hw::processor</a>
-, <a class="el" href="classsstmac_1_1hw_1_1simple__processor.html#a206f6bf582e8d39410a4a6403bd71909">sstmac::hw::simple_processor</a>
+, <a class="el" href="classsstmac_1_1hw_1_1simple__processor.html#a34d9dacff8e366071e56faaaf24224a3">sstmac::hw::simple_processor</a>
 </li>
 <li>do_deadlock_check_
 : <a class="el" href="classsstmac_1_1runtime.html#a73a5989268d7aed93ade5b057fe922d5">sstmac::runtime</a>
 </li>
 <li>do_handle_payload()
-: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__crossbar.html#a905ed253cd2a1509aa9c7c149eac19d0">sstmac::hw::packet_flow_crossbar</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__eject__buffer.html#aae4b5646a25cfaf9ed0914c9121e0871">sstmac::hw::packet_flow_eject_buffer</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__injection__buffer.html#a712b7bec72b87d4432069ae2da23406d">sstmac::hw::packet_flow_injection_buffer</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__network__buffer.html#a20c708d02ed1d39c987820e30fac0aa5">sstmac::hw::packet_flow_network_buffer</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#a8b23bbf98e57e1fef4b75c689584a05e">sstmac::hw::packet_flow_NtoM_queue</a>
-, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__sender.html#a4faabc8181e937c7c4317c8cc8b9c541">sstmac::hw::packet_flow_sender</a>
+: <a class="el" href="classsstmac_1_1hw_1_1packet__flow__eject__buffer.html#a28bebfaf75401c870485990e1aa2d558">sstmac::hw::packet_flow_eject_buffer</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__injection__buffer.html#a2fbfb23449173817e4199397defc8b53">sstmac::hw::packet_flow_injection_buffer</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__network__buffer.html#a8bbe68dd384c979754f7994c5bb0c2fc">sstmac::hw::packet_flow_network_buffer</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html#af7b440b0925379e0f5f715b8af91162d">sstmac::hw::packet_flow_NtoM_queue</a>
+, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__sender.html#acc74ee2898fc4ed9a4b6da092298627c">sstmac::hw::packet_flow_sender</a>
 </li>
 <li>do_loops_
 : <a class="el" href="classsstmac_1_1sw_1_1lib__compute__loops.html#ae13d2c28b0146e8f6ae147750d0d0184">sstmac::sw::lib_compute_loops</a>
@@ -445,7 +446,7 @@
 , <a class="el" href="classsstmac_1_1hw_1_1abstract__fat__tree.html#a98dfddb373dfc645ff58b98280eaa277a7fbef14bc5e30fa3c92f197b99aa279f">sstmac::hw::abstract_fat_tree</a>
 </li>
 <li>down_path()
-: <a class="el" href="classsstmac_1_1hw_1_1hdtorus.html#ad4262af62b407f6f6eabca49e5ee847f">sstmac::hw::hdtorus</a>
+: <a class="el" href="classsstmac_1_1hw_1_1hdtorus.html#a680850ef27eb233016650eae392ded44">sstmac::hw::hdtorus</a>
 </li>
 <li>down_port
 : <a class="el" href="classsstmac_1_1hw_1_1xpress__ring.html#a315bce0b21d212aec09efc45bf0cdea8a0f2b145ee68ab232cd295fa64bda3ea9">sstmac::hw::xpress_ring</a>
@@ -462,6 +463,9 @@
 <li>DQ
 : <a class="el" href="classsprockit_1_1serialize_3_01std_1_1deque_3_01T_01_4_01_4.html#a6f84986ce5c25b53086040e204e67ba7">sprockit::serialize&lt; std::deque&lt; T &gt; &gt;</a>
 </li>
+<li>dst
+: <a class="el" href="structsstmac_1_1hw_1_1fat__tree__sdn_1_1MatchFields.html#a44e0b52f9a8e3d0ecee8c4a82a787dd7">sstmac::hw::fat_tree_sdn::MatchFields</a>
+</li>
 <li>dst_buffer_weight
 : <a class="el" href="structsstmac_1_1hw_1_1connectable_1_1config.html#aa7a00b11f6fdc2d9480a8eb4d421c0bf">sstmac::hw::connectable::config</a>
 </li>
@@ -473,6 +477,7 @@
 </li>
 <li>dst_inport
 : <a class="el" href="structsstmac_1_1hw_1_1packet__flow__output.html#adbb82bb3a856fcdc454d062d288669ee">sstmac::hw::packet_flow_output</a>
+, <a class="el" href="structsstmac_1_1hw_1_1packet__stats__st.html#a4d3086213a105696af317c307ebe0766">sstmac::hw::packet_stats_st</a>
 </li>
 <li>dst_loc_
 : <a class="el" href="classsstmac_1_1event__queue__entry.html#a9a1accdcbe8c201111267e6cb6bdec6f">sstmac::event_queue_entry</a>

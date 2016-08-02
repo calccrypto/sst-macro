@@ -1,5 +1,5 @@
 <map id="sstmac::hw::macro_switch_interconnect" name="sstmac::hw::macro_switch_interconnect">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="127,718,273,810"/>
-<area shape="rect" id="node3" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,343,144,421"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="256,160,419,604"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="120,718,256,810"/>
+<area shape="rect" id="node3" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,343,133,421"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="242,160,393,604"/>
 </map>

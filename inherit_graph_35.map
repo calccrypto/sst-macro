@@ -1,9 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrouter.html" title="router" alt="" coords="5,46,64,73"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="sstmac::hw::structured\l_router" alt="" coords="112,39,271,80"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="sstmac::hw::fat_tree\l_router" alt="" coords="319,5,464,47"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__router.html" title="sstmac::hw::minimal\l_router" alt="" coords="320,71,463,112"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="sstmac::hw::minimal\l_adaptive_router" alt="" coords="512,37,655,79"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1valiant__router.html" title="sstmac::hw::valiant\l_router" alt="" coords="515,103,652,144"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1ugal__router.html" title="sstmac::hw::ugal_router" alt="" coords="703,110,869,137"/>
+<area shape="rect" id="node1" href="$classrouter.html" title="router" alt="" coords="5,46,60,73"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="sstmac::hw::structured\l_router" alt="" coords="108,39,264,80"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="sstmac::hw::fat_tree\l_router" alt="" coords="312,5,455,47"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__router.html" title="sstmac::hw::minimal\l_router" alt="" coords="312,71,455,112"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="sstmac::hw::minimal\l_adaptive_router" alt="" coords="503,37,645,79"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1valiant__router.html" title="sstmac::hw::valiant\l_router" alt="" coords="506,103,642,144"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1ugal__router.html" title="sstmac::hw::ugal_router" alt="" coords="693,110,856,137"/>
 </map>

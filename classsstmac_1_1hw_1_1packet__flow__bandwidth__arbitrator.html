@@ -55,7 +55,6 @@
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sstmac::hw::packet_flow_bandwidth_arbitrator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -68,10 +67,10 @@ Inheritance diagram for sstmac::hw::packet_flow_bandwidth_arbitrator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_inherit__map" id="sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_inherit__map">
-<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html" title="{sstmac::hw::packet\l_flow_cut_through_arbitrator\n|&#45; head_\l|+ packet_flow_cut_through\l_arbitrator()\l+ ~packet_flow_cut_through\l_arbitrator()\l+ arbitrate()\l+ set_outgoing_bw()\l+ bytes_sending()\l+ clone()\l+ to_string()\l+ partition()\l+ init_noise_model()\l&#45; clean_up()\l&#45; do_arbitrate()\l}" alt="" coords="5,491,208,759"/>
-<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html" title="{sstmac::hw::packet\l_flow_null_arbitrator\n||+ packet_flow_null_arbitrator()\l+ arbitrate()\l+ clone()\l+ to_string()\l+ bytes_sending()\l}" alt="" coords="233,549,447,700"/>
-<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html" title="{sstmac::hw::packet\l_flow_simple_arbitrator\n|# next_free_\l|+ packet_flow_simple\l_arbitrator()\l+ arbitrate()\l+ clone()\l+ to_string()\l+ bytes_sending()\l}" alt="" coords="472,542,640,707"/>
-<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="255,5,425,97"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html" title="{sstmac::hw::packet\l_flow_cut_through_arbitrator\n|&#45; head_\l|+ packet_flow_cut_through\l_arbitrator()\l+ ~packet_flow_cut_through\l_arbitrator()\l+ arbitrate()\l+ set_outgoing_bw()\l+ bytes_sending()\l+ clone()\l+ to_string()\l+ partition()\l+ init_noise_model()\l&#45; clean_up()\l&#45; do_arbitrate()\l}" alt="" coords="5,476,192,744"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html" title="{sstmac::hw::packet\l_flow_null_arbitrator\n||+ packet_flow_null_arbitrator()\l+ arbitrate()\l+ clone()\l+ to_string()\l+ bytes_sending()\l}" alt="" coords="216,535,413,685"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html" title="{sstmac::hw::packet\l_flow_simple_arbitrator\n|# next_free_\l|+ packet_flow_simple\l_arbitrator()\l+ arbitrate()\l+ clone()\l+ to_string()\l+ bytes_sending()\l}" alt="" coords="438,527,594,693"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="237,5,393,97"/>
 </map>
 </div>
 <div class="dynheader">
@@ -79,15 +78,15 @@ Collaboration diagram for sstmac::hw::packet_flow_bandwidth_arbitrator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_coll__map" id="sstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_coll__map">
-<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,175,97"/>
+<area shape="rect" id="node2" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,161,97"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9fb67c573a7ac77af37684d43c14ee5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ab9fb67c573a7ac77af37684d43c14ee5">arbitrate</a> (<a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> now, packet_flow_payload *<a class="el" href="classsstmac_1_1payload.html">payload</a>, <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;packet_head_leaves, <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;packet_tail_leaves, <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;credit_leaves)=0</td></tr>
-<tr class="memdesc:ab9fb67c573a7ac77af37684d43c14ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign bandwidth to payload.  <a href="#ab9fb67c573a7ac77af37684d43c14ee5">More...</a><br /></td></tr>
-<tr class="separator:ab9fb67c573a7ac77af37684d43c14ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb97ae88e06c2b659817c63353ee38cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aeb97ae88e06c2b659817c63353ee38cd">arbitrate</a> (<a class="el" href="structsstmac_1_1hw_1_1packet__stats__st.html">packet_stats_st</a> &amp;st)=0</td></tr>
+<tr class="memdesc:aeb97ae88e06c2b659817c63353ee38cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign bandwidth to payload.  <a href="#aeb97ae88e06c2b659817c63353ee38cd">More...</a><br /></td></tr>
+<tr class="separator:aeb97ae88e06c2b659817c63353ee38cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a112bc3feda2ad950e4dd93e444e38aeb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a112bc3feda2ad950e4dd93e444e38aeb">to_string</a> () const =0</td></tr>
 <tr class="separator:a112bc3feda2ad950e4dd93e444e38aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfeab5bcffa11468b86ffa7b8cecfc4a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#adfeab5bcffa11468b86ffa7b8cecfc4a">~packet_flow_bandwidth_arbitrator</a> ()</td></tr>
@@ -103,8 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae8d55412d60d70415649259aa33fec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f6734b8c5e2bf7c6f23346b5dee02c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html">packet_flow_bandwidth_arbitrator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c">clone</a> (double bw) const =0</td></tr>
 <tr class="separator:a74f6734b8c5e2bf7c6f23346b5dee02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab3a239f83f5c184dc52e64f32aa0276"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aab3a239f83f5c184dc52e64f32aa0276">bytes_sending</a> (const <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;now) const =0</td></tr>
-<tr class="separator:aab3a239f83f5c184dc52e64f32aa0276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbfe770386d52ddf70ab5ee3290c62f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a7dbfe770386d52ddf70ab5ee3290c62f">bytes_sending</a> (<a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> now) const =0</td></tr>
+<tr class="separator:a7dbfe770386d52ddf70ab5ee3290c62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsprockit_1_1factory__type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsprockit_1_1factory__type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsprockit_1_1factory__type.html">sprockit::factory_type</a></td></tr>
 <tr class="memitem:a180a93e1e8d2ee5c8623958e577c947c inherit pub_methods_classsprockit_1_1factory__type"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsprockit_1_1factory__type.html#a180a93e1e8d2ee5c8623958e577c947c">init_factory_params</a> (sim_parameters *params)</td></tr>
 <tr class="separator:a180a93e1e8d2ee5c8623958e577c947c inherit pub_methods_classsprockit_1_1factory__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,15 +126,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4282ac66769b019ea177bba06740acc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8426840e2759d4ad75f6297c043e7d05"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a8426840e2759d4ad75f6297c043e7d05">inv_out_bw_</a></td></tr>
 <tr class="separator:a8426840e2759d4ad75f6297c043e7d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a6803cdbe6097efab3eb99761b3423573"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a6803cdbe6097efab3eb99761b3423573">min_trans_</a></td></tr>
-<tr class="separator:a6803cdbe6097efab3eb99761b3423573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00013">13</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00014">14</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adfeab5bcffa11468b86ffa7b8cecfc4a"></a>
 <div class="memitem">
@@ -158,7 +152,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00033">33</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00029">29</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
 </div>
 </div>
@@ -183,12 +177,12 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">credit_delay()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">credit_delay()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab9fb67c573a7ac77af37684d43c14ee5"></a>
+<a class="anchor" id="aeb97ae88e06c2b659817c63353ee38cd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -198,37 +192,9 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void sstmac::hw::packet_flow_bandwidth_arbitrator::arbitrate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a>&#160;</td>
-          <td class="paramname"><em>now</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structsstmac_1_1hw_1_1packet__stats__st.html">packet_stats_st</a> &amp;&#160;</td>
+          <td class="paramname"><em>st</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">packet_flow_payload *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet_head_leaves</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet_tail_leaves</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;&#160;</td>
-          <td class="paramname"><em>credit_leaves</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -241,11 +207,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Assign bandwidth to payload. </p>
 <dl class="section return"><dt>Returns</dt><dd>The time at which the packet can be forwarded to the next switch/node/etc. </dd></dl>
 
-<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#abf8973972fdd607c83f5639ff434beec">sstmac::hw::packet_flow_cut_through_arbitrator</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html#abf65ca08ae54546165c8f5e7a965362e">sstmac::hw::packet_flow_simple_arbitrator</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#afb28f15920d4d0f3b4f1dfcb0ccef32f">sstmac::hw::packet_flow_null_arbitrator</a>.</p>
+<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#a278c19245cb7aa01f12aa5cdf6269b73">sstmac::hw::packet_flow_cut_through_arbitrator</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html#a3f70c90648a8ca6324f01d94df558cf6">sstmac::hw::packet_flow_simple_arbitrator</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#a00f7c722786e6b6282126e042510a567">sstmac::hw::packet_flow_null_arbitrator</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aab3a239f83f5c184dc52e64f32aa0276"></a>
+<a class="anchor" id="a7dbfe770386d52ddf70ab5ee3290c62f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -255,7 +221,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual int sstmac::hw::packet_flow_bandwidth_arbitrator::bytes_sending </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsstmac_1_1timestamp.html">timestamp</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a>&#160;</td>
           <td class="paramname"><em>now</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -267,9 +233,9 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#aa245a3e4abce56dc1c927983c583fff1">sstmac::hw::packet_flow_cut_through_arbitrator</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html#a06420e520e57c246e0eaa3760f47b664">sstmac::hw::packet_flow_simple_arbitrator</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#acbd6a2c404742bb8161217dde93f8941">sstmac::hw::packet_flow_null_arbitrator</a>.</p>
+<p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#af60dc7fb9d64920d18bbdccfc666a0ac">sstmac::hw::packet_flow_cut_through_arbitrator</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html#a62b95836778524db6f7974ff81709b33">sstmac::hw::packet_flow_simple_arbitrator</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#a19f8ad4b44a2769c74469540d6f596b3">sstmac::hw::packet_flow_null_arbitrator</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">credit_delay()</a>, <a class="el" href="packet__flow__arbitrator_8h_source.html#l00101">sstmac::hw::packet_flow_null_arbitrator::to_string()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00132">sstmac::hw::packet_flow_simple_arbitrator::to_string()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">credit_delay()</a>, <a class="el" href="packet__flow__arbitrator_8h_source.html#l00092">sstmac::hw::packet_flow_null_arbitrator::to_string()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00119">sstmac::hw::packet_flow_simple_arbitrator::to_string()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +263,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#aa1060296daf5038cff9436b5aef37b36">sstmac::hw::packet_flow_cut_through_arbitrator</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__simple__arbitrator.html#a4471db525e46c5846810e28038cd20ab">sstmac::hw::packet_flow_simple_arbitrator</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#a83c992541a9de94f86fb75f5f87cc758">sstmac::hw::packet_flow_null_arbitrator</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">credit_delay()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">credit_delay()</a>.</p>
 
 </div>
 </div>
@@ -339,20 +305,20 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">46</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">42</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
-<p>References <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aab3a239f83f5c184dc52e64f32aa0276">bytes_sending()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c">clone()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aca43557241d68a2911063ea695198b78">init_noise_model()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a1631417beca390101a6e5fd63b96b1fd">packet_flow_bandwidth_arbitrator()</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ae8d55412d60d70415649259aa33fec7e">partition()</a>.</p>
+<p>References <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a7dbfe770386d52ddf70ab5ee3290c62f">bytes_sending()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c">clone()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aca43557241d68a2911063ea695198b78">init_noise_model()</a>, <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a1631417beca390101a6e5fd63b96b1fd">packet_flow_bandwidth_arbitrator()</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ae8d55412d60d70415649259aa33fec7e">partition()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_a6386d3d8774c083ba0f7300ea71efca0_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_a6386d3d8774c083ba0f7300ea71efca0_cgraph" alt=""/></div>
 <map name="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_a6386d3d8774c083ba0f7300ea71efca0_cgraph" id="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator_a6386d3d8774c083ba0f7300ea71efca0_cgraph">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aab3a239f83f5c184dc52e64f32aa0276" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::bytes_sending" alt="" coords="245,5,437,61"/>
-<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::clone" alt="" coords="245,85,437,141"/>
-<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aca43557241d68a2911063ea695198b78" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::init_noise_model" alt="" coords="245,165,437,221"/>
-<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a1631417beca390101a6e5fd63b96b1fd" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::packet_flow_bandwidth\l_arbitrator" alt="" coords="245,246,437,317"/>
-<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ae8d55412d60d70415649259aa33fec7e" title="partition Partition the arbitrator time windows into a series of randomly sized chunks ..." alt="" coords="245,341,437,397"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a7dbfe770386d52ddf70ab5ee3290c62f" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::bytes_sending" alt="" coords="231,5,408,61"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::clone" alt="" coords="231,85,408,141"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aca43557241d68a2911063ea695198b78" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::init_noise_model" alt="" coords="231,165,408,221"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a1631417beca390101a6e5fd63b96b1fd" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::packet_flow_bandwidth\l_arbitrator" alt="" coords="231,246,408,317"/>
+<area shape="rect" id="node6" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ae8d55412d60d70415649259aa33fec7e" title="partition Partition the arbitrator time windows into a series of randomly sized chunks ..." alt="" coords="231,341,408,397"/>
 </map>
 </div>
 </p>
@@ -383,7 +349,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#a2fd31c69bfd6f07d45d484d038493805">sstmac::hw::packet_flow_cut_through_arbitrator</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">credit_delay()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00175">sstmac::hw::packet_flow_cut_through_arbitrator::to_string()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">credit_delay()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00158">sstmac::hw::packet_flow_cut_through_arbitrator::to_string()</a>.</p>
 
 </div>
 </div>
@@ -408,9 +374,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00041">41</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00037">37</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__arbitrator_8h_source.html#l00074">out_bw_</a>.</p>
+<p>References <a class="el" href="packet__flow__arbitrator_8h_source.html#l00070">out_bw_</a>.</p>
 
 </div>
 </div>
@@ -457,7 +423,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#a7d8a112f428b5e9410a4c0d1fbb505c3">sstmac::hw::packet_flow_cut_through_arbitrator</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00046">credit_delay()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00175">sstmac::hw::packet_flow_cut_through_arbitrator::to_string()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00042">credit_delay()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00158">sstmac::hw::packet_flow_cut_through_arbitrator::to_string()</a>.</p>
 
 </div>
 </div>
@@ -485,11 +451,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classsstmac_1_1hw_1_1packet__flow__cut__through__arbitrator.html#a1ba755d447e3f65f59a1e20a5f945761">sstmac::hw::packet_flow_cut_through_arbitrator</a>.</p>
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00036">36</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00032">32</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__arbitrator_8h_source.html#l00075">inv_out_bw_</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00074">out_bw_</a>.</p>
+<p>References <a class="el" href="packet__flow__arbitrator_8h_source.html#l00071">inv_out_bw_</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00070">out_bw_</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00094">sstmac::hw::packet_flow_null_arbitrator::clone()</a>, <a class="el" href="packet__flow__arbitrator_8h_source.html#l00125">sstmac::hw::packet_flow_simple_arbitrator::clone()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00167">sstmac::hw::packet_flow_cut_through_arbitrator::clone()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00085">sstmac::hw::packet_flow_null_arbitrator::clone()</a>, <a class="el" href="packet__flow__arbitrator_8h_source.html#l00112">sstmac::hw::packet_flow_simple_arbitrator::clone()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00150">sstmac::hw::packet_flow_cut_through_arbitrator::clone()</a>.</p>
 
 </div>
 </div>
@@ -537,31 +503,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00075">75</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00071">71</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00036">set_outgoing_bw()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6803cdbe6097efab3eb99761b3423573"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int sstmac::hw::packet_flow_bandwidth_arbitrator::min_trans_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00076">76</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00032">set_outgoing_bw()</a>.</p>
 
 </div>
 </div>
@@ -583,9 +527,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00074">74</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__arbitrator_8h_source.html#l00070">70</a> of file <a class="el" href="packet__flow__arbitrator_8h_source.html">packet_flow_arbitrator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00041">outgoing_bw()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00036">set_outgoing_bw()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__arbitrator_8h_source.html#l00037">outgoing_bw()</a>, and <a class="el" href="packet__flow__arbitrator_8h_source.html#l00032">set_outgoing_bw()</a>.</p>
 
 </div>
 </div>

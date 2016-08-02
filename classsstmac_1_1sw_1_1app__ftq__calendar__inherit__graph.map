@@ -1,4 +1,4 @@
 <map id="sstmac::sw::app_ftq_calendar" name="sstmac::sw::app_ftq_calendar">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__ftq__calendar.html" title="{sstmac::sw::task_ftq\l_calendar\n|# head_\l# tail_\l# max_tick_\l|+ task_ftq_calendar()\l+ ~task_ftq_calendar()\l+ collect()\l+ to_string()\l+ dump()\l}" alt="" coords="23,204,189,384"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1ftq__epoch.html" title="{sstmac::sw::ftq_epoch\n|# totals_\l|+ ftq_epoch()\l+ ~ftq_epoch()\l+ collect()\l+ init()\l+ event_time()\l+ set_event_time()\l}" alt="" coords="27,5,185,156"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__ftq__calendar.html" title="{sstmac::sw::task_ftq\l_calendar\n|# head_\l# tail_\l# max_tick_\l|+ task_ftq_calendar()\l+ ~task_ftq_calendar()\l+ collect()\l+ to_string()\l+ dump()\l}" alt="" coords="22,204,175,384"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1ftq__epoch.html" title="{sstmac::sw::ftq_epoch\n|# totals_\l|+ ftq_epoch()\l+ ~ftq_epoch()\l+ collect()\l+ init()\l+ event_time()\l+ set_event_time()\l}" alt="" coords="21,5,176,156"/>
 </map>

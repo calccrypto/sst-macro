@@ -1,9 +1,9 @@
 <map id="sstmac::hw::butterfly::ndimensions" name="sstmac::hw::butterfly::ndimensions">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#ac0fa3c40318c958df972cdc5b9f09ce7" title="Compute coordinates (e.g. " alt="" coords="207,5,393,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a9ea0e2fc322754b034c775606b625f6a" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_ejection_switch" alt="" coords="199,165,401,221"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#a5fc551885f54f826bfa6cdb163479248" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_injection_switch" alt="" coords="199,85,401,141"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1structured__topology.html#adf96e2ed4ca8f50f76dace40ab69fc24" title="sstmac::hw::structured\l_topology::productive_paths" alt="" coords="201,246,399,287"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="449,88,652,144"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a5cbb74f77d1c7a523c31e9e5e6ba30f0" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="451,171,650,213"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="471,237,630,278"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#ac0fa3c40318c958df972cdc5b9f09ce7" title="Compute coordinates (e.g. " alt="" coords="203,5,382,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a9ea0e2fc322754b034c775606b625f6a" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_ejection_switch" alt="" coords="199,165,387,221"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#a5fc551885f54f826bfa6cdb163479248" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_injection_switch" alt="" coords="199,85,387,141"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1structured__topology.html#a9fa3dd12eef2dddde3d0a759fe31bb7c" title="sstmac::hw::structured\l_topology::productive_paths" alt="" coords="200,245,385,286"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="435,88,623,144"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a9e03a48429fb1862c587fe1c345d8610" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="437,171,620,213"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="451,237,607,278"/>
 </map>

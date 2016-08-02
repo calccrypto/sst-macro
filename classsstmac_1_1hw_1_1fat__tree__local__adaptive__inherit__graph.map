@@ -1,0 +1,6 @@
+<map id="sstmac::hw::fat_tree_local_adaptive" name="sstmac::hw::fat_tree_local_adaptive">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1fat__tree.html" title="The fat tree network generates a k&#45;ary fat tree with l tiers. " alt="" coords="19,968,203,1236"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html" title="{sstmac::hw::abstract\l_fat_tree\n|# l_\l# k_\l# numleafswitches_\l# toplevel_\l|+ name()\l+ l()\l+ k()\l+ init_factory_params()\l+ ndimensions()\l+ diameter()\l+ num_leaf_switches()\l+ nodes_connected_to\l_injection_switch()\l+ nodes_connected_to\l_ejection_switch()\l+ pow()\l# nodes_connected_to\l_switch()\l}" alt="" coords="33,593,189,920"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,131,216,545"/>
+<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="75,5,146,83"/>
+</map>

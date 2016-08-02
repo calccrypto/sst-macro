@@ -1,8 +1,8 @@
 <map id="sumi::sumi_transport::~sumi_transport" name="sumi::sumi_transport::~sumi_transport">
-<area shape="rect" id="node2" href="$classsumi_1_1sumi__transport.html#a672ef043d497a4850d1acf02aaf305c5" title="sumi::sumi_transport\l::block_until_message" alt="" coords="203,5,361,47"/>
-<area shape="rect" id="node3" href="$classsumi_1_1sumi__transport.html#a6014f6362795aefcf8b379012ddff4ea" title="Block on a collective of a particular type and tag until that collective is complete. " alt="" coords="207,71,357,112"/>
-<area shape="rect" id="node4" href="$classsumi_1_1sumi__transport.html#a4ef924fde4281155918254681f442b3d" title="sumi::sumi_transport\l::cq_notify" alt="" coords="207,136,357,177"/>
-<area shape="rect" id="node5" href="$classsumi_1_1sumi__transport.html#a5bac4af31484a03d413dffc3ba2e6762" title="sumi::sumi_transport\l::handle" alt="" coords="207,201,357,243"/>
-<area shape="rect" id="node6" href="$classsumi_1_1sumi__transport.html#acec665bbe58565bfbbe909c934e7c4b7" title="sumi::sumi_transport\l::ping_timeout" alt="" coords="207,267,357,308"/>
-<area shape="rect" id="node7" href="$classsumi_1_1sumi__transport.html#ac257f939f8978414c562d0d793804466" title="sumi::sumi_transport\l::wall_time" alt="" coords="207,332,357,373"/>
+<area shape="rect" id="node2" href="$classsumi_1_1sumi__transport.html#a672ef043d497a4850d1acf02aaf305c5" title="sumi::sumi_transport\l::block_until_message" alt="" coords="197,5,349,47"/>
+<area shape="rect" id="node3" href="$classsumi_1_1sumi__transport.html#a6014f6362795aefcf8b379012ddff4ea" title="Block on a collective of a particular type and tag until that collective is complete. " alt="" coords="201,71,345,112"/>
+<area shape="rect" id="node4" href="$classsumi_1_1sumi__transport.html#a4ef924fde4281155918254681f442b3d" title="sumi::sumi_transport\l::cq_notify" alt="" coords="201,136,345,177"/>
+<area shape="rect" id="node5" href="$classsumi_1_1sumi__transport.html#a5bac4af31484a03d413dffc3ba2e6762" title="sumi::sumi_transport\l::handle" alt="" coords="201,201,345,243"/>
+<area shape="rect" id="node6" href="$classsumi_1_1sumi__transport.html#acec665bbe58565bfbbe909c934e7c4b7" title="sumi::sumi_transport\l::ping_timeout" alt="" coords="201,267,345,308"/>
+<area shape="rect" id="node7" href="$classsumi_1_1sumi__transport.html#ac257f939f8978414c562d0d793804466" title="sumi::sumi_transport\l::wall_time" alt="" coords="201,332,345,373"/>
 </map>

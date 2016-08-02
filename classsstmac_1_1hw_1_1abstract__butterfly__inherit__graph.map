@@ -1,6 +1,6 @@
 <map id="sstmac::hw::abstract_butterfly" name="sstmac::hw::abstract_butterfly">
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1butterfly.html" title="{sstmac::hw::butterfly\n|# last_col_index_start_\l|+ to_string()\l+ init_factory_params()\l+ ~butterfly()\l+ last_col_index_start()\l+ num_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ switch_number()\l+ connect_objects()\l+ endpoint_to_ejection\l_switch()\land 6 more...\l# compute_switch_coords()\l}" alt="" coords="5,939,208,1192"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="" coords="232,939,435,1192"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="107,131,333,560"/>
-<area shape="rect" id="node3" href="$classtopology.html" title="{topology\n||}" alt="" coords="182,5,258,83"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1butterfly.html" title="{sstmac::hw::butterfly\n|# last_col_index_start_\l|+ to_string()\l+ init_factory_params()\l+ ~butterfly()\l+ last_col_index_start()\l+ num_switches()\l+ minimal_route_to_coords()\l+ minimal_distance()\l+ switch_number()\l+ connect_objects()\l+ endpoint_to_ejection\l_switch()\land 6 more...\l# compute_switch_coords()\l}" alt="" coords="5,924,192,1177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1flattened__butterfly.html" title="See High Performance Datacenter Networks by Dennis Abts John Kim For figures/detailed explanation..." alt="" coords="216,924,403,1177"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="99,131,309,545"/>
+<area shape="rect" id="node3" href="$classtopology.html" title="{topology\n||}" alt="" coords="169,5,239,83"/>
 </map>

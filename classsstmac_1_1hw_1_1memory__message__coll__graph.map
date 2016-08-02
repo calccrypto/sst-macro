@@ -1,7 +1,6 @@
 <map id="sstmac::hw::memory_message" name="sstmac::hw::memory_message">
-<area shape="rect" id="node2" href="$classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="696,748,835,928"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="263,432,401,583"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,145,152,267"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1key.html" title="A base type and default (empty) implementation of a handle to block and unblock processes. " alt="" coords="677,329,853,685"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="317,145,496,267"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1message.html" title="A class describing an event. " alt="" coords="13,517,139,624"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1flow.html" title="{sstmac::flow\n||+ unique_id()\l+ byte_length()\l}" alt="" coords="21,376,131,468"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="13,176,139,327"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="5,5,147,127"/>
 </map>

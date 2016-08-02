@@ -1,9 +1,9 @@
 <map id="sumi::parsedumpi::clone_type" name="sumi::parsedumpi::clone_type">
-<area shape="rect" id="node2" href="$classsumi_1_1parsedumpi.html#abb909f2f8b15b4318f22152337003028" title="sumi::parsedumpi::consume\l_params" alt="" coords="275,5,466,47"/>
-<area shape="rect" id="node3" href="$classsumi_1_1parsedumpi.html#a3aa39c032c8b6eb427aa900138878295" title="sumi::parsedumpi::mpi" alt="" coords="292,71,449,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1app.html#aa15f77b7dfba4f198ec6149d5eebd97a" title="sstmac::sw::app::params" alt="" coords="285,122,457,149"/>
-<area shape="rect" id="node5" href="$classsumi_1_1parsedumpi.html#a0d5a9aa711af36a8dbd996c8632d477a" title="sumi::parsedumpi::parsedumpi" alt="" coords="267,173,475,199"/>
-<area shape="rect" id="node8" href="$classsumi_1_1parsedumpi.html#a62d9b600e9248bfe4cadab83ec2ee7d8" title="Parse the tracefile. " alt="" coords="257,223,484,250"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1app.html#acbdbc722bb8a4f574dc2bad17346a3df" title="sstmac::sw::app::app" alt="" coords="532,143,681,170"/>
-<area shape="rect" id="node7" href="$classsumi_1_1parsedumpi.html#af65b2d81ae3c14514b65a9ce1c9e9804" title="Wait! That&#39;s not good news at all! " alt="" coords="539,195,674,236"/>
+<area shape="rect" id="node2" href="$classsumi_1_1parsedumpi.html#abb909f2f8b15b4318f22152337003028" title="sumi::parsedumpi::consume\l_params" alt="" coords="265,5,451,47"/>
+<area shape="rect" id="node3" href="$classsumi_1_1parsedumpi.html#a3aa39c032c8b6eb427aa900138878295" title="sumi::parsedumpi::mpi" alt="" coords="281,71,435,98"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1app.html#aa15f77b7dfba4f198ec6149d5eebd97a" title="sstmac::sw::app::params" alt="" coords="273,122,443,149"/>
+<area shape="rect" id="node5" href="$classsumi_1_1parsedumpi.html#a0d5a9aa711af36a8dbd996c8632d477a" title="sumi::parsedumpi::parsedumpi" alt="" coords="258,173,458,199"/>
+<area shape="rect" id="node8" href="$classsumi_1_1parsedumpi.html#a62d9b600e9248bfe4cadab83ec2ee7d8" title="Parse the tracefile. " alt="" coords="249,223,467,250"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1app.html#acbdbc722bb8a4f574dc2bad17346a3df" title="sstmac::sw::app::app" alt="" coords="515,143,663,170"/>
+<area shape="rect" id="node7" href="$classsumi_1_1parsedumpi.html#af65b2d81ae3c14514b65a9ce1c9e9804" title="Wait! That&#39;s not good news at all! " alt="" coords="522,195,655,236"/>
 </map>

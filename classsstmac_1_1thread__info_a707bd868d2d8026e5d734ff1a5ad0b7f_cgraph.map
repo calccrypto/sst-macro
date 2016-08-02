@@ -1,4 +1,4 @@
 <map id="sstmac::thread_info::current_physical_thread_id" name="sstmac::thread_info::current_physical_thread_id">
-<area shape="rect" id="node2" href="$classsstmac_1_1thread__info.html#a8bdd785d0dcd1ec6bf7ab1f9e9558969" title="sstmac::thread_info\l::kernel_space_thread_id" alt="" coords="252,5,433,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1thread__info.html#a8fddaa6d399dbf239595850c5c643ebb" title="sstmac::thread_info\l::user_space_thread_id" alt="" coords="258,71,427,112"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1thread__info.html#a8bdd785d0dcd1ec6bf7ab1f9e9558969" title="sstmac::thread_info\l::kernel_space_thread_id" alt="" coords="239,5,405,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1thread__info.html#a8fddaa6d399dbf239595850c5c643ebb" title="sstmac::thread_info\l::user_space_thread_id" alt="" coords="243,71,401,112"/>
 </map>

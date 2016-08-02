@@ -1,0 +1,12 @@
+<map id="sstmac/hardware/packet_flow/packet_allocator.h" name="sstmac/hardware/packet_flow/packet_allocator.h">
+<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="328,184,451,225"/>
+<area shape="rect" id="node17" href="$packet__flow__fwd_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_fwd.h" alt="" coords="521,95,687,136"/>
+<area shape="rect" id="node18" href="$sst__message__fwd_8h.html" title="sstmac/common/messages\l/sst_message_fwd.h" alt="" coords="727,95,910,136"/>
+<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="559,281,675,307"/>
+<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="549,437,699,464"/>
+<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="101,281,224,307"/>
+<area shape="rect" id="node15" href="$sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="299,273,464,315"/>
+<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="141,363,288,389"/>
+<area shape="rect" id="node19" href="$ptr__type_8h.html" title="sprockit/ptr_type.h" alt="" coords="761,191,892,218"/>
+<area shape="rect" id="node20" href="$refcount__ptr_8h.html" title="sprockit/refcount_ptr.h" alt="" coords="751,281,903,307"/>
+</map>

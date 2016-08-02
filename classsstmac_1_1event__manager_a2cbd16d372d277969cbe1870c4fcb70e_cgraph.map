@@ -1,4 +1,4 @@
 <map id="sstmac::event_manager::nworker" name="sstmac::event_manager::nworker">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__manager.html#ad397d49c323d7915f91399b1b81ed226" title="sstmac::event_manager\l::ipc_schedule" alt="" coords="224,5,395,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__manager.html#a276aea7bc34bf5ce88a2cc1be66077da" title="sstmac::event_manager\l::multithread_schedule" alt="" coords="224,71,395,112"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__manager.html#ad397d49c323d7915f91399b1b81ed226" title="sstmac::event_manager\l::ipc_schedule" alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__manager.html#a276aea7bc34bf5ce88a2cc1be66077da" title="sstmac::event_manager\l::multithread_schedule" alt="" coords="216,71,379,112"/>
 </map>

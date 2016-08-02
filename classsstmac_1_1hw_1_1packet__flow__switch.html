@@ -70,9 +70,9 @@ Inheritance diagram for sstmac::hw::packet_flow_switch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__switch__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__switch_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__switch_inherit__map" id="sstmac_1_1hw_1_1packet__flow__switch_inherit__map">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# params_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l# packet_flow_abstract\l_switch()\l}" alt="" coords="65,131,235,325"/>
-<area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,124,83"/>
-<area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="148,5,323,83"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# packet_size_\l# link_bw\l# ej_bw\l# xbar_output_buffer\l_num_bytes\l# xbar_input_buffer_num\l_bytes\l# xbar_bw\l# row_buffer_num_bytes\l# hop_lat\l# link_arbitrator_template\l# xbar_stats_\l# buf_stats_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l}" alt="" coords="59,131,227,472"/>
+<area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,119,83"/>
+<area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="143,5,306,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -80,30 +80,26 @@ Collaboration diagram for sstmac::hw::packet_flow_switch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__switch__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__switch_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__switch_coll__map" id="sstmac_1_1hw_1_1packet__flow__switch_coll__map">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l# packet_flow_abstract\l_switch()\l}" alt="" coords="229,1394,398,1589"/>
-<area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="242,1100,361,1177"/>
-<area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="43,1100,218,1177"/>
-<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__params.html" title="{sstmac::hw::packet\l_flow_params\n||+ ~packet_flow_params()\l+ to_string()\l}" alt="" coords="487,1085,670,1192"/>
-<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html" title="{sstmac::hw::packet\l_flow_bandwidth_arbitrator\n||+ arbitrate()\l+ to_string()\l+ ~packet_flow_bandwidth\l_arbitrator()\l+ set_outgoing_bw()\l+ outgoing_bw()\l+ init_noise_model()\l+ partition()\l+ clone()\l+ bytes_sending()\l+ credit_delay()\l# packet_flow_bandwidth\l_arbitrator()\l}" alt="" coords="1201,549,1393,817"/>
-<area shape="rect" id="node26" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html" title="{sstmac::hw::packet\l_flow_NtoM_queue\n||+ ~packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ thread_id()\l+ do_handle_payload()\l+ set_input()\l+ set_output()\l+ handle_credit()\l+ start_message()\l+ init_credits()\land 11 more...\l# handle_routed_payload()\l# send_payload()\l# build_blocked_messages()\l&#45; credit()\l&#45; resize()\l&#45; queue()\l&#45; input_name()\l&#45; output_name()\l&#45; output_handler()\l}" alt="" coords="1908,2680,2124,3051"/>
-<area shape="rect" id="node8" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1647,197,1817,289"/>
-<area shape="rect" id="node14" href="classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="2471,1005,2641,1273"/>
-<area shape="rect" id="node34" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="1483,997,1706,1280"/>
-<area shape="rect" id="node37" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1953,549,2159,817"/>
-<area shape="rect" id="node13" href="classsstmac_1_1stat__spyplot.html" title="this stat_collector class keeps a spy plot " alt="" coords="817,1350,981,1633"/>
-<area shape="rect" id="node18" href="classsstmac_1_1stat__global__int.html" title="{sstmac::stat_global_int\n||+ stat_global_int()\l+ collect()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ clear()\l+ reduce()\l+ init_factory_params()\l+ clone_me()\l+ clone()\l+ set_label()\l# dump()\l# clone_into()\l}" alt="" coords="2795,1357,2965,1625"/>
-<area shape="rect" id="node23" href="classsstmac_1_1hw_1_1stat__bytes__sent_1_1aggregation.html" title="{sstmac::hw::stat_bytes\l_sent::aggregation\n||+ aggregation()\l+ append()\l+ num_counts()\l+ num_entries()\l+ ser_size()\l+ max_sid()\l+ entries()\l}" alt="" coords="2763,1049,2923,1229"/>
-<area shape="rect" id="node30" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="1856,1027,2019,1251"/>
-<area shape="rect" id="node39" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="2278,160,2469,325"/>
-<area shape="rect" id="node10" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="815,461,977,905"/>
-<area shape="rect" id="node27" href="classsstmac_1_1hw_1_1packet__flow__sender.html" title="{sstmac::hw::packet\l_flow_sender\n||+ ~packet_flow_sender()\l+ set_acker()\l+ set_input()\l+ set_output()\l+ init_credits()\l+ num_initial_credits()\l+ handle_payload()\l+ set_event_location()\l+ set_event_location()\l+ set_congestion_spyplot()\l+ accumulate_delay()\l+ set_accumulate_delay()\l+ to_string()\l+ packet_flow_name()\l+ set_update_vc()\l# packet_flow_sender()\l# packet_flow_sender()\l# send_credit()\l# send()\l# do_handle_payload()\l}" alt="" coords="1464,2247,1659,2617"/>
-<area shape="rect" id="node19" href="classsstmac_1_1hw_1_1stat__bytes__sent.html" title="{sstmac::hw::stat_bytes_sent\n|&#45; FRIEND_SERIALIZATION\l|+ stat_bytes_sent()\l+ record()\l+ set_topology()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ reduce()\l+ clone()\l+ clear()\l# clone_into()\l&#45; global_reduce_non_root()\l&#45; collect_buffer_at_root()\l&#45; output_switch()\l&#45; collect_counts_at_root()\l&#45; global_reduce_root()\l}" alt="" coords="2187,1343,2381,1640"/>
-<area shape="rect" id="node25" href="classsstmac_1_1hw_1_1packet__flow__crossbar.html" title="{sstmac::hw::packet\l_flow_crossbar\n||+ packet_flow_crossbar()\l+ packet_flow_crossbar()\l+ do_handle_payload()\l+ set_bytes_sent_collector()\l+ set_byte_hops_collector()\l+ packet_flow_name()\l}" alt="" coords="1770,3113,1971,3279"/>
-<area shape="rect" id="node28" href="classsstmac_1_1hw_1_1packet__flow__handler.html" title="{sstmac::hw::packet\l_flow_handler\n||+ packet_flow_handler()\l+ to_string()\l+ ~packet_flow_handler()\l+ handle()\l+ handle_credit()\l+ handle_payload()\l+ thread_id()\l}" alt="" coords="1436,2004,1620,2184"/>
-<area shape="rect" id="node29" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="1420,1717,1617,1941"/>
-<area shape="rect" id="node33" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="1459,1357,1639,1625"/>
-<area shape="rect" id="node31" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="2191,579,2369,788"/>
-<area shape="rect" id="node38" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="2131,197,2253,289"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l}" alt="" coords="645,1188,801,1353"/>
+<area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="620,777,733,854"/>
+<area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="323,777,486,854"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n||+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="1187,740,1347,891"/>
+<area shape="rect" id="node16" href="classsstmac_1_1hw_1_1packet__flow__sender.html" title="{sstmac::hw::packet\l_flow_sender\n||+ ~packet_flow_sender()\l+ set_acker()\l+ set_input()\l+ set_output()\l+ init_credits()\l+ num_initial_credits()\l+ handle_payload()\l+ set_event_location()\l+ set_event_location()\l+ set_stat_collector()\l+ to_string()\l+ packet_flow_name()\l+ set_update_vc()\l# packet_flow_sender()\l# packet_flow_sender()\l# send_credit()\l# send()\l# do_handle_payload()\l}" alt="" coords="1225,2323,1392,2664"/>
+<area shape="rect" id="node6" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1312,197,1468,289"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html" title="{sstmac::hw::packet\l_flow_bandwidth_arbitrator\n||+ arbitrate()\l+ to_string()\l+ ~packet_flow_bandwidth\l_arbitrator()\l+ set_outgoing_bw()\l+ outgoing_bw()\l+ init_noise_model()\l+ partition()\l+ clone()\l+ bytes_sending()\l+ credit_delay()\l# packet_flow_bandwidth\l_arbitrator()\l}" alt="" coords="809,681,987,949"/>
+<area shape="rect" id="node23" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="2006,1129,2209,1412"/>
+<area shape="rect" id="node27" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1814,681,2003,949"/>
+<area shape="rect" id="node32" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="1431,1137,1610,1405"/>
+<area shape="rect" id="node15" href="classsstmac_1_1hw_1_1packet__flow__NtoM__queue.html" title="{sstmac::hw::packet\l_flow_NtoM_queue\n||+ ~packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ packet_flow_NtoM_queue()\l+ thread_id()\l+ do_handle_payload()\l+ set_input()\l+ set_output()\l+ handle_credit()\l+ start_message()\l+ init_credits()\land 11 more...\l# handle_routed_payload()\l# send_payload()\l# build_blocked_messages()\l&#45; credit()\l&#45; resize()\l&#45; queue()\l&#45; input_name()\l&#45; output_name()\l&#45; output_handler()\l}" alt="" coords="1649,2727,1851,3097"/>
+<area shape="rect" id="node19" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="2550,1159,2705,1383"/>
+<area shape="rect" id="node29" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="1492,160,1669,325"/>
+<area shape="rect" id="node10" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="1012,593,1163,1037"/>
+<area shape="rect" id="node14" href="classsstmac_1_1hw_1_1packet__flow__crossbar.html" title="{sstmac::hw::packet\l_flow_crossbar\n||+ packet_flow_crossbar()\l+ packet_flow_crossbar()\l+ packet_flow_name()\l}" alt="" coords="1665,3160,1835,3281"/>
+<area shape="rect" id="node17" href="classsstmac_1_1hw_1_1packet__flow__handler.html" title="{sstmac::hw::packet\l_flow_handler\n||+ packet_flow_handler()\l+ to_string()\l+ ~packet_flow_handler()\l+ handle()\l+ handle_credit()\l+ handle_payload()\l+ thread_id()\l}" alt="" coords="2508,2093,2677,2273"/>
+<area shape="rect" id="node18" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="2533,1820,2722,2044"/>
+<area shape="rect" id="node22" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="2253,1475,2421,1743"/>
+<area shape="rect" id="node20" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="2617,711,2782,920"/>
+<area shape="rect" id="node28" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="2124,197,2245,289"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -155,29 +151,38 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ae0d3dd980260a1a5fa71aaeae3479087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac841345403c94592f34f2eca2015c475"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#ac841345403c94592f34f2eca2015c475">connect_ejector</a> (int src_outport, int dst_inport, <a class="el" href="classsstmac_1_1event__handler.html">event_handler</a> *<a class="el" href="classsstmac_1_1hw_1_1nic.html">nic</a>)</td></tr>
 <tr class="separator:ac841345403c94592f34f2eca2015c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html">sstmac::hw::packet_flow_abstract_switch</a></td></tr>
-<tr class="memitem:a36222352ff3aba349e75baa00ebea194 inherit pro_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a36222352ff3aba349e75baa00ebea194">packet_flow_abstract_switch</a> ()</td></tr>
-<tr class="separator:a36222352ff3aba349e75baa00ebea194 inherit pro_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a002ee93dc3d3f5c2a4cdb42c90ef4d02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1stat__spyplot.html">stat_spyplot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#a002ee93dc3d3f5c2a4cdb42c90ef4d02">congestion_spyplot_</a></td></tr>
-<tr class="separator:a002ee93dc3d3f5c2a4cdb42c90ef4d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490568369b582d322f45c5addad75652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1stat__bytes__sent.html">stat_bytes_sent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#a490568369b582d322f45c5addad75652">bytes_sent_</a></td></tr>
-<tr class="separator:a490568369b582d322f45c5addad75652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c6a0b05efe6ef13e977d80b89222eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1stat__global__int.html">stat_global_int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#a1c6a0b05efe6ef13e977d80b89222eba">byte_hops_</a></td></tr>
-<tr class="separator:a1c6a0b05efe6ef13e977d80b89222eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13430bd957f446899073f1789e83b79"><td class="memItemLeft" align="right" valign="top">sprockit::sim_parameters *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#ae13430bd957f446899073f1789e83b79">params_</a></td></tr>
+<tr class="separator:ae13430bd957f446899073f1789e83b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef145503557ca3818e8d951c2377d524"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classsstmac_1_1hw_1_1packet__flow__sender.html">packet_flow_sender</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#aef145503557ca3818e8d951c2377d524">out_buffers_</a></td></tr>
 <tr class="separator:aef145503557ca3818e8d951c2377d524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5433ec858df0e94d5e7290e21a14e422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__crossbar.html">packet_flow_crossbar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#a5433ec858df0e94d5e7290e21a14e422">xbar_</a></td></tr>
 <tr class="separator:a5433ec858df0e94d5e7290e21a14e422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56113861e735ade738c833cec6ad2378"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#a56113861e735ade738c833cec6ad2378">acc_delay_</a></td></tr>
-<tr class="separator:a56113861e735ade738c833cec6ad2378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb57bc94e09218e001e8d830fd97f068"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__switch.html#acb57bc94e09218e001e8d830fd97f068">packet_size_</a></td></tr>
-<tr class="separator:acb57bc94e09218e001e8d830fd97f068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html">sstmac::hw::packet_flow_abstract_switch</a></td></tr>
-<tr class="memitem:ab41717cb325f7c5598a60beccb2582a4 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__params.html">packet_flow_params</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ab41717cb325f7c5598a60beccb2582a4">params_</a></td></tr>
-<tr class="separator:ab41717cb325f7c5598a60beccb2582a4 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50b9212c5c7dbc1be93bc2f8e3157bc inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ad50b9212c5c7dbc1be93bc2f8e3157bc">packet_size_</a></td></tr>
+<tr class="separator:ad50b9212c5c7dbc1be93bc2f8e3157bc inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ad91c405379a06eed6da56a6b5c47f inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a75ad91c405379a06eed6da56a6b5c47f">link_bw</a></td></tr>
+<tr class="separator:a75ad91c405379a06eed6da56a6b5c47f inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39182cbdc8ffa3ffc2899a49979b92b1 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a39182cbdc8ffa3ffc2899a49979b92b1">ej_bw</a></td></tr>
+<tr class="separator:a39182cbdc8ffa3ffc2899a49979b92b1 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1bca5e36ec05edf70615d792288b4a inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ada1bca5e36ec05edf70615d792288b4a">xbar_output_buffer_num_bytes</a></td></tr>
+<tr class="separator:ada1bca5e36ec05edf70615d792288b4a inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee3b75249969ea55275731daa6376fd inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a4ee3b75249969ea55275731daa6376fd">xbar_input_buffer_num_bytes</a></td></tr>
+<tr class="separator:a4ee3b75249969ea55275731daa6376fd inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9bf541ff0ad1b143ec0713f68059be inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#acd9bf541ff0ad1b143ec0713f68059be">xbar_bw</a></td></tr>
+<tr class="separator:acd9bf541ff0ad1b143ec0713f68059be inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e49e1194a3044e3654c16e36d9524c inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a00e49e1194a3044e3654c16e36d9524c">row_buffer_num_bytes</a></td></tr>
+<tr class="separator:a00e49e1194a3044e3654c16e36d9524c inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91520c24da0a0266a2437a3f3e9b5dcd inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1timestamp.html">timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a91520c24da0a0266a2437a3f3e9b5dcd">hop_lat</a></td></tr>
+<tr class="separator:a91520c24da0a0266a2437a3f3e9b5dcd inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bd4b2c0cc7b010155e638aad97e61d inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html">packet_flow_bandwidth_arbitrator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ab8bd4b2c0cc7b010155e638aad97e61d">link_arbitrator_template</a></td></tr>
+<tr class="separator:ab8bd4b2c0cc7b010155e638aad97e61d inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461ad95e0c77cbfc0e8e448a39923423 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a461ad95e0c77cbfc0e8e448a39923423">xbar_stats_</a></td></tr>
+<tr class="separator:a461ad95e0c77cbfc0e8e448a39923423 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b0a101a0fca6c4e8308460d5a0bf13 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#aa1b0a101a0fca6c4e8308460d5a0bf13">buf_stats_</a></td></tr>
+<tr class="separator:aa1b0a101a0fca6c4e8308460d5a0bf13 inherit pro_attribs_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -193,7 +198,7 @@ Private Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A switch in the network that arbitrates/routes packet_trains to the next link in the network. </p>
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00098">98</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00078">78</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0515f564d3126399168ff6dc080fbf98"></a>
 <div class="memitem">
@@ -604,19 +609,9 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a961b50bee3e27ad7681d0f134bca50d6">sstmac::hw::packet_flow_abstract_switch</a>.</p>
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00129">129</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00109">109</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00038">sstmac::hw::packet_flow_params::to_string()</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__switch_a5fd125e36c812fb04bb07cd06670bf5e_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__switch_a5fd125e36c812fb04bb07cd06670bf5e_cgraph" alt=""/></div>
-<map name="classsstmac_1_1hw_1_1packet__flow__switch_a5fd125e36c812fb04bb07cd06670bf5e_cgraph" id="classsstmac_1_1hw_1_1packet__flow__switch_a5fd125e36c812fb04bb07cd06670bf5e_cgraph">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__params.html#a3ac510680a7f3d4c74bd1beba7183afd" title="sstmac::hw::packet\l_flow_params::to_string" alt="" coords="193,13,364,54"/>
-</map>
-</div>
-</p>
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00059">sstmac::hw::packet_flow_abstract_switch::xbar_input_buffer_num_bytes</a>.</p>
 
 </div>
 </div>
@@ -782,94 +777,6 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a56113861e735ade738c833cec6ad2378"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sstmac::hw::packet_flow_switch::acc_delay_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00188">188</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1c6a0b05efe6ef13e977d80b89222eba"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1stat__global__int.html">stat_global_int</a>* sstmac::hw::packet_flow_switch::byte_hops_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00182">182</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a490568369b582d322f45c5addad75652"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1hw_1_1stat__bytes__sent.html">stat_bytes_sent</a>* sstmac::hw::packet_flow_switch::bytes_sent_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00181">181</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a002ee93dc3d3f5c2a4cdb42c90ef4d02"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsstmac_1_1stat__spyplot.html">stat_spyplot</a>* sstmac::hw::packet_flow_switch::congestion_spyplot_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00180">180</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aef145503557ca3818e8d951c2377d524"></a>
 <div class="memitem">
 <div class="memproto">
@@ -888,11 +795,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00184">184</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00162">162</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acb57bc94e09218e001e8d830fd97f068"></a>
+<a class="anchor" id="ae13430bd957f446899073f1789e83b79"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -900,7 +807,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int sstmac::hw::packet_flow_switch::packet_size_</td>
+          <td class="memname">sprockit::sim_parameters* sstmac::hw::packet_flow_switch::params_</td>
         </tr>
       </table>
   </td>
@@ -910,7 +817,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00190">190</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00160">160</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +839,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00186">186</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00164">164</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>

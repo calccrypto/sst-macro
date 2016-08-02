@@ -1,4 +1,4 @@
 <map id="sstmac::event_callback_1_args&lt; Cls, Fxn, Arg1 &gt;" name="sstmac::event_callback_1_args&lt; Cls, Fxn, Arg1 &gt;">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__callback.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="18,321,183,443"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="19,5,182,273"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__callback.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="14,321,174,443"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="17,5,171,273"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="sstmac::transport_message::ImplementSerializable" name="sstmac::transport_message::ImplementSerializable">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="262,5,429,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1transport__message.html#ac1456a208bebe4a36ceba860c96f52f8" title="Serialize this message during parallel simulation. " alt="" coords="248,71,443,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1transport__message.html#ab8b77b7f04e1fb790d2949023940c0bf" title="sstmac::transport_message\l::transport_message" alt="" coords="248,136,443,177"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#ab0cc1395f372d3ed03da301396580dd3" title="sstmac::hw::network\l_message::aid" alt="" coords="257,5,401,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="251,71,408,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1transport__message.html#ac1456a208bebe4a36ceba860c96f52f8" title="sstmac::transport_message\l::serialize_order" alt="" coords="237,136,421,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1transport__message.html#a0405aa61dd923bf08e346c84769914a0" title="sstmac::transport_message\l::transport_message" alt="" coords="237,201,421,243"/>
 </map>

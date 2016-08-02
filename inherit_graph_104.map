@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structsstmac_1_1event__manager_1_1stats__entry.html" title="sstmac::event_manager\l::stats_entry" alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" href="$classsstmac_1_1event__queue__entry.html" title="sstmac::event_queue\l_entry" alt="" coords="5,163,152,204"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1generic__event.html" title="sstmac::generic_event" alt="" coords="200,78,355,105"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1handler__event__queue__entry.html" title="sstmac::handler_event\l_queue_entry" alt="" coords="200,129,355,171"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1timeout__event.html" title="sstmac::sw::timeout\l_event" alt="" coords="207,195,348,236"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1unblock__event.html" title="sstmac::sw::unblock\l_event" alt="" coords="206,260,349,301"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1generic__event__0__args.html" title="sstmac::generic_event\l_0_args\&lt; Cls, Fxn \&gt;" alt="" coords="414,5,569,47"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1generic__event__1__args.html" title="sstmac::generic_event\l_1_args\&lt; Cls, Fxn, Arg1 \&gt;" alt="" coords="403,71,580,112"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1generic__event__2__args.html" title="sstmac::generic_event\l_2_args\&lt; Cls, Fxn, Arg1,\l Arg2 \&gt;" alt="" coords="407,135,576,191"/>
 </map>

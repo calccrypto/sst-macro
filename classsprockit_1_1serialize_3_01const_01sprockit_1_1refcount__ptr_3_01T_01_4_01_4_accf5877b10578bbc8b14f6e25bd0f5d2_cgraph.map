@@ -1,8 +1,8 @@
 <map id="sprockit::serialize&lt; const sprockit::refcount_ptr&lt; T &gt; &gt;::operator()" name="sprockit::serialize&lt; const sprockit::refcount_ptr&lt; T &gt; &gt;::operator()">
-<area shape="rect" id="node2" href="$classsprockit_1_1refcount__ptr.html#a60b088415f5f0ef06f21e4aa61929c49" title="sprockit::refcount\l_ptr::get" alt="" coords="233,39,361,80"/>
-<area shape="rect" id="node3" href="$namespacesprockit.html#a5b6176baf48eed19800cc2d0d2c79ea0" title="sprockit::serialize\l_intrusive_ptr" alt="" coords="232,104,361,145"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1serializer.html#af384996847ab317a2a52b0789e1c1c77" title="sprockit::serializer\l::mode" alt="" coords="415,5,550,47"/>
-<area shape="rect" id="node5" href="$namespacesprockit_1_1pvt.html#a5d8babab7f7f6c6e28517f1733b0440b" title="sprockit::pvt::pack\l_serializable" alt="" coords="417,71,549,112"/>
-<area shape="rect" id="node6" href="$namespacesprockit_1_1pvt.html#a942a6884e90b29221022e2b11326db11" title="sprockit::pvt::size\l_serializable" alt="" coords="419,136,546,177"/>
-<area shape="rect" id="node7" href="$namespacesprockit_1_1pvt.html#a0f643f616a83c72c6be6a3f247f4733d" title="sprockit::pvt::unpack\l_serializable" alt="" coords="409,201,556,243"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1refcount__ptr.html#a60b088415f5f0ef06f21e4aa61929c49" title="sprockit::refcount\l_ptr::get" alt="" coords="225,39,347,80"/>
+<area shape="rect" id="node3" href="$namespacesprockit.html#a5b6176baf48eed19800cc2d0d2c79ea0" title="sprockit::serialize\l_intrusive_ptr" alt="" coords="224,104,348,145"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1serializer.html#af384996847ab317a2a52b0789e1c1c77" title="sprockit::serializer\l::mode" alt="" coords="404,5,532,47"/>
+<area shape="rect" id="node5" href="$namespacesprockit_1_1pvt.html#a5d8babab7f7f6c6e28517f1733b0440b" title="sprockit::pvt::pack\l_serializable" alt="" coords="403,71,533,112"/>
+<area shape="rect" id="node6" href="$namespacesprockit_1_1pvt.html#a942a6884e90b29221022e2b11326db11" title="sprockit::pvt::size\l_serializable" alt="" coords="405,136,531,177"/>
+<area shape="rect" id="node7" href="$namespacesprockit_1_1pvt.html#a0f643f616a83c72c6be6a3f247f4733d" title="sprockit::pvt::unpack\l_serializable" alt="" coords="396,201,540,243"/>
 </map>

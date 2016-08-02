@@ -1,9 +1,9 @@
 <map id="sstmac::sw::operating_system::set_addr" name="sstmac::sw::operating_system::set_addr">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#aaadd66fe067d3bf3f915f292eff1a70a" title="sstmac::sw::operating\l_system::add_blocker" alt="" coords="242,5,399,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a21c7cf2a4dea7311674f0861770019cb" title="sstmac::sw::operating\l_system::addr" alt="" coords="243,71,398,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1operating__system.html#a96940aa8b44bff021fb5f956e6973a84" title="sstmac::sw::operating\l_system::free_thread_stack" alt="" coords="223,136,418,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="239,201,402,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#a7bb9cc11d130e8ca7fe7cacd72b9bb55" title="sstmac::sw::operating\l_system::remove_blocker" alt="" coords="231,267,411,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1operating__system.html#a763f6c85b325b5a19c225ee8750c6d9d" title="sstmac::sw::operating\l_system::schedule_timeout" alt="" coords="226,332,415,373"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1operating__system.html#a9397c3eb4251bb36ec52cf1cab7fb97c" title="sstmac::sw::operating\l_system::schedule_unblock_now" alt="" coords="208,397,433,439"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#aaadd66fe067d3bf3f915f292eff1a70a" title="sstmac::sw::operating\l_system::add_blocker" alt="" coords="236,5,387,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a21c7cf2a4dea7311674f0861770019cb" title="sstmac::sw::operating\l_system::addr" alt="" coords="236,71,387,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1operating__system.html#a96940aa8b44bff021fb5f956e6973a84" title="sstmac::sw::operating\l_system::free_thread_stack" alt="" coords="219,136,403,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="234,201,389,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#a7bb9cc11d130e8ca7fe7cacd72b9bb55" title="sstmac::sw::operating\l_system::remove_blocker" alt="" coords="225,267,397,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1operating__system.html#a763f6c85b325b5a19c225ee8750c6d9d" title="sstmac::sw::operating\l_system::schedule_timeout" alt="" coords="220,332,403,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1operating__system.html#a9397c3eb4251bb36ec52cf1cab7fb97c" title="sstmac::sw::operating\l_system::schedule_unblock_now" alt="" coords="204,397,419,439"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sstmac::sw::thread::set_api" name="sstmac::sw::thread::set_api">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1thread.html#a62dfa6d693fcf933f98965a5db54326b" title="sstmac::sw::thread::aid" alt="" coords="189,5,351,32"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880" title="sstmac::sw::thread\l::build_api" alt="" coords="202,57,338,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1thread.html#ab66a5144c1ffe6cf186d6fa5c821ec0b" title="sstmac::sw::thread\l::init_os" alt="" coords="202,122,338,163"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1thread.html#a8b18c795fbaf472cbe967539b8d36f49" title="sstmac::sw::thread::os" alt="" coords="191,188,349,215"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1thread.html#a5dc81c60fd203c68347da4b1e60571c7" title="sstmac::sw::thread::env" alt="" coords="399,188,564,215"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1thread.html#a62dfa6d693fcf933f98965a5db54326b" title="sstmac::sw::thread::aid" alt="" coords="188,5,347,32"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#af9779beb47232e299f4e85bd03629880" title="sstmac::sw::thread\l::build_api" alt="" coords="200,57,335,98"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1thread.html#ab66a5144c1ffe6cf186d6fa5c821ec0b" title="sstmac::sw::thread\l::init_os" alt="" coords="200,122,335,163"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1thread.html#a8b18c795fbaf472cbe967539b8d36f49" title="sstmac::sw::thread::os" alt="" coords="189,188,345,215"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1thread.html#aab8e0d5e078c3d520abd7635c968ffba" title="sstmac::sw::thread::env" alt="" coords="395,188,557,215"/>
 </map>

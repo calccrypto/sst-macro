@@ -1,4 +1,4 @@
 <map id="sprockit::debug" name="sprockit::debug">
-<area shape="rect" id="node4" href="$classsprockit_1_1debug__prefix__fxn.html" title="{sprockit::debug_prefix_fxn\n||+ str()\l+ ~debug_prefix_fxn()\l}" alt="" coords="283,182,468,274"/>
-<area shape="rect" id="node5" href="$classsprockit_1_1debug__int.html" title="{sprockit::debug_int\n||+ debug_int()\l+ debug_int()\l+ operator~()\l+ init()\l+ operator=()\l+ operator bool()\l+ to_string()\l}" alt="" coords="493,145,631,311"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1debug__prefix__fxn.html" title="{sprockit::debug_prefix_fxn\n||+ str()\l+ ~debug_prefix_fxn()\l}" alt="" coords="275,182,450,274"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1debug__int.html" title="{sprockit::debug_int\n||+ debug_int()\l+ debug_int()\l+ operator~()\l+ init()\l+ operator=()\l+ operator bool()\l+ to_string()\l}" alt="" coords="474,145,606,311"/>
 </map>

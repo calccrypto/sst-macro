@@ -1,5 +1,6 @@
 <map id="sstmac/hardware/interconnect/switch_interconnect.h" name="sstmac/hardware/interconnect/switch_interconnect.h">
-<area shape="rect" id="node2" href="$simple__interconnect_8h.html" title="sstmac/hardware/analytic\l/simple/simple_interconnect.h" alt="" coords="8,95,215,136"/>
-<area shape="rect" id="node3" href="$simple__nic_8h.html" title="sstmac/hardware/analytic\l/simple/simple_nic.h" alt="" coords="20,184,203,225"/>
-<area shape="rect" id="node4" href="$null__nic_8h.html" title="sstmac/hardware/analytic\l/simple/null_nic.h" alt="" coords="20,273,203,315"/>
+<area shape="rect" id="node2" href="$simple__interconnect_8h.html" title="sstmac/hardware/analytic\l/simple/simple_interconnect.h" alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node5" href="$sdn__launcher_8h.html" title="sstmac/software/launch\l/sdn_launcher.h" alt="" coords="225,95,386,136"/>
+<area shape="rect" id="node3" href="$simple__nic_8h.html" title="sstmac/hardware/analytic\l/simple/simple_nic.h" alt="" coords="17,184,188,225"/>
+<area shape="rect" id="node4" href="$null__nic_8h.html" title="sstmac/hardware/analytic\l/simple/null_nic.h" alt="" coords="17,273,188,315"/>
 </map>

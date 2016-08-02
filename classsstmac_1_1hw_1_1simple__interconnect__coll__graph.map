@@ -1,6 +1,6 @@
 <map id="sstmac::hw::simple_interconnect" name="sstmac::hw::simple_interconnect">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1macro__switch__interconnect.html" title="{switch_interconnect\n||+ macro_switch_interconnect()\l+ init_factory_params()\l+ to_string()\l+ ~macro_switch_interconnect()\l+ set_event_manager()\l+ switch_at()\l+ immediate_send()\l+ write_graph_file()\l+ thread_for_switch()\l+ hop_latency()\l+ lookahead()\l+ event_location()\l+ deadlock_check()\l+ template_switch()\l# set_switch_event_manager()\l}" alt="" coords="127,895,353,1177"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="257,718,404,810"/>
-<area shape="rect" id="node4" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="239,343,377,421"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="5,160,168,604"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1macro__switch__interconnect.html" title="{switch_interconnect\n||+ macro_switch_interconnect()\l+ init_factory_params()\l+ to_string()\l+ ~macro_switch_interconnect()\l+ set_event_manager()\l+ switch_at()\l+ switches()\l+ immediate_send()\l+ write_graph_file()\l+ thread_for_switch()\l+ hop_latency()\l+ lookahead()\l+ event_location()\l+ deadlock_check()\l+ template_switch()\l# set_switch_event_manager()\l}" alt="" coords="121,895,331,1192"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1switch__interconnect__base.html" title="{sstmac::hw::switch\l_interconnect_base\n||# send_delay()\l}" alt="" coords="242,718,378,810"/>
+<area shape="rect" id="node4" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="223,343,351,421"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="5,160,156,604"/>
 </map>

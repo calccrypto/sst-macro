@@ -1,0 +1,4 @@
+<map id="sstmac::hw::packet_flow_sender::set_stat_collector" name="sstmac::hw::packet_flow_sender::set_stat_collector">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#a2a8ea8bc57bce73c83f2ccdd4914ad1c" title="sstmac::hw::packet\l_flow_sender::packet\l_flow_name" alt="" coords="213,5,360,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#a1f009470ac2f90872b9c53754297aa47" title="sstmac::hw::packet\l_flow_sender::to_string" alt="" coords="208,85,365,126"/>
+</map>

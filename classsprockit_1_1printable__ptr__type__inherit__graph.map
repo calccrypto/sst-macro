@@ -1,10 +1,10 @@
 <map id="sprockit::printable_ptr_type" name="sprockit::printable_ptr_type">
-<area shape="rect" id="node3" href="$classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="431,329,553,583"/>
-<area shape="rect" id="node2" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="427,5,557,141"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1pair__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="5,631,160,987"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1pairpayloadvector.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="185,638,370,979"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1value__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="394,638,590,979"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1vector1__payload.html" title="Network payload consisting of a boost multiarray. " alt="" coords="614,653,791,965"/>
-<area shape="rect" id="node9" href="$classsstmac_1_1wrapper__payload.html" title="Network payload that wraps a raw buffer. " alt="" coords="815,667,998,950"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1bitwisevaluepayload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="377,1035,607,1317"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="410,329,529,583"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="408,5,531,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1pair__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="5,631,152,987"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1pairpayloadvector.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="177,638,351,979"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1value__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="375,638,563,979"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1vector1__payload.html" title="Network payload consisting of a boost multiarray. " alt="" coords="588,653,756,965"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1wrapper__payload.html" title="Network payload that wraps a raw buffer. " alt="" coords="780,667,951,950"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1bitwisevaluepayload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="358,1035,581,1317"/>
 </map>

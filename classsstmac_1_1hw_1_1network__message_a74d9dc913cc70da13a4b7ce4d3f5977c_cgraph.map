@@ -1,6 +1,6 @@
 <map id="sstmac::hw::network_message::set_type" name="sstmac::hw::network_message::set_type">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="209,5,375,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#ac5436c934b01aa5dc8aaf41382d3ed3d" title="sstmac::hw::network\l_message::dest_thread" alt="" coords="207,71,377,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1network__message.html#a82bbf810dd7c3d21e9b416c4589aeaa1" title="sstmac::hw::network\l_message::reverse" alt="" coords="219,136,365,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1network__message.html#a451b59bf467eb5ab1a419d951314675a" title="sstmac::hw::network\l_message::source_thread" alt="" coords="200,201,384,243"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#a2b702107a6fd9882368d828a6e38da42" title="Virtual function to return size. " alt="" coords="205,5,362,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#ac5436c934b01aa5dc8aaf41382d3ed3d" title="sstmac::hw::network\l_message::dest_thread" alt="" coords="204,71,363,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1network__message.html#a82bbf810dd7c3d21e9b416c4589aeaa1" title="sstmac::hw::network\l_message::reverse" alt="" coords="211,136,355,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1network__message.html#a451b59bf467eb5ab1a419d951314675a" title="sstmac::hw::network\l_message::source_thread" alt="" coords="197,201,369,243"/>
 </map>

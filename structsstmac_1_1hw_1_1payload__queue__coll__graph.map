@@ -1,3 +1,3 @@
 <map id="sstmac::hw::payload_queue" name="sstmac::hw::payload_queue">
-<area shape="rect" id="node3" href="$structsstmac_1_1hw_1_1payload__arbitration__slot.html" title="{sstmac::hw::payload\l_arbitration_slot\n||+ payload_arbitration_slot()\l+ clear_port()\l+ push_back()\l}" alt="" coords="184,145,380,267"/>
+<area shape="rect" id="node3" href="$structsstmac_1_1hw_1_1payload__arbitration__slot.html" title="{sstmac::hw::payload\l_arbitration_slot\n||+ payload_arbitration_slot()\l+ clear_port()\l+ push_back()\l}" alt="" coords="176,145,355,267"/>
 </map>

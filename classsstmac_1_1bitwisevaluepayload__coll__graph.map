@@ -1,8 +1,8 @@
 <map id="sstmac::bitwisevaluepayload&lt; T &gt;" name="sstmac::bitwisevaluepayload&lt; T &gt;">
-<area shape="rect" id="node2" href="$classsstmac_1_1value__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="371,817,567,1144"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="131,501,253,755"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,345,136,437"/>
-<area shape="rect" id="node5" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n||+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="6,145,135,281"/>
-<area shape="rect" id="node7" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="160,331,307,452"/>
-<area shape="rect" id="node8" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; value_payload\&lt; T \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="278,575,501,681"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1value__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="355,817,543,1144"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1payload.html" title="Pure abstract base for payload that can be associated with a network send. " alt="" coords="126,501,245,755"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,345,131,437"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n||+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="7,145,129,281"/>
+<area shape="rect" id="node7" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="155,331,296,452"/>
+<area shape="rect" id="node8" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; value_payload\&lt; T \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="269,575,475,681"/>
 </map>

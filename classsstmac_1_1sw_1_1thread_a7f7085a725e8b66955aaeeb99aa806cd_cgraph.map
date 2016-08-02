@@ -1,4 +1,4 @@
 <map id="sstmac::sw::thread::set_affinity" name="sstmac::sw::thread::set_affinity">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1thread.html#a4ce0065191447956331d964681583389" title="sstmac::sw::thread\l::add_affinity" alt="" coords="189,5,325,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#a357f584c470d56b8f9767fbff293b538" title="sstmac::sw::thread\l::zero_affinity" alt="" coords="189,71,325,112"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1thread.html#a4ce0065191447956331d964681583389" title="sstmac::sw::thread\l::add_affinity" alt="" coords="188,5,323,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#a357f584c470d56b8f9767fbff293b538" title="sstmac::sw::thread\l::zero_affinity" alt="" coords="188,71,323,112"/>
 </map>

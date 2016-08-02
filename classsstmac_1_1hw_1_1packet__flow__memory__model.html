@@ -66,8 +66,8 @@ Inheritance diagram for sstmac::hw::packet_flow_memory_model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__memory__model__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__memory__model_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__memory__model_inherit__map" id="sstmac_1_1hw_1_1packet__flow__memory__model_inherit__map">
-<area shape="rect" id="node2" href="classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,13,124,90"/>
-<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l}" alt="" coords="148,5,309,97"/>
+<area shape="rect" id="node2" href="classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,13,116,90"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l}" alt="" coords="140,5,299,97"/>
 </map>
 </div>
 <div class="dynheader">
@@ -75,25 +75,26 @@ Collaboration diagram for sstmac::hw::packet_flow_memory_model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__memory__model__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__memory__model_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__memory__model_coll__map" id="sstmac_1_1hw_1_1packet__flow__memory__model_coll__map">
-<area shape="rect" id="node2" href="classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,2853,124,2930"/>
-<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l}" alt="" coords="116,1934,277,2026"/>
-<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1packetizer.html" title="{sstmac::hw::packetizer\n||+ start()\l+ packetArrived()\l+ sendWhatYouCan()\l+ setNotify()\l+ packetSize()\l+ init_factory_params()\l# bytesArrived()\l&#45; inject()\l&#45; spaceToSend()\l}" alt="" coords="537,2155,707,2349"/>
-<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1packet__flow__memory__packetizer.html" title="{sstmac::hw::packet\l_flow_memory_packetizer\n||+ packet_flow_memory\l_packetizer()\l+ ~packet_flow_memory\l_packetizer()\l+ packet_flow_name()\l+ recv_credit()\l+ recv_packet()\l+ init_factory_params()\l+ finalize_init()\l+ inject()\l+ spaceToSend()\l&#45; handle_payload()\l&#45; init_noise_model()\l}" alt="" coords="1237,2757,1423,3025"/>
-<area shape="rect" id="node37" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html" title="{sstmac::hw::packet\l_flow_bandwidth_arbitrator\n||+ arbitrate()\l+ to_string()\l+ ~packet_flow_bandwidth\l_arbitrator()\l+ set_outgoing_bw()\l+ outgoing_bw()\l+ init_noise_model()\l+ partition()\l+ clone()\l+ bytes_sending()\l+ credit_delay()\l# packet_flow_bandwidth\l_arbitrator()\l}" alt="" coords="1590,2427,1782,2695"/>
-<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1packet__flow__packetizer.html" title="{sstmac::hw::packet\l_flow_packetizer\n||+ handle()\l&#45; recv_credit()\l&#45; recv_packet()\l}" alt="" coords="829,2500,967,2621"/>
-<area shape="rect" id="node10" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1436,197,1605,289"/>
-<area shape="rect" id="node17" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="804,1192,1027,1475"/>
-<area shape="rect" id="node23" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="1937,681,2144,949"/>
-<area shape="rect" id="node28" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="1714,1199,1909,1467"/>
-<area shape="rect" id="node36" href="classsstmac_1_1hw_1_1noise__model.html" title="{sstmac::hw::noise_model\n||+ ~noise_model()\l+ value()\l+ init_factory_params()\l}" alt="" coords="1350,1061,1526,1168"/>
-<area shape="rect" id="node11" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="523,1868,721,2092"/>
-<area shape="rect" id="node12" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="387,1221,550,1445"/>
-<area shape="rect" id="node16" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="591,1537,771,1805"/>
-<area shape="rect" id="node13" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="217,711,395,920"/>
-<area shape="rect" id="node25" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="2015,160,2205,325"/>
-<area shape="rect" id="node19" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="1219,593,1382,1037"/>
-<area shape="rect" id="node24" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="2230,197,2353,289"/>
-<area shape="rect" id="node33" href="classsstmac_1_1hw_1_1recv__cq.html" title="{sstmac::hw::recv_cq\n||+ recv()\l+ recv()\l+ print()\l}" alt="" coords="353,1927,499,2033"/>
+<area shape="rect" id="node2" href="classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,2930,116,3007"/>
+<area shape="rect" id="node3" href="classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l}" alt="" coords="8,2011,167,2103"/>
+<area shape="rect" id="node9" href="classsstmac_1_1hw_1_1packetizer.html" title="{sstmac::hw::packetizer\n||+ start()\l+ packetArrived()\l+ sendWhatYouCan()\l+ setNotify()\l+ packetSize()\l+ init_factory_params()\l# bytesArrived()\l&#45; inject()\l&#45; spaceToSend()\l}" alt="" coords="957,2232,1116,2427"/>
+<area shape="rect" id="node7" href="classsstmac_1_1hw_1_1packet__flow__memory__packetizer.html" title="{sstmac::hw::packet\l_flow_memory_packetizer\n||+ packet_flow_memory\l_packetizer()\l+ ~packet_flow_memory\l_packetizer()\l+ packet_flow_name()\l+ recv_credit()\l+ recv_packet()\l+ init_factory_params()\l+ finalize_init()\l+ inject()\l+ spaceToSend()\l&#45; handle_payload()\l&#45; init_noise_model()\l}" alt="" coords="1500,2835,1675,3103"/>
+<area shape="rect" id="node38" href="classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html" title="{sstmac::hw::packet\l_flow_bandwidth_arbitrator\n||+ arbitrate()\l+ to_string()\l+ ~packet_flow_bandwidth\l_arbitrator()\l+ set_outgoing_bw()\l+ outgoing_bw()\l+ init_noise_model()\l+ partition()\l+ clone()\l+ bytes_sending()\l+ credit_delay()\l# packet_flow_bandwidth\l_arbitrator()\l}" alt="" coords="1803,2504,1982,2772"/>
+<area shape="rect" id="node8" href="classsstmac_1_1hw_1_1packet__flow__packetizer.html" title="{sstmac::hw::packet\l_flow_packetizer\n||+ handle()\l&#45; recv_credit()\l&#45; recv_packet()\l}" alt="" coords="1093,2577,1231,2699"/>
+<area shape="rect" id="node10" href="classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="1473,197,1629,289"/>
+<area shape="rect" id="node17" href="classsstmac_1_1event__manager.html" title="Base type for implementations of an engine that is able to schedule events and advance simulation tim..." alt="" coords="698,1192,901,1475"/>
+<area shape="rect" id="node23" href="classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="2014,681,2203,949"/>
+<area shape="rect" id="node28" href="classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="1962,1199,2141,1467"/>
+<area shape="rect" id="node36" href="classsstmac_1_1hw_1_1noise__model.html" title="{sstmac::hw::noise_model\n||+ ~noise_model()\l+ value()\l+ init_factory_params()\l}" alt="" coords="1597,1061,1767,1168"/>
+<area shape="rect" id="node37" href="classsstmac_1_1hw_1_1packet__allocator.html" title="{sstmac::hw::packet\l_allocator\n||+ new_packet()\l}" alt="" coords="1532,1499,1669,1591"/>
+<area shape="rect" id="node11" href="classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n||+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="942,1945,1131,2169"/>
+<area shape="rect" id="node12" href="classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="1087,1221,1242,1445"/>
+<area shape="rect" id="node16" href="classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="953,1615,1121,1883"/>
+<area shape="rect" id="node13" href="structsstmac_1_1event__loc__id.html" title="{sstmac::event_loc_id\n||+ event_loc_id()\l+ event_loc_id()\l+ event_loc_id()\l+ is_node_id()\l+ is_switch_id()\l+ convert_to_node_id()\l+ convert_to_switch_id()\l+ is_null()\l+ operator=()\l+ operator=()\l}" alt="" coords="941,711,1106,920"/>
+<area shape="rect" id="node25" href="classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="1973,160,2151,325"/>
+<area shape="rect" id="node19" href="classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="1236,593,1387,1037"/>
+<area shape="rect" id="node24" href="classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="2175,197,2296,289"/>
+<area shape="rect" id="node33" href="classsstmac_1_1hw_1_1recv__cq.html" title="{sstmac::hw::recv_cq\n||+ recv()\l+ recv()\l+ print()\l}" alt="" coords="769,2004,913,2111"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -136,7 +137,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00104">104</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00110">110</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a30cc978c846bbfb12b089f1b068b7ead"></a>
 <div class="memitem">
@@ -287,7 +288,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00131">131</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00137">137</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>
@@ -365,16 +366,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00121">121</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00127">127</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__memory__model_8h_source.html#l00043">sstmac::hw::memory_message::max_bw()</a>.</p>
+<p>References <a class="el" href="packet__flow__memory__model_8h_source.html#l00048">sstmac::hw::memory_message::max_bw()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__memory__model_a79ec89335a202c5218f83c8ac5fd380c_cgraph.png" border="0" usemap="#classsstmac_1_1hw_1_1packet__flow__memory__model_a79ec89335a202c5218f83c8ac5fd380c_cgraph" alt=""/></div>
 <map name="classsstmac_1_1hw_1_1packet__flow__memory__model_a79ec89335a202c5218f83c8ac5fd380c_cgraph" id="classsstmac_1_1hw_1_1packet__flow__memory__model_a79ec89335a202c5218f83c8ac5fd380c_cgraph">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1memory__message.html#a3acf86a4b0f87f91cf01b49f07289b4a" title="sstmac::hw::memory\l_message::max_bw" alt="" coords="219,13,365,54"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1memory__message.html#a3acf86a4b0f87f91cf01b49f07289b4a" title="sstmac::hw::memory\l_message::max_bw" alt="" coords="211,13,356,54"/>
 </map>
 </div>
 </p>
@@ -416,7 +417,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00143">143</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00149">149</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +439,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00140">140</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00146">146</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +461,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00142">142</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00148">148</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +483,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00144">144</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00150">150</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +505,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00141">141</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__memory__model_8h_source.html#l00147">147</a> of file <a class="el" href="packet__flow__memory__model_8h_source.html">packet_flow_memory_model.h</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 <map id="sstmac::event_callback" name="sstmac::event_callback">
-<area shape="rect" id="node3" href="$classsstmac_1_1event__callback__1__args.html" title="{sstmac::event_callback\l_1_args\&lt; Cls, Fxn, Arg1 \&gt;\n|&#45; obj_\l&#45; fxn_\l&#45; arg1_\l|+ event_callback_1_args()\l+ handle()\l}" alt="" coords="5,505,196,641"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1event__callback__2__args.html" title="{sstmac::event_callback\l_2_args\&lt; Cls, Fxn, Arg1,\l Arg2 \&gt;\n|&#45; obj_\l&#45; fxn_\l&#45; arg1_\l&#45; arg2_\l|+ event_callback_2_args()\l+ handle()\l}" alt="" coords="220,491,411,656"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1event__callback__instance.html" title="{sstmac::event_callback\l_instance\&lt; Cls, Fxn \&gt;\n|&#45; obj_\l&#45; fxn_\l|+ event_callback_instance()\l+ handle()\l}" alt="" coords="435,513,633,634"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="234,5,397,273"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__callback__1__args.html" title="{sstmac::event_callback\l_1_args\&lt; Cls, Fxn, Arg1 \&gt;\n|&#45; obj_\l&#45; fxn_\l&#45; arg1_\l|+ event_callback_1_args()\l+ handle()\l}" alt="" coords="5,505,183,641"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event__callback__2__args.html" title="{sstmac::event_callback\l_2_args\&lt; Cls, Fxn, Arg1,\l Arg2 \&gt;\n|&#45; obj_\l&#45; fxn_\l&#45; arg1_\l&#45; arg2_\l|+ event_callback_2_args()\l+ handle()\l}" alt="" coords="207,491,381,656"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1event__callback__instance.html" title="{sstmac::event_callback\l_instance\&lt; Cls, Fxn \&gt;\n|&#45; obj_\l&#45; fxn_\l|+ event_callback_instance()\l+ handle()\l}" alt="" coords="405,513,591,634"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="217,5,371,273"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sstmac::location_trace::clone" name="sstmac::location_trace::clone">
-<area shape="rect" id="node2" href="$classsstmac_1_1location__trace.html#ac8565d24b89d69b12806aa65f11e0a99" title="sstmac::location_trace\l::clear" alt="" coords="215,5,376,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1location__trace.html#a1a3eefd5d517699f36fe7a9b5cfef25e" title="sstmac::location_trace\l::clone_me" alt="" coords="215,71,376,112"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1location__trace.html#a159c98189547998add225cc04c0489bb" title="sstmac::location_trace\l::reduce" alt="" coords="215,136,376,177"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="424,71,580,112"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="628,78,801,105"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1location__trace.html#ac8565d24b89d69b12806aa65f11e0a99" title="sstmac::location_trace\l::clear" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1location__trace.html#a1a3eefd5d517699f36fe7a9b5cfef25e" title="sstmac::location_trace\l::clone_me" alt="" coords="208,71,363,112"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1location__trace.html#a159c98189547998add225cc04c0489bb" title="sstmac::location_trace\l::reduce" alt="" coords="208,136,363,177"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="411,71,561,112"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="609,78,779,105"/>
 </map>

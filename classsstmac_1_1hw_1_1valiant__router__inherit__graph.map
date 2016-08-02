@@ -1,6 +1,6 @@
 <map id="sstmac::hw::valiant_router" name="sstmac::hw::valiant_router">
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1ugal__router.html" title="{sstmac::hw::ugal_router\n|# val_threshold_\l# val_preference_factor_\l|+ init_factory_params()\l+ to_string()\l+ route()\l+ finalize_init()\l# initial_step()\l# first_stage_vc()\l# second_stage_vc()\l# zero_stage_vc()\l# num_stages()\l}" alt="" coords="27,903,208,1112"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="{sstmac::hw::minimal\l_router\n||+ ~minimal_router()\l+ route()\l+ to_string()\l+ finalize_init()\l# route()\l}" alt="" coords="45,373,190,524"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n|# regtop_\l|+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="18,131,217,325"/>
-<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="88,5,147,83"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1ugal__router.html" title="{sstmac::hw::ugal_router\n|# val_threshold_\l# val_preference_factor_\l|+ init_factory_params()\l+ to_string()\l+ route()\l+ finalize_init()\l# initial_step()\l# first_stage_vc()\l# second_stage_vc()\l# zero_stage_vc()\l# num_stages()\l}" alt="" coords="25,903,190,1112"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="{sstmac::hw::minimal\l_router\n||+ ~minimal_router()\l+ route()\l+ to_string()\l+ finalize_init()\l# route()\l}" alt="" coords="36,373,179,524"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n|# regtop_\l|+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="14,131,201,325"/>
+<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="80,5,135,83"/>
 </map>

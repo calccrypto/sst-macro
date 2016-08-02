@@ -1,5 +1,5 @@
 <map id="sstmac/hardware/common/packetizer.h" name="sstmac/hardware/common/packetizer.h">
-<area shape="rect" id="node2" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="96,95,315,136"/>
-<area shape="rect" id="node3" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="5,184,197,240"/>
-<area shape="rect" id="node4" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="221,191,397,233"/>
+<area shape="rect" id="node2" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="92,95,297,136"/>
+<area shape="rect" id="node3" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="5,184,187,240"/>
+<area shape="rect" id="node4" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="211,191,376,233"/>
 </map>

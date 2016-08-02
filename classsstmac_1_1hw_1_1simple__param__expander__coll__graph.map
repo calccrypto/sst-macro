@@ -1,5 +1,5 @@
 <map id="sstmac::hw::simple_param_expander" name="sstmac::hw::simple_param_expander">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1param__expander.html" title="{sstmac::hw::param_expander\n||# network_bandwidth_multiplier()\l# switch_bandwidth_multiplier()\l# switch_buffer_multiplier()\l}" alt="" coords="5,300,235,407"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1param__expander.html" title="{sprockit::param_expander\n||+ ~param_expander()\l+ expand()\l+ finalize_init()\l}" alt="" coords="27,145,213,252"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="35,5,205,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1param__expander.html" title="{sstmac::hw::param_expander\n||# network_bandwidth_multiplier()\l# switch_bandwidth_multiplier()\l# switch_buffer_multiplier()\l}" alt="" coords="5,300,217,407"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1param__expander.html" title="{sstmac::param_expander\n||+ ~param_expander()\l+ expand()\l+ finalize_init()\l}" alt="" coords="27,145,196,252"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="33,5,189,97"/>
 </map>

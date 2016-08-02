@@ -1,6 +1,6 @@
 <map id="sstmac::hw::abstract_butterfly::diameter" name="sstmac::hw::abstract_butterfly::diameter">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#ac0fa3c40318c958df972cdc5b9f09ce7" title="Compute coordinates (e.g. " alt="" coords="201,5,386,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a7ae7df70ab3a834a9946c09372237590" title="sstmac::hw::abstract\l_butterfly::configure\l_vc_routing" alt="" coords="220,85,367,141"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a26a50593701f6d4bd858833dcd9b704b" title="sstmac::hw::abstract\l_butterfly::productive_path" alt="" coords="200,166,387,207"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a7f286b493e139bcaeaa04b646704cafb" title="sstmac::hw::abstract\l_butterfly::switch_number" alt="" coords="204,231,383,273"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#ac0fa3c40318c958df972cdc5b9f09ce7" title="Compute coordinates (e.g. " alt="" coords="199,5,377,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a7ae7df70ab3a834a9946c09372237590" title="sstmac::hw::abstract\l_butterfly::configure\l_vc_routing" alt="" coords="215,85,361,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#ad8713d262d900f8f56f68e97712aa4d6" title="sstmac::hw::abstract\l_butterfly::productive_path" alt="" coords="200,165,376,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a7f286b493e139bcaeaa04b646704cafb" title="sstmac::hw::abstract\l_butterfly::switch_number" alt="" coords="202,230,374,271"/>
 </map>
