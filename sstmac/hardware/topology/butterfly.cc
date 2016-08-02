@@ -210,7 +210,7 @@ void
 butterfly::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   //we have to route our current level
   int current_dim = src_coords[nfly_ - 1];
@@ -301,4 +301,3 @@ butterfly::convert_to_port(int dim, int dir) const
 
 }
 } //end of namespace sstmac
-

@@ -100,14 +100,14 @@ class structured_topology : public topology
   minimal_route_to_coords(
     const coordinates& src_coords,
     const coordinates& dest_coords,
-    geometry_routable::path& path) const = 0;
+    geometry_routable::path& path) = 0;
 
   virtual void
   minimal_routes_to_coords(
     const coordinates& src_coords,
     const coordinates& dest_coords,
     geometry_routable::path& current_path,
-    geometry_routable::path_set& paths) const {
+    geometry_routable::path_set& paths){
     //by default, most things only have one path
     paths.resize(1);
     minimal_route_to_coords(src_coords, dest_coords, paths[0]);
@@ -251,15 +251,14 @@ class structured_topology : public topology
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path
-  ) const;
+    geometry_routable::path& path);
 
   virtual void
   minimal_routes_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
     geometry_routable::path& current_path,
-    geometry_routable::path_set& paths) const {
+    geometry_routable::path_set& paths){
     paths.resize(1);
     minimal_route_to_switch(current_sw_addr, dest_sw_addr, paths[0]);
   }

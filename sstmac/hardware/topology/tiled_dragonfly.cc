@@ -110,7 +110,7 @@ void
 tiled_dragonfly::minimal_routes_to_switch(switch_id current_sw_addr,
                                           switch_id dest_sw_addr,
                                           geometry_routable::path &current_path,
-                                          geometry_routable::path_set &paths) const
+                                          geometry_routable::path_set &paths)
 {
   coordinates src = switch_coords(current_sw_addr);
   coordinates dst = switch_coords(dest_sw_addr);
@@ -272,7 +272,7 @@ void
 tiled_dragonfly::minimal_route_to_coords(
   const coordinates &current_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   spkt_throw(sprockit::unimplemented_error, "tiled_dragonfly::minimal_route_to_coords");
 }
@@ -574,6 +574,3 @@ tiled_dragonfly::make_geomid()
 }
 
 } } //end of namespace sstmac
-
-
-

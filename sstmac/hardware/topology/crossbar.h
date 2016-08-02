@@ -71,13 +71,13 @@ class crossbar : public structured_topology
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   void
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   int
   minimal_distance(
@@ -118,4 +118,3 @@ class crossbar : public structured_topology
 } //end of namespace sstmac
 
 #endif
-

@@ -19,7 +19,7 @@ class tiled_torus :
     const coordinates &src_coords,
     const coordinates &dest_coords,
     geometry_routable::path& current,
-    geometry_routable::path_set &paths) const;
+    geometry_routable::path_set &paths);
 
   std::string
   default_router() const {

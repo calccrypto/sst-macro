@@ -67,7 +67,7 @@ void
 fat_tree::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_switch");
 }
@@ -224,7 +224,7 @@ void
 fat_tree::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   spkt_throw_printf(sprockit::unimplemented_error, "fattree::minimal_route_to_coords");
 }
@@ -565,7 +565,7 @@ void
 simple_fat_tree::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path &path) const
+  geometry_routable::path &path)
 {
   int src_level = level(current_sw_addr);
   int dst_level = level(dest_sw_addr);
@@ -665,7 +665,7 @@ void
 simple_fat_tree::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path &path) const
+  geometry_routable::path &path)
 {
   spkt_throw(sprockit::unimplemented_error,
      "simple_fat_tree should never route with coords");

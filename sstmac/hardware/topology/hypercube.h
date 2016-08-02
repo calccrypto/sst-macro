@@ -47,7 +47,7 @@ class hypercube :
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   virtual void
   connect_objects(internal_connectable_map& switches);
@@ -71,4 +71,3 @@ class hypercube :
 } //end of namespace sstmac
 
 #endif // HYPERCUBE_H
-

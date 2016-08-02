@@ -48,7 +48,7 @@ class fat_tree_local_adaptive :
   minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      geometry_routable::path& path) const;
+      geometry_routable::path& path);
 };
 
 }

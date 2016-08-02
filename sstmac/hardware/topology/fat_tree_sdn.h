@@ -9,32 +9,34 @@
  *  SST/macroscale directory.
  */
 
-#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_GLOBAL_ADAPTIVE_H_INCLUDED
-#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_GLOBAL_ADAPTIVE_H_INCLUDED
+#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
+#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
 
 #include <climits>
 #include <map>
 
 #include <sstmac/hardware/topology/fat_tree.h>
+#include <sstmac/software/process/app_id.h>
+#include <sstmac/software/process/flow_id.h>
 
 namespace sstmac {
 namespace hw {
 
 /**
- * @class fat_tree with global_adaptive routing
+ * @class fat_tree with sdn routing
  * The fat tree network generates a k-ary fat tree with l tiers
  */
-class fat_tree_global_adaptive :
+class fat_tree_sdn :
   public fat_tree
 {
 
  public:
   virtual std::string
   to_string() const {
-    return "fat tree topology (global_adaptive)";
+    return "fat tree topology (sdn)";
   }
 
-  virtual ~fat_tree_global_adaptive() {}
+  virtual ~fat_tree_sdn() {}
 
   std::string
   default_router() const {
@@ -52,16 +54,32 @@ class fat_tree_global_adaptive :
 
   // linear search on chosen path
   void
-  global_adaptive(
+  sdn(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      geometry_routable::path &path) const;
+      geometry_routable::path &path);
 
   virtual void
   minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
       geometry_routable::path& path);
+
+ private:
+  // fields to match packets against
+  struct MatchFields {
+    sw::app_id app_id;
+    sw::flow_id flow_id;
+    switch_id src;
+    switch_id dst;
+
+    bool operator<(const MatchFields & mf) const {
+        (app_id < mf.app_id)?true:((flow_id < mf.flow_id)?true:((src < mf.src)?true:((dst < mf.dst))));
+    }
+   };
+
+  // map packet identifier to an output port
+  std::map <MatchFields, std::vector <geometry_routable::path::Hop> > flow_table;
 };
 
 

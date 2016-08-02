@@ -23,7 +23,7 @@ class cartesian_topology :
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
     geometry_routable::path &current_path,
-    geometry_routable::path_set &paths) const;
+    geometry_routable::path_set &paths);
 
  protected:
   virtual void

@@ -76,7 +76,7 @@ class tiled_dragonfly : public dragonfly
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
       geometry_routable::path &current_path,
-      geometry_routable::path_set &paths) const;
+      geometry_routable::path_set &paths);
 
   virtual void
   minimal_routes_to_coords(
@@ -107,7 +107,7 @@ class tiled_dragonfly : public dragonfly
   minimal_route_to_coords(
     const coordinates &current_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   virtual int
   port(int replica, int dim, int dir);
@@ -196,4 +196,3 @@ class tiled_dragonfly : public dragonfly
 } //end of namespace sstmac
 
 #endif
-

@@ -222,7 +222,7 @@ class topology :
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path) const = 0;
+    geometry_routable::path& path) = 0;
 
   /**
      Given a traffic pattern (e.g. bit-complement),
@@ -425,7 +425,7 @@ class topology :
   minimal_route_to_node(
     switch_id current_sw_addr,
     node_id dest_node_addr,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   /**
      Informs topology that a new routing stage has begun, allowing any

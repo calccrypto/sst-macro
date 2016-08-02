@@ -87,7 +87,7 @@ void
 crossbar::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   path.vc = 0;
   path.outport = dest_coords[0];
@@ -97,7 +97,7 @@ void
 crossbar::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   //current switch actually doesn't matter
   path.vc = 0;
@@ -142,4 +142,3 @@ crossbar::connect_objects(internal_connectable_map& objects)
 
 }
 } //end of namespace sstmac
-

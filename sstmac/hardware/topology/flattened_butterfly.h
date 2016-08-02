@@ -57,7 +57,7 @@ class flattened_butterfly :
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   int
   minimal_distance(const coordinates &src_coords,
@@ -89,4 +89,3 @@ class flattened_butterfly :
 } //end of namespace sstmac
 
 #endif
-

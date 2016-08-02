@@ -327,7 +327,7 @@ void
 dragonfly::minimal_route_to_coords(
   const coordinates &current_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   debug_printf(sprockit::dbg::router,
     "Finding dragonfly minimal route from %s to %s",

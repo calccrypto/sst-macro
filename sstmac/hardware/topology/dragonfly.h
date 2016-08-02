@@ -138,7 +138,7 @@ class dragonfly : public cartesian_topology
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   int
   minimal_distance(

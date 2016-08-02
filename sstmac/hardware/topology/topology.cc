@@ -119,7 +119,7 @@ topology::random_number(uint32_t max, uint32_t attempt) const
     seeds[1] = seed_ * (time+31) << (attempt + 5);
     seeds[0] = (time+5)*7 + seeds[0]*attempt*42 + 3;
     rng_->vec_reseed(seeds);
-  } 
+  }
   uint32_t result = rng_->value_in_range(max);
 #if SSTMAC_USE_MULTITHREAD
   lock.unlock();
@@ -131,7 +131,7 @@ void
 topology::minimal_route_to_node(
   switch_id current_sw_addr,
   node_id dest_node_addr,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   abort();
   int dir;
@@ -153,7 +153,7 @@ topology::random_intermediate_switch(switch_id current, switch_id dest)
   long nid = current;
   uint32_t attempt = 0;
   while (current == nid) {
-    nid = random_number(num_switches(), attempt); 
+    nid = random_number(num_switches(), attempt);
     ++attempt;
   }
   lock.unlock();
@@ -260,4 +260,3 @@ topology::label(event_loc_id id) const
 
 }
 }
-

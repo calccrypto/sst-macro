@@ -38,7 +38,7 @@ tiled_torus::minimal_routes_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
   geometry_routable::path& current,
-  geometry_routable::path_set &paths) const
+  geometry_routable::path_set &paths)
 {
   hdtorus::minimal_route_to_coords(src_coords, dest_coords, current);
   int dim = current.outport / 2; //2 for +/-

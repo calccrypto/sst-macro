@@ -284,7 +284,7 @@ void
 hdtorus::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   //deadlock rules require + dir first
   for (int i=0; i < src_coords.size(); ++i) {

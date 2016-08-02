@@ -194,7 +194,7 @@ void
 structured_topology::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   coordinates src_coords = switch_coords(current_sw_addr);
   coordinates dest_coords = switch_coords(dest_sw_addr);

@@ -55,7 +55,7 @@ class fake_topology :
   minimal_route_to_coords(
     const coordinates &current_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const {
+    geometry_routable::path& path){
     //do nothing
   }
 
@@ -131,4 +131,3 @@ class fake_topology :
 }
 
 #endif
-

@@ -9,16 +9,16 @@
  *  SST/macroscale directory.
  */
 
-#include <sstmac/hardware/topology/fat_tree_global_adaptive.h>
+#include <sstmac/hardware/topology/fat_tree_sdn.h>
 
 namespace sstmac {
 namespace hw {
 
-SpktRegister("fattree_global_adaptive", topology, fat_tree_global_adaptive,
-             "Fat tree topology with L levels, radix K, and global adaptive routing.");
+SpktRegister("fattree_sdn", topology, fat_tree_sdn,
+             "Fat tree topology with L levels, radix K, and sdn routing.");
 
 unsigned int
-fat_tree_global_adaptive::cheapest_path(
+fat_tree_sdn::cheapest_path(
     const std::size_t current_index,
     const std::size_t mid_point,
     const switch_id dst,
@@ -71,24 +71,38 @@ fat_tree_global_adaptive::cheapest_path(
     return cheapest;
 }
 
-// global_adaptive routing
+// sdn routing
 void
-fat_tree_global_adaptive::global_adaptive(
+fat_tree_sdn::sdn(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path & path) const
+  geometry_routable::path & path)
 {
-  // if path has not been selected, select one before pushing to outpor
+  // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-      // allocate space for path, starting with source
-      path.chosen.clear();
-      path.chosen.resize((ncal << 1) + 1);
-      path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+      // check flow table first
+      MatchFields mf;
+//      mf.app_id = ;
+//      mf.flow_id = ;
+      mf.src = current_sw_addr;
+      mf.dst = dest_sw_addr;
 
-      cheapest_path(0, ncal, dest_sw_addr, path.chosen);
+      std::map <MatchFields, std::vector <geometry_routable::path::Hop> >::iterator it = flow_table.find(mf);
+
+      // if route not found, generate one and put it into the flow_table
+      if (it == flow_table.end()){
+          const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
+          std::vector <geometry_routable::path::Hop> chosen((ncal << 1) + 1);
+          path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+          cheapest_path(0, ncal, dest_sw_addr, chosen);
+          flow_table[mf] = chosen;
+          it = flow_table.find(mf);
+      }
+
+      // set the packet's route
+      path.chosen = it -> second;
   }
 
   // linear search on path
@@ -103,21 +117,21 @@ fat_tree_global_adaptive::global_adaptive(
   }
 
   if (!found){
-      spkt_throw_printf(sprockit::value_error, "fat_tree: global_adaptive routing did not find route to next switch");
+      spkt_throw_printf(sprockit::value_error, "fat_tree: sdn routing did not find route to next switch");
   }
 
-  top_debug("fat_tree: global_adaptive routing to get to %d from %d",
+  top_debug("fat_tree: sdn routing to get to %d from %d",
             int(dest_sw_addr),
             int(current_sw_addr));
 }
 
 void
-fat_tree_global_adaptive::minimal_route_to_switch(
+fat_tree_sdn::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
   geometry_routable::path& path)
 {
-  global_adaptive(current_sw_addr, dest_sw_addr, path);
+  sdn(current_sw_addr, dest_sw_addr, path);
 }
 
 }

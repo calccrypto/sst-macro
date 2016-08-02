@@ -50,7 +50,7 @@ void
 fat_tree_dmodk::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path) const
+  geometry_routable::path& path)
 {
   dmodk(current_sw_addr, dest_sw_addr, path);
 }

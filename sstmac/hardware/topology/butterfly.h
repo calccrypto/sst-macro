@@ -120,7 +120,7 @@ class butterfly :
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path) const;
+    geometry_routable::path& path);
 
   int
   minimal_distance(
@@ -179,4 +179,3 @@ class butterfly :
 } //end of namespace sstmac
 
 #endif
-
