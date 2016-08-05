@@ -13,6 +13,7 @@
 #define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_GLOBAL_ADAPTIVE_H_INCLUDED
 
 #include <climits>
+#include <list>
 #include <map>
 
 #include <sstmac/hardware/topology/fat_tree.h>
@@ -31,7 +32,7 @@ class fat_tree_global_adaptive :
  public:
   virtual std::string
   to_string() const {
-    return "fat tree topology (global_adaptive)";
+    return "fat tree topology (global adaptive)";
   }
 
   virtual ~fat_tree_global_adaptive() {}
@@ -42,7 +43,6 @@ class fat_tree_global_adaptive :
   }
 
   // sets the geometry_routable::path::chosen variable
-
   unsigned int
   cheapest_path(
     const std::size_t current_index,
@@ -53,17 +53,16 @@ class fat_tree_global_adaptive :
   // linear search on chosen path
   void
   global_adaptive(
-      switch_id current_sw_addr,
-      switch_id dest_sw_addr,
-      geometry_routable::path &path) const;
+    switch_id current_sw_addr,
+    switch_id dest_sw_addr,
+    geometry_routable::path &path) const;
 
   virtual void
   minimal_route_to_switch(
-      switch_id current_sw_addr,
-      switch_id dest_sw_addr,
-      geometry_routable::path& path);
+    switch_id current_sw_addr,
+    switch_id dest_sw_addr,
+    geometry_routable::path& path);
 };
-
 
 }
 } //end of namespace sstmac

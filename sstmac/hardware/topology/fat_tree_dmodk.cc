@@ -24,7 +24,6 @@ fat_tree_dmodk::dmodk(
   switch_id dest_sw_addr,
   geometry_routable::path & path) const
 {
-
   // get current switch coordinates
   coordinates curr(2);
   compute_switch_coords(current_sw_addr, curr);

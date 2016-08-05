@@ -86,7 +86,7 @@ fat_tree_global_adaptive::global_adaptive(
       // allocate space for path, starting with source
       path.chosen.clear();
       path.chosen.resize((ncal << 1) + 1);
-      path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+      path.chosen[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
       cheapest_path(0, ncal, dest_sw_addr, path.chosen);
   }

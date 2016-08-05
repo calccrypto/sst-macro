@@ -4,21 +4,18 @@ using namespace sstmac;
 using namespace sstmac::sw;
 using namespace sstmac::hw;
 
-// SpktRegister("sdn", sstmac::sw::job_launcher, sdn_job_launcher);
+// SpktRegister("sdn", job_launcher, sdn_job_launcher);
 
 // void
 // sdn_job_launcher::handle_new_launch_request(int appnum, app_launch* appman)
 // {
-//   switch_interconnect* swi = dynamic_cast<switch_interconnect*>(interconnect_);
-//   assert(swi != nullptr);
-
-//   for (const auto& pair : swi->switches()){
-//     switch_id sid = pair.first;
-//     network_switch* netsw = pair.second;
-//     sdn_router* rtr = dynamic_cast<sdn_router*>(netsw->rter());
-//     assert(rtr != nullptr);
-
-//     //TODO assign your routing tables
+//   assert(interconnect_ != nullptr);
+//   switch_interconnect* sw_ic = dynamic_cast<switch_interconnect*>(interconnect_);
+//   auto& switches = sw_ic->switches();
+//   for (network_switch* sw : switches){
+//       auto pflow_sw = dynamic_cast<packet_flow_switch*>(sw);
+//       auto stats = pflow_sw->xbar_stats();
+//       //do whatever
 //   }
 
 // #if CUSTOM_LAUNCH

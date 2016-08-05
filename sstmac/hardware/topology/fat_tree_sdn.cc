@@ -17,61 +17,8 @@ namespace hw {
 SpktRegister("fattree_sdn", topology, fat_tree_sdn,
              "Fat tree topology with L levels, radix K, and sdn routing.");
 
-unsigned int
-fat_tree_sdn::cheapest_path(
-    const std::size_t current_index,
-    const std::size_t mid_point,
-    const switch_id dst,
-    std::vector <geometry_routable::path::Hop> & path) const
-{
-    // at the end of the path; only allow paths that reach destination to be chosen from
-    if ((current_index + 1) == path.size()){
-        return (path.back().sw_id == dst)?
-                                          0:       // this should be cost to get to the destination
-                                          INT_MAX;
-    }
-
-    int offset;
-    if (current_index < mid_point){
-        path[current_index].vc = 0; // if the current index is before the mid point, keep going up
-        offset = k_;                // up ports are [k_, 2 k_)
-    }
-    else{
-        path[current_index].vc = 1; // otherwise, go downwards
-        offset = 0;                 // down ports are [0, k_)
-    }
-
-    // depth first search through ports for cheapest path to destination
-    int outport = -1;
-    int cheapest = INT_MAX;
-    for(int k = 0; k < k_; k++){
-        // set current outport to the port
-        path[current_index].outport = k + offset;
-
-        // set next switch id to the switch that is the neighbor at the port
-        path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, path[current_index].outport));
-
-        // get cost to get to next switch
-        const int this_hop_cost = 0;
-
-        // get cheapest cost going down this port at this switch
-        const int next_hop_cost = this_hop_cost + cheapest_path(current_index + 1, mid_point, dst, path);
-
-        // compare costs of going down each port at this switch
-        if (next_hop_cost < cheapest){
-            outport = k + offset;
-            cheapest = next_hop_cost;
-        }
-    }
-
-    // set the path to go out the cheapest port, overwriting recursion data
-    path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, outport));
-    path[current_index].outport = outport;
-
-    return cheapest;
-}
-
 // sdn routing
+// route flows, not individual packets
 void
 fat_tree_sdn::sdn(
   switch_id current_sw_addr,
@@ -81,24 +28,19 @@ fat_tree_sdn::sdn(
   // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-
       // check flow table first
-      MatchFields mf;
-//      mf.app_id = ;
-//      mf.flow_id = ;
+      Match_Fields mf;
       mf.src = current_sw_addr;
       mf.dst = dest_sw_addr;
 
-      std::map <MatchFields, std::vector <geometry_routable::path::Hop> >::iterator it = flow_table.find(mf);
-
-      // if route not found, generate one and put it into the flow_table
+      // if route not found, generate one and put it into the flow table
+      Flow_Table::iterator it = flow_table.find(mf);
       if (it == flow_table.end()){
           const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
-          std::vector <geometry_routable::path::Hop> chosen((ncal << 1) + 1);
+          Path chosen((ncal << 1) + 1);
           path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
           cheapest_path(0, ncal, dest_sw_addr, chosen);
-          flow_table[mf] = chosen;
-          it = flow_table.find(mf);
+          it = flow_table.insert(std::make_pair(mf, chosen)).first;
       }
 
       // set the packet's route

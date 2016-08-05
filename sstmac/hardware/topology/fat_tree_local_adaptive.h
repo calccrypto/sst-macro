@@ -29,7 +29,7 @@ class fat_tree_local_adaptive :
  public:
   virtual std::string
   to_string() const {
-    return "fat tree topology (adaptive)";
+    return "fat tree topology (local adaptive)";
   }
 
   virtual ~fat_tree_local_adaptive() {}

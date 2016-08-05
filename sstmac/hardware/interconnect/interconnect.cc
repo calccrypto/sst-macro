@@ -55,7 +55,7 @@ interconnect::interconnect() :
 {
 }
 
-interconnect::~interconnect() 
+interconnect::~interconnect()
 {
   sprockit::delete_vals(nodes_);
   sprockit::delete_vals(nics_);
@@ -149,6 +149,7 @@ macro_interconnect::init_factory_params(sprockit::sim_parameters* params)
   topology_ = topology_factory::get_param("name", top_params);
 
   runtime::set_topology(topology_);
+  topology_->set_interconnect(this);
 
   endpoint_map nodes;
   endpoint_map nics;
@@ -176,7 +177,6 @@ macro_interconnect::init_factory_params(sprockit::sim_parameters* params)
                   partition_, rt_->me(), netlink_params, this);
     delete netlink_builder;
   }
-
 
   copy_map(nodes, nodes_);
   copy_map(nics, nics_);
@@ -266,4 +266,3 @@ macro_interconnect::set_event_manager(event_manager* m)
 
 }
 }
-

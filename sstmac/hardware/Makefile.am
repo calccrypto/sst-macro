@@ -113,7 +113,8 @@ nobase_library_include_HEADERS = \
   topology/fat_tree_dmodk.h \
   topology/fat_tree_local_adaptive.h \
   topology/fat_tree_global_adaptive.h \
-  topology/fat_tree_sdn.h
+  topology/fat_tree_sdn.h \
+  topology/fat_tree_multipath.h
 
 libsstmac_hw_la_SOURCES =  \
   analytic/simple/null_nic.cc \
@@ -184,4 +185,5 @@ libsstmac_hw_la_SOURCES =  \
   topology/fat_tree_dmodk.cc \
   topology/fat_tree_local_adaptive.cc \
   topology/fat_tree_global_adaptive.cc \
-  topology/fat_tree_sdn.cc
+  topology/fat_tree_sdn.cc \
+  topology/fat_tree_multipath.cc

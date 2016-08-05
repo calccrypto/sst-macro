@@ -153,11 +153,14 @@ class interconnect :
   node_map nodes_;
   nic_map nics_;
 
+  // network state
+  typedef void * Stats;
+  std::map <switch_id, std::map <switch_id, std::list <Stats> > > state;
+
  private:
   static interconnect* static_interconnect_;
 
   void set_topology(topology* params);
-
 };
 
 #if SSTMAC_INTEGRATED_SST_CORE
@@ -245,4 +248,3 @@ DeclareFactory2InitParams(interconnect, partition*, parallel_runtime*);
 } // end of namespace sstmac
 
 #endif
-

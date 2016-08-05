@@ -9,8 +9,8 @@
  *  SST/macroscale directory.
  */
 
-#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
-#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
+#ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_MULTIPATH_H_INCLUDED
+#define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_MULTIPATH_H_INCLUDED
 
 #include <climits>
 #include <map>
@@ -23,24 +23,35 @@ namespace sstmac {
 namespace hw {
 
 /**
- * @class fat_tree with sdn routing
+ * @class fat_tree with multipath routing
  * The fat tree network generates a k-ary fat tree with l tiers
  */
-class fat_tree_sdn :
-  public fat_tree_global_adaptive
+class fat_tree_multipath :
+  public fat_tree
 {
-
  public:
   virtual std::string
   to_string() const {
-    return "fat tree topology (sdn)";
+    return "fat tree topology (multipath)";
   }
 
-  virtual ~fat_tree_sdn() {}
+  virtual ~fat_tree_multipath() {}
 
+  typedef std::vector <geometry_routable::path::Hop> Path;
+  typedef std::pair <unsigned int, std::vector <Path> > Paths;
+
+  void
+  all_paths(
+    const std::size_t current_index,
+    const std::size_t mid_point,
+    const switch_id dst,
+    Path & path,
+    Paths & paths);
+
+ public:
   // linear search on chosen path
   void
-  sdn(
+  multipath(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
     geometry_routable::path &path);
@@ -70,9 +81,8 @@ class fat_tree_sdn :
     }
    };
 
-  // map packet identifier to an output port
-  typedef std::vector <geometry_routable::path::Hop> Path;
-  typedef std::map <Match_Fields, Path> Flow_Table;
+  typedef std::map <Match_Fields, Paths> Flow_Table;                // mapping from packet metadata to all possible routes
+
   Flow_Table flow_table;
 };
 

@@ -13,6 +13,7 @@
 #define SSTMAC_HARDWARE_NETWORK_SWITCHES_SWITCHTOPOLOGY_H_INCLUDED
 
 #include <sstmac/common/rng.h>
+#include <sstmac/hardware/interconnect/interconnect_fwd.h>
 #include <sstmac/hardware/topology/coordinates.h>
 #include <sstmac/hardware/topology/traffic/traffic.h>
 #include <sstmac/hardware/router/routable.h>
@@ -475,6 +476,11 @@ class topology :
   static topology*
   static_topology(sprockit::sim_parameters* params);
 
+  void *
+  set_interconnect(interconnect * ic){
+    interconnect_ = ic;
+  }
+
  protected:
   topology();
 
@@ -508,6 +514,8 @@ class topology :
   int max_ports_injection_;
 
   static topology* main_top_;
+
+  interconnect * interconnect_;
 
  private:
   static topology* static_topology_;

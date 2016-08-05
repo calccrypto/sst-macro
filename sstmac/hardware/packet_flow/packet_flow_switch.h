@@ -47,6 +47,16 @@ class packet_flow_abstract_switch :
     return link_bw;
   }
 
+  packet_sent_stats*
+  xbar_stats() const {
+    return xbar_stats_;
+  }
+
+  packet_sent_stats*
+  buf_stats() const {
+    return buf_stats_;
+  }
+
  protected:
   int packet_size_;
 
@@ -191,4 +201,3 @@ DeclareIntegratedComponent(packet_flow_switch);
 }
 
 #endif // PACKETFLOW_SWITCH_H
-

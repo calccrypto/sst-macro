@@ -282,7 +282,6 @@ class simple_fat_tree : public abstract_fat_tree
 
   std::vector<double> tapering_;
 
-
 };
 
 }
