@@ -40,42 +40,21 @@ fat_tree_sdn::sdn(
       const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
       // insert flow entry into the table
+      // dont use operator[]; there is a weird bug
       it = flow_table.insert(std::make_pair (mf, Path((ncal << 1) + 1))).first;
       (it -> second)[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
       // calculate and store path
       cheapest_path(0, ncal, dest_sw_addr, it -> second);
-
-
-      // // this causes problems for some reason
-      // flow_table[mf].resize((ncal << 1) + 1);
-      // auto it1 = flow_table.find(mf);
-      // std::cout << mf.src << " " << mf.dst << std::endl;
-      // std::cout << "size: " << flow_table.size() << std::endl;
-
-      // flow_table[mf].resize((ncal << 1) + 1);
-      // auto it2 = flow_table.find(mf);
-      // std::cout << mf.src << " " << mf.dst << std::endl;
-      // std::cout << "size: " << flow_table.size() << std::endl;
-
-      // flow_table[mf].resize((ncal << 1) + 1);
-      // std::cout << mf.src << " " << mf.dst << std::endl;
-      // std::cout << "size: " << flow_table.size() << std::endl;
-
-      // std::cout << "match: " << (it1 == it2) << std::endl;
-
-      // flow_table[mf][0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
-
-      // // calculate and store path
-      // cheapest_path(0, ncal, dest_sw_addr, flow_table[mf]);
     }
 
+    // path should not be stored in path.chosen
     path.chosen = it -> second;
-    // path.chosen = flow_table[mf];
   }
 
   // look up route and figure out where to go next
   bool found = false;
+  // this should be looping on flow table entry, not path stored in path.chosen
   for(geometry_routable::path::Hop const & p : path.chosen){
     if (p.sw_id == current_sw_addr){
       path.outport = p.outport;

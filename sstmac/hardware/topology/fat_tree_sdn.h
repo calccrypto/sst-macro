@@ -12,7 +12,6 @@
 #ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
 #define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_FATTREE_SDN_H_INCLUDED
 
-#include <climits>
 #include <map>
 
 #include <sstmac/hardware/topology/fat_tree_global_adaptive.h>
@@ -58,6 +57,14 @@ class fat_tree_sdn :
 //    sw::flow_id flow_id;
     switch_id src;
     switch_id dst;
+
+    Match_Fields(//const sw::app_id & appid = sw::app_id(),
+                 //const sw::flow_id & flowid = sw::flow_id(),
+                 const switch_id s = switch_id(),
+                 const switch_id d = switch_id())
+        : //app_id(appid), flow_id(flowid)
+          src(s), dst(d)
+        {}
 
     bool operator<(const Match_Fields & mf) const {
       return
