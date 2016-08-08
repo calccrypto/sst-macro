@@ -71,6 +71,7 @@ class fat_tree_multipath :
     switch_id dst;
 
     bool operator<(const Match_Fields & mf) const {
+        return
 //        (app_id < mf.app_id)?true:
 //            ((flow_id < mf.flow_id)?true:
              ((src < mf.src)?true:

@@ -60,12 +60,13 @@ class fat_tree_sdn :
     switch_id dst;
 
     bool operator<(const Match_Fields & mf) const {
-//        (app_id < mf.app_id)?true:
-//            ((flow_id < mf.flow_id)?true:
-             ((src < mf.src)?true:
-              (dst < mf.dst)
-             )
-//            )
+      return
+//      (app_id < mf.app_id)?true:
+//          ((flow_id < mf.flow_id)?true:
+           ((src < mf.src)?true:
+            (dst < mf.dst)
+           )
+//          )
             ;
     }
    };
@@ -75,7 +76,6 @@ class fat_tree_sdn :
   typedef std::map <Match_Fields, Path> Flow_Table;
   Flow_Table flow_table;
 };
-
 
 }
 } //end of namespace sstmac

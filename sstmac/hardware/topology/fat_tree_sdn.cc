@@ -25,41 +25,68 @@ fat_tree_sdn::sdn(
   switch_id dest_sw_addr,
   geometry_routable::path & path)
 {
-  // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-      // check flow table first
-      Match_Fields mf;
-      mf.src = current_sw_addr;
-      mf.dst = dest_sw_addr;
+    // check flow table first
+    Match_Fields mf;
+    mf.src = current_sw_addr;
+    mf.dst = dest_sw_addr;
 
-      // if route not found, generate one and put it into the flow table
-      Flow_Table::iterator it = flow_table.find(mf);
-      if (it == flow_table.end()){
-          const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
-          Path chosen((ncal << 1) + 1);
-          path.chosen.front() = geometry_routable::path::Hop(current_sw_addr, -1, 0);
-          cheapest_path(0, ncal, dest_sw_addr, chosen);
-          it = flow_table.insert(std::make_pair(mf, chosen)).first;
-      }
+    // find route in flow table
+    Flow_Table::iterator it = flow_table.find(mf);
 
-      // set the packet's route
-      path.chosen = it -> second;
+    // if flow not found, generate one and add it to the table
+    if (it == flow_table.end()){
+      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
+
+      // insert flow entry into the table
+      it = flow_table.insert(std::make_pair (mf, Path((ncal << 1) + 1))).first;
+      (it -> second)[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+
+      // calculate and store path
+      cheapest_path(0, ncal, dest_sw_addr, it -> second);
+
+
+      // // this causes problems for some reason
+      // flow_table[mf].resize((ncal << 1) + 1);
+      // auto it1 = flow_table.find(mf);
+      // std::cout << mf.src << " " << mf.dst << std::endl;
+      // std::cout << "size: " << flow_table.size() << std::endl;
+
+      // flow_table[mf].resize((ncal << 1) + 1);
+      // auto it2 = flow_table.find(mf);
+      // std::cout << mf.src << " " << mf.dst << std::endl;
+      // std::cout << "size: " << flow_table.size() << std::endl;
+
+      // flow_table[mf].resize((ncal << 1) + 1);
+      // std::cout << mf.src << " " << mf.dst << std::endl;
+      // std::cout << "size: " << flow_table.size() << std::endl;
+
+      // std::cout << "match: " << (it1 == it2) << std::endl;
+
+      // flow_table[mf][0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+
+      // // calculate and store path
+      // cheapest_path(0, ncal, dest_sw_addr, flow_table[mf]);
+    }
+
+    path.chosen = it -> second;
+    // path.chosen = flow_table[mf];
   }
 
-  // linear search on path
+  // look up route and figure out where to go next
   bool found = false;
   for(geometry_routable::path::Hop const & p : path.chosen){
-      if (p.sw_id == current_sw_addr){
-          path.outport = p.outport;
-          path.vc = p.vc;
-          found = true;
-          break;
-      }
+    if (p.sw_id == current_sw_addr){
+      path.outport = p.outport;
+      path.vc = p.vc;
+      found = true;
+      break;
+    }
   }
 
   if (!found){
-      spkt_throw_printf(sprockit::value_error, "fat_tree: sdn routing did not find route to next switch");
+    spkt_throw_printf(sprockit::value_error, "fat_tree: sdn routing did not find route to next switch");
   }
 
   top_debug("fat_tree: sdn routing to get to %d from %d",

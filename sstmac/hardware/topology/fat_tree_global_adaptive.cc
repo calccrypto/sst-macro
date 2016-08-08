@@ -78,35 +78,36 @@ fat_tree_global_adaptive::global_adaptive(
   switch_id dest_sw_addr,
   geometry_routable::path & path) const
 {
-  // if path has not been selected, select one before pushing to outpor
+  // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
+    const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-      // allocate space for path, starting with source
-      path.chosen.clear();
-      path.chosen.resize((ncal << 1) + 1);
-      path.chosen[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+    // allocate space for path, starting with source
+    path.chosen.clear();
+    path.chosen.resize((ncal << 1) + 1);
+    path.chosen[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
-      cheapest_path(0, ncal, dest_sw_addr, path.chosen);
+    // calculate and set the path
+    cheapest_path(0, ncal, dest_sw_addr, path.chosen);
   }
 
   // linear search on path
   bool found = false;
   for(geometry_routable::path::Hop const & p : path.chosen){
-      if (p.sw_id == current_sw_addr){
-          path.outport = p.outport;
-          path.vc = p.vc;
-          found = true;
-          break;
-      }
+    if (p.sw_id == current_sw_addr){
+      path.outport = p.outport;
+      path.vc = p.vc;
+      found = true;
+      break;
+    }
   }
 
   if (!found){
-      spkt_throw_printf(sprockit::value_error, "fat_tree: global_adaptive routing did not find route to next switch");
+    spkt_throw_printf(sprockit::value_error, "fat tree: global adaptive routing did not find route to next switch");
   }
 
-  top_debug("fat_tree: global_adaptive routing to get to %d from %d",
+  top_debug("fat_tree: global adaptive routing to get to %d from %d",
             int(dest_sw_addr),
             int(current_sw_addr));
 }
