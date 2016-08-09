@@ -12,9 +12,9 @@ int main(int argc, char** argv)
     sprockit::output::init_errn(&std::cerr);
     UnitTest unit;
     try{
-       std::cout << "Testing torus...\n";
-           test_torus_traffic(unit);
-           test_torus(unit);
+        std::cout << "Testing torus...\n";
+            test_torus_traffic(unit);
+            test_torus(unit);
         std::cout << "Testing fat tree...\n";
             test_fattree2(unit);
             test_fattree4(unit);
