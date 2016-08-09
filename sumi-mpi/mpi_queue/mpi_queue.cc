@@ -364,7 +364,7 @@ mpi_queue::send_completion_ack(const mpi_message::ptr& message)
 void
 mpi_queue::handle_incoming_message(const mpi_message::ptr& message)
 {
-  mpi_queue_debug("have incoming %p message %s", 
+  mpi_queue_debug("have incoming %p message %s",
     message.get(), message->to_string().c_str());
 
   if (message->is_nic_ack()) {

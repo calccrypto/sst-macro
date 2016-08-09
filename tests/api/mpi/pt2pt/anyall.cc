@@ -55,7 +55,7 @@ int anyall( int argc, char *argv[] )
 	    }
 	}
 	for (i=0; i<MAX_MSGS; i++) {
-	    MPI_Irecv( buf[i], MAX_MSGS-i, MPI_INT, MPI_ANY_SOURCE, 
+	    MPI_Irecv( buf[i], MAX_MSGS-i, MPI_INT, MPI_ANY_SOURCE,
 		       MPI_ANY_TAG, comm, &r[i] );
 	}
 	MPI_Barrier( MPI_COMM_WORLD );
@@ -81,7 +81,7 @@ int anyall( int argc, char *argv[] )
     else {
 	MPI_Barrier( MPI_COMM_WORLD );
     }
-	
+
     MTest_Finalize( errs );
     MPI_Finalize();
 

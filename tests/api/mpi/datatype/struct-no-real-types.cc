@@ -14,7 +14,7 @@
 
 namespace struct_no_real_types {
 
-/* 
+/*
    The default behavior of the test routines should be to briefly indicate
    the cause of any errors - in this test, that means that verbose needs
    to be set. Verbose should turn on output that is independent of error
@@ -92,14 +92,14 @@ int no_real_types_test(void)
 	MTestPrintError( err );
 	errs++;
     }
-    
+
     if (size != 0) {
 	if (verbose) {
 	    fprintf(stderr,
 		    "error: size != 0 in no_real_types_test()\n");
 	}
 	errs++;
-    }    
+    }
 
     err = MPI_Type_extent(newtype, &extent);
     if (err != MPI_SUCCESS) {
@@ -110,17 +110,17 @@ int no_real_types_test(void)
 	MTestPrintError( err );
 	errs++;
     }
-    
+
     if (extent != -10) {
 	if (verbose) {
 	    fprintf(stderr,
-		    "error: extent is %ld but should be -10 in no_real_types_test()\n", 
+		    "error: extent is %ld but should be -10 in no_real_types_test()\n",
 		    (long) extent );
-	    fprintf( stderr, 
+	    fprintf( stderr,
 	     "type map is { (LB,10) }, so UB is 0 and extent is ub-lb\n" );
 	}
 	errs++;
-    }    
+    }
 
     MPI_Type_free( &newtype );
 

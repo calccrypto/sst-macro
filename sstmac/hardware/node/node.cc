@@ -62,7 +62,7 @@ node::connect_nic()
       //outgoing from me, make the link
       nic_debug("connecting to port %s", port_name.c_str());
       integrated_connectable_wrapper* next = new integrated_connectable_wrapper(link);
-      nic_->connect(dets.src_port, 
+      nic_->connect(dets.src_port,
             dets.dst_port,
             dets.type, next,
             &dets.cfg);
@@ -83,7 +83,7 @@ void
 node::init(unsigned int phase)
 {
   event_scheduler::init(phase);
-  if (phase == 0){ 
+  if (phase == 0){
     set_event_manager(this);
     connect_nic();
     configure_self_link();

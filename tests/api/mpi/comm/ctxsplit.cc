@@ -13,9 +13,9 @@
 namespace ctxsplit {
 
 /*
- * This check is intended to fail if there is a leak of context ids.  
+ * This check is intended to fail if there is a leak of context ids.
  * Because this is trying to exhaust the number of context ids, it needs
- * to run for a longer time than many tests.  The for loop uses 100,000 
+ * to run for a longer time than many tests.  The for loop uses 100,000
  * iterations, which is adequate for MPICH2 (with only about 1k context ids
  * available).
  */
@@ -29,7 +29,7 @@ int ctxsplit(int argc, char** argv) {
    MPI_Comm newcomm;
    double   startTime;
    int      nLoop = 100000;
-   
+
    MTest_Init(&argc,&argv);
 
    for (i=1; i<argc; i++) {
@@ -46,7 +46,7 @@ int ctxsplit(int argc, char** argv) {
 
    startTime = MPI_Wtime();
    for (i=0; i<nLoop; i++) {
-       
+
        if ( rank == 0 && (i%100 == 0) ) {
 	   double rate = MPI_Wtime() - startTime;
 	   if (rate > 0) {
@@ -57,10 +57,10 @@ int ctxsplit(int argc, char** argv) {
 	       MTestPrintfMsg( 10, "After %d\n", i );
 	   }
        }
-       
+
        /* FIXME: Explain the rationale behind rand in this test */
        randval=rand();
-       
+
        if (randval%(rank+2) == 0) {
 	   MPI_Comm_split(MPI_COMM_WORLD,1,rank,&newcomm);
 	   MPI_Comm_free( &newcomm );
@@ -72,12 +72,12 @@ int ctxsplit(int argc, char** argv) {
 	       printf( "Created a non-null communicator with MPI_UNDEFINED\n" );
 	   }
        }
-       
+
    }
-   
+
    MTest_Finalize( errs );
    MPI_Finalize();
-   
+
    return 0;
 }
 

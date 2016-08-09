@@ -101,7 +101,7 @@ packet_flow_switch::packet_flow_switch() :
 packet_flow_switch::~packet_flow_switch()
 {
   if (xbar_) delete xbar_;
- 
+
   int nbuffers = out_buffers_.size();
   for (int i=0; i < nbuffers; ++i){
     packet_flow_sender* buf = out_buffers_[i];

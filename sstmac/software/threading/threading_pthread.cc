@@ -169,7 +169,7 @@ void
 threading_pthread::complete_context(threading_interface *to)
 {
   if (!pthread_equal(pthread_self(), context_.thread)) {
-    spkt_throw(sprockit::spkt_error, 
+    spkt_throw(sprockit::spkt_error,
         "threading_pthread::complete_context: done from thread other than \"from\" thread");
   }
   threading_pthread* casted = (threading_pthread*)to;
@@ -189,7 +189,7 @@ void
 threading_pthread::swap_context(threading_interface *to)
 {
   if (!pthread_equal(pthread_self(), context_.thread)) {
-    spkt_throw(sprockit::spkt_error, 
+    spkt_throw(sprockit::spkt_error,
         "threading_pthread::swap_context: done from thread other than \"from\" thread");
   }
 

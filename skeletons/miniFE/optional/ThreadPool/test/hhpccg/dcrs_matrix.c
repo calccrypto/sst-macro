@@ -243,7 +243,7 @@ double dcrs_apply_and_dot(
     /*  Divide internal work evenly among worker threads.
      *  This leave the primary thread completely out of the computation.
      */
-    TPI_Start_threads_reduce( tpi_work_dcrs_apply_and_dot , & info , 
+    TPI_Start_threads_reduce( tpi_work_dcrs_apply_and_dot , & info ,
                               tpi_work_dot_join ,
                               tpi_work_dot_init ,
                               sizeof(result) , & result );
@@ -255,7 +255,7 @@ double dcrs_apply_and_dot(
     info.jBeg = matrix->n_internal_row ;
     info.jEnd = matrix->n_local_row ;
 
-    TPI_Run_threads_reduce( tpi_work_dcrs_apply_and_dot , & info , 
+    TPI_Run_threads_reduce( tpi_work_dcrs_apply_and_dot , & info ,
                             tpi_work_dot_join ,
                             tpi_work_dot_init ,
                             sizeof(remote_result) , & remote_result );
@@ -268,7 +268,7 @@ double dcrs_apply_and_dot(
 
     get_off_process_entries( matrix , x );
 
-    TPI_Run_threads_reduce( tpi_work_dcrs_apply_and_dot , & info , 
+    TPI_Run_threads_reduce( tpi_work_dcrs_apply_and_dot , & info ,
                             tpi_work_dot_join ,
                             tpi_work_dot_init ,
                             sizeof(result) , & result );

@@ -40,7 +40,7 @@ class compute_scheduler :
 
   void
   init_factory_params(sprockit::sim_parameters* params);
-  
+
   virtual void
   init_param1(sw::operating_system* os) {
     os_ = os;
@@ -64,10 +64,10 @@ class compute_scheduler :
 
   virtual void
   reserve_core(thread* thr) = 0;
-  
+
   virtual void
   release_core(thread* thr) = 0;
-  
+
   virtual void
   configure(int ncore, int nsocket);
 

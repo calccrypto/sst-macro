@@ -13,7 +13,7 @@ template <class T>
 class serialize {
  public:
   inline void operator()(T& t, serializer& ser){
-    ser.primitive(t); 
+    ser.primitive(t);
   }
 };
 

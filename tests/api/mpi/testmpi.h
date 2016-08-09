@@ -1,861 +1,861 @@
-namespace attr2type { 
+namespace attr2type {
 extern int attr2type(int argc, char** argv);
 }
-namespace attrend { 
+namespace attrend {
 extern int attrend(int argc, char** argv);
 }
-namespace attrend2 { 
+namespace attrend2 {
 extern int attrend2(int argc, char** argv);
 }
-namespace attrerr { 
+namespace attrerr {
 extern int attrerr(int argc, char** argv);
 }
-namespace attrerrcomm { 
+namespace attrerrcomm {
 extern int attrerrcomm(int argc, char** argv);
 }
-namespace attrerrtype { 
+namespace attrerrtype {
 extern int attrerrtype(int argc, char** argv);
 }
-namespace attric { 
+namespace attric {
 extern int attric(int argc, char** argv);
 }
-namespace attrorder { 
+namespace attrorder {
 extern int attrorder(int argc, char** argv);
 }
-namespace attrordercomm { 
+namespace attrordercomm {
 extern int attrordercomm(int argc, char** argv);
 }
-namespace attrordertype { 
+namespace attrordertype {
 extern int attrordertype(int argc, char** argv);
 }
-namespace attrt { 
+namespace attrt {
 extern int attrt(int argc, char** argv);
 }
-namespace baseattr2 { 
+namespace baseattr2 {
 extern int baseattr2(int argc, char** argv);
 }
-namespace baseattrcomm { 
+namespace baseattrcomm {
 extern int baseattrcomm(int argc, char** argv);
 }
-namespace fkeyval { 
+namespace fkeyval {
 extern int fkeyval(int argc, char** argv);
 }
-namespace fkeyvalcomm { 
+namespace fkeyvalcomm {
 extern int fkeyvalcomm(int argc, char** argv);
 }
-namespace fkeyvaltype { 
+namespace fkeyvaltype {
 extern int fkeyvaltype(int argc, char** argv);
 }
-namespace keyval_double_free { 
+namespace keyval_double_free {
 extern int keyval_double_free(int argc, char** argv);
 }
-namespace allgather2 { 
+namespace allgather2 {
 extern int allgather2(int argc, char** argv);
 }
-namespace allgather3 { 
+namespace allgather3 {
 extern int allgather3(int argc, char** argv);
 }
-namespace allgatherv2 { 
+namespace allgatherv2 {
 extern int allgatherv2(int argc, char** argv);
 }
-namespace allgatherv3 { 
+namespace allgatherv3 {
 extern int allgatherv3(int argc, char** argv);
 }
-namespace allgatherv4 { 
+namespace allgatherv4 {
 extern int allgatherv4(int argc, char** argv);
 }
-namespace allred { 
+namespace allred {
 extern int allred(int argc, char** argv);
 }
-namespace allred2 { 
+namespace allred2 {
 extern int allred2(int argc, char** argv);
 }
-namespace allred3 { 
+namespace allred3 {
 extern int allred3(int argc, char** argv);
 }
-namespace allred4 { 
+namespace allred4 {
 extern int allred4(int argc, char** argv);
 }
-namespace allred5 { 
+namespace allred5 {
 extern int allred5(int argc, char** argv);
 }
-namespace allred6 { 
+namespace allred6 {
 extern int allred6(int argc, char** argv);
 }
-namespace allredmany { 
+namespace allredmany {
 extern int allredmany(int argc, char** argv);
 }
-namespace alltoall1 { 
+namespace alltoall1 {
 extern int alltoall1(int argc, char** argv);
 }
-namespace alltoallv { 
+namespace alltoallv {
 extern int alltoallv(int argc, char** argv);
 }
-namespace alltoallv0 { 
+namespace alltoallv0 {
 extern int alltoallv0(int argc, char** argv);
 }
-namespace alltoallw1 { 
+namespace alltoallw1 {
 extern int alltoallw1(int argc, char** argv);
 }
-namespace alltoallw2 { 
+namespace alltoallw2 {
 extern int alltoallw2(int argc, char** argv);
 }
-namespace alltoallw_zeros { 
+namespace alltoallw_zeros {
 extern int alltoallw_zeros(int argc, char** argv);
 }
-namespace bcast2 { 
+namespace bcast2 {
 extern int bcast2(int argc, char** argv);
 }
-namespace bcast3 { 
+namespace bcast3 {
 extern int bcast3(int argc, char** argv);
 }
-namespace bcasttest { 
+namespace bcasttest {
 extern int bcasttest(int argc, char** argv);
 }
-namespace bcastzerotype { 
+namespace bcastzerotype {
 extern int bcastzerotype(int argc, char** argv);
 }
-namespace coll10 { 
+namespace coll10 {
 extern int coll10(int argc, char** argv);
 }
-namespace coll11 { 
+namespace coll11 {
 extern int coll11(int argc, char** argv);
 }
-namespace coll12 { 
+namespace coll12 {
 extern int coll12(int argc, char** argv);
 }
-namespace coll13 { 
+namespace coll13 {
 extern int coll13(int argc, char** argv);
 }
-namespace coll2 { 
+namespace coll2 {
 extern int coll2(int argc, char** argv);
 }
-namespace coll3 { 
+namespace coll3 {
 extern int coll3(int argc, char** argv);
 }
-namespace coll4 { 
+namespace coll4 {
 extern int coll4(int argc, char** argv);
 }
-namespace coll5 { 
+namespace coll5 {
 extern int coll5(int argc, char** argv);
 }
-namespace coll6 { 
+namespace coll6 {
 extern int coll6(int argc, char** argv);
 }
-namespace coll7 { 
+namespace coll7 {
 extern int coll7(int argc, char** argv);
 }
-namespace coll8 { 
+namespace coll8 {
 extern int coll8(int argc, char** argv);
 }
-namespace coll9 { 
+namespace coll9 {
 extern int coll9(int argc, char** argv);
 }
-namespace exscan { 
+namespace exscan {
 extern int exscan(int argc, char** argv);
 }
-namespace exscan2 { 
+namespace exscan2 {
 extern int exscan2(int argc, char** argv);
 }
-namespace gather { 
+namespace gather {
 extern int gather(int argc, char** argv);
 }
-namespace gather2 { 
+namespace gather2 {
 extern int gather2(int argc, char** argv);
 }
-namespace iallred { 
+namespace iallred {
 extern int iallred(int argc, char** argv);
 }
-namespace icallgather { 
+namespace icallgather {
 extern int icallgather(int argc, char** argv);
 }
-namespace icallgatherv { 
+namespace icallgatherv {
 extern int icallgatherv(int argc, char** argv);
 }
-namespace icallreduce { 
+namespace icallreduce {
 extern int icallreduce(int argc, char** argv);
 }
-namespace icalltoall { 
+namespace icalltoall {
 extern int icalltoall(int argc, char** argv);
 }
-namespace icalltoallv { 
+namespace icalltoallv {
 extern int icalltoallv(int argc, char** argv);
 }
-namespace icalltoallw { 
+namespace icalltoallw {
 extern int icalltoallw(int argc, char** argv);
 }
-namespace icbarrier { 
+namespace icbarrier {
 extern int icbarrier(int argc, char** argv);
 }
-namespace icbcast { 
+namespace icbcast {
 extern int icbcast(int argc, char** argv);
 }
-namespace icgather { 
+namespace icgather {
 extern int icgather(int argc, char** argv);
 }
-namespace icgatherv { 
+namespace icgatherv {
 extern int icgatherv(int argc, char** argv);
 }
-namespace icreduce { 
+namespace icreduce {
 extern int icreduce(int argc, char** argv);
 }
-namespace icscatter { 
+namespace icscatter {
 extern int icscatter(int argc, char** argv);
 }
-namespace icscatterv { 
+namespace icscatterv {
 extern int icscatterv(int argc, char** argv);
 }
-namespace longuser { 
+namespace longuser {
 extern int longuser(int argc, char** argv);
 }
-namespace nonblocking { 
+namespace nonblocking {
 extern int nonblocking(int argc, char** argv);
 }
-namespace nonblocking2 { 
+namespace nonblocking2 {
 extern int nonblocking2(int argc, char** argv);
 }
-namespace nonblocking3 { 
+namespace nonblocking3 {
 extern int nonblocking3(int argc, char** argv);
 }
-namespace op_commutative { 
+namespace op_commutative {
 extern int op_commutative(int argc, char** argv);
 }
-namespace opband { 
+namespace opband {
 extern int opband(int argc, char** argv);
 }
-namespace opbor { 
+namespace opbor {
 extern int opbor(int argc, char** argv);
 }
-namespace opbxor { 
+namespace opbxor {
 extern int opbxor(int argc, char** argv);
 }
-namespace opland { 
+namespace opland {
 extern int opland(int argc, char** argv);
 }
-namespace oplor { 
+namespace oplor {
 extern int oplor(int argc, char** argv);
 }
-namespace oplxor { 
+namespace oplxor {
 extern int oplxor(int argc, char** argv);
 }
-namespace opmax { 
+namespace opmax {
 extern int opmax(int argc, char** argv);
 }
-namespace opmaxloc { 
+namespace opmaxloc {
 extern int opmaxloc(int argc, char** argv);
 }
-namespace opmin { 
+namespace opmin {
 extern int opmin(int argc, char** argv);
 }
-namespace opminloc { 
+namespace opminloc {
 extern int opminloc(int argc, char** argv);
 }
-namespace opprod { 
+namespace opprod {
 extern int opprod(int argc, char** argv);
 }
-namespace opsum { 
+namespace opsum {
 extern int opsum(int argc, char** argv);
 }
-namespace red3 { 
+namespace red3 {
 extern int red3(int argc, char** argv);
 }
-namespace red4 { 
+namespace red4 {
 extern int red4(int argc, char** argv);
 }
-namespace red_scat_block { 
+namespace red_scat_block {
 extern int red_scat_block(int argc, char** argv);
 }
-namespace red_scat_block2 { 
+namespace red_scat_block2 {
 extern int red_scat_block2(int argc, char** argv);
 }
-namespace redscat { 
+namespace redscat {
 extern int redscat(int argc, char** argv);
 }
-namespace redscat2 { 
+namespace redscat2 {
 extern int redscat2(int argc, char** argv);
 }
-namespace redscat3 { 
+namespace redscat3 {
 extern int redscat3(int argc, char** argv);
 }
-namespace redscatbkinter { 
+namespace redscatbkinter {
 extern int redscatbkinter(int argc, char** argv);
 }
-namespace redscatblk3 { 
+namespace redscatblk3 {
 extern int redscatblk3(int argc, char** argv);
 }
-namespace redscatinter { 
+namespace redscatinter {
 extern int redscatinter(int argc, char** argv);
 }
-namespace reduce { 
+namespace reduce {
 extern int reduce(int argc, char** argv);
 }
-namespace reduce_local { 
+namespace reduce_local {
 extern int reduce_local(int argc, char** argv);
 }
-namespace scantst { 
+namespace scantst {
 extern int scantst(int argc, char** argv);
 }
-namespace scatter2 { 
+namespace scatter2 {
 extern int scatter2(int argc, char** argv);
 }
-namespace scatter3 { 
+namespace scatter3 {
 extern int scatter3(int argc, char** argv);
 }
-namespace scattern { 
+namespace scattern {
 extern int scattern(int argc, char** argv);
 }
-namespace scatterv { 
+namespace scatterv {
 extern int scatterv(int argc, char** argv);
 }
-namespace cmfree { 
+namespace cmfree {
 extern int cmfree(int argc, char** argv);
 }
-namespace cmsplit { 
+namespace cmsplit {
 extern int cmsplit(int argc, char** argv);
 }
-namespace cmsplit2 { 
+namespace cmsplit2 {
 extern int cmsplit2(int argc, char** argv);
 }
-namespace cmsplit_type { 
+namespace cmsplit_type {
 extern int cmsplit_type(int argc, char** argv);
 }
-namespace comm_create_group { 
+namespace comm_create_group {
 extern int comm_create_group(int argc, char** argv);
 }
-namespace comm_group_half { 
+namespace comm_group_half {
 extern int comm_group_half(int argc, char** argv);
 }
-namespace comm_group_rand { 
+namespace comm_group_rand {
 extern int comm_group_rand(int argc, char** argv);
 }
-namespace comm_idup { 
+namespace comm_idup {
 extern int comm_idup(int argc, char** argv);
 }
-namespace commcreate1 { 
+namespace commcreate1 {
 extern int commcreate1(int argc, char** argv);
 }
-namespace commname { 
+namespace commname {
 extern int commname(int argc, char** argv);
 }
-namespace duptest { 
+namespace duptest {
 extern int duptest(int argc, char** argv);
 }
-namespace dupic { 
+namespace dupic {
 extern int dupic(int argc, char** argv);
 }
-namespace ic1 { 
+namespace ic1 {
 extern int ic1(int argc, char** argv);
 }
-namespace ic2 { 
+namespace ic2 {
 extern int ic2(int argc, char** argv);
 }
-namespace iccreate { 
+namespace iccreate {
 extern int iccreate(int argc, char** argv);
 }
-namespace icgroup { 
+namespace icgroup {
 extern int icgroup(int argc, char** argv);
 }
-namespace icm { 
+namespace icm {
 extern int icm(int argc, char** argv);
 }
-namespace icsplit { 
+namespace icsplit {
 extern int icsplit(int argc, char** argv);
 }
-namespace probe_intercomm { 
+namespace probe_intercomm {
 extern int probe_intercomm(int argc, char** argv);
 }
-namespace blockindexed_misc { 
+namespace blockindexed_misc {
 extern int blockindexed_misc(int argc, char** argv);
 }
-namespace blockindexed_zero_count { 
+namespace blockindexed_zero_count {
 extern int blockindexed_zero_count(int argc, char** argv);
 }
-namespace contents { 
+namespace contents {
 extern int contents(int argc, char** argv);
 }
-namespace contig_zero_count { 
+namespace contig_zero_count {
 extern int contig_zero_count(int argc, char** argv);
 }
-namespace contigstruct { 
+namespace contigstruct {
 extern int contigstruct(int argc, char** argv);
 }
-namespace darray_pack { 
+namespace darray_pack {
 extern int darray_pack(int argc, char** argv);
 }
-namespace gaddress { 
+namespace gaddress {
 extern int gaddress(int argc, char** argv);
 }
-namespace get_elements_pairtype { 
+namespace get_elements_pairtype {
 extern int get_elements_pairtype(int argc, char** argv);
 }
-namespace get_elements { 
+namespace get_elements {
 extern int get_elements(int argc, char** argv);
 }
-namespace getpartelm { 
+namespace getpartelm {
 extern int getpartelm(int argc, char** argv);
 }
-namespace hindexed_zeros { 
+namespace hindexed_zeros {
 extern int hindexed_zeros(int argc, char** argv);
 }
-namespace hindexed_block { 
+namespace hindexed_block {
 extern int hindexed_block(int argc, char** argv);
 }
-namespace hindexed_block_contents { 
+namespace hindexed_block_contents {
 extern int hindexed_block_contents(int argc, char** argv);
 }
-namespace indexed_misc { 
+namespace indexed_misc {
 extern int indexed_misc(int argc, char** argv);
 }
-namespace lbub { 
+namespace lbub {
 extern int lbub(int argc, char** argv);
 }
-namespace localpack { 
+namespace localpack {
 extern int localpack(int argc, char** argv);
 }
-namespace longdouble { 
+namespace longdouble {
 extern int longdouble(int argc, char** argv);
 }
-namespace lots_of_types { 
+namespace lots_of_types {
 extern int lots_of_types(int argc, char** argv);
 }
-namespace pairtype_pack { 
+namespace pairtype_pack {
 extern int pairtype_pack(int argc, char** argv);
 }
-namespace pairtype_size_extent { 
+namespace pairtype_size_extent {
 extern int pairtype_size_extent(int argc, char** argv);
 }
-namespace simple_commit { 
+namespace simple_commit {
 extern int simple_commit(int argc, char** argv);
 }
-namespace simple_pack_external { 
+namespace simple_pack_external {
 extern int simple_pack_external(int argc, char** argv);
 }
-namespace simple_pack { 
+namespace simple_pack {
 extern int simple_pack(int argc, char** argv);
 }
-namespace simple_resized { 
+namespace simple_resized {
 extern int simple_resized(int argc, char** argv);
 }
-namespace simple_size_extent { 
+namespace simple_size_extent {
 extern int simple_size_extent(int argc, char** argv);
 }
-namespace sizedtypes { 
+namespace sizedtypes {
 extern int sizedtypes(int argc, char** argv);
 }
-namespace slice_pack_external { 
+namespace slice_pack_external {
 extern int slice_pack_external(int argc, char** argv);
 }
-namespace slice_pack { 
+namespace slice_pack {
 extern int slice_pack(int argc, char** argv);
 }
-namespace struct_derived_zeros { 
+namespace struct_derived_zeros {
 extern int struct_derived_zeros(int argc, char** argv);
 }
-namespace struct_empty_el { 
+namespace struct_empty_el {
 extern int struct_empty_el(int argc, char** argv);
 }
-namespace struct_ezhov { 
+namespace struct_ezhov {
 extern int struct_ezhov(int argc, char** argv);
 }
-namespace struct_no_real_types { 
+namespace struct_no_real_types {
 extern int struct_no_real_types(int argc, char** argv);
 }
-namespace struct_pack { 
+namespace struct_pack {
 extern int struct_pack(int argc, char** argv);
 }
-namespace struct_verydeep { 
+namespace struct_verydeep {
 extern int struct_verydeep(int argc, char** argv);
 }
-namespace struct_zero_count { 
+namespace struct_zero_count {
 extern int struct_zero_count(int argc, char** argv);
 }
-namespace subarray_pack { 
+namespace subarray_pack {
 extern int subarray_pack(int argc, char** argv);
 }
-namespace subarray { 
+namespace subarray {
 extern int subarray(int argc, char** argv);
 }
-namespace tfree { 
+namespace tfree {
 extern int tfree(int argc, char** argv);
 }
-namespace tmatchsize { 
+namespace tmatchsize {
 extern int tmatchsize(int argc, char** argv);
 }
-namespace transpose_pack { 
+namespace transpose_pack {
 extern int transpose_pack(int argc, char** argv);
 }
-namespace tresized { 
+namespace tresized {
 extern int tresized(int argc, char** argv);
 }
-namespace tresized2 { 
+namespace tresized2 {
 extern int tresized2(int argc, char** argv);
 }
-namespace triangular_pack { 
+namespace triangular_pack {
 extern int triangular_pack(int argc, char** argv);
 }
-namespace typecommit { 
+namespace typecommit {
 extern int typecommit(int argc, char** argv);
 }
-namespace typefree { 
+namespace typefree {
 extern int typefree(int argc, char** argv);
 }
-namespace typelb { 
+namespace typelb {
 extern int typelb(int argc, char** argv);
 }
-namespace tname { 
+namespace tname {
 extern int tname(int argc, char** argv);
 }
-namespace unpack { 
+namespace unpack {
 extern int unpack(int argc, char** argv);
 }
-namespace unusual_noncontigs { 
+namespace unusual_noncontigs {
 extern int unusual_noncontigs(int argc, char** argv);
 }
-namespace zero_blklen_vector { 
+namespace zero_blklen_vector {
 extern int zero_blklen_vector(int argc, char** argv);
 }
-namespace zeroblks { 
+namespace zeroblks {
 extern int zeroblks(int argc, char** argv);
 }
-namespace zeroparms { 
+namespace zeroparms {
 extern int zeroparms(int argc, char** argv);
 }
-namespace adderr { 
+namespace adderr {
 extern int adderr(int argc, char** argv);
 }
-namespace commcall { 
+namespace commcall {
 extern int commcall(int argc, char** argv);
 }
-namespace groupcreate { 
+namespace groupcreate {
 extern int groupcreate(int argc, char** argv);
 }
-namespace groupnullincl { 
+namespace groupnullincl {
 extern int groupnullincl(int argc, char** argv);
 }
-namespace grouptest { 
+namespace grouptest {
 extern int grouptest(int argc, char** argv);
 }
-namespace grouptest2 { 
+namespace grouptest2 {
 extern int grouptest2(int argc, char** argv);
 }
-namespace gtranks { 
+namespace gtranks {
 extern int gtranks(int argc, char** argv);
 }
-namespace infodel { 
+namespace infodel {
 extern int infodel(int argc, char** argv);
 }
-namespace infodup { 
+namespace infodup {
 extern int infodup(int argc, char** argv);
 }
-namespace infomany { 
+namespace infomany {
 extern int infomany(int argc, char** argv);
 }
-namespace infomany2 { 
+namespace infomany2 {
 extern int infomany2(int argc, char** argv);
 }
-namespace infoorder { 
+namespace infoorder {
 extern int infoorder(int argc, char** argv);
 }
-namespace infotest { 
+namespace infotest {
 extern int infotest(int argc, char** argv);
 }
-namespace infovallen { 
+namespace infovallen {
 extern int infovallen(int argc, char** argv);
 }
-namespace attrself { 
+namespace attrself {
 extern int attrself(int argc, char** argv);
 }
-namespace exitst1 { 
+namespace exitst1 {
 extern int exitst1(int argc, char** argv);
 }
-namespace exitst2 { 
+namespace exitst2 {
 extern int exitst2(int argc, char** argv);
 }
-namespace exitst3 { 
+namespace exitst3 {
 extern int exitst3(int argc, char** argv);
 }
-namespace finalized { 
+namespace finalized {
 extern int finalized(int argc, char** argv);
 }
-namespace initstat { 
+namespace initstat {
 extern int initstat(int argc, char** argv);
 }
-namespace version { 
+namespace version {
 extern int version(int argc, char** argv);
 }
-namespace anyall { 
+namespace anyall {
 extern int anyall(int argc, char** argv);
 }
-namespace bottom { 
+namespace bottom {
 extern int bottom(int argc, char** argv);
 }
-namespace bsend1 { 
+namespace bsend1 {
 extern int bsend1(int argc, char** argv);
 }
-namespace bsend2 { 
+namespace bsend2 {
 extern int bsend2(int argc, char** argv);
 }
-namespace bsend3 { 
+namespace bsend3 {
 extern int bsend3(int argc, char** argv);
 }
-namespace bsend4 { 
+namespace bsend4 {
 extern int bsend4(int argc, char** argv);
 }
-namespace bsend5 { 
+namespace bsend5 {
 extern int bsend5(int argc, char** argv);
 }
-namespace bsendalign { 
+namespace bsendalign {
 extern int bsendalign(int argc, char** argv);
 }
-namespace bsendfrag { 
+namespace bsendfrag {
 extern int bsendfrag(int argc, char** argv);
 }
-namespace bsendpending { 
+namespace bsendpending {
 extern int bsendpending(int argc, char** argv);
 }
-namespace cancelrecv { 
+namespace cancelrecv {
 extern int cancelrecv(int argc, char** argv);
 }
-namespace eagerdt { 
+namespace eagerdt {
 extern int eagerdt(int argc, char** argv);
 }
-namespace greq1 { 
+namespace greq1 {
 extern int greq1(int argc, char** argv);
 }
-namespace icsend { 
+namespace icsend {
 extern int icsend(int argc, char** argv);
 }
-namespace inactivereq { 
+namespace inactivereq {
 extern int inactivereq(int argc, char** argv);
 }
-namespace isendself { 
+namespace isendself {
 extern int isendself(int argc, char** argv);
 }
-namespace large_message { 
+namespace large_message {
 extern int large_message(int argc, char** argv);
 }
-namespace mprobe { 
+namespace mprobe {
 extern int mprobe(int argc, char** argv);
 }
-namespace probe_unexp { 
+namespace probe_unexp {
 extern int probe_unexp(int argc, char** argv);
 }
-namespace probenull { 
+namespace probenull {
 extern int probenull(int argc, char** argv);
 }
-namespace pscancel { 
+namespace pscancel {
 extern int pscancel(int argc, char** argv);
 }
-namespace rcancel { 
+namespace rcancel {
 extern int rcancel(int argc, char** argv);
 }
-namespace rqfreeb { 
+namespace rqfreeb {
 extern int rqfreeb(int argc, char** argv);
 }
-namespace rqstatus { 
+namespace rqstatus {
 extern int rqstatus(int argc, char** argv);
 }
-namespace scancel { 
+namespace scancel {
 extern int scancel(int argc, char** argv);
 }
-namespace scancel2 { 
+namespace scancel2 {
 extern int scancel2(int argc, char** argv);
 }
-namespace sendall { 
+namespace sendall {
 extern int sendall(int argc, char** argv);
 }
-namespace sendflood { 
+namespace sendflood {
 extern int sendflood(int argc, char** argv);
 }
-namespace sendrecv1 { 
+namespace sendrecv1 {
 extern int sendrecv1(int argc, char** argv);
 }
-namespace sendrecv2 { 
+namespace sendrecv2 {
 extern int sendrecv2(int argc, char** argv);
 }
-namespace sendrecv3 { 
+namespace sendrecv3 {
 extern int sendrecv3(int argc, char** argv);
 }
-namespace sendself { 
+namespace sendself {
 extern int sendself(int argc, char** argv);
 }
-namespace waitany_null { 
+namespace waitany_null {
 extern int waitany_null(int argc, char** argv);
 }
-namespace waittestnull { 
+namespace waittestnull {
 extern int waittestnull(int argc, char** argv);
 }
-namespace cartcreates { 
+namespace cartcreates {
 extern int cartcreates(int argc, char** argv);
 }
-namespace cartmap1 { 
+namespace cartmap1 {
 extern int cartmap1(int argc, char** argv);
 }
-namespace cartshift1 { 
+namespace cartshift1 {
 extern int cartshift1(int argc, char** argv);
 }
-namespace cartsuball { 
+namespace cartsuball {
 extern int cartsuball(int argc, char** argv);
 }
-namespace cartzero { 
+namespace cartzero {
 extern int cartzero(int argc, char** argv);
 }
-namespace dgraph_unwgt { 
+namespace dgraph_unwgt {
 extern int dgraph_unwgt(int argc, char** argv);
 }
-namespace dims1 { 
+namespace dims1 {
 extern int dims1(int argc, char** argv);
 }
-namespace dims2 { 
+namespace dims2 {
 extern int dims2(int argc, char** argv);
 }
-namespace distgraph1 { 
+namespace distgraph1 {
 extern int distgraph1(int argc, char** argv);
 }
-namespace graphcr { 
+namespace graphcr {
 extern int graphcr(int argc, char** argv);
 }
-namespace graphcr2 { 
+namespace graphcr2 {
 extern int graphcr2(int argc, char** argv);
 }
-namespace graphmap1 { 
+namespace graphmap1 {
 extern int graphmap1(int argc, char** argv);
 }
-namespace neighb_coll { 
+namespace neighb_coll {
 extern int neighb_coll(int argc, char** argv);
 }
-namespace topodup { 
+namespace topodup {
 extern int topodup(int argc, char** argv);
 }
-namespace topotest { 
+namespace topotest {
 extern int topotest(int argc, char** argv);
 }
-namespace accfence1 { 
+namespace accfence1 {
 extern int accfence1(int argc, char** argv);
 }
-namespace accfence2_am { 
+namespace accfence2_am {
 extern int accfence2_am(int argc, char** argv);
 }
-namespace accfence2 { 
+namespace accfence2 {
 extern int accfence2(int argc, char** argv);
 }
-namespace allocmem { 
+namespace allocmem {
 extern int allocmem(int argc, char** argv);
 }
-namespace attrorderwin { 
+namespace attrorderwin {
 extern int attorderwin(int argc, char** argv);
 }
-namespace baseattrwin { 
+namespace baseattrwin {
 extern int baseattrwin(int argc, char** argv);
 }
-namespace contig_displ { 
+namespace contig_displ {
 extern int contig_displ(int argc, char** argv);
 }
-namespace fetchandadd_am { 
+namespace fetchandadd_am {
 extern int fetchandadd_am(int argc, char** argv);
 }
-namespace fetchandadd_tree_am { 
+namespace fetchandadd_tree_am {
 extern int fetchandadd_tree_am(int argc, char** argv);
 }
-namespace fetchandadd_tree { 
+namespace fetchandadd_tree {
 extern int fetchandadd_tree(int argc, char** argv);
 }
-namespace fetchandadd { 
+namespace fetchandadd {
 extern int fetchandadd(int argc, char** argv);
 }
-namespace fkeyvalwin { 
+namespace fkeyvalwin {
 extern int fkeyvalwin(int argc, char** argv);
 }
-namespace getfence1 { 
+namespace getfence1 {
 extern int getfence1(int argc, char** argv);
 }
-namespace getgroup { 
+namespace getgroup {
 extern int getgroup(int argc, char** argv);
 }
-namespace ircpi { 
+namespace ircpi {
 extern int ircpi(int argc, char** argv);
 }
-namespace lockcontention { 
+namespace lockcontention {
 extern int lockcontention(int argc, char** argv);
 }
-namespace locknull { 
+namespace locknull {
 extern int locknull(int argc, char** argv);
 }
-namespace mixedsync { 
+namespace mixedsync {
 extern int mixedsync(int argc, char** argv);
 }
-namespace nullpscw { 
+namespace nullpscw {
 extern int nullpscw(int argc, char** argv);
 }
-namespace putfence1 { 
+namespace putfence1 {
 extern int putfence1(int argc, char** argv);
 }
-namespace putfidx { 
+namespace putfidx {
 extern int putfidx(int argc, char** argv);
 }
-namespace putpscw1 { 
+namespace putpscw1 {
 extern int putpscw1(int argc, char** argv);
 }
-namespace selfrma { 
+namespace selfrma {
 extern int selfrma(int argc, char** argv);
 }
-namespace test1_am { 
+namespace test1_am {
 extern int test1_am(int argc, char** argv);
 }
-namespace test1 { 
+namespace test1 {
 extern int test1(int argc, char** argv);
 }
-namespace test2_am { 
+namespace test2_am {
 extern int test2_am(int argc, char** argv);
 }
-namespace test2 { 
+namespace test2 {
 extern int test2(int argc, char** argv);
 }
-namespace test3_am { 
+namespace test3_am {
 extern int test3_am(int argc, char** argv);
 }
-namespace test3 { 
+namespace test3 {
 extern int test3(int argc, char** argv);
 }
-namespace test4_am { 
+namespace test4_am {
 extern int test4_am(int argc, char** argv);
 }
-namespace test4 { 
+namespace test4 {
 extern int test4(int argc, char** argv);
 }
-namespace test5_am { 
+namespace test5_am {
 extern int test5_am(int argc, char** argv);
 }
-namespace test5 { 
+namespace test5 {
 extern int test5(int argc, char** argv);
 }
-namespace transpose1 { 
+namespace transpose1 {
 extern int transpose1(int argc, char** argv);
 }
-namespace transpose2 { 
+namespace transpose2 {
 extern int transpose2(int argc, char** argv);
 }
-namespace transpose3 { 
+namespace transpose3 {
 extern int transpose3(int argc, char** argv);
 }
-namespace transpose4 { 
+namespace transpose4 {
 extern int transpose4(int argc, char** argv);
 }
-namespace transpose5 { 
+namespace transpose5 {
 extern int transpose5(int argc, char** argv);
 }
-namespace transpose6 { 
+namespace transpose6 {
 extern int transpose6(int argc, char** argv);
 }
-namespace transpose7 { 
+namespace transpose7 {
 extern int transpose7(int argc, char** argv);
 }
-namespace wincall { 
+namespace wincall {
 extern int wincall(int argc, char** argv);
 }
-namespace winname { 
+namespace winname {
 extern int winname(int argc, char** argv);
 }
-namespace wintest { 
+namespace wintest {
 extern int wintest(int argc, char** argv);
 }

@@ -299,7 +299,7 @@ topology_partition::finalize_init()
   switch_to_lpid_ = new int[num_switches_total_];
   local_switch_to_thread_ = new int[num_switches_total_];
   fake_top_->create_partition(num_switches_per_lp_, switch_to_lpid_,
-    local_switch_to_thread_, local_num_switches_, 
+    local_switch_to_thread_, local_num_switches_,
     me_, nproc_, nthread_, noccupied_);
   init_local_switches();
 }
@@ -401,7 +401,7 @@ occupied_block_partition::partition_switches()
     switch_to_lpid_[i] = lp;
     num_switches_per_lp_[lp]++;
   }
-  
+
   // then place empty switches
   unoccupied_per_lp_ = unoccupied_switches_ / nproc_;
   remainder = unoccupied_switches_ % nproc_;
@@ -415,7 +415,7 @@ occupied_block_partition::partition_switches()
   if (me_ < (nproc_ - 1)) {
     my_num_occupied_ = occupied_per_lp_;
     my_num_unoccupied_ = unoccupied_per_lp_;
-  } 
+  }
   else {
     my_num_occupied_ = occupied_switches_ - occupied_per_lp_ * (nproc_-1);
     my_num_unoccupied_ = unoccupied_switches_ - unoccupied_per_lp_ * (nproc_-1);

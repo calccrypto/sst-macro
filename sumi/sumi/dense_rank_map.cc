@@ -124,9 +124,9 @@ dense_rank_map::tree_find_rank(
     return tree_find_rank(sparse_rank, offset, middle_index, failed_array);
   }
   else if (sparse_rank > failed_array[middle_index]){
-    return tree_find_rank(sparse_rank, 
-        offset +  middle_index, 
-        num_failed - middle_index, 
+    return tree_find_rank(sparse_rank,
+        offset +  middle_index,
+        num_failed - middle_index,
         failed_array + middle_index);
   }
   else {

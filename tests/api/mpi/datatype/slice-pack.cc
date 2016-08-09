@@ -29,12 +29,12 @@ int slice_pack(int argc, char *argv[])
     MPI_Datatype oneslice, twoslice, threeslice;
     int errs = 0;
     MPI_Aint sizeofint;
-	
+
     int bufsize, position;
     void *buffer;
-	
+
     int i, j, k;
-	
+
     /* Initialize a to some known values. */
     for (i = 0; i < 100; i++) {
 	for (j = 0; j < 100; j++) {
@@ -43,11 +43,11 @@ int slice_pack(int argc, char *argv[])
 	    }
 	}
     }
-	
+
     /* Initialize MPI */
     MPI_Init(&argc, &argv);
     MPI_Type_extent(MPI_INT, &sizeofint);
-  
+
     parse_args(argc, argv);
 
     /* Create data types. */
@@ -57,9 +57,9 @@ int slice_pack(int argc, char *argv[])
     MPI_Type_vector(9, 1, 2, MPI_INT, &oneslice);
     MPI_Type_hvector(9, 1, 100*sizeofint, oneslice, &twoslice);
     MPI_Type_hvector(9, 1, 100*100*sizeofint, twoslice, &threeslice);
-	
+
     MPI_Type_commit(&threeslice);
-	
+
     /* Pack it into a buffer. */
     position = 0;
     MPI_Pack_size(1, threeslice, MPI_COMM_WORLD, &bufsize);
@@ -81,7 +81,7 @@ int slice_pack(int argc, char *argv[])
 	       e, 9*9*9,
 	       MPI_INT,
 	       MPI_COMM_WORLD);
-	
+
     /* Display errors, if any. */
     for (i = 0; i < 9; i++) {
 	for (j = 0; j < 9; j++) {
@@ -96,8 +96,8 @@ int slice_pack(int argc, char *argv[])
 		}
 	    }
 	}
-    } 
-  
+    }
+
     /* Release memory. */
     free(buffer);
 

@@ -208,7 +208,7 @@ mpi_api::do_init(int* argc, char*** argv)
 //
 int
 mpi_api::do_finalize()
-{  
+{
   SSTMACBacktrace("MPI_Finalize");
   mpi_api_debug(sprockit::dbg::mpi, "MPI_Finalize()");
 

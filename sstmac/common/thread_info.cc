@@ -29,7 +29,7 @@ thread_info::register_kernel_space_virtual_thread(int thread_id, pthread_t* pthr
   //}
   spkt_throw(sprockit::value_error,
     "thread_info: pthread+pthread no longer allowed for multithreading - use pthread+ucontext");
-#if 0 
+#if 0
   SSTMAC_USE_MULTITHREAD
   active_thread thr;
   thr.id = thread_id;

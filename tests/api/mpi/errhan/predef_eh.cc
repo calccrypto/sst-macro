@@ -25,7 +25,7 @@ int predef_eh (int argc, char **argv)
     MPI_Errhandler_free(&errh);
     MPI_Finalize();
     /* Test harness requirement is that only one process write No Errors */
-    if (wrank == 0) 
+    if (wrank == 0)
       printf(" No Errors\n");
     return 0;
 }

@@ -46,7 +46,7 @@ class processor :
   init_param1(memory_model* mem){
     mem_ = mem;
   }
-  
+
   virtual void
   init_param2(node* nd){
     node_ = nd;
@@ -57,7 +57,7 @@ class processor :
 
   void
   compute(event* ev);
-  
+
   virtual void
   do_compute(sw::compute_event* cev) = 0;
 

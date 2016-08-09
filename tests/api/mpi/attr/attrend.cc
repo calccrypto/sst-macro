@@ -23,7 +23,7 @@ int attrend( int argc, char **argv )
     MTest_Init( &argc, &argv );
 
     MPI_Comm_rank( MPI_COMM_WORLD, &wrank );
-    
+
     /* create the keyval for the exit handler */
     MPI_Keyval_create( MPI_NULL_COPY_FN, delete_fn, &exit_key, (void *)0 );
 
@@ -50,7 +50,7 @@ int attrend( int argc, char **argv )
 	if (errs == 0) {
 	    printf( " No Errors\n" );
 	}
-	else { 
+	else {
 	    printf( " Found %d errors\n", errs );
 	}
 	fflush(stdout );
@@ -59,7 +59,7 @@ int attrend( int argc, char **argv )
     return 0;
 }
 
-int delete_fn( MPI_Comm comm, int keyval, void *attribute_val, 
+int delete_fn( MPI_Comm comm, int keyval, void *attribute_val,
 	       void *extra_state)
 {
     int flag;

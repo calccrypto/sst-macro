@@ -545,7 +545,7 @@ void test_ddot_accuracy(
 
 /*--------------------------------------------------------------------*/
 
-const unsigned test_lengths[] = 
+const unsigned test_lengths[] =
   { 1e4 , 2e4 , 5e4 ,
     1e5 , 2e5 , 5e5 ,
     1e6 , 2e6 , 5e6 , 1e7 };
@@ -685,7 +685,7 @@ static void comm_reduce_d4_op( void * argin ,
     d2_add_d( out + 2 , in[2] );
     d2_add_d( out + 2 , in[3] );
   }
-  return ; 
+  return ;
 }
 
 static void comm_reduce_d4_sum( COMM comm , double * val )

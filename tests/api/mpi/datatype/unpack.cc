@@ -11,7 +11,7 @@
 
 namespace unpack {
 
-/* Test sent in by Avery Ching to report a bug in MPICH2. 
+/* Test sent in by Avery Ching to report a bug in MPICH2.
    Adding it as a regression test. */
 
 /*
@@ -32,7 +32,7 @@ static void print_char_buf(char *buf_name, char *buf, int buf_len)
 }
 */
 
-char correct_buf[] = {'a', '_', 'b', 'c', '_', '_', '_', '_', 'd', '_', 
+char correct_buf[] = {'a', '_', 'b', 'c', '_', '_', '_', '_', 'd', '_',
 		      'e', 'f', 'g', '_', 'h', 'i', 'j', '_', 'k', 'l',
 		      '_', '_', '_', '_', 'm', '_', 'n', 'o', 'p', '_',
 		      'q', 'r'};
@@ -80,14 +80,14 @@ int unpack(int argc, char **argv)
 
     if ((unpack_buf = (char *) malloc(unpack_buf_sz)) == NULL)
     {
-	fprintf(stderr, "malloc unpack_buf of size %d failed\n", 
+	fprintf(stderr, "malloc unpack_buf of size %d failed\n",
 		unpack_buf_sz);
 	return -1;
     }
-    
+
     for (i = 0; i < unpack_buf_sz; i++)
 	unpack_buf[i] = 'a' + i;
-    
+
     /* print_char_buf("mem_buf before unpack", mem_buf, 2 * mem_dtype_ext); */
 
     MPI_Unpack(unpack_buf, unpack_buf_sz, &buf_pos,
@@ -96,7 +96,7 @@ int unpack(int argc, char **argv)
      * with MPICH2. */
 
     /* print_char_buf("mem_buf after unpack", mem_buf, 2 * mem_dtype_ext);
-       print_char_buf("correct buffer should be", 
+       print_char_buf("correct buffer should be",
                        correct_buf, 2 * mem_dtype_ext); */
 
     if (memcmp(mem_buf, correct_buf, 2 * mem_dtype_ext)) {

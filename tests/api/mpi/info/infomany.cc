@@ -29,7 +29,7 @@ int infomany( int argc, char *argv[] )
     int  i, j;
 
     MTest_Init( &argc, &argv );
-    
+
     for (i=0; i<MAX_INFOS; i++) {
 	MPI_Info_create( &infos[i] );
 #ifdef DBG
@@ -51,7 +51,7 @@ int infomany( int argc, char *argv[] )
 	}
 #endif
     }
-    
+
     for (i=0; i<MAX_INFOS; i++) {
 	int nkeys;
 	/*printf( "info = %x\n", infos[i] );
@@ -73,7 +73,7 @@ int infomany( int argc, char *argv[] )
 	    if (strcmp( keystr, key ) != 0) {
 		errs++;
 		if (errs < MAX_ERRORS) {
-		    printf( "Wrong key for info %d; got %s expected %s\n", 
+		    printf( "Wrong key for info %d; got %s expected %s\n",
 			    i, key, keystr );
 		}
 		continue;
@@ -99,7 +99,7 @@ int infomany( int argc, char *argv[] )
     for (i=0; i<MAX_INFOS; i++) {
 	MPI_Info_free( &infos[i] );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize( );
     return 0;

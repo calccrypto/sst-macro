@@ -62,20 +62,20 @@ int main( int argc , char ** argv )
   MPI_Comm_rank( MPI_COMM_WORLD , & rank );
   if ( 0 == rank ) {
 #endif
- 
+
   const int ntrial = 1 < argc ? atoi( argv[1] ) : 5 ;
   const int nwork  = 2 < argc ? atoi( argv[2] ) : 100 ;
- 
+
   /* Get the configuration print message out. */
   fprintf( stdout , "\"%s\"\n" , TPI_Version() );
   fprintf( stdout , "\"Unit Testing: ntrial = %d , nwork = %d\"\n" , ntrial , nwork );
- 
+
   test_tpi_init(   num_test , num_thread , ntrial );
   test_tpi_block(  num_test , num_thread , ntrial );
   test_tpi_reduce( num_test , num_thread , ntrial );
   test_tpi_work(   num_test , num_thread , nwork , ntrial );
   test_tpi_work_async( num_test , num_thread , nwork , ntrial );
- 
+
 #if defined( HAVE_MPI )
   }
   MPI_Finalize();
@@ -134,7 +134,7 @@ void test_tpi_init( const int ntest , const int nthread[] , const int ntrial )
       const double fin_sdev = 1.0e6 * sqrt( ( ntrial * dt_fin_total_2 -
                                       dt_fin_total * dt_fin_total ) /
                                     ( ntrial * ( ntrial - 1 ) ) );
-      
+
       fprintf(stdout,"%d , %d , %10g , %10g , %10g , %10g\n",
               nth , ntrial , init_mean , init_sdev , fin_mean , fin_sdev );
     }
@@ -194,7 +194,7 @@ void test_tpi_block( const int ntest , const int nthread[] , const int ntrial )
       const double unblock_sdev = 1.0e6 * sqrt( ( ntrial * dt_unblock_total_2 -
                                           dt_unblock_total * dt_unblock_total) /
                                         ( ntrial * ( ntrial - 1 ) ) );
-      
+
       fprintf(stdout,"%d , %d , %10g , %10g , %10g , %10g\n",
               nth , ntrial , block_mean , block_sdev , unblock_mean , unblock_sdev );
     }
@@ -249,7 +249,7 @@ void test_tpi_reduce( const int ntest , const int nthread[] , const int ntrial )
       TPI_Run_threads_reduce( test_reduce_via_nolock , NULL ,
                               test_reduce_join , test_reduce_init ,
                               sizeof(value) , & value );
-  
+
       dt = TPI_Walltime() - t ;
       dt_reduce_total += dt ;
       dt_reduce_total_2 += dt * dt ;
@@ -274,7 +274,7 @@ void test_tpi_reduce( const int ntest , const int nthread[] , const int ntrial )
       const double reduce_sdev = 1.0e6 * sqrt( ( ntrial * dt_reduce_total_2 -
                                          dt_reduce_total * dt_reduce_total) /
                                        ( ntrial * ( ntrial - 1 ) ) );
-      
+
       fprintf(stdout,"%d , %d , %10g , %10g , %10g , %10g\n",
               nth, ntrial, lock_mean, lock_sdev, reduce_mean, reduce_sdev);
     }
@@ -332,7 +332,7 @@ void test_tpi_work( const int ntest , const int nthread[] , const int nwork ,
       TPI_Run_reduce( test_reduce_work , & flags , nwork ,
                       test_reduce_join , test_reduce_init ,
                       sizeof(value) , & value );
-  
+
       dt = TPI_Walltime() - t ;
       dt_reduce_total += dt ;
       dt_reduce_total_2 += dt * dt ;
@@ -357,7 +357,7 @@ void test_tpi_work( const int ntest , const int nthread[] , const int nwork ,
       const double reduce_sdev = 1.0e6 * sqrt( ( ntrial * dt_reduce_total_2 -
                                          dt_reduce_total * dt_reduce_total) /
                                        ( ntrial * ( ntrial - 1 ) ) );
-      
+
       fprintf(stdout,"%d , %d , %d , %10g , %10g , %10g , %10g\n",
               nth, ntrial, nwork, work_mean, work_sdev, reduce_mean, reduce_sdev);
     }
@@ -420,7 +420,7 @@ void test_tpi_work_async(
                         test_reduce_join , test_reduce_init ,
                         sizeof(value) , & value );
       TPI_Wait();
-  
+
       dt = TPI_Walltime() - t ;
       dt_reduce_total += dt ;
       dt_reduce_total_2 += dt * dt ;
@@ -445,7 +445,7 @@ void test_tpi_work_async(
       const double reduce_sdev = 1.0e6 * sqrt( ( ntrial * dt_reduce_total_2 -
                                          dt_reduce_total * dt_reduce_total) /
                                        ( ntrial * ( ntrial - 1 ) ) );
-      
+
       fprintf(stdout,"%d , %d , %d , %10g , %10g , %10g , %10g\n",
               nth, ntrial, nwork, work_mean, work_sdev, reduce_mean, reduce_sdev);
     }

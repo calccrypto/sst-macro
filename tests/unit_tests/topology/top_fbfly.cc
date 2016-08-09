@@ -32,7 +32,7 @@ void test_fbfly(UnitTest& unit)
         }
     }
 
-    
+
     {
         coordinates coords = bfly->switch_coords(switch_id(14));
         assertEqual(unit, "fbfly switch coords", coords, 3, 2);

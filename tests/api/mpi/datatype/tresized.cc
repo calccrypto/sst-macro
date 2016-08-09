@@ -18,8 +18,8 @@ int tresized( int argc, char *argv[] )
 {
     int errs = 0, i;
     int rank, size, source, dest;
-    int count; 
-    int *buf; 
+    int count;
+    int *buf;
     MPI_Comm      comm;
     MPI_Status    status;
     MPI_Datatype  newtype;
@@ -33,7 +33,7 @@ int tresized( int argc, char *argv[] )
     MPI_Comm_size( comm, &size );
     source = 0;
     dest   = size - 1;
-	
+
     MPI_Type_create_resized( MPI_INT, 0, 3 * sizeof(int), &newtype );
     MPI_Type_commit( &newtype );
     for (count = 1; count < 65000; count = count * 2) {

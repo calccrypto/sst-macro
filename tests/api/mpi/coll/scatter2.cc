@@ -18,7 +18,7 @@ int scatter2( int argc, char **argv )
     MPI_Aint vextent;
 
     MTest_Init( &argc, &argv );
-    
+
     MPI_Comm_size( MPI_COMM_WORLD, &size );
     MPI_Comm_rank( MPI_COMM_WORLD, &rank );
 
@@ -26,13 +26,13 @@ int scatter2( int argc, char **argv )
     stride = 10;
     vecin = (double *)malloc( n * stride * size * sizeof(double) );
     vecout = (double *)malloc( n * sizeof(double) );
-    
+
     MPI_Type_vector( n, 1, stride, MPI_DOUBLE, &vec );
     MPI_Type_commit( &vec );
     MPI_Type_extent( vec, &vextent );
     if (vextent != ((n-1)*(MPI_Aint)stride + 1) * sizeof(double) ) {
 	err++;
-	printf( "Vector extent is %ld, should be %ld\n", 
+	printf( "Vector extent is %ld, should be %ld\n",
 		 (long) vextent, (long)(((n-1)*stride+1)*sizeof(double)) );
     }
     /* Note that the exted of type vector is from the first to the
@@ -43,7 +43,7 @@ int scatter2( int argc, char **argv )
     for (root=0; root<size; root++) {
 	for (i=0; i<n; i++) vecout[i] = -1.0;
 	if (rank == root) {
-	    MPI_Scatter( vecin, 1, vec, MPI_IN_PLACE, -1, MPI_DATATYPE_NULL, 
+	    MPI_Scatter( vecin, 1, vec, MPI_IN_PLACE, -1, MPI_DATATYPE_NULL,
 			 root, MPI_COMM_WORLD );
 	}
 	else {
@@ -52,7 +52,7 @@ int scatter2( int argc, char **argv )
 	    ivalue = rank * ((n-1) * stride + 1);
 	    for (i=0; i<n; i++) {
 		if (vecout[i] != ivalue) {
-		    printf( "[%d] Expected %f but found %f for vecout[%d]\n", 
+		    printf( "[%d] Expected %f but found %f for vecout[%d]\n",
 			    rank, ivalue, vecout[i], i );
 		    err++;
 		}
@@ -60,7 +60,7 @@ int scatter2( int argc, char **argv )
 	    }
 	}
     }
-    
+
     MTest_Finalize( err );
     MPI_Type_free( &vec );
     MPI_Finalize();

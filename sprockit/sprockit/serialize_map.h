@@ -49,7 +49,7 @@ serialize_map(Map& m, serializer& ser)
     }
     break;
   }
-  }    
+  }
 }
 
 } //end ns private

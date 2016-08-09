@@ -23,7 +23,7 @@ void abortMsg( const char *str, int code )
 
     MPI_Error_class( code, &cl );
     MPI_Error_string( code, msg, &resultLen );
-    fprintf( stderr, "%s: errcode = %d, class = %d, msg = %s\n", 
+    fprintf( stderr, "%s: errcode = %d, class = %d, msg = %s\n",
 	     str, code, cl, msg );
     MPI_Abort( MPI_COMM_WORLD, code );
 }
@@ -52,7 +52,7 @@ int commcreate1( int argc, char *argv[] )
     err = MPI_Group_size( godd, &gsize );
     if (err) abortMsg( "Failed to get size of odd group: ", err );
     if (gsize != wsize/2) {
-	fprintf( stderr, "Group godd size is %d should be %d\n", gsize, 
+	fprintf( stderr, "Group godd size is %d should be %d\n", gsize,
 		 wsize/2 );
 	errs++;
     }
@@ -124,7 +124,7 @@ int BuildComm( MPI_Comm oldcomm, MPI_Group group, const char gname[] )
 	MPI_Comm_rank( newcomm, &rank );
 	if (rank != grank) {
 	    errs ++;
-	    fprintf( stderr, "Rank is %d should be %d in comm from %s\n", 
+	    fprintf( stderr, "Rank is %d should be %d in comm from %s\n",
 		     rank, grank, gname );
 	}
 	MPI_Comm_size( newcomm, &size );

@@ -29,19 +29,19 @@ class refcount_ptr {
 
   template <class U>
   void decref(U* ptr){
-    if (ptr){   
+    if (ptr){
       if (ref_decrement_return(ptr->references) == 0)
         delete ptr;
     }
   }
-  
+
   template <class U>
   void incref(U* ptr){
     if (ptr) ref_increment(ptr->references);
   }
 
  public:
-  refcount_ptr() : ptr(0) { 
+  refcount_ptr() : ptr(0) {
   }
 
   template <class U>
@@ -52,7 +52,7 @@ class refcount_ptr {
   refcount_ptr(const refcount_ptr& rhs) : ptr(rhs.ptr) {
     incref(ptr);
   }
-  
+
   refcount_ptr(T* rhs) : ptr(rhs) {
     incref(ptr);
   }
@@ -60,7 +60,7 @@ class refcount_ptr {
   ~refcount_ptr(){
     decref(ptr);
   }
-  
+
   T*
   get() const {
     return ptr;
@@ -74,13 +74,13 @@ class refcount_ptr {
     ptr = rhs.ptr;
     return *this;
   }
-  
+
   refcount_ptr<T>&
   operator=(const refcount_ptr& rhs){
     incref(rhs.ptr);
     decref(ptr);
     ptr = rhs.ptr;
-    return *this;    
+    return *this;
   }
 
   refcount_ptr<T>&
@@ -90,7 +90,7 @@ class refcount_ptr {
     ptr = rhs;
     return *this;
   }
-  
+
   operator bool() const {
     return bool(ptr);
   }
@@ -112,7 +112,7 @@ class refcount_ptr {
 
 namespace std {
  template <class T> struct hash<sprockit::refcount_ptr<T> > {
-  size_t 
+  size_t
   operator()(const sprockit::refcount_ptr<T>& ptr) const {
     return hash<void*>()(ptr.get());
   }

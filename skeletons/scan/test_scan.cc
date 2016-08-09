@@ -16,13 +16,13 @@ int main(int argc, char** argv)
   params["amm_model"] = "amm3";
   params["sleep_time"] = 0;
   params["message_size"].setByteLength(16, "KB");
-  
+
   for (int i=0; i < nPoints; ++i){
     //params["injection_bandwidth"].setBandwidth(bandwidths[i], "GB/s");
     Simulation* sim = queue.fork(params);
     sim->setLabel(i);
   }
-  
+
   for (int i=0; i < nPoints; ++i){
     Simulation* sim = queue.waitForCompleted();
     int idx; sim->getLabel(idx);
@@ -30,7 +30,7 @@ int main(int argc, char** argv)
   }
 
   for (int i=0; i < nPoints; ++i){
-    printf("BW=%4.2fGB/s T=%8.4fms\n", 
+    printf("BW=%4.2fGB/s T=%8.4fms\n",
       bandwidths[i], results[i]*1e3);
   }
 

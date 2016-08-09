@@ -18,10 +18,10 @@ int redscat( int argc, char **argv )
     MPI_Comm_size( comm, &size );
     MPI_Comm_rank( comm, &rank );
     sendbuf = (int *) malloc( size * sizeof(int) );
-    for (i=0; i<size; i++) 
+    for (i=0; i<size; i++)
 	sendbuf[i] = rank + i;
     recvcounts = (int *)malloc( size * sizeof(int) );
-    for (i=0; i<size; i++) 
+    for (i=0; i<size; i++)
 	recvcounts[i] = 1;
 
     MPI_Reduce_scatter( sendbuf, &recvbuf, recvcounts, MPI_INT, MPI_SUM, comm );

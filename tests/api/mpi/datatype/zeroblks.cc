@@ -39,11 +39,11 @@ int zeroblks( int argc, char *argv[] )
     MPI_Type_commit(&type);
 
     position = 0;
-    MPI_Pack( send_buffer, 1, type, pack_buffer, sizeof(pack_buffer), 
+    MPI_Pack( send_buffer, 1, type, pack_buffer, sizeof(pack_buffer),
 	      &position, MPI_COMM_WORLD );
     pack_size = position;
     position = 0;
-    MPI_Unpack( pack_buffer, pack_size, &position, recv_buffer, 1, type, 
+    MPI_Unpack( pack_buffer, pack_size, &position, recv_buffer, 1, type,
 		MPI_COMM_WORLD );
 
     /* Check that the last 40 entries of the recv_buffer have the corresponding
@@ -51,14 +51,14 @@ int zeroblks( int argc, char *argv[] )
     for (i=0; i<20; i++) {
 	if (recv_buffer[i] != -1) {
 	    errs++;
-	    fprintf( stderr, "recv_buffer[%d] = %d, should = -1\n", i, 
+	    fprintf( stderr, "recv_buffer[%d] = %d, should = -1\n", i,
 		     recv_buffer[i] );
 	}
     }
     for (i=20; i<60; i++) {
 	if (recv_buffer[i] != i) {
 	    errs++;
-	    fprintf( stderr, "recv_buffer[%d] = %d, should = %d\n", i, 
+	    fprintf( stderr, "recv_buffer[%d] = %d, should = %d\n", i,
 		     recv_buffer[i], i );
 	}
     }

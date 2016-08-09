@@ -15,12 +15,12 @@ int isendself( int argc, char *argv[] )
     MPI_Request request;
     int rank, count;
     int errs = 0;
-    
+
 
     MTest_Init( 0, 0 );
 
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    
+
     for (i=0; i<10; i++) a[i] = i+1;
 
     status.MPI_ERROR = 0;

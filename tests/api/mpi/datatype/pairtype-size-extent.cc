@@ -32,7 +32,7 @@ MPI_Aint pairtype_displacement(MPI_Datatype type, int *out_size_p)
 {
     MPI_Aint disp;
 
-    /* Note that a portable test may not use a switch statement for 
+    /* Note that a portable test may not use a switch statement for
        datatypes, as they are not required to be compile-time constants */
     if (type == MPI_FLOAT_INT) {
 	struct { float a; int b; } foo;
@@ -74,7 +74,7 @@ int pairtype_size_extent(int argc, char *argv[])
     MPI_Aint disps[2] = {0, 0};
     MPI_Datatype types[2] = {MPI_INT, MPI_INT};
     MPI_Datatype stype;
-    
+
     MPI_Init(&argc, &argv);
     parse_args(argc, argv);
 
@@ -118,7 +118,7 @@ int pairtype_size_extent(int argc, char *argv[])
 	}
 	MPI_Type_free( &stype );
     }
-    
+
 
     /* print message and exit */
     if (errs) {

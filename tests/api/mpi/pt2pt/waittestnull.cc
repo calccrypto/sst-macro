@@ -8,8 +8,8 @@
 #include "mpitest.h"
 
 namespace waittestnull {
-/* 
- * This program checks that the various MPI_Test and MPI_Wait routines 
+/*
+ * This program checks that the various MPI_Test and MPI_Wait routines
  * allow both null requests and in the multiple completion cases, empty
  * lists of requests.
  */
@@ -75,7 +75,7 @@ int waittestnull(int argc, char **argv)
 	printf( "MPI_Waitsome returned failure: %s\n", errmsg );
 	errs ++;
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

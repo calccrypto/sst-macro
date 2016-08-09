@@ -57,7 +57,7 @@ wait_allreduce(int domain_rank)
     }
   }
 }
-      
+
 
 
 int

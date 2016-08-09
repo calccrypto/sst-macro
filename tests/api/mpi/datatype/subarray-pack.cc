@@ -392,7 +392,7 @@ int subarray_4d_c_test1(void)
 	-2221, -2222, -2223, -2224,     5, -2226,
 	-2231, -2232, -2233, -2234,     6, -2236
     };
-    
+
     int array_size[4] = {2, 2, 3, 6};
     int array_subsize[4] = {1, 2, 3, 1};
     int array_start[4] = {1, 0, 0, 4};
@@ -484,7 +484,7 @@ int subarray_4d_fortran_test1(void)
 	-2221, -2222, -2223, -2224,     5, -2226,
 	-2231, -2232, -2233, -2234,     6, -2236
     };
-    
+
     int array_size[4] = {6, 3, 2, 2};
     int array_subsize[4] = {1, 3, 2, 1};
     int array_start[4] = {4, 0, 0, 1};

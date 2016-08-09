@@ -18,8 +18,8 @@ int tresized2( int argc, char *argv[] )
 {
     int errs = 0, i;
     int rank, size, source, dest;
-    int count; 
-    int *buf; 
+    int count;
+    int *buf;
     MPI_Comm      comm;
     MPI_Status    status;
     MPI_Datatype  newtype;
@@ -35,10 +35,10 @@ int tresized2( int argc, char *argv[] )
     dest   = size - 1;
 
     /* Create an type that is "* INT * "
-       that is, there is a int-sized pad at the beginning of the type, 
+       that is, there is a int-sized pad at the beginning of the type,
        and the extent is still 3 ints.  Note, however, that the INT
        is still at displacement 0, so the effective pattern i*/
-    MPI_Type_create_resized( MPI_INT, -(int)sizeof(int), 3 * sizeof(int), &newtype ); 
+    MPI_Type_create_resized( MPI_INT, -(int)sizeof(int), 3 * sizeof(int), &newtype );
     MPI_Type_commit( &newtype );
     for (count = 1; count < 65000; count = count * 2) {
 	buf = (int *)malloc( count * 3 * sizeof(int) );

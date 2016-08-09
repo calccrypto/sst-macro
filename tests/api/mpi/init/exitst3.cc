@@ -6,7 +6,7 @@
 #include <sstmac/replacements/mpi.h>
 
 namespace exitst3 {
-/* 
+/*
  * This is a special test to check that mpiexec handles the death of
  * some processes without an Abort or clean exit
  */

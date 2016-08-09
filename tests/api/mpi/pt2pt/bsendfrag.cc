@@ -19,7 +19,7 @@ different messages are received in different orders";
  * Notes on the test.
  *
  * To ensure that messages remain in the bsend buffer until received,
- * messages are sent with size MSG_SIZE (ints).  
+ * messages are sent with size MSG_SIZE (ints).
  */
 
 #define MSG_SIZE 17000
@@ -55,7 +55,7 @@ int bsendfrag( int argc, char *argv[] )
 	bufsize = 4 * (MSG_SIZE * sizeof(int) + MPI_BSEND_OVERHEAD);
 	buf = (int *)malloc( bufsize );
 	if (!buf) {
-	    fprintf( stderr, "Could not allocate buffer of %d bytes\n", 
+	    fprintf( stderr, "Could not allocate buffer of %d bytes\n",
 		     bufsize );
 	    MPI_Abort( MPI_COMM_WORLD, 1 );
 	}
@@ -83,7 +83,7 @@ int bsendfrag( int argc, char *argv[] )
 	MPI_Buffer_detach( &buf, &bsize );
     }
     else if (rank == dest) {
-	
+
 	MPI_Barrier( comm );
 	MPI_Recv( b2, MSG_SIZE, MPI_INT, src, 1, comm, &status );
 	MPI_Recv( b1, MSG_SIZE, MPI_INT, src, 0, comm, &status );
@@ -118,7 +118,7 @@ int bsendfrag( int argc, char *argv[] )
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

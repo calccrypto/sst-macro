@@ -61,13 +61,13 @@ event_container::init_factory_params(sprockit::sim_parameters* params)
   event_rate_window_ =
       params->get_optional_int_param("sanity_check_event_rate_window", 60);
   event_manager::init_factory_params(params);
-} 
+}
 
 
 #if DEBUG_DETERMINISM
 extern std::map<event_loc_id,std::ofstream*> outs;
 #endif
- 
+
 //
 // Run the eventmanager.
 //

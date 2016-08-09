@@ -88,14 +88,14 @@ int derived_resized_test(void)
 	}
 	errs++;
     }
-    
+
     if (size != 2*sizeof(int)) {
 	if (verbose) {
 	    fprintf(stderr,
 		    "error: size != %d in derived_resized_test()\n", (int) (2*sizeof(int)));
 	}
 	errs++;
-    }    
+    }
 
     err = MPI_Type_extent(resizedtype, &extent);
     if (err != MPI_SUCCESS) {
@@ -105,7 +105,7 @@ int derived_resized_test(void)
 	}
 	errs++;
     }
-    
+
     if (extent != 2*sizeof(int) + 10) {
 	if (verbose) {
 	    fprintf(stderr,
@@ -114,7 +114,7 @@ int derived_resized_test(void)
 		    (int) (2*sizeof(int) + 10));
 	}
 	errs++;
-    }    
+    }
 
     MPI_Type_free( &newtype );
     MPI_Type_free( &resizedtype );

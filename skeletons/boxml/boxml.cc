@@ -61,12 +61,12 @@ namespace lblxml
         params->get_bool_param("boxml_randomize_events");
     detailed_progress_ =
         params->get_optional_bool_param("boxml_detailed_progress",false);
-    nevents_ = 
+    nevents_ =
         params->get_int_param("boxml_events");
     round_robin_ =
         params->get_optional_bool_param("boxml_round_robin",false);
-    minimize_locks_ = 
-        params->get_optional_bool_param("boxml_minimize_locks",false);    
+    minimize_locks_ =
+        params->get_optional_bool_param("boxml_minimize_locks",false);
 
     if (!checked_bin_){
       if (params->has_param("boxml_binary_file")){
@@ -230,7 +230,7 @@ namespace lblxml
 
     runtime::exit_deadlock_region();
     finalize();
-    
+
     if (rank_==0) {
       std::cout << "Rank 0 finalized" << std::endl;
       cout << g_active_ranks << " ranks were active\n";

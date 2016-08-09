@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2009 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 
@@ -24,7 +24,7 @@ AM_CPPFLAGS += -I$(top_builddir)/sstmac/replacements -I$(top_srcdir)/sstmac/repl
 
 AM_FCFLAGS = -I$(top_builddir) -I$(top_srcdir) -m32 -m64
 
-libsstmac_mpi_la_LDFLAGS = 
+libsstmac_mpi_la_LDFLAGS =
 
 libsstmac_mpi_la_SOURCES = \
   mpi_comm/mpi_comm.cc \
@@ -54,7 +54,7 @@ libsstmac_mpi_la_SOURCES = \
   mpi_api_wait.cc \
   mpi_debug.cc \
   mpi_message.cc \
-  mpi_request.cc 
+  mpi_request.cc
 
 nobase_library_include_HEADERS = \
   mpi_comm/keyval.h \
@@ -89,8 +89,8 @@ nobase_library_include_HEADERS = \
   mpi_wrapper.h \
   sstmac_mpi.h \
   sstmac_mpi_integers.h \
-  sstmac_mpi_macro.h 
-  
+  sstmac_mpi_macro.h
+
 
 
 

@@ -13,14 +13,14 @@ executed";
 
 /* Function prototypes to keep compilers happy */
 int copy_fn( MPI_Comm oldcomm, int keyval, void *extra_state,
-	     void *attribute_val_in, void *attribute_val_out, 
+	     void *attribute_val_in, void *attribute_val_out,
 	     int *flag);
-int delete_fn( MPI_Comm comm, int keyval, void *attribute_val, 
+int delete_fn( MPI_Comm comm, int keyval, void *attribute_val,
 	       void *extra_state);
 
 /* Copy increments the attribute value */
 int copy_fn( MPI_Comm oldcomm, int keyval, void *extra_state,
-	     void *attribute_val_in, void *attribute_val_out, 
+	     void *attribute_val_in, void *attribute_val_out,
 	     int *flag)
 {
     /* Copy the address of the attribute */
@@ -34,7 +34,7 @@ int copy_fn( MPI_Comm oldcomm, int keyval, void *extra_state,
 }
 
 /* Delete decrements the attribute value */
-int delete_fn( MPI_Comm comm, int keyval, void *attribute_val, 
+int delete_fn( MPI_Comm comm, int keyval, void *attribute_val,
 	       void *extra_state)
 {
     *(int *)attribute_val = *(int *)attribute_val - 1;
@@ -59,7 +59,7 @@ int fkeyvalcomm( int argc, char *argv[] )
 	/* See MPI-1, 5.7.1.  Freeing the keyval does not remove it if it
 	   is in use in an attribute */
 	MPI_Comm_free_keyval( &keyval );
-	
+
 	/* We create some dummy keyvals here in case the same keyval
 	   is reused */
 	for (i=0; i<32; i++) {
@@ -103,11 +103,11 @@ int fkeyvalcomm( int argc, char *argv[] )
     MTest_Finalize( errs );
     MPI_Finalize();
 
-    /* The attributes on comm self and world were deleted by finalize 
+    /* The attributes on comm self and world were deleted by finalize
        (see separate test) */
-    
+
     return 0;
-  
+
 }
 
 }

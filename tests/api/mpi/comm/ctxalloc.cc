@@ -11,7 +11,7 @@
 namespace ctxalloc {
 /*
  * This program tests the allocation (and deallocation) of contexts.
- * 
+ *
  */
 int ctxalloc( int argc, char **argv )
 {
@@ -54,7 +54,7 @@ int ctxalloc( int argc, char **argv )
 	fprintf( stderr, "Failed to free newcomm1\n" );
 	MTestPrintError( err );
     }
-      
+
     MTest_Finalize( errs );
 
     MPI_Finalize();

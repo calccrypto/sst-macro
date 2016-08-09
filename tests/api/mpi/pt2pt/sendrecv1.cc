@@ -17,15 +17,15 @@ int sendrecv1( int argc, char *argv[] )
 {
     int errs = 0, err;
     int rank, size, source, dest;
-    int minsize = 2, count; 
+    int minsize = 2, count;
     MPI_Comm      comm;
     MTestDatatype sendtype, recvtype;
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     while (MTestGetIntracommGeneral( &comm, minsize, 1 )) {
 	if (comm == MPI_COMM_NULL) continue;
@@ -47,8 +47,8 @@ int sendrecv1( int argc, char *argv[] )
 
 		if (rank == source) {
 		    sendtype.InitBuf( &sendtype );
-		    
-		    err = MPI_Send( sendtype.buf, sendtype.count, 
+
+		    err = MPI_Send( sendtype.buf, sendtype.count,
 				    sendtype.datatype, dest, 0, comm);
 		    if (err) {
 			errs++;
@@ -58,7 +58,7 @@ int sendrecv1( int argc, char *argv[] )
 		    }
 		}
 		else if (rank == dest) {
-		    err = MPI_Recv( recvtype.buf, recvtype.count, 
+		    err = MPI_Recv( recvtype.buf, recvtype.count,
 				    recvtype.datatype, source, 0, comm, MPI_STATUS_IGNORE);
 		    if (err) {
 			errs++;
@@ -70,7 +70,7 @@ int sendrecv1( int argc, char *argv[] )
 		    err = MTestCheckRecv( 0, &recvtype );
 		    if (err) {
 			if (errs < 10) {
-			    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n", 
+			    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n",
 				    MTestGetDatatypeName( &recvtype ),
 				    MTestGetDatatypeName( &sendtype ),
 				    count );

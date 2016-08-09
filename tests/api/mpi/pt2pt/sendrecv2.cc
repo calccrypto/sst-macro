@@ -102,7 +102,7 @@ int sendrecv2( int argc, char *argv[] )
     else if (rank == 1) {
 	MPI_Send(&errs, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
     }
-	
+
  fn_exit:
 
     free(buf);

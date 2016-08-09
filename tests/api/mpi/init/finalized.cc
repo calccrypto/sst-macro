@@ -10,9 +10,9 @@ namespace finalized {
 /* FIXME: This test program assumes that MPI_Error_string will work even
    if MPI is not initialized.  That is not guaranteed.  */
 
-/* Normally, when checking for error returns from MPI calls, you must ensure 
+/* Normally, when checking for error returns from MPI calls, you must ensure
    that the error handler on the relevant object (communicator, file, or
-   window) has been set to MPI_ERRORS_RETURN.  The tests in this 
+   window) has been set to MPI_ERRORS_RETURN.  The tests in this
    program are a special case, as either a failure or an abort will
    indicate a problem */
 
@@ -113,7 +113,7 @@ int finalized( int argc, char *argv[] )
     {
 	printf(" No Errors\n");
     }
-    return 0;  
+    return 0;
 }
 
 }

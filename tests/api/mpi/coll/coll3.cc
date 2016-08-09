@@ -35,7 +35,7 @@ int coll3( int argc, char **argv )
       int begin_row  = rank * block_size;
       int end_row    = (rank+1) * block_size;
       int send_count = block_size * MAX_PROCESSES;
-      
+
       /* Fill in the displacements and recv_counts */
       for (i=0; i<participants; i++) {
 	displs[i]      = i * block_size * MAX_PROCESSES;
@@ -46,13 +46,13 @@ int coll3( int argc, char **argv )
       for (i=begin_row; i<end_row ;i++)
 	for (j=0; j<MAX_PROCESSES; j++)
 	  table[i][j] = rank + 10;
-      
+
       /* Gather everybody's result together - sort of like an */
       /* inefficient allgather */
       for (i=0; i<participants; i++) {
         void *sendbuf = (i == rank ? MPI_IN_PLACE : &table[begin_row][0]);
         MPI_Gatherv(sendbuf,      send_count, MPI_INT,
-		    &table[0][0], recv_counts, displs, MPI_INT, 
+		    &table[0][0], recv_counts, displs, MPI_INT,
 		    i, MPI_COMM_WORLD);
       }
 
@@ -62,8 +62,8 @@ int coll3( int argc, char **argv )
 	 The entries are:
 	 Table[i][j] = (i/block_size) + 10;
        */
-      for (i=0; i<MAX_PROCESSES;i++) 
-	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) ) 
+      for (i=0; i<MAX_PROCESSES;i++)
+	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) )
 	  errors++;
       for (i=0; i<MAX_PROCESSES;i++) {
 	  for (j=0; j<MAX_PROCESSES;j++) {
@@ -79,7 +79,7 @@ int coll3( int argc, char **argv )
 	      }
 	  printf("\n");
 	  }
-    } 
+    }
 
     MTest_Finalize( errors );
     MPI_Finalize();

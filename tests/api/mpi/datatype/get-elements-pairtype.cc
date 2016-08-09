@@ -66,7 +66,7 @@ int double_int_test(void)
     /* fill in disps[1..2] with appropriate offset */
     disps[1] = (MPI_Aint) ((char *) &foo.b - (char *) &foo.a);
     disps[2] = (MPI_Aint) ((char *) &foo.c - (char *) &foo.a);
-   
+
     MPI_Type_create_struct(3, blks, disps, types, &stype);
     MPI_Type_commit(&stype);
 

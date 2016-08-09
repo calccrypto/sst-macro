@@ -110,7 +110,7 @@ SSTMAC_pthread_mutex_trylock(sstmac_pthread_mutex_t * mutex);
 int
 SSTMAC_pthread_mutex_unlock(sstmac_pthread_mutex_t * mutex);
 
-int 
+int
 SSTMAC_pthread_spin_init(sstmac_pthread_spinlock_t* lock, int pshared);
 
 int

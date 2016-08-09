@@ -19,7 +19,7 @@ int main(int argc, char** argv)
   for (int i=0; i < nthread; ++i){
     pthread_attr_init(&attrs[i]);
   }
-  
+
   pthread_t* threads = new pthread_t[nthread];
   int num_on_core = 4;
   int thread_id = 0;
@@ -36,7 +36,7 @@ int main(int argc, char** argv)
     ++core;
     --num_on_core;
   }
-  
+
   void* args = 0;
   int* thread_ids = new int[nthread];
   for (int i=0; i < nthread; ++i){

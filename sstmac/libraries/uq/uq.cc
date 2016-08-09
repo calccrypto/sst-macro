@@ -86,7 +86,7 @@ free_values(double** results)
   tmpl_free_values<double>(results);
 }
 
-static void 
+static void
 wait_sims(Simulation** sims, int nsims, double** results, int nresults, uq_spawn_type_t spawn_ty)
 {
   for (int i=0; i < nsims; ++i){

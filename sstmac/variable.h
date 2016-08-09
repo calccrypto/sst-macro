@@ -17,7 +17,7 @@ del(const T* t){
 template <class T> class VariablePtr;
 
 template <class T>
-class Variable 
+class Variable
 {
  public:
   template <typename U,

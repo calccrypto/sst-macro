@@ -41,8 +41,8 @@ int cmsplit_type(int argc, char *argv[])
     MPI_Comm_free(&comm);
 
     /* Use wrank because Comm_split_type may return more than one communicator
-       across the job, and if so, each will have a rank 0 entry.  Test 
-       output rules are for a single process to write the successful 
+       across the job, and if so, each will have a rank 0 entry.  Test
+       output rules are for a single process to write the successful
        test (No Errors) output. */
     if (wrank == 0)
         printf(" No Errors\n");

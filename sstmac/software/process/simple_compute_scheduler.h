@@ -10,11 +10,11 @@ class simple_compute_scheduler : public compute_scheduler
 {
  public:
   simple_compute_scheduler() : ncore_active_(0) {}
-  
+
   void reserve_core(thread* thr);
-  
+
   void release_core(thread* thr);
-  
+
   compute_scheduler*
   clone(operating_system* os) const {
     simple_compute_scheduler* cln = new simple_compute_scheduler;

@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2011 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 include $(top_srcdir)/Makefile.common
@@ -19,7 +19,7 @@ AM_CPPFLAGS += \
  -I$(top_builddir)/tests/api/mpi \
  -I$(top_srcdir)/tests/api/mpi \
  -I$(top_builddir)/tests/api/mpi/include \
- -I$(top_srcdir)/tests/api/mpi/include 
+ -I$(top_srcdir)/tests/api/mpi/include
 
 AM_CPPFLAGS += -I$(top_srcdir)/sstmac/install -DSSTMAC=1
 AM_CPPFLAGS += -I$(top_builddir)/sstmac/replacements -I$(top_srcdir)/sstmac/replacements
@@ -37,7 +37,7 @@ testexec_SOURCES = exec.cc
 testexec_LDADD = \
   $(top_builddir)/sstmac/install/libsstmac.la \
   $(top_builddir)/sstmac/main/libsstmac_main.la \
-  $(top_builddir)/sprockit/sprockit/libsprockit.la 
+  $(top_builddir)/sprockit/sprockit/libsprockit.la
 if EXTERNAL_BOOST
   testexec_LDADD += $(BOOST_LDFLAGS)
 endif
@@ -261,7 +261,7 @@ TEST_SOURCE_FILES = \
   pt2pt/sendrecv3.cc \
   pt2pt/sendself.cc \
   pt2pt/waitany-null.cc \
-  pt2pt/waittestnull.cc 
+  pt2pt/waittestnull.cc
 
 EXTRA_DIST += $(TEST_SOURCE_FILES)
 

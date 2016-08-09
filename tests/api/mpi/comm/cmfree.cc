@@ -33,10 +33,10 @@ int cmfree( int argc, char *argv[] )
 
     /* This is similar to the datatype test, except that we post
        an irecv on a simple data buffer but use a rank-reordered communicator.
-       In this case, an error in handling the reference count will most 
+       In this case, an error in handling the reference count will most
        likely cause the program to hang, so this should be run only
-       if (a) you are confident that the code is correct or (b) 
-       a timeout is set for mpiexec 
+       if (a) you are confident that the code is correct or (b)
+       a timeout is set for mpiexec
     */
 
     MPI_Comm_rank( comm, &rank );
@@ -65,7 +65,7 @@ int cmfree( int argc, char *argv[] )
 	    MPI_Comm_split( MPI_COMM_WORLD, 0, size - rank, &tmpComm[i] );
 	}
 
-	MPI_Sendrecv( 0, 0, MPI_INT, source, 1, 
+	MPI_Sendrecv( 0, 0, MPI_INT, source, 1,
 		      0, 0, MPI_INT, source, 1, MPI_COMM_WORLD, &status );
 
 	MPI_Wait( &req, &status );
@@ -90,7 +90,7 @@ int cmfree( int argc, char *argv[] )
 	    MPI_Comm_split( MPI_COMM_WORLD, 0, size - rank, &tmpComm[i] );
 	}
 	/* Synchronize with the receiver */
-	MPI_Sendrecv( 0, 0, MPI_INT, dest, 1, 
+	MPI_Sendrecv( 0, 0, MPI_INT, dest, 1,
 		      0, 0, MPI_INT, dest, 1, MPI_COMM_WORLD, &status );
 	MPI_Send( buf, NELM, MPI_INT, dest, 0, comm );
 	free( buf );
@@ -112,7 +112,7 @@ int cmfree( int argc, char *argv[] )
     if (comm != MPI_COMM_NULL) {
 	MPI_Comm_free( &comm );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

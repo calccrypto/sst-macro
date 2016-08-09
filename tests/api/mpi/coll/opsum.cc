@@ -15,7 +15,7 @@ typedef struct { long double r, i; } ld_complex;
 #endif
 
 /*
- * This test looks at the handling of logical and for types that are not 
+ * This test looks at the handling of logical and for types that are not
  * integers or are not required integers (e.g., long long).  MPICH2 allows
  * these as well.  A strict MPI test should not include this test.
  */
@@ -117,9 +117,9 @@ int opsum( int argc, char *argv[] )
     /* For some reason, complex is not allowed for sum and prod */
     if (MPI_DOUBLE_COMPLEX != MPI_DATATYPE_NULL) {
 	int dc;
-#ifdef HAVE_LONG_DOUBLE	
+#ifdef HAVE_LONG_DOUBLE
 	ld_complex ldinbuf[3], ldoutbuf[3];
-#endif	
+#endif
 	/* Must determine which C type matches this Fortran type */
 	MPI_Type_size( MPI_DOUBLE_COMPLEX, &dc );
 	if (dc == sizeof(d_complex)) {
@@ -131,7 +131,7 @@ int opsum( int argc, char *argv[] )
 	    dinbuf[0].i = -1;
 	    dinbuf[1].i = 0;
 	    dinbuf[2].i = -(rank > 0);
-	    
+
 	    doutbuf[0].r = 0;
 	    doutbuf[1].r = 1;
 	    doutbuf[2].r = 1;
@@ -164,14 +164,14 @@ int opsum( int argc, char *argv[] )
 	    ldinbuf[0].i = -1;
 	    ldinbuf[1].i = 0;
 	    ldinbuf[2].i = -(rank > 0);
-	    
+
 	    ldoutbuf[0].r = 0;
 	    ldoutbuf[1].r = 1;
 	    ldoutbuf[2].r = 1;
 	    ldoutbuf[0].i = 0;
 	    ldoutbuf[1].i = 1;
 	    ldoutbuf[2].i = 1;
-	    MPI_Reduce( ldinbuf, ldoutbuf, 3, MPI_DOUBLE_COMPLEX, 
+	    MPI_Reduce( ldinbuf, ldoutbuf, 3, MPI_DOUBLE_COMPLEX,
 			MPI_SUM, 0, comm );
 	    if (rank == 0) {
 		if (ldoutbuf[0].r != size || ldoutbuf[0].i != -size) {

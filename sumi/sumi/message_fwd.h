@@ -11,4 +11,4 @@ typedef sprockit::refcount_ptr<message> message_ptr;
 
 }
 
-#endif 
+#endif

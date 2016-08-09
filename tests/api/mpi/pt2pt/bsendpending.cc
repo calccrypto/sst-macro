@@ -19,7 +19,7 @@ int bsendpending( int argc, char *argv[] )
     int errs = 0;
     int rank, size, source, dest;
     unsigned char *buf, *bufp;
-    int minsize = 2; 
+    int minsize = 2;
     int i, msgsize, bufsize, outsize;
     unsigned char *msg1, *msg2, *msg3;
     MPI_Comm      comm;
@@ -27,9 +27,9 @@ int bsendpending( int argc, char *argv[] )
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     msgsize = 128 * 1024;
     msg1 = (unsigned char *)malloc( 3 * msgsize );
@@ -55,7 +55,7 @@ int bsendpending( int argc, char *argv[] )
 			 bufsize );
 		MPI_Abort( MPI_COMM_WORLD, 1 );
 	    }
-	    
+
 	    MPI_Buffer_attach( buf, bufsize );
 
 	    /* Initialize the buffers */
@@ -71,7 +71,7 @@ int bsendpending( int argc, char *argv[] )
 	    MPI_Bsend( msg3, msgsize, MPI_CHAR, dest, 0, comm );
 
 	    /* Synchronize with our partner */
-	    MPI_Sendrecv( 0, 0, MPI_CHAR, dest, 10, 
+	    MPI_Sendrecv( 0, 0, MPI_CHAR, dest, 10,
 			  0, 0, MPI_CHAR, dest, 10, comm, MPI_STATUS_IGNORE );
 
 	    /* Detach the buffers.  There should be pending operations */
@@ -96,7 +96,7 @@ int bsendpending( int argc, char *argv[] )
 	    }
 
 	    /* Wait for the synchronize */
-	    MPI_Sendrecv( 0, 0, MPI_CHAR, source, 10, 
+	    MPI_Sendrecv( 0, 0, MPI_CHAR, source, 10,
 			  0, 0, MPI_CHAR, source, 10, comm, MPI_STATUS_IGNORE );
 
 	    /* Wait 2 seconds */
@@ -109,7 +109,7 @@ int bsendpending( int argc, char *argv[] )
 
 	    /* Check that we have the correct data */
 	    for (i=0; i<msgsize; i++) {
-		if (msg1[i] != (0xff ^ (i & 0xff))) { 
+		if (msg1[i] != (0xff ^ (i & 0xff))) {
 		    if (errs < 10) {
 			fprintf( stderr, "msg1[%d] = %d\n", i, msg1[i] );
 		    }
@@ -128,10 +128,10 @@ int bsendpending( int argc, char *argv[] )
 		    errs++;
 		}
 	    }
-	    
+
 	}
-		
-	
+
+
 	MTestFreeComm( &comm );
     }
     free( msg1 );

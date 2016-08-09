@@ -44,10 +44,10 @@ int cancel_fn( void *extra_state, int complete )
  * MPI_Grequest_complete function would be called from another routine,
  * often running in a separate thread.  This simple code allows us to
  * check that requests can be created, tested, and waited on in the
- * case where the request is complete before the wait is called.  
+ * case where the request is complete before the wait is called.
  *
  * Note that MPI did *not* define a routine that can be called within
- * test or wait to advance the state of a generalized request.  
+ * test or wait to advance the state of a generalized request.
  * Most uses of generalized requests will need to use a separate thread.
  */
 int greq1( int argc, char *argv[] )
@@ -60,7 +60,7 @@ int greq1( int argc, char *argv[] )
     MTest_Init( &argc, &argv );
 
     MPI_Grequest_start( query_fn, free_fn, cancel_fn, NULL, &request );
-    
+
     MPI_Test( &request, &flag, &status );
     if (flag) {
 	errs++;
@@ -75,7 +75,7 @@ int greq1( int argc, char *argv[] )
     MPI_Grequest_start( query_fn, free_fn, cancel_fn, &counter, &request );
     MPI_Grequest_complete( request );
     MPI_Wait( &request, MPI_STATUS_IGNORE );
-    
+
     if (counter) {
 	errs++;
 	fprintf( stderr, "Free routine not called, or not called with extra_data" );

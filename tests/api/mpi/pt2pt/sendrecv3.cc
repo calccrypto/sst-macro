@@ -19,7 +19,7 @@ int sendrecv3( int argc, char *argv[] )
 {
     int errs = 0;
     int rank, size, source, dest, partner;
-    int i, testnum; 
+    int i, testnum;
     double tsend;
     static int msgsizes[] = { 100, 1000, 10000, 100000, -1 };
     static int nmsgs[]    = { 100, 10,   10,    4 };
@@ -50,8 +50,8 @@ int sendrecv3( int argc, char *argv[] )
 	    }
 	    partner = (rank + 1) % 2;
 
-	    MPI_Sendrecv( MPI_BOTTOM, 0, MPI_INT, partner, 10, 
-			  MPI_BOTTOM, 0, MPI_INT, partner, 10, comm, 
+	    MPI_Sendrecv( MPI_BOTTOM, 0, MPI_INT, partner, 10,
+			  MPI_BOTTOM, 0, MPI_INT, partner, 10, comm,
 			  MPI_STATUS_IGNORE );
 	    /* Try to fill up the outgoing message buffers */
 	    for (i=0; i<nmsg; i++) {
@@ -65,8 +65,8 @@ int sendrecv3( int argc, char *argv[] )
 	    MPI_Waitall( nmsg, r, MPI_STATUSES_IGNORE );
 
 	    /* Repeat the test, but make one of the processes sleep */
-	    MPI_Sendrecv( MPI_BOTTOM, 0, MPI_INT, partner, 10, 
-			  MPI_BOTTOM, 0, MPI_INT, partner, 10, comm, 
+	    MPI_Sendrecv( MPI_BOTTOM, 0, MPI_INT, partner, 10,
+			  MPI_BOTTOM, 0, MPI_INT, partner, 10, comm,
 			  MPI_STATUS_IGNORE );
 	    if (rank == dest) MTestSleep( 1 );
 	    /* Try to fill up the outgoing message buffers */
@@ -86,7 +86,7 @@ int sendrecv3( int argc, char *argv[] )
 		printf( "Isends for %d messages of size %d took too long (%f seconds)\n", nmsg, msgSize, tsend );
 		errs++;
 	    }
-	    MTestPrintfMsg( 1, "%d Isends for size = %d took %f seconds\n", 
+	    MTestPrintfMsg( 1, "%d Isends for size = %d took %f seconds\n",
 			    nmsg, msgSize, tsend );
 
 	    for (i=0; i<nmsg; i++) {

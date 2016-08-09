@@ -119,7 +119,7 @@ class thread_safe_set
   insert(iterator position, const T& entry){
     verify("insert(position,entry)");
     return set_.insert(position, entry);
-  }    
+  }
 
   template <class InputIterator>
   void

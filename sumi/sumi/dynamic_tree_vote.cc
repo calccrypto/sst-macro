@@ -402,7 +402,7 @@ dynamic_tree_vote_actor::send_message(dynamic_tree_vote_message::type_t ty, int 
   debug_printf(sumi_collective | sumi_vote,
     "Rank %s sending vote %d of type %s to %s on tag=%d for failed=%s,msg_failed=%s",
     rank_str().c_str(),
-    vote_, dynamic_tree_vote_message::tostr(ty), 
+    vote_, dynamic_tree_vote_message::tostr(ty),
     rank_str(virtual_dst).c_str(),
     tag_, failed_ranks_.to_string().c_str(),
     stl_string(msg->failed_procs()).c_str());
@@ -499,7 +499,7 @@ dynamic_tree_vote_actor::recv_down_vote(const dynamic_tree_vote_message::ptr& ms
      rank_str().c_str(), msg->vote(), tostr(stage_),
      msg->dense_sender(), tag_,
      stl_string(msg->failed_procs()).c_str());
-     
+
 
   if (stage_ == down_vote){
     if (vote_ != msg->vote()){
@@ -541,7 +541,7 @@ dynamic_tree_vote_actor::recv_unexpected_up_vote(const dynamic_tree_vote_message
       rank_str().c_str(), msg->dense_sender(), tag_);
     send_message(dynamic_tree_vote_message::down_vote, msg->dense_sender());
   }
-  else {  
+  else {
     //now treat this essentially as a failure notification
     int child = msg->dense_sender();
     int failed_parent = up_partner(child);

@@ -35,7 +35,7 @@ int coll6( int argc, char **argv )
       int begin_row  = rank * block_size;
       int end_row    = (rank+1) * block_size;
       int send_count = block_size * MAX_PROCESSES;
-      
+
       /* Fill in the displacements and recv_counts */
       for (i=0; i<participants; i++) {
 	displs[i]      = i * block_size * MAX_PROCESSES;
@@ -46,10 +46,10 @@ int coll6( int argc, char **argv )
       for (i=begin_row; i<end_row ;i++)
 	for (j=0; j<MAX_PROCESSES; j++)
 	  table[i][j] = rank + 10;
-      
+
       /* Everybody gets the gathered data */
-      MPI_Allgatherv(&table[begin_row][0], send_count, MPI_INT, 
-		     &table[0][0], recv_counts, displs, 
+      MPI_Allgatherv(&table[begin_row][0], send_count, MPI_INT,
+		     &table[0][0], recv_counts, displs,
 		     MPI_INT, MPI_COMM_WORLD);
 
       /* Everybody should have the same table now.
@@ -57,8 +57,8 @@ int coll6( int argc, char **argv )
 	 The entries are:
 	 Table[i][j] = (i/block_size) + 10;
        */
-      for (i=0; i<MAX_PROCESSES;i++) 
-	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) ) 
+      for (i=0; i<MAX_PROCESSES;i++)
+	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) )
 	  errors++;
       for (i=0; i<MAX_PROCESSES;i++) {
 	  for (j=0; j<MAX_PROCESSES;j++) {
@@ -74,7 +74,7 @@ int coll6( int argc, char **argv )
 	      }
 	  printf("\n");
 	  }
-    } 
+    }
 
     MTest_Finalize( errors );
     MPI_Finalize();

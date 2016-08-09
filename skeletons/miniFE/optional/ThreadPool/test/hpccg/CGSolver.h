@@ -2,20 +2,20 @@
 #include <tpi_vector.h>
 
 struct cgsolve_data {
-  int             nRow ; 
-  int           * A_pc ; 
-  int           * A_ia ; 
-  MATRIX_SCALAR * A_a ; 
-  int             max_iter ; 
-  int             print_iter ; 
-  VECTOR_SCALAR   tolerance ; 
+  int             nRow ;
+  int           * A_pc ;
+  int           * A_ia ;
+  MATRIX_SCALAR * A_a ;
+  int             max_iter ;
+  int             print_iter ;
+  VECTOR_SCALAR   tolerance ;
 
-  int     np ; 
-  int     ip ; 
-  int   * recv_pc ; 
-  int   * send_pc ; 
-  int   * send_id ; 
-}; 
+  int     np ;
+  int     ip ;
+  int   * recv_pc ;
+  int   * send_pc ;
+  int   * send_id ;
+};
 
 void cgsolve_set_lhs( const struct cgsolve_data * data ,
                       const VECTOR_SCALAR * const x ,

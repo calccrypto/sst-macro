@@ -25,7 +25,7 @@ namespace sstmac {
 namespace sw {
 
 class library  {
-  
+
  public:
   static library*
   construct_lib(const std::string& libname);

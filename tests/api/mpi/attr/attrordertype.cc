@@ -31,7 +31,7 @@ int attrordertype( int argc, char *argv[] )
 			       &key[i], (void *)0 );
 	    attrval[i] = 1024 * i;
 	}
-	
+
 	/* Insert attribute in several orders.  Test after put with get,
 	 then delete, then confirm delete with get. */
 
@@ -40,19 +40,19 @@ int attrordertype( int argc, char *argv[] )
 	MPI_Type_set_attr( type, key[0], &attrval[0] );
 
 	errs += checkAttrs( type, 3, key, attrval );
-	
+
 	MPI_Type_delete_attr( type, key[0] );
 	MPI_Type_delete_attr( type, key[1] );
 	MPI_Type_delete_attr( type, key[2] );
 
 	errs += checkNoAttrs( type, 3, key );
-	
+
 	MPI_Type_set_attr( type, key[1], &attrval[1] );
 	MPI_Type_set_attr( type, key[2], &attrval[2] );
 	MPI_Type_set_attr( type, key[0], &attrval[0] );
 
 	errs += checkAttrs( type, 3, key, attrval );
-	
+
 	MPI_Type_delete_attr( type, key[2] );
 	MPI_Type_delete_attr( type, key[1] );
 	MPI_Type_delete_attr( type, key[0] );
@@ -64,22 +64,22 @@ int attrordertype( int argc, char *argv[] )
 	MPI_Type_set_attr( type, key[2], &attrval[2] );
 
 	errs += checkAttrs( type, 3, key, attrval );
-	
+
 	MPI_Type_delete_attr( type, key[1] );
 	MPI_Type_delete_attr( type, key[2] );
 	MPI_Type_delete_attr( type, key[0] );
 
 	errs += checkNoAttrs( type, 3, key );
-	
+
 	for (i=0; i<3; i++) {
 	    MPI_Type_free_keyval( &key[i] );
 	}
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 int checkAttrs( MPI_Datatype type, int n, int key[], int attrval[] )
@@ -118,5 +118,5 @@ int checkNoAttrs( MPI_Datatype type, int n, int key[] )
 
     return errs;
 }
-	
+
 }

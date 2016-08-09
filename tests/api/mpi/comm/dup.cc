@@ -26,7 +26,7 @@ int duptest( int argc, char **argv )
     MPI_Comm_rank( MPI_COMM_WORLD, &wrank );
     MPI_Comm_size( newcomm, &size );
     MPI_Comm_rank( newcomm, &rank );
-    
+
     if (size != wsize || rank != wrank) {
 	errs++;
 	fprintf( stderr, "Size (%d) or rank (%d) wrong\n", size, rank );
@@ -48,12 +48,12 @@ int duptest( int argc, char **argv )
 	}
 	if (status.MPI_SOURCE != dest) {
 	    errs++;
-	    fprintf( stderr, "Source not set correctly in status on %d\n", 
+	    fprintf( stderr, "Source not set correctly in status on %d\n",
 		     rank );
 	    fflush( stderr );
 	}
     }
-    else if (rank == size-1) { 
+    else if (rank == size-1) {
 	dest = 0;
 	a = rank;
 	b = -1;
@@ -66,7 +66,7 @@ int duptest( int argc, char **argv )
 	}
 	if (status.MPI_SOURCE != dest) {
 	    errs++;
-	    fprintf( stderr, "Source not set correctly in status on %d\n", 
+	    fprintf( stderr, "Source not set correctly in status on %d\n",
 		     rank );
 	    fflush( stderr );
 	}

@@ -26,15 +26,15 @@ int allgather2( int argc, char **argv )
 	/* Determine the sender and receiver */
 	MPI_Comm_rank( comm, &rank );
 	MPI_Comm_size( comm, &size );
-	
+
 	//std::cout << "worldrank(" << worldrank << "): my new rank is: " << rank << "\n";
         for (count = 1; count < 9000; count = count * 2) {
             vecout = (double *)malloc( size * count * sizeof(double) );
-            
+
             for (i=0; i<count; i++) {
                 vecout[rank*count+i] = rank*count+i;
             }
-            MPI_Allgather( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL, 
+            MPI_Allgather( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL,
                            vecout, count, MPI_DOUBLE, comm );
             for (i=0; i<count*size; i++) {
                 if (vecout[i] != i) {
@@ -50,7 +50,7 @@ int allgather2( int argc, char **argv )
 
 	MTestFreeComm( &comm );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

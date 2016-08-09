@@ -86,7 +86,7 @@ class sumi_api :
 
   virtual sumi::message_ptr
   handle(transport_message* msg) = 0;
-  
+
   void
   incoming_message(transport_message* msg);
 
@@ -98,7 +98,7 @@ class sumi_api :
     int dst,
     bool needs_ack,
     void* buffer = 0);
-  
+
   bool
   blocked() const {
     return queue_->blocked();
@@ -116,7 +116,7 @@ class sumi_api :
    * Manages incoming/outgoing messages
    */
   sumi_queue* queue_;
-  
+
  protected:
   event_loc_id loc_;
 

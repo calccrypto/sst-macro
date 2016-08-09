@@ -138,7 +138,7 @@ multithreaded_event_container::init_factory_params(sprockit::sim_parameters* par
   for (int i=1; i < nthread_; ++i){
     int status = pthread_attr_init(&pthread_attrs_[i]);
     if (status != 0){
-      spkt_throw(sprockit::value_error,              
+      spkt_throw(sprockit::value_error,
         "multithreaded_event_container::run: failed creating pthread attributes");
     }
   }
@@ -176,7 +176,7 @@ multithreaded_event_container::run()
   debug_printf(sprockit::dbg::event_manager,
     "starting %d event manager threads",
     nthread_);
- 
+
 #if SSTMAC_USE_CPU_AFFINITY
   if (!cpu_affinity_.size()) {
     spkt_throw(sprockit::value_error,
@@ -272,7 +272,7 @@ void
 multithreaded_event_container::schedule_incoming(int thread_id, clock_cycle_event_map* mgr)
 {
   //receive all the mpi messages
-  debug_printf(sprockit::dbg::event_manager, 
+  debug_printf(sprockit::dbg::event_manager,
     "thread barrier to scheduling incoming on thread %d, epoch %d",
     thread_id, epoch_);
   thread_barrier();

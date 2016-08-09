@@ -63,7 +63,7 @@ int infodup( int argc, char *argv[] )
 	}
     }
 
-    /* Change info and check that infodup does NOT have the new value 
+    /* Change info and check that infodup does NOT have the new value
        (ensure that lazy dups are still duped) */
     MPI_Info_set( info1, (char*)"path", (char*)"/a:/b:/c/d" );
 
@@ -72,14 +72,14 @@ int infodup( int argc, char *argv[] )
 	errs++;
 	printf( "inserting path into info changed infodup\n" );
     }
-    
+
     MPI_Info_free( &info1 );
     MPI_Info_free( &infodup );
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

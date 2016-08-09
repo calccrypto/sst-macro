@@ -57,19 +57,19 @@ class serializer
   sizer() {
     return sizer_;
   }
-  
+
   template <class T>
   void
   size(T& t){
     sizer_.size<T>(t);
   }
-  
+
   template <class T>
   void
   pack(T& t){
     packer_.pack<T>(t);
   }
-  
+
   template <class T>
   void
   unpack(T& t){
@@ -113,7 +113,7 @@ class serializer
       break;
     }
   }
-  
+
   template <class T, int N>
   void
   array(T arr[N]){
@@ -132,7 +132,7 @@ class serializer
       char* charstr = unpacker_.next_str(N*sizeof(T));
       ::memcpy(arr, charstr, N*sizeof(T));
       break;
-    }   
+    }
     }
   }
 
@@ -192,7 +192,7 @@ class serializer
     }
   }
 
-  
+
   void
   string(std::string& str);
 

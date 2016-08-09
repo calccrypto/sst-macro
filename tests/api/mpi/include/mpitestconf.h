@@ -2,7 +2,7 @@
 /* include/mpitestconf.h.in.  Generated from configure.ac by autoheader.  */
 
 /* -*- Mode: C; c-basic-offset:4 ; -*- */
-/*  
+/*
  *  (C) 2001 by Argonne National Laboratory.
  *      See COPYRIGHT in top-level directory.
  */
@@ -204,7 +204,7 @@
 #define SIZEOF_VOID_P 8
 
 /* Define calling convention */
-#define STDCALL 
+#define STDCALL
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1

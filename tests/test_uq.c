@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define debug_print(...) 
+#define debug_print(...)
 #define debug_print(...) printf(__VA_ARGS__)
 
 int main(int argc, char** argv)
@@ -12,10 +12,10 @@ int main(int argc, char** argv)
   int npartners = 4;
   int niterations = 2;
   int nresults = nproc*npartners*niterations;
-  int nparams = 2; 
+  int nparams = 2;
   int njobs = 4;
-  const char* param_names[] = { 
-    "injection_bandwidth", 
+  const char* param_names[] = {
+    "injection_bandwidth",
     "network_bandwidth",
   };
   double** param_values = allocate_values(njobs, nparams);

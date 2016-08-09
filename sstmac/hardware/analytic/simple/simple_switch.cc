@@ -163,7 +163,7 @@ simple_switch::handle(event* ev)
     } //else no delay - remote to local
     send_to_nic(delay, dst, msg);
   }
-  else { 
+  else {
     //form local going remote
     int num_hops = top_->num_hops_to_node(src, dst);
     delay = num_hops * hop_latency_ + 2*inj_lat_; //factor of 2 for in-out

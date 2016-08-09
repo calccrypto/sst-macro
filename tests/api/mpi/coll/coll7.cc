@@ -48,10 +48,10 @@ int coll7( int argc, char **argv )
       /* This test does not in any way guarantee there are no errors */
       /* Print out a table or devise a smart test to make sure it's correct */
       for (i=0; i<MAX_PROCESSES;i++) {
-	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) ) 
+	if ( (table[i][0] - table[i][MAX_PROCESSES-1] !=0) )
 	  errors++;
       }
-    } 
+    }
 
     MTest_Finalize( errors );
     MPI_Finalize();

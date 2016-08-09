@@ -180,7 +180,7 @@ manager::build_app(int appnum,
 
 manager::~manager() throw ()
 {
-  if (sprockit::debug::prefix_fxn) 
+  if (sprockit::debug::prefix_fxn)
     delete sprockit::debug::prefix_fxn;
   sprockit::debug::prefix_fxn = 0;
 

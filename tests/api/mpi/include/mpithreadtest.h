@@ -9,10 +9,10 @@
 
 #include "mpitestconf.h"
 
-/* 
-   Define routines to start a thread for different thread packages.  
+/*
+   Define routines to start a thread for different thread packages.
    The routine that is started is expected to return data when it
-   exits; the type of this data is 
+   exits; the type of this data is
 
    MTEST_THREAD_RETURN_TYPE
 */

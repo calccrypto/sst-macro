@@ -170,7 +170,7 @@ void cgsolve( const struct cgsolve_data * const data ,
                     VECTOR_SCALAR * const x ,
                     int    * const iter_count ,
                     VECTOR_SCALAR * const norm_resid ,
-                    double * const dt_mxv ,  
+                    double * const dt_mxv ,
                     double * const dt_axpby ,
                     double * const dt_dot )
 {
@@ -231,7 +231,7 @@ void cgsolve( const struct cgsolve_data * const data ,
       fprintf(stdout,"  cgsolve | r(%d) | = %g\n",k,sqrt(rtrans));
       fflush(stdout);
     }
-  
+
     TIMER( dt_axpby , tpi_axpby( nRow , alpha,  p,  1.0, x) );
     TIMER( dt_axpby , tpi_axpby( nRow , -alpha, Ap, 1.0, r) );
   }

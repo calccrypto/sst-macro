@@ -253,7 +253,7 @@ transport::notify_collective_done(const collective_done_message::ptr &msg)
   if (!coll){
     spkt_throw_printf(sprockit::value_error,
       "transport::notify_collective_done: invalid collective of type %s, tag %d",
-       collective::tostr(msg->type()), msg->tag());   
+       collective::tostr(msg->type()), msg->tag());
   }
   finish_collective(coll, msg);
 }
@@ -332,7 +332,7 @@ transport::handle(const message::ptr& msg)
     }
     break;
   }
-  case message::ping: {  
+  case message::ping: {
     monitor_->message_received(msg);
     break;
   }
@@ -374,7 +374,7 @@ transport::cancel_ping(int dst, timeout_function* func)
 
 bool
 transport::ping(int dst, timeout_function* func)
-{ 
+{
   CHECK_IF_I_AM_DEAD(return false);
   validate_api();
   if (is_failed(dst)){
@@ -927,7 +927,7 @@ transport::finish_collective(collective* coll, const collective_done_message::pt
   pending_collective_msgs_[ty].erase(tag);
   debug_printf(sprockit::dbg::sumi,
     "Rank %d finished collective of type %s tag %d -> known failures are %s",
-    rank_, collective::tostr(dmsg->type()), dmsg->tag(), 
+    rank_, collective::tostr(dmsg->type()), dmsg->tag(),
     failed_ranks_.to_string().c_str());
 }
 
@@ -1155,7 +1155,7 @@ transport::send_rdma_header(int dst, const message::ptr &msg)
 {
   if (use_hardware_ack_){
     start_transaction(msg);
-  } 
+  }
   send_header(dst, msg);
 }
 

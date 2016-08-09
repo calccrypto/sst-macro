@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2011 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 include $(top_srcdir)/Makefile.common
@@ -32,7 +32,7 @@ testexec_SOURCES = exec.cc
 testexec_LDADD = \
   $(top_builddir)/sprockit/sprockit/libsprockit.la \
   $(top_builddir)/sstmac/install/libsstmac.la \
-  $(top_builddir)/sstmac/main/libsstmac_main.la 
+  $(top_builddir)/sstmac/main/libsstmac_main.la
 
 
 if EXTERNAL_BOOST

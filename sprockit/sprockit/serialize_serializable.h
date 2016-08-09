@@ -23,8 +23,8 @@ case serializer::PACK:
 case serializer::UNPACK:
   pvt::unpack_serializable(s,ser);
   t = dynamic_cast<T*>(s);
-  break;  
-  }  
+  break;
+  }
 }
 
 template <class T>
@@ -53,11 +53,11 @@ class serialize<sprockit::refcount_ptr<const T> > {
   void operator()(sprockit::refcount_ptr<const T>& o, serializer& ser){
     T* tmp = const_cast<T*>(o.get());
     serialize_intrusive_ptr(tmp, ser);
-    o = tmp;    
+    o = tmp;
   }
 };
 
 
-} 
+}
 
 #endif // SERIALIZE_SERIALIZABLE_H

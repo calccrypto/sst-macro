@@ -243,7 +243,7 @@ parsedumpi_callbacks::get_request_ptr(dumpi_request id)
 {
   request_map_t::iterator it = request_.find(id);
   if(it == request_.end()){
-    spkt_throw(sprockit::value_error, 
+    spkt_throw(sprockit::value_error,
        "parsedumpi_callbacks::get_request %d on node unmapped request id %d",
         int(id), int(parent_->mpi()->comm_world()->rank()));
   }
@@ -325,7 +325,7 @@ void parsedumpi_callbacks::
 add_mpitype(dumpi_datatype id, MPI_Datatype mpit)
 {
   if(id < DUMPI_FIRST_USER_DATATYPE){
-    spkt_throw_printf(sprockit::value_error, 
+    spkt_throw_printf(sprockit::value_error,
        "parsedumpi_callbacks::add_mpitype: %d trying to redefine built-in datatype index",
        int(id));
   }
@@ -429,7 +429,7 @@ MPI_Group parsedumpi_callbacks::get_mpigroup(dumpi_group id)
   mpigroup_map_t::iterator it = mpigroups_.find(id);
   if(it == mpigroups_.end()){
     spkt_throw_printf(sprockit::value_error,
-     "parsedumpi_callbacks::get_mpigroup: no match for communicator index %d", 
+     "parsedumpi_callbacks::get_mpigroup: no match for communicator index %d",
       int(id));
   }
   return it->second;
@@ -1571,7 +1571,7 @@ on_MPI_Gatherv(const dumpi_gatherv *prm, uint16_t thread,
                         sendtype,
                         prm->recvcounts,
                         recvtype,
-                        cb->get_mpiid(prm->root), 
+                        cb->get_mpiid(prm->root),
                         cb->get_mpicomm(prm->comm));
 
   cb->end_mpi(cpu, wall, perf);

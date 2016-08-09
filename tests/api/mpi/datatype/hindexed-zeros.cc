@@ -187,7 +187,7 @@ int hindexed_sparsetype_test(void)
 	    fprintf(stderr, "MPI_Wait returned error\n");
 	}
     }
- 
+
     /* verify data */
     for (i=0; i < 16; i++) {
 	if (recvbuf[i] != correct[i]) {

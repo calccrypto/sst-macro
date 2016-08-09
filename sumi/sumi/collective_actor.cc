@@ -521,7 +521,7 @@ dag_collective_actor::add_initial_action(action* ac)
 {
   debug_printf(sumi_collective | sumi_collective_init,
    "Rank %s, collective %s adding initial %s on tag=%d",
-   rank_str().c_str(), collective::tostr(type_), 
+   rank_str().c_str(), collective::tostr(type_),
    ac->to_string().c_str(), tag_);
   initial_actions_.push_back(ac);
 }

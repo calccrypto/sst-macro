@@ -71,7 +71,7 @@ int grouptest2( int argc, char **argv )
     for (i=0; i<size; i++) {
 	if (ranks_out[i] != (size - 1) - i) {
 	    errs++;
-	    fprintf( stdout, "Translate ranks got %d expected %d\n", 
+	    fprintf( stdout, "Translate ranks got %d expected %d\n",
 		     ranks_out[i], (size - 1) - i );
 	}
     }
@@ -112,7 +112,7 @@ int grouptest2( int argc, char **argv )
         errs++;
 	fprintf( stdout, "Group compare of equal sized but different groups should have been unequal, was %d\n", result );
     }
-    
+
 
 /* Build two new groups by excluding members; use Union to put them
    together again */
@@ -179,7 +179,7 @@ int grouptest2( int argc, char **argv )
 
     if (result != MPI_IDENT) {
 	errs++;
-	fprintf( stdout, 
+	fprintf( stdout,
 		 "MPI_GROUP_EMPTY didn't compare against empty group\n");
     }
 
@@ -203,7 +203,7 @@ int grouptest2( int argc, char **argv )
 
     MPI_Allreduce( &errs, &toterr, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD );
     if (worldrank == 0) {
-	if (toterr == 0) 
+	if (toterr == 0)
 	    printf( " No Errors\n" );
 	else
 	    printf( "Found %d errors in MPI Group routines\n", toterr );

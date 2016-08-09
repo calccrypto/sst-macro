@@ -24,7 +24,7 @@ int contigstruct( int argc, char **argv )
 
     MPI_Init( &argc, &argv );
     MPI_Comm_rank( MPI_COMM_WORLD, &rank );
-    
+
     for (i=0; i<8; i++) {
 	blocklens[i] = 1;
 	displs[i]    = (7-i) * sizeof(long);

@@ -5,7 +5,7 @@
  */
 #include <stdio.h>
 #include <sstmac/replacements/mpi.h>
-#include "mpitest.h" 
+#include "mpitest.h"
 
 namespace bsend4 {
 #define BUFSIZE 2000
@@ -36,7 +36,7 @@ int bsend4( int argc, char *argv[] )
 		status.MPI_TAG = -10;
 		status.MPI_SOURCE = -20;
 		MPI_Recv( b, 10, MPI_INT, i, 27+j, MPI_COMM_WORLD, &status );
-    
+
 		if (status.MPI_TAG != 27+j) {
 		    errs++;
 		    printf( "Wrong tag = %d\n", status.MPI_TAG );

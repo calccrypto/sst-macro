@@ -32,7 +32,7 @@ class pair_payload : public payload
   mutable T2 data2_;
   size_t size_;
   typedef pair_payload<T1, T2> PairPayload;
-  
+
   /// Construction time.
   pair_payload(const T1 &inval1, const T2 &inval2,
                size_t size = sizeof(T1) + sizeof(T2)) :

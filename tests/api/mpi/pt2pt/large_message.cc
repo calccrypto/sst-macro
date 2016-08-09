@@ -9,10 +9,10 @@
 #include "mpitest.h"
 
 namespace large_message {
-/* tests send/recv of a message > 2GB. count=270M, type=long long 
+/* tests send/recv of a message > 2GB. count=270M, type=long long
    run with 3 processes to exercise both shared memory and TCP in Nemesis tests*/
 
-int large_message(int argc, char *argv[]) 
+int large_message(int argc, char *argv[])
 {
   int        ierr,i,size,rank;
   int        cnt = 270000000;
@@ -21,7 +21,7 @@ int large_message(int argc, char *argv[])
   int errs = 0;
 
 
-  MTest_Init(&argc,&argv); 
+  MTest_Init(&argc,&argv);
 
 /* need large memory */
   if (sizeof(void *) < 8) {

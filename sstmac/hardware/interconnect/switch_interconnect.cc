@@ -41,7 +41,7 @@ sst_switch_interconnect::init_factory_params(sprockit::sim_parameters *params)
 }
 #else
 
-macro_switch_interconnect::macro_switch_interconnect() 
+macro_switch_interconnect::macro_switch_interconnect()
 {
 }
 

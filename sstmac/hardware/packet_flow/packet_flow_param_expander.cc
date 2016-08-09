@@ -15,7 +15,7 @@ packet_flow_param_expander::expand(sprockit::sim_parameters* params)
     tiled_switch_ = true;
   } else {
     tiled_switch_ = false;
-  } 
+  }
 
   sprockit::sim_parameters* nic_params = params->get_optional_namespace("nic");
   sprockit::sim_parameters* node_params = params->get_optional_namespace("node");
@@ -51,7 +51,7 @@ packet_flow_param_expander::expand(sprockit::sim_parameters* params)
     top_params->add_param_override("redundant", params->get_param("topology_redundant"));
   }
 
-  if (!top_params->has_param("group_connections") 
+  if (!top_params->has_param("group_connections")
     && params->has_param("topology_group_connections")){
     top_params->add_param_override("group_connections",
                      params->get_param("topology_group_connections"));
@@ -113,7 +113,7 @@ packet_flow_param_expander::expand(sprockit::sim_parameters* params)
 }
 
 void
-packet_flow_param_expander::expand_amm1_memory(sprockit::sim_parameters* params, sprockit::sim_parameters* mem_params) 
+packet_flow_param_expander::expand_amm1_memory(sprockit::sim_parameters* params, sprockit::sim_parameters* mem_params)
 {
   //verify we have valid timstamp and bandwidth params
   mem_params->add_param_override("latency", params->get_param("memory_latency"));
@@ -165,7 +165,7 @@ packet_flow_param_expander::expand_amm1_nic(sprockit::sim_parameters* params, sp
 
   if (params->has_param("ejection_bandwidth")){
     nic_params->add_param_override("ejection_bandwidth", params->get_param("ejection_bandwidth"));
-  } 
+  }
 }
 
 void

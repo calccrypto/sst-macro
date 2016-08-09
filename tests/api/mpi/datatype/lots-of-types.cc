@@ -11,7 +11,7 @@
 #include "mpitest.h"
 
 namespace lots_of_types{
-/* 
+/*
    The default behavior of the test routines should be to briefly indicate
    the cause of any errors - in this test, that means that verbose needs
    to be set. Verbose should turn on output that is independent of error
@@ -81,7 +81,7 @@ int lots_of_types_test(void)
 
 	disps[0] = 0;
 	blks[0]  = 4;
-	
+
 	for (j=1; j < NUM_BLOCKS; j++) {
 	    disps[j] = 4 * j;
 	    blks[j]  = (j % 3) + 1;
@@ -97,7 +97,7 @@ int lots_of_types_test(void)
             mytypes[i] = MPI_DATATYPE_NULL;
             goto fn_exit;
 	}
-	
+
 	MPI_Type_commit(&mytypes[i]);
     }
 
@@ -113,7 +113,7 @@ int lots_of_types_test(void)
 		fprintf(stderr, "MPI_Irecv returned error\n");
 	    }
 	}
-	
+
 	err = MPI_Send(sendbuf, 4, MPI_INT, 0, 0, MPI_COMM_SELF);
 	if (err != MPI_SUCCESS) {
 	    errs++;
@@ -121,7 +121,7 @@ int lots_of_types_test(void)
 		fprintf(stderr, "MPI_Send returned error\n");
 	    }
 	}
-	
+
 	err = MPI_Wait(&request, &status);
 	if (err != MPI_SUCCESS) {
 	    errs++;
@@ -129,7 +129,7 @@ int lots_of_types_test(void)
 		fprintf(stderr, "MPI_Wait returned error\n");
 	    }
 	}
-	
+
 	/* verify data */
 	for (j=0; j < 4; j++) {
 	    if (recvbuf[j] != sendbuf[j]) {
@@ -156,7 +156,7 @@ int lots_of_types_test(void)
 			count, MPI_UNDEFINED);
 	    }
 	}
-	
+
 	err = MPI_Get_elements(&status, mytypes[i], &elements);
 	if (err != MPI_SUCCESS) {
 	    errs++;

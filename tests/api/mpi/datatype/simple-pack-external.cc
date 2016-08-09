@@ -51,7 +51,7 @@ int simple_pack_external(int argc, char **argv)
     errs += err;
 
     err = struct_of_basics_test();
-    if (err && verbose) fprintf(stderr, 
+    if (err && verbose) fprintf(stderr,
 				"%d errors in struct of basics test.\n", err);
     errs += err;
 
@@ -77,7 +77,7 @@ int builtin_float_test(void)
 				&nadds,
 				&ntypes,
 				&combiner);
-    
+
     if (combiner != MPI_COMBINER_NAMED) errs++;
 
     /* Note: it is erroneous to call MPI_Type_get_contents() on a basic. */
@@ -86,7 +86,7 @@ int builtin_float_test(void)
 
 /* vector_of_vectors_test()
  *
- * Builds a vector of a vector of ints.  Assuming an int array of size 9 
+ * Builds a vector of a vector of ints.  Assuming an int array of size 9
  * integers, and treating the array as a 3x3 2D array, this will grab the
  * corners.
  *
@@ -112,7 +112,7 @@ int vector_of_vectors_test(void)
 			  &inner_vector);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "error in MPI call; aborting after %d errors\n",
 			     errs+1);
 	return errs;
@@ -125,7 +125,7 @@ int vector_of_vectors_test(void)
 			  &outer_vector);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "error in MPI call; aborting after %d errors\n",
 			     errs+1);
 	return errs;
@@ -227,7 +227,7 @@ int optimizable_vector_of_basics_test(void)
 
     if (sizeofint != 4) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "size of external32 MPI_INT = %d; should be %d\n",
 			     (int) sizeofint, 4);
     }
@@ -279,7 +279,7 @@ int optimizable_vector_of_basics_test(void)
 
     if (position != sizeoftype) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "position = %ld; should be %ld (unpack)\n",
 			     (long) position, (long) sizeoftype);
     }
@@ -321,7 +321,7 @@ int struct_of_basics_test(void)
 
     if (sizeofint != 4) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "size of external32 MPI_INT = %d; should be %d\n",
 			     (int) sizeofint, 4);
     }
@@ -380,7 +380,7 @@ int struct_of_basics_test(void)
 
     if (position != sizeoftype) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "position = %ld; should be %ld (unpack)\n",
 			     (long) position, (long) sizeoftype);
     }

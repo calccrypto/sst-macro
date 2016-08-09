@@ -37,7 +37,7 @@ int cancelrecv( int argc, char *argv[] )
     buf1 = (int *)malloc( n1 * sizeof(int) );
     buf2 = (int *)malloc( n2 * sizeof(int) );
     if (!buf0 || !buf1 || !buf2) {
-	fprintf( stderr, "Unable to allocate buffers of size %d\n", 
+	fprintf( stderr, "Unable to allocate buffers of size %d\n",
 		 n0 * (int)sizeof(int) );
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
@@ -49,7 +49,7 @@ int cancelrecv( int argc, char *argv[] )
 	MPI_Irecv( buf0, n0, MPI_INT, src, 0, comm, &r[0] );
 	MPI_Irecv( buf1, n1, MPI_INT, src, 1, comm, &r[1] );
 	MPI_Irecv( buf2, n2, MPI_INT, src, 2, comm, &r[2] );
-	
+
 	MPI_Barrier( comm );
 
 	MPI_Cancel( &r[1] );
@@ -98,7 +98,7 @@ int cancelrecv( int argc, char *argv[] )
 	    }
 	}
 	else {
-	    /* If all requests are not complete, then neither r nor s 
+	    /* If all requests are not complete, then neither r nor s
 	       may be changed */
 	    if ( (s[0].MPI_ERROR) != -3) {
 		errs++;

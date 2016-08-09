@@ -173,7 +173,7 @@ void do_all_sends(
     msg->remote_buffer() = recv_chunks[i];
     debug_printf(sprockit::dbg::traffic_matrix,
       "Putting from %d to %d on iteration %d chunk of size %d: %p -> %p",
-      tport->rank(), send_partners[i], 
+      tport->rank(), send_partners[i],
       iteration, chunk_size,
       ((void*)send_chunks[i]), ((void*)recv_chunks[i]));
     tport->rdma_put(send_partners[i], msg, send_ack, recv_ack);

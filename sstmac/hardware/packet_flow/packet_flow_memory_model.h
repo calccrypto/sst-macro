@@ -59,7 +59,7 @@ class packet_flow_memory_packetizer : public packet_flow_packetizer
 {
  public:
   packet_flow_memory_packetizer();
-  
+
   ~packet_flow_memory_packetizer();
 
   std::string

@@ -22,7 +22,7 @@ int grouptest( int argc, char *argv[] )
 	MPI_Comm_rank( MPI_COMM_WORLD, &myrank );
 	MPI_Comm_size( MPI_COMM_WORLD, &size );
 	if (size < 8) {
-	    fprintf( stderr, 
+	    fprintf( stderr,
 		  "Test requires 8 processes (16 prefered) only %d provided\n",
 		     size );
 	    errs++;
@@ -33,11 +33,11 @@ int grouptest( int argc, char *argv[] )
 	if (myrank == 2) ranks[1] = 3;
 	if (myrank == 7) ranks[2] = 6;
 	MPI_Group_incl( g1, 3, ranks, &g2 );
-	
+
 	/* Check the resulting group */
 	MPI_Group_size( g2, &size );
 	MPI_Group_rank( g2, &rank );
-	
+
 	if (size != 3) {
 	    fprintf( stderr, "Size should be %d, is %d\n", 3, size );
 	    errs++;
@@ -51,23 +51,23 @@ int grouptest( int argc, char *argv[] )
 	MPI_Group_translate_ranks( g2, 3, rin, g1, rout );
 	for (i=0; i<3; i++) {
 	    if (rout[i] != ranks[i]) {
-		fprintf( stderr, "translated rank[%d] %d should be %d\n", 
+		fprintf( stderr, "translated rank[%d] %d should be %d\n",
 			 i, rout[i], ranks[i] );
 		errs++;
 	    }
 	}
-	
+
 	/* Translate the process of the self group against another group */
 	MPI_Comm_group( MPI_COMM_SELF, &selfgroup );
 	rin[0] = 0;
 	MPI_Group_translate_ranks( selfgroup, 1, rin, g1, rout );
 	if (rout[0] != myrank) {
-	    fprintf( stderr, "translated of self is %d should be %d\n", 
+	    fprintf( stderr, "translated of self is %d should be %d\n",
 			 rout[0], myrank );
 	    errs++;
 	}
 
-	for (i=0; i<size; i++) 
+	for (i=0; i<size; i++)
 	    rin[i] = i;
 	MPI_Group_translate_ranks( g1, size, rin, selfgroup, rout );
 	for (i=0; i<size; i++) {
@@ -89,7 +89,7 @@ int grouptest( int argc, char *argv[] )
 	    int ii, *lranks, g1size;
 
 	    MPI_Group_size( g1, &g1size );
-	    
+
 	    lranks = (int *)malloc( g1size * sizeof(int) );
 	    for (ii=0; ii<g1size; ii++) lranks[ii] = ii;
 	    MPI_Group_excl( g1, g1size, lranks, &g6 );
@@ -100,19 +100,19 @@ int grouptest( int argc, char *argv[] )
 	    }
 	    free( lranks );
 	}
-	
+
 	/* Add tests for additional group operations */
-	/* 
+	/*
 	   g2 = incl 1,3,7
 	   g3 = excl 1,3,7
 	   intersect ( w, g2 ) => g2
 	   intersect ( w, g3 ) => g3
 	   intersect ( g2, g3 ) => empty
-	   
+
 	   g4 = rincl 1:n-1:2
 	   g5 = rexcl 1:n-1:2
 	   union( g4, g5 ) => world
-	   g6 = rincl n-1:1:-1 
+	   g6 = rincl n-1:1:-1
 	   g7 = rexcl n-1:1:-1
 	   union( g6, g7 ) => concat of entries, similar to world
 	   diff( w, g2 ) => g3
@@ -165,7 +165,7 @@ int grouptest( int argc, char *argv[] )
 	MPI_Group_free( &g45 );
         MPI_Group_free( &g1 );
 
-    if (myrank == 0) 
+    if (myrank == 0)
     {
 	if (errs == 0) {
 	    printf( " No Errors\n" );

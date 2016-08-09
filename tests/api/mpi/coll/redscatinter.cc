@@ -13,7 +13,7 @@ int redscatinter( int argc, char **argv )
     int      size, rsize, rank, i;
     int      recvcount, /* Each process receives this much data */
              sendcount, /* Each process contributes this much data */
-	     basecount; /* Unit of elements - basecount *rsize is recvcount, 
+	     basecount; /* Unit of elements - basecount *rsize is recvcount,
 			   etc. */
     int      isLeftGroup;
     long long *sendbuf, *recvbuf;
@@ -34,8 +34,8 @@ int redscatinter( int argc, char **argv )
 	MPI_Comm_rank( comm, &rank );
 
 	if (0) {
-	    printf( "[%d] %s (%d,%d) remote %d\n", rank, 
-		    isLeftGroup ? "L" : "R", 
+	    printf( "[%d] %s (%d,%d) remote %d\n", rank,
+		    isLeftGroup ? "L" : "R",
 		    rank, size, rsize );
 	}
 
@@ -44,16 +44,16 @@ int redscatinter( int argc, char **argv )
 
 	recvcounts = (int *)malloc( size * sizeof(int) );
 	if (!recvcounts) {
-	    fprintf( stderr, "Could not allocate %d int for recvcounts\n", 
+	    fprintf( stderr, "Could not allocate %d int for recvcounts\n",
 		     size );
 	    MPI_Abort( MPI_COMM_WORLD, 1 );
 	}
-	for (i=0; i<size; i++) 
+	for (i=0; i<size; i++)
 	    recvcounts[i] = recvcount;
-	
+
 	sendbuf = (long long *) malloc( sendcount * sizeof(long long) );
 	if (!sendbuf) {
-	    fprintf( stderr, "Could not allocate %d ints for sendbuf\n", 
+	    fprintf( stderr, "Could not allocate %d ints for sendbuf\n",
 		     sendcount );
 	    MPI_Abort( MPI_COMM_WORLD, 1 );
 	}
@@ -63,14 +63,14 @@ int redscatinter( int argc, char **argv )
 	}
 	recvbuf = (long long *)malloc( recvcount * sizeof(long long) );
 	if (!recvbuf) {
-	    fprintf( stderr, "Could not allocate %d ints for recvbuf\n", 
+	    fprintf( stderr, "Could not allocate %d ints for recvbuf\n",
 		     recvcount );
 	    MPI_Abort( MPI_COMM_WORLD, 1 );
 	}
 	for (i=0; i<recvcount; i++) {
 	    recvbuf[i] = (long long)(-i);
 	}
-	
+
 	MPI_Reduce_scatter( sendbuf, recvbuf, recvcounts, MPI_LONG_LONG, MPI_SUM,
 			    comm );
 
@@ -83,13 +83,13 @@ int redscatinter( int argc, char **argv )
 		if (err < 4) {
 		    fprintf( stdout, "Did not get expected value for reduce scatter\n" );
 		    fprintf( stdout, "[%d] %s recvbuf[%d] = %lld, expected %lld\n",
-			     rank, 
-			     isLeftGroup ? "L" : "R", 
+			     rank,
+			     isLeftGroup ? "L" : "R",
 			     i, recvbuf[i], sumval );
 		}
 	    }
 	}
-	
+
 	free(sendbuf);
 	free(recvbuf);
 	free(recvcounts);

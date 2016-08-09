@@ -36,17 +36,17 @@ int simple_pack(int argc, char **argv)
 
     /* perform some tests */
     err = builtin_float_test();
-    if (err && verbose) fprintf(stderr, "%d errors in builtin float test.\n", 
+    if (err && verbose) fprintf(stderr, "%d errors in builtin float test.\n",
 				err);
     errs += err;
 
     err = vector_of_vectors_test();
-    if (err && verbose) fprintf(stderr, 
+    if (err && verbose) fprintf(stderr,
 				"%d errors in vector of vectors test.\n", err);
     errs += err;
 
     err = optimizable_vector_of_basics_test();
-    if (err && verbose) fprintf(stderr, 
+    if (err && verbose) fprintf(stderr,
 				"%d errors in vector of basics test.\n", err);
     errs += err;
 
@@ -78,7 +78,7 @@ int builtin_float_test(void)
 				&nadds,
 				&ntypes,
 				&combiner);
-    
+
     if (combiner != MPI_COMBINER_NAMED) errs++;
 
     /* Note: it is erroneous to call MPI_Type_get_contents() on a basic. */
@@ -87,8 +87,8 @@ int builtin_float_test(void)
 
 /* vector_of_vectors_test()
  *
- * Builds a vector of a vector of ints.  Assuming an int array of size 9 
- * integers, and treating the array as a 3x3 2D array, this will grab the 
+ * Builds a vector of a vector of ints.  Assuming an int array of size 9
+ * integers, and treating the array as a 3x3 2D array, this will grab the
  * corners.
  *
  * Returns the number of errors encountered.
@@ -112,7 +112,7 @@ int vector_of_vectors_test(void)
 			  &inner_vector);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "error in MPI call; aborting after %d errors\n",
 			     errs+1);
 	return errs;
@@ -125,7 +125,7 @@ int vector_of_vectors_test(void)
 			  &outer_vector);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, 
+	if (verbose) fprintf(stderr,
 			     "error in MPI call; aborting after %d errors\n",
 			     errs+1);
 	return errs;

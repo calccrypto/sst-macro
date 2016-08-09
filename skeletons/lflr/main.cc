@@ -107,7 +107,7 @@ int main(int argc, char** argv)
         MPI_Irecv(next_right_block, nelems_right_block, MPI_DOUBLE, col_recv_partner, col_tag, MPI_COMM_WORLD, &reqs[3]);
 
         double task_start = MPI_Wtime();
-        
+
         //matmul
 
 

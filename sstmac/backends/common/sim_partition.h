@@ -257,5 +257,5 @@ class occupied_block_partition :
 
 }
 
-#endif 
+#endif
 

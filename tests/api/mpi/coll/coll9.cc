@@ -9,7 +9,7 @@ void addem ( int *, int *, int *, MPI_Datatype * );
 void addem(int *invec, int *inoutvec, int *len, MPI_Datatype *dtype)
 {
   int i;
-  for ( i=0; i<*len; i++ ) 
+  for ( i=0; i<*len; i++ )
     inoutvec[i] += invec[i];
 }
 
@@ -32,7 +32,7 @@ int coll9( int argc, char **argv )
     MPI_Bcast  ( &result, 1, MPI_INT, 0, MPI_COMM_WORLD );
     MPI_Op_free( &op );
     correct_result = 0;
-    for(i=0;i<size;i++) 
+    for(i=0;i<size;i++)
       correct_result += i;
     if (result != correct_result) errors++;
 

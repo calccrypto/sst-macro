@@ -14,7 +14,7 @@
 #if SPKT_HAVE_CPP11
 #  include <regex>
 
-std::string 
+std::string
 parseCode(std::regex_constants::error_type etype) {
   switch (etype) {
     case std::regex_constants::error_collate:
@@ -63,8 +63,8 @@ typedef std::regex_constants::syntax_option_type regex_flag_type;
 #  include <boost/regex.hpp>
 #  include <boost/algorithm/string.hpp>
 
-#define START_TRY_BLOCK 
-#define END_TRY_BLOCK 
+#define START_TRY_BLOCK
+#define END_TRY_BLOCK
 
 namespace regex_flags = boost::regex_constants;
 namespace regex_provider = boost;
@@ -74,12 +74,12 @@ typedef boost::regbase::flag_type regex_flag_type;
 #  error "Either C++11 or Boost is required to build sprockit/regexp.cc"
 #endif
 
-bool 
+bool
 has_regexp_match(const std::string &regexp, const std::string &text, int flags)
 {
   START_TRY_BLOCK
   regex_provider::smatch matches;
-  
+
   regex_flags::match_flag_type searchFlags = regex_flags::match_default;
   // The default behavior is multiline, so we'd better fix that
 #if !SPKT_HAVE_CPP11
@@ -120,7 +120,7 @@ get_regexp_integer(const std::string &text, int& ret)
   END_TRY_BLOCK
 }
 
-double 
+double
 get_regexp_double(const std::string &regexp, const std::string &text, int flags)
 {
   START_TRY_BLOCK
@@ -180,7 +180,7 @@ get_regexp_string(const std::string &regexp, const std::string &text, int flags)
 }
 
 
-double* 
+double*
 get_regexp_double_array(const std::string &regexp, const std::string &text, size_t& length, int flags)
 {
   START_TRY_BLOCK
@@ -214,14 +214,14 @@ get_regexp_double_array(const std::string &regexp, const std::string &text, size
           }
           tempVals.push_back(val);
       }
-      // update search position: 
-      start = matches[0].second; 
+      // update search position:
+      start = matches[0].second;
       searchFlags |= regex_flags::match_prev_avail;
 #if !SPKT_HAVE_CPP11
       // Not in C++11, but shouldn't cause a problem (?)
       searchFlags |= regex_flags::match_not_bob;
 #endif
-  } 
+  }
   length = tempVals.size();
   double* vals = new double[length];
   for(size_t i = 0; i < length;  ++i){
@@ -260,14 +260,14 @@ findmatch(std::vector<std::string>& matches, const std::string &regexp, const st
            if(flags & LowerCase) sprockit::to_lower(matches.back());
            if(flags & StripWhitespace) sprockit::trim(matches.back());
       }
-      // update search position: 
-      start = reMatches[0].second; 
+      // update search position:
+      start = reMatches[0].second;
       searchFlags |= regex_flags::match_prev_avail;
 #if !SPKT_HAVE_CPP11
       // Not in C++11, but shouldn't cause a problem (?)
       searchFlags |= regex_flags::match_not_bob;
 #endif
-  } 
+  }
   return;
   END_TRY_BLOCK
 }

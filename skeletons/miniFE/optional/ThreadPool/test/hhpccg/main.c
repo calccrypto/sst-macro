@@ -229,8 +229,8 @@ int main( int argc , char ** argv )
           const double dt_min_fuse_step  = 1.0e6 * solve_dt[1] ;
           const double dt_min_blas_step  = 1.0e6 * solve_blas_dt[1] ;
 
-          const double Mflop_step = 2 * nnzGlobal 
-                                  + 3 * 2 * nRowGlobal 
+          const double Mflop_step = 2 * nnzGlobal
+                                  + 3 * 2 * nRowGlobal
                                   + 2 * 2 * nRowGlobal ;
 
           const double Mflop_mean_fuse = Mflop_step * iter_count / dt_mean_fuse_step ;

@@ -35,7 +35,7 @@ int cmsplit( int argc, char *argv[] )
     color = MPI_UNDEFINED;
     if (rank < 2) color = 1;
     MPI_Comm_split( comm, color, size - rank, &scomm );
-    
+
     if (rank < 2) {
 	/* Check that the ranks are ordered correctly */
 	MPI_Comm_rank( scomm, &srank );

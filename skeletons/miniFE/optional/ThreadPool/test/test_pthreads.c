@@ -58,9 +58,9 @@ static void * test_driver( void * arg )
 
   /*------------------------------*/
 
-  while ( data->m_thread_rank ) { 
+  while ( data->m_thread_rank ) {
     pthread_cond_wait( & data->m_cond , & data->m_lock );
-  } 
+  }
   pthread_mutex_unlock( & data->m_lock );
 
   /*------------------------------*/

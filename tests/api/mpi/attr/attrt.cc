@@ -20,7 +20,7 @@ int attrt( int argc, char **argv )
 {
     int errs = 0;
     MTest_Init( &argc, &argv );
-    
+
     errs = test_communicators();
     MTest_Finalize( errs );
     MPI_Finalize();
@@ -38,7 +38,7 @@ int copy_fn( MPI_Comm oldcomm, int keyval, void *extra_state,
     return MPI_SUCCESS;
 }
 
-int delete_fn( MPI_Comm comm, int keyval, void *attribute_val, 
+int delete_fn( MPI_Comm comm, int keyval, void *attribute_val,
 	       void *extra_state)
 {
     int world_rank;
@@ -52,7 +52,7 @@ int delete_fn( MPI_Comm comm, int keyval, void *attribute_val,
 
 int test_communicators( void )
 {
-    MPI_Comm dup_comm_world, lo_comm, rev_comm, dup_comm, 
+    MPI_Comm dup_comm_world, lo_comm, rev_comm, dup_comm,
 	split_comm, world_comm;
     MPI_Group world_group, lo_group, rev_group;
     void *vvalue;
@@ -153,41 +153,41 @@ int test_communicators( void )
 	fflush(stdout);
     }
 #endif
-    
+
     if (lo_comm != MPI_COMM_NULL) {
 	value = 9;
 	MPI_Keyval_create(copy_fn,     delete_fn,   &key_1, &value );
 	value = 8;
 	value = 7;
 	MPI_Keyval_create(MPI_NULL_COPY_FN, MPI_NULL_DELETE_FN,
-			  &key_3, &value ); 
+			  &key_3, &value );
 
 	/* This may generate a compilation warning; it is, however, an
 	   easy way to cache a value instead of a pointer */
 	/* printf( "key1 = %x key3 = %x\n", key_1, key_3 ); */
 	MPI_Attr_put(lo_comm, key_1, (void *) (MPI_Aint) world_rank );
 	MPI_Attr_put(lo_comm, key_3, (void *)0 );
-	
+
 	MPI_Comm_dup(lo_comm, &dup_comm );
 
 	/* Note that if sizeof(int) < sizeof(void *), we can't use
-	   (void **)&value to get the value we passed into Attr_put.  To avoid 
-	   problems (e.g., alignment errors), we recover the value into 
+	   (void **)&value to get the value we passed into Attr_put.  To avoid
+	   problems (e.g., alignment errors), we recover the value into
 	   a (void *) and cast to int. Note that this may generate warning
 	   messages from the compiler.  */
 	MPI_Attr_get(dup_comm, key_1, (void **)&vvalue, &flag );
 	value = (MPI_Aint)vvalue;
-	
+
 	if (! flag) {
 	    errs++;
 	    printf( "dup_comm key_1 not found on %d\n", world_rank );
 	    fflush( stdout );
 	    MPI_Abort(MPI_COMM_WORLD, 3004 );
 	}
-	
+
 	if (value != world_rank) {
 	    errs++;
-	    printf( "dup_comm key_1 value incorrect: %ld, expected %d\n", 
+	    printf( "dup_comm key_1 value incorrect: %ld, expected %d\n",
 		    (long)value, world_rank );
 	    fflush( stdout );
 	    MPI_Abort(MPI_COMM_WORLD, 3005 );
@@ -204,7 +204,7 @@ int test_communicators( void )
 	MPI_Keyval_free(&key_1 );
 	MPI_Keyval_free(&key_3 );
     }
-    /* 
+    /*
        Split the world into even & odd communicators with reversed ranks.
     */
 #ifdef DEBUG
@@ -213,10 +213,10 @@ int test_communicators( void )
 	fflush(stdout);
     }
 #endif
-    
+
     color = world_rank % 2;
     key   = world_size - world_rank;
-    
+
     MPI_Comm_split(dup_comm_world, color, key, &split_comm );
     MPI_Comm_size(split_comm, &size );
     MPI_Comm_rank(split_comm, &rank );
@@ -225,7 +225,7 @@ int test_communicators( void )
 	printf( "incorrect split rank: %d\n", rank ); fflush(stdout);
 	MPI_Abort(MPI_COMM_WORLD, 3009 );
     }
-    
+
     MPI_Barrier(split_comm );
     /*
       Test each possible Comm_compare result
@@ -236,14 +236,14 @@ int test_communicators( void )
 	fflush(stdout);
     }
 #endif
-    
+
     MPI_Comm_compare(world_comm, world_comm, &result );
     if (result != MPI_IDENT) {
 	errs++;
 	printf( "incorrect ident result: %d\n", result );
 	MPI_Abort(MPI_COMM_WORLD, 3010 );
     }
-    
+
     if (lo_comm != MPI_COMM_NULL) {
 	MPI_Comm_compare(lo_comm, dup_comm, &result );
 	if (result != MPI_CONGRUENT) {
@@ -252,7 +252,7 @@ int test_communicators( void )
             MPI_Abort(MPI_COMM_WORLD, 3011 );
 	}
     }
-    
+
     ranges[0][0] = world_size - 1;
     ranges[0][1] = 0;
     ranges[0][2] = -1;
@@ -266,7 +266,7 @@ int test_communicators( void )
 	printf( "incorrect similar result: %d\n", result );
 	MPI_Abort(MPI_COMM_WORLD, 3012 );
     }
-    
+
     if (lo_comm != MPI_COMM_NULL) {
 	MPI_Comm_compare(world_comm, lo_comm, &result );
 	if (result != MPI_UNEQUAL && world_size != 1) {
@@ -279,24 +279,24 @@ int test_communicators( void )
       Free all communicators created
     */
 #ifdef DEBUG
-    if (world_rank == 0) 
+    if (world_rank == 0)
 	printf( "    Comm_free\n" );
 #endif
-    
+
     MPI_Comm_free( &world_comm );
     MPI_Comm_free( &dup_comm_world );
-    
+
     MPI_Comm_free( &rev_comm );
     MPI_Comm_free( &split_comm );
-    
+
     MPI_Group_free( &world_group );
     MPI_Group_free( &rev_group );
-    
+
     if (lo_comm != MPI_COMM_NULL) {
         MPI_Comm_free( &lo_comm );
         MPI_Comm_free( &dup_comm );
     }
-    
+
     return errs;
 }
 

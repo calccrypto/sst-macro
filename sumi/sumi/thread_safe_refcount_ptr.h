@@ -17,14 +17,14 @@ class thread_safe_refcount_ptr {
     if (ptr && ptr->decref() == 0)
       delete ptr;
   }
-  
+
   template <class U>
   static void incref(U* ptr){
     if (ptr) ptr->incref();
   }
 
  public:
-  thread_safe_refcount_ptr() : ptr(0) { 
+  thread_safe_refcount_ptr() : ptr(0) {
   }
 
   template <class U>
@@ -35,7 +35,7 @@ class thread_safe_refcount_ptr {
   thread_safe_refcount_ptr(const thread_safe_refcount_ptr& rhs) : ptr(rhs.ptr) {
     incref(ptr);
   }
-  
+
   thread_safe_refcount_ptr(T* rhs) : ptr(rhs) {
     incref(ptr);
   }
@@ -43,7 +43,7 @@ class thread_safe_refcount_ptr {
   ~thread_safe_refcount_ptr(){
     decref(ptr);
   }
-  
+
   T*
   get() const {
     return ptr;
@@ -57,13 +57,13 @@ class thread_safe_refcount_ptr {
     ptr = rhs.ptr;
     return *this;
   }
-  
+
   thread_safe_refcount_ptr<T>&
   operator=(const thread_safe_refcount_ptr& rhs){
     incref(rhs.ptr);
     decref(ptr);
     ptr = rhs.ptr;
-    return *this;    
+    return *this;
   }
 
   thread_safe_refcount_ptr<T>&
@@ -73,7 +73,7 @@ class thread_safe_refcount_ptr {
     ptr = rhs;
     return *this;
   }
-  
+
   operator bool() const {
     return bool(ptr);
   }

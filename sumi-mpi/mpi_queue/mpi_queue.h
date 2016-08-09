@@ -198,7 +198,7 @@ class mpi_queue
 
 
  private:
-  void 
+  void
   handle_incoming_message(const mpi_message::ptr& message);
 
   void

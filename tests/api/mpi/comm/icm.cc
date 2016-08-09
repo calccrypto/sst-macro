@@ -25,9 +25,9 @@ int icm( int argc, char *argv[] )
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     while (MTestGetIntercomm( &comm, &isLeft, minsize )) {
 	if (comm == MPI_COMM_NULL) continue;
@@ -62,8 +62,8 @@ int icm( int argc, char *argv[] )
 		}
 	    }
 	}
-	
- 	MPI_Intercomm_merge( comm, !isLeft, &comm2 ); 
+
+ 	MPI_Intercomm_merge( comm, !isLeft, &comm2 );
 	/* Check the size and ranks */
 	MPI_Comm_size( comm1, &nsize );
 	MPI_Comm_rank( comm1, &nrank );
@@ -88,17 +88,17 @@ int icm( int argc, char *argv[] )
 		}
 	    }
 	}
-	
 
- 	MPI_Intercomm_merge( comm, 0, &comm3 ); 
 
- 	MPI_Intercomm_merge( comm, 1, &comm4 ); 
-	
+ 	MPI_Intercomm_merge( comm, 0, &comm3 );
+
+ 	MPI_Intercomm_merge( comm, 1, &comm4 );
+
 	MPI_Comm_free( &comm1 );
 	MPI_Comm_free( &comm2 );
-	MPI_Comm_free( &comm3 ); 
+	MPI_Comm_free( &comm3 );
 	MPI_Comm_free( &comm4 );
-      
+
 	MTestFreeComm( &comm );
     }
 

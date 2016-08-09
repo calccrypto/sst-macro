@@ -7,7 +7,7 @@
 #ifndef MTEST_INCLUDED
 #define MTEST_INCLUDED
 /*
- * Init and finalize test 
+ * Init and finalize test
  */
 void MTest_Init( void );
 void MTest_Finalize( int );

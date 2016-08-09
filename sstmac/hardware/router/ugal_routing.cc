@@ -79,7 +79,7 @@ ugal_router::initial_step(
   // Compute and compare minimal and valiant routes
   switch_id inter_addr = regtop->random_intermediate_switch(addr(),ej_addr);
   coordinates inter = regtop->switch_coords(inter_addr);
-  int valiant_dst = 
+  int valiant_dst =
       regtop->minimal_distance(src, inter) + regtop->minimal_distance(inter, dst);
 
   // Since min_path might really be used as a path, it needs to be a copy of

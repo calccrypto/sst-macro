@@ -37,7 +37,7 @@ gni_transport::do_rdma_get(int src, const message::ptr &msg)
 
   int tag = allocate_rdma_tag(msg);
 
-  gni_debug("Rank %d RDMA get buffer %p into buffer %p from src %d on tag %d",  
+  gni_debug("Rank %d RDMA get buffer %p into buffer %p from src %d on tag %d",
     rank_,(void*) send_buf, (void*) recv_buf, src, tag);
 
   post_rdma(

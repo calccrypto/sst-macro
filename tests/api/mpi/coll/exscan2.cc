@@ -21,10 +21,10 @@ int exscan2( int argc, char *argv[] )
     comm = MPI_COMM_WORLD;
     MPI_Comm_rank( comm, &rank );
     MPI_Comm_size( comm, &size );
-    
+
     sendbuf[0] = rank;
     recvbuf[0] = -2;
-	    
+
     MPI_Exscan( sendbuf, recvbuf, 1, MPI_INT, MPI_SUM, comm );
 
     /* Check the results.  rank 0 has no data.  Input is

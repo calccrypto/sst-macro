@@ -6,9 +6,9 @@
 #include <sstmac/replacements/mpi.h>
 
 namespace exitst2 {
-/* 
- * This is a special test to check that mpiexec handles zero/non-zero 
- * return status from an application.  In this case, each process 
+/*
+ * This is a special test to check that mpiexec handles zero/non-zero
+ * return status from an application.  In this case, each process
  * returns a different return status
  */
 int exitst2( int argc, char *argv[] )

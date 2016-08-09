@@ -13,7 +13,7 @@ int allred2( int argc, char *argv[] )
 {
     int errs = 0;
     int rank, size;
-    int minsize = 2, count; 
+    int minsize = 2, count;
     MPI_Comm      comm;
     int *buf, i;
 
@@ -23,7 +23,7 @@ int allred2( int argc, char *argv[] )
 	if (comm == MPI_COMM_NULL) continue;
 	MPI_Comm_size( comm, &size );
 	MPI_Comm_rank( comm, &rank );
-	
+
 	for (count = 1; count < 65000; count = count * 2) {
 	    /* Contiguous data */
 	    buf = (int *)malloc( count * sizeof(int) );

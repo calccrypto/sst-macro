@@ -20,7 +20,7 @@ serialize_set(Set& v, serializer& ser) {
     ser.size(size);
     iterator it, end = v.end();
     for (it=v.begin(); it != end; ++it){
-      T& t = const_cast<T&>(*it); 
+      T& t = const_cast<T&>(*it);
       serialize<T>()(t,ser);
     }
     break;
@@ -30,7 +30,7 @@ serialize_set(Set& v, serializer& ser) {
     ser.pack(size);
     iterator it, end = v.end();
     for (it=v.begin(); it != end; ++it){
-      T& t = const_cast<T&>(*it); 
+      T& t = const_cast<T&>(*it);
       serialize<T>()(t,ser);
     }
     break;

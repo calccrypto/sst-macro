@@ -22,9 +22,9 @@ sstmac_simple_dgemm(int m, int n, int k)
 }
 
 extern "C" void
-sstmac_dgemm(char *transa, char *transb, int* m, int* n, int* k, 
-  double* alpha, double* a, int* lda, 
-  double* b, int* ldb, double* beta, 
+sstmac_dgemm(char *transa, char *transb, int* m, int* n, int* k,
+  double* alpha, double* a, int* lda,
+  double* b, int* ldb, double* beta,
   double* c, int* ldc
 )
 {

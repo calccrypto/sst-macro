@@ -12,7 +12,7 @@ gni_transport::poll_smsg_queue()
     uint32_t inst_id = gni_cq_get_inst_id(event_data);
     int src = RANK(inst_id);
     uint64_t type = gni_cq_get_type(event_data);
-    gni_debug("got smsg event on node %d from src %d of type %lu on inst id %d", 
+    gni_debug("got smsg event on node %d from src %d of type %lu on inst id %d",
         rank_, src, type, inst_id);
     smsg_endpoint_t* ep = &smsg_endpoints_[src];
     if (!ep->queued)

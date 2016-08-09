@@ -13,7 +13,7 @@ namespace gtranks {
 int gtranks( int argc, char *argv[] )
 {
     int errs = 0;
-    int ranks[MAX_WORLD_SIZE], ranksout[MAX_WORLD_SIZE], 
+    int ranks[MAX_WORLD_SIZE], ranksout[MAX_WORLD_SIZE],
 	ranksin[MAX_WORLD_SIZE];
     int range[1][3];
     MPI_Group gworld, gself, ngroup, galt;
@@ -30,8 +30,8 @@ int gtranks( int argc, char *argv[] )
     MPI_Comm_rank( comm, &rank );
 
     if (size > MAX_WORLD_SIZE) {
-	fprintf( stderr, 
-	 "This test requires a comm world with no more than %d processes\n", 
+	fprintf( stderr,
+	 "This test requires a comm world with no more than %d processes\n",
 		 MAX_WORLD_SIZE );
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
@@ -48,18 +48,18 @@ int gtranks( int argc, char *argv[] )
     /* Try translating ranks from comm world compared against
        comm self, so most will be UNDEFINED */
     MPI_Group_translate_ranks( gworld, size, ranks, gself, ranksout );
-    
+
     for (i=0; i<size; i++) {
 	if (i == rank) {
 	    if (ranksout[i] != 0) {
-		printf( "[%d] Rank %d is %d but should be 0\n", rank, 
+		printf( "[%d] Rank %d is %d but should be 0\n", rank,
 			i, ranksout[i] );
 		errs++;
 	    }
 	}
 	else {
 	    if (ranksout[i] != MPI_UNDEFINED) {
-		printf( "[%d] Rank %d is %d but should be undefined\n", rank, 
+		printf( "[%d] Rank %d is %d but should be undefined\n", rank,
 			i, ranksout[i] );
 		errs++;
 	    }
@@ -110,7 +110,7 @@ int gtranks( int argc, char *argv[] )
     ranks[nelms++] = size - 2;
     ranks[nelms++] = 0;
     if (rank != 0 && rank != size - 2) {
-	ranks[nelms++] = rank; 
+	ranks[nelms++] = rank;
     }
 
     MPI_Group_incl( gworld, nelms, ranks, &ngroup );
@@ -135,7 +135,7 @@ int gtranks( int argc, char *argv[] )
 	    errs++;
 	}
     }
-    
+
     range[0][0] = size -1 ;
     range[0][1] = 0;
     range[0][2] = -1;
@@ -156,8 +156,8 @@ int gtranks( int argc, char *argv[] )
 	    errs++;
 	}
     }
-    
-    
+
+
     MPI_Group_free(&gworld);
     MPI_Group_free(&galt);
     MPI_Group_free(&ngroup);

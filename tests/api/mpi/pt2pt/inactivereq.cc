@@ -10,10 +10,10 @@
 
 namespace inactivereq {
 /* This test program checks that the point-to-point completion routines
-   can be applied to an inactive persistent request, as required by the 
-   MPI-1 standard. See section 3.7.3, for example, 
+   can be applied to an inactive persistent request, as required by the
+   MPI-1 standard. See section 3.7.3, for example,
 
-   One is allowed to call MPI TEST with a null or inactive request argument. 
+   One is allowed to call MPI TEST with a null or inactive request argument.
    In such a case the operation returns with flag = true and empty status.
 
 */
@@ -127,7 +127,7 @@ int inactivereq(int argc, char *argv[])
 	printf( "Status not empty after MPI_Wait (send)\n" );
     }
 
-    
+
 
     MPI_Request_free( &r );
 
@@ -160,7 +160,7 @@ int inactivereq(int argc, char *argv[])
     }
 
     MPI_Request_free( &r );
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

@@ -12,9 +12,9 @@
 
 
 namespace sendall {
-/* 
+/*
  * This test makes sure that each process can send to each other process.
- * If there are bugs in the handling of request completions or in 
+ * If there are bugs in the handling of request completions or in
  * queue operations, then this test may fail on them (it did with
  * early EagerShort handling).
  */

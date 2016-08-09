@@ -97,7 +97,7 @@ class vector1_payload :
   }
 
   typedef vector1_payload<Type, VectorType> Vector1Payload;
-  
+
   /**
    * Add operator
    * @param other

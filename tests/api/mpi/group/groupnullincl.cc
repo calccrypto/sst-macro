@@ -31,7 +31,7 @@ int groupnullincl( int argc, char *argv[] )
 	    errs++;
 	    MTestPrintError( rc );
 	    printf( "Error in creating an empty group with (0,0)\n" );
-	    
+
 	    /* Some MPI implementations may reject a null "ranks" pointer */
 	    rc = MPI_Group_incl( group, 0, ranks, &outgroup );
 	    if (rc) {
@@ -54,7 +54,7 @@ int groupnullincl( int argc, char *argv[] )
 	if (rc) {
 	    errs++;
 	    MTestPrintError( rc );
-	}	    
+	}
 	if (outgroup != MPI_GROUP_NULL) {
 	    rc = MPI_Group_free( &outgroup );
 	    if (rc) {
@@ -65,10 +65,10 @@ int groupnullincl( int argc, char *argv[] )
 
 	MTestFreeComm( &comm );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 }

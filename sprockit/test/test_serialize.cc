@@ -236,7 +236,7 @@ test_serializable(UnitTest& unit)
   assertEqual(unit, "serialized class member", output->x(), input->x());
 }
 
-int 
+int
 main(int arc, char** argv)
 {
   UnitTest unit;

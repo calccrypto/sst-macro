@@ -19,15 +19,15 @@ int pingping( int argc, char *argv[] )
 {
     int errs = 0, err;
     int rank, size, source, dest;
-    int minsize = 2, count, nmsg, maxmsg; 
+    int minsize = 2, count, nmsg, maxmsg;
     MPI_Comm      comm;
     MTestDatatype sendtype, recvtype;
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     while (MTestGetIntracommGeneral( &comm, minsize, 1 )) {
 	if (comm == MPI_COMM_NULL) continue;
@@ -36,7 +36,7 @@ int pingping( int argc, char *argv[] )
 	MPI_Comm_size( comm, &size );
 	source = 0;
 	dest   = size - 1;
-	
+
 	/* To improve reporting of problems about operations, we
 	   change the error handler to errors return */
 	MPI_Comm_set_errhandler( comm, MPI_ERRORS_RETURN );
@@ -48,22 +48,22 @@ int pingping( int argc, char *argv[] )
 
 		/* We may want to limit the total message size sent */
 		if (nbytes > MAX_MSG_SIZE) {
-		    /* We do not need to free, as we haven't 
+		    /* We do not need to free, as we haven't
 		       initialized any of the buffers (?) */
 		    continue;
 		}
 		maxmsg = MAX_COUNT - count;
-		MTestPrintfMsg( 1, "Sending count = %d of sendtype %s of total size %d bytes\n", 
-				count, MTestGetDatatypeName( &sendtype ), 
+		MTestPrintfMsg( 1, "Sending count = %d of sendtype %s of total size %d bytes\n",
+				count, MTestGetDatatypeName( &sendtype ),
 				nbytes*count );
 		/* Make sure that everyone has a recv buffer */
 		recvtype.InitBuf( &recvtype );
 
 		if (rank == source) {
 		    sendtype.InitBuf( &sendtype );
-		    
+
 		    for (nmsg=1; nmsg<maxmsg; nmsg++) {
-			err = MPI_Send( sendtype.buf, sendtype.count, 
+			err = MPI_Send( sendtype.buf, sendtype.count,
 					sendtype.datatype, dest, 0, comm);
 			if (err) {
 			    errs++;
@@ -75,8 +75,8 @@ int pingping( int argc, char *argv[] )
 		}
 		else if (rank == dest) {
 		    for (nmsg=1; nmsg<maxmsg; nmsg++) {
-			err = MPI_Recv( recvtype.buf, recvtype.count, 
-					recvtype.datatype, source, 0, 
+			err = MPI_Recv( recvtype.buf, recvtype.count,
+					recvtype.datatype, source, 0,
 					comm, MPI_STATUS_IGNORE);
 			if (err) {
 			    errs++;
@@ -88,7 +88,7 @@ int pingping( int argc, char *argv[] )
 			err = MTestCheckRecv( 0, &recvtype );
 			if (err) {
 			    if (errs < 10) {
-				printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d, message iteration %d of %d\n", 
+				printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d, message iteration %d of %d\n",
 					MTestGetDatatypeName( &recvtype ),
 					MTestGetDatatypeName( &sendtype ),
 					count, nmsg, maxmsg );

@@ -244,13 +244,13 @@ struct tpi_work_cgsolve {
 
 static void tpi_work_dot_join( TPI_Work * work , const void * src  )
 { *((double *) work->reduce ) += *((const double *) src); }
- 
+
 static void tpi_work_dot_init( TPI_Work * work )
 { *((double *) work->reduce ) = 0 ; }
 
 static void tpi_work_update( TPI_Work * work )
 {
-  const struct tpi_work_cgsolve * const cg_work = 
+  const struct tpi_work_cgsolve * const cg_work =
     (const struct tpi_work_cgsolve *) work->info ;
 
   const int           length = cg_work->length ;

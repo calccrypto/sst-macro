@@ -23,7 +23,7 @@ mpi_api::do_wait(MPI_Request *request, MPI_Status *status)
     return MPI_SUCCESS;
   }
 
-  mpi_api_debug(sprockit::dbg::mpi | sprockit::dbg::mpi_request, 
+  mpi_api_debug(sprockit::dbg::mpi | sprockit::dbg::mpi_request,
     "   MPI_Wait_nonnull(%d)", req);
 
   mpi_request* reqPtr = get_request(req);
@@ -50,7 +50,7 @@ mpi_api::waitall(int count, MPI_Request array_of_requests[],
                  MPI_Status array_of_statuses[])
 {
   SSTMACBacktrace("MPI_Waitall");
-  mpi_api_debug(sprockit::dbg::mpi | sprockit::dbg::mpi_request, 
+  mpi_api_debug(sprockit::dbg::mpi | sprockit::dbg::mpi_request,
     "MPI_Waitall(%d,...)", count);
   bool ignore_status = array_of_statuses == MPI_STATUSES_IGNORE;
   for (int i=0; i < count; ++i){

@@ -19,7 +19,7 @@ int alltoall1( int argc, char *argv[] )
 {
     int errs = 0;
     int rank, size;
-    int minsize = 2, count; 
+    int minsize = 2, count;
     MPI_Comm      comm;
     int *sendbuf, *recvbuf, *p;
     int sendcount, recvcount;
@@ -28,9 +28,9 @@ int alltoall1( int argc, char *argv[] )
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     while (MTestGetIntracommGeneral( &comm, minsize, 1 )) {
 	if (comm == MPI_COMM_NULL) continue;
@@ -38,10 +38,10 @@ int alltoall1( int argc, char *argv[] )
 	/* Determine the sender and receiver */
 	MPI_Comm_rank( comm, &rank );
 	MPI_Comm_size( comm, &size );
-	
+
 	/* printf( "Size of comm = %d\n", size ); */
   for (count = 1; count < 65000; count = count * 2) {
-	    
+
 	    /* Create a send buf and a receive buf suitable for testing
 	       all to all.  */
 	    sendcount = count;
@@ -56,7 +56,7 @@ int alltoall1( int argc, char *argv[] )
 		fprintf( stderr, "Failed to allocate sendbuf and/or recvbuf\n" );
 		MPI_Abort( MPI_COMM_WORLD, 1 );
 	    }
-	    for (i=0; i<count*size; i++) 
+	    for (i=0; i<count*size; i++)
 		recvbuf[i] = -1;
 	    p = sendbuf;
 	    for (j=0; j<size; j++) {

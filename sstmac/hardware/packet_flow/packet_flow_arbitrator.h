@@ -183,7 +183,7 @@ class packet_flow_cut_through_arbitrator :
       counter_ = counter++;
       //printf("allocating epoch %d\n", counter_);
     }
-    
+
     ~bandwidth_epoch(){
       //printf("deleting epoch %d\n", counter_);
     }

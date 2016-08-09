@@ -98,7 +98,7 @@ class key  {
     return name(keyname_id_);
   }
 
-  int 
+  int
   event_typeid() const {
     return keyname_id_;
   }

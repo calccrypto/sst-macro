@@ -8,11 +8,11 @@
 #include <stdio.h>
 
 namespace segtest {
-/* 
+/*
  * Simple segment test, including timing code
  */
 
-/* 
+/*
  * Build datatype structures
  *
  * Contiguous
@@ -25,12 +25,12 @@ namespace segtest {
  *     offsets   = i*24 for i = 0 to n, n = 0, 64, 512
  * Indexed
  *     blocksizes = 1, 2, 4, 3, 7, 5, 6
- *     offsets    = i*24 for i = 0 to n, n = 0, 4, 7, 64, 512 
+ *     offsets    = i*24 for i = 0 to n, n = 0, 4, 7, 64, 512
  *     (Wrap blocksizes to match offsets)
  *
  * Also need a few nested datatypes, such as vector of vectors
  * Do the versions in Using MPI
- * 
+ *
  */
 
 /*
@@ -42,7 +42,7 @@ namespace segtest {
 MPID_Dataloop *MPID_Dataloop_init_contig( int count )
 {
     MPID_Dataloop *ct;
-    
+
     ct = (MPID_Dataloop *)MPIU_Malloc( sizeof(MPID_Dataloop ) );
     ct->kind                     = MPID_DTYPE_CONTIG | DATALOOP_FINAL_MASK;
     ct->loop_params.c_t.count    = count;
@@ -56,7 +56,7 @@ MPID_Dataloop *MPID_Dataloop_init_contig( int count )
 /*
  * Vector
  */
-MPID_Dataloop *MPID_Dataloop_init_vector( int count, int blocksize, 
+MPID_Dataloop *MPID_Dataloop_init_vector( int count, int blocksize,
 					  int stride )
 {
     MPID_Dataloop *v;
@@ -73,10 +73,10 @@ MPID_Dataloop *MPID_Dataloop_init_vector( int count, int blocksize,
     return v;
 }
 
-/* 
+/*
  * Block indexed
  */
-MPID_Dataloop *MPID_Dataloop_init_blockindexed( int count, int blocksize, 
+MPID_Dataloop *MPID_Dataloop_init_blockindexed( int count, int blocksize,
 						MPI_Aint *offset )
 {
     MPID_Dataloop *bi;
@@ -87,11 +87,11 @@ MPID_Dataloop *MPID_Dataloop_init_blockindexed( int count, int blocksize,
     bi->kind                       = MPID_DTYPE_BLOCKINDEXED | DATALOOP_FINAL_MASK;
     bi->loop_params.bi_t.count     = count;
     bi->loop_params.bi_t.blocksize = blocksize;
-    bi->loop_params.bi_t.offset    = 
+    bi->loop_params.bi_t.offset    =
 	(MPI_Aint *)MPIU_Malloc( sizeof(MPI_Aint) * count );
     for (i=0; i<count; i++) {
 	bi->loop_params.bi_t.offset[i] = offset[i];
-	if (offset[i] + blocksize > extent) 
+	if (offset[i] + blocksize > extent)
 	    extent = offset[i] + blocksize;
     }
     bi->loop_params.bi_t.dataloop  = 0;
@@ -102,9 +102,9 @@ MPID_Dataloop *MPID_Dataloop_init_blockindexed( int count, int blocksize,
 }
 
 /*
- * Indexed 
+ * Indexed
  */
-MPID_Dataloop *MPID_Dataloop_init_indexed( int count, int *blocksize, 
+MPID_Dataloop *MPID_Dataloop_init_indexed( int count, int *blocksize,
 					   MPI_Aint *offset )
 {
     MPID_Dataloop *it;
@@ -115,12 +115,12 @@ MPID_Dataloop *MPID_Dataloop_init_indexed( int count, int *blocksize,
     it->kind                      = MPID_DTYPE_INDEXED | DATALOOP_FINAL_MASK;
     it->loop_params.i_t.count     = count;
     it->loop_params.i_t.blocksize = (int *)MPIU_Malloc( sizeof(int) * count );
-    it->loop_params.i_t.offset    = 
+    it->loop_params.i_t.offset    =
 	(MPI_Aint *)MPIU_Malloc( sizeof(MPI_Aint) * count );
     for (i=0; i<count; i++) {
 	it->loop_params.i_t.offset[i]    = offset[i];
 	it->loop_params.i_t.blocksize[i] = blocksize[i];
-	if (offset[i] + blocksize[i] > extent) 
+	if (offset[i] + blocksize[i] > extent)
 	    extent = offset[i] + blocksize[i];
     }
     it->loop_params.i_t.dataloop  = 0;
@@ -140,17 +140,17 @@ int segtest( int argc, char **argv )
     double r1, r2;
 
     MPI_Init( &argc, &argv );
-    
+
 /*    vecloop = MPID_Dataloop_init_vector( count, blocksize, stride ); */
 
     MPI_Type_vector( count, 1, 7, MPI_INT, &vectype );
 
     /* Initialize the data */
     src_buf = (char *)MPIU_Malloc( (count - 1) * stride + blocksize );
-    for (i=0; i<(count-1)*stride+blocksize; i++) 
+    for (i=0; i<(count-1)*stride+blocksize; i++)
 	src_buf[i] = -i;
     for (i=0; i<count; i++) {
-	for (j=0; j<blocksize; j++) 
+	for (j=0; j<blocksize; j++)
 	    src_buf[i*stride+j] = i*blocksize + j;
     }
     dest_buf = (char *)MPIU_Malloc( count*blocksize );
@@ -161,13 +161,13 @@ int segtest( int argc, char **argv )
     for (i=0; i<100; i++) {
 	int position = 0;
 	/*MPID_Segment_pack( vecloop, src_buf, dest_buf );*/
-	MPI_Pack( src_buf, count, vectype, dest_buf, count*blocksize, 
+	MPI_Pack( src_buf, count, vectype, dest_buf, count*blocksize,
 		  &position, MPI_COMM_WORLD );
     }
     r2 = MPI_Wtime();
     printf( "Timer for vector pack is %e\n", (r2-r1)/100 );
     for (i=0; i<count*blocksize; i++) {
-	if (dest_buf[i] != (char)i) { 
+	if (dest_buf[i] != (char)i) {
 	    printf( "Error at location %d\n", i );
 	}
     }
@@ -175,7 +175,7 @@ int segtest( int argc, char **argv )
     for (k=0; k<100; k++) {
 	char *dest=dest_buf, *src=src_buf;
 	for (i=0; i<count; i++) {
-	    for (j=0; j<blocksize; j++) 
+	    for (j=0; j<blocksize; j++)
 		*dest++ = src[j];
 	    src+= stride;
 	}
@@ -188,7 +188,7 @@ int segtest( int argc, char **argv )
 	int *dest=(int*)dest_buf, *src=(int*)src_buf;
 	int bsize = blocksize >> 2;
 	int istride = stride >> 2;
-	if (bsize == 1) { 
+	if (bsize == 1) {
 	    for (i=0; i<count; i++) {
 		*dest++ = *src;
 		src+= istride;
@@ -196,7 +196,7 @@ int segtest( int argc, char **argv )
 	}
 	else {
 	    for (i=0; i<count; i++) {
-		for (j=0; j<bsize; j++) 
+		for (j=0; j<bsize; j++)
 		    *dest++ = src[j];
 		src+= istride;
 	    }
@@ -204,7 +204,7 @@ int segtest( int argc, char **argv )
     }
     r2 = MPI_Wtime();
     printf( "Timer for hand vector pack (int) is %e\n", (r2-r1)/100 );
-    
+
     MPI_Finalize();
     return 0;
 }

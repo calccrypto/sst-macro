@@ -140,7 +140,7 @@ namespace lblxml
   //typedef std::set<MPI_Request*>::iterator recv_req_list_iter;
 
   // globals (that we really do want to be global)
-  extern index_to_rank_t g_boxindex_to_rank; 
+  extern index_to_rank_t g_boxindex_to_rank;
   extern box_map_t g_boxes;
   extern event_map_t g_events;
   extern rank_to_set_t g_rank_to_comps;
@@ -245,7 +245,7 @@ namespace lblxml
     void
     collective_done(int box_number, int event_id);
 
-    void 
+    void
     recv_boxes(int& n_events);
 
     bool

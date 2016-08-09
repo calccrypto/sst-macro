@@ -30,14 +30,14 @@ rendezvous_get::incoming_header(mpi_queue* queue,
   mpi_queue_recv_request* req = queue->find_pending_request(msg);
   if (req) {
     mpi_queue_action_debug(
-      queue->api()->comm_world()->rank(), 
-      "found matching request for %s", 
+      queue->api()->comm_world()->rank(),
+      "found matching request for %s",
       msg->to_string().c_str());
     req->handle(msg);
   } else {
     mpi_queue_action_debug(
-      queue->api()->comm_world()->rank(), 
-      "no matching requests for %s", 
+      queue->api()->comm_world()->rank(),
+      "no matching requests for %s",
       msg->to_string().c_str());
   }
   queue->notify_probes(msg);
@@ -59,10 +59,10 @@ rendezvous_get::incoming_payload(mpi_queue* queue,
       mpi_message::id id = p.first;
       mpi_queue_recv_request* req = p.second;
       std::cerr << sprockit::printf("Waiting request: count=%d tag=%s comm=%s source=%s",
-                    req->count_, 
+                    req->count_,
                     queue->api()->tag_str(req->tag_).c_str(),
                     queue->api()->comm_str(req->comm_).c_str(),
-                    queue->api()->src_str(req->source_).c_str()) 
+                    queue->api()->src_str(req->source_).c_str())
                 << std::endl;
     }
     int rank; queue->api_->comm_rank(MPI_COMM_WORLD, &rank);
@@ -88,7 +88,7 @@ rendezvous_get::finish_recv_header(
   msg->set_content_type(mpi_message::data);
   queue->recv_needs_payload_[msg->unique_int()] = req;
   //generate both a send and recv ack
-  queue->post_rdma(msg, true, true); 
+  queue->post_rdma(msg, true, true);
 }
 
 void

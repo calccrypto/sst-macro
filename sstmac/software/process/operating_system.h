@@ -122,7 +122,7 @@ class operating_system :
 
   static void
   stack_check();
-  
+
   timestamp
   block(key* req);
 
@@ -146,7 +146,7 @@ class operating_system :
 
   library*
   lib(const std::string& name) const;
-  
+
   void
   set_ncores(int ncores, int nsocket);
 
@@ -270,7 +270,7 @@ class operating_system :
 
   void
   unregister_lib(library* lib);
-  
+
  private:
   hw::node* node_;
   spkt_unordered_map<std::string, library*> libs_;

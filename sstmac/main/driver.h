@@ -65,7 +65,7 @@ class Simulation
   friend class SimulationQueue;
 
  public:
-  Simulation() : 
+  Simulation() :
     complete_(false),
     results_(0)
   {

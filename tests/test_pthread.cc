@@ -15,7 +15,7 @@ extern "C" int ubuntu_cant_name_mangle() { return 0; }
 
 void* ptest(void* args)
 {
-   SSTMAC_compute(1); 
+   SSTMAC_compute(1);
    printf("Yes, I reach here!\n");
    return 0;
 }

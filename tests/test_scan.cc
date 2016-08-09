@@ -20,7 +20,7 @@ int main(int argc, char** argv)
   }
 
   for (int i=0; i < nPoints; ++i){
-    printf("BW=%4.2fGB/s T=%8.4fms\n", 
+    printf("BW=%4.2fGB/s T=%8.4fms\n",
       bandwidths[i], results[i]*1e3);
   }
 

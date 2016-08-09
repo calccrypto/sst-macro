@@ -49,7 +49,7 @@ int box_map_local( const int box_local[][2] ,
 /*--------------------------------------------------------------------*/
 /* Recursively split a box into into (up-ip) sub-boxes */
 
-static 
+static
 void box_partition( int ip , int up , int axis ,
                     const int box[3][2] ,
                     int p_box[][3][2] )
@@ -112,11 +112,11 @@ static void resize_int( int ** a , int * allocLen , int newLen )
   while ( k < newLen ) { k <<= 1 ; }
   if ( NULL == *a )
     { *a = malloc( sizeof(int)*(*allocLen = k) ); }
-  else if ( *allocLen < k ) 
+  else if ( *allocLen < k )
     { *a = realloc(*a , sizeof(int)*(*allocLen = k)); }
 }
 
-static void box_partition_maps( 
+static void box_partition_maps(
   const int np ,
   const int my_p ,
   const int pbox[][3][2] ,
@@ -192,7 +192,7 @@ static void box_partition_maps(
         const int global_y = local_y + my_iy ;
         const int global_x = local_x + my_ix ;
 
-        const int entry = 
+        const int entry =
           box_map_local_entry(my_box,ghost,local_x,local_y,local_z);
 
         if ( entry < 0 ) { abort(); }
@@ -251,11 +251,11 @@ if ( my_p != ip ) {
   *map_send_id   = send_id ;
 }
 
-void box_partition_rcb( const int np , 
+void box_partition_rcb( const int np ,
                         const int my_p ,
-                        const int root_box[][2] , 
+                        const int root_box[][2] ,
                         const int ghost ,
-                        int (**pbox)[3][2] , 
+                        int (**pbox)[3][2] ,
                         int ** map_local_id ,
                         int ** map_recv_pc ,
                         int ** map_send_pc ,
@@ -266,7 +266,7 @@ void box_partition_rcb( const int np ,
   box_partition( 0 , np , 2 , root_box , *pbox );
 
   box_partition_maps( np , my_p , (const int (*)[3][2]) *pbox , ghost ,
-                      map_local_id , map_recv_pc , 
+                      map_local_id , map_recv_pc ,
                       map_send_pc , map_send_id );
 }
 
@@ -284,8 +284,8 @@ static int box_contain( const int a[3][2] , const int b[3][2] )
 static void box_print( FILE * fp , const int a[][2] )
 {
   fprintf(fp,"{ [ %d , %d ) , [ %d , %d ) , [ %d , %d ) }",
-                a[0][0] , a[0][1] ,  
-                a[1][0] , a[1][1] ,  
+                a[0][0] , a[0][1] ,
+                a[1][0] , a[1][1] ,
                 a[2][0] , a[2][1] );
 }
 
@@ -356,7 +356,7 @@ static void test_maps( const int root_box[][2] , const int np )
   int **map_recv_pc ;
   int **map_send_pc ;
   int **map_send_id ;
-  
+
   pbox = (int (*)[3][2]) malloc( sizeof(int) * np * 3 * 2 );
 
   box_partition( 0 , np , 2 , root_box , pbox );
@@ -378,7 +378,7 @@ static void test_maps( const int root_box[][2] , const int np )
 
     /* Generate the partition maps for this rank */
     box_partition_maps( np , i , (const int (*)[3][2]) pbox , ghost ,
-                        & map_local_id[i] , & map_recv_pc[i] , 
+                        & map_local_id[i] , & map_recv_pc[i] ,
                         & map_send_pc[i] , & map_send_id[i] );
 
     local_values[i] = (int *) malloc( sizeof(int) * map_recv_pc[i][np] );

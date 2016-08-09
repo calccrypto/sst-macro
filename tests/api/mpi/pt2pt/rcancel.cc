@@ -37,11 +37,11 @@ int rcancel( int argc, char *argv[] )
 	MPI_Send( MPI_BOTTOM, 0, MPI_CHAR, dest, 1, MPI_COMM_WORLD );
     }
     else if (rank == dest) {
-	/* Create 3 requests to cancel, plus one to use.  
-	   Then receive one message and exit */ 
+	/* Create 3 requests to cancel, plus one to use.
+	   Then receive one message and exit */
 	for (i=0; i<4; i++) {
 	    bufs[i] = (char *) malloc( bufsizes[i] );
-	    MPI_Irecv( bufs[i], bufsizes[i], MPI_CHAR, source, 
+	    MPI_Irecv( bufs[i], bufsizes[i], MPI_CHAR, source,
 		       i, MPI_COMM_WORLD, &req[i] );
 	}
 	/* Now, cancel them in a more interesting order, to ensure that the

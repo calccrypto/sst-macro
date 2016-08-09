@@ -64,7 +64,7 @@ SSTMAC_pthread_create(sstmac_pthread_t* pthread,
   if (attr){
     tr->set_cpumask(attr->cpumask);
   }
-  
+
   pthread_debug("starting pthread %ld on thread %ld in app %d",
                tr->thread_id(), thr->thread_id(), int(parent_app->tid()));
   os->start_thread(tr);
@@ -143,7 +143,7 @@ extern "C" int
 SSTMAC_pthread_spin_init(sstmac_pthread_spinlock_t* lock, int pshared)
 
 {
-  return SSTMAC_pthread_mutex_init(lock, NULL);  
+  return SSTMAC_pthread_mutex_init(lock, NULL);
 }
 
 extern "C" int
@@ -233,7 +233,7 @@ SSTMAC_pthread_spin_trylock(sstmac_pthread_spinlock_t * lock)
 extern "C" int
 SSTMAC_pthread_mutex_trylock(sstmac_pthread_mutex_t * mutex)
 {
-  pthread_debug("pthread_mutex_trylock");  
+  pthread_debug("pthread_mutex_trylock");
   int rc;
   if ((rc = check_mutex(mutex)) != 0){
     return rc;
@@ -259,7 +259,7 @@ SSTMAC_pthread_spin_unlock(sstmac_pthread_spinlock_t * lock)
 extern "C" int
 SSTMAC_pthread_mutex_unlock(sstmac_pthread_mutex_t * mutex)
 {
-  pthread_debug("pthread_mutex_unlock");  
+  pthread_debug("pthread_mutex_unlock");
   int rc;
   if ((rc = check_mutex(mutex)) != 0){
     return rc;
@@ -328,7 +328,7 @@ extern "C" int
 SSTMAC_pthread_cond_init(sstmac_pthread_cond_t * cond,
                          const sstmac_pthread_cond_attr *attr)
 {
-  pthread_debug("pthread_cond_init");  
+  pthread_debug("pthread_cond_init");
   //just intialize it
   thread* thr = current_thread();
   *cond = thr->parent_app()->allocate_condition();
@@ -347,7 +347,7 @@ check_cond(sstmac_pthread_cond_t* cond)
 extern "C" int
 SSTMAC_pthread_cond_destroy(sstmac_pthread_cond_t * cond)
 {
-  pthread_debug("pthread_cond_destroy");    
+  pthread_debug("pthread_cond_destroy");
   if (*cond == SSTMAC_PTHREAD_COND_INITIALIZER)
     return 0;
 
@@ -360,7 +360,7 @@ extern "C" int
 SSTMAC_pthread_cond_wait(sstmac_pthread_cond_t * cond,
                          sstmac_pthread_mutex_t * mutex)
 {
-  pthread_debug("pthread_cond_wait"); 
+  pthread_debug("pthread_cond_wait");
   return SSTMAC_pthread_cond_timedwait(cond, mutex, 0);
 }
 
@@ -368,7 +368,7 @@ extern "C" int
 SSTMAC_pthread_cond_timedwait(sstmac_pthread_cond_t * cond,
                               sstmac_pthread_mutex_t * mutex, const timespec * abstime)
 {
-  pthread_debug("pthread_cond_timedwait");  
+  pthread_debug("pthread_cond_timedwait");
   int rc;
   if ((rc=check_cond(cond)) != 0){
     return rc;
@@ -459,7 +459,7 @@ SSTMAC_pthread_cond_signal(sstmac_pthread_cond_t * cond)
 extern "C" int
 SSTMAC_pthread_cond_broadcast(sstmac_pthread_cond_t * cond)
 {
-  pthread_debug("pthread_cond_broadcast");  
+  pthread_debug("pthread_cond_broadcast");
   spkt_throw_printf(sprockit::unimplemented_error,
                    "pthread::pthread_cond_broadcast not implemented");
 }
@@ -468,7 +468,7 @@ extern "C" int
 SSTMAC_pthread_once(sstmac_pthread_once_t * once_init, void
                     (*init_routine)(void))
 {
-  pthread_debug("pthread_once");  
+  pthread_debug("pthread_once");
   int boolean = *once_init;
   if (boolean == 0){
     *once_init = 0;
@@ -490,7 +490,7 @@ SSTMAC_pthread_key_create(sstmac_pthread_key_t * key, void
 extern "C" int
 SSTMAC_pthread_key_delete(sstmac_pthread_key_t key)
 {
-  pthread_debug("pthread_key_delete");  
+  pthread_debug("pthread_key_delete");
   //this is really a no-op
   return 0;
 }
@@ -498,7 +498,7 @@ SSTMAC_pthread_key_delete(sstmac_pthread_key_t key)
 extern "C" int
 SSTMAC_pthread_setspecific(sstmac_pthread_key_t key, const void * pointer)
 {
-  pthread_debug("pthread_setspecific");  
+  pthread_debug("pthread_setspecific");
   thread* current = current_thread();
   current->set_tls_value(key, const_cast<void*>(pointer));
   return 0;
@@ -507,7 +507,7 @@ SSTMAC_pthread_setspecific(sstmac_pthread_key_t key, const void * pointer)
 extern "C" void *
 SSTMAC_pthread_getspecific(sstmac_pthread_key_t key)
 {
-  pthread_debug("pthread_getspecific");  
+  pthread_debug("pthread_getspecific");
   thread* current = current_thread();
   if (current == 0){
     //why the hell are you calling this function?

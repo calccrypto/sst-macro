@@ -6,7 +6,7 @@
 
 namespace allgatherv2 {
 
-/* Gather data from a vector to contiguous.  Use IN_PLACE.  This is 
+/* Gather data from a vector to contiguous.  Use IN_PLACE.  This is
    the trivial version based on the allgather test (allgatherv but with
    constant data sizes) */
 
@@ -29,10 +29,10 @@ int allgatherv2( int argc, char **argv )
 
 	displs     = (int *)malloc( size * sizeof(int) );
 	recvcounts = (int *)malloc( size * sizeof(int) );
-	
+
         for (count = 1; count < 9000; count = count * 2) {
             vecout = (double *)malloc( size * count * sizeof(double) );
-            
+
             for (i=0; i<count; i++) {
                 vecout[rank*count+i] = rank*count+i;
             }
@@ -40,7 +40,7 @@ int allgatherv2( int argc, char **argv )
                 recvcounts[i] = count;
                 displs[i]    = i * count;
             }
-            MPI_Allgatherv( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL, 
+            MPI_Allgatherv( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL,
                             vecout, recvcounts, displs, MPI_DOUBLE, comm );
             for (i=0; i<count*size; i++) {
                 if (vecout[i] != i) {
@@ -57,7 +57,7 @@ int allgatherv2( int argc, char **argv )
 	free( recvcounts );
 	MTestFreeComm( &comm );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

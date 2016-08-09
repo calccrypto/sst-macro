@@ -89,7 +89,7 @@ class compute_event :
   event_time() const {
     return timestamp(event_data_[time], timestamp::exact);
   }
-  
+
   bool
   timed_computed() const {
     return event_data_[time];

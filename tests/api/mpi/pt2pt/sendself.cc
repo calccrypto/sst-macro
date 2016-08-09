@@ -31,14 +31,14 @@ int sendself( int argc, char *argv[] )
     /* To improve reporting of problems about operations, we
        change the error handler to errors return */
     MPI_Comm_set_errhandler( comm, MPI_ERRORS_RETURN );
-    
+
     for (count = 1; count < 65000; count = count * 2) {
 	while (MTestGetDatatypes( &sendtype, &recvtype, count )) {
-	    
+
 	    sendtype.InitBuf( &sendtype );
 	    recvtype.InitBuf( &recvtype );
-	    
-	    err = MPI_Irecv( recvtype.buf, recvtype.count, 
+
+	    err = MPI_Irecv( recvtype.buf, recvtype.count,
 			    recvtype.datatype, rank, 0, comm, &req );
 	    if (err) {
 		errs++;
@@ -46,8 +46,8 @@ int sendself( int argc, char *argv[] )
 		    MTestPrintError( err );
 		}
 	    }
-	    
-	    err = MPI_Send( sendtype.buf, sendtype.count, 
+
+	    err = MPI_Send( sendtype.buf, sendtype.count,
 			    sendtype.datatype, rank, 0, comm);
 	    if (err) {
 		errs++;
@@ -59,7 +59,7 @@ int sendself( int argc, char *argv[] )
 	    err = MTestCheckRecv( 0, &recvtype );
 	    if (err) {
 		if (errs < 10) {
-		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n", 
+		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n",
 			    MTestGetDatatypeName( &recvtype ),
 			    MTestGetDatatypeName( &sendtype ),
 			    count );
@@ -69,7 +69,7 @@ int sendself( int argc, char *argv[] )
 		errs += err;
 	    }
 
-	    err = MPI_Irecv( recvtype.buf, recvtype.count, 
+	    err = MPI_Irecv( recvtype.buf, recvtype.count,
 			    recvtype.datatype, rank, 0, comm, &req );
 	    if (err) {
 		errs++;
@@ -77,8 +77,8 @@ int sendself( int argc, char *argv[] )
 		    MTestPrintError( err );
 		}
 	    }
-	    
-	    err = MPI_Ssend( sendtype.buf, sendtype.count, 
+
+	    err = MPI_Ssend( sendtype.buf, sendtype.count,
 			     sendtype.datatype, rank, 0, comm);
 	    if (err) {
 		errs++;
@@ -90,7 +90,7 @@ int sendself( int argc, char *argv[] )
 	    err = MTestCheckRecv( 0, &recvtype );
 	    if (err) {
 		if (errs < 10) {
-		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n", 
+		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n",
 			    MTestGetDatatypeName( &recvtype ),
 			    MTestGetDatatypeName( &sendtype ),
 			    count );
@@ -100,7 +100,7 @@ int sendself( int argc, char *argv[] )
 		errs += err;
 	    }
 
-	    err = MPI_Irecv( recvtype.buf, recvtype.count, 
+	    err = MPI_Irecv( recvtype.buf, recvtype.count,
 			    recvtype.datatype, rank, 0, comm, &req );
 	    if (err) {
 		errs++;
@@ -108,8 +108,8 @@ int sendself( int argc, char *argv[] )
 		    MTestPrintError( err );
 		}
 	    }
-	    
-	    err = MPI_Rsend( sendtype.buf, sendtype.count, 
+
+	    err = MPI_Rsend( sendtype.buf, sendtype.count,
 			     sendtype.datatype, rank, 0, comm);
 	    if (err) {
 		errs++;
@@ -121,7 +121,7 @@ int sendself( int argc, char *argv[] )
 	    err = MTestCheckRecv( 0, &recvtype );
 	    if (err) {
 		if (errs < 10) {
-		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n", 
+		    printf( "Data in target buffer did not match for destination datatype %s and source datatype %s, count = %d\n",
 			    MTestGetDatatypeName( &recvtype ),
 			    MTestGetDatatypeName( &sendtype ),
 			    count );

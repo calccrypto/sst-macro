@@ -53,7 +53,7 @@ class TestFxn2 :
   Fxn fxn_;
 
   A a_;
-  
+
   B b_;
 
  public:
@@ -74,9 +74,9 @@ class TestFxn3 :
   Fxn fxn_;
 
   A a_;
-  
+
   B b_;
-  
+
   C c_;
 
  public:
@@ -120,7 +120,7 @@ class TestMemberFxn2 :
   Cls* cls_;
 
   A a_;
-  
+
   B b_;
 
  public:
@@ -143,9 +143,9 @@ class TestMemberFxn3 :
   Cls* cls_;
 
   A a_;
-  
+
   B b_;
-  
+
   C c_;
 
  public:

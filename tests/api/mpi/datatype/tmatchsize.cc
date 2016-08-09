@@ -16,7 +16,7 @@ static char MTEST_Descrip[] = "Test of type_match_size";
 
 /*
  * type match size is part of the extended Fortran support, and may not
- * be present in 
+ * be present in
  */
 
 int tmatchsize( int argc, char *argv[] )
@@ -47,7 +47,7 @@ int tmatchsize( int argc, char *argv[] )
 	else {
 	    if (dsize != sizeof(float)) {
 		errs++;
-		printf( "Unexpected size for float (%d != %d)\n", 
+		printf( "Unexpected size for float (%d != %d)\n",
 			dsize, (int) sizeof(float) );
 	    }
 	}
@@ -79,7 +79,7 @@ int tmatchsize( int argc, char *argv[] )
 	}
     }
 #endif
-    
+
     err = MPI_Type_match_size( MPI_TYPECLASS_INTEGER, sizeof(short), &newtype );
     if (err) {
 	errs++;
@@ -135,7 +135,7 @@ int tmatchsize( int argc, char *argv[] )
 
     /* COMPLEX is a FORTRAN type.  The MPICH2 Type_match_size attempts
        to give a valid datatype, but if Fortran is not available,
-       MPI_COMPLEX and MPI_DOUBLE_COMPLEX are not supported.  
+       MPI_COMPLEX and MPI_DOUBLE_COMPLEX are not supported.
        Allow this case by testing for MPI_DATATYPE_NULL */
     if (MPI_COMPLEX != MPI_DATATYPE_NULL) {
 	err = MPI_Type_match_size( MPI_TYPECLASS_COMPLEX, 2*sizeof(float), &newtype );
@@ -167,7 +167,7 @@ int tmatchsize( int argc, char *argv[] )
 	    }
 	}
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

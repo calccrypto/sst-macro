@@ -11,7 +11,7 @@
 #include <sstmac/replacements/mpi.h>
 
 namespace unusual_noncontigs {
-/* 
+/*
    The default behavior of the test routines should be to briefly indicate
    the cause of any errors - in this test, that means that verbose needs
    to be set. Verbose should turn on output that is independent of error

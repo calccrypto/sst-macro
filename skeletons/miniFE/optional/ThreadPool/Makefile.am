@@ -1,28 +1,28 @@
 # @HEADER
 # ************************************************************************
-# 
+#
 #                          ThreadPool Package
 #                 Copyright (2008) Sandia Corporation
-# 
+#
 # Under terms of Contract DE-AC04-94AL85000, there is a non-exclusive
 # license for use of this work by or on behalf of the U.S. Government.
-# 
+#
 # This library is free software; you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as
 # published by the Free Software Foundation; either version 2.1 of the
 # License, or (at your option) any later version.
-#  
+#
 # This library is distributed in the hope that it will be useful, but
 # WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 # Lesser General Public License for more details.
-#  
+#
 # You should have received a copy of the GNU Lesser General Public
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
-# Questions? Contact Carter Edwards (hcedwar@sandia.gov) 
-# 
+# Questions? Contact Carter Edwards (hcedwar@sandia.gov)
+#
 # ************************************************************************
 # @HEADER
 
@@ -37,7 +37,7 @@ AUTOMAKE_OPTIONS = foreign
 ACLOCAL_AMFLAGS = -I config
 
 #
-#       I believe that by switching to AUX_DIR(../../config) one 
+#       I believe that by switching to AUX_DIR(../../config) one
 #       could get rid of these.
 #
 ## #######################################################################
@@ -45,8 +45,8 @@ ACLOCAL_AMFLAGS = -I config
 ## #######################################################################
 #np# For a typical package, there is no reason to distribute these files
 #np# because users should not have to bootstrap.  We distribute them with
-#np# new package so that the files can be used in creating the 
-#np# configure script for other packages. 
+#np# new package so that the files can be used in creating the
+#np# configure script for other packages.
 EXTRA_DIST = \
 config/generate-makeoptions.pl \
 config/replace-install-prefix.pl config/string-replace.pl \
@@ -54,12 +54,12 @@ config/strip_dup_incl_paths.pl   config/strip_dup_libs.pl \
 config/token-replace.pl
 
 ## #######################################################################
-## Tools in the auxillary directory 
+## Tools in the auxillary directory
 ## #######################################################################
-AUX_DIST = config/install-sh config/missing config/mkinstalldirs 
+AUX_DIST = config/install-sh config/missing config/mkinstalldirs
 #
 #  Again, I hope that AUX_DIR(../../config) eliminates these
-#  config/install-sh config/missing config/mkinstalldirs 
+#  config/install-sh config/missing config/mkinstalldirs
 
 ## #######################################################################
 ## Files to be deleted by 'make maintainer-clean'
@@ -67,10 +67,10 @@ AUX_DIST = config/install-sh config/missing config/mkinstalldirs
 MAINTAINERCLEANFILES = Makefile.in aclocal.m4 autom4te.cache/* \
 	configure config.status config.log \
 	src/common/config-h.in src/common/stamp-h.in \
-	$(AUX_DIST) 
+	$(AUX_DIST)
 
 #The following line helps the test harness recover from build errors.
-                                                                                
+
 all-local:
 	@echo "Trilinos package ThreadPool built successfully"
 
@@ -110,7 +110,7 @@ endif
 #during "make".  We still need to conditionally include the test and example
 #in SUBDIRS, even though BUILD_TESTS and BUILD_EXAMPLES will never be
 #defined, so that the tests and examples are included in the distribution
-#tarball. 
+#tarball.
 
 if SUB_TEST
 TEST_SUBDIR=test

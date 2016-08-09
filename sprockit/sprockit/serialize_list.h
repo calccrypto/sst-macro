@@ -10,7 +10,7 @@ namespace sprockit {
 namespace pvt {
 
 template <class Container, class T>
-void 
+void
 serialize_container(Container& v, serializer& ser){
   typedef typename Container::iterator iterator;
   switch(ser.mode())
@@ -52,7 +52,7 @@ serialize_container(Container& v, serializer& ser){
 
 template <class T>
 class serialize <std::list<T> > {
- typedef std::list<T> List; 
+ typedef std::list<T> List;
 public:
  void
  operator()(List& v, serializer& ser) {
@@ -62,7 +62,7 @@ public:
 
 template <class T>
 class serialize <std::deque<T> > {
- typedef std::deque<T> DQ; 
+ typedef std::deque<T> DQ;
 public:
  void
  operator()(DQ& v, serializer& ser) {

@@ -21,7 +21,7 @@ int groupcreate( int argc, char **argv )
     MPI_Comm_size( MPI_COMM_WORLD, &size );
     MPI_Comm_rank( MPI_COMM_WORLD, &rank );
     n = n_goal;
-    
+
     group_array = (MPI_Group *)malloc( n * sizeof(MPI_Group) );
 
     MPI_Comm_group( MPI_COMM_WORLD, &world_group );
@@ -45,13 +45,13 @@ int groupcreate( int argc, char **argv )
 	       caught) */
 	    rc = MPI_Group_size( group_array[i], &group_size );
 	    if (group_size != size) {
-		fprintf( stderr, "Group number %d not correct (size = %d)\n", 
+		fprintf( stderr, "Group number %d not correct (size = %d)\n",
 			 i, size );
-		n = i + 1; 
+		n = i + 1;
 		break;
 	    }
 	}
-	
+
     }
 
     for (i=0; i<n; i++) {

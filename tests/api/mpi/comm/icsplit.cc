@@ -36,7 +36,7 @@ int icsplit( int argc, char *argv[] )
 
         if (intercomm == MPI_COMM_NULL) continue;
 
-	/* Split this intercomm.  The new intercomms contain the 
+	/* Split this intercomm.  The new intercomms contain the
 	   processes that had odd (resp even) rank in their local group
 	   in the original intercomm */
 	MTestPrintfMsg( 1, "Created intercomm %s\n", MTestGetIntercommName() );
@@ -59,7 +59,7 @@ int icsplit( int argc, char *argv[] )
 	    MPI_Comm_remote_size( newcomm, &new_rsize );
 	    MPI_Comm_size( intercomm, &orig_size );
 	    MPI_Comm_size( newcomm, &new_size );
-	    /* The local size is 1/2 the original size, +1 if the 
+	    /* The local size is 1/2 the original size, +1 if the
 	       size was odd and the color was even.  More precisely,
 	       let n be the orig_size.  Then
 	                        color 0     color 1
@@ -71,9 +71,9 @@ int icsplit( int argc, char *argv[] )
 	                        color 0     color 1
 	       orig size even    (n+1)/2     n/2
 	       orig size odd     (n+1)/2     n/2
-	       
+
 	    */
-	    predicted_size = (orig_size + !color) / 2; 
+	    predicted_size = (orig_size + !color) / 2;
 	    if (predicted_size != new_size) {
 		errs++;
 		printf( "Predicted size = %d but found %d for %s (%d,%d)\n",
@@ -85,7 +85,7 @@ int icsplit( int argc, char *argv[] )
 	    if (predicted_size != new_rsize) {
 		errs++;
 		printf( "Predicted remote size = %d but found %d for %s (%d,%d)\n",
-			predicted_size, new_rsize, MTestGetIntercommName(), 
+			predicted_size, new_rsize, MTestGetIntercommName(),
 			orig_size, orig_rsize );
 		commok = 0;
 	    }
@@ -97,7 +97,7 @@ int icsplit( int argc, char *argv[] )
 	else {
 	    int orig_rsize;
 	    /* If the newcomm is null, then this means that remote group
-	       for this color is of size zero (since all processes in this 
+	       for this color is of size zero (since all processes in this
 	       test have been given colors other than MPI_UNDEFINED).
 	       Confirm that here */
 	    /* FIXME: ToDo */
@@ -109,7 +109,7 @@ int icsplit( int argc, char *argv[] )
 		}
 	    }
 	}
-	if (newcomm != MPI_COMM_NULL) 
+	if (newcomm != MPI_COMM_NULL)
 	    MPI_Comm_free( &newcomm );
 	MPI_Comm_free( &intercomm );
     }
@@ -135,24 +135,24 @@ int TestIntercomm( MPI_Comm comm )
     MPI_Comm_get_name( comm, commname, &nsize );
 
     MTestPrintfMsg( 1, "Testing communication on intercomm %s\n", commname );
-    
+
     reqs = (MPI_Request *)malloc( remote_size * sizeof(MPI_Request) );
     if (!reqs) {
-	printf( "[%d] Unable to allocated %d requests for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d requests for testing intercomm %s\n",
 		wrank, remote_size, commname );
 	errs++;
 	return errs;
     }
     bufs = (int **) malloc( remote_size * sizeof(int *) );
     if (!bufs) {
-	printf( "[%d] Unable to allocated %d int pointers for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d int pointers for testing intercomm %s\n",
 		wrank, remote_size, commname );
 	errs++;
 	return errs;
     }
     bufmem = (int *) malloc( remote_size * 2 * sizeof(int) );
     if (!bufmem) {
-	printf( "[%d] Unable to allocated %d int data for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d int data for testing intercomm %s\n",
 		wrank, 2*remote_size, commname );
 	errs++;
 	return errs;
@@ -171,17 +171,17 @@ int TestIntercomm( MPI_Comm comm )
     for (j=0; j<remote_size; j++) {
 	MPI_Recv( rbuf, 2, MPI_INT, j, 0, comm, MPI_STATUS_IGNORE );
 	if (rbuf[0] != j) {
-	    printf( "[%d] Expected rank %d but saw %d in %s\n", 
+	    printf( "[%d] Expected rank %d but saw %d in %s\n",
 		    wrank, j, rbuf[0], commname );
 	    errs++;
 	}
 	if (rbuf[1] != rank) {
-	    printf( "[%d] Expected target rank %d but saw %d from %d in %s\n", 
+	    printf( "[%d] Expected target rank %d but saw %d from %d in %s\n",
 		    wrank, rank, rbuf[1], j, commname );
 	    errs++;
 	}
     }
-    if (errs) 
+    if (errs)
 	fflush(stdout);
     MPI_Waitall( remote_size, reqs, MPI_STATUSES_IGNORE );
 

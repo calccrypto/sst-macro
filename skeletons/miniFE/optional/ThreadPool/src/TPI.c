@@ -326,7 +326,7 @@ static void local_barrier( Thread * const this_thread )
     }
   }
 }
- 
+
 /*--------------------------------------------------------------------*/
 /*  The driver given to 'pthread_create'.
  *  Run work until told to terminate.
@@ -355,7 +355,7 @@ static void * local_driver( void * arg )
 
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
- 
+
 static void alloc_reduce( int reduce_size )
 {
   const int alloc_count = thread_pool.m_thread_count - 1 ;
@@ -365,7 +365,7 @@ static void alloc_reduce( int reduce_size )
     const int grain_shift  = 8 ; /* grain_size = 0x80 */
     const int grain_size   = 1 << grain_shift ; /* Byte grain size */
     const int grain_count  = ( reduce_size + grain_size - 1 ) >> grain_shift ;
-    const int reduce_grain = grain_size * grain_count ; 
+    const int reduce_grain = grain_size * grain_count ;
     const int alloc_size   = alloc_count * reduce_grain ;
 
     int i ;
@@ -922,7 +922,7 @@ int TPI_Run_reduce( TPI_work_subprogram   work_subprogram  ,
     NULL == reduce_init                ? TPI_ERROR_NULL : (
     NULL == reduce_data                ? TPI_ERROR_NULL : (
     work_count  <= 0                   ? TPI_ERROR_SIZE : (
-    reduce_size <= 0                   ? TPI_ERROR_SIZE : 
+    reduce_size <= 0                   ? TPI_ERROR_SIZE :
 
     local_start( thread_pool.m_thread_count ,
                  work_subprogram, work_info, work_count, lock_count,
@@ -950,7 +950,7 @@ int TPI_Run_threads_reduce( TPI_work_subprogram   work_subprogram  ,
     NULL == reduce_join                ? TPI_ERROR_NULL : (
     NULL == reduce_init                ? TPI_ERROR_NULL : (
     NULL == reduce_data                ? TPI_ERROR_NULL : (
-    reduce_size <= 0                   ? TPI_ERROR_SIZE : 
+    reduce_size <= 0                   ? TPI_ERROR_SIZE :
 
     local_start( thread_pool.m_thread_count ,
                  work_subprogram , work_info , work_count , lock_count ,
@@ -978,7 +978,7 @@ int TPI_Start_reduce( TPI_work_subprogram   work_subprogram  ,
     NULL == reduce_init                ? TPI_ERROR_NULL : (
     NULL == reduce_data                ? TPI_ERROR_NULL : (
     work_count  <= 0                   ? TPI_ERROR_SIZE : (
-    reduce_size <= 0                   ? TPI_ERROR_SIZE : 
+    reduce_size <= 0                   ? TPI_ERROR_SIZE :
 
     local_start( thread_pool.m_thread_count - 1 ,
                  work_subprogram , work_info , work_count , lock_count ,
@@ -1004,7 +1004,7 @@ int TPI_Start_threads_reduce( TPI_work_subprogram   work_subprogram  ,
     NULL == reduce_join                ? TPI_ERROR_NULL : (
     NULL == reduce_init                ? TPI_ERROR_NULL : (
     NULL == reduce_data                ? TPI_ERROR_NULL : (
-    reduce_size <= 0                   ? TPI_ERROR_SIZE : 
+    reduce_size <= 0                   ? TPI_ERROR_SIZE :
 
     local_start( thread_pool.m_thread_count - 1 ,
                  work_subprogram , work_info , work_count , lock_count ,

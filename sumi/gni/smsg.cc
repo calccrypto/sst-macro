@@ -50,7 +50,7 @@ gni_transport::init_smsg()
 
     peers_[rank_].smsg_attr.mbox_offset = smsg_bytes_mbox_ * i;
     peers_[i].smsg_attr.mbox_offset = smsg_bytes_mbox_ * rank_;
-    gni_debug("register smsg %d on %d: %p:%d %ld %ld->%p:%d %ld %ld", 
+    gni_debug("register smsg %d on %d: %p:%d %ld %ld->%p:%d %ld %ld",
      i, rank_,
      peers_[i].smsg_attr.msg_buffer,
      peers_[i].smsg_attr.mbox_offset,

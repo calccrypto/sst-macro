@@ -44,7 +44,7 @@ class stack_alloc::chunk
   /// Goodbye.
   virtual ~chunk();
 
-  void* 
+  void*
   get_next_stack();
 
 };

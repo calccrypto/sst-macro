@@ -25,13 +25,13 @@ int transpose_pack(int argc, char *argv[])
     int a[100][100], b[100][100];
     MPI_Datatype row, xpose;
     MPI_Aint sizeofint;
-	
+
     int err, errs = 0;
     int bufsize, position = 0;
     void *buffer;
-  
+
     int i, j;
-  
+
     /* Initialize a to some known values. */
     for(i = 0; i < 100; i++) {
 	for(j = 0; j < 100; j++) {
@@ -39,18 +39,18 @@ int transpose_pack(int argc, char *argv[])
 	    b[i][j] = -1;
 	}
     }
-  
+
     /* Initialize MPI */
     MPI_Init(&argc, &argv);
     parse_args(argc, argv);
 
     MPI_Type_extent(MPI_INT, &sizeofint);
-	
+
     /* Create datatypes. */
     MPI_Type_vector(100, 1, 100, MPI_INT, &row);
     MPI_Type_hvector(100, 1, sizeofint, row, &xpose);
     MPI_Type_commit(&xpose);
-	
+
     /* Pack it. */
     MPI_Pack_size(1, xpose, MPI_COMM_WORLD, &bufsize);
     buffer = (char *) malloc((unsigned) bufsize);
@@ -66,7 +66,7 @@ int transpose_pack(int argc, char *argv[])
 		   bufsize,
 		   &position,
 		   MPI_COMM_WORLD);
-	
+
     /* Unpack the buffer into b. */
     position = 0;
     err = MPI_Unpack(buffer,
@@ -89,7 +89,7 @@ int transpose_pack(int argc, char *argv[])
 
     MPI_Type_free(&xpose);
     MPI_Type_free(&row);
-    
+
     /* print message and exit */
     if (errs) {
 	fprintf(stderr, "Found %d errors\n", errs);

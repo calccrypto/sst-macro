@@ -1,11 +1,11 @@
 #
-#   This file is part of SST/macroscale: 
+#   This file is part of SST/macroscale:
 #                The macroscale architecture simulator from the SST suite.
 #   Copyright (c) 2011 Sandia Corporation.
 #   This software is distributed under the BSD License.
 #   Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
 #   the U.S. Government retains certain rights in this software.
-#   For more information, see the LICENSE file in the top 
+#   For more information, see the LICENSE file in the top
 #   SST/macroscale directory.
 #
 
@@ -18,7 +18,7 @@ lib_LTLIBRARIES = libsumi.la
 libsumi_la_LDFLAGS = -version-info @SUMI_LIBVERSION@
 endif
 
-libsumi_la_LIBADD = 
+libsumi_la_LIBADD =
 
 
 library_includedir=$(includedir)/sumi/sumi
@@ -67,7 +67,7 @@ library_include_HEADERS = \
  thread_safe_set.h \
  timeout.h \
  transport.h \
- transport_fwd.h 
+ transport_fwd.h
 
 libsumi_la_SOURCES = \
  alltoall.cc \
@@ -93,21 +93,21 @@ libsumi_la_SOURCES = \
  partner_timeout.cc \
  ping.cc \
  thread_lock.cc \
- thread_safe_set.cc 
+ thread_safe_set.cc
 
 
 if ENABLE_MPI
 libsumi_la_LIBADD += ../mpi/libsumi_mpi.la
 libsumi_la_SOURCES += \
- active_msg_transport.cc 
+ active_msg_transport.cc
 library_include_HEADERS += \
- active_msg_transport.h 
+ active_msg_transport.h
 endif
 
 if ENABLE_GNI
 libsumi_la_LIBADD += ../gni/libsumi_gni.la
 libsumi_la_SOURCES += \
- active_msg_transport.cc 
+ active_msg_transport.cc
 library_include_HEADERS += \
- active_msg_transport.h 
+ active_msg_transport.h
 endif

@@ -45,7 +45,7 @@ SSTIntegratedComponent::init_sst_params(SST::Params &params)
 void
 SSTIntegratedComponent::configure_self_link()
 {
-  self_link_ = configureSelfLink("self", time_converter_, 
+  self_link_ = configureSelfLink("self", time_converter_,
     new SST::Event::Handler<SSTIntegratedComponent>(this, &SSTIntegratedComponent::handle_self_link));
 }
 
@@ -77,13 +77,13 @@ SSTIntegratedComponent::extra_delay(timestamp t) const
   return timestamp_time - current;
 }
 
-void 
+void
 connection_details::parse_src(const std::string& str)
 {
   parse_type_id(str, src_type, src_id);
 }
 
-void 
+void
 connection_details::parse_dst(const std::string& str)
 {
   parse_type_id(str, dst_type, dst_id);
@@ -92,7 +92,7 @@ connection_details::parse_dst(const std::string& str)
 void
 connection_details::parse_type_id(const std::string& str, endpoint_t& ep, int& id)
 {
-  if     (str.substr(0,4) == "node"){    
+  if     (str.substr(0,4) == "node"){
     ep = node;
     id = atoi(str.substr(4,5).c_str());
   }

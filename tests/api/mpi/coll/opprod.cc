@@ -15,7 +15,7 @@ typedef struct { long double r, i; } ld_complex;
 #endif
 
 /*
- * This test looks at the handling of logical and for types that are not 
+ * This test looks at the handling of logical and for types that are not
  * integers or are not required integers (e.g., long long).  MPICH2 allows
  * these as well.  A strict MPI test should not include this test.
  */
@@ -38,8 +38,8 @@ int opprod( int argc, char *argv[] )
     if (size > 5) maxsize = 5;
     else          maxsize = size;
 
-    /* General forumula: If we multiple the values from 1 to n, the 
-       product is n!.  This grows very fast, so we'll only use the first 
+    /* General forumula: If we multiple the values from 1 to n, the
+       product is n!.  This grows very fast, so we'll only use the first
        five (1! = 1, 2! = 2, 3! = 6, 4! = 24, 5! = 120), with n!
        stored in the array result[n] */
 
@@ -126,9 +126,9 @@ int opprod( int argc, char *argv[] )
     /* For some reason, complex is not allowed for sum and prod */
     if (MPI_DOUBLE_COMPLEX != MPI_DATATYPE_NULL) {
 	int dc;
-#ifdef HAVE_LONG_DOUBLE	
+#ifdef HAVE_LONG_DOUBLE
 	ld_complex ldinbuf[3], ldoutbuf[3];
-#endif	
+#endif
 	/* Must determine which C type matches this Fortran type */
 	MPI_Type_size( MPI_DOUBLE_COMPLEX, &dc );
 	if (dc == sizeof(d_complex)) {
@@ -139,7 +139,7 @@ int opprod( int argc, char *argv[] )
 	    dinbuf[0].i = 0;
 	    dinbuf[1].i = 1;
 	    dinbuf[2].i = -(rank > 0);
-	    
+
 	    doutbuf[0].r = 0;
 	    doutbuf[1].r = 1;
 	    doutbuf[2].r = 1;
@@ -159,7 +159,7 @@ int opprod( int argc, char *argv[] )
 		case 1: imag = 1.0; real = 0.0; break;
 		case 2: imag = 0.0; real = -1.0; break;
 		case 3: imag =-1.0; real = 0.0; break;
-		case 0: imag = 0.0; real = 1.0; break; 
+		case 0: imag = 0.0; real = 1.0; break;
 		}
 		if (doutbuf[1].r != real || doutbuf[1].i != imag) {
 		    errs++;
@@ -181,7 +181,7 @@ int opprod( int argc, char *argv[] )
 	    ldinbuf[0].i = 0;
 	    ldinbuf[1].i = 1;
 	    ldinbuf[2].i = -(rank > 0);
-	    
+
 	    ldoutbuf[0].r = 0;
 	    ldoutbuf[1].r = 1;
 	    ldoutbuf[2].r = 1;
@@ -201,7 +201,7 @@ int opprod( int argc, char *argv[] )
 		case 1: imag = 1.0; real = 0.0; break;
 		case 2: imag = 0.0; real = -1.0; break;
 		case 3: imag =-1.0; real = 0.0; break;
-		case 0: imag = 0.0; real = 1.0; break; 
+		case 0: imag = 0.0; real = 1.0; break;
 		}
 		if (ldoutbuf[1].r != real || ldoutbuf[1].i != imag) {
 		    errs++;

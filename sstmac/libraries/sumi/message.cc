@@ -5,7 +5,7 @@
 #include <iostream>
 
 namespace sstmac {
-  
+
 transport_message::transport_message(sw::app_id aid,
  const sumi::message_ptr& msg, long byte_length)
   : library_interface("sumi"),
@@ -92,6 +92,6 @@ transport_message::reverse()
 {
   //payload_->reverse();
   network_message::reverse();
-}  
-  
+}
+
 }

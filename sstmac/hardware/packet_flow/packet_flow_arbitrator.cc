@@ -26,10 +26,10 @@ ImplementFactory(sstmac::hw::packet_flow_bandwidth_arbitrator);
   debug_printf(sprockit::dbg::packet_flow,  \
     two_indent " [arbitrator] " format_str "%s", "")
 
-//#define pflow_arb_debug_printf_l0(format_str, ...) 
-//#define pflow_arb_debug_printf_l1(format_str, ...) 
-//#define pflow_arb_debug_printf_l2(format_str, ...) 
-//#define pflow_arb_debug_print_l2(format_str) 
+//#define pflow_arb_debug_printf_l0(format_str, ...)
+//#define pflow_arb_debug_printf_l1(format_str, ...)
+//#define pflow_arb_debug_printf_l2(format_str, ...)
+//#define pflow_arb_debug_print_l2(format_str)
 
 namespace sstmac {
 namespace hw {

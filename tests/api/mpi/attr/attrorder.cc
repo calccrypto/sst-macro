@@ -30,7 +30,7 @@ int attrorder( int argc, char *argv[] )
 			       &key[i], (void *)0 );
 	    attrval[i] = 1024 * i;
 	}
-	
+
 	/* Insert attribute in several orders.  Test after put with get,
 	 then delete, then confirm delete with get. */
 
@@ -39,19 +39,19 @@ int attrorder( int argc, char *argv[] )
 	MPI_Attr_put( comm, key[0], &attrval[0] );
 
 	errs += checkAttrs( comm, 3, key, attrval );
-	
+
 	MPI_Attr_delete( comm, key[0] );
 	MPI_Attr_delete( comm, key[1] );
 	MPI_Attr_delete( comm, key[2] );
 
 	errs += checkNoAttrs( comm, 3, key );
-	
+
 	MPI_Attr_put( comm, key[1], &attrval[1] );
 	MPI_Attr_put( comm, key[2], &attrval[2] );
 	MPI_Attr_put( comm, key[0], &attrval[0] );
 
 	errs += checkAttrs( comm, 3, key, attrval );
-	
+
 	MPI_Attr_delete( comm, key[2] );
 	MPI_Attr_delete( comm, key[1] );
 	MPI_Attr_delete( comm, key[0] );
@@ -63,22 +63,22 @@ int attrorder( int argc, char *argv[] )
 	MPI_Attr_put( comm, key[2], &attrval[2] );
 
 	errs += checkAttrs( comm, 3, key, attrval );
-	
+
 	MPI_Attr_delete( comm, key[1] );
 	MPI_Attr_delete( comm, key[2] );
 	MPI_Attr_delete( comm, key[0] );
 
 	errs += checkNoAttrs( comm, 3, key );
-	
+
 	for (i=0; i<3; i++) {
 	    MPI_Keyval_free( &key[i] );
 	}
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 int checkAttrs( MPI_Comm comm, int n, int key[], int attrval[] )
@@ -117,5 +117,5 @@ int checkNoAttrs( MPI_Comm comm, int n, int key[] )
 
     return errs;
 }
-	
+
 }

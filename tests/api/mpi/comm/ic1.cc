@@ -39,28 +39,28 @@ int ic1( int argc, char *argv[] )
 
 	remote_rank = 1 - rank;
 	MPI_Intercomm_create( MPI_COMM_SELF, 0,
-			      MPI_COMM_WORLD, remote_rank, 27, 
+			      MPI_COMM_WORLD, remote_rank, 27,
 			      &intercomm );
 
 	/* Now, communicate between them */
-	MPI_Sendrecv( &lrank, 1, MPI_INT, 0, 13, 
+	MPI_Sendrecv( &lrank, 1, MPI_INT, 0, 13,
 		      &rrank, 1, MPI_INT, 0, 13, intercomm, &status );
 
 	if (rrank != remote_rank) {
 	    errs++;
-	    printf( "%d Expected %d but received %d\n", 
+	    printf( "%d Expected %d but received %d\n",
 		    rank, remote_rank, rrank );
 	}
 
 	MPI_Comm_free( &intercomm );
     }
-    
+
     /* The next test should create an intercomm with groups of different
        sizes FIXME */
 
     MTest_Finalize( errs );
     MPI_Finalize();
-    
+
     return 0;
 }
 

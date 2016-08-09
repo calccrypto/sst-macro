@@ -16,7 +16,7 @@ struct tpi_work_vector {
         VECTOR_SCALAR beta ;
   const VECTOR_SCALAR * x ;
   const VECTOR_SCALAR * y ;
-        VECTOR_SCALAR * w ; 
+        VECTOR_SCALAR * w ;
         int  n ;
 };
 

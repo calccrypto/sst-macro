@@ -336,7 +336,7 @@ app_ftq_calendar::dump(const std::string& fileroot)
   //sort the categories
   std::map<std::string, int> sorted_keys;
   for (int i=0; i < num_categories; ++i){
-    sorted_keys[key::name(i)] = i;  
+    sorted_keys[key::name(i)] = i;
   }
 
   int nonzero_categories[num_categories];

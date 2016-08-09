@@ -7,13 +7,13 @@
 namespace alltoallv0 {
 
 /*
-  This program tests MPI_Alltoallv by having processor each process 
+  This program tests MPI_Alltoallv by having processor each process
   send data to two neighbors only, using counts of 0 for the other processes.
   This idiom is sometimes used for halo exchange operations.
 
   Because there are separate send and receive types to alltoallv,
   there need to be tests to rearrange data on the fly.  Not done yet.
-  
+
   Currently, the test uses only MPI_INT; this is adequate for testing systems
   that use point-to-point operations
  */
@@ -27,16 +27,16 @@ int alltoallv0( int argc, char **argv )
     int      *sendcounts, *recvcounts, *rdispls, *sdispls;
     int      i, *p, err;
     int      left, right, length;
-    
+
     MTest_Init( &argc, &argv );
     err = 0;
-    
+
     while (MTestGetIntracommGeneral( &comm, 2, 1 )) {
       if (comm == MPI_COMM_NULL) continue;
 
       MPI_Comm_size( comm, &size );
       MPI_Comm_rank( comm, &rank );
-      
+
       if (size < 3) continue;
 
       /* Create and load the arguments to alltoallv */
@@ -69,7 +69,7 @@ int alltoallv0( int argc, char **argv )
 	      fprintf( stderr, "Could not allocate buffers!\n" );
 	      MPI_Abort( comm, 1 );
 	  }
-	  
+
 	  /* Load up the buffers */
 	  for (i=0; i<length; i++) {
 	      sbuf[i]        = i + 100000*rank;
@@ -85,17 +85,17 @@ int alltoallv0( int argc, char **argv )
 	  rdispls[right]    = length;
 	  sdispls[left]     = 0;
 	  sdispls[right]    = length;
-      
+
 	  MPI_Alltoallv( sbuf, sendcounts, sdispls, MPI_INT,
 			 rbuf, recvcounts, rdispls, MPI_INT, comm );
-      
+
 	  /* Check rbuf */
 	  p = rbuf;          /* left */
 
 	  for (i=0; i<length; i++) {
 	      if (p[i] != i + 100000 * left) {
 		  if (err < 10) {
-		      fprintf( stderr, "[%d from %d] got %d expected %d for %dth\n", 
+		      fprintf( stderr, "[%d from %d] got %d expected %d for %dth\n",
 			       rank, left, p[i], i + 100000 * left, i );
 		  }
 		  err++;
@@ -106,7 +106,7 @@ int alltoallv0( int argc, char **argv )
 	  for (i=0; i<length; i++) {
 	      if (p[i] != i + 100000 * right) {
 		  if (err < 10) {
-		      fprintf( stderr, "[%d from %d] got %d expected %d for %dth\n", 
+		      fprintf( stderr, "[%d from %d] got %d expected %d for %dth\n",
 			       rank, right, p[i], i + 100000 * right, i );
 		  }
 		  err++;
@@ -116,7 +116,7 @@ int alltoallv0( int argc, char **argv )
 	  free( rbuf );
 	  free( sbuf );
       }
-	  
+
       free( sdispls );
       free( rdispls );
       free( recvcounts );

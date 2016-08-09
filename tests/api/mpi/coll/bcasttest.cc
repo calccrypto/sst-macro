@@ -18,7 +18,7 @@ int bcasttest( int argc, char **argv)
     int bVerify = 1;
     int sizes[NUM_SIZES] = { 100, 64*1024, 128*1024, 1024*1024 };
     int num_errors=0;
-    
+
     MTest_Init( &argc, &argv );
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
@@ -65,7 +65,7 @@ int bcasttest( int argc, char **argv)
 		printf("rank=%d, n=%d, reps=%d\n", rank, n, reps);
 	    }
 #           endif
-	    
+
 	    MPI_Bcast(buf, sizes[n], MPI_INT, ROOT, MPI_COMM_WORLD);
 
 	    if (bVerify)
@@ -92,7 +92,7 @@ int bcasttest( int argc, char **argv)
 	    }
 	}
     }
-    
+
     free(buf);
 
     MTest_Finalize( num_errors );

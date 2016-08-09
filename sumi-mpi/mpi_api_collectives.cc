@@ -194,7 +194,7 @@ mpi_api::wait_collective(collective_op_base* op)
   }
 
   finish_collective(op);
-  
+
   std::list<collective_done_message::ptr>::iterator it, end = pending.end();
   for (it=pending.begin(); it != end; ++it){
     completion_queue_.push_back(*it);

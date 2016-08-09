@@ -55,15 +55,15 @@ int localpack(int argc, char *argv[])
     MPI_Unpack(buffer, size, &pos, &a, 1, MPI_DOUBLE, MPI_COMM_WORLD);
     MPI_Unpack(buffer, size, &pos, &b, 1, MPI_DOUBLE, MPI_COMM_WORLD);
     /* Check results */
-    if (n != 10) { 
+    if (n != 10) {
 	errs++;
 	if (verbose) fprintf(stderr, "Wrong value for n; got %d expected %d\n", n, 10 );
     }
-    if (a != 1.1) { 
+    if (a != 1.1) {
 	errs++;
 	if (verbose) fprintf(stderr, "Wrong value for a; got %f expected %f\n", a, 1.1 );
     }
-    if (b != 2.2) { 
+    if (b != 2.2) {
 	errs++;
 	if (verbose) fprintf(stderr, "Wrong value for b; got %f expected %f\n", b, 2.2 );
     }

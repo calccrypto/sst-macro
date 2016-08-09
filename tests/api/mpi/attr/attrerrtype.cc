@@ -19,9 +19,9 @@ int attrerrtype( int argc, char **argv )
     return 0;
 }
 
-/* 
- * MPI 1.2 Clarification: Clarification of Error Behavior of 
- *                        Attribute Callback Functions 
+/*
+ * MPI 1.2 Clarification: Clarification of Error Behavior of
+ *                        Attribute Callback Functions
  * Any return value other than MPI_SUCCESS is erroneous.  The specific value
  * returned to the user is undefined (other than it can't be MPI_SUCCESS).
  * Proposals to specify particular values (e.g., user's value) failed.
@@ -41,7 +41,7 @@ int copybomb_fn( MPI_Datatype oldtype, int keyval, void *extra_state,
 static int delete_flag = 0;
 static int deleteCalled = 0;
 
-int deletebomb_fn( MPI_Datatype type, int keyval, void *attribute_val, 
+int deletebomb_fn( MPI_Datatype type, int keyval, void *attribute_val,
 		   void *extra_state)
 {
     deleteCalled ++;
@@ -70,7 +70,7 @@ int test_attrs( void )
     }
 #endif
 
-    
+
     MPI_Type_dup( MPI_DOUBLE, &dup_type );
 
     MPI_Errhandler_set( MPI_COMM_WORLD, MPI_ERRORS_RETURN );
@@ -98,7 +98,7 @@ int test_attrs( void )
 	errs++;
 	printf( "delete function return code was MPI_SUCCESS in delete\n" );
     }
-    
+
     err = MPI_Type_dup( dup_type, &d2 );
     if (err == MPI_SUCCESS) {
 	errs++;
@@ -114,7 +114,7 @@ int test_attrs( void )
 
     delete_flag  = 1;
     deleteCalled = 0;
-    if (d2 != MPI_DATATYPE_NULL) 
+    if (d2 != MPI_DATATYPE_NULL)
 	MPI_Type_free(&d2);
     MPI_Type_free( &dup_type );
     if (deleteCalled == 0) {

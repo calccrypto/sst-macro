@@ -16,7 +16,7 @@ int infovallen( int argc, char *argv[] )
     int errs = 0;
     MPI_Info info;
     char *keys[NKEYS] = { (char*)"file", (char*)"soft", (char*)"host" };
-    char *values[NKEYS] = { (char*)"runfile.txt", (char*)"2:1000:4,3:1000:7", 
+    char *values[NKEYS] = { (char*)"runfile.txt", (char*)"2:1000:4,3:1000:7",
 			    (char*)"myhost.myorg.org" };
     char value[MPI_MAX_INFO_VAL];
     int i, flag, vallen;
@@ -48,17 +48,17 @@ int infovallen( int argc, char *argv[] )
 	}
 	if (strlen(value) != vallen) {
 	    errs++;
-	    printf( "value_len returned %d but actual len is %d\n", 
+	    printf( "value_len returned %d but actual len is %d\n",
 		    vallen, (int) strlen(value) );
 	}
     }
 
     MPI_Info_free( &info );
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

@@ -10,7 +10,7 @@ static char MTEST_Descrip[] = "Test MPI_LOR operations on optional datatypes dup
 */
 
 /*
- * This test looks at the handling of logical and for types that are not 
+ * This test looks at the handling of logical and for types that are not
  * integers or are not required integers (e.g., long long).  MPICH2 allows
  * these as well.  A strict MPI test should not include this test.
  */
@@ -34,7 +34,7 @@ int oplor( int argc, char *argv[] )
 
     /* Some MPI implementations do not implement all of the required
        (datatype,operations) combinations, and further, they do not
-       always provide clear and specific error messages.  By catching 
+       always provide clear and specific error messages.  By catching
        the error, we can provide a higher quality, more specific message.
     */
     MPI_Comm_set_errhandler( comm, MPI_ERRORS_RETURN );

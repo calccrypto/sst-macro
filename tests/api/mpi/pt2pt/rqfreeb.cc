@@ -79,7 +79,7 @@ int rqfreeb( int argc, char *argv[] )
 	MPI_Wait( &r, MPI_STATUS_IGNORE );
 
 	/* We can't guarantee that messages arrive until the detach */
- 	MPI_Buffer_detach( &bbuf, &bsize ); 
+ 	MPI_Buffer_detach( &bbuf, &bsize );
     }
 
     if (rank == dest) {
@@ -107,7 +107,7 @@ int rqfreeb( int argc, char *argv[] )
 	MPI_Wait( &r[4], MPI_STATUS_IGNORE );
 #else
 	MTestPrintfMsg( 10, "About  free Irecv request\n" );
-	MPI_Request_free( &r[4] ); 
+	MPI_Request_free( &r[4] );
 #endif
     }
 

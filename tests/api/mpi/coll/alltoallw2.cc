@@ -13,7 +13,7 @@ namespace alltoallw2 {
 
   Because there are separate send and receive types to alltoallw,
   there need to be tests to rearrange data on the fly.  Not done yet.
-  
+
   The first test sends i items to processor i from all processors.
 
   Currently, the test uses only MPI_INT; this is adequate for testing systems
@@ -29,10 +29,10 @@ int alltoallw2( int argc, char **argv )
     int      *sendcounts, *recvcounts, *rdispls, *sdispls;
     int      i, j, *p, err;
     MPI_Datatype *sendtypes, *recvtypes;
-    
+
     MTest_Init( &argc, &argv );
     err = 0;
-    
+
     while (MTestGetIntracommGeneral( &comm, 2, 1 )) {
       if (comm == MPI_COMM_NULL) continue;
 
@@ -45,13 +45,13 @@ int alltoallw2( int argc, char **argv )
 	fprintf( stderr, "Could not allocated buffers!\n" );
 	MPI_Abort( comm, 1 );
       }
-      
+
       /* Load up the buffers */
       for (i=0; i<size*size; i++) {
 	sbuf[i] = i + 100*rank;
 	rbuf[i] = -i;
       }
-      
+
       /* Create and load the arguments to alltoallv */
       sendcounts = (int *)malloc( size * sizeof(int) );
       recvcounts = (int *)malloc( size * sizeof(int) );
@@ -73,7 +73,7 @@ int alltoallw2( int argc, char **argv )
       }
       MPI_Alltoallw( sbuf, sendcounts, sdispls, sendtypes,
 		     rbuf, recvcounts, rdispls, recvtypes, comm );
-      
+
       /* Check rbuf */
       for (i=0; i<size; i++) {
 	p = rbuf + rdispls[i]/sizeof(int);

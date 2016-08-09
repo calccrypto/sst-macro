@@ -23,7 +23,7 @@ int redscatblk3( int argc, char **argv )
 
     sendbuf = (int *) malloc( mycount * size * sizeof(int) );
     if (!sendbuf) {
-	fprintf( stderr, "Could not allocate %d ints for sendbuf\n", 
+	fprintf( stderr, "Could not allocate %d ints for sendbuf\n",
 		 mycount * size );
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
@@ -35,12 +35,12 @@ int redscatblk3( int argc, char **argv )
     }
     recvbuf = (int *)malloc( mycount * sizeof(int) );
     if (!recvbuf) {
-	fprintf( stderr, "Could not allocate %d ints for recvbuf\n", 
+	fprintf( stderr, "Could not allocate %d ints for recvbuf\n",
 		 mycount );
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
 
-    MPI_Reduce_scatter_block( sendbuf, recvbuf, mycount, MPI_INT, MPI_SUM, 
+    MPI_Reduce_scatter_block( sendbuf, recvbuf, mycount, MPI_INT, MPI_SUM,
 			      comm );
 
     sumval = size * rank + ((size - 1) * size)/2;
@@ -53,7 +53,7 @@ int redscatblk3( int argc, char **argv )
 	}
     }
 
-    MPI_Reduce_scatter_block( MPI_IN_PLACE, sendbuf, mycount, MPI_INT, MPI_SUM, 
+    MPI_Reduce_scatter_block( MPI_IN_PLACE, sendbuf, mycount, MPI_INT, MPI_SUM,
 			comm );
 
     sumval = size * rank + ((size - 1) * size)/2;
@@ -68,7 +68,7 @@ int redscatblk3( int argc, char **argv )
 
     free(sendbuf);
     free(recvbuf);
-       
+
     MTest_Finalize( err );
 
     MPI_Finalize( );

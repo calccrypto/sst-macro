@@ -18,7 +18,7 @@ cpuset_compute_scheduler::configure(int ncore, int nsocket)
   }
 }
 
-int 
+int
 cpuset_compute_scheduler::available_core(int ncore, uint64_t cpumask)
 {
   for (int i=0; i < ncore; ++i){
@@ -58,18 +58,18 @@ cpuset_compute_scheduler::release_core(thread *thr)
 {
   debug_printf(sprockit::dbg::compute_scheduler,
       "Releasing core %d for thread %ld",
-      thr->active_core(), thr->thread_id()); 
-  
+      thr->active_core(), thr->thread_id());
+
   deallocate_core(thr->active_core());
   if (pending_threads_.empty())
     return;
-  
+
   std::list<thread*>::iterator it, tmp, end = pending_threads_.end();
   it = pending_threads_.begin();
   while (it != end){
     tmp = it++;
     thread* thr = *tmp;
-    uint64_t valid_cores = available_cores_ & thr->cpumask();    
+    uint64_t valid_cores = available_cores_ & thr->cpumask();
     if (valid_cores != 0){
       //the newly freed core allows another thread to continue
       pending_threads_.erase(tmp);
@@ -77,7 +77,7 @@ cpuset_compute_scheduler::release_core(thread *thr)
       break;
     }
   }
-  
+
 }
 
 }

@@ -13,7 +13,7 @@
 #endif
 
 namespace bsend1 {
-/* 
+/*
  * This is a simple program that tests bsend.  It may be run as a single
  * process to simplify debugging; in addition, bsend allows send-to-self
  * programs.
@@ -65,7 +65,7 @@ int bsend1( int argc, char *argv[] )
 	}
 	if (rmsg2[0] != msg2[0] || rmsg2[1] != msg2[1]) {
 	    errs++;
-	    fprintf( stderr, 
+	    fprintf( stderr,
 	  "message 2 incorrect, values are (%f,%f) but should be (%f,%f)\n",
 		     rmsg2[0], rmsg2[1], msg2[0], msg2[1] );
 	}
@@ -79,7 +79,7 @@ int bsend1( int argc, char *argv[] )
     MPI_Buffer_detach( &bbuf, &bsize );
 
     MTest_Finalize( errs );
-    
+
     MPI_Finalize();
     return 0;
 }

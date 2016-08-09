@@ -134,5 +134,5 @@
 #undef pthread_mutexattr_t
 
 #undef PTHREAD_SCOPE_PROCESS
-#undef PTHREAD_SCOPE_SYSTEM 
+#undef PTHREAD_SCOPE_SYSTEM
 

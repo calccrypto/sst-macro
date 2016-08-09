@@ -9,9 +9,9 @@
 
 namespace typecommit {
 
-void foo(void *sendbuf, MPI_Datatype sendtype, void *recvbuf, 
+void foo(void *sendbuf, MPI_Datatype sendtype, void *recvbuf,
 	 MPI_Datatype recvtype);
-void foo(void *sendbuf, MPI_Datatype sendtype, void *recvbuf, 
+void foo(void *sendbuf, MPI_Datatype sendtype, void *recvbuf,
 	 MPI_Datatype recvtype)
 {
     int blocks[2];

@@ -35,7 +35,7 @@ RegisterDebugSlot(write_params,
 
 namespace sprockit {
 
-double 
+double
 get_quantity_with_units(const char* value, const char* key)
 {
   bool error;
@@ -122,25 +122,25 @@ param_assign::operator double() const
 void
 param_assign::operator=(int x)
 {
-  param_ = sprockit::printf("%d", x); 
+  param_ = sprockit::printf("%d", x);
 }
 
 void
 param_assign::operator=(double x)
 {
-  param_ = sprockit::printf("%f", x); 
+  param_ = sprockit::printf("%f", x);
 }
 
 double
-param_assign::getBandwidth() const 
+param_assign::getBandwidth() const
 {
-  return get_bandwidth_from_str(param_.c_str(), key_.c_str()); 
+  return get_bandwidth_from_str(param_.c_str(), key_.c_str());
 }
 
 double
-param_assign::getFrequency() const 
+param_assign::getFrequency() const
 {
-  return get_freq_from_str(param_.c_str(), key_.c_str()); 
+  return get_freq_from_str(param_.c_str(), key_.c_str());
 }
 
 long
@@ -150,7 +150,7 @@ param_assign::getByteLength() const
 }
 
 double
-param_assign::getTime() const 
+param_assign::getTime() const
 {
   return get_time_from_str(param_.c_str(), key_.c_str());
 }
@@ -183,13 +183,13 @@ param_assign::setTime(double x, const char* units)
 }
 
 const std::string&
-param_assign::setBandwidth(double x, const char* units) 
+param_assign::setBandwidth(double x, const char* units)
 {
   return setValue(x, units);
 }
 
 const std::string&
-param_assign::setFrequency(double x, const char* units) 
+param_assign::setFrequency(double x, const char* units)
 {
   return setValue(x, units);
 }
@@ -238,7 +238,7 @@ sim_parameters::has_namespace(const std::string &ns) const
 }
 
 sim_parameters*
-sim_parameters::get_namespace(const std::string &ns) 
+sim_parameters::get_namespace(const std::string &ns)
 {
   KeywordRegistration::validate_namespace(ns);
   std::map<std::string, sim_parameters*>::const_iterator it = subspaces_.find(ns);
@@ -990,7 +990,7 @@ sim_parameters::get_param(const std::string& key, bool throw_on_error)
       std::cerr << "Parameters given in namespace: " << std::endl;
       print_params(std::cerr);
       spkt_throw_printf(sprockit::value_error,
-               "sim_parameters: could not find parameter %s in namespace %s", 
+               "sim_parameters: could not find parameter %s in namespace %s",
               key.c_str(), namespace_.c_str());
     } else {
       return "";
@@ -1002,7 +1002,7 @@ sim_parameters::get_param(const std::string& key, bool throw_on_error)
 }
 
 sim_parameters*
-sim_parameters::top_parent() 
+sim_parameters::top_parent()
 {
   if (parent_){
     return parent_->top_parent();

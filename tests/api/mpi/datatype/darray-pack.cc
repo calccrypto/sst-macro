@@ -10,7 +10,7 @@
 #include "mpitest.h"
 
 namespace darray_pack {
-/* 
+/*
    The default behavior of the test routines should be to briefly indicate
    the cause of any errors - in this test, that means that verbose needs
    to be set. Verbose should turn on output that is independent of error
@@ -53,7 +53,7 @@ int darray_pack(int argc, char **argv)
 
     /* print message and exit */
     /* Allow the use of more than one process - some MPI implementations
-       (including IBM's) check that the number of processes given to 
+       (including IBM's) check that the number of processes given to
        Type_create_darray is no larger than MPI_COMM_WORLD */
 
     MTest_Finalize( errs );
@@ -108,7 +108,7 @@ int darray_2d_c_test1(void)
 	    MTestPrintError( err );
 	    return errs;
 	}
-	
+
 	MPI_Type_commit(&darray);
 
 	MPI_Type_size(darray, &sizeoftype);
@@ -118,9 +118,9 @@ int darray_2d_c_test1(void)
 				 sizeoftype, (int) sizeof(int));
 	    return errs;
 	}
-	
+
 	err = pack_and_unpack((char *) array, 1, darray, 9*sizeof(int));
-	
+
 	for (i=0; i < 9; i++) {
 
 	    if ((i == rank) && (array[i] != rank)) {

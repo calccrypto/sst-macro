@@ -10,7 +10,7 @@ static char MTEST_Descrip[] = "Test MPI_LAND operations on optional datatypes du
 */
 
 /*
- * This test looks at the handling of logical and for types that are not 
+ * This test looks at the handling of logical and for types that are not
  * integers or are not required integers (e.g., long long).  MPICH2 allows
  * these as well.  A strict MPI test should not include this test.
  */
@@ -29,7 +29,7 @@ int opland( int argc, char *argv[] )
     MTest_Init( &argc, &argv );
 
     comm = MPI_COMM_WORLD;
-    /* Set errors return so that we can provide better information 
+    /* Set errors return so that we can provide better information
        should a routine reject one of the operand/datatype pairs */
     MPI_Errhandler_set( comm, MPI_ERRORS_RETURN );
 

@@ -38,7 +38,7 @@ int glpid( int argc, char *argv[] )
     printf ("Index of first lpid = %d\n", group.idx_of_first_lpid );
     for (i=0; i<group.size; i++) {
 	printf( "lrank_to_lpid[%d].next_lpid = %d, .lpid = %d\n",
-		i, group.lrank_to_lpid[i].next_lpid, 
+		i, group.lrank_to_lpid[i].next_lpid,
 		group.lrank_to_lpid[i].lpid );
     }
 

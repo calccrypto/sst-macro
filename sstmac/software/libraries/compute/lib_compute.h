@@ -12,10 +12,10 @@ namespace sw {
 
 class lib_compute :
   public library
-{  
+{
  public:
   static key::category key_category;
-  
+
  protected:
   lib_compute()
     : library() {

@@ -22,15 +22,15 @@ int allgather3( int argc, char **argv )
 	/* Determine the sender and receiver */
 	MPI_Comm_rank( comm, &rank );
 	MPI_Comm_size( comm, &size );
-	
+
         for (count = 1; count < 9000; count = count * 2) {
 	    invec = (double *)malloc( count * sizeof(double) );
             vecout = (double *)malloc( size * count * sizeof(double) );
-            
+
             for (i=0; i<count; i++) {
                 invec[i] = rank*count+i;
             }
-            MPI_Allgather( invec, count, MPI_DOUBLE, 
+            MPI_Allgather( invec, count, MPI_DOUBLE,
                            vecout, count, MPI_DOUBLE, comm );
             for (i=0; i<count*size; i++) {
                 if (vecout[i] != i) {

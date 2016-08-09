@@ -43,7 +43,7 @@ class ptr_type
     ref_increment(references);
   }
 
-  int 
+  int
   decref() {
     return ref_decrement_return(references);
   }

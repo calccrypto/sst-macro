@@ -11,7 +11,7 @@
 
 ACLOCAL_AMFLAGS = -I acinclude
 
-SUBDIRS = 
+SUBDIRS =
 
 if ENABLE_GNI
 SUBDIRS += gni
@@ -21,6 +21,6 @@ if ENABLE_MPI
 SUBDIRS += mpi
 endif
 
-SUBDIRS += sumi 
+SUBDIRS += sumi
 
 

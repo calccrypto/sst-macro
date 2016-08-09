@@ -11,7 +11,7 @@ static char MTEST_Descrip[] = "Test MPI_MAXLOC operations on datatypes dupported
 */
 
 /*
- * This test looks at the handling of char and types that  are not required 
+ * This test looks at the handling of char and types that  are not required
  * integers (e.g., long long).  MPICH2 allows
  * these as well.  A strict MPI test should not include this test.
  *
@@ -34,14 +34,14 @@ int opmaxloc( int argc, char *argv[] )
     /* 2 int */
     {
 	struct twoint { int val; int loc; } cinbuf[3], coutbuf[3];
- 	
+
 	cinbuf[0].val = 1;
 	cinbuf[0].loc = rank;
 	cinbuf[1].val = 0;
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -72,14 +72,14 @@ int opmaxloc( int argc, char *argv[] )
     /* float int */
     {
 	struct floatint { float val; int loc; } cinbuf[3], coutbuf[3];
- 	
+
 	cinbuf[0].val = 1;
 	cinbuf[0].loc = rank;
 	cinbuf[1].val = 0;
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = (float)rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -106,18 +106,18 @@ int opmaxloc( int argc, char *argv[] )
 	    }
 	}
     }
-    
+
     /* long int */
     {
 	struct longint { long val; int loc; } cinbuf[3], coutbuf[3];
- 	
+
 	cinbuf[0].val = 1;
 	cinbuf[0].loc = rank;
 	cinbuf[1].val = 0;
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -148,14 +148,14 @@ int opmaxloc( int argc, char *argv[] )
     /* short int */
     {
 	struct shortint { short val; int loc; } cinbuf[3], coutbuf[3];
- 	
+
 	cinbuf[0].val = 1;
 	cinbuf[0].loc = rank;
 	cinbuf[1].val = 0;
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -186,18 +186,18 @@ int opmaxloc( int argc, char *argv[] )
 	    }
 	}
     }
-    
+
     /* double int */
     {
 	struct doubleint { double val; int loc; } cinbuf[3], coutbuf[3];
- 	
+
 	cinbuf[0].val = 1;
 	cinbuf[0].loc = rank;
 	cinbuf[1].val = 0;
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -224,7 +224,7 @@ int opmaxloc( int argc, char *argv[] )
 	    }
 	}
     }
-    
+
 #ifdef HAVE_LONG_DOUBLE
     /* long double int */
     {
@@ -240,7 +240,7 @@ int opmaxloc( int argc, char *argv[] )
 	cinbuf[1].loc = rank;
 	cinbuf[2].val = rank;
 	cinbuf[2].loc = rank;
-	
+
 	coutbuf[0].val = 0;
 	coutbuf[0].loc = -1;
 	coutbuf[1].val = 1;
@@ -248,7 +248,7 @@ int opmaxloc( int argc, char *argv[] )
 	coutbuf[2].val = 1;
 	coutbuf[2].loc = -1;
 	if (MPI_LONG_DOUBLE != MPI_DATATYPE_NULL) {
-	    MPI_Reduce( cinbuf, coutbuf, 3, MPI_LONG_DOUBLE_INT, MPI_MAXLOC, 
+	    MPI_Reduce( cinbuf, coutbuf, 3, MPI_LONG_DOUBLE_INT, MPI_MAXLOC,
 			0, comm );
 	    if (rank == 0) {
 		if (coutbuf[0].val != 1 || coutbuf[0].loc != 0) {

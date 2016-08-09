@@ -25,7 +25,7 @@ int bsendalign( int argc, char *argv[] )
     MPI_Comm_size( MPI_COMM_WORLD, &size );
     for (align = 0; align < 7; align++) {
 	MPI_Buffer_attach( buf+align, BUFSIZE);
-	
+
 	for (j=0; j<10; j++) {
 	    for (i=0; i<10; i++) {
 		a[i] = (rank + 10 * j) * size + i;
@@ -33,15 +33,15 @@ int bsendalign( int argc, char *argv[] )
 	    MPI_Bsend( a, 10, MPI_INT, 0, 27+j, MPI_COMM_WORLD );
 	}
 	if (rank == 0) {
-	    
+
 	    for (i=0; i<size; i++) {
 		for (j=0; j<10; j++) {
 		    int k;
 		    status.MPI_TAG = -10;
 		    status.MPI_SOURCE = -20;
 		    MPI_Recv( b, 10, MPI_INT, i, 27+j, MPI_COMM_WORLD, &status );
-		    
-		    if (status.MPI_TAG != 27+j) { 
+
+		    if (status.MPI_TAG != 27+j) {
 			errs ++;
 			printf( "Wrong tag = %d\n", status.MPI_TAG );
 		    }

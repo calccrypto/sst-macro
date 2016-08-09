@@ -33,7 +33,7 @@ int eagerdt( int argc, char *argv[] )
     MPI_Comm_size( comm, &size );
     source = 0;
     dest   = size - 1;
-    
+
     /* Setup by creating a blocked datatype that is likely to be processed
        in a piecemeal fashion */
     for (i=0; i<30; i++) {
@@ -43,24 +43,24 @@ int eagerdt( int argc, char *argv[] )
     /* 30 blocks of size 10 */
     MPI_Type_create_indexed_block( 30, 10, indices, MPI_INT, &dtype );
     MPI_Type_commit( &dtype );
-    
+
     /* Create the corresponding message buffers */
     MPI_Type_extent( dtype, &extent );
     for (i=0; i<MAX_MSGS; i++) {
 	bufs[i] = (int *)malloc( extent );
 	if (!bufs[i]) {
-	    fprintf( stderr, "Unable to allocate buffer %d of size %ld\n", 
+	    fprintf( stderr, "Unable to allocate buffer %d of size %ld\n",
 		    	i, (long)extent );
 	    MPI_Abort( MPI_COMM_WORLD, 1 );
 	}
     }
     buf = (int *)malloc( 10 * 30 * sizeof(int) );
-    
+
     MPI_Barrier( MPI_COMM_WORLD );
     if (rank == dest) {
 	MTestSleep( 2 );
 	for (i=0; i<MAX_MSGS; i++) {
-	    MPI_Recv( buf, 10*30, MPI_INT, source, i, comm, 
+	    MPI_Recv( buf, 10*30, MPI_INT, source, i, comm,
 		      MPI_STATUS_IGNORE );
 	}
     }

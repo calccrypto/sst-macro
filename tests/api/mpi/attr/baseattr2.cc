@@ -20,7 +20,7 @@ int baseattr2( int argc, char **argv)
     MPI_Comm_size( MPI_COMM_WORLD, &size );
     MPI_Comm_rank( MPI_COMM_WORLD, &rank );
 
-    /* Set errors return so that we can provide better information 
+    /* Set errors return so that we can provide better information
        should a routine reject one of the attribute values */
     MPI_Errhandler_set( MPI_COMM_WORLD, MPI_ERRORS_RETURN );
 
@@ -93,7 +93,7 @@ int baseattr2( int argc, char **argv)
 	    vval = *(int*)v;
 	    if (vval < 0 || vval > 1) {
 		errs++;
-		fprintf( stderr, "Invalid value for WTIME_IS_GLOBAL (got %d)\n", 
+		fprintf( stderr, "Invalid value for WTIME_IS_GLOBAL (got %d)\n",
 			 vval );
 	    }
 	}
@@ -155,7 +155,7 @@ int baseattr2( int argc, char **argv)
 
     MTest_Finalize( errs );
     MPI_Finalize( );
-    
+
     return 0;
 }
 
@@ -163,7 +163,7 @@ void MissingKeyval( int errcode, const char keyname[] )
 {
     int errclass, slen;
     char string[MPI_MAX_ERROR_STRING];
-    
+
     MPI_Error_class( errcode, &errclass );
     MPI_Error_string( errcode, string, &slen );
     printf( "For key %s: Error class %d (%s)\n", keyname, errclass, string );

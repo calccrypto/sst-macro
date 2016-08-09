@@ -27,7 +27,7 @@ int allredmany( int argc, char **argv )
       printf( " No Errors\n" );
   }
   MPI_Finalize();
-  
+
   return 0;
 }
 

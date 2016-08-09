@@ -63,13 +63,13 @@ int iccreate( int argc, char *argv[] )
 	    /* The new communicator has 1 process in each group */
 	    if (new_rsize != 1) {
 		errs++;
-		printf( "[%d] Remote size is %d, should be one\n", 
+		printf( "[%d] Remote size is %d, should be one\n",
 			wrank, new_rsize );
 		commok = 0;
 	    }
 	    if (new_size != 1) {
 		errs++;
-		printf( "[%d] Local size is %d, should be one\n", 
+		printf( "[%d] Local size is %d, should be one\n",
 			wrank, new_size );
 		commok = 0;
 	    }
@@ -99,7 +99,7 @@ int iccreate( int argc, char *argv[] )
 	    case MPI_CONGRUENT: rname = "CONGRUENT"; break;
 	    case MPI_SIMILAR:   rname = "SIMILAR"; break;
 	    case MPI_UNEQUAL:   rname = "UNEQUAL"; break;
-	    printf( "[%d] Expected MPI_CONGRUENT but saw %d (%s)", 
+	    printf( "[%d] Expected MPI_CONGRUENT but saw %d (%s)",
 		    wrank, result, rname ); fflush(stdout);
 	    }
 	}
@@ -158,21 +158,21 @@ int TestIntercomm( MPI_Comm comm )
 
     reqs = (MPI_Request *)malloc( remote_size * sizeof(MPI_Request) );
     if (!reqs) {
-	printf( "[%d] Unable to allocated %d requests for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d requests for testing intercomm %s\n",
 		wrank, remote_size, commname );
 	errs++;
 	return errs;
     }
     bufs = (int **) malloc( remote_size * sizeof(int *) );
     if (!bufs) {
-	printf( "[%d] Unable to allocated %d int pointers for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d int pointers for testing intercomm %s\n",
 		wrank, remote_size, commname );
 	errs++;
 	return errs;
     }
     bufmem = (int *) malloc( remote_size * 2 * sizeof(int) );
     if (!bufmem) {
-	printf( "[%d] Unable to allocated %d int data for testing intercomm %s\n", 
+	printf( "[%d] Unable to allocated %d int data for testing intercomm %s\n",
 		wrank, 2*remote_size, commname );
 	errs++;
 	return errs;
@@ -194,17 +194,17 @@ int TestIntercomm( MPI_Comm comm )
     for (j=0; j<remote_size; j++) {
 	MPI_Recv( rbuf, 2, MPI_INT, j, 0, comm, MPI_STATUS_IGNORE );
 	if (rbuf[0] != j) {
-	    printf( "[%d] Expected rank %d but saw %d in %s\n", 
+	    printf( "[%d] Expected rank %d but saw %d in %s\n",
 		    wrank, j, rbuf[0], commname );
 	    errs++;
 	}
 	if (rbuf[1] != rank) {
-	    printf( "[%d] Expected target rank %d but saw %d from %d in %s\n", 
+	    printf( "[%d] Expected target rank %d but saw %d from %d in %s\n",
 		    wrank, rank, rbuf[1], j, commname );
 	    errs++;
 	}
     }
-    if (errs) 
+    if (errs)
 	fflush(stdout);
     MTestPrintfMsg( 2, "my recvs completed, about to waitall\n" );
     MPI_Waitall( remote_size, reqs, MPI_STATUSES_IGNORE );

@@ -46,8 +46,8 @@ parsedumpi::consume_params(sprockit::sim_parameters* params)
   percent_terminate_ = params->get_optional_double_param("parsedumpi_terminate_percent", -1);
 }
 
-mpi_api* 
-parsedumpi::mpi() 
+mpi_api*
+parsedumpi::mpi()
 {
   if (mpi_) return mpi_;
 

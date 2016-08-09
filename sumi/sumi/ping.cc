@@ -67,7 +67,7 @@ pinger::execute()
      my_api_->rank(), this, dst_, functions_.refcount(), arrived_);
     return;
   }
-  
+
   debug_printf(sumi_ping,
      "Rank %d executing ping %p to neighbor %d for refcount=%d ",
      my_api_->rank(), this, dst_, functions_.refcount());

@@ -14,7 +14,7 @@ void ChkMsg( int, int, const char [] );
  * code.  Currently, it uses MPI_Error_string to get the corresponding
  * message for a code, and prints out the cooresponding class and original
  * message.
- * 
+ *
  * Eventually, we should also access the generic anc specific messages
  * separately.
  */
@@ -24,7 +24,7 @@ void ChkMsg( int err, int msgclass, const char msg[] )
     int len;
 
     MPI_Error_string( err, errmsg, &len );
-    
+
     fprintf( stdout, "[0x%08x] %2d %s \tgives %s\n", err, msgclass, msg, errmsg );
 }
 

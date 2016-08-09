@@ -35,7 +35,7 @@ gni_transport::do_rdma_put(int dst, const message::ptr &msg)
 
   int tag = allocate_rdma_tag(msg);
 
-  gni_debug("Rank %d RDMA put buffer %p into buffer %p on dst %d on tag %d",  
+  gni_debug("Rank %d RDMA put buffer %p into buffer %p on dst %d on tag %d",
     rank_, (void*) send_buf, (void*) recv_buf, dst, tag);
 
   post_rdma(

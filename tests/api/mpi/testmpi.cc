@@ -658,7 +658,7 @@ int USER_MAIN(int argc, char *argv[])
   sstmac::runtime::add_deadlock_check(
     sstmac::new_deadlock_check(current_mpi(), &sumi::transport::deadlock_check));
   sstmac::runtime::enter_deadlock_region();
-  
+
   int thr_id = sstmac::sw::operating_system::current_thread()->thread_id();
   double t_start, t_stop;
   if (thr_id == 0){

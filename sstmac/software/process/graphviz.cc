@@ -28,7 +28,7 @@ static sprockit::need_delete_statics<graph_viz> del_statics;
 
 SpktRegister("graph_viz", stat_collector, graph_viz);
 
-graph_viz_increment_stack::graph_viz_increment_stack(const char *fxn) 
+graph_viz_increment_stack::graph_viz_increment_stack(const char *fxn)
 {
   thread* thr = operating_system::current_thread();
   if (thr) {
@@ -68,7 +68,7 @@ void
 graph_viz::global_reduce(parallel_runtime *rt)
 {
   if (rt->nproc() > 1){
-    spkt_throw(sprockit::unimplemented_error, 
+    spkt_throw(sprockit::unimplemented_error,
       "graph_viz::global_reduce: graphviz not available in parallel");
   }
 }

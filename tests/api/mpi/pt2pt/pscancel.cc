@@ -170,10 +170,10 @@ int pscancel( int argc, char *argv[] )
 	    MPI_Wait( &req, &status );
 	    MPI_Test_cancelled( &status, &flag );
 	    /* This can be pretty ugly.  The standard is clear (Section 3.8)
-	       that either a sent message is received or the 
+	       that either a sent message is received or the
 	       sent message is successfully cancelled.  Since this message
 	       can never be received, the cancel must complete
-	       successfully.  
+	       successfully.
 
 	       However, since there is no matching receive, this
 	       program is erroneous.  In this case, we can't really

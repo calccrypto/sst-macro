@@ -21,7 +21,7 @@ int coll8( int argc, char **argv )
     MPI_Reduce ( &data, &result, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD );
     MPI_Bcast  ( &result, 1, MPI_INT, 0, MPI_COMM_WORLD );
     correct_result = 0;
-    for(i=0;i<size;i++) 
+    for(i=0;i<size;i++)
       correct_result += i;
     if (result != correct_result) errors++;
 

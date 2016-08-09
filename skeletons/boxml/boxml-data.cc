@@ -42,7 +42,7 @@ namespace lblxml
 #endif
     return g_events[index];
   }
-  
+
   void
   release_event(int index)
   {
@@ -483,7 +483,7 @@ namespace lblxml
           release_event(next_event_id);
       }
       if (!minimize_locks_)
-        release_event(next_event_id);  
+        release_event(next_event_id);
     } //else - no listener, possibly the last collective
   }
 
@@ -499,7 +499,7 @@ namespace lblxml
 
       event* evl;
       if (!minimize_locks_)
-        evl = acquire_event(frt); 
+        evl = acquire_event(frt);
       else
         evl = g_events[frt];
 

@@ -43,14 +43,14 @@ int tfree( int argc, char *argv[] )
     source  = 0;
     dest    = size - 1;
 
-    /* 
+    /*
        The idea here is to create a simple but non-contig datatype,
-       perform an irecv with it, free it, and then create 
+       perform an irecv with it, free it, and then create
        many new datatypes.  While not a complete test, if the datatype
-       was freed and the space was reused, this test may detect 
-       that error 
+       was freed and the space was reused, this test may detect
+       that error
        A similar test for sends might work by sending a large enough message
-       to force the use of rendezvous send. 
+       to force the use of rendezvous send.
     */
     MPI_Type_vector( VEC_NELM, 1, VEC_STRIDE, MPI_INT, &strideType );
     MPI_Type_commit( &strideType );
@@ -66,7 +66,7 @@ int tfree( int argc, char *argv[] )
 	    MPI_Type_commit( &tmpType[i] );
 	}
 
-	MPI_Sendrecv( 0, 0, MPI_INT, source, 1, 
+	MPI_Sendrecv( 0, 0, MPI_INT, source, 1,
 		      0, 0, MPI_INT, source, 1, comm, &status );
 
 	MPI_Wait( &req, &status );
@@ -74,7 +74,7 @@ int tfree( int argc, char *argv[] )
 	    if (buf[VEC_STRIDE*i] != i) {
 		errs++;
 		if (errs < 10) {
-		    printf( "buf[%d] = %d, expected %d\n", VEC_STRIDE*i, 
+		    printf( "buf[%d] = %d, expected %d\n", VEC_STRIDE*i,
 			    buf[VEC_STRIDE*i], i );
 		}
 	    }
@@ -88,7 +88,7 @@ int tfree( int argc, char *argv[] )
 	buf = (int *)malloc( VEC_NELM * sizeof(int) );
 	for (i=0; i<VEC_NELM; i++) buf[i] = i;
 	/* Synchronize with the receiver */
-	MPI_Sendrecv( 0, 0, MPI_INT, dest, 1, 
+	MPI_Sendrecv( 0, 0, MPI_INT, dest, 1,
 		      0, 0, MPI_INT, dest, 1, comm, &status );
 	MPI_Send( buf, VEC_NELM, MPI_INT, dest, 0, comm );
 	free( buf );

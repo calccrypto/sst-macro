@@ -11,7 +11,7 @@ class A : public ptr_type
 {
  public:
   typedef refcount_ptr<A> ptr;
-  
+
   virtual ~A(){
     ++numAdeleted;
   }
@@ -21,7 +21,7 @@ class B : public A
 {
  public:
   typedef refcount_ptr<B> ptr;
-  
+
   virtual ~B(){
     ++numBdeleted;
   }
@@ -36,12 +36,12 @@ run_test(UnitTest& unit)
   B* bptr2 = new B;
   assertEqual(unit, "A refcount", aptr1->nreferences(), 0);
   assertEqual(unit, "B refcount", bptr1->nreferences(), 0);
-  
+
   A::ptr a = aptr1;
   B::ptr b = bptr1;
   assertEqual(unit, "A refcount", a->nreferences(), 1);
   assertEqual(unit, "B refcount", b->nreferences(), 1);
-  
+
   B::ptr b2 = b;
   assertEqual(unit, "B refcount", b->nreferences(), 2);
   assertEqual(unit, "B refcount", b2->nreferences(), 2);
@@ -58,12 +58,12 @@ run_test(UnitTest& unit)
   a = 0;
   assertEqual(unit, "B deletion", numBdeleted, 1);
   }
-  
+
   //after scoping, should have been deleted
   assertEqual(unit, "B deletion", numBdeleted, 2);
 }
 
-int 
+int
 main(int arc, char** argv)
 {
   UnitTest unit;

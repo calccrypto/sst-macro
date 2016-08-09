@@ -34,15 +34,15 @@ simple_param_expander::expand(sprockit::sim_parameters* params)
 
   top_params->add_param_override("name", params->get_param("topology_name"));
 
-  if (!top_params->has_param("geometry") 
+  if (!top_params->has_param("geometry")
     && params->has_param("topology_geometry")){
     top_params->add_param_override("geometry", params->get_param("topology_geometry"));
   }
-  if (!top_params->has_param("redundant") 
+  if (!top_params->has_param("redundant")
     && params->has_param("topology_redundant")){
     top_params->add_param_override("redundant", params->get_param("topology_redundant"));
   }
-  if (!top_params->has_param("group_connections") 
+  if (!top_params->has_param("group_connections")
     && params->has_param("topology_group_connections")){
     top_params->add_param_override("group_connections",
                      params->get_param("topology_group_connections"));

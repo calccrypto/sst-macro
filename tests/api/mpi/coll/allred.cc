@@ -97,10 +97,10 @@ struct double_test { double a; int b; };
         free(in); free(out); free(sol);                                 \
     } while(0)
 
-/* The logic on the error check on MPI_Allreduce assumes that all 
+/* The logic on the error check on MPI_Allreduce assumes that all
    MPI_Allreduce routines return a failure if any do - this is sufficient
    for MPI implementations that reject some of the valid op/datatype pairs
-   (and motivated this addition, as some versions of the IBM MPI 
+   (and motivated this addition, as some versions of the IBM MPI
    failed in just this way).
 */
 #define ALLREDUCE_AND_FREE(mpi_type, mpi_op, in, out, sol)              \
@@ -311,7 +311,7 @@ struct double_test { double a; int b; };
         op##_test##post(unsigned char, MPI_BYTE);                   \
     }
 
-/* Make sure that we test complex and double complex, even if long 
+/* Make sure that we test complex and double complex, even if long
    double complex is not available */
 #if defined(USE_LONG_DOUBLE_COMPLEX)
 
@@ -333,7 +333,7 @@ struct double_test { double a; int b; };
 #else
 
 #if MTEST_HAVE_MIN_MPI_VERSION(2,2) && defined(HAVE_FLOAT__COMPLEX) \
-    && defined(HAVE_DOUBLE__COMPLEX) 
+    && defined(HAVE_DOUBLE__COMPLEX)
 #define test_types_set4(op, post)                                         \
     do {                                                                  \
         op##_test##post(float _Complex, MPI_C_FLOAT_COMPLEX);             \
@@ -368,7 +368,7 @@ int allred( int argc, char **argv )
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
 
-    /* Set errors return so that we can provide better information 
+    /* Set errors return so that we can provide better information
        should a routine reject one of the operand/datatype pairs */
     MPI_Errhandler_set( MPI_COMM_WORLD, MPI_ERRORS_RETURN );
 

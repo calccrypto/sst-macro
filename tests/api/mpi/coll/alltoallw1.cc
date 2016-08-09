@@ -14,7 +14,7 @@ MPI_Datatype transpose_type(int M, int m, int n, MPI_Datatype type);
 MPI_Datatype submatrix_type(int N, int m, int n, MPI_Datatype type);
 void Transpose(float *localA, float *localB, int M, int N, MPI_Comm comm);
 void Transpose(float *localA, float *localB, int M, int N, MPI_Comm comm)
-/* transpose MxN matrix A that is block distributed (1-D) on  
+/* transpose MxN matrix A that is block distributed (1-D) on
    processes of comm onto block distributed matrix B  */
 {
   int i, j, extent, myrank, p, n[2], m[2];
@@ -50,7 +50,7 @@ void Transpose(float *localA, float *localB, int M, int N, MPI_Comm comm)
 	  xtype[i][j] = transpose_type(N, m[i], n[j], MPI_FLOAT);
 	  stype[i][j] = submatrix_type(M, m[i], n[j], MPI_FLOAT);
       }
-  
+
   /* prepare collective operation arguments */
   lasti = myrank == p-1;
   for (j=0;  j < p; j++) {
@@ -62,14 +62,14 @@ void Transpose(float *localA, float *localB, int M, int N, MPI_Comm comm)
     rdispls[j]	  = j*m[0]*extent;
     recvtypes[j]  = stype[lastj][lasti];
   }
-  
+
   /* communicate */
-  MTestPrintfMsg( 2, "Begin Alltoallw...\n" ); 
-  /* -- Note that the book incorrectly uses &localA and &localB 
+  MTestPrintfMsg( 2, "Begin Alltoallw...\n" );
+  /* -- Note that the book incorrectly uses &localA and &localB
      as arguments to MPI_Alltoallw */
-  MPI_Alltoallw(localA, sendcounts, sdispls, sendtypes, 
+  MPI_Alltoallw(localA, sendcounts, sdispls, sendtypes,
                 localB, recvcounts, rdispls, recvtypes, comm);
-  MTestPrintfMsg( 2, "Done with Alltoallw\n" ); 
+  MTestPrintfMsg( 2, "Done with Alltoallw\n" );
 
   /* Free buffers */
   free( sendcounts );
@@ -88,23 +88,23 @@ void Transpose(float *localA, float *localB, int M, int N, MPI_Comm comm)
 }
 
 
-/* Define an n x m submatrix in a n x M local matrix (this is the 
+/* Define an n x m submatrix in a n x M local matrix (this is the
    destination in the transpose matrix */
 MPI_Datatype submatrix_type(int M, int m, int n, MPI_Datatype type)
-/* computes a datatype for an mxn submatrix within an MxN matrix 
+/* computes a datatype for an mxn submatrix within an MxN matrix
    with entries of type type */
 {
   /* MPI_Datatype subrow; */
   MPI_Datatype submatrix;
 
-  /* The book, MPI: The Complete Reference, has the wrong type constructor 
-     here.  Since the stride in the vector type is relative to the input 
-     type, the stride in the book's code is n times as long as is intended. 
-     Since n may not exactly divide N, it is better to simply use the 
+  /* The book, MPI: The Complete Reference, has the wrong type constructor
+     here.  Since the stride in the vector type is relative to the input
+     type, the stride in the book's code is n times as long as is intended.
+     Since n may not exactly divide N, it is better to simply use the
      blocklength argument in Type_vector */
   /*
   MPI_Type_contiguous(n, type, &subrow);
-  MPI_Type_vector(m, 1, N, subrow, &submatrix);  
+  MPI_Type_vector(m, 1, N, subrow, &submatrix);
   */
   MPI_Type_vector(n, m, M, type, &submatrix );
   MPI_Type_commit(&submatrix);
@@ -116,7 +116,7 @@ MPI_Datatype submatrix_type(int M, int m, int n, MPI_Datatype type)
       MPI_Aint textent, lb;
       MPI_Type_size( type, &tsize );
       MPI_Type_get_extent( submatrix, &lb, &textent );
-      
+
       if (textent != tsize * (M * (n-1)+m)) {
 	  fprintf( stderr, "Submatrix extent is %ld, expected %ld (%d,%d,%d)\n",
 		   (long)textent, (long)(tsize * (M * (n-1)+m)), M, n, m );
@@ -128,16 +128,16 @@ MPI_Datatype submatrix_type(int M, int m, int n, MPI_Datatype type)
 /* Extract an m x n submatrix within an m x N matrix and transpose it.
    Assume storage by rows; the defined datatype accesses by columns */
 MPI_Datatype transpose_type(int N, int m, int n, MPI_Datatype type)
-/* computes a datatype for the transpose of an mxn matrix 
+/* computes a datatype for the transpose of an mxn matrix
    with entries of type type */
 {
   MPI_Datatype subrow, subrow1, submatrix;
   MPI_Aint lb, extent;
-  
+
   MPI_Type_vector(m, 1, N, type, &subrow);
   MPI_Type_get_extent(type, &lb, &extent);
   MPI_Type_create_resized(subrow, 0, extent, &subrow1);
-  MPI_Type_contiguous(n, subrow1, &submatrix); 
+  MPI_Type_contiguous(n, subrow1, &submatrix);
   MPI_Type_commit(&submatrix);
   MPI_Type_free( &subrow );
   MPI_Type_free( &subrow1 );
@@ -149,7 +149,7 @@ MPI_Datatype transpose_type(int N, int m, int n, MPI_Datatype type)
       MPI_Aint textent, llb;
       MPI_Type_size( type, &tsize );
       MPI_Type_get_true_extent( submatrix, &llb, &textent );
-      
+
       if (textent != tsize * (N * (m-1)+n)) {
 	  fprintf( stderr, "Transpose Submatrix extent is %ld, expected %ld (%d,%d,%d)\n",
 		   (long)textent, (long)(tsize * (N * (m-1)+n)), N, n, m );
@@ -170,14 +170,14 @@ int alltoallw1( int argc, char *argv[] )
 
     MTest_Init( &argc, &argv );
     comm = MPI_COMM_WORLD;
-    
+
     MPI_Comm_size( comm, &size );
     MPI_Comm_rank( comm, &rank );
 
     gM = 20;
     gN = 30;
 
-    /* Each block is lm x ln in size, except for the last process, 
+    /* Each block is lm x ln in size, except for the last process,
        which has lmlast x lnlast */
     lm     = gM/size;
     lmlast = gM - (size - 1)*lm;
@@ -185,7 +185,7 @@ int alltoallw1( int argc, char *argv[] )
     lnlast = gN - (size - 1)*ln;
 
     /* Create the local matrices.
-       Initialize the input matrix so that the entries are 
+       Initialize the input matrix so that the entries are
        consequtive integers, by row, starting at 0.
      */
     if (rank == size - 1) {
@@ -196,7 +196,7 @@ int alltoallw1( int argc, char *argv[] )
 		localA[i*gN+j] = (float)(i*gN+j + rank * gN * lm);
 	    }
 	}
-	
+
     }
     else {
 	localA = (float *)malloc( gN * lm * sizeof(float) );
@@ -213,7 +213,7 @@ int alltoallw1( int argc, char *argv[] )
     Transpose( localA, localB, gM, gN, comm );
 
     /* check the transposed matrix
-       In the global matrix, the transpose has consequtive integers, 
+       In the global matrix, the transpose has consequtive integers,
        organized by columns.
      */
     if (rank == size - 1) {
@@ -221,22 +221,22 @@ int alltoallw1( int argc, char *argv[] )
 	    for (j=0; j<gM; j++) {
 		int expected = i+gN*j + rank * ln;
 		if ((int)localB[i*gM+j] != expected) {
-		    if (errs < MAX_ERRORS) 
-			printf( "Found %d but expected %d\n", 
+		    if (errs < MAX_ERRORS)
+			printf( "Found %d but expected %d\n",
 				(int)localB[i*gM+j], expected );
 		    errs++;
 		}
 	    }
 	}
-	
+
     }
     else {
 	for (i=0; i<ln; i++) {
 	    for (j=0; j<gM; j++) {
 		int expected = i+gN*j + rank * ln;
 		if ((int)localB[i*gM+j] != expected) {
-		    if (errs < MAX_ERRORS) 
-			printf( "Found %d but expected %d\n", 
+		    if (errs < MAX_ERRORS)
+			printf( "Found %d but expected %d\n",
 				(int)localB[i*gM+j], expected );
 		    errs++;
 		}

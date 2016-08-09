@@ -50,7 +50,7 @@ int waitany_null(int argc, char *argv[])
     }
 
     /* end testing */
-    
+
     MPI_Comm_set_errhandler( MPI_COMM_WORLD, MPI_ERRORS_ARE_FATAL );
     MPI_Comm_rank( MPI_COMM_WORLD, & rank );
     MPI_Allreduce( &errs, &toterrs, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD );

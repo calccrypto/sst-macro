@@ -45,7 +45,7 @@ int coll2( int argc, char **argv )
       for (i=0; i<participants; i++) {
         void *sendbuf = (i == rank ? MPI_IN_PLACE : &table[begin_row][0]);
 	MPI_Gather(sendbuf,              send_count, MPI_INT,
-		   &table[0][0],         recv_count, MPI_INT, i, 
+		   &table[0][0],         recv_count, MPI_INT, i,
 		   MPI_COMM_WORLD );
       }
 
@@ -57,7 +57,7 @@ int coll2( int argc, char **argv )
 	  errors++;
       }
      }
-    } 
+    }
 
     MTest_Finalize( errors );
     MPI_Finalize();

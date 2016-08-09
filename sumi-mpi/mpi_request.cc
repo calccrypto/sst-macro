@@ -95,7 +95,7 @@ mpi_request::complete(const mpi_message::ptr& msg)
 }
 
 std::string
-mpi_request::type_str() const 
+mpi_request::type_str() const
 {
   if (is_persistent()){
     return "persistent";

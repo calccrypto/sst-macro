@@ -8,7 +8,7 @@ namespace sprockit {
 
 template <class T>
 class serialize<std::vector<T> > {
-  typedef std::vector<T> Vector; 
+  typedef std::vector<T> Vector;
  public:
   void
   operator()(Vector& v, serializer& ser) {
@@ -31,12 +31,12 @@ class serialize<std::vector<T> > {
       break;
     }
     }
-  
+
     for (int i=0; i < v.size(); ++i){
       serialize<T>()(v[i], ser);
     }
   }
-  
+
 };
 
 }

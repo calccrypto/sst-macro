@@ -99,7 +99,7 @@ class event_scheduler :
 
   void
   schedule_now(event_queue_entry* ev);
-  
+
   void
   schedule_now(event_handler* handler, event* ev);
 

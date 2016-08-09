@@ -50,8 +50,8 @@ class dist_dummy_switch : public network_switch
     int src_outport,
     int dst_inport,
     connection_type_t ty,
-    connectable* mod) 
-  { //no op 
+    connectable* mod)
+  { //no op
   }
 
   virtual void

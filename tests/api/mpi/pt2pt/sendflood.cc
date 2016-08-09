@@ -11,8 +11,8 @@
 namespace sendflood {
 /*
  * Run this test with 8 processes.  This test was submitted by xxx
- * as a result of problems seen with the ch3:shm device on a Solaris 
- * system.  The symptom is that the test hangs; this is due to losing 
+ * as a result of problems seen with the ch3:shm device on a Solaris
+ * system.  The symptom is that the test hangs; this is due to losing
  * a message, probably due to a race condition in a message-queue update.
  * As a test for race conditions, it may need to be run multiple times
  * to expose a problem if a problem does exist.

@@ -247,8 +247,8 @@ class thread
   }
 
   /**
-   * @brief key used 
-   * @return 
+   * @brief key used
+   * @return
    */
   key*
   schedule_key() {
@@ -270,37 +270,37 @@ class thread
     zero_affinity();
     add_affinity(core);
   }
-  
+
   void
   add_affinity(int core){
     cpumask_ = cpumask_ | (1<<core);
   }
-  
+
   void
   zero_affinity(){
     cpumask_ = 0;
   }
-  
+
   void
   set_cpumask(uint64_t cpumask){
     cpumask_ = cpumask;
   }
-  
+
   uint64_t
   cpumask() const {
     return cpumask_;
   }
-  
+
   int
   active_core() const {
     return active_core_;
   }
-  
+
   void
   set_active_core(int core) {
     active_core_ = core;
   }
-  
+
   typedef spkt_unordered_map<long, thread*> pthread_map_t;
   void
   set_pthread_map(pthread_map_t* threadmap){
@@ -327,7 +327,7 @@ class thread
 
   void
   set_sid(const software_id& sid);
-  
+
  private:
   /// Run routine that defines the initial context for this task.
   /// This routine calls the virtual thread::run method.
@@ -377,20 +377,20 @@ class thread
   app_id aid_;
 
   task_id tid_;
-  
+
   long thread_id_;
 
 
   threading_interface* context_;
 
   /// This key gets used by the compute scheduler to delay this thread
-  /// 
+  ///
   key* schedule_key_;
 
   std::list<library*> pending_libs_;
-  
+
   uint64_t cpumask_;
-  
+
   int active_core_;
 
 };

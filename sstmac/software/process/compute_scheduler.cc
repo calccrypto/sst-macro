@@ -39,7 +39,7 @@ compute_scheduler::configure(int ncores, int nsocket)
 {
   ncores_ = ncores;
   nsocket_ = nsocket;
-  cores_per_socket_ = ncores_ / nsocket_;  
+  cores_per_socket_ = ncores_ / nsocket_;
 }
 
 void

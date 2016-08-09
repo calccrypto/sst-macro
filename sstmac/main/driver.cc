@@ -261,7 +261,7 @@ SimulationQueue::sendScanPoint(char *bufferPtr, int bufferSize, int nresults)
 
   if (runJobsOnMaster() && next_worker_ == me_)
     setNextWorker();
- 
+
   if (next_worker_ == me_){
     sim_stats stats;
     //i have looped around - use me in running jobs
@@ -313,7 +313,7 @@ SimulationQueue::runScanPoint(char* buffer, sim_stats& stats)
     const char* param_val = bufferPtr;
     int val_len = ::strlen(bufferPtr) + 1; //+1 null char
     bufferPtr += val_len;
-    driver_debug("adding parameters %s = %s", 
+    driver_debug("adding parameters %s = %s",
       param_name, param_val);
     params[param_name] = param_val;
   }

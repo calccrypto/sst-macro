@@ -21,7 +21,7 @@ int infoorder( int argc, char *argv[] )
     int errs = 0;
     MPI_Info info;
     char *keys1[NKEYS] = { (char*)"file", (char*)"soft", (char*)"host" };
-    char *values1[NKEYS] = { (char*)"runfile.txt", (char*)"2:1000:4,3:1000:7", 
+    char *values1[NKEYS] = { (char*)"runfile.txt", (char*)"2:1000:4,3:1000:7",
 			     (char*)"myhost.myorg.org" };
 
     char value[MPI_MAX_INFO_VAL];
@@ -138,7 +138,7 @@ int infoorder( int argc, char *argv[] )
 	}
     }
     MPI_Info_free( &info );
-    
+
     /* 3,1,2 */
     MPI_Info_create( &info );
     /* Use only named keys incase the info implementation only supports
@@ -160,11 +160,11 @@ int infoorder( int argc, char *argv[] )
 	}
     }
     MPI_Info_free( &info );
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

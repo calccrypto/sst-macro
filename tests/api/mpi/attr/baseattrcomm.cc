@@ -62,7 +62,7 @@ int baseattrcomm( int argc, char **argv)
 	vval = *(int*)v;
 	if (vval < 0 || vval > 1) {
 	    errs++;
-	    fprintf( stderr, "Invalid value for WTIME_IS_GLOBAL (got %d)\n", 
+	    fprintf( stderr, "Invalid value for WTIME_IS_GLOBAL (got %d)\n",
 		     vval );
 	}
     }
@@ -93,7 +93,7 @@ int baseattrcomm( int argc, char **argv)
 	    fprintf( stderr, "MPI_UNIVERSE_SIZE = %d, less than comm world (%d)\n", vval, size );
 	}
     }
-    
+
     MPI_Comm_get_attr( MPI_COMM_WORLD, MPI_LASTUSEDCODE, &v, &flag );
     /* Last used code must be defined and >= MPI_ERR_LASTCODE */
     if (flag) {
@@ -110,7 +110,7 @@ int baseattrcomm( int argc, char **argv)
 
     MTest_Finalize( errs );
     MPI_Finalize( );
-    
+
     return 0;
 }
 

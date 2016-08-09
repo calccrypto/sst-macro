@@ -42,13 +42,13 @@ int main( int argc , char ** argv )
 {
   int num_thread[] = { 1 , 2 , 4 , 6 , 8 , 12 , 16 };
   int num_test = sizeof(num_thread) / sizeof(int);
- 
+
   const int ntrial = 1 < argc ? atoi( argv[1] ) : 2 ;
   int i ;
 
 #if defined( HAVE_MPI )
   int rank ;
- 
+
   MPI_Init( & argc , & argv );
   MPI_Comm_rank( MPI_COMM_WORLD , & rank );
   if ( 0 == rank ) {
@@ -57,7 +57,7 @@ int main( int argc , char ** argv )
 
   fprintf( stdout , "\"TESTING Multiarray 'axpby' with: %s\"\n" ,
            TPI_Version() );
- 
+
   for ( i = 0 ; i < num_test ; ++i ) {
     test_c_tpi_dnax( num_thread[i] , ntrial );
   }
@@ -66,7 +66,7 @@ int main( int argc , char ** argv )
   }
   MPI_Finalize();
 #endif
- 
+
   return 0 ;
 }
 
@@ -88,9 +88,9 @@ struct TestTPI_DNAX {
 /*------------------------------------------------------------------------*/
 
 static
-void test_dnax_column( const unsigned num_array , 
+void test_dnax_column( const unsigned num_array ,
                        const unsigned stride ,
-                       const unsigned length , 
+                       const unsigned length ,
                        const SCALAR * const coef ,
                        SCALAR * const array )
 {
@@ -105,9 +105,9 @@ void test_dnax_column( const unsigned num_array ,
 }
 
 static
-void test_dnax_row( const unsigned num_array , 
+void test_dnax_row( const unsigned num_array ,
                     const unsigned stride ,
-                    const unsigned length , 
+                    const unsigned length ,
                     const SCALAR * const coef ,
                     SCALAR * const array )
 {

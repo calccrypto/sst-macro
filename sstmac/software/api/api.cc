@@ -72,7 +72,7 @@ api::init_os(operating_system* os)
 }
 
 timestamp
-api::now() const 
+api::now() const
 {
   return os()->now();
 }

@@ -13,7 +13,7 @@ typedef       int RangeOutput[2] ;
 typedef RangeInput  * const BoxInput ;
 typedef RangeOutput * const BoxOutput ;
 
-static 
+static
 void box_partition( int ip , int up , int axis ,
                     BoxInput box ,
                     int (* const p_box)[3][2] )
@@ -80,7 +80,7 @@ static int box_intersect( BoxInput a , BoxInput b , BoxOutput c )
 
   return c[0][0] < c[0][1] && c[1][0] < c[1][1] && c[2][0] < c[2][1] ;
 }
- 
+
 
 /*--------------------------------------------------------------------*/
 
@@ -177,11 +177,11 @@ static void resize_int( int ** a , int * allocLen , int newLen )
   while ( k < newLen ) { k <<= 1 ; }
   if ( NULL == *a )
     { *a = malloc( sizeof(int)*(*allocLen = k) ); }
-  else if ( *allocLen < k ) 
+  else if ( *allocLen < k )
     { *a = realloc(*a , sizeof(int)*(*allocLen = k)); }
 }
 
-void box_partition_map( 
+void box_partition_map(
   const int np ,
   const int my_p ,
   const int gbox[3][2] ,
@@ -241,7 +241,7 @@ void box_partition_map(
     const int local =
       map_global_to_use_box( (BoxInput) map_use_box, g_ix, g_iy, g_iz );
 
-    if ( local < 0 ) { 
+    if ( local < 0 ) {
       abort();
     }
 
@@ -347,8 +347,8 @@ static int box_contain( const int a[3][2] , const int b[3][2] )
 static void box_print( FILE * fp , const int a[][2] )
 {
   fprintf(fp,"{ [ %d , %d ) , [ %d , %d ) , [ %d , %d ) }",
-                a[0][0] , a[0][1] ,  
-                a[1][0] , a[1][1] ,  
+                a[0][0] , a[0][1] ,
+                a[1][0] , a[1][1] ,
                 a[2][0] , a[2][1] );
 }
 
@@ -429,7 +429,7 @@ static void test_maps( const int root_box[][2] , const int np )
   int **map_recv_pc ;
   int **map_send_pc ;
   int **map_send_id ;
-  
+
   pbox = (int (*)[3][2]) malloc( sizeof(int) * np * 3 * 2 );
 
   box_partition( 0 , np , 2 , root_box , pbox );
@@ -462,7 +462,7 @@ static void test_maps( const int root_box[][2] , const int np )
                         & map_count_interior ,
                         & map_count_owns ,
                         & map_count_uses ,
-                        & map_recv_pc[i] , 
+                        & map_recv_pc[i] ,
                         & map_send_pc[i] , & map_send_id[i] );
 
     if ( map_count_uses != map_recv_pc[i][np] ) { abort(); }

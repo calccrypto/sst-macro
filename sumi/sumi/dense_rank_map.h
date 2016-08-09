@@ -41,7 +41,7 @@ class dense_rank_map {
    * @param sparse_rank
    * @return
    */
-  int 
+  int
   linear_find_rank(int sparse_rank) const;
 
   /**
@@ -50,7 +50,7 @@ class dense_rank_map {
    * @param sparse_rank
    * @return
    */
-  int 
+  int
   tree_find_rank(
     int sparse_rank,
     int offset,

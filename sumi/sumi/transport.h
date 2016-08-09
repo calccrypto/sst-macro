@@ -34,7 +34,7 @@ class transport :
 
   virtual void
   init();
-  
+
   virtual void
   finalize();
 
@@ -128,7 +128,7 @@ class transport :
 
   void
   nvram_get(int src, const message::ptr& msg);
-  
+
   /**
    Block until a message is received.
    Returns immediately if message already waiting.
@@ -178,7 +178,7 @@ class transport :
 
   message::ptr
   blocking_poll(message::payload_type_t);
-  
+
   virtual message::ptr
   block_until_message() = 0;
 
@@ -217,7 +217,7 @@ class transport :
   supports_hardware_ack() const {
     return false;
   }
-  
+
   virtual void
   init_spares(int nspares);
 
@@ -265,7 +265,7 @@ class transport :
 
   void
   renew_pings();
-  
+
   /**
    * Start regular heartbeat (i.e. vote) collectives going
    * This informs the application at regular intervals of any new process failures
@@ -277,7 +277,7 @@ class transport :
    * Let the current heartbeat finish and then stop them executing.
    */
   virtual void stop_heartbeat();
-  
+
   /**
    * Block on a collective of a particular type and tag
    * until that collective is complete
@@ -287,7 +287,7 @@ class transport :
    */
   virtual collective_done_message::ptr
   collective_block(collective::type_t ty, int tag) = 0;
-  
+
   /**
    * The total size of the input/result buffer in bytes is nelems*type_size
    * This always run in a fault-tolerant fashion
@@ -393,23 +393,23 @@ class transport :
 
   void
   bcast(int root, void* buf, int nelems, int type_size, int tag, bool fault_aware, int context=options::initial_context, domain* dom=0);
-  
-  int 
+
+  int
   rank() const {
     return rank_;
   }
 
-  int 
+  int
   nproc() const {
     return nproc_;
   }
 
-  int 
+  int
   nproc_alive() const {
     return nproc_ - failed_ranks_.size();
   }
 
-  int 
+  int
   nproc_failed() const {
     return failed_ranks_.size();
   }
@@ -426,7 +426,7 @@ class transport :
   eager_cutoff() const {
     return eager_cutoff_;
   }
-  
+
   /**
    * Get the set of failed ranks associated with a given context
    * @param context The context for which you want to know the set of failed procs,
@@ -461,13 +461,13 @@ class transport :
   is_alive(int rank) const {
     return failed_ranks_.count(rank) == 0;
   }
-  
+
   virtual void
   delayed_transport_handle(const message::ptr& msg) = 0;
 
   virtual void
   cq_notify() = 0;
-  
+
   void
   die();
 
@@ -481,10 +481,10 @@ class transport :
 
   void
   notify_collective_done(const collective_done_message::ptr& msg);
-  
+
   virtual void
   schedule_ping_timeout(pinger* pnger, double to) = 0;
-  
+
   virtual void
   schedule_next_heartbeat() = 0;
 
@@ -492,8 +492,8 @@ class transport :
    * Execute the next heartbeat. This figures out the next tag and prev context
    * and then calls #do_heartbeat
    */
-  void 
-  next_heartbeat();  
+  void
+  next_heartbeat();
 
   void
   handle(const message::ptr& msg);
@@ -581,42 +581,42 @@ class transport :
   void
   operation_done(const message::ptr& msg);
 
- private:  
+ private:
   bool
   is_heartbeat(const collective_done_message::ptr& dmsg) const {
     return dmsg->tag() >= heartbeat_tag_start_ && dmsg->tag() <= heartbeat_tag_stop_;
   }
 
-  void 
+  void
   finish_collective(collective* coll, const collective_done_message::ptr& dmsg);
 
-  void 
+  void
   start_collective(collective* coll);
 
   /**
    * Helper function for doing operations necessary to close out a heartbeat
    * @param dmsg
    */
-  void 
+  void
   vote_done(const collective_done_message::ptr& dmsg);
 
-  void 
+  void
   validate_collective(collective::type_t ty, int tag);
 
-  void 
+  void
   deliver_pending(collective* coll, int tag, collective::type_t ty);
 
   /**
    * Actually do the work of executing a heartbeat
    * @param prev_context The context number for the last successful heartbeat
    */
-  void 
-  do_heartbeat(int prev_context);  
+  void
+  do_heartbeat(int prev_context);
 
-  
+
  protected:
   transport();
-  
+
   void
   validate_api();
 
@@ -635,7 +635,7 @@ class transport :
 
   void end_function();
 
- private:  
+ private:
   bool
   skip_collective(collective::type_t ty,
     domain*& dom,
@@ -648,7 +648,7 @@ class transport :
   typedef spkt_unordered_map<int,collective*> tag_to_collective_map;
   typedef spkt_enum_map<collective::type_t, tag_to_collective_map> collective_map;
   collective_map collectives_;
-  
+
   //I don't know a better way to do this and be clean
   //callback mechanism - if collective completes
   //it passes back a notification stored here
@@ -683,13 +683,13 @@ class transport :
   vote_map votes_done_;
 
   bool inited_;
-  
+
   bool finalized_;
-  
+
   int rank_;
 
   int nproc_;
-  
+
   int eager_cutoff_;
 
   bool lazy_watch_;

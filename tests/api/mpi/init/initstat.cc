@@ -17,7 +17,7 @@ int initstat( int argc, char *argv[] )
     /* MTest_Init( &argc, &argv ); */
 
     MPI_Init_thread( 0, 0, MPI_THREAD_MULTIPLE, &provided );
-    
+
     MPI_Is_thread_main( &flag );
     if (!flag) {
 	errs++;
@@ -33,7 +33,7 @@ int initstat( int argc, char *argv[] )
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

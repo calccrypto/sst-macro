@@ -13,7 +13,7 @@ ACLOCAL_AMFLAGS = -I acinclude
 
 include $(top_srcdir)/Makefile.common
 
-SUBDIRS = 
+SUBDIRS =
 
 noinst_LTLIBRARIES = libspkt_temp.la
 lib_LTLIBRARIES = libsprockit.la
@@ -39,7 +39,7 @@ libspkt_temp_la_SOURCES = $(SOURCES)
 library_includedir=$(includedir)/sprockit
 
 
-nodist_library_include_HEADERS = spkt_config.h 
+nodist_library_include_HEADERS = spkt_config.h
 
 nobase_library_include_HEADERS = \
   basic_string_tokenizer.h \
@@ -83,7 +83,7 @@ if !INTEGRATED_SST_CORE
 libspkt_temp_la_SOURCES += \
   serialize_serializable.cc \
   serializer.cc \
-  serializable.cc 
+  serializable.cc
 
 nobase_library_include_HEADERS += \
   serializer.h \
@@ -102,5 +102,5 @@ nobase_library_include_HEADERS += \
   serialize_sizer.h \
   serialize_string.h \
   serialize_unpacker.h \
-  serialize_vector.h 
+  serialize_vector.h
 endif

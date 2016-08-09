@@ -197,7 +197,7 @@ int TPI_Start_threads( TPI_work_subprogram work_subprogram ,
                        const void *        work_info ,
                        int                 lock_count );
 
-/** \brief  Start a work / reduction subprogram 
+/** \brief  Start a work / reduction subprogram
  *          on each thread that is not the 'main' calling thread.
  *          The 'main' calling thread returns immediately.
  *

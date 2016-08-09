@@ -29,13 +29,13 @@ int getpartelm( int argc, char *argv[] )
 
     MPI_Comm_rank( comm, &rank );
     MPI_Comm_size( comm, &size );
-    
+
     if (size < 2) {
 	errs++;
 	printf( "This test requires at least 2 processes\n" );
 	MPI_Abort( MPI_COMM_WORLD, 1 );
     }
-    
+
     src  = 0;
     dest = 1;
 
@@ -77,7 +77,7 @@ int getpartelm( int argc, char *argv[] )
 	/* Pack data and send as packed */
 	position = 0;
 	cnt = 7;
-	MPI_Pack( &cnt, 1, MPI_INT, 
+	MPI_Pack( &cnt, 1, MPI_INT,
 		  buf, 128*sizeof(int), &position, comm );
 	MPI_Pack( (void*)"message", 7, MPI_CHAR,
 		  buf, 128*sizeof(int), &position, comm );
@@ -120,7 +120,7 @@ int getpartelm( int argc, char *argv[] )
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;
-  
+
 }
 
 }

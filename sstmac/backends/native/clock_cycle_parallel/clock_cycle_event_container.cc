@@ -91,7 +91,7 @@ clock_cycle_event_map::receive_incoming_events()
 {
 #if SSTMAC_SANITY_CHECK
   if (thread_id() != 0){
-    spkt_throw(sprockit::illformed_error,  
+    spkt_throw(sprockit::illformed_error,
         "clock_cycle_event_map::schedule_incoming: only thread 0 should handle incoming MPI messages");
   }
 #endif
@@ -139,7 +139,7 @@ clock_cycle_event_map::vote_next_round(timestamp time, vote_type_t ty)
 bool
 clock_cycle_event_map::vote_to_terminate()
 {
-  event_debug("epoch %d: voting to terminate on thread %d", 
+  event_debug("epoch %d: voting to terminate on thread %d",
     epoch_, thread_id());
 
   receive_incoming_events();
@@ -198,7 +198,7 @@ clock_cycle_event_map::do_next_event()
     f = new std::ofstream(fname);
   }
 
-  *f << sprockit::printf("%ld: %d: %d<-%d", 
+  *f << sprockit::printf("%ld: %d: %d<-%d",
     ev->time().ticks_int64(), ev->seqnum(),
     int(ev->event_location().location), int(ev->src_location().location));
   *f << " " << ev->to_string() << std::endl;

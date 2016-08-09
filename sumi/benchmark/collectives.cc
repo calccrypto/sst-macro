@@ -79,7 +79,7 @@ run_test(transport* t, domain* dom, int& tag)
   int allgather_nelems[] = { 32, 64, 128, 512, 1024 };
   int vote_nelems[] = {1,1,1,1,1};
   int ntests = sizeof(reduce_nelems) / sizeof(int);
- 
+
   run_test(t, dom, tag, reduce_nelems, ntests, "allreduce");
   run_test(t, dom, tag, allgather_nelems, ntests, "allgather");
   run_test(t, dom, tag, vote_nelems, ntests, "vote");

@@ -112,9 +112,9 @@ int indexed_zeroblock_first_test(void)
 	}
 	errs++;
     }
-    
+
     MPI_Type_free( &type );
-    
+
     return errs;
 }
 
@@ -156,7 +156,7 @@ int indexed_zeroblock_middle_test(void)
     }
 
     MPI_Type_free( &type );
-    
+
     return errs;
 }
 
@@ -198,7 +198,7 @@ int indexed_zeroblock_last_test(void)
     }
 
     MPI_Type_free( &type );
-    
+
     return errs;
 }
 
@@ -244,14 +244,14 @@ int indexed_contig_test(void)
 	}
 	errs++;
     }
-    
+
     if (size != 6 * int_size) {
 	if (verbose) {
 	    fprintf(stderr,
 		    "error: size != 6 * int_size in indexed_contig_test()\n");
 	}
 	errs++;
-    }    
+    }
 
     MPI_Type_commit(&newtype);
 

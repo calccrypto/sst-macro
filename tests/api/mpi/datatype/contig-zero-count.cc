@@ -83,14 +83,14 @@ int contig_test(void)
 	}
 	errs++;
     }
-    
+
     if (size != 0) {
 	if (verbose) {
 	    fprintf(stderr,
 		    "error: size != 0 in contig_test()\n");
 	}
 	errs++;
-    }    
+    }
 
     err = MPI_Type_extent(newtype, &extent);
     if (err != MPI_SUCCESS) {
@@ -100,14 +100,14 @@ int contig_test(void)
 	}
 	errs++;
     }
-    
+
     if (extent != 0) {
 	if (verbose) {
 	    fprintf(stderr,
 		    "error: extent != 0 in contig_test()\n");
 	}
 	errs++;
-    }    
+    }
 
     MPI_Type_free( &newtype );
 

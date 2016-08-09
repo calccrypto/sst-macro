@@ -40,7 +40,7 @@ namespace lblxml
 
   class element : public sprockit::serializable
   {
-  public: 
+  public:
     element() : index_(-1), id_("null")
     { }
 
@@ -79,7 +79,7 @@ namespace lblxml
   {
     ImplementSerializableDefaultConstructor(box)
 
-  public:   
+  public:
     box() : loc_(-1)
     { }
 
@@ -160,7 +160,7 @@ namespace lblxml
     void remove_dep(int index)
     {
       int_container_iter dep_it = dep_.find(index);
-      if (dep_it != dep_.end()) 
+      if (dep_it != dep_.end())
         dep_.erase(dep_.find(index));
     }
 

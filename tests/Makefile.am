@@ -91,7 +91,7 @@ CHECK_TESTS = \
   $(STATSTESTS) \
   $(CONFIGTESTS) \
   $(UNITTESTS) \
-  $(ALLOCTESTS) 
+  $(ALLOCTESTS)
 if USE_REPLACEMENT_HEADERS
 CHECK_TESTS += $(EXTERNALTESTS)
 endif
@@ -101,7 +101,7 @@ INSTALLCHECK_TESTS = \
   $(TUTORIALTESTS)
 
 if INTEGRATED_SST_CORE
-INSTALLCHECK_TESTS += $(APITESTS) 
+INSTALLCHECK_TESTS += $(APITESTS)
 else
 CHECK_TESTS += $(APITESTS)
 endif
@@ -118,7 +118,7 @@ installcheck-local: $(INSTALLCHECK_TESTS:%=%.$(CHKSUF))
 #  Clean                                                                                {{{#
 #------------------------------------------------------------------------------------------#
 
-clean-local: clean-skeletons 
+clean-local: clean-skeletons
 	rm -f *.$(CHKSUF)
 	rm -f *.tmp-out
 	rm -f net.dot

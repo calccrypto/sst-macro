@@ -27,10 +27,10 @@ namespace sw {
 //
 stack_alloc::chunk::chunk(size_t stacksize, size_t suggested_chunk_size,
                           bool use_mprot) :
-  addr_(0), 
+  addr_(0),
   size_(suggested_chunk_size),
-  stacksize_(stacksize), 
-  use_mprot_(use_mprot), 
+  stacksize_(stacksize),
+  use_mprot_(use_mprot),
   next_stack_(0)
 {
   // Figure out how big we want our chunk to be.
@@ -68,7 +68,7 @@ stack_alloc::chunk::chunk(size_t stacksize, size_t suggested_chunk_size,
   }
 }
 
-void* 
+void*
 stack_alloc::chunk::get_next_stack() {
   size_t unit = stacksize_ + (use_mprot_ ? sysconf(_SC_PAGESIZE) : 0);
   if(next_stack_+unit >= size_) {

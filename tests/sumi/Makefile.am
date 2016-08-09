@@ -16,11 +16,11 @@ check_PROGRAMS = \
   sst_failure_lazy \
   sst_failure_nack
 
-AM_CPPFLAGS = -I$(top_builddir) -I$(top_srcdir) 
+AM_CPPFLAGS = -I$(top_builddir) -I$(top_srcdir)
 AM_CPPFLAGS += -I$(top_srcdir)/sumi -I$(top_builddir)/sumi
 AM_CPPFLAGS += -I$(top_srcdir)/sprockit -I$(top_builddir)/sprockit
 AM_CPPFLAGS += -I$(top_srcdir)/sstmac/install -DSSTMAC=1
-AM_CPPFLAGS += -I$(top_builddir)/sstmac/replacements -I$(top_srcdir)/sstmac/replacements 
+AM_CPPFLAGS += -I$(top_builddir)/sstmac/replacements -I$(top_srcdir)/sstmac/replacements
 AM_CPPFLAGS += -Dmain=USER_MAIN -DSSTMAC=1
 
 exe_LDADD = ../../sstmac/install/libsstmac.la ../../sprockit/sprockit/libsprockit.la ../../sstmac/main/libsstmac_main.la

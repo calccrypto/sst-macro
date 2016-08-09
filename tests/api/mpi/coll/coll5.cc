@@ -25,25 +25,25 @@ int coll5( int argc, char **argv )
     else              participants = size;
     if ( (rank < participants) ) {
       int recv_count = MAX_PROCESSES;
-      
+
       /* If I'm the root (process 0), then fill out the big table */
       /* and setup  send_counts and displs arrays */
-      if (rank == 0) 
+      if (rank == 0)
 	for ( i=0; i<participants; i++) {
 	  send_counts[i] = recv_count;
 	  displs[i] = i * MAX_PROCESSES;
-	  for ( j=0; j<MAX_PROCESSES; j++ ) 
+	  for ( j=0; j<MAX_PROCESSES; j++ )
 	    table[i][j] = i+j;
 	}
-      
+
       /* Scatter the big table to everybody's little table */
-      MPI_Scatterv(&table[0][0], send_counts, displs, MPI_INT, 
+      MPI_Scatterv(&table[0][0], send_counts, displs, MPI_INT,
 		   &row[0]     , recv_count, MPI_INT, 0, MPI_COMM_WORLD);
 
       /* Now see if our row looks right */
-      for (i=0; i<MAX_PROCESSES; i++) 
+      for (i=0; i<MAX_PROCESSES; i++)
 	if ( row[i] != i+rank ) errors++;
-    } 
+    }
 
     MTest_Finalize( errors );
     MPI_Finalize();

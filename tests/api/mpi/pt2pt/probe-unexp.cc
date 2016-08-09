@@ -13,7 +13,7 @@ namespace probe_unexp {
 #define NUM_MSGS_PER_BUF_SIZE 5
 char buf[1 << MAX_BUF_SIZE_LG];
 
-/* 
+/*
  * This program verifies that MPI_Probe() is operating properly in the face of
  * unexpected messages arriving after MPI_Probe() has
  * been called.  This program may hang if MPI_Probe() does not return when the
@@ -26,7 +26,7 @@ int probe_unexp(int argc, char **argv)
     int msg_size_lg;
     int errs = 0;
     int mpi_errno;
-    
+
     MTest_Init(&argc, &argv);
 
     MPI_Comm_size(MPI_COMM_WORLD, &p_size);
@@ -46,22 +46,22 @@ int probe_unexp(int argc, char **argv)
         {
 	    MPI_Status status;
 	    const int tag = msg_size_lg * NUM_MSGS_PER_BUF_SIZE + msg_cnt;
-	    
+
 	    MTestPrintfMsg( 2, "Message count %d\n", msg_cnt );
 	    if (p_rank == 0)
 	    {
 		int p;
-		
+
 		for (p = 1; p < p_size; p ++)
 		{
 		    /* Wait for synchronization message */
-		    mpi_errno = MPI_Recv(NULL, 0, MPI_BYTE, MPI_ANY_SOURCE, 
+		    mpi_errno = MPI_Recv(NULL, 0, MPI_BYTE, MPI_ANY_SOURCE,
 					 tag, MPI_COMM_WORLD, &status);
 		    if (mpi_errno != MPI_SUCCESS && errs++ < 10)
 		    {
 			MTestPrintError(mpi_errno);
 		    }
-		    
+
 		    if (status.MPI_TAG != tag && errs++ < 10)
 		    {
 			printf("ERROR: unexpected message tag from MPI_Recv(): lp=0, rp=%d, expected=%d, actual=%d, count=%d\n",
@@ -70,14 +70,14 @@ int probe_unexp(int argc, char **argv)
 
 #		    if defined(VERBOSE)
 		    {
-			printf("sending message: p=%d s=%d c=%d\n", 
+			printf("sending message: p=%d s=%d c=%d\n",
 			       status.MPI_SOURCE, msg_size, msg_cnt);
 		    }
 #		    endif
-		    
-		    /* Send unexpected message which hopefully MPI_Probe() is 
+
+		    /* Send unexpected message which hopefully MPI_Probe() is
 		       already waiting for at the remote process */
-		    mpi_errno = MPI_Send (buf, msg_size, MPI_BYTE, 
+		    mpi_errno = MPI_Send (buf, msg_size, MPI_BYTE,
 			    status.MPI_SOURCE, status.MPI_TAG, MPI_COMM_WORLD);
 		    if (mpi_errno != MPI_SUCCESS && errs++ < 10)
 		    {
@@ -96,9 +96,9 @@ int probe_unexp(int argc, char **argv)
 		    MTestPrintError(mpi_errno);
 		}
 
-		/* Perform probe, hopefully before the master process can 
+		/* Perform probe, hopefully before the master process can
 		   send its reply */
-		mpi_errno = MPI_Probe(MPI_ANY_SOURCE, MPI_ANY_TAG, 
+		mpi_errno = MPI_Probe(MPI_ANY_SOURCE, MPI_ANY_TAG,
 				      MPI_COMM_WORLD, &status);
 		if (mpi_errno != MPI_SUCCESS && errs++ < 10)
 		{
@@ -126,7 +126,7 @@ int probe_unexp(int argc, char **argv)
 		}
 
 		/* Receive the probed message from the master process */
-		mpi_errno = MPI_Recv(buf, msg_size, MPI_BYTE, 0, tag, 
+		mpi_errno = MPI_Recv(buf, msg_size, MPI_BYTE, 0, tag,
 				     MPI_COMM_WORLD, &status);
 		if (mpi_errno != MPI_SUCCESS && errs++ < 10)
 		{

@@ -17,15 +17,15 @@ int icgroup( int argc, char *argv[] )
 {
     int errs = 0;
     int rank, size, grank, gsize;
-    int minsize = 2, isleft; 
+    int minsize = 2, isleft;
     MPI_Comm      comm;
     MPI_Group     group;
 
     MTest_Init( &argc, &argv );
 
-    /* The following illustrates the use of the routines to 
+    /* The following illustrates the use of the routines to
        run through a selection of communicators and datatypes.
-       Use subsets of these for tests that do not involve combinations 
+       Use subsets of these for tests that do not involve combinations
        of communicators, datatypes, and counts of datatypes */
     while (MTestGetIntercomm( &comm, &isleft, minsize )) {
 	if (comm == MPI_COMM_NULL) continue;

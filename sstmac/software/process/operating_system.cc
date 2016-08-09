@@ -127,14 +127,14 @@ operating_system::init_threading()
   const char *threading_pchar = getenv("SSTMAC_THREADING");
   if (threading_pchar){
     threading_string = threading_pchar;
-  } else { 
+  } else {
 #if defined(SSTMAC_USE_UCONTEXT) //explicitly specified default via configure, different from HAVE_UCONTEXT
     threading_string = "ucontext";
 #elif defined(SSTMAC_USE_PTHREAD)
     threading_string = "pthread";
 #elif defined(SSTMAC_USE_PTH)
     threading_string = "pth";
-    
+
     //if none of the above set, we have no explicitly specified default
     //go ahead and pick a sensible one
 #elif SSTMAC_USE_MULTITHREAD //set priorities differently depending on whether we are in multithreading mode
@@ -165,9 +165,9 @@ operating_system::init_threading()
   if (threading_string == "pth") {
 #if defined(SSTMAC_HAVE_GNU_PTH)
    #if SSTMAC_USE_MULTITHREAD
-   spkt_throw(sprockit::value_error, 
-    "operating_system: SSTMAC_THREADING=pth exists on system, but is not compatible with multithreading\n" 
-    "set environment SSTMAC_THREADING=ucontext for production jobs or SSTMAC_THREADING=pthread for debug jobs\n" 
+   spkt_throw(sprockit::value_error,
+    "operating_system: SSTMAC_THREADING=pth exists on system, but is not compatible with multithreading\n"
+    "set environment SSTMAC_THREADING=ucontext for production jobs or SSTMAC_THREADING=pthread for debug jobs\n"
     "currently there is no efficient multithreading on platforms that don't support ucontext, including Mac OS X");
    #else
    des_context_ = new threading_pth();
@@ -250,8 +250,8 @@ operating_system::init_factory_params(sprockit::sim_parameters* params)
   params_ = params;
 
   compute_sched_ = compute_scheduler_factory::get_optional_param(
-                     "compute_scheduler", "simple", params, this);  
-  
+                     "compute_scheduler", "simple", params, this);
+
   if (params->has_namespace("call_graph") && !call_graph_){
     sprockit::sim_parameters* the_params = params->get_namespace("call_graph");
     call_graph_ = test_cast(graph_viz, stat_collector_factory::get_optional_param("type", "graph_viz", the_params));
@@ -330,8 +330,8 @@ operating_system::execute_kernel(ami::COMP_FUNC func,
                                  event* data)
 {
   //first thing's first - make sure I have a core to execute on
-  thread_data_t top = threadstack_.top();  
-  thread* thr = top.second;  
+  thread_data_t top = threadstack_.top();
+  thread* thr = top.second;
   //this will block if the thread has no core to run on
   compute_sched_->reserve_core(thr);
   //initiate the hardware events
@@ -947,7 +947,7 @@ operating_system::start_app(app* theapp)
 
 void
 operating_system::handle_event(event* ev)
-{  
+{
   //this better be an incoming event to a library, probably from off node
   library_interface* libmsg = test_cast(library_interface, ev);
   if (!libmsg) {

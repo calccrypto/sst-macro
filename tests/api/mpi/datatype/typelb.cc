@@ -29,11 +29,11 @@ int typelb( int argc, char **argv)
 	offsets[0] = 1;
 	MPI_Type_hindexed(1, blockcnt, offsets, tmp_type, &newtype);
 	MPI_Type_commit(&newtype);
-	
+
 	MPI_Type_lb(newtype, &lb);
 	MPI_Type_extent(newtype, &extent);
 	MPI_Type_ub(newtype, &ub);
-	
+
 	/* Check that the results are correct */
 #ifdef DEBUG
 	printf("lb=%ld, ub=%ld, extent=%ld\n", lb, ub, extent);

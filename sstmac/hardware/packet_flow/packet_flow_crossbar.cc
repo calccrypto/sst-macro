@@ -108,8 +108,8 @@ packet_flow_NtoM_queue::deadlock_check()
       event_handler* output = output_handler(pkt);
       pkt->set_inport(poutput.dst_inport);
       int vc = update_vc_ ? pkt->next_vc() : pkt->vc();
-      std::cerr << "Starting deadlock check on " << to_string() << " on queue " << i 
-        << " going to " << output->to_string() 
+      std::cerr << "Starting deadlock check on " << to_string() << " on queue " << i
+        << " going to " << output->to_string()
         << " outport=" << pkt->next_port()
         << " inport=" << pkt->inport()
         << " vc=" << vc
@@ -165,7 +165,7 @@ packet_flow_NtoM_queue::deadlock_check(event* ev)
     packet_flow_output& poutput = outputs_[local_port(outport)];
     event_handler* output = output_handler(next);
     next->set_inport(poutput.dst_inport);
-    std::cerr << to_string() << " going to " << output->to_string() 
+    std::cerr << to_string() << " going to " << output->to_string()
       << " outport=" << next->next_port()
       << " inport=" << next->inport()
       << " vc=" << next->next_vc()

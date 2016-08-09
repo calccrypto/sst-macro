@@ -204,7 +204,7 @@ class node :
   nic* nic_;
 
   int ncores_;
-  
+
   int nsocket_;
 
  private:

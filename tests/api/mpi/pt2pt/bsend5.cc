@@ -5,7 +5,7 @@
  */
 #include <stdio.h>
 #include <sstmac/replacements/mpi.h>
-#include "mpitest.h" 
+#include "mpitest.h"
 
 namespace bsend5 {
 #define BUFSIZE 2000
@@ -24,7 +24,7 @@ int bsend5( int argc, char *argv[] )
     MPI_Comm_rank( comm, &rank );
     MPI_Comm_remote_size( comm, &size );
     MPI_Buffer_attach( buf, BUFSIZE );
-    
+
     for (j=0; j<10; j++) {
 	for (i=0; i<10; i++) {
 	    a[i] = (rank + 10 * j) * size + i;
@@ -39,7 +39,7 @@ int bsend5( int argc, char *argv[] )
 		status.MPI_TAG = -10;
 		status.MPI_SOURCE = -20;
 		MPI_Recv( b, 10, MPI_INT, i, 27+j, comm, &status );
-    
+
 		if (status.MPI_TAG != 27+j) {
 		    errs++;
 		    printf( "Wrong tag = %d\n", status.MPI_TAG );
@@ -64,7 +64,7 @@ int bsend5( int argc, char *argv[] )
     MPI_Comm_free(&comm);
 
     MTest_Finalize( errs );
-    
+
     MPI_Finalize();
     return 0;
 }

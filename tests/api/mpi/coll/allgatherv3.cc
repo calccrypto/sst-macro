@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 namespace allgatherv3 {
-/* Gather data from a vector to contiguous.  This is 
+/* Gather data from a vector to contiguous.  This is
    the trivial version based on the allgather test (allgatherv but with
    constant data sizes) */
 
@@ -28,11 +28,11 @@ int allgatherv3( int argc, char **argv )
 
 	displs     = (int *)malloc( size * sizeof(int) );
 	recvcounts = (int *)malloc( size * sizeof(int) );
-	
+
         for (count = 1; count < 9000; count = count * 2) {
 	    invec = (double *)malloc( count * sizeof(double) );
             vecout = (double *)malloc( size * count * sizeof(double) );
-            
+
             for (i=0; i<count; i++) {
                 invec[i] = rank*count+i;
             }
@@ -40,7 +40,7 @@ int allgatherv3( int argc, char **argv )
                 recvcounts[i] = count;
                 displs[i]    = i * count;
             }
-            MPI_Allgatherv( invec, count, MPI_DOUBLE, 
+            MPI_Allgatherv( invec, count, MPI_DOUBLE,
                             vecout, recvcounts, displs, MPI_DOUBLE, comm );
             for (i=0; i<count*size; i++) {
                 if (vecout[i] != i) {
@@ -58,7 +58,7 @@ int allgatherv3( int argc, char **argv )
 	free( recvcounts );
 	MTestFreeComm( &comm );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize();
     return 0;

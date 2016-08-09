@@ -81,7 +81,7 @@ class event_handler
 
   virtual void
   deadlock_check(event* ev){}
-  
+
   virtual void
   deadlock_check(){}
 

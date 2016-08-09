@@ -81,7 +81,7 @@ class event_queue_entry
 
 #if SSTMAC_INTEGRATED_SST_CORE
   event_queue_entry(event_loc_id dst,
-    event_loc_id src) 
+    event_loc_id src)
   {
     //simply ignore parameters - not needed
   }

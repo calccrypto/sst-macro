@@ -23,7 +23,7 @@ int gather2( int argc, char **argv )
 	/* Determine the sender and receiver */
 	MPI_Comm_rank( comm, &rank );
 	MPI_Comm_size( comm, &size );
-	
+
 	for (root=0; root<size; root++) {
 
       for (int iter = 0; iter < 1; ++iter) {
@@ -32,18 +32,18 @@ int gather2( int argc, char **argv )
     stride = 10;
 		vecin = (double *)malloc( n * stride * size * sizeof(double) );
 		vecout = (double *)malloc( size * n * sizeof(double) );
-		
+
     MPI_Type_vector( n, blocklength, stride, MPI_DOUBLE, &vec );
 		MPI_Type_commit( &vec );
-		
+
 		for (i=0; i<n*stride; i++) vecin[i] =-2;
 		for (i=0; i<n; i++) vecin[i*stride] = rank * n + i;
-		
+
 		if (rank == root) {
 		    for (i=0; i<n; i++) {
 			vecout[rank*n+i] = rank*n+i;
 		    }
-		    MPI_Gather( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL, 
+		    MPI_Gather( MPI_IN_PLACE, -1, MPI_DATATYPE_NULL,
 				vecout, n, MPI_DOUBLE, root, comm );
 		}
 		else {

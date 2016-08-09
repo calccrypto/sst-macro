@@ -67,11 +67,11 @@ network_switch::init(unsigned int phase)
       SST::Link* link = pair.second;
       connection_details dets;
       parse_port_name(port_name, &dets);
-      if (dets.src_type == connection_details::sw && dets.src_id == my_addr_){ 
+      if (dets.src_type == connection_details::sw && dets.src_id == my_addr_){
         //create the link
         integrated_connectable_wrapper* next = new integrated_connectable_wrapper(link);
         connect(
-            dets.src_port, 
+            dets.src_port,
             dets.dst_port,
             dets.type,
             next,

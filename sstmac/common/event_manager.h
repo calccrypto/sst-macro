@@ -122,8 +122,8 @@ class event_manager :
     stopped_ = true;
   }
 
-  /** 
-   * @return The MPI rank of this event manager 
+  /**
+   * @return The MPI rank of this event manager
    * */
   int
   me() const {

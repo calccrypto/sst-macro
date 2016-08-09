@@ -49,10 +49,10 @@ struct sim_stats {
   double wallTime;
   double simulatedTime;
   int numResults;
-  sim_stats() : 
-    wallTime(0), 
-    simulatedTime(0), 
-    numResults(-1) 
+  sim_stats() :
+    wallTime(0),
+    simulatedTime(0),
+    numResults(-1)
   {}
 };
 

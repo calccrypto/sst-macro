@@ -13,7 +13,7 @@
 #endif
 
 namespace lbub {
-/* 
+/*
    The default behavior of the test routines should be to briefly indicate
    the cause of any errors - in this test, that means that verbose needs
    to be set. Verbose should turn on output that is independent of error
@@ -152,7 +152,7 @@ int int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %ld; should be %d\n", (long) aval, 9);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -212,7 +212,7 @@ int int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  true extent of type = %d; should be %d\n", (int) aval, 4);
     }
-    
+
     MPI_Type_free(&eviltype);
 
     return errs;
@@ -255,14 +255,14 @@ int contig_of_int_with_lb_ub_test(void)
     err = MPI_Type_size(eviltype, &val);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, "  MPI_Type_size of %s failed.\n", 
+	if (verbose) fprintf(stderr, "  MPI_Type_size of %s failed.\n",
 			     typemapstring );
 	if (verbose) MTestPrintError( err  );
     }
 
     if (val != 12) {
 	errs++;
-	if (verbose) fprintf(stderr, "  size of type = %d; should be %d\n", 
+	if (verbose) fprintf(stderr, "  size of type = %d; should be %d\n",
 			     val, 12);
     }
 
@@ -278,7 +278,7 @@ int contig_of_int_with_lb_ub_test(void)
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 27);
 	if (verbose) fprintf( stderr, " for type %s\n", typemapstring );
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -382,7 +382,7 @@ int contig_negextent_of_int_with_lb_ub_test(void)
     err = MPI_Type_size(eviltype, &val);
     if (err != MPI_SUCCESS) {
 	errs++;
-	if (verbose) fprintf(stderr, "  MPI_Type_size of %s failed.\n", 
+	if (verbose) fprintf(stderr, "  MPI_Type_size of %s failed.\n",
 			     typemapstring);
 	if (verbose) MTestPrintError( err  );
     }
@@ -403,7 +403,7 @@ int contig_negextent_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 9);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -466,7 +466,7 @@ int contig_negextent_of_int_with_lb_ub_test(void)
 
     MPI_Type_free( &inttype );
     MPI_Type_free( &eviltype );
-    
+
     return errs;
 }
 
@@ -522,7 +522,7 @@ int vector_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 27);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -644,7 +644,7 @@ int vector_blklen_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 54);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -767,7 +767,7 @@ int vector_blklen_stride_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 126);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -886,7 +886,7 @@ int vector_blklen_negstride_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 126);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -998,7 +998,7 @@ int int_with_negextent_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, -9);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -1058,7 +1058,7 @@ int int_with_negextent_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  true extent of type = %d; should be %d\n", (int) aval, 4);
     }
-    
+
     MPI_Type_free(&eviltype);
 
     return errs;
@@ -1118,7 +1118,7 @@ int vector_blklen_stride_negextent_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %d; should be %d\n", (int) aval, 108);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;
@@ -1237,7 +1237,7 @@ int vector_blklen_negstride_negextent_of_int_with_lb_ub_test(void)
 	errs++;
 	if (verbose) fprintf(stderr, "  extent of type = %ld; should be %d\n", (long) aval, 108);
     }
-    
+
     err = MPI_Type_lb(eviltype, &aval);
     if (err != MPI_SUCCESS) {
 	errs++;

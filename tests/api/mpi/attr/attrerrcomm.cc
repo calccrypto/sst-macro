@@ -19,9 +19,9 @@ int attrerrcomm( int argc, char **argv )
     return 0;
 }
 
-/* 
- * MPI 1.2 Clarification: Clarification of Error Behavior of 
- *                        Attribute Callback Functions 
+/*
+ * MPI 1.2 Clarification: Clarification of Error Behavior of
+ *                        Attribute Callback Functions
  * Any return value other than MPI_SUCCESS is erroneous.  The specific value
  * returned to the user is undefined (other than it can't be MPI_SUCCESS).
  * Proposals to specify particular values (e.g., user's value) failed.
@@ -40,7 +40,7 @@ int copybomb_fn( MPI_Comm oldcomm, int keyval, void *extra_state,
 /* Set delete flag to 1 to allow the attribute to be deleted */
 static int delete_flag = 0;
 
-int deletebomb_fn( MPI_Comm comm, int keyval, void *attribute_val, 
+int deletebomb_fn( MPI_Comm comm, int keyval, void *attribute_val,
 		   void *extra_state)
 {
     if (delete_flag) return MPI_SUCCESS;
@@ -96,7 +96,7 @@ int test_communicators( void )
 	errs++;
 	printf( "delete function return code was MPI_SUCCESS in delete\n" );
     }
-    
+
     err = MPI_Comm_dup( dup_comm_world, &d2 );
     if (err == MPI_SUCCESS) {
 	errs++;

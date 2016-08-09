@@ -13,14 +13,14 @@ void mysum( void *cinPtr, void *coutPtr, int *count, MPI_Datatype *dtype )
     const int *cin = (const int *)cinPtr;
     int       *cout = (int *)coutPtr;
     int        i, n = *count;
-    for (i=0; i<n; i++) 
+    for (i=0; i<n; i++)
 	cout[i] += cin[i];
 }
 int allred6( int argc, char *argv[] )
 {
     int      errs = 0;
     int      rank, size;
-    int      minsize = 2, count; 
+    int      minsize = 2, count;
     MPI_Comm comm;
     MPI_Op   op;
     int      *buf, i;
@@ -33,7 +33,7 @@ int allred6( int argc, char *argv[] )
 	if (comm == MPI_COMM_NULL) continue;
 	MPI_Comm_size( comm, &size );
 	MPI_Comm_rank( comm, &rank );
-	
+
 	for (count = 1; count < 65000; count = count * 2) {
 	    /* Contiguous data */
 	    buf = (int *)malloc( count * sizeof(int) );

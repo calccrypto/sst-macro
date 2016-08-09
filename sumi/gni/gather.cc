@@ -7,7 +7,7 @@
 namespace sumi {
 
 template <class peer_data_t>
-peer_data_t* 
+peer_data_t*
 gather_data(int rank, int nproc, peer_data_t* mydata)
 {
   mydata->rank = rank;
@@ -16,7 +16,7 @@ gather_data(int rank, int nproc, peer_data_t* mydata)
   ::memcpy(&tmp[rank], mydata, sizeof(peer_data_t));
   PMI_Allgather(&tmp[rank], tmp, sizeof(peer_data_t));
   for (int i=0; i < nproc; ++i){
-     int wrong_order_i = tmp[i].rank;        
+     int wrong_order_i = tmp[i].rank;
      peer_data_t* dst = output + wrong_order_i;
      peer_data_t* src = tmp + i;
      ::memcpy(dst, src, sizeof(peer_data_t));

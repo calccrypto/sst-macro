@@ -230,7 +230,7 @@ namespace lblxml
   }
 
   void boxml::run_loop() {
-    SSTMACBacktrace("run loop"); 
+    SSTMACBacktrace("run loop");
 
     //std::cerr << "Rank 0 entering run loop with "
     //          << g_rank_to_recvs[0].size() << " recvs\n";

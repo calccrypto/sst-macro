@@ -14,10 +14,10 @@ executed";
 
 /* Copy increments the attribute value */
 int copy_fn( MPI_Datatype oldtype, int keyval, void *extra_state,
-	     void *attribute_val_in, void *attribute_val_out, 
+	     void *attribute_val_in, void *attribute_val_out,
 	     int *flag);
 int copy_fn( MPI_Datatype oldtype, int keyval, void *extra_state,
-	     void *attribute_val_in, void *attribute_val_out, 
+	     void *attribute_val_in, void *attribute_val_out,
 	     int *flag)
 {
     /* Copy the address of the attribute */
@@ -31,9 +31,9 @@ int copy_fn( MPI_Datatype oldtype, int keyval, void *extra_state,
 }
 
 /* Delete decrements the attribute value */
-int delete_fn( MPI_Datatype type, int keyval, void *attribute_val, 
+int delete_fn( MPI_Datatype type, int keyval, void *attribute_val,
 	       void *extra_state);
-int delete_fn( MPI_Datatype type, int keyval, void *attribute_val, 
+int delete_fn( MPI_Datatype type, int keyval, void *attribute_val,
 	       void *extra_state)
 {
     *(int *)attribute_val = *(int *)attribute_val - 1;
@@ -61,7 +61,7 @@ int fkeyvaltype( int argc, char *argv[] )
 	/* See MPI-1, 5.7.1.  Freeing the keyval does not remove it if it
 	   is in use in an attribute */
 	MPI_Type_free_keyval( &keyval );
-	
+
 	/* We create some dummy keyvals here in case the same keyval
 	   is reused */
 	for (i=0; i<32; i++) {
@@ -120,7 +120,7 @@ int fkeyvaltype( int argc, char *argv[] )
     MPI_Finalize();
 
     return 0;
-  
+
 }
 
 }

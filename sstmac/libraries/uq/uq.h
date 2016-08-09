@@ -18,7 +18,7 @@ typedef enum {
   MPIScan
 } uq_spawn_type_t;
 
-typedef struct 
+typedef struct
 {
   double value;
   const char* units;
@@ -91,7 +91,7 @@ void sstmac_uq_busy_loop(void* queue);
  @param param_values A 2D array of size njobs X nparams
                      The value corresponding to each paramter for all jobs
                      Indexed as p[jobID][paramID]
- @param results      A 2D array of size njobs X nresults 
+ @param results      A 2D array of size njobs X nresults
                      Will hold the result values for each job
                      Indexed as p[jobID][resultID]
  @param ty        The type of run to perform. Fork new procs or MPI scan.
@@ -114,7 +114,7 @@ void sstmac_uq_run(void* queue,
  @param param_values A 2D array of size njobs X nparams
                      The value corresponding to each paramter for all jobs
                      Indexed as p[jobID][paramID]
- @param results      A 2D array of size njobs X nresults 
+ @param results      A 2D array of size njobs X nresults
                      Will hold the result values for each job
                      Indexed as p[jobID][resultID]
 */

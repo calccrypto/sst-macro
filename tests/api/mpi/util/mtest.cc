@@ -40,7 +40,7 @@
  * as the error handler.  We do *not* set MPI_ERRORS_RETURN because
  * the code that makes use of these routines may not check return
  * codes.
- * 
+ *
  */
 
 static void
@@ -65,7 +65,7 @@ static int usageOutput = 0; /* */
 #define MPI_THREAD_SINGLE 0
 #endif
 
-/* 
+/*
  * Initialize and Finalize MTest
  */
 
@@ -159,8 +159,8 @@ MTest_Init_thread(int *argc, char ***argv, int required, int *provided)
     usageOutput = 1;
   }
 }
-/* 
- * Initialize the tests, using an MPI-1 style init.  Supports 
+/*
+ * Initialize the tests, using an MPI-1 style init.  Supports
  * MTEST_THREADLEVEL_DEFAULT to test with user-specified thread level
  */
 void
@@ -204,7 +204,7 @@ MTest_Init(int *argc, char ***argv)
 #else
   /* If the MPI_VERSION is 1, there is no MPI_THREAD_xxx defined */
   MTest_Init_thread( argc, argv, 0, &provided );
-#endif    
+#endif
 }
 
 /*
@@ -242,7 +242,7 @@ MTest_Finalize(int errs)
     MTestResourceSummary(stdout);
 }
 /* ------------------------------------------------------------------------ */
-/* This routine may be used instead of "return 0;" at the end of main; 
+/* This routine may be used instead of "return 0;" at the end of main;
  it allows the program to use the return value to signal success or failure.
  */
 int
@@ -277,7 +277,7 @@ MTestSleep(int sec)
 /*
  * Datatypes
  *
- * Eventually, this could read a description of a file.  For now, we hard 
+ * Eventually, this could read a description of a file.  For now, we hard
  * code the choices.
  *
  * Each kind of datatype has the following functions:
@@ -285,14 +285,14 @@ MTestSleep(int sec)
  *    MTestTypeXXXInitRecv - Initialize a receive buffer for that type
  *    MTestTypeXXXFree     - Free any buffers associate with that type
  *    MTestTypeXXXCheckbuf - Check that the buffer contains the expected data
- * These routines work with (nearly) any datatype that is of type XXX, 
+ * These routines work with (nearly) any datatype that is of type XXX,
  * allowing the test codes to create a variety of contiguous, vector, and
  * indexed types, then test them by calling these routines.
  *
  * Available types (for the XXX) are
  *    Contig   - Simple contiguous buffers
  *    Vector   - Simple strided "vector" type
- *    Indexed  - Indexed datatype.  Only for a count of 1 instance of the 
+ *    Indexed  - Indexed datatype.  Only for a count of 1 instance of the
  *               datatype
  */
 global_int datatype_index(0);
@@ -300,7 +300,7 @@ global_int datatype_index(0);
 /* ------------------------------------------------------------------------ */
 /* Datatype routines for contiguous datatypes                               */
 /* ------------------------------------------------------------------------ */
-/* 
+/*
  * Setup contiguous buffers of n copies of a datatype.
  */
 static void *
@@ -343,7 +343,7 @@ MTestTypeContigInit(MTestDatatype *mtype)
   return mtype->buf;
 }
 
-/* 
+/*
  * Setup contiguous buffers of n copies of a datatype.  Initialize for
  * reception (e.g., set initial data to detect failure)
  */
@@ -503,8 +503,8 @@ MTestTypeVectorFree(MTestDatatype *mtype)
 /* Datatype routines for indexed block datatypes                            */
 /* ------------------------------------------------------------------------ */
 
-/* 
- * Setup a buffer for one copy of an indexed datatype. 
+/*
+ * Setup a buffer for one copy of an indexed datatype.
  */
 static void *
 MTestTypeIndexedInit(MTestDatatype *mtype)
@@ -570,7 +570,7 @@ MTestTypeIndexedInit(MTestDatatype *mtype)
   return mtype->buf;
 }
 
-/* 
+/*
  * Setup indexed buffers for 1 copy of a datatype.  Initialize for
  * reception (e.g., set initial data to detect failure)
  */
@@ -684,7 +684,7 @@ MTestTypeIndexedCheckbuf(MTestDatatype *mtype)
 /* routines                                                                 */
 /* ------------------------------------------------------------------------ */
 
-/* 
+/*
  Create a range of datatypes with a given count elements.
  This uses a selection of types, rather than an exhaustive collection.
  It allocates both send and receive types so that they can have the same
@@ -1081,19 +1081,19 @@ MTestGetDatatypeName(MTestDatatype *dtype)
 }
 /* ----------------------------------------------------------------------- */
 
-/* 
+/*
  * Create communicators.  Use separate routines for inter and intra
  * communicators (there is a routine to give both)
  * Note that the routines may return MPI_COMM_NULL, so code should test for
  * that return value as well.
- * 
+ *
  */
 global_int interCommIdx(0);
 global_int intraCommIdx(0);
 sstmac::sw::sstmac_global_builtin<const char*> intraCommName(0);
 sstmac::sw::sstmac_global_builtin<const char*> interCommName(0);
 
-/* 
+/*
  * Get an intracommunicator with at least min_size members.  If "allowSmaller"
  * is true, allow the communicator to be smaller than MPI_COMM_WORLD and
  * for this routine to return MPI_COMM_NULL for some values.  Returns 0 if
@@ -1247,7 +1247,7 @@ MTestGetIntracommGeneral(MPI_Comm *comm, int min_size, int allowSmaller)
   return intraCommIdx;
 }
 
-/* 
+/*
  * Get an intracommunicator with at least min_size members.
  */
 int
@@ -1264,7 +1264,7 @@ MTestGetIntracommName(void)
 }
 
 
-/* Get a communicator of a given minimum size.  Both intra and inter 
+/* Get a communicator of a given minimum size.  Both intra and inter
  communicators are provided */
 int
 MTestGetComm(MPI_Comm *comm, int min_size)
@@ -1313,7 +1313,7 @@ MTestPrintErrorMsg(const char msg[], int errcode)
   fflush(stdout);
 }
 /* ------------------------------------------------------------------------ */
-/* 
+/*
  If verbose output is selected and the level is at least that of the
  value of the verbose flag, then perform printf( format, ... );
  */

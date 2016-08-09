@@ -38,9 +38,9 @@ int infomany2( int argc, char *argv[] )
     MTest_Init( &argc, &argv );
 
     /* We create max_info items, then delete the middle third of them,
-       then recreate them, then check them, then 
-       delete them all.  This checks that the MPICH2 algorithm for 
-       handling large numbers of items works correctly; other MPI 
+       then recreate them, then check them, then
+       delete them all.  This checks that the MPICH2 algorithm for
+       handling large numbers of items works correctly; other MPI
        implementations should also be able to handle this */
 
     /* Create them all */
@@ -66,7 +66,7 @@ int infomany2( int argc, char *argv[] )
     for (i=MAX_INFOS/3; i<(2*MAX_INFOS/3); i++) {
 	MPI_Info_free( &infos[i] );
     }
-    
+
     /* Recreate the middle set */
     for (i=MAX_INFOS/3; i<(2*MAX_INFOS/3); i++) {
 	MPI_Info_create( &infos[i] );
@@ -101,7 +101,7 @@ int infomany2( int argc, char *argv[] )
 	    if (strcmp( keystr, key ) != 0) {
 		errs++;
 		if (errs < MAX_ERRORS) {
-		    printf( "Wrong key for info %d; got %s expected %s\n", 
+		    printf( "Wrong key for info %d; got %s expected %s\n",
 			    i, key, keystr );
 		}
 		continue;
@@ -127,7 +127,7 @@ int infomany2( int argc, char *argv[] )
     for (i=0; i<MAX_INFOS; i++) {
 	MPI_Info_free( &infos[i] );
     }
-    
+
     MTest_Finalize( errs );
     MPI_Finalize( );
     return 0;

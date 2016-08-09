@@ -23,7 +23,7 @@ int infotest( int argc, char *argv[] )
     int flag;
 
     MPI_Init( 0, 0 );
-    
+
     MPI_Info_create( &i1 );
     MPI_Info_create( &i2 );
 
