@@ -10,7 +10,7 @@ Although DUMPI is automatically included as a subproject in the SST/macro downlo
 
 \code{.sh}
 
-dumpi $ ./bootstraps.h
+dumpi $ ./bootstrap.sh
 
 \endcode
 
@@ -18,7 +18,7 @@ DUMPI must be built with an MPI compiler.
 
 \code{.sh}
 
-dumpi/build $ ../configure CC=mpicc CXX=mpicxx \ 
+dumpi/build $ ../configure CC=mpicc CXX=mpicxx \
 	              --enable-libdumpi --prefix=$DUMPI_PATH
 
 \endcode
@@ -38,7 +38,7 @@ your_project/build $ ../configure CC=mpicc CXX=mpicxx \
 \subsubsection subsec_dumpi_tracecollection Trace Collection
 DUMPI works by overriding <i>weak symbols</i> in the MPI library.
 In all MPI libraries, functions such as <tt>MPI_Send</tt> are only weak symbol wrappers to the actual function <tt>PMPI_Send</tt>.
-DUMPI overrides the weak symbols by implementing functions with the symbol <tt>MPI_Send</tt>. 
+DUMPI overrides the weak symbols by implementing functions with the symbol <tt>MPI_Send</tt>.
 If a linker encounters a weak symbol and regular symbol with the same name, it ignores the weak symbol.
 DUMPI functions look like
 
@@ -82,8 +82,8 @@ After running, there are now three new files in the directory.
 \code{.sh}
 
 example$ ls dumpi*
-dumpi-2013.09.26.10.55.53-0000.bin	
-dumpi-2013.09.26.10.55.53-0001.bin	
+dumpi-2013.09.26.10.55.53-0000.bin
+dumpi-2013.09.26.10.55.53-0001.bin
 dumpi-2013.09.26.10.55.53.meta
 
 \endcode
@@ -152,7 +152,7 @@ To print topology info, run
 
 \code{.sh}
 
-dumpi2ascii -H testbgp-0000.bin 
+dumpi2ascii -H testbgp-0000.bin
 
 \endcode
 which produces the output
@@ -188,7 +188,7 @@ An example file can be found in the test suite in <tt>tests/test_configs/testdum
 If no topology info could be recorded in the trace, more work is needed.
 The only information recorded in the trace is the hostname of each MPI rank.
 The parameters are almost the same, but with allocation now set to <tt>hostname</tt>.
-Since no topology info is contained in the trace, 
+Since no topology info is contained in the trace,
 a hostname map must be put into a text file that maps a hostname to the topology coordinates.
 The new parameter file, for a fictional machine called deep thought
 
@@ -243,13 +243,13 @@ topology_name = crossbar
 topology_geometry = 4
 
 \endcode
-We no longer use the DUMPI allocation and indexing. 
+We no longer use the DUMPI allocation and indexing.
 We also no longer require a hostname map.
 The trace is only used to generate MPI events and no topology or hostname data is used.
 The MPI ranks are mapped to physical nodes entirely independent of the trace.
 
-\subsubsection subsec_dumpi_hostnamemap Building the Hostname Map 
-Not all HPC machines support topology queries.  
+\subsubsection subsec_dumpi_hostnamemap Building the Hostname Map
+Not all HPC machines support topology queries.
 The current scheme is only valid for Cray machines, which support topology queries via <tt>xtdb2proc</tt>.
 NOTE: As of 01/15/2014, this command seems to be broken at NERSC.
 SST/macro comes with a script in the bin folder, <tt>xt2nodemap.pl</tt>, that parses the Cray file
