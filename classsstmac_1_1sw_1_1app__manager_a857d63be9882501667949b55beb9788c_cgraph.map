@@ -1,6 +1,0 @@
-<map id="sstmac::sw::app_manager::setenv" name="sstmac::sw::app_manager::setenv">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1app__manager.html#a96330dcd9f7c013e420f41e151ab8925" title="sstmac::sw::app_manager\l::getenv" alt="" coords="236,5,419,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1app__manager.html#aa9573f9392c4dc9cdffb6620731396fa" title="sstmac::sw::app_manager\l::hostname" alt="" coords="236,71,419,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1app__manager.html#a2f8ad3a96cea0fffeed2576f41640e4d" title="sstmac::sw::app_manager\l::node_address" alt="" coords="236,136,419,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1app__manager.html#ac2f7558f5e988ddda628b9a0035a4604" title="sstmac::sw::app_manager\l::node_for_task" alt="" coords="236,201,419,243"/>
-</map>

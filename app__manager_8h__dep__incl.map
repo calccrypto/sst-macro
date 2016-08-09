@@ -1,8 +1,0 @@
-<map id="sstmac/software/process/app_manager.h" name="sstmac/software/process/app_manager.h">
-<area shape="rect" id="node2" href="$indexing__app__manager_8h.html" title="sstmac/backends/native\l/indexing_app_manager.h" alt="" coords="202,95,389,136"/>
-<area shape="rect" id="node5" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="413,95,564,136"/>
-<area shape="rect" id="node3" href="$dumpi__app__manager_8h.html" title="sstmac/backends/native\l/dumpi_app_manager.h" alt="" coords="5,184,177,225"/>
-<area shape="rect" id="node4" href="$skeleton__app__manager_8h.html" title="sstmac/backends/native\l/skeleton_app_manager.h" alt="" coords="202,184,389,225"/>
-<area shape="rect" id="node6" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="413,184,564,225"/>
-<area shape="rect" id="node7" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="589,191,698,218"/>
-</map>

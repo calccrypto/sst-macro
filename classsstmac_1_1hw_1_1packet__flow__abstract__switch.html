@@ -65,8 +65,8 @@ Inheritance diagram for sstmac::hw::packet_flow_abstract_switch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__abstract__switch__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__abstract__switch_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__abstract__switch_inherit__map" id="sstmac_1_1hw_1_1packet__flow__abstract__switch_inherit__map">
-<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__switch.html" title="A switch in the network that arbitrates/routes packet_trains to the next link in the network..." alt="" coords="5,520,171,935"/>
-<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html" title="{sstmac::hw::packet\l_flow_tiled_switch\n|# row_input_demuxers_\l# xbar_tiles_\l# col_output_muxers_\l# nrows_\l# ncols_\l|+ packet_flow_tiled_switch()\l+ initialize()\l+ init_factory_params()\l+ queue_length()\l+ connect()\l+ connect_output()\l+ connect_input()\l+ connected_switches()\l+ handle()\l+ add_ejector()\land 6 more...\l# connect_injector()\l# connect_ejector()\l&#45; row_col_to_tile()\l&#45; tile_to_row_col()\l&#45; resize_buffers()\l&#45; init_components()\l&#45; connect_output()\l&#45; connect_input()\l}" alt="" coords="195,520,383,935"/>
+<area shape="rect" id="node4" href="classsstmac_1_1hw_1_1packet__flow__switch.html" title="A switch in the network that arbitrates/routes packet_trains to the next link in the network..." alt="" coords="5,549,171,964"/>
+<area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__flow__tiled__switch.html" title="{sstmac::hw::packet\l_flow_tiled_switch\n|# row_input_demuxers_\l# xbar_tiles_\l# col_output_muxers_\l# nrows_\l# ncols_\l|+ packet_flow_tiled_switch()\l+ initialize()\l+ init_factory_params()\l+ queue_length()\l+ connect()\l+ connect_output()\l+ connect_input()\l+ connected_switches()\l+ handle()\l+ add_ejector()\land 6 more...\l# connect_injector()\l# connect_ejector()\l&#45; row_col_to_tile()\l&#45; tile_to_row_col()\l&#45; resize_buffers()\l&#45; init_components()\l&#45; connect_output()\l&#45; connect_input()\l}" alt="" coords="195,549,383,964"/>
 <area shape="rect" id="node2" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="50,5,163,83"/>
 <area shape="rect" id="node3" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="188,5,351,83"/>
 </map>
@@ -99,6 +99,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a961b50bee3e27ad7681d0f134bca50d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4785d50dbf7cc33cb9e50864b0d2e8a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a4785d50dbf7cc33cb9e50864b0d2e8a3">hop_bandwidth</a> () const </td></tr>
 <tr class="separator:a4785d50dbf7cc33cb9e50864b0d2e8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0be5e8350ab33b3cdc226844ee0983b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ae0be5e8350ab33b3cdc226844ee0983b">xbar_stats</a> () const </td></tr>
+<tr class="separator:ae0be5e8350ab33b3cdc226844ee0983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da5943c8e367251e738f04becb7aec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a6da5943c8e367251e738f04becb7aec7">buf_stats</a> () const </td></tr>
+<tr class="separator:a6da5943c8e367251e738f04becb7aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -129,6 +133,33 @@ Protected Attributes</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00013">13</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6da5943c8e367251e738f04becb7aec7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a>* sstmac::hw::packet_flow_abstract_switch::buf_stats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00056">56</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00080">buf_stats_</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4785d50dbf7cc33cb9e50864b0d2e8a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +183,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00046">46</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00053">link_bw</a>.</p>
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00063">link_bw</a>.</p>
 
 </div>
 </div>
@@ -179,7 +210,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00033">33</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00065">hop_lat</a>.</p>
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00075">hop_lat</a>.</p>
 
 </div>
 </div>
@@ -284,7 +315,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00038">38</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00065">hop_lat</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a961b50bee3e27ad7681d0f134bca50d6">initial_credits()</a>.</p>
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00075">hop_lat</a>, and <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a961b50bee3e27ad7681d0f134bca50d6">initial_credits()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -295,6 +326,33 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0be5e8350ab33b3cdc226844ee0983b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a>* sstmac::hw::packet_flow_abstract_switch::xbar_stats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00051">51</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00079">xbar_stats_</a>.</p>
 
 </div>
 </div>
@@ -317,7 +375,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00070">70</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00080">80</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+
+<p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00056">buf_stats()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +399,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00055">55</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00065">65</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +421,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00065">65</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00075">75</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 <p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00033">hop_latency()</a>, and <a class="el" href="packet__flow__switch_8h_source.html#l00038">lookahead()</a>.</p>
 
@@ -385,7 +445,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00067">67</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00077">77</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +467,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00053">53</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00063">63</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 <p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00046">hop_bandwidth()</a>.</p>
 
@@ -431,7 +491,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00051">51</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00061">61</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +513,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00063">63</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00073">73</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 <p>Referenced by <a class="el" href="packet__flow__tiled__switch_8h_source.html#l00077">sstmac::hw::packet_flow_tiled_switch::initial_credits()</a>.</p>
 
@@ -477,7 +537,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00061">61</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00071">71</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -499,9 +559,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00059">59</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00069">69</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00109">sstmac::hw::packet_flow_switch::initial_credits()</a>.</p>
+<p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00119">sstmac::hw::packet_flow_switch::initial_credits()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +583,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00057">57</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00067">67</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +605,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00069">69</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00079">79</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+
+<p>Referenced by <a class="el" href="packet__flow__switch_8h_source.html#l00051">xbar_stats()</a>.</p>
 
 </div>
 </div>

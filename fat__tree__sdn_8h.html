@@ -55,9 +55,8 @@
 <div class="title">fat_tree_sdn.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;climits&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;<a class="el" href="fat__tree_8h_source.html">sstmac/hardware/topology/fat_tree.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;<a class="el" href="fat__tree__global__adaptive_8h_source.html">sstmac/hardware/topology/fat_tree_global_adaptive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="app__id_8h_source.html">sstmac/software/process/app_id.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="flow__id_8h_source.html">sstmac/software/process/flow_id.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -65,44 +64,45 @@ Include dependency graph for fat_tree_sdn.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="fat__tree__sdn_8h__incl.png" border="0" usemap="#sstmac_2hardware_2topology_2fat__tree__sdn_8h" alt=""/></div>
 <map name="sstmac_2hardware_2topology_2fat__tree__sdn_8h" id="sstmac_2hardware_2topology_2fat__tree__sdn_8h">
-<area shape="rect" id="node4" href="fat__tree_8h.html" title="sstmac/hardware/topology\l/fat_tree.h" alt="" coords="500,95,675,136"/>
-<area shape="rect" id="node49" href="app__id_8h.html" title="sstmac/software/process\l/app_id.h" alt="" coords="141,184,311,225"/>
-<area shape="rect" id="node50" href="flow__id_8h.html" title="sstmac/software/process\l/flow_id.h" alt="" coords="24,273,193,315"/>
-<area shape="rect" id="node5" href="structured__topology_8h.html" title="sstmac/hardware/topology\l/structured_topology.h" alt="" coords="727,184,901,225"/>
-<area shape="rect" id="node6" href="topology_8h.html" title="sstmac/hardware/topology\l/topology.h" alt="" coords="840,273,1015,315"/>
-<area shape="rect" id="node7" href="rng_8h.html" title="sstmac/common/rng.h" alt="" coords="586,549,738,575"/>
-<area shape="rect" id="node12" href="coordinates_8h.html" title="sstmac/hardware/topology\l/coordinates.h" alt="" coords="387,541,561,583"/>
-<area shape="rect" id="node13" href="traffic_8h.html" title="sstmac/hardware/topology\l/traffic/traffic.h" alt="" coords="1148,363,1323,404"/>
-<area shape="rect" id="node14" href="routable_8h.html" title="sstmac/hardware/router\l/routable.h" alt="" coords="965,363,1124,404"/>
-<area shape="rect" id="node29" href="routing__enum_8h.html" title="sstmac/hardware/router\l/routing_enum.h" alt="" coords="915,452,1073,493"/>
-<area shape="rect" id="node30" href="router__fwd_8h.html" title="sstmac/hardware/router\l/router_fwd.h" alt="" coords="579,363,737,404"/>
-<area shape="rect" id="node31" href="connection_8h.html" title="sstmac/hardware/common\l/connection.h" alt="" coords="1910,363,2086,404"/>
-<area shape="rect" id="node35" href="sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="2527,720,2693,761"/>
-<area shape="rect" id="node37" href="factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="1065,631,1187,672"/>
-<area shape="rect" id="node46" href="debug_8h.html" title="sprockit/debug.h" alt="" coords="828,638,947,665"/>
-<area shape="rect" id="node47" href="sim__partition__fwd_8h.html" title="sstmac/backends/common\l/sim_partition_fwd.h" alt="" coords="1211,631,1390,672"/>
-<area shape="rect" id="node48" href="unordered_8h.html" title="sprockit/unordered.h" alt="" coords="2928,459,3068,486"/>
-<area shape="rect" id="node15" href="sst__message_8h.html" title="sstmac/common/messages\l/sst_message.h" alt="" coords="1628,452,1811,493"/>
-<area shape="rect" id="node16" href="sstmac_2common_2serializable_8h.html" title="sstmac/common/serializable.h" alt="" coords="1811,727,2009,754"/>
-<area shape="rect" id="node18" href="node__address_8h.html" title="sstmac/common/node\l_address.h" alt="" coords="2148,720,2299,761"/>
-<area shape="rect" id="node19" href="metadata__bits_8h.html" title="sprockit/metadata_bits.h" alt="" coords="914,549,1079,575"/>
-<area shape="rect" id="node20" href="sst__event_8h.html" title="sstmac/common/sst_event.h" alt="" coords="2053,549,2244,575"/>
-<area shape="rect" id="node25" href="event__callback__fwd_8h.html" title="sstmac/common/event\l_callback_fwd.h" alt="" coords="1349,541,1503,583"/>
-<area shape="rect" id="node26" href="event__handler__fwd_8h.html" title="sstmac/common/event\l_handler_fwd.h" alt="" coords="1414,631,1569,672"/>
-<area shape="rect" id="node27" href="operating__system__fwd_8h.html" title="sstmac/software/process\l/operating_system_fwd.h" alt="" coords="1757,541,1927,583"/>
-<area shape="rect" id="node28" href="key__fwd_8h.html" title="sstmac/software/process\l/key_fwd.h" alt="" coords="1155,541,1324,583"/>
-<area shape="rect" id="node17" href="sstmac__config_8h.html" title="sstmac/common/sstmac\l_config.h" alt="" coords="2336,809,2503,851"/>
-<area shape="rect" id="node21" href="event__handler_8h.html" title="sstmac/common/event\l_handler.h" alt="" coords="2327,631,2482,672"/>
-<area shape="rect" id="node23" href="timestamp_8h.html" title="sstmac/common/timestamp.h" alt="" coords="1593,638,1787,665"/>
-<area shape="rect" id="node22" href="sst__event__fwd_8h.html" title="sstmac/common/sst_event\l_fwd.h" alt="" coords="2323,720,2503,761"/>
-<area shape="rect" id="node32" href="event__scheduler_8h.html" title="sstmac/common/event\l_scheduler.h" alt="" coords="2431,452,2586,493"/>
-<area shape="rect" id="node33" href="location__trace_8h.html" title="sstmac/common/stats\l/location_trace.h" alt="" coords="2319,541,2471,583"/>
-<area shape="rect" id="node34" href="event__manager__fwd_8h.html" title="sstmac/common/event\l_manager_fwd.h" alt="" coords="2647,631,2802,672"/>
-<area shape="rect" id="node36" href="event__manager_8h.html" title="sstmac/common/event\l_manager.h" alt="" coords="1527,541,1682,583"/>
-<area shape="rect" id="node39" href="errors_8h.html" title="sprockit/errors.h" alt="" coords="1263,727,1379,754"/>
-<area shape="rect" id="node43" href="spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="1111,899,1261,925"/>
-<area shape="rect" id="node44" href="statics_8h.html" title="sprockit/statics.h" alt="" coords="1026,727,1149,754"/>
-<area shape="rect" id="node42" href="spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="1415,817,1562,843"/>
+<area shape="rect" id="node3" href="fat__tree__global__adaptive_8h.html" title="sstmac/hardware/topology\l/fat_tree_global_adaptive.h" alt="" coords="2343,95,2522,136"/>
+<area shape="rect" id="node49" href="app__id_8h.html" title="sstmac/software/process\l/app_id.h" alt="" coords="2648,273,2817,315"/>
+<area shape="rect" id="node50" href="flow__id_8h.html" title="sstmac/software/process\l/flow_id.h" alt="" coords="2771,363,2940,404"/>
+<area shape="rect" id="node6" href="fat__tree_8h.html" title="sstmac/hardware/topology\l/fat_tree.h" alt="" coords="1995,184,2169,225"/>
+<area shape="rect" id="node7" href="structured__topology_8h.html" title="sstmac/hardware/topology\l/structured_topology.h" alt="" coords="1969,273,2144,315"/>
+<area shape="rect" id="node8" href="topology_8h.html" title="sstmac/hardware/topology\l/topology.h" alt="" coords="1872,363,2047,404"/>
+<area shape="rect" id="node9" href="rng_8h.html" title="sstmac/common/rng.h" alt="" coords="2293,638,2445,665"/>
+<area shape="rect" id="node14" href="interconnect__fwd_8h.html" title="sstmac/hardware/interconnect\l/interconnect_fwd.h" alt="" coords="1781,720,1978,761"/>
+<area shape="rect" id="node15" href="coordinates_8h.html" title="sstmac/hardware/topology\l/coordinates.h" alt="" coords="2469,631,2644,672"/>
+<area shape="rect" id="node16" href="traffic_8h.html" title="sstmac/hardware/topology\l/traffic/traffic.h" alt="" coords="1372,452,1547,493"/>
+<area shape="rect" id="node17" href="routable_8h.html" title="sstmac/hardware/router\l/routable.h" alt="" coords="1856,452,2015,493"/>
+<area shape="rect" id="node32" href="routing__enum_8h.html" title="sstmac/hardware/router\l/routing_enum.h" alt="" coords="1365,541,1524,583"/>
+<area shape="rect" id="node33" href="router__fwd_8h.html" title="sstmac/hardware/router\l/router_fwd.h" alt="" coords="1673,452,1832,493"/>
+<area shape="rect" id="node34" href="connection_8h.html" title="sstmac/hardware/common\l/connection.h" alt="" coords="283,452,459,493"/>
+<area shape="rect" id="node38" href="sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="638,809,803,851"/>
+<area shape="rect" id="node40" href="factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="1202,720,1325,761"/>
+<area shape="rect" id="node46" href="debug_8h.html" title="sprockit/debug.h" alt="" coords="2003,727,2121,754"/>
+<area shape="rect" id="node47" href="sim__partition__fwd_8h.html" title="sstmac/backends/common\l/sim_partition_fwd.h" alt="" coords="1527,720,1706,761"/>
+<area shape="rect" id="node48" href="unordered_8h.html" title="sprockit/unordered.h" alt="" coords="2503,549,2643,575"/>
+<area shape="rect" id="node18" href="sst__message_8h.html" title="sstmac/common/messages\l/sst_message.h" alt="" coords="1548,541,1731,583"/>
+<area shape="rect" id="node19" href="sstmac_2common_2serializable_8h.html" title="sstmac/common/serializable.h" alt="" coords="827,817,1025,843"/>
+<area shape="rect" id="node21" href="node__address_8h.html" title="sstmac/common/node\l_address.h" alt="" coords="412,809,563,851"/>
+<area shape="rect" id="node22" href="metadata__bits_8h.html" title="sprockit/metadata_bits.h" alt="" coords="1901,638,2066,665"/>
+<area shape="rect" id="node23" href="sst__event_8h.html" title="sstmac/common/sst_event.h" alt="" coords="636,638,827,665"/>
+<area shape="rect" id="node28" href="event__callback__fwd_8h.html" title="sstmac/common/event\l_callback_fwd.h" alt="" coords="1182,631,1337,672"/>
+<area shape="rect" id="node29" href="event__handler__fwd_8h.html" title="sstmac/common/event\l_handler_fwd.h" alt="" coords="1349,720,1503,761"/>
+<area shape="rect" id="node30" href="operating__system__fwd_8h.html" title="sstmac/software/process\l/operating_system_fwd.h" alt="" coords="1361,631,1531,672"/>
+<area shape="rect" id="node31" href="key__fwd_8h.html" title="sstmac/software/process\l/key_fwd.h" alt="" coords="1555,631,1724,672"/>
+<area shape="rect" id="node20" href="sstmac__config_8h.html" title="sstmac/common/sstmac\l_config.h" alt="" coords="285,899,452,940"/>
+<area shape="rect" id="node24" href="event__handler_8h.html" title="sstmac/common/event\l_handler.h" alt="" coords="257,720,411,761"/>
+<area shape="rect" id="node26" href="timestamp_8h.html" title="sstmac/common/timestamp.h" alt="" coords="983,727,1178,754"/>
+<area shape="rect" id="node25" href="sst__event__fwd_8h.html" title="sstmac/common/sst_event\l_fwd.h" alt="" coords="208,809,388,851"/>
+<area shape="rect" id="node35" href="event__scheduler_8h.html" title="sstmac/common/event\l_scheduler.h" alt="" coords="243,541,398,583"/>
+<area shape="rect" id="node36" href="location__trace_8h.html" title="sstmac/common/stats\l/location_trace.h" alt="" coords="358,631,510,672"/>
+<area shape="rect" id="node37" href="event__manager__fwd_8h.html" title="sstmac/common/event\l_manager_fwd.h" alt="" coords="27,720,182,761"/>
+<area shape="rect" id="node39" href="event__manager_8h.html" title="sstmac/common/event\l_manager.h" alt="" coords="1003,631,1158,672"/>
+<area shape="rect" id="node42" href="errors_8h.html" title="sprockit/errors.h" alt="" coords="1205,817,1321,843"/>
+<area shape="rect" id="node44" href="statics_8h.html" title="sprockit/statics.h" alt="" coords="1538,817,1661,843"/>
+<area shape="rect" id="node45" href="spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="2625,817,2776,843"/>
 </map>
 </div>
 </div>
@@ -112,7 +112,7 @@ Include dependency graph for fat_tree_sdn.h:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1fat__tree__sdn.html">sstmac::hw::fat_tree_sdn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsstmac_1_1hw_1_1fat__tree__sdn_1_1MatchFields.html">sstmac::hw::fat_tree_sdn::MatchFields</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsstmac_1_1hw_1_1fat__tree__sdn_1_1Match__Fields.html">sstmac::hw::fat_tree_sdn::Match_Fields</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

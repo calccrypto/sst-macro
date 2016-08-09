@@ -1,5 +1,5 @@
 <map id="sstmac::hw::packet_flow_switch" name="sstmac::hw::packet_flow_switch">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l}" alt="" coords="645,1188,801,1353"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l+ xbar_stats()\l+ buf_stats()\l}" alt="" coords="645,1173,801,1368"/>
 <area shape="rect" id="node3" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="620,777,733,854"/>
 <area shape="rect" id="node4" href="$classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="323,777,486,854"/>
 <area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n||+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="1187,740,1347,891"/>

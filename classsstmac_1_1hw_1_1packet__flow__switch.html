@@ -70,7 +70,7 @@ Inheritance diagram for sstmac::hw::packet_flow_switch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__switch__inherit__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__switch_inherit__map" alt="Inheritance graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__switch_inherit__map" id="sstmac_1_1hw_1_1packet__flow__switch_inherit__map">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# packet_size_\l# link_bw\l# ej_bw\l# xbar_output_buffer\l_num_bytes\l# xbar_input_buffer_num\l_bytes\l# xbar_bw\l# row_buffer_num_bytes\l# hop_lat\l# link_arbitrator_template\l# xbar_stats_\l# buf_stats_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l}" alt="" coords="59,131,227,472"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# packet_size_\l# link_bw\l# ej_bw\l# xbar_output_buffer\l_num_bytes\l# xbar_input_buffer_num\l_bytes\l# xbar_bw\l# row_buffer_num_bytes\l# hop_lat\l# link_arbitrator_template\l# xbar_stats_\l# buf_stats_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l+ xbar_stats()\l+ buf_stats()\l}" alt="" coords="59,131,227,501"/>
 <area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,119,83"/>
 <area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="143,5,306,83"/>
 </map>
@@ -80,7 +80,7 @@ Collaboration diagram for sstmac::hw::packet_flow_switch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsstmac_1_1hw_1_1packet__flow__switch__coll__graph.png" border="0" usemap="#sstmac_1_1hw_1_1packet__flow__switch_coll__map" alt="Collaboration graph"/></div>
 <map name="sstmac_1_1hw_1_1packet__flow__switch_coll__map" id="sstmac_1_1hw_1_1packet__flow__switch_coll__map">
-<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l}" alt="" coords="645,1188,801,1353"/>
+<area shape="rect" id="node2" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n||+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l+ xbar_stats()\l+ buf_stats()\l}" alt="" coords="645,1173,801,1368"/>
 <area shape="rect" id="node3" href="classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="620,777,733,854"/>
 <area shape="rect" id="node4" href="classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="323,777,486,854"/>
 <area shape="rect" id="node5" href="classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n||+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="1187,740,1347,891"/>
@@ -144,6 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38009ee3cd66369c744990a4528f7797 inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4785d50dbf7cc33cb9e50864b0d2e8a3 inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a4785d50dbf7cc33cb9e50864b0d2e8a3">hop_bandwidth</a> () const </td></tr>
 <tr class="separator:a4785d50dbf7cc33cb9e50864b0d2e8a3 inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0be5e8350ab33b3cdc226844ee0983b inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#ae0be5e8350ab33b3cdc226844ee0983b">xbar_stats</a> () const </td></tr>
+<tr class="separator:ae0be5e8350ab33b3cdc226844ee0983b inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da5943c8e367251e738f04becb7aec7 inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsstmac_1_1hw_1_1packet__sent__stats.html">packet_sent_stats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a6da5943c8e367251e738f04becb7aec7">buf_stats</a> () const </td></tr>
+<tr class="separator:a6da5943c8e367251e738f04becb7aec7 inherit pub_methods_classsstmac_1_1hw_1_1packet__flow__abstract__switch"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -198,7 +202,7 @@ Private Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A switch in the network that arbitrates/routes packet_trains to the next link in the network. </p>
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00078">78</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00088">88</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0515f564d3126399168ff6dc080fbf98"></a>
 <div class="memitem">
@@ -609,9 +613,9 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classsstmac_1_1hw_1_1packet__flow__abstract__switch.html#a961b50bee3e27ad7681d0f134bca50d6">sstmac::hw::packet_flow_abstract_switch</a>.</p>
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00109">109</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00119">119</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
-<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00059">sstmac::hw::packet_flow_abstract_switch::xbar_input_buffer_num_bytes</a>.</p>
+<p>References <a class="el" href="packet__flow__switch_8h_source.html#l00069">sstmac::hw::packet_flow_abstract_switch::xbar_input_buffer_num_bytes</a>.</p>
 
 </div>
 </div>
@@ -795,7 +799,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00162">162</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00172">172</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +821,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00160">160</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00170">170</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +843,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00164">164</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
+<p>Definition at line <a class="el" href="packet__flow__switch_8h_source.html#l00174">174</a> of file <a class="el" href="packet__flow__switch_8h_source.html">packet_flow_switch.h</a>.</p>
 
 </div>
 </div>

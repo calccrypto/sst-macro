@@ -1,8 +1,0 @@
-<map id="sstmac::message::to_string" name="sstmac::message::to_string">
-<area shape="rect" id="node2" href="$classsstmac_1_1message.html#aa82f1e99df3d8d2f1517da80f375fbca" title="Virtual function to return size. " alt="" coords="217,5,378,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1message.html#a6bb7462e1dc58d9e5b251b09e7145fc3" title="sstmac::message::fromaddr" alt="" coords="201,71,393,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1message.html#ac665b6c605ba8d2090f18b05f0e6fb09" title="sstmac::message::message" alt="" coords="201,122,393,149"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1message.html#a788cf8639f5a017f2c847614dd581f2c" title="Serialize this message during parallel simulation. " alt="" coords="204,173,391,215"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1message.html#a115508a22049254316aa1853dfefc8d9" title="sstmac::message::toaddr" alt="" coords="209,239,385,266"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1message.html#a84c22e0b6139b29ace8e6c5ed8e4ab20" title="sstmac::message::unique_id" alt="" coords="200,290,395,317"/>
-</map>
