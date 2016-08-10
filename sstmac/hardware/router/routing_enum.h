@@ -12,8 +12,6 @@ namespace sstmac {
     minimal_adaptive,
     valiant,
     ugal,
-    dmodk,
-    sdn,
     deflt
   } algorithm_t;
 

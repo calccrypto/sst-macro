@@ -17,58 +17,53 @@ namespace hw {
 SpktRegister("fattree_global_adaptive", topology, fat_tree_global_adaptive,
              "Fat tree topology with L levels, radix K, and global adaptive routing.");
 
-unsigned int
+void
 fat_tree_global_adaptive::cheapest_path(
     const std::size_t current_index,
-    const std::size_t mid_point,
+    const std::size_t midpoint,
     const switch_id dst,
-    std::vector <geometry_routable::path::Hop> & path) const
+    std::vector <geometry_routable::path::Hop> & current, // current path
+    const std::size_t current_cost,                       // cost of current path
+    std::vector <geometry_routable::path::Hop> & path,    // cheapest path path
+    std::size_t & path_cost) const                        // cost of cheapest path, initialized to INT_MAX
 {
-    // at the end of the path; only allow paths that reach destination to be chosen from
-    if ((current_index + 1) == path.size()){
-        return (path.back().sw_id == dst)?
-                                          0:       // this should be cost to get to the destination
-                                          INT_MAX;
+  // at the end of the path; only allow paths that reach destination to be chosen from
+  if ((current_index + 1) == current.size()){
+    if (current.back().sw_id == dst){
+      if (current_cost < path_cost){
+        path = current;
+        path_cost = current_cost;
+      }
     }
+    return;
+  }
 
-    int offset;
-    if (current_index < mid_point){
-        path[current_index].vc = 0; // if the current index is before the mid point, keep going up
-        offset = k_;                // up ports are [k_, 2 k_)
-    }
-    else{
-        path[current_index].vc = 1; // otherwise, go downwards
-        offset = 0;                 // down ports are [0, k_)
-    }
+  int offset;
+  if (current_index < midpoint){  // before midpoint
+    current[current_index].vc = 0; // keep going up
+    offset = k_;                   // up ports are [k_, 2 k_)
+  }
+  else{                            // at or after midpoint
+    current[current_index].vc = 1; // go downwards
+    offset = 0;                    // down ports are [0, k_)
+  }
 
-    // depth first search through ports for cheapest path to destination
-    int outport = -1;
-    int cheapest = INT_MAX;
-    for(int k = 0; k < k_; k++){
-        // set current outport to the port
-        path[current_index].outport = k + offset;
+  // depth first search through ports for cheapest path to destination
+  int outport = -1;
+  int cheapest = INT_MAX;
+  for(int k = 0; k < k_; k++){
+    // set current outport to the port
+    current[current_index].outport = k + offset;
 
-        // set next switch id to the switch that is the neighbor at the port
-        path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, path[current_index].outport));
+    // set next switch id to the switch that is the neighbor at the port
+    current[current_index + 1].sw_id = switch_number(neighbor_at_port(current[current_index].sw_id, current[current_index].outport));
 
-        // get cost to get to next switch
-        const int this_hop_cost = 0;
+    // cost of path after this hop
+    const std::size_t cost_to_next_hop = 0;
+    cheapest_path(current_index + 1, midpoint, dst, current, current_cost + cost_to_next_hop, path, path_cost);
+  }
 
-        // get cheapest cost going down this port at this switch
-        const int next_hop_cost = this_hop_cost + cheapest_path(current_index + 1, mid_point, dst, path);
-
-        // compare costs of going down each port at this switch
-        if (next_hop_cost < cheapest){
-            outport = k + offset;
-            cheapest = next_hop_cost;
-        }
-    }
-
-    // set the path to go out the cheapest port, overwriting recursion data
-    path[current_index + 1].sw_id = switch_number(neighbor_at_port(path[current_index].sw_id, outport));
-    path[current_index].outport = outport;
-
-    return cheapest;
+  return;
 }
 
 // global_adaptive routing
@@ -83,13 +78,12 @@ fat_tree_global_adaptive::global_adaptive(
   if (!path.chosen.size()){
     const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-    // allocate space for path, starting with source
-    path.chosen.clear();
-    path.chosen.resize((ncal << 1) + 1);
-    path.chosen[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+    std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
+    current[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
-    // calculate and set the path
-    cheapest_path(0, ncal, dest_sw_addr, path.chosen);
+    // find the cheapest path and set it to the packet path
+    std::size_t path_cost = INT_MAX;
+    cheapest_path(0, ncal, dest_sw_addr, current, 0, path.chosen, path_cost);
   }
 
   // linear search on path

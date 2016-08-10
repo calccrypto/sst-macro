@@ -72,47 +72,49 @@ fat_tree_multipath::multipath(
   // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
-      // check flow table first
-      Match_Fields mf;
-      mf.src = current_sw_addr;
-      mf.dst = dest_sw_addr;
+    // check flow table first
+    Match_Fields mf;
+    mf.src = current_sw_addr;
+    mf.dst = dest_sw_addr;
 
-      // if route not found, generate all possible routes  and put them into the flow table
-      Flow_Table::iterator it = flow_table.find(mf);
-      if (it == flow_table.end()){
-          const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
+    // find route in flow table
+    Flow_Table::iterator it = flow_table.find(mf);
 
-          // vector used to build all paths
-          Path path;
-          path.resize((ncal << 1) + 1);
-          path[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+    // if route not found, generate all possible routes  and put them into the flow table
+    if (it == flow_table.end()){
+      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-          // all possible paths
-          Paths paths;
-          paths.first = 0;
+      // vector used to build all paths
+      Path path;
+      path.resize((ncal << 1) + 1);
+      path[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
-          all_paths(0, ncal, dest_sw_addr, path, paths);
-          it = flow_table.insert(std::make_pair(mf, paths)).first;
-      }
+      // all possible paths
+      Paths paths;
+      paths.first = 0;
 
-      // set the packet's route and move the counter to the next path
-      path.chosen = it -> second.second[it -> second.first++];
-      it -> second.first %= it -> second.second.size();
+      all_paths(0, ncal, dest_sw_addr, path, paths);
+      it = flow_table.insert(std::make_pair(mf, paths)).first;
+    }
+
+    // set the packet's route and move the counter to the next path
+    path.chosen = it -> second.second[it -> second.first++];
+    it -> second.first %= it -> second.second.size();
   }
 
   // linear search on path
   bool found = false;
   for(geometry_routable::path::Hop const & p : path.chosen){
-      if (p.sw_id == current_sw_addr){
-          path.outport = p.outport;
-          path.vc = p.vc;
-          found = true;
-          break;
-      }
+    if (p.sw_id == current_sw_addr){
+      path.outport = p.outport;
+      path.vc = p.vc;
+      found = true;
+      break;
+    }
   }
 
   if (!found){
-      spkt_throw_printf(sprockit::value_error, "fat_tree: multipath routing did not find route to next switch");
+    spkt_throw_printf(sprockit::value_error, "fat_tree: multipath routing did not find route to next switch");
   }
 
   top_debug("fat_tree: multipath routing to get to %d from %d",

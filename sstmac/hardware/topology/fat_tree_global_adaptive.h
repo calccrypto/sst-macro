@@ -43,12 +43,15 @@ class fat_tree_global_adaptive :
   }
 
   // sets the geometry_routable::path::chosen variable
-  unsigned int
+  void
   cheapest_path(
     const std::size_t current_index,
-    const std::size_t mid_point,
+    const std::size_t midpoint,
     const switch_id dst,
-    std::vector <geometry_routable::path::Hop> & path) const;
+    std::vector <geometry_routable::path::Hop> & current, // current path
+    const std::size_t current_cost,                       // cost of current path
+    std::vector <geometry_routable::path::Hop> & path,    // final, chosen path
+    std::size_t & path_cost) const;                       // cheapest path, initialized to INT_MAX
 
   // linear search on chosen path
   void

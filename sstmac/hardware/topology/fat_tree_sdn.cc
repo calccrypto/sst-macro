@@ -39,13 +39,16 @@ fat_tree_sdn::sdn(
     if (it == flow_table.end()){
       const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
+      std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
+      current[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+
       // insert flow entry into the table
       // dont use operator[]; there is a weird bug
       it = flow_table.insert(std::make_pair (mf, Path((ncal << 1) + 1))).first;
-      (it -> second)[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
       // calculate and store path
-      cheapest_path(0, ncal, dest_sw_addr, it -> second);
+      std::size_t path_cost = INT_MAX;
+      cheapest_path(0, ncal, dest_sw_addr, current, 0, it -> second, path_cost);
     }
 
     // path should not be stored in path.chosen
