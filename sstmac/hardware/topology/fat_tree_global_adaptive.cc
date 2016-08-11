@@ -58,8 +58,10 @@ fat_tree_global_adaptive::cheapest_path(
     // set next switch id to the switch that is the neighbor at the port
     current[current_index + 1].sw_id = switch_number(neighbor_at_port(current[current_index].sw_id, current[current_index].outport));
 
-    // cost of path after this hop
+    // cost from current switch to the switch down the current port
     const std::size_t cost_to_next_hop = 0;
+
+    // cost of path after this hop
     cheapest_path(current_index + 1, midpoint, dst, current, current_cost + cost_to_next_hop, path, path_cost);
   }
 
@@ -67,6 +69,7 @@ fat_tree_global_adaptive::cheapest_path(
 }
 
 // global_adaptive routing
+// each packet gets its own route
 void
 fat_tree_global_adaptive::global_adaptive(
   switch_id current_sw_addr,
@@ -78,28 +81,34 @@ fat_tree_global_adaptive::global_adaptive(
   if (!path.chosen.size()){
     const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-    std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
-    current[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+    std::vector <geometry_routable::path::Hop> temp((ncal << 1) + 1);
+    temp[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
 
     // find the cheapest path and set it to the packet path
     std::size_t path_cost = INT_MAX;
-    cheapest_path(0, ncal, dest_sw_addr, current, 0, path.chosen, path_cost);
+    cheapest_path(0, ncal, dest_sw_addr, temp, 0, path.chosen, path_cost);
   }
 
-  // linear search on path
-  bool found = false;
-  for(geometry_routable::path::Hop const & p : path.chosen){
-    if (p.sw_id == current_sw_addr){
-      path.outport = p.outport;
-      path.vc = p.vc;
-      found = true;
-      break;
-    }
-  }
+  // chose current path
+  path.outport = path.chosen[path.index].outport;
+  path.vc = path.chosen[path.index].vc;
+  path.index++;
 
-  if (!found){
-    spkt_throw_printf(sprockit::value_error, "fat tree: global adaptive routing did not find route to next switch");
-  }
+  // use this for error checking
+  // // linear search on path
+  // bool found = false;
+  // for(geometry_routable::path::Hop const & p : path.chosen){
+  //   if (p.sw_id == current_sw_addr){
+  //     path.outport = p.outport;
+  //     path.vc = p.vc;
+  //     found = true;
+  //     break;
+  //   }
+  // }
+
+  // if (!found){
+  //   spkt_throw_printf(sprockit::value_error, "fat tree: global adaptive routing did not find route to next switch");
+  // }
 
   top_debug("fat_tree: global adaptive routing to get to %d from %d",
             int(dest_sw_addr),

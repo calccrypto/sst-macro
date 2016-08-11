@@ -57,7 +57,7 @@ class fat_tree_global_adaptive :
     Path & path,                    // final, chosen path
     std::size_t & path_cost) const; // cheapest path, initialized to INT_MAX
 
-  // linear search on chosen path
+  // each packet is assigned its own route
   void
   global_adaptive(
     switch_id current_sw_addr,

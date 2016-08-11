@@ -36,15 +36,15 @@ fat_tree_sdn::sdn(
   mf.src = path.src;
   mf.dst = path.dst;
 
-  // find route in flow table
+  // find flow in flow table
   Flow_Table::iterator it = flow_table.find(mf);
 
   // if flow not found, generate one and add it to the table
   if (it == flow_table.end()){
-    const int ncal = nearest_common_ancestor_level(path.src, dest_sw_addr);
+    const int ncal = nearest_common_ancestor_level(path.src, path.dst);
 
-    std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
-    current[0] = geometry_routable::path::Hop(path.src, -1, 0);
+    std::vector <geometry_routable::path::Hop> temp((ncal << 1) + 1);
+    temp[0] = geometry_routable::path::Hop(path.src, -1, 0);
 
     // insert flow entry into the table
     // don't use operator[]; there is a weird bug
@@ -52,23 +52,29 @@ fat_tree_sdn::sdn(
 
     // calculate and store path
     std::size_t path_cost = INT_MAX;
-    cheapest_path(0, ncal, dest_sw_addr, current, 0, it -> second, path_cost);
+    cheapest_path(0, ncal, path.dst, temp, 0, it -> second, path_cost);
   }
 
-  // look up route and figure out where to go next
-  bool found = false;
-  for(geometry_routable::path::Hop const & p : it -> second){
-    if (p.sw_id == current_sw_addr){
-      path.outport = p.outport;
-      path.vc = p.vc;
-      found = true;
-      break;
-    }
-  }
+  // chose current path
+  path.outport = it -> second[path.index].outport;
+  path.vc = it -> second[path.index].vc;
+  path.index++;
 
-  if (!found){
-    spkt_throw_printf(sprockit::value_error, "fat_tree: sdn routing did not find route to next switch");
-  }
+  // use this for error checking
+  // // look up route and figure out where to go next
+  // bool found = false;
+  // for(geometry_routable::path::Hop const & p : it -> second){
+  //   if (p.sw_id == current_sw_addr){
+  //     path.outport = p.outport;
+  //     path.vc = p.vc;
+  //     found = true;
+  //     break;
+  //   }
+  // }
+
+  // if (!found){
+  //   spkt_throw_printf(sprockit::value_error, "fat_tree: sdn routing did not find route to next switch");
+  // }
 
   top_debug("fat_tree: sdn routing to get to %d from %d",
             int(dest_sw_addr),

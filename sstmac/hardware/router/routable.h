@@ -34,13 +34,15 @@ class geometry_routable
          {}
    };
 
+   // SST/macro doesn't know about these variables and have to be filled out by the custom functions
    std::vector <Hop> chosen;                          // full path for when doing source routing
+   std::size_t index;                                 // current index in chosen path
    switch_id src;                                     // source switch
-   switch_id dst;                                     // destionation switch
-   int id;
+   switch_id dst;                                     // destination switch
 
    path() :
      outport(routing::uninitialized),
+     index(0),
      src(-1),
      dst(-1),
   #if SSTMAC_SANITY_CHECK

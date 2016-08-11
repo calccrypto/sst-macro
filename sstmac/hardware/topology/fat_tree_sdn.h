@@ -37,7 +37,7 @@ class fat_tree_sdn :
 
   virtual ~fat_tree_sdn() {}
 
-  // linear search on chosen path
+  // current, each source destionation pair gets its own route
   void
   sdn(
     switch_id current_sw_addr,
