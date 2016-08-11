@@ -34,10 +34,15 @@ class geometry_routable
          {}
    };
 
-    std::vector <Hop> chosen;                            // chosen path
+   std::vector <Hop> chosen;                          // full path for when doing source routing
+   switch_id src;                                     // source switch
+   switch_id dst;                                     // destionation switch
+   int id;
 
    path() :
      outport(routing::uninitialized),
+     src(-1),
+     dst(-1),
   #if SSTMAC_SANITY_CHECK
      vc(uninitialized)
   #else

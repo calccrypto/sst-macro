@@ -25,40 +25,39 @@ fat_tree_sdn::sdn(
   switch_id dest_sw_addr,
   geometry_routable::path & path)
 {
-  // assume current_sw_addr is the source switch
-  if (!path.chosen.size()){
-    // check flow table first
-    Match_Fields mf;
-    mf.src = current_sw_addr;
-    mf.dst = dest_sw_addr;
+  // if path.src is not set, assume that the current switch is the source
+  if (path.src == -1){
+      path.src = current_sw_addr;
+      path.dst = dest_sw_addr;
+  }
 
-    // find route in flow table
-    Flow_Table::iterator it = flow_table.find(mf);
+  // get flow information
+  Match_Fields mf;
+  mf.src = path.src;
+  mf.dst = path.dst;
 
-    // if flow not found, generate one and add it to the table
-    if (it == flow_table.end()){
-      const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
+  // find route in flow table
+  Flow_Table::iterator it = flow_table.find(mf);
 
-      std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
-      current[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+  // if flow not found, generate one and add it to the table
+  if (it == flow_table.end()){
+    const int ncal = nearest_common_ancestor_level(path.src, dest_sw_addr);
 
-      // insert flow entry into the table
-      // dont use operator[]; there is a weird bug
-      it = flow_table.insert(std::make_pair (mf, Path((ncal << 1) + 1))).first;
+    std::vector <geometry_routable::path::Hop> current((ncal << 1) + 1);
+    current[0] = geometry_routable::path::Hop(path.src, -1, 0);
 
-      // calculate and store path
-      std::size_t path_cost = INT_MAX;
-      cheapest_path(0, ncal, dest_sw_addr, current, 0, it -> second, path_cost);
-    }
+    // insert flow entry into the table
+    // don't use operator[]; there is a weird bug
+    it = flow_table.insert(std::make_pair (mf, Path((ncal << 1) + 1))).first;
 
-    // path should not be stored in path.chosen
-    path.chosen = it -> second;
+    // calculate and store path
+    std::size_t path_cost = INT_MAX;
+    cheapest_path(0, ncal, dest_sw_addr, current, 0, it -> second, path_cost);
   }
 
   // look up route and figure out where to go next
   bool found = false;
-  // this should be looping on flow table entry, not path stored in path.chosen
-  for(geometry_routable::path::Hop const & p : path.chosen){
+  for(geometry_routable::path::Hop const & p : it -> second){
     if (p.sw_id == current_sw_addr){
       path.outport = p.outport;
       path.vc = p.vc;

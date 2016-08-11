@@ -22,10 +22,10 @@ fat_tree_global_adaptive::cheapest_path(
     const std::size_t current_index,
     const std::size_t midpoint,
     const switch_id dst,
-    std::vector <geometry_routable::path::Hop> & current, // current path
-    const std::size_t current_cost,                       // cost of current path
-    std::vector <geometry_routable::path::Hop> & path,    // cheapest path path
-    std::size_t & path_cost) const                        // cost of cheapest path, initialized to INT_MAX
+    Path & current,                 // current path
+    const std::size_t current_cost, // cost of current path
+    Path & path,                    // cheapest path
+    std::size_t & path_cost) const  // cost of cheapest path, initialized to INT_MAX
 {
   // at the end of the path; only allow paths that reach destination to be chosen from
   if ((current_index + 1) == current.size()){
@@ -39,7 +39,7 @@ fat_tree_global_adaptive::cheapest_path(
   }
 
   int offset;
-  if (current_index < midpoint){  // before midpoint
+  if (current_index < midpoint){   // before midpoint
     current[current_index].vc = 0; // keep going up
     offset = k_;                   // up ports are [k_, 2 k_)
   }

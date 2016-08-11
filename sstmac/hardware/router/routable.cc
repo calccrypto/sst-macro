@@ -2,8 +2,6 @@
 
 #define enumcase(x) case x: return #x
 
-
-
 namespace sstmac {
 namespace hw {
 
@@ -42,7 +40,3 @@ tostr(routing::algorithm_t algo)
 
 }
 }
-
-
-
-

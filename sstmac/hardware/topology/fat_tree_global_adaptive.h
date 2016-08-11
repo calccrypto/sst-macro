@@ -16,6 +16,10 @@
 #include <list>
 #include <map>
 
+#include <sstmac/hardware/interconnect/switch_interconnect.h>
+#include <sstmac/hardware/packet_flow/packet_flow_stats.h>
+#include <sstmac/hardware/packet_flow/packet_flow_switch.h>
+#include <sstmac/hardware/switch/network_switch.h>
 #include <sstmac/hardware/topology/fat_tree.h>
 
 namespace sstmac {
@@ -28,8 +32,9 @@ namespace hw {
 class fat_tree_global_adaptive :
   public fat_tree
 {
-
  public:
+  typedef std::vector <geometry_routable::path::Hop> Path;
+
   virtual std::string
   to_string() const {
     return "fat tree topology (global adaptive)";
@@ -42,16 +47,15 @@ class fat_tree_global_adaptive :
     return "fattree";
   }
 
-  // sets the geometry_routable::path::chosen variable
   void
   cheapest_path(
     const std::size_t current_index,
     const std::size_t midpoint,
     const switch_id dst,
-    std::vector <geometry_routable::path::Hop> & current, // current path
-    const std::size_t current_cost,                       // cost of current path
-    std::vector <geometry_routable::path::Hop> & path,    // final, chosen path
-    std::size_t & path_cost) const;                       // cheapest path, initialized to INT_MAX
+    Path & current,                 // current path
+    const std::size_t current_cost, // cost of current path
+    Path & path,                    // final, chosen path
+    std::size_t & path_cost) const; // cheapest path, initialized to INT_MAX
 
   // linear search on chosen path
   void

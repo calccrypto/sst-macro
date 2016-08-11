@@ -13,14 +13,14 @@ ImplementFactory(sstmac::hw::packet_sent_stats);
 namespace sstmac {
 namespace hw {
 
-SpktRegister("bytes_sent", stat_collector, stat_bytes_sent);
+SpktRegister("bytes_sent",         stat_collector,    stat_bytes_sent);
 SpktRegister("congestion_spyplot", packet_sent_stats, congestion_spyplot);
-SpktRegister("congestion_delay", packet_sent_stats, packet_delay_stats);
-SpktRegister("congestion", packet_sent_stats, spyplot_and_delay_stats);
-SpktRegister("bytes_sent", packet_sent_stats, bytes_sent_collector);
-SpktRegister("byte_hops", packet_sent_stats, byte_hop_collector);
-SpktRegister("delay_histogram", packet_sent_stats, delay_histogram);
-SpktRegister("null", packet_sent_stats, null_stats);
+SpktRegister("congestion_delay",   packet_sent_stats, packet_delay_stats);
+SpktRegister("congestion",         packet_sent_stats, spyplot_and_delay_stats);
+SpktRegister("bytes_sent",         packet_sent_stats, bytes_sent_collector);
+SpktRegister("byte_hops",          packet_sent_stats, byte_hop_collector);
+SpktRegister("delay_histogram",    packet_sent_stats, delay_histogram);
+SpktRegister("null",               packet_sent_stats, null_stats);
 
 static inline double
 congestion_delay_us(const packet_stats_st& st)
