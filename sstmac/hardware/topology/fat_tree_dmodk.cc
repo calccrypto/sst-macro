@@ -33,11 +33,13 @@ fat_tree_dmodk::dmodk(
   compute_switch_coords(dest_sw_addr, dst);
 
   // if columns are the same
-  if (path.vc = (curr[1] == dst[1])){
+  if (curr[1] == dst[1]){
     path.outport = dst[1] % k_;          // go downwards [0, k_);
+    path.vc = down_dimension;
   }
   else{
     path.outport = (dst[1] % k_) + k_;   // go up and mod k towards destination column; up port range is [k, 2k)
+    path.vc = up_dimension;
   }
 
   top_debug("fat_tree: dmodk routing to get to %d from %d",

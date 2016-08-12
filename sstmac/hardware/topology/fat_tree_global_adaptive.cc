@@ -39,13 +39,13 @@ fat_tree_global_adaptive::cheapest_path(
   }
 
   int offset;
-  if (current_index < midpoint){   // before midpoint
-    current[current_index].vc = 0; // keep going up
-    offset = k_;                   // up ports are [k_, 2 k_)
+  if (current_index < midpoint){                // before midpoint
+    current[current_index].vc = up_dimension;   // keep going up
+    offset = k_;                                // up ports are [k_, 2 k_)
   }
-  else{                            // at or after midpoint
-    current[current_index].vc = 1; // go downwards
-    offset = 0;                    // down ports are [0, k_)
+  else{                                         // at or after midpoint
+    current[current_index].vc = down_dimension; // go downwards
+    offset = 0;                                 // down ports are [0, k_)
   }
 
   // depth first search through ports for cheapest path to destination
@@ -88,7 +88,6 @@ fat_tree_global_adaptive::global_adaptive(
     std::size_t path_cost = INT_MAX;
     cheapest_path(0, ncal, dest_sw_addr, temp, 0, path.chosen, path_cost);
   }
-
   // chose current path
   path.outport = path.chosen[path.index].outport;
   path.vc = path.chosen[path.index].vc;

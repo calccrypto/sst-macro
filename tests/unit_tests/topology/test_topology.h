@@ -11,7 +11,7 @@
 void test_torus_traffic(UnitTest& unit);
 void test_torus(UnitTest& unit);
 void test_crossbar(UnitTest& unit);
-void test_fattree2(UnitTest& unit);
+void test_fattree(UnitTest& unit);
 void test_fattree4(UnitTest& unit);
 void test_fattree_dmodk_2(UnitTest& unit);
 void test_fattree_dmodk_4(UnitTest& unit);

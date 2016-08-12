@@ -121,6 +121,7 @@ fat_tree::productive_path(
 int
 fat_tree::upColumnConnection(int k, int myColumn, int upPort, int myBranchSize)
 {
+
   upPort = upPort % k;
   int myReplicaID = myColumn % myBranchSize;
   int portStride = myBranchSize;

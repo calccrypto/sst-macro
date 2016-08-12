@@ -7,57 +7,85 @@ using namespace sstmac;
 using namespace sstmac::hw;
 
 void
-test_fattree4(UnitTest& unit)
+test_fattree(UnitTest& unit)
 {
     sprockit::sim_parameters params;
     sstmac::env::params = &params;
     params["geometry"] = "3 4";
     topology* top = topology_factory::get_value("fattree", &params);
-    structured_topology* ftree = test_cast(structured_topology, top);
-    assertTrue(unit, "fat tree cast topology", bool(ftree) );
 
-    /**
-        Bottom Up
-        Level 0: 0-15
-        Level 1: 16-31
-        Level 2: 32-39
-        OR
-        Top Down
-        Level 0: 32-39
-        Level 1: 16-31
-        Level 2: 0-15
+    structured_topology* ftree = test_cast(structured_topology, top);
+    assertTrue(unit, "structured topology cast topology", bool(ftree) );
+
+    fat_tree * fattree = test_cast(fat_tree, ftree);
+    assertTrue(unit, "fat tree cast structured topology", bool(fattree) );
+
+    /*
+      Level 2: 32 (2, 0) - 47 (2, 15)
+      Level 1: 16 (1, 0) - 31 (1, 15)
+      Level 0:  0 (0, 0) - 15 (0, 15)
+      -------------nodes-------------
     */
 
-    {
-        long nids[] = {0, 13, 19, 37};
-        for (int i=0; i < 4; ++i){
-            switch_id nid(nids[i]);
-            //make sure the functions work back and forth
-            coordinates coords = ftree->switch_coords(nid);
-            switch_id test_id = ftree->switch_number(coords);
-            coordinates test_coords = ftree->switch_coords(test_id);
-            assertEqual(unit, "ftree switch id", test_id, nid);
-            assertEqual(unit, "ftree coords", test_coords, coords);
+    // make sure switch_id -> coordinate and coordinate -> switch_id conversions work
+    for(switch_id sw_id = 0; sw_id < 48; sw_id++){
+        coordinates coords = fattree -> switch_coords(sw_id);
+        switch_id test_id = fattree -> switch_number(coords);
+        coordinates test_coords = fattree -> switch_coords(test_id);
+        assertEqual(unit, "fattree switch id", test_id, sw_id);
+        assertEqual(unit, "fattree coords", test_coords, coords);
+    }
+
+    coordinates coords(fattree -> ndimensions());
+
+    // make sure level 0 up connections are correct
+    coords[0] = 0;
+    for(coords[1] = 0; coords[1] < 16; coords[1]++){
+        // current switch id
+        switch_id sw_id = fattree -> switch_number(coords);
+        for(int port = 0; port < 4; port++){
+            const switch_id math = 16 + (coords[1] / 4) * 4 + port;
+            const switch_id calculated = fattree -> switch_number(fattree -> neighbor_at_port(sw_id, 4 + port));
+            assertEqual(unit, "ftree level 0 up connection", calculated, math);
         }
     }
 
-    //lets test some coordinates for switches
-    {
-        coordinates coords = ftree->switch_coords(switch_id(36));
-        assertEqual(unit, "fat tree coord check", coords, 0, 4);
+    // make sure level 1 up connections are correct
+    coords[0] = 1;
+    for(coords[1] = 0; coords[1] < 16; coords[1]++){
+        // current switch id
+        switch_id sw_id = fattree -> switch_number(coords);
+        for(int port = 0; port < 4; port++){
+            const switch_id math = 32 + (coords[1] % 4) + (4 * port);
+            const switch_id calculated = fattree -> switch_number(fattree -> neighbor_at_port(sw_id, 4 + port));
+            assertEqual(unit, "ftree level 1 up connection", calculated, math);
+        }
     }
 
-    {
-        coordinates coords = ftree->switch_coords(switch_id(21));
-        assertEqual(unit, "fat tree coord check", coords, 1, 1, 1);
+    // make sure level 2 down connections are correct
+    coords[0] = 2;
+    for(coords[1] = 0; coords[1] < 16; coords[1]++){
+        // current switch id
+        switch_id sw_id = fattree -> switch_number(coords);
+        for(int port = 0; port < 4; port++){
+            const switch_id math = 16 + (coords[1] % 4) + (4 * port);
+            const switch_id calculated = fattree -> switch_number(fattree -> neighbor_at_port(sw_id, port));
+            assertEqual(unit, "ftree level 2 down connection", calculated, math);
+        }
     }
 
-    {
-        coordinates coords = ftree->switch_coords(switch_id(13));
-        assertEqual(unit, "fat tree coord check", coords, 2, 3, 1, 0);
+    // make sure level 1 down connections are correct
+    coords[0] = 1;
+    for(coords[1] = 0; coords[1] < 16; coords[1]++){
+        // current switch id
+        switch_id sw_id = fattree -> switch_number(coords);
+        for(int port = 0; port < 4; port++){
+            const switch_id math = (coords[1] / 4) * 4 + port;
+            const switch_id calculated = fattree -> switch_number(fattree -> neighbor_at_port(sw_id, port));
+            assertEqual(unit, "ftree level 1 down connection", calculated, math);
+        }
     }
 }
-
 
 void
 test_fattree2(UnitTest& unit)

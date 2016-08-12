@@ -476,9 +476,14 @@ class topology :
   static topology*
   static_topology(sprockit::sim_parameters* params);
 
-  void *
+  void
   set_interconnect(interconnect * ic){
     interconnect_ = ic;
+  }
+
+  interconnect *
+  get_interconnect() const {
+    return interconnect_;
   }
 
  protected:
