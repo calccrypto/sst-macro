@@ -1,5 +1,7 @@
 #include <sstmac/hardware/router/minimal_routing.h>
 #include <sstmac/hardware/switch/network_switch.h>
+#include <sstmac/hardware/topology/fat_tree.h>
+#include <sprockit/util.h>
 
 namespace sstmac {
 namespace hw {
@@ -11,7 +13,7 @@ SpktRegister("minimal", router, minimal_router,
 void
 minimal_router::route(packet* pkt)
 {
-  geometry_routable* rt = pkt->interface<geometry_routable>();
+  structured_routable* rt = pkt->interface<structured_routable>();
   minimal_route_to_node(rt->toaddr(),
     rt->current_path());
   int outport = rt->port();
@@ -24,9 +26,20 @@ minimal_router::route(packet* pkt)
 }
 
 void
-minimal_router::route(packet* pkt, geometry_routable::path_set &paths)
+minimal_router::set_topology(topology *top)
 {
-  geometry_routable* rt = pkt->interface<geometry_routable>();
+  fat_tree* ft = test_cast(fat_tree, top);
+  if (ft){
+    spkt_throw(sprockit::value_error,
+               "minimal_router should not be used with fat tree - set router=fattree in params");
+  }
+  structured_router::set_topology(top);
+}
+
+void
+minimal_router::route(packet* pkt, structured_routable::path_set &paths)
+{
+  structured_routable* rt = pkt->interface<structured_routable>();
   minimal_routes_to_node(rt->toaddr(), rt->current_path(), paths);
 }
 

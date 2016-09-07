@@ -33,7 +33,7 @@ class fat_tree_global_adaptive :
   public fat_tree
 {
  public:
-  typedef std::vector <geometry_routable::path::Hop> Path;
+  typedef std::vector <structured_routable::path::Hop> Path;
 
   virtual std::string
   to_string() const {
@@ -62,13 +62,13 @@ class fat_tree_global_adaptive :
   global_adaptive(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path &path) const;
+    structured_routable::path &path) const;
 
   virtual void
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path);
+    structured_routable::path& path);
 };
 
 }

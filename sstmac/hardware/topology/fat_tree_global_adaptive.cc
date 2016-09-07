@@ -74,15 +74,15 @@ void
 fat_tree_global_adaptive::global_adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path & path) const
+  structured_routable::path & path) const
 {
   // if path has not been selected, select one before pushing to outport
   // assume current_sw_addr is the source switch
   if (!path.chosen.size()){
     const int ncal = nearest_common_ancestor_level(current_sw_addr, dest_sw_addr);
 
-    std::vector <geometry_routable::path::Hop> temp((ncal << 1) + 1);
-    temp[0] = geometry_routable::path::Hop(current_sw_addr, -1, 0);
+    std::vector <structured_routable::path::Hop> temp((ncal << 1) + 1);
+    temp[0] = structured_routable::path::Hop(current_sw_addr, -1, 0);
 
     // find the cheapest path and set it to the packet path
     std::size_t path_cost = INT_MAX;
@@ -96,7 +96,7 @@ fat_tree_global_adaptive::global_adaptive(
   // use this for error checking
   // // linear search on path
   // bool found = false;
-  // for(geometry_routable::path::Hop const & p : path.chosen){
+  // for(structured_routable::path::Hop const & p : path.chosen){
   //   if (p.sw_id == current_sw_addr){
   //     path.outport = p.outport;
   //     path.vc = p.vc;
@@ -118,7 +118,7 @@ void
 fat_tree_global_adaptive::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path)
+  structured_routable::path& path)
 {
   global_adaptive(current_sw_addr, dest_sw_addr, path);
 }

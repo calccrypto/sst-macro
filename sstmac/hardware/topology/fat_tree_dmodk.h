@@ -43,13 +43,13 @@ class fat_tree_dmodk :
   dmodk(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      geometry_routable::path &path) const;
+      structured_routable::path &path) const;
 
   virtual void
   minimal_route_to_switch(
       switch_id current_sw_addr,
       switch_id dest_sw_addr,
-      geometry_routable::path& path);
+      structured_routable::path& path);
 };
 
 

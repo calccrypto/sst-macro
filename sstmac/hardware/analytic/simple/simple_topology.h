@@ -14,7 +14,7 @@
 
 // hdtorus.h: Interface for torus networks.
 //
-// Author: Ali Pinar <apinar@sandia.gov>
+// Author: Jeremiah Wilke <jjwilke@sandia.gov>
 
 #ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_HDTORUS_H_INCLUDED
 #define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_HDTORUS_H_INCLUDED
@@ -39,7 +39,12 @@ class simple_topology :
     return "simple topology";
   }
 
-  virtual ~simple_topology() {}
+  virtual ~simple_topology();
+
+  simple_topology() :
+    actual_topology_(nullptr)
+  {
+  }
 
   void
   init_factory_params(sprockit::sim_parameters* params);
@@ -83,7 +88,7 @@ class simple_topology :
   minimal_route_to_coords(
     const coordinates& src_coords,
     const coordinates& dest_coords,
-    geometry_routable::path& path);
+    structured_routable::path& path) const;
 
   int
   minimal_distance(
@@ -126,7 +131,7 @@ class simple_topology :
     int dim,
     const coordinates& src,
     const coordinates& dst,
-    geometry_routable::path& path) const;
+    structured_routable::path& path) const;
 
  protected:
   int num_switches_;

@@ -14,7 +14,6 @@
 #include <sumi-mpi/mpi_protocol/mpi_protocol.h>
 #include <sstmac/software/process/operating_system.h>
 
-#include <sstmac/common/messages/payload.h>
 #include <sstmac/common/sstmac_env.h>
 #include <sprockit/debug.h>
 #include <sprockit/errors.h>
@@ -42,7 +41,7 @@ mpi_message::mpi_message(int src, int dst, int count,
   tag_(tag), commid_(commid),
   seqnum_(seqnum), msgid_(msgid),
   content_type_(null_content),
-  ignore_seqnum_(false),
+  in_flight_(false),
   protocol_(protocol->get_prot_id())
 {
 }
@@ -90,7 +89,7 @@ mpi_message::serialize_order(serializer& ser)
   ser & (seqnum_);
   ser & (msgid_);
   ser & (content_type_);
-  ser & (ignore_seqnum_);
+  ser & (in_flight_);
   ser & (protocol_);
 }
 
@@ -108,9 +107,34 @@ mpi_message::clone_into(mpi_message* cln) const
   cln->dst_rank_ = dst_rank_;
   cln->content_type_ = content_type_;
   cln->protocol_ = protocol_;
-  cln->ignore_seqnum_ = ignore_seqnum_;
+  cln->in_flight_ = in_flight_;
 }
 
+void
+mpi_message::buffer_send()
+{
+  if (protocol_ == mpi_protocol::RENDEZVOUS_GET){
+    message::buffer_send();
+  } else {
+    //eager protocols - already buffered
+  }
+}
+
+void
+mpi_message::move_remote_to_local()
+{
+  if (protocol_ == mpi_protocol::EAGER1_DOUBLECPY){
+    //do nothing - we do not have the remote buffer yet
+  } else {
+    message::move_remote_to_local();
+  }
+}
+
+void
+mpi_message::move_local_to_remote()
+{
+  message::move_local_to_remote();
+}
 
 //
 // Goodbye.
@@ -151,6 +175,8 @@ mpi_message::to_string() const
 {
   std::stringstream ss;
   ss << "mpimessage("
+     << (void*) local_buffer_.ptr
+     << "," << (void*) remote_buffer_.ptr
      << ", count=" << count_
      << ", type=" << type_
      << ", src=" << src_rank_
@@ -158,7 +184,7 @@ mpi_message::to_string() const
      << ", tag=" << tag_
      << ", commid" << commid_;
 
-  if (ignore_seqnum_) {
+  if (in_flight_) {
     ss << ", seq=(ignored)" << seqnum_;
   }
   else {

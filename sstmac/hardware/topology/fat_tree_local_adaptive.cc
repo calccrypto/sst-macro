@@ -23,7 +23,7 @@ void
 fat_tree_local_adaptive::adaptive(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path & path)
+  structured_routable::path & path)
 {
   coordinates dest_coords;
   compute_switch_coords(dest_sw_addr, dest_coords);
@@ -65,7 +65,7 @@ void
 fat_tree_local_adaptive::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path)
+  structured_routable::path& path)
 {
 //  adaptive(current_sw_addr, dest_sw_addr, path);
 }

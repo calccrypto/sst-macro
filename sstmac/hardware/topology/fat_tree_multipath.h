@@ -37,7 +37,7 @@ class fat_tree_multipath :
 
   virtual ~fat_tree_multipath() {}
 
-  typedef std::vector <geometry_routable::path::Hop> Path;
+  typedef std::vector <structured_routable::path::Hop> Path;
   typedef std::pair <unsigned int, std::vector <Path> > Paths;
 
   void
@@ -54,13 +54,13 @@ class fat_tree_multipath :
   multipath(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path &path);
+    structured_routable::path &path);
 
   virtual void
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path);
+    structured_routable::path& path);
 
  private:
   // fields to match packets against

@@ -6,11 +6,18 @@
 namespace sstmac {
 namespace hw {
 
+/**
+ * @brief The minimal_router class
+ * Router that performs
+ */
 class minimal_router :
   public structured_router
 {
 
  public:
+  minimal_router() :
+    structured_router(routing::minimal){}
+
   virtual ~minimal_router() {}
 
   virtual void
@@ -24,9 +31,15 @@ class minimal_router :
   virtual void
   finalize_init();
 
- protected:
   virtual void
-  route(packet* pkt, geometry_routable::path_set& paths);
+  set_topology(topology *top);
+
+ protected:
+  minimal_router(routing::algorithm_t algo) :
+    structured_router(algo){}
+
+  virtual void
+  route(packet* pkt, structured_routable::path_set& paths);
 
 };
 

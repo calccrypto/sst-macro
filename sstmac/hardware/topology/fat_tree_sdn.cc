@@ -23,7 +23,7 @@ void
 fat_tree_sdn::sdn(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path & path)
+  structured_routable::path & path)
 {
   // if path.src is not set, assume that the current switch is the source
   if (path.src == -1){
@@ -43,8 +43,8 @@ fat_tree_sdn::sdn(
   if (it == flow_table.end()){
     const int ncal = nearest_common_ancestor_level(path.src, path.dst);
 
-    std::vector <geometry_routable::path::Hop> temp((ncal << 1) + 1);
-    temp[0] = geometry_routable::path::Hop(path.src, -1, 0);
+    std::vector <structured_routable::path::Hop> temp((ncal << 1) + 1);
+    temp[0] = structured_routable::path::Hop(path.src, -1, 0);
 
     // insert flow entry into the table
     // don't use operator[]; there is a weird bug
@@ -63,7 +63,7 @@ fat_tree_sdn::sdn(
   // use this for error checking
   // // look up route and figure out where to go next
   // bool found = false;
-  // for(geometry_routable::path::Hop const & p : it -> second){
+  // for(structured_routable::path::Hop const & p : it -> second){
   //   if (p.sw_id == current_sw_addr){
   //     path.outport = p.outport;
   //     path.vc = p.vc;
@@ -85,7 +85,7 @@ void
 fat_tree_sdn::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path)
+  structured_routable::path& path)
 {
   sdn(current_sw_addr, dest_sw_addr, path);
 }

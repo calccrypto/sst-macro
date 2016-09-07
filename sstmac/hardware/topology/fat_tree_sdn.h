@@ -42,13 +42,13 @@ class fat_tree_sdn :
   sdn(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path &path);
+    structured_routable::path &path);
 
   virtual void
   minimal_route_to_switch(
     switch_id current_sw_addr,
     switch_id dest_sw_addr,
-    geometry_routable::path& path);
+    structured_routable::path& path);
 
  private:
   // fields to match packets against
@@ -79,7 +79,7 @@ class fat_tree_sdn :
    };
 
   // map packet identifier to an output port
-  typedef std::vector <geometry_routable::path::Hop> Path;
+  typedef std::vector <structured_routable::path::Hop> Path;
   typedef std::map <Match_Fields, Path> Flow_Table;
   Flow_Table flow_table;
 };

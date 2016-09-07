@@ -67,7 +67,7 @@ void
 fat_tree_multipath::multipath(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path & path)
+  structured_routable::path & path)
 {
   // if path.src is not set, assume that the current switch is the source
   if (path.src == -1){
@@ -90,7 +90,7 @@ fat_tree_multipath::multipath(
     // current working path
     Path temp;
     temp.resize((ncal << 1) + 1);
-    temp[0] = geometry_routable::path::Hop(path.src, -1, 0);
+    temp[0] = structured_routable::path::Hop(path.src, -1, 0);
 
     // all possible paths
     Paths paths;
@@ -112,7 +112,7 @@ fat_tree_multipath::multipath(
   // use this for error checking
   // // linear search on path
   // bool found = false;
-  // for(geometry_routable::path::Hop const & p : path.chosen){
+  // for(structured_routable::path::Hop const & p : path.chosen){
   //   if (p.sw_id == current_sw_addr){
   //     path.outport = p.outport;
   //     path.vc = p.vc;
@@ -134,7 +134,7 @@ void
 fat_tree_multipath::minimal_route_to_switch(
   switch_id current_sw_addr,
   switch_id dest_sw_addr,
-  geometry_routable::path& path)
+  structured_routable::path& path)
 {
   multipath(current_sw_addr, dest_sw_addr, path);
 }
