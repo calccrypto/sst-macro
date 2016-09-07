@@ -55,44 +55,99 @@ test_fattree(UnitTest& unit)
                       fattree -> switch_number(fattree -> neighbor_at_port(sw_id, 4 + port)));
         }
     }
-    assertEqual(unit, "ftree level 0 up connection", match, 64);
 
-    // make sure level 1 up connections are correct
-    match = 0;
-    coords[0] = 1;
-    for(coords[1] = 0; coords[1] < 16; coords[1]++){
-        // current switch id
-        switch_id sw_id = fattree -> switch_number(coords);
-        for(int port = 0; port < 4; port++){
-            match += ((32 + (coords[1] % 4) + (4 * port)) ==
-                      fattree -> switch_number(fattree -> neighbor_at_port(sw_id, 4 + port)));
-        }
+    {
+    network_switch* sw = switches[switch_id(7)];
+    router* router = sw->rter();
+
+    structured_routable::path path;
+    packet_flow_payload* packet = msg(22);
+    int port;
+    router->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::up_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir",
+    //               sw, path, 22);
+    packet=msg(23);
+    router->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    // this should rotate the paths taken
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::up_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir",
+    //               sw, path, 23);
+    packet = msg(15);
+    router->route(packet);
+    port = packet->next_port();
+    assertEqual(unit, "route fat tree", port, 5);
     }
-    assertEqual(unit, "ftree level 1 up connection", match, 64);
 
-    // make sure level 2 down connections are correct
-    match = 0;
-    coords[0] = 2;
-    for(coords[1] = 0; coords[1] < 16; coords[1]++){
-        // current switch id
-        switch_id sw_id = fattree -> switch_number(coords);
-        for(int port = 0; port < 4; port++){
-            match += ((16 + (coords[1] % 4) + (4 * port)) ==
-                      fattree -> switch_number(fattree -> neighbor_at_port(sw_id, port)));
-        }
+
+    {
+    network_switch* sw = switches[switch_id(26)];
+    router* router = sw->rter();
+
+    structured_routable::path path;
+    packet_flow_payload* packet = msg(4);
+    int port;
+    router->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::up_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir",
+    //                sw, path, 40);
+
+    // this should rotate the paths taken
+    packet = msg(4);
+    router->route(packet);
+    port = packet->next_port();
+    ///path = packet->rinfo().current_path();
+    //assert_dim_dir(unit, "fat tree dim/dir",
+    //                sw, path, 42);
+
+    packet = msg(15);
+    router->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::up_dimension);
+
+    packet = msg(23);
+    router->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::down_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir",
+    //                sw, path, 11);
     }
-    assertEqual(unit, "ftree level 2 down connection", match, 64);
 
-    // make sure level 1 down connections are correct
-    match = 0;
-    coords[0] = 1;
-    for(coords[1] = 0; coords[1] < 16; coords[1]++){
-        // current switch id
-        switch_id sw_id = fattree -> switch_number(coords);
-        for(int port = 0; port < 4; port++){
-            match += (((coords[1] / 4) * 4 + port) ==
-                      fattree -> switch_number(fattree -> neighbor_at_port(sw_id, port)));
-        }
+
+    {
+    network_switch* sw = switches[switch_id(65)];
+    router* rter = sw->rter();
+    structured_routable::path path;
+    packet_flow_payload* packet = msg(4);
+    int port;
+    rter->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree from top", path.dim, (int) fat_tree::down_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir at top",
+    //                sw, path, 50);
+    packet = msg(15);
+    rter->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::down_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir at top",
+    //                sw, path, 51);
+    packet = msg(23);
+    rter->route(packet);
+    port = packet->next_port();
+    //path = packet->rinfo().current_path();
+    //assertEqual(unit, "route fat tree", path.dim, (int) fat_tree::down_dimension);
+    //assert_dim_dir(unit, "fat tree dim/dir at top",
+    //                sw, path, 58);
     }
     assertEqual(unit, "ftree level 1 down connection", match, 64);
 }

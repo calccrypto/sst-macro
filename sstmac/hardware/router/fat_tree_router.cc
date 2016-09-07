@@ -40,6 +40,26 @@ fat_tree_router::build_rng()
   rng_ = RNG::Combo::construct(seeds);
 }
 
+fat_tree_router::~fat_tree_router()
+{
+  printf("deleteing fat tree router\n");
+  if (rng_) delete rng_;
+}
+
+void
+fat_tree_router::set_topology(topology *top)
+{
+  structured_router::set_topology(top);
+
+  fat_tree* ft = safe_cast(fat_tree, top);
+  if (ft->k() != k_ || ft->l() != l_){
+    spkt_throw_printf(sprockit::value_error,
+                      "fat tree router configuration (k=%d,l=%d) does not match"
+                      " topology configuration (k=%d,l=%d)",
+                      k_, l_, ft->k(), ft->l());
+  }
+}
+
 void
 fat_tree_router::init_factory_params(sprockit::sim_parameters *params)
 {
@@ -55,14 +75,14 @@ void
 fat_tree_router::route(packet* pkt)
 {
   minimal_route_to_node(pkt->toaddr(),
-    pkt->interface<geometry_routable>()->current_path());
+    pkt->interface<structured_routable>()->current_path());
 }
 
 void
 fat_tree_router::productive_paths_to_switch(
-  switch_id dst, geometry_routable::path_set &paths)
+  switch_id dst, structured_routable::path_set &paths)
 {
-  geometry_routable::path tmp_path;
+  structured_routable::path tmp_path;
   minimal_route_to_switch(dst, tmp_path);
   int dim = tmp_path.outport / k_;
   int dir = tmp_path.outport % k_;
@@ -78,7 +98,7 @@ fat_tree_router::productive_paths_to_switch(
       //paths[i].dim = fat_tree::up_dimension;
       //paths[i].dir = i;
       paths[i].vc = 0;
-      paths[i].outport = convert_to_port(fat_tree::up_dimension, i);
+      paths[i].outport = top_->convert_to_port(fat_tree::up_dimension, i);
     }
   }
 }
@@ -86,7 +106,7 @@ fat_tree_router::productive_paths_to_switch(
 void
 fat_tree_router::minimal_route_to_switch(
   switch_id ej_addr,
-  geometry_routable::path& path)
+  structured_routable::path& path)
 {
 
   rter_debug("routing from switch %d:%s -> %d:%s on fat tree router",
@@ -108,7 +128,7 @@ fat_tree_router::minimal_route_to_switch(
   else {
     //route up
     pathDim = fat_tree::up_dimension;
-    pathDir = choose_up_path();
+    pathDir = choose_up_minimal_path();
     path.vc = 0;
     ftree_rter_debug("routing up with dir %d", pathDir);
   }
@@ -116,7 +136,7 @@ fat_tree_router::minimal_route_to_switch(
 }
 
 int
-fat_tree_router::choose_up_path()
+fat_tree_router::choose_up_minimal_path()
 {
   int ret = numpicked_;
   numpicked_ = (numpicked_ + 1) % k_;
@@ -137,7 +157,6 @@ fat_tree_router::finalize_init()
   min_reachable_leaf_id_ = my_leaf_group * num_leaf_switches_reachable_;
   max_reachable_leaf_id_ = min_reachable_leaf_id_ + num_leaf_switches_reachable_;
 
-  pickstart_ = rng_->value() % k_;
   numpicked_ = 0;
   numpicktop_ = 0;
 
@@ -145,9 +164,9 @@ fat_tree_router::finalize_init()
 }
 
 int
-fat_tree_router::number_paths(message* msg) const
+fat_tree_router::number_minimal_paths(packet* pkt) const
 {
-  switch_id ej_addr = top_->endpoint_to_ejection_switch(msg->toaddr());
+  switch_id ej_addr = top_->endpoint_to_ejection_switch(pkt->toaddr());
   long ej_id = ej_addr;
   if (ej_addr == my_addr_) {
     return 1;

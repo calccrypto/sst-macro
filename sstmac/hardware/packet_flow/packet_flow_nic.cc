@@ -38,12 +38,6 @@ SpktRegister("packet_flow", netlink, packet_flow_netlink,
 
 const int packet_flow_netlink::really_big_buffer = 1<<30;
 
-packet_flow_nic::packet_flow_nic() :
-  packetizer_(0),
-  injection_credits_(0)
-{
-}
-
 void
 packet_flow_nic::init_factory_params(sprockit::sim_parameters *params)
 {
@@ -129,7 +123,7 @@ packet_flow_nic::do_send(network_message* payload)
 {
   nic_debug("packet flow: sending %s", payload->to_string().c_str());
   int vn = 0; //we only ever use one virtual network
-  schedule_delay(inj_lat_, new_event(packetizer_, &packetizer::start, vn, payload));
+  schedule_delay(inj_lat_, new_callback(packetizer_, &packetizer::start, vn, payload));
 }
 
 void
@@ -176,6 +170,12 @@ packet_flow_netlink::init_factory_params(sprockit::sim_parameters *params)
 }
 
 void
+packet_flow_netlink::deadlock_check()
+{
+  block_->deadlock_check();
+}
+
+void
 packet_flow_netlink::set_event_parent(event_scheduler* m)
 {
   block_->set_event_parent(m);
@@ -199,14 +199,14 @@ packet_flow_netlink::handle(event* ev)
     }
     case packet_flow_interface::payload: {
       packet_flow_payload* payload = static_cast<packet_flow_payload*>(ev);
-      geometry_routable* rtbl = payload->interface<geometry_routable>();
+      structured_routable* rtbl = payload->interface<structured_routable>();
       debug_printf(sprockit::dbg::packet_flow,
            "netlink %d:%p handling payload %s",
             //topology::global()->label(event_location()).c_str(),
             int(id_), this, payload->to_string().c_str());
       node_id toaddr = payload->toaddr();
       netlink_id dst_netid(toaddr / num_eject_);
-      geometry_routable::path& p = rtbl->current_path();
+      structured_routable::path& p = rtbl->current_path();
       if (dst_netid == id_){
         //stays local - goes to a node
         int node_offset = toaddr % num_eject_;
@@ -242,6 +242,11 @@ packet_flow_netlink::init()
   block_ = new packet_flow_crossbar(timestamp(0), timestamp(0), num_vc, really_big_buffer, "netlink");
   block_->set_event_location(id_);
   block_->configure_basic_ports(num_inject_ + num_eject_);
+}
+
+packet_flow_netlink::~packet_flow_netlink()
+{
+  if (block_) delete block_;
 }
 
 }

@@ -1,14 +1,14 @@
 #include <sumi-mpi/mpi_api.h>
 #include <sumi-mpi/mpi_queue/mpi_queue.h>
 #include <sstmac/software/process/backtrace.h>
+#include <sstmac/software/process/operating_system.h>
 
 namespace sumi {
-
 
 int
 mpi_api::probe(int source, int tag, MPI_Comm comm, MPI_Status *status)
 {
-  SSTMACBacktrace("MPI_Probe");
+  start_mpi_call("MPI_Probe");
   mpi_api_debug(sprockit::dbg::mpi, "MPI_Probe(%s,%s,%s)",
     src_str(source).c_str(), tag_str(tag).c_str(), comm_str(comm).c_str());
 
@@ -29,7 +29,7 @@ mpi_api::probe(int source, int tag, MPI_Comm comm, MPI_Status *status)
 int
 mpi_api::iprobe(int source, int tag, MPI_Comm comm, int *flag, MPI_Status *status)
 {
-  SSTMACBacktrace("MPI_Iprobe");
+  start_mpi_call("MPI_Iprobe");
   mpi_api_debug(sprockit::dbg::mpi, "MPI_Iprobe(%s,%s,%s)",
     src_str(source).c_str(), tag_str(tag).c_str(), comm_str(comm).c_str());
 
@@ -38,7 +38,13 @@ mpi_api::iprobe(int source, int tag, MPI_Comm comm, int *flag, MPI_Status *statu
   if (found){
     *flag = 1;
   } else {
-    *flag = 0;
+    if (iprobe_delay_us_){
+      queue_->forward_progress(1e-6*iprobe_delay_us_);
+      found = queue_->iprobe(commPtr, source, tag, status);
+    }
+
+    if (found) *flag = 1;
+    else       *flag = 0;
   }
 
   return MPI_SUCCESS;

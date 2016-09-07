@@ -11,7 +11,7 @@
 
 // flattenedbutterfly.h: Interface for torus networks.
 //
-// Author: Ali Pinar <apinar@sandia.gov>
+// Author: Jeremiah Wilke <jjwilke@sandia.gov>
 
 #ifndef SSTMAC_HARDWARE_NETWORK_TOPOLOGY_flattenedbutterfly_H_INCLUDED
 #define SSTMAC_HARDWARE_NETWORK_TOPOLOGY_flattenedbutterfly_H_INCLUDED
@@ -23,11 +23,10 @@ namespace sstmac {
 namespace hw {
 
 /**
-    See High Performance Datacenter Networks by
-    Dennis Abts
-    John Kim
-    For figures/detailed explanation
-*/
+ * @brief The flattened_butterfly class
+ * Encapsulates a flattened butterfly topology as described in
+ * "High Performance Datacenter Networks" by Abts and Kim
+ */
 class flattened_butterfly :
   public abstract_butterfly
 {
@@ -57,7 +56,7 @@ class flattened_butterfly :
   minimal_route_to_coords(
     const coordinates &src_coords,
     const coordinates &dest_coords,
-    geometry_routable::path& path);
+    structured_routable::path& path) const;
 
   int
   minimal_distance(const coordinates &src_coords,
@@ -77,7 +76,7 @@ class flattened_butterfly :
     int dim,
     const coordinates& src,
     const coordinates& dst,
-    geometry_routable::path& path) const;
+    structured_routable::path& path) const;
 
  protected:
   virtual void

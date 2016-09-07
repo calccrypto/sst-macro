@@ -1,17 +1,4 @@
-/*
- *  This file is part of SST/macroscale:
- *               The macroscale architecture simulator from the SST suite.
- *  Copyright (c) 2009 Sandia Corporation.
- *  This software is distributed under the BSD License.
- *  Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,
- *  the U.S. Government retains certain rights in this software.
- *  For more information, see the LICENSE file in the top
- *  SST/macroscale directory.
- */
-// butterfly.cc: Implementation of butterfly networks.
-//
-// Based on butterfly.c by Jim Schutt
-// Adapted by Curtis Janssen <cljanss@ca.sandia.gov>
+// Author: Jeremiah Wilke <jjwilke@sandia.gov>
 
 #include <sstmac/hardware/topology/butterfly.h>
 #include <sprockit/sim_parameters.h>
@@ -45,7 +32,7 @@ abstract_butterfly::productive_path(
   int dim,
   const coordinates &src,
   const coordinates &dst,
-  geometry_routable::path& path) const
+  structured_routable::path& path) const
 {
   spkt_throw(sprockit::unimplemented_error,
     "butterfly::productive_path: should never be called");
@@ -210,7 +197,7 @@ void
 butterfly::minimal_route_to_coords(
   const coordinates &src_coords,
   const coordinates &dest_coords,
-  geometry_routable::path& path)
+  structured_routable::path& path) const
 {
   //we have to route our current level
   int current_dim = src_coords[nfly_ - 1];
@@ -224,7 +211,7 @@ butterfly::minimal_route_to_coords(
 
 void
 butterfly::productive_paths(
-  geometry_routable::path_set &paths,
+  structured_routable::path_set &paths,
   const coordinates &current,
   const coordinates &dst)
 {
