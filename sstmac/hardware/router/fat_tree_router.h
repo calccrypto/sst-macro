@@ -84,8 +84,7 @@ class fat_tree_router :
   int
   number_minimal_paths(packet* pkt) const;
 
-
- private:
+ protected:
   int l_;
   int k_;
 
@@ -108,14 +107,8 @@ class fat_tree_router :
 
   int numpicktop_;
   int pickstarttop_;
-
-
-
 };
-
-
 
 }
 }
 #endif
-
