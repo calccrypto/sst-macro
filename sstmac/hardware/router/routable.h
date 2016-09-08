@@ -24,27 +24,27 @@ class structured_routable
    int geometric_id;
    sprockit::metadata_bits<uint32_t> metadata;
 
-   struct Hop {
-     switch_id sw_id;                                 // at this switch
-     int outport;                                     // go out this port
-     int vc;                                          // in this direction
+   // struct Hop {
+   //   switch_id sw_id;                                 // at this switch
+   //   int outport;                                     // go out this port
+   //   int vc;                                          // in this direction
 
-     Hop(switch_id sw = -1, int op = -1, int dir = -1)
-         : sw_id(sw), outport(op), vc(dir)
-         {}
-   };
+   //   Hop(switch_id sw = -1, int op = -1, int dir = -1)
+   //       : sw_id(sw), outport(op), vc(dir)
+   //       {}
+   // };
 
-   // SST/macro doesn't know about these variables and have to be filled out by the custom functions
-   std::vector <Hop> chosen;                          // full path for when doing source routing
-   std::size_t index;                                 // current index in chosen path
-   switch_id src;                                     // source switch
-   switch_id dst;                                     // destination switch
+   // // SST/macro doesn't know about these variables and have to be filled out by the custom functions
+   // std::vector <Hop> chosen;                          // full path for when doing source routing
+   // std::size_t index;                                 // current index in chosen path
+   // switch_id src;                                     // source switch
+   // switch_id dst;                                     // destination switch
 
    path() :
      outport(routing::uninitialized),
-     index(0),
-     src(-1),
-     dst(-1),
+     // index(0),
+     // src(-1),
+     // dst(-1),
   #if SSTMAC_SANITY_CHECK
      vc(uninitialized)
   #else

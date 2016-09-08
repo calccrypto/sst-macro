@@ -52,10 +52,10 @@ class fat_tree_router :
     return "fattreerouter";
   }
 
-  void
+  virtual void
   route(packet* pkt);
 
- private:
+ protected:
   /**
    * @brief build_rng
    * Build the random number generator for selecting paths
