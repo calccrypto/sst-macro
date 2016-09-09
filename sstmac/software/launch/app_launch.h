@@ -168,4 +168,3 @@ DeclareFactory(app_launch, sw::app_id, parallel_runtime*);
 
 
 #endif // APPMANAGER_H
-

@@ -77,7 +77,9 @@ job_launcher::satisfy_launch_request(app_launch* appman)
     }
 
     sw::launch_event* lmsg = new launch_event(appman->app_template(),
-                                    appman->aid(), task_id(i), appman->core_affinities());
+                                              appman->aid(),
+                                              task_id(i),
+                                              appman->core_affinities());
     dst_node->handle(lmsg);
   }
 }

@@ -88,4 +88,3 @@ class default_job_launcher :
 
 
 #endif // JOB_LAUNCHER_H
-
