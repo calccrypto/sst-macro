@@ -13,6 +13,7 @@
 #define SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREESDNROUTER_H_INCLUDED
 
 #include <sstmac/hardware/router/fat_tree_router.h>
+#include <set>
 
 namespace sstmac {
 namespace hw {
@@ -49,30 +50,32 @@ class fat_tree_sdn_router :
               (src == mf.src) &&
               (dst == mf.dst));
     }
+
+    bool operator<(const Match_Fields & mf) const {
+      return ((flow_id < mf.flow_id)?true:
+              ((src < mf.src)?true:
+               (dst < mf.dst)));
+    }
+
   };
 
-  typedef std::list <Match_Fields> Entries;                     // ordered set of all patterns to match against
-  typedef void * Action;                                        // functors/std::function
-  typedef std::list <std::pair <Action, std::string> > Actions; // actions and some unique id
+  typedef std::set <Match_Fields> Entries;                      // all patterns to match against
+  typedef void * Action;                                        // functors/std::function/lambdas
+  typedef std::set <std::pair <Action, std::string> > Actions;  // actions and some unique id
   typedef std::pair <Entries, Actions> SDN_Table;               // a single table of multiple matching patterns and associated actions
 
-  // get entries from a table to modify
-  Entries
-  get_entries(const int table_id) const;
-
-  // get actions from a table to modify
-  Actions
-  get_actions(const int table_id) const;
-
-  // set the entire entry list of a table
+  // add entry to table
   void
-  set_entries(const int table_id,
-              const Entries & entries);
+  add_entry(const int table_id,
+            const Match_Fields & entry);
 
-  // set the entire action list of a table
+  // add action to table
   void
-  set_actions(const int table_id,
-              const Actions & actions);
+  add_action(const int table_id,
+             const Action & action,
+             const std::string & name);
+
+  // no delete functions
 
  private:
   Match_Fields *
@@ -83,7 +86,7 @@ class fat_tree_sdn_router :
   route(packet* pkt);
 
  private:
-  std::vector <SDN_Table> tables;
+  std::vector <SDN_Table> tables;                               // flow tables
 };
 
 }

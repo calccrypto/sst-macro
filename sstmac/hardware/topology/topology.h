@@ -259,6 +259,25 @@ class topology :
   /**** END PURE VIRTUAL INTERFACE *****/
 
   /**
+     Generate a path that is considered the cheapest, given the statistics of the inteconnect.
+     The 3 argument version should be a pure virtual function, but for now, will just return an empty path.
+
+     @param src The source node address
+     @param dst The destination node address
+     @param stats A pointer to the statistics data; Type will change once established
+     @return The path chosen by the topology
+  */
+  virtual std::vector <std::pair <switch_id, int> >
+  cheapest_path(const node_id src, const node_id dst, void * stats) const {
+      return {};
+  }
+
+  virtual std::vector <std::pair <switch_id, int> >
+  cheapest_path(const std::pair <node_id, node_id> & sd, void * stats) const {
+      return cheapest_path(sd.first, sd.second, stats);
+  }
+
+  /**
    Template utility function for allowing any specific map type
    to be connected.  This creates an equivalent map of connectables that
    then calls the actual #connect_objects function

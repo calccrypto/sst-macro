@@ -30,42 +30,25 @@ fat_tree_sdn_router::~fat_tree_sdn_router()
   printf("deleteing fat tree sdn router\n");
 }
 
-// get entries from a table to modify
-fat_tree_sdn_router::Entries
-fat_tree_sdn_router::get_entries(const int table_id) const
+void
+fat_tree_sdn_router::add_entry(const int table_id,
+                               const Match_Fields & entry)
 {
   if (table_id >= tables.size()){
-    return {};
+    tables.resize(table_id + 1);
   }
-  return tables[table_id].first; // return modifiable data
-}
-
-// get actions from a table to modify
-fat_tree_sdn_router::Actions
-fat_tree_sdn_router::get_actions(const int table_id) const
-{
-  if (table_id >= tables.size()){
-      return {};
-  }
-  return tables[table_id].second; // return modifiable data
+  tables[table_id].first.insert(entry);
 }
 
 void
-fat_tree_sdn_router::set_entries(const int table_id,
-                                 const Entries & entries)
+fat_tree_sdn_router::add_action(const int table_id,
+                                const Action & action,
+                                const std::string & name)
 {
-  if (table_id < tables.size()){
-    tables[table_id].first = entries;
+  if (table_id >= tables.size()){
+    tables.resize(table_id + 1);
   }
-}
-
-void
-fat_tree_sdn_router::set_actions(const int table_id,
-                                const Actions & actions)
-{
-  if (table_id < tables.size()){
-    tables[table_id].second = actions;
-  }
+  tables[table_id].second.insert(std::make_pair(action, name));
 }
 
 fat_tree_sdn_router::Match_Fields *
@@ -93,14 +76,14 @@ fat_tree_sdn_router::route(packet* pkt)
   // search each table for matches
   for(SDN_Table const & table : tables){
     // search each entry in the current table for matches
-    for(Match_Fields const & match_field: table.first){
-      // if match found, run the actions on the packet
-      if (*packet_fields == match_field){
-        // for(std::function & action : sdn_table.second){
-        //   action(&pkt);
-        // }
-        break;
-      }
+    Entries::const_iterator it = table.first.find(*packet_fields);
+
+    // if match found, run the actions on the packet
+    if (it != table.first.end()){
+      // for(std::function & action : table.second){
+      //   action(&pkt);
+      // }
+      break;
     }
   }
 

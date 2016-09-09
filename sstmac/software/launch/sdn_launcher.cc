@@ -20,21 +20,13 @@ sdn_job_launcher::handle_new_launch_request(app_launch* appman)
       //do whatever
   }
 
-  // set of sd pairs that have already been established (not sure if necessary)
-  // std::set <std::pair <int, int> > already_set;
-
-  hw::topology * topo = appman->topol();
-
   // generate routes based on the satistics and the topology
-  // for (each communication in the job){
-    // if (already_set.find(sd) == already_set.end())
-      // const Route = topo -> cheapest_route(sd, stats)
-      // for (each hop of the route){
-        // add this entry to the table (might have to change method fo raccessing the tables)
-      // }
-      // already_set.insert(sd)
-    // }
-  //
+  for(std::pair <node_id, node_id> const & sd : std::vector <std::pair <node_id, node_id> > ()){
+    for (std::pair <switch_id, int> const & hop : appman->topol()->cheapest_path(sd, nullptr)){
+      // add this entry to the table (might have to change method for accessing the tables)
+    }
+  }
+
 
 #if CUSTOM_LAUNCH
   /** You can implement your own custom launch */

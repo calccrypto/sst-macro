@@ -13,7 +13,7 @@
 #define SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREEGLOBALADAPTIVEROUTER_H_INCLUDED
 
 #include <sstmac/hardware/router/fat_tree_router.h>
-#include <sstmac/common/rng.h>
+#include <set>
 
 namespace sstmac {
 namespace hw {
@@ -49,6 +49,12 @@ class fat_tree_global_adaptive_router :
       return ((src == mf.src) &&
               (dst == mf.dst));
     }
+
+    bool operator<(const Match_Fields & mf) const {
+      return ((src < mf.src)?true:
+              (dst < mf.dst));
+    }
+
   };
 
   // (src, dst) -> outport
@@ -56,15 +62,22 @@ class fat_tree_global_adaptive_router :
       Match_Fields match_fields;
       int vc;
       int outport;
+
+      bool operator==(const Entry & entry) const {
+          return ((match_fields == entry.match_fields) && (vc == entry.vc) && (outport == entry.outport));
+      }
+
+      bool operator<(const Entry & entry) const {
+          return ((match_fields < entry.match_fields)?true:((vc < entry.vc)?true:(outport < entry.outport)));
+      }
   };
 
-  typedef std::list <Entry> Table;
-
-  Table
-  get_table() const;
+  typedef std::set <Entry> Table;
 
   void
-  set_table(const Table & new_table);
+  add_entry(const Entry & entry);
+
+  // no delete entry
 
   Match_Fields *
   get_packet_metadata(packet * pkt) const;

@@ -30,23 +30,17 @@ fat_tree_global_adaptive_router::~fat_tree_global_adaptive_router()
   printf("deleteing fat tree global adaptive router\n");
 }
 
-fat_tree_global_adaptive_router::Table
-fat_tree_global_adaptive_router::get_table() const
-{
-  return table;
-}
-
 void
-fat_tree_global_adaptive_router::set_table(const fat_tree_global_adaptive_router::Table & new_table)
+fat_tree_global_adaptive_router::add_entry(const Entry & entry)
 {
-  table = new_table;
+  table.insert(entry);
 }
 
 fat_tree_global_adaptive_router::Match_Fields *
 fat_tree_global_adaptive_router::get_packet_metadata(packet * pkt) const
 {
   if (!pkt){
-      return nullptr;
+    return nullptr;
   }
 
   // do something with
@@ -61,16 +55,16 @@ fat_tree_global_adaptive_router::route(packet* pkt)
   const Match_Fields * const packet_fields = get_packet_metadata(pkt);
 
   if (!packet_fields){
-      return;
+    return;
   }
 
   for(Entry const & entry : table){
-      if (*packet_fields == entry.match_fields){
-          structured_routable::path & path = pkt->interface<structured_routable>()->current_path();
-          path.vc = entry.vc;
-          path.outport = entry.outport;
-          break;
-      }
+    if (*packet_fields == entry.match_fields){
+      structured_routable::path & path = pkt->interface<structured_routable>()->current_path();
+      path.vc = entry.vc;
+      path.outport = entry.outport;
+      break;
+    }
   }
 }
 
