@@ -1,5 +1,5 @@
 /*
- *  This file is part of SST/macroscale:
+1;3201;0c *  This file is part of SST/macroscale:
  *               The macroscale architecture simulator from the SST suite.
  *  Copyright (c) 2009 Sandia Corporation.
  *  This software is distributed under the BSD License.
@@ -171,4 +171,3 @@ network_switch::connect(
 
 }
 }
-
