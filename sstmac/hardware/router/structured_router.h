@@ -12,7 +12,7 @@ namespace hw {
 
 /**
  * @brief The structured_router class
- * Implements a routher that computes path on-the-fly using the geometry of the topology
+ * Implements a router that computes path on-the-fly using the geometry of the topology
  * rather than using a table-based scheme with a table stored in the router.
  * For example, a computation is performed on 3D torus coordinates to determine if
  * +/- X,Y,Z is the required direction rather than just looking up port numbers in a table.

@@ -9,10 +9,10 @@
  *  SST/macroscale directory.
  */
 
-#include <sstmac/hardware/router/fat_tree_sdn_router.h>
+#include <sstmac/hardware/router/sdn_router.h>
 #include <sstmac/hardware/router/routable.h>
 #include <sstmac/hardware/switch/network_switch.h>
-#include <sstmac/hardware/topology/fat_tree.h>
+#include <sstmac/hardware/topology/structured_topology.h>
 #include <sprockit/util.h>
 #include <sprockit/sim_parameters.h>
 #include <cmath>
@@ -23,15 +23,15 @@
 namespace sstmac {
 namespace hw {
 
-SpktRegister("fattree_sdn | ftree_sdn", router, fat_tree_sdn_router);
+SpktRegister("sdn", router, sdn_router);
 
-fat_tree_sdn_router::~fat_tree_sdn_router()
+sdn_router::~sdn_router()
 {
-  printf("deleteing fat tree sdn router\n");
+  printf("deleteing sdn router\n");
 }
 
 void
-fat_tree_sdn_router::add_entry(const int table_id,
+sdn_router::add_entry(const int table_id,
                                const Match_Fields & entry)
 {
   if (table_id >= tables.size()){
@@ -41,7 +41,7 @@ fat_tree_sdn_router::add_entry(const int table_id,
 }
 
 void
-fat_tree_sdn_router::add_action(const int table_id,
+sdn_router::add_action(const int table_id,
                                 const Action & action,
                                 const std::string & name)
 {
@@ -51,8 +51,8 @@ fat_tree_sdn_router::add_action(const int table_id,
   tables[table_id].second.insert(std::make_pair(action, name));
 }
 
-fat_tree_sdn_router::Match_Fields *
-fat_tree_sdn_router::get_packet_metadata(packet * pkt) const
+sdn_router::Match_Fields *
+sdn_router::get_packet_metadata(packet * pkt) const
 {
   if (!pkt){
       return nullptr;
@@ -65,7 +65,7 @@ fat_tree_sdn_router::get_packet_metadata(packet * pkt) const
 }
 
 void
-fat_tree_sdn_router::route(packet* pkt)
+sdn_router::route(packet* pkt)
 {
   const Match_Fields * const packet_fields = get_packet_metadata(pkt);
 
@@ -90,5 +90,16 @@ fat_tree_sdn_router::route(packet* pkt)
   delete packet_fields;
 }
 
+/*
+void
+sdn_router::productive_paths_to_switch(
+  switch_id dst,
+  structured_routable::path_set& paths)
+{
+  coordinates my_coords = top_->switch_coords(my_addr_);
+  coordinates dst_coords = top_->switch_coords(dst);
+  top_->productive_paths(paths, my_coords, dst_coords);
+}
+*/
 }
 }

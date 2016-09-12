@@ -12,27 +12,29 @@
 #ifndef SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREESDNROUTER_H_INCLUDED
 #define SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREESDNROUTER_H_INCLUDED
 
-#include <sstmac/hardware/router/fat_tree_router.h>
+#include <sstmac/hardware/router/structured_router.h>
+#include <sstmac/hardware/topology/coordinates.h>
+
 #include <set>
+#include <vector>
 
 namespace sstmac {
 namespace hw {
 
 /**
- * @brief The fat_tree_sdn_router class
+ * @brief The sdn_router class
  * Router encapsulating the special routing computations that must occur on
  * a fat tree topology.
  */
-class fat_tree_sdn_router :
-  public fat_tree_router
+class sdn_router :
+  public structured_router
 {
  public:
-  virtual ~fat_tree_sdn_router();
+  virtual ~sdn_router();
 
-  fat_tree_sdn_router() :
-      fat_tree_router()
-  {
-  }
+  sdn_router() :
+      structured_router(routing::minimal)
+  {}
 
   virtual std::string
   to_string() const {
@@ -84,6 +86,15 @@ class fat_tree_sdn_router :
  public:
   virtual void
   route(packet* pkt);
+
+//  virtual void
+//  productive_paths_to_switch(
+//    switch_id dst,
+//    structured_routable::path_set& paths);
+
+ protected:
+  sdn_router(routing::algorithm_t algo) :
+      structured_router(algo){}
 
  private:
   std::vector <SDN_Table> tables;                               // flow tables
