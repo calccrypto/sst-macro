@@ -17,11 +17,6 @@ int main(int argc, char** argv)
             test_torus(unit);
         std::cout << "Testing fat tree...\n";
             test_fattree(unit);
-//            test_fattree2(unit);
-//            test_fattree4(unit);
-//        std::cout << "Testing fat tree (dmodk)...\n";
-//            test_fattree_dmodk_2(unit);
-//            test_fattree_dmodk_4(unit);
 //        std::cout << "Testing crossbar...\n";
 //            test_crossbar(unit);
 //        std::cout << "Testing butterfly...\n";

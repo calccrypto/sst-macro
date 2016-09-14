@@ -17,8 +17,8 @@
 #include <sprockit/sim_parameters.h>
 #include <cmath>
 
-#define ftree_sdn_rter_debug(...) \
-  rter_debug("fat tree (sdn): %s", sprockit::printf(__VA_ARGS__).c_str())
+#define sdn_rter_debug(...) \
+  rter_debug("sdn: %s", sprockit::printf(__VA_ARGS__).c_str())
 
 namespace sstmac {
 namespace hw {
@@ -32,7 +32,7 @@ sdn_router::~sdn_router()
 
 void
 sdn_router::add_entry(const int table_id,
-                               const Match_Fields & entry)
+                      const Match_Fields & entry)
 {
   if (table_id >= tables.size()){
     tables.resize(table_id + 1);
@@ -42,8 +42,8 @@ sdn_router::add_entry(const int table_id,
 
 void
 sdn_router::add_action(const int table_id,
-                                const Action & action,
-                                const std::string & name)
+                       const Action & action,
+                       const std::string & name)
 {
   if (table_id >= tables.size()){
     tables.resize(table_id + 1);
@@ -90,16 +90,5 @@ sdn_router::route(packet* pkt)
   delete packet_fields;
 }
 
-/*
-void
-sdn_router::productive_paths_to_switch(
-  switch_id dst,
-  structured_routable::path_set& paths)
-{
-  coordinates my_coords = top_->switch_coords(my_addr_);
-  coordinates dst_coords = top_->switch_coords(dst);
-  top_->productive_paths(paths, my_coords, dst_coords);
-}
-*/
 }
 }

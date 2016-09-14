@@ -38,7 +38,7 @@ class sdn_router :
 
   virtual std::string
   to_string() const {
-    return "fattreesdnrouter";
+    return "sdnrouter";
   }
 
   // some subset of Packet
@@ -86,11 +86,6 @@ class sdn_router :
  public:
   virtual void
   route(packet* pkt);
-
-//  virtual void
-//  productive_paths_to_switch(
-//    switch_id dst,
-//    structured_routable::path_set& paths);
 
  protected:
   sdn_router(routing::algorithm_t algo) :

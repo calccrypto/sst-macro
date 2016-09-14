@@ -48,8 +48,7 @@ test_topology_SOURCES = \
     topology/top_dragonfly.cc \
     topology/top_fattree.cc \
     topology/top_fbfly.cc \
-    topology/top_hdtorus.cc #
-#    topology/top_fattree_dmodk.cc
+    topology/top_hdtorus.cc
 
 test_unit_test_SOURCES = \
     test_unit_test.cc

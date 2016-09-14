@@ -110,14 +110,10 @@ nobase_library_include_HEADERS = \
   router/valiant_routing.h \
   router/fat_tree_router.h \
   \
-  router/fat_tree_dmodk_router.h \
   router/sdn_router.h \
+  router/fat_tree_dmodk_router.h \
   router/fat_tree_global_adaptive_router.h \
   router/fat_tree_local_adaptive_router.h
-  # topology/fat_tree_local_adaptive.h \
-  # topology/fat_tree_global_adaptive.h \
-  # topology/fat_tree_sdn.h \
-  # topology/fat_tree_multipath.h
 
 libsstmac_hw_la_SOURCES =  \
   analytic/simple/null_nic.cc \
@@ -185,11 +181,7 @@ libsstmac_hw_la_SOURCES =  \
   topology/cartesian_topology.cc \
   topology/topology.cc \
   \
-  router/fat_tree_dmodk_router.cc \
   router/sdn_router.cc \
+  router/fat_tree_dmodk_router.cc \
   router/fat_tree_global_adaptive_router.cc \
   router/fat_tree_local_adaptive_router.cc
-  # topology/fat_tree_local_adaptive.cc \
-  # topology/fat_tree_global_adaptive.cc \
-  # topology/fat_tree_sdn.cc \
-  # topology/fat_tree_multipath.cc
