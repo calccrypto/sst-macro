@@ -1,5 +1,0 @@
-<map id="sstmac::SimulationQueue::setNextWorker" name="sstmac::SimulationQueue::setNextWorker">
-<area shape="rect" id="node2" href="$namespacesstmac.html#a3ded5f1799f543b91d0df0e48bfa90e9" title="sstmac::finalize" alt="" coords="225,5,340,32"/>
-<area shape="rect" id="node3" href="$namespacesstmac.html#a7f9d64758abf24ae691844fee382ae7e" title="sstmac::init" alt="" coords="237,56,328,83"/>
-<area shape="rect" id="node4" href="$namespacesstmac.html#aa032c8bc18f20403febe158b606799a6" title="sstmac::run" alt="" coords="237,107,328,133"/>
-</map>

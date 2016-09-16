@@ -1,9 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrouter.html" title="router" alt="" coords="5,46,60,73"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="sstmac::hw::structured\l_router" alt="" coords="108,39,264,80"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="sstmac::hw::fat_tree\l_router" alt="" coords="312,5,455,47"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__router.html" title="sstmac::hw::minimal\l_router" alt="" coords="312,71,455,112"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="sstmac::hw::minimal\l_adaptive_router" alt="" coords="503,37,645,79"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1valiant__router.html" title="sstmac::hw::valiant\l_router" alt="" coords="506,103,642,144"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1ugal__router.html" title="sstmac::hw::ugal_router" alt="" coords="693,110,856,137"/>
+<area shape="rect" id="node1" href="$classrouter.html" title="router" alt="" coords="6,208,61,235"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="110,201,266,242"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="The fat_tree_router class Router encapsulating the special routing computations that must occur on a ..." alt="" coords="323,103,466,145"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="323,201,466,242"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1sdn__router.html" title="The sdn_router class Router encapsulating the special routing computations that must occur on a fat t..." alt="" coords="315,267,474,293"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1fat__tree__dmodk__router.html" title="The fat_tree_dmodk_router class Router encapsulating the special routing computations that must occur..." alt="" coords="531,5,674,46"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive__router.html" title="The fat_tree_global_adaptive_router class Router encapsulating the special routing computations that ..." alt="" coords="523,70,682,111"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1fat__tree__local__adaptive__router.html" title="The fat_tree_local_adaptive_router class Router encapsulating the special routing computations that m..." alt="" coords="527,135,679,177"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="The minimal_adaptive_router class Performs some amount of adaptive routing, choosing between the leas..." alt="" coords="531,201,674,242"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="535,266,671,307"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1ugal__router.html" title="The ugal_router class Encapsulates a router that performs Univeral Globally Adaptive Load&#45;balanced ro..." alt="" coords="731,273,893,300"/>
 </map>

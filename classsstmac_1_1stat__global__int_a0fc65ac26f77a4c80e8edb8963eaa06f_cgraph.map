@@ -1,8 +1,7 @@
 <map id="sstmac::stat_global_int::clone_me" name="sstmac::stat_global_int::clone_me">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__global__int.html#aec359fe439d4bdb905486634d70bc028" title="sstmac::stat_global\l_int::clone_into" alt="" coords="405,64,541,105"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="189,5,340,47"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__global__int.html#af80711cd7b7775c14b67c643ab30e495" title="sstmac::stat_global\l_int::set_label" alt="" coords="197,123,333,164"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1stat__global__int.html#a1e43697c1cae22c649a33add29ce16d7" title="sstmac::stat_global\l_int::stat_global_int" alt="" coords="197,188,333,229"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="388,13,557,39"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1stat__global__int.html#a57d8eb0ab9a2d33375de47672e558d53" title="sstmac::stat_global\l_int::dump" alt="" coords="405,129,541,171"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__global__int.html#aec359fe439d4bdb905486634d70bc028" title="sstmac::stat_global\l_int::clone_into" alt="" coords="197,5,333,46"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="190,70,341,111"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__global__int.html#af80711cd7b7775c14b67c643ab30e495" title="sstmac::stat_global\l_int::set_label" alt="" coords="197,135,333,177"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1stat__global__int.html#a1e43697c1cae22c649a33add29ce16d7" title="sstmac::stat_global\l_int::stat_global_int" alt="" coords="197,201,333,242"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="390,77,559,104"/>
 </map>

@@ -1,9 +1,0 @@
-<map id="sstmac::hw::hypercube::~hypercube" name="sstmac::hw::hypercube::~hypercube">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1hypercube.html#a71628f2bed5d60a92921356feb689a92" title="Given a set of connectables, connect them appropriately. " alt="" coords="220,5,379,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1hypercube.html#a4b7b440a219fddbfd0238df1e95f59fc" title="sstmac::hw::hypercube\l::convert_to_port" alt="" coords="220,71,379,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1hypercube.html#ab512dfe0cc6378075439eccc5b0d4bcc" title="sstmac::hw::hypercube\l::init_factory_params" alt="" coords="220,136,379,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1hypercube.html#ae856019dc668d35a2cead46627970b57" title="The function accepts either source or node coordinates. " alt="" coords="220,201,379,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1hypercube.html#ad3d41ccffbb0291e2ae3674633e97e78" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="212,267,387,308"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1hypercube.html#a090543076b55859d603f17ea33cc67aa" title="sstmac::hw::hypercube\l::name" alt="" coords="220,332,379,373"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1hypercube.html#a341fc57523566a1f0d05f9a20ee71f2a" title="sstmac::hw::hypercube\l::productive_path" alt="" coords="220,397,379,439"/>
-</map>

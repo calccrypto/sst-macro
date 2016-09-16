@@ -1,11 +1,3 @@
 <map id="sumi::parsedumpi_callbacks::getmpi" name="sumi::parsedumpi_callbacks::getmpi">
-<area shape="rect" id="node2" href="$classsumi_1_1parsedumpi__callbacks.html#a29a6aee1a921a1ecac084ad2bd142bc3" title="Remove a request from the map. " alt="" coords="240,5,427,47"/>
-<area shape="rect" id="node3" href="$classsumi_1_1parsedumpi__callbacks.html#a9d18b55ec43008b67a187983df8db18b" title="Complete multiple requests. " alt="" coords="240,71,427,112"/>
-<area shape="rect" id="node4" href="$classsumi_1_1parsedumpi__callbacks.html#a80eefff4708cd7298c88e2e8634bb0ef" title="Get an mpiid. " alt="" coords="240,136,427,177"/>
-<area shape="rect" id="node5" href="$classsumi_1_1parsedumpi__callbacks.html#a33a4bc66d54845df2f452fee16157703" title="Get a single request handle. " alt="" coords="240,201,427,243"/>
-<area shape="rect" id="node6" href="$classsumi_1_1parsedumpi__callbacks.html#afce9c3bf2b25db10c7e5cef840695e2d" title="Get a group of request handles. " alt="" coords="240,267,427,308"/>
-<area shape="rect" id="node7" href="$classsumi_1_1parsedumpi.html#a3aa39c032c8b6eb427aa900138878295" title="sumi::parsedumpi::mpi" alt="" coords="256,333,411,359"/>
-<area shape="rect" id="node8" href="$classsumi_1_1parsedumpi__callbacks.html#a765e93a8d2ce40bdd73acc4e58960052" title="sumi::parsedumpi_callbacks\l::nullify_request" alt="" coords="240,384,427,425"/>
-<area shape="rect" id="node9" href="$classsumi_1_1parsedumpi__callbacks.html#adc5e549f3e08344c5170ae89ae055704" title="sumi::parsedumpi_callbacks\l::nullify_requests" alt="" coords="240,449,427,491"/>
-<area shape="rect" id="node10" href="$classsumi_1_1parsedumpi__callbacks.html#a3f1816a83e0574e2aff403d7f4104a7c" title="Store a single request handle. " alt="" coords="240,515,427,556"/>
+<area shape="rect" id="node2" href="$classsumi_1_1parsedumpi.html#a3aa39c032c8b6eb427aa900138878295" title="sumi::parsedumpi::mpi" alt="" coords="240,12,395,39"/>
 </map>

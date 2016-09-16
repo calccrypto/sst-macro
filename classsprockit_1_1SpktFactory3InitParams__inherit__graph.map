@@ -1,5 +1,0 @@
-<map id="sprockit::SpktFactory3InitParams&lt; T, U, V, W &gt;" name="sprockit::SpktFactory3InitParams&lt; T, U, V, W &gt;">
-<area shape="rect" id="node2" href="$classsprockit_1_1SpktFactory.html" title="{sprockit::SpktFactory\&lt; T \&gt;\n||+ register_alias()\l+ get_value()\l+ get_extra_param()\l+ get_param()\l+ get_optional_param()\l# _get_value()\l# _get_param()\l# _get_optional_param()\l}" alt="" coords="17,373,195,553"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1SpktFactoryTemplateBase.html" title="{sprockit::SpktFactoryTemplate\lBase\&lt; T \&gt;\n|# object_map_\l# alias_map_\l# name_\l|+ register_name()\l+ delete_statics()\l+ validate_map()\l}" alt="" coords="5,175,207,325"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1SpktFactory__base.html" title="{sprockit::SpktFactory_base\n||+ add_to_map()\l+ value()\l+ value()\l+ exists()\l}" alt="" coords="15,5,197,127"/>
-</map>

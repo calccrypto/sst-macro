@@ -1,10 +1,10 @@
 <map id="sstmac::hw::null_node" name="sstmac::hw::null_node">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__node.html" title="A stand&#45;in node. " alt="" coords="170,1269,341,1464"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n|# env_\l# os_\l# my_addr_\l# mem_model_\l# proc_\l# nic_\l# ncores_\l# nsocket_\l&#45; launchers_\l&#45; next_outgoing_id_\l|+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 10 more...\l# node()\l# send_to_nic()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="177,807,333,1221"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,659,161,751"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n|# failed_\l|+ failed()\l+ fail()\l# failable()\l}" alt="" coords="186,652,325,759"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="349,659,517,751"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="253,321,421,604"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="259,5,414,273"/>
-<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="445,409,613,516"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__node.html" title="A stand&#45;in node. " alt="" coords="169,1256,340,1392"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1node.html" title="{sstmac::hw::node\n|# env_\l# os_\l# my_addr_\l# mem_model_\l# proc_\l# nic_\l# ncores_\l# nsocket_\l&#45; launchers_\l&#45; next_outgoing_id_\l|+ set_event_manager()\l+ ~node()\l+ finalize_init()\l+ init_factory_params()\l+ set_nic()\l+ connect()\l+ mem()\l+ get_nic()\l+ os()\l+ to_string()\land 8 more...\l# node()\l# connect_nic()\l&#45; build_launchers()\l}" alt="" coords="177,808,332,1208"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,661,160,753"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1failable.html" title="{sstmac::hw::failable\n|# failed_\l|+ failed()\l+ fail()\l# failable()\l}" alt="" coords="185,653,324,760"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1connectable__component.html" title="{sstmac::hw::connectable\l_component\n||}" alt="" coords="348,661,516,753"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1event__scheduler.html" title="The interface for something that can schedule messages. " alt="" coords="252,323,420,605"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="259,6,412,274"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="444,411,612,517"/>
 </map>

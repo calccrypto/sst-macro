@@ -1,11 +1,14 @@
 <map id="sstmac/software/libraries/compute/lib_compute_time.h" name="sstmac/software/libraries/compute/lib_compute_time.h">
-<area shape="rect" id="node2" href="$api_2api_8h.html" title="sstmac/software/api\l/api.h" alt="" coords="173,95,313,136"/>
-<area shape="rect" id="node7" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="337,95,507,136"/>
-<area shape="rect" id="node3" href="$blas__api_8h.html" title="sstmac/libraries/blas\l/blas_api.h" alt="" coords="5,184,148,225"/>
-<area shape="rect" id="node4" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="173,184,319,225"/>
-<area shape="rect" id="node5" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="97,273,243,315"/>
-<area shape="rect" id="node6" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="268,281,376,307"/>
-<area shape="rect" id="node8" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="347,184,494,225"/>
-<area shape="rect" id="node9" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="518,184,678,225"/>
-<area shape="rect" id="node10" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="487,273,709,315"/>
+<area shape="rect" id="node2" href="$api_8h.html" title="sstmac/software/api\l/api.h" alt="" coords="325,97,464,138"/>
+<area shape="rect" id="node9" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="657,278,825,319"/>
+<area shape="rect" id="node3" href="$blas__api_8h.html" title="sstmac/libraries/blas\l/blas_api.h" alt="" coords="30,187,172,229"/>
+<area shape="rect" id="node4" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="197,187,344,229"/>
+<area shape="rect" id="node7" href="$thread_8h.html" title="sstmac/software/process\l/thread.h" alt="" coords="446,187,615,229"/>
+<area shape="rect" id="node5" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="5,278,152,319"/>
+<area shape="rect" id="node6" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="177,285,284,312"/>
+<area shape="rect" id="node8" href="$sstmac__pthread__runner_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_runner.h" alt="" coords="309,278,483,319"/>
+<area shape="rect" id="node13" href="$variable_8h.html" title="sstmac/variable.h" alt="" coords="507,285,632,312"/>
+<area shape="rect" id="node10" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="579,369,725,410"/>
+<area shape="rect" id="node11" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="749,369,908,410"/>
+<area shape="rect" id="node12" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="718,459,940,501"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="sstmac::native::macro_manager" name="sstmac::native::macro_manager">
-<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1manager.html" title="The owner of a discrete&#45;event network simulation. " alt="" coords="5,145,219,428"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="34,5,190,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1manager.html" title="The owner of a discrete&#45;event network simulation. " alt="" coords="5,147,219,429"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="34,6,189,98"/>
 </map>

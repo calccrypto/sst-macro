@@ -1,4 +1,0 @@
-<map id="sumi::comm_allreduce" name="sumi::comm_allreduce">
-<area shape="rect" id="node2" href="$namespacesumi.html#a1da6a758cfd1520bd49e6766d3445af4" title="The total size of the input/result buffer in bytes is nelems*type_size. " alt="" coords="207,5,360,32"/>
-<area shape="rect" id="node3" href="$namespacesumi.html#a41cc73a243b1b838063b1b97c9a032fb" title="sumi::comm_reduce" alt="" coords="213,56,353,83"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="sstmac::hw::xpress_ring::num_switches" name="sstmac::hw::xpress_ring::num_switches">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1xpress__ring.html#a57df704726302de23ec26960d72778e2" title="Compute coordinates (e.g. " alt="" coords="196,5,349,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1xpress__ring.html#aad3f0c2cbda1ecd44cc3875a84922170" title="sstmac::hw::xpress\l_ring::convert_to_port" alt="" coords="199,85,347,126"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1xpress__ring.html#a3c5eb411d4bb5ed6fd2accfa3bfdd594" title="sstmac::hw::xpress\l_ring::diameter" alt="" coords="204,150,341,191"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1xpress__ring.html#ad670d36737f08161413fbf95acd9c468" title="sstmac::hw::xpress\l_ring::num_hops" alt="" coords="204,215,341,257"/>
-</map>

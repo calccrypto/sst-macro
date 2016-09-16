@@ -1,5 +1,5 @@
 <map id="sstmac::hw::packet_flow_tiled_switch" name="sstmac::hw::packet_flow_tiled_switch">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# packet_size_\l# link_bw\l# ej_bw\l# xbar_output_buffer\l_num_bytes\l# xbar_input_buffer_num\l_bytes\l# xbar_bw\l# row_buffer_num_bytes\l# hop_lat\l# link_arbitrator_template\l# xbar_stats_\l# buf_stats_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l+ xbar_stats()\l+ buf_stats()\l}" alt="" coords="59,131,227,501"/>
-<area shape="rect" id="node3" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,119,83"/>
-<area shape="rect" id="node4" href="$classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="143,5,306,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__abstract__switch.html" title="{sstmac::hw::packet\l_flow_abstract_switch\n|# packet_size_\l# link_bw\l# ej_bw\l# xbar_output_buffer\l_num_bytes\l# xbar_input_buffer_num\l_bytes\l# xbar_bw\l# row_buffer_num_bytes\l# hop_lat\l# link_arbitrator_template\l# xbar_stats_\l# buf_stats_\l|+ init_factory_params()\l+ initialize()\l+ hop_latency()\l+ lookahead()\l+ initial_credits()\l+ hop_bandwidth()\l+ xbar_stats()\l+ buf_stats()\l# packet_flow_abstract\l_switch()\l# ~packet_flow_abstract\l_switch()\l}" alt="" coords="59,131,227,560"/>
+<area shape="rect" id="node3" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,5,117,83"/>
+<area shape="rect" id="node4" href="$classpacket__flow__component.html" title="{packet_flow_component\n||}" alt="" coords="143,5,305,83"/>
 </map>

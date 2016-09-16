@@ -1,0 +1,4 @@
+<map id="sstmac::hw::structured_topology::minimal_routes_to_coords" name="sstmac::hw::structured_topology::minimal_routes_to_coords">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#ab5cc6236d0e119f71a7251a5269efeb6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="234,5,401,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__routable_1_1path__set.html#ae01a7d31315a207c59af914de71ca3a2" title="sstmac::hw::structured\l_routable::path_set::resize" alt="" coords="229,85,405,126"/>
+</map>

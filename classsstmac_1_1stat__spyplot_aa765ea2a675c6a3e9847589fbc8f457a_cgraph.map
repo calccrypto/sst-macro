@@ -1,6 +1,6 @@
 <map id="sstmac::stat_spyplot::clone_me" name="sstmac::stat_spyplot::clone_me">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__spyplot.html#a417ae0b9e9118333bd2fc9bfdf674d3c" title="sstmac::stat_spyplot\l::clone_into" alt="" coords="409,5,553,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="197,100,348,141"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__spyplot.html#a0bc87b558f8e4fc5626cc66e8244914c" title="sstmac::stat_spyplot\l::stat_spyplot" alt="" coords="201,35,345,76"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="396,107,565,134"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__spyplot.html#a417ae0b9e9118333bd2fc9bfdf674d3c" title="sstmac::stat_spyplot\l::clone_into" alt="" coords="201,5,345,46"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="198,70,349,111"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__spyplot.html#a0bc87b558f8e4fc5626cc66e8244914c" title="sstmac::stat_spyplot\l::stat_spyplot" alt="" coords="201,135,345,177"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="398,77,567,104"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="sstmac/hardware/switch/network_switch.h" name="sstmac/hardware/switch/network_switch.h">
-<area shape="rect" id="node2" href="$simple__switch_8h.html" title="sstmac/hardware/analytic\l/simple/simple_switch.h" alt="" coords="5,95,176,136"/>
-<area shape="rect" id="node3" href="$packet__flow__switch_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_switch.h" alt="" coords="201,95,383,136"/>
-<area shape="rect" id="node8" href="$dist__dummyswitch_8h.html" title="sstmac/hardware/switch\l/dist_dummyswitch.h" alt="" coords="407,95,571,136"/>
-<area shape="rect" id="node9" href="$sdn__launcher_8h.html" title="sstmac/software/launch\l/sdn_launcher.h" alt="" coords="595,95,757,136"/>
-<area shape="rect" id="node4" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="69,295,235,337"/>
-<area shape="rect" id="node5" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="189,191,395,233"/>
-<area shape="rect" id="node7" href="$packet__flow__tiled__switch_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_tiled\l_switch.h" alt="" coords="419,184,584,240"/>
-<area shape="rect" id="node6" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="259,288,440,344"/>
+<area shape="rect" id="node2" href="$simple__switch_8h.html" title="sstmac/hardware/analytic\l/simple/simple_switch.h" alt="" coords="151,97,321,138"/>
+<area shape="rect" id="node3" href="$packet__flow__switch_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_switch.h" alt="" coords="346,97,528,138"/>
+<area shape="rect" id="node8" href="$sdn__launcher_8h.html" title="sstmac/software/launch\l/sdn_launcher.h" alt="" coords="545,194,705,235"/>
+<area shape="rect" id="node9" href="$dist__dummyswitch_8h.html" title="sstmac/hardware/switch\l/dist_dummyswitch.h" alt="" coords="605,97,768,138"/>
+<area shape="rect" id="node4" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="5,298,169,339"/>
+<area shape="rect" id="node5" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="125,194,331,235"/>
+<area shape="rect" id="node7" href="$packet__flow__tiled__switch_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_tiled\l_switch.h" alt="" coords="355,187,519,243"/>
+<area shape="rect" id="node6" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="195,291,376,347"/>
 </map>

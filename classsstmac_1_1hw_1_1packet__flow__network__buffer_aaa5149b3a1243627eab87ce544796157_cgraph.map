@@ -1,6 +1,0 @@
-<map id="sstmac::hw::packet_flow_network_buffer::~packet_flow_network_buffer" name="sstmac::hw::packet_flow_network_buffer::~packet_flow_network_buffer">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#acc74ee2898fc4ed9a4b6da092298627c" title="sstmac::hw::packet\l_flow_sender::do_handle\l_payload" alt="" coords="217,5,383,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__handler.html#a779fd6a74efc1f756100ff84e3233b21" title="sstmac::hw::packet\l_flow_handler::handle\l_credit" alt="" coords="226,85,374,141"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#ab2c7e7e3254cb7880f823579acd36c75" title="sstmac::hw::packet\l_flow_sender::init_credits" alt="" coords="215,165,385,206"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__buffer.html#ad497f9a9fc02e859a7ca38b2b000cee7" title="sstmac::hw::packet\l_flow_buffer::queue\l_length" alt="" coords="231,229,369,285"/>
-</map>

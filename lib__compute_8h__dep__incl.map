@@ -1,17 +1,20 @@
 <map id="sstmac/software/libraries/compute/lib_compute.h" name="sstmac/software/libraries/compute/lib_compute.h">
-<area shape="rect" id="node2" href="$lib__compute__inst_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_inst.h" alt="" coords="433,95,622,136"/>
-<area shape="rect" id="node11" href="$lib__compute__time_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_time.h" alt="" coords="700,95,893,136"/>
-<area shape="rect" id="node3" href="$lib__compute__loops_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_loops.h" alt="" coords="511,273,709,315"/>
-<area shape="rect" id="node4" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="593,363,763,404"/>
-<area shape="rect" id="node8" href="$lib__compute__matrix_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_matrix.h" alt="" coords="5,273,209,315"/>
-<area shape="rect" id="node9" href="$lib__compute__memmove_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_memmove.h" alt="" coords="359,184,589,225"/>
-<area shape="rect" id="node10" href="$lib__hybrid__compute_8h.html" title="sstmac/software/libraries\l/compute/lib_hybrid_compute.h" alt="" coords="234,273,437,315"/>
-<area shape="rect" id="node5" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="517,452,663,493"/>
-<area shape="rect" id="node6" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="687,452,847,493"/>
-<area shape="rect" id="node7" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="656,541,879,583"/>
-<area shape="rect" id="node12" href="$api_2api_8h.html" title="sstmac/software/api\l/api.h" alt="" coords="836,184,976,225"/>
-<area shape="rect" id="node13" href="$blas__api_8h.html" title="sstmac/libraries/blas\l/blas_api.h" alt="" coords="835,273,977,315"/>
-<area shape="rect" id="node14" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="1002,273,1149,315"/>
-<area shape="rect" id="node15" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="1078,363,1225,404"/>
-<area shape="rect" id="node16" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="945,370,1053,397"/>
+<area shape="rect" id="node2" href="$lib__compute__inst_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_inst.h" alt="" coords="429,97,619,138"/>
+<area shape="rect" id="node11" href="$lib__compute__time_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_time.h" alt="" coords="699,97,892,138"/>
+<area shape="rect" id="node3" href="$lib__compute__loops_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_loops.h" alt="" coords="233,278,431,319"/>
+<area shape="rect" id="node4" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="661,369,829,410"/>
+<area shape="rect" id="node8" href="$lib__compute__matrix_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_matrix.h" alt="" coords="5,278,208,319"/>
+<area shape="rect" id="node9" href="$lib__compute__memmove_8h.html" title="sstmac/software/libraries\l/compute/lib_compute_memmove.h" alt="" coords="353,187,583,229"/>
+<area shape="rect" id="node10" href="$lib__hybrid__compute_8h.html" title="sstmac/software/libraries\l/compute/lib_hybrid_compute.h" alt="" coords="505,278,708,319"/>
+<area shape="rect" id="node5" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="584,459,731,501"/>
+<area shape="rect" id="node6" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="755,459,913,501"/>
+<area shape="rect" id="node7" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="723,550,945,591"/>
+<area shape="rect" id="node12" href="$api_8h.html" title="sstmac/software/api\l/api.h" alt="" coords="925,187,1064,229"/>
+<area shape="rect" id="node13" href="$blas__api_8h.html" title="sstmac/libraries/blas\l/blas_api.h" alt="" coords="834,278,976,319"/>
+<area shape="rect" id="node14" href="$sumi__api_8h.html" title="sstmac/libraries/sumi\l/sumi_api.h" alt="" coords="1195,278,1341,319"/>
+<area shape="rect" id="node17" href="$thread_8h.html" title="sstmac/software/process\l/thread.h" alt="" coords="1001,278,1169,319"/>
+<area shape="rect" id="node15" href="$sumi__transport_8h.html" title="sstmac/libraries/sumi\l/sumi_transport.h" alt="" coords="1343,369,1489,410"/>
+<area shape="rect" id="node16" href="$sumi_8h.html" title="sstmac/sumi.h" alt="" coords="1210,376,1317,403"/>
+<area shape="rect" id="node18" href="$sstmac__pthread__runner_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_runner.h" alt="" coords="1007,369,1180,410"/>
+<area shape="rect" id="node19" href="$variable_8h.html" title="sstmac/variable.h" alt="" coords="857,376,983,403"/>
 </map>

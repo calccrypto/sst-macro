@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classTestEquals_3_01float_01_4.html" title="TestEquals\&lt; float \&gt;" alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node1" href="$classTestFxn.html" title="TestFxn" alt="" coords="6,157,77,184"/>
+<area shape="rect" id="node2" href="$classTestFxn0.html" title="TestFxn0\&lt; Fxn \&gt;" alt="" coords="152,5,275,32"/>
+<area shape="rect" id="node3" href="$classTestFxn1.html" title="TestFxn1\&lt; Fxn, A \&gt;" alt="" coords="143,56,283,83"/>
+<area shape="rect" id="node4" href="$classTestFxn2.html" title="TestFxn2\&lt; Fxn, A, B \&gt;" alt="" coords="135,107,292,133"/>
+<area shape="rect" id="node5" href="$classTestFxn3.html" title="TestFxn3\&lt; Fxn, A, B, C \&gt;" alt="" coords="126,157,301,184"/>
+<area shape="rect" id="node6" href="$classTestMemberFxn1.html" title="TestMemberFxn1\&lt; Fxn,\l Cls, A \&gt;" alt="" coords="132,209,295,250"/>
+<area shape="rect" id="node7" href="$classTestMemberFxn2.html" title="TestMemberFxn2\&lt; Fxn,\l Cls, A, B \&gt;" alt="" coords="132,274,295,315"/>
+<area shape="rect" id="node8" href="$classTestMemberFxn3.html" title="TestMemberFxn3\&lt; Fxn,\l Cls, A, B, C \&gt;" alt="" coords="132,339,295,381"/>
 </map>

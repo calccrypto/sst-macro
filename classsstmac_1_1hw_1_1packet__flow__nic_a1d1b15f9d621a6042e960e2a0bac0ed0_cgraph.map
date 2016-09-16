@@ -1,5 +1,3 @@
 <map id="sstmac::hw::packet_flow_nic::notify" name="sstmac::hw::packet_flow_nic::notify">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#ac5607e833db87528a24a130beed87cfb" title="connect " alt="" coords="196,5,333,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1nic.html#a5e8d40817c3b167177209614bbac90f7" title="The NIC can either receive an entire message (bypass the byte&#45;transfer layer) or it can receive packe..." alt="" coords="191,71,339,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#a1295b19493d2f769cecad4c384b4c155" title="Set the eventmanager for this scheduler. " alt="" coords="193,135,336,191"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1nic.html#a5e8d40817c3b167177209614bbac90f7" title="The NIC can either receive an entire message (bypass the byte&#45;transfer layer) or it can receive packe..." alt="" coords="193,5,341,46"/>
 </map>

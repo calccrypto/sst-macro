@@ -1,3 +1,5 @@
 <map id="DeclareDebugSlot" name="DeclareDebugSlot">
-<area shape="rect" id="node2" href="$namespacesstmac_1_1hw.html#ac2d90cbc18b69e19ab0cb1b3c1df1be0" title="sstmac::hw::DeclareFactory2\lInitParams" alt="" coords="181,5,376,47"/>
+<area shape="rect" id="node2" href="$namespacesstmac_1_1hw.html#ac2d90cbc18b69e19ab0cb1b3c1df1be0" title="sstmac::hw::DeclareFactory2\lInitParams" alt="" coords="181,5,376,46"/>
+<area shape="rect" id="node3" href="$namespacesstmac_1_1hw.html#ab3407a061c6b85be0a350085cad1846d" title="sstmac::hw::init_factory\l_params" alt="" coords="197,70,360,111"/>
+<area shape="rect" id="node4" href="$namespacesstmac_1_1hw.html#ace7c4fccca0a3c60807c3cd9878c31eb" title="sstmac::hw::set_event\l_manager" alt="" coords="201,135,356,177"/>
 </map>

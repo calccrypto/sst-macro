@@ -1,6 +1,3 @@
 <map id="sstmac::sw::lib_compute_memmove::incoming_event" name="sstmac::sw::lib_compute_memmove::incoming_event">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html#a13e1ac2af74c10238e7837f421fc2523" title="sstmac::sw::lib_compute\l_memmove::copy" alt="" coords="243,5,411,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1library.html#a98fe86c044b2bc8924e2604a3944f730" title="sstmac::sw::library\l::incoming_event" alt="" coords="260,71,393,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html#a648b694581e2f1cbb58aff5fe6197602" title="sstmac::sw::lib_compute\l_memmove::read" alt="" coords="243,136,411,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html#a290d0416a9c668573f09e79bf9f42c8f" title="sstmac::sw::lib_compute\l_memmove::write" alt="" coords="243,201,411,243"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1library.html#a98fe86c044b2bc8924e2604a3944f730" title="sstmac::sw::library\l::incoming_event" alt="" coords="243,5,376,46"/>
 </map>

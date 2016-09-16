@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsprockit_1_1pvt_1_1ser__array__wrapper.html" title="sprockit::pvt::ser\l_array_wrapper\&lt; TPtr,\l IntType \&gt;" alt="" coords="5,5,157,61"/>
+<area shape="rect" id="node1" href="$classsprockit_1_1ptr__type.html" title="sprockit::ptr_type" alt="" coords="5,96,128,123"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1printable__ptr__type.html" title="sprockit::printable\l_ptr_type" alt="" coords="203,5,328,46"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1tutorial_1_1gem.html" title="The gem class. " alt="" coords="193,71,338,97"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1tutorial_1_1illustration.html" title="Basic class structure tutorial. " alt="" coords="176,121,355,148"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1tutorial_1_1mineral.html" title="The mineral class. " alt="" coords="184,172,347,199"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1tutorial_1_1diamond.html" title="sstmac::tutorial::diamond" alt="" coords="403,121,573,148"/>
 </map>

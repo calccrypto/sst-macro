@@ -1,0 +1,5 @@
+<map id="VariablePtr::~VariablePtr" name="VariablePtr::~VariablePtr">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a178e0d6b6d49bfb2185aa11945e9a01c" title="sstmac::sw::operating\l_system::current_thread" alt="" coords="228,5,391,46"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#ad600cded38ce907a9efe43fc0d79def4" title="sstmac::sw::thread\l::remove_perf_ctr_variable" alt="" coords="221,70,397,111"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1perf__counter__model.html#a0ca30aabef57d5dd63aefb121abe56a2" title="sstmac::sw::perf_counter\l_model::remove_variable" alt="" coords="445,70,616,111"/>
+</map>

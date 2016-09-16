@@ -7,6 +7,6 @@
 <area shape="rect" id="node6" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="233,208,329,235"/>
 <area shape="rect" id="node7" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="210,259,353,285"/>
 <area shape="rect" id="node8" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="225,309,338,336"/>
-<area shape="rect" id="node9" href="$classRNG_1_1LFIB4.html" title="A lagged Fibonacci random number generator by George Marsaglia (1999; internet posting). " alt="" coords="411,284,505,311"/>
-<area shape="rect" id="node10" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="413,335,503,361"/>
+<area shape="rect" id="node9" href="$classRNG_1_1LFIB4.html" title="A lagged Fibonacci random number generator by George Marsaglia (1999; internet posting). " alt="" coords="411,284,506,311"/>
+<area shape="rect" id="node10" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="413,335,504,361"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sstmac::operator&lt;&lt;" name="sstmac::operator&lt;&lt;">
-<area shape="rect" id="node2" href="$structsstmac_1_1event__loc__id.html#a29e56c6779eb510a783229e4a54fba1c" title="sstmac::event_loc_id\l::convert_to_node_id" alt="" coords="193,12,339,53"/>
-<area shape="rect" id="node5" href="$structsstmac_1_1event__loc__id.html#aa71477e8fb307e629e1a4383370cf58d" title="sstmac::event_loc_id\l::convert_to_switch_id" alt="" coords="189,77,343,119"/>
-<area shape="rect" id="node6" href="$structsstmac_1_1event__loc__id.html#aaa2396808db386216876fc90a6a1893d" title="sstmac::event_loc_id\l::is_node_id" alt="" coords="391,136,537,177"/>
-<area shape="rect" id="node3" href="$structsstmac_1_1event__loc__id.html#a32d85349a95dc03fedd7cc0b89600e56" title="sstmac::event_loc_id\l::is_switch_id" alt="" coords="391,5,537,47"/>
-<area shape="rect" id="node4" href="$structsstmac_1_1event__loc__id.html#ae89e55fffdcec144341d2d013057fe7b" title="sstmac::event_loc_id\l::is_null" alt="" coords="391,71,537,112"/>
+<area shape="rect" id="node2" href="$structsstmac_1_1event__loc__id.html#a29e56c6779eb510a783229e4a54fba1c" title="sstmac::event_loc_id\l::convert_to_node_id" alt="" coords="193,11,340,53"/>
+<area shape="rect" id="node5" href="$structsstmac_1_1event__loc__id.html#aa71477e8fb307e629e1a4383370cf58d" title="sstmac::event_loc_id\l::convert_to_switch_id" alt="" coords="190,77,343,118"/>
+<area shape="rect" id="node6" href="$structsstmac_1_1event__loc__id.html#aaa2396808db386216876fc90a6a1893d" title="sstmac::event_loc_id\l::is_node_id" alt="" coords="392,135,539,177"/>
+<area shape="rect" id="node3" href="$structsstmac_1_1event__loc__id.html#a32d85349a95dc03fedd7cc0b89600e56" title="sstmac::event_loc_id\l::is_switch_id" alt="" coords="392,5,539,46"/>
+<area shape="rect" id="node4" href="$structsstmac_1_1event__loc__id.html#ae89e55fffdcec144341d2d013057fe7b" title="sstmac::event_loc_id\l::is_null" alt="" coords="392,70,539,111"/>
 </map>

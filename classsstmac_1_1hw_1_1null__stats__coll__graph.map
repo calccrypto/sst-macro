@@ -1,4 +1,4 @@
 <map id="sstmac::hw::null_stats" name="sstmac::hw::null_stats">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n||+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="63,160,223,311"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,161,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n||+ ~packet_sent_stats()\l+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="63,163,221,328"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,6,160,98"/>
 </map>

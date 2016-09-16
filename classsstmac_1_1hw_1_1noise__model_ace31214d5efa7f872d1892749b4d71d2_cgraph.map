@@ -1,5 +1,0 @@
-<map id="sstmac::hw::noise_model::~noise_model" name="sstmac::hw::noise_model::~noise_model">
-<area shape="rect" id="node2" href="$namespacesstmac_1_1hw.html#ac5607f02b31d5072c4af933b5b905b1e" title="sstmac::hw::DeclareFactory" alt="" coords="224,5,411,32"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1noise__model.html#a9e698c88c9e2a77ed82862a6fbcf65c0" title="sstmac::hw::noise_model\l::init_factory_params" alt="" coords="232,57,403,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1noise__model.html#abbd3998976f18511f5f1434ebe8c0f3e" title="sstmac::hw::noise_model\l::value" alt="" coords="232,122,403,163"/>
-</map>

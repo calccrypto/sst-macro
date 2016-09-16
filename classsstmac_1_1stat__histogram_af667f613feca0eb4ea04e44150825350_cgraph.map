@@ -1,8 +1,7 @@
 <map id="sstmac::stat_histogram::clone" name="sstmac::stat_histogram::clone">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html#a50e666c6efca63c244b4479add288c69" title="sstmac::stat_histogram\l::clone_into" alt="" coords="419,5,577,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1stat__histogram.html#acc50d21e06e8f55ce56447651f2327d8" title="sstmac::stat_histogram\l::clone_me" alt="" coords="212,69,371,111"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1stat__histogram.html#a1a4439d134d209f3d1ce6a601c98dfb0" title="sstmac::stat_histogram\l::dump" alt="" coords="212,135,371,176"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__histogram.html#a4408e6828affb456d95154fdd36720b1" title="sstmac::stat_histogram\l::stat_histogram" alt="" coords="419,71,577,112"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="423,136,573,177"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="625,143,795,170"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html#acc50d21e06e8f55ce56447651f2327d8" title="sstmac::stat_histogram\l::clone_me" alt="" coords="214,70,373,111"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__histogram.html#a4408e6828affb456d95154fdd36720b1" title="sstmac::stat_histogram\l::stat_histogram" alt="" coords="422,5,581,46"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__histogram.html#a50e666c6efca63c244b4479add288c69" title="sstmac::stat_histogram\l::clone_into" alt="" coords="422,70,581,111"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="426,135,577,177"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="630,143,799,169"/>
 </map>

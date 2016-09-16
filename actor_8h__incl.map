@@ -1,8 +1,11 @@
 <map id="docs/developer/tutorials/programming/factories/actor.h" name="docs/developer/tutorials/programming/factories/actor.h">
-<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="319,109,442,151"/>
-<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="220,206,336,233"/>
-<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="332,363,483,389"/>
-<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="418,206,541,233"/>
-<area shape="rect" id="node15" href="$sim__parameters__fwd_8h.html" title="sprockit/sim_parameters\l_fwd.h" alt="" coords="565,199,730,240"/>
-<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="197,288,343,315"/>
+<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="521,110,644,151"/>
+<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="243,208,359,235"/>
+<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="357,365,507,392"/>
+<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="571,208,693,235"/>
+<area shape="rect" id="node15" href="$sim__parameters_8h.html" title="sprockit/sim_parameters.h" alt="" coords="724,208,900,235"/>
+<area shape="rect" id="node23" href="$basic__string__tokenizer_8h.html" title="sprockit/basic_string\l_tokenizer.h" alt="" coords="1190,201,1332,242"/>
+<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="56,291,203,317"/>
+<area shape="rect" id="node16" href="$debug_8h.html" title="sprockit/debug.h" alt="" coords="850,291,968,317"/>
+<area shape="rect" id="node20" href="$unordered_8h.html" title="sprockit/unordered.h" alt="" coords="634,291,773,317"/>
 </map>

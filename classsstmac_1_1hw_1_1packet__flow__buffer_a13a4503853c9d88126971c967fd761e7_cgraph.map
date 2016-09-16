@@ -1,5 +1,3 @@
 <map id="sstmac::hw::packet_flow_buffer::input_location" name="sstmac::hw::packet_flow_buffer::input_location">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html#a66d6aeb93aa35629d62bc60d16a1fa5e" title="sstmac::event_handler\l::event_location" alt="" coords="191,5,345,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__buffer.html#a8465d9bcef249776dbd66a1e00dbf60e" title="sstmac::hw::packet\l_flow_buffer::packet\l_flow_buffer" alt="" coords="198,70,338,126"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__buffer.html#a05ea2254fc664a76b485b7668d22e45d" title="sstmac::hw::packet\l_flow_buffer::buffer\l_string" alt="" coords="393,70,531,126"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html#a66d6aeb93aa35629d62bc60d16a1fa5e" title="sstmac::event_handler\l::event_location" alt="" coords="192,11,347,53"/>
 </map>

@@ -1,6 +1,0 @@
-<map id="sstmac::hw::packet_flow_netlink::to_string" name="sstmac::hw::packet_flow_netlink::to_string">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#ac5607e833db87528a24a130beed87cfb" title="connect " alt="" coords="215,5,353,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#a8e48997f2e610e1f337065a7ce07adf0" title="sstmac::hw::packet\l_flow_nic::handle" alt="" coords="215,71,353,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#ac4bdb5428557a0988a9fc7f390e7dd36" title="Initialize all member variables from the parameters object. " alt="" coords="209,135,359,191"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#a1295b19493d2f769cecad4c384b4c155" title="Set the eventmanager for this scheduler. " alt="" coords="213,215,355,271"/>
-</map>

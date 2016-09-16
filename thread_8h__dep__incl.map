@@ -1,7 +1,8 @@
 <map id="sstmac/software/process/thread.h" name="sstmac/software/process/thread.h">
-<area shape="rect" id="node2" href="$sstmac__pthread__runner_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_runner.h" alt="" coords="5,95,179,136"/>
-<area shape="rect" id="node3" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="203,95,373,136"/>
-<area shape="rect" id="node4" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="125,184,272,225"/>
-<area shape="rect" id="node5" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="296,184,456,225"/>
-<area shape="rect" id="node6" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="265,273,487,315"/>
+<area shape="rect" id="node2" href="$sstmac__pthread__runner_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_runner.h" alt="" coords="5,97,179,138"/>
+<area shape="rect" id="node3" href="$app_8h.html" title="sstmac/software/process\l/app.h" alt="" coords="203,97,372,138"/>
+<area shape="rect" id="node7" href="$variable_8h.html" title="sstmac/variable.h" alt="" coords="397,104,523,131"/>
+<area shape="rect" id="node4" href="$sumi__thread_8h.html" title="sstmac/libraries/sumi\l/sumi_thread.h" alt="" coords="125,187,272,229"/>
+<area shape="rect" id="node5" href="$parsedumpi_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi.h" alt="" coords="296,187,455,229"/>
+<area shape="rect" id="node6" href="$parsedumpi__callbacks_8h.html" title="sstmac/skeletons/sumi\l_undumpi/parsedumpi_callbacks.h" alt="" coords="265,278,487,319"/>
 </map>

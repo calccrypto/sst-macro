@@ -1,8 +1,8 @@
 <map id="sstmac::sw::coordinate_task_mapper" name="sstmac::sw::coordinate_task_mapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="587,968,761,1148"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="828,197,984,289"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="579,593,769,861"/>
-<area shape="rect" id="node10" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="879,924,1058,1192"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="561,197,683,289"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="360,160,537,325"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="587,972,760,1137"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="827,197,983,289"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="579,595,768,863"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="879,928,1057,1181"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="561,197,681,289"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="359,160,536,325"/>
 </map>

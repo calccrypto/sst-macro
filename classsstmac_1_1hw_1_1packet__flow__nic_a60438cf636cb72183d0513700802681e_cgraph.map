@@ -1,8 +1,4 @@
 <map id="sstmac::hw::packet_flow_nic::to_string" name="sstmac::hw::packet_flow_nic::to_string">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1nic.html#a65c6b1afa076dbbe1792532c14768db9" title="sstmac::hw::nic::addr" alt="" coords="211,5,359,32"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#a8e48997f2e610e1f337065a7ce07adf0" title="sstmac::hw::packet\l_flow_nic::handle" alt="" coords="217,57,354,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#ac4bdb5428557a0988a9fc7f390e7dd36" title="Initialize all member variables from the parameters object. " alt="" coords="211,121,360,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1event__subscheduler.html#aa95cd34212885b804920d8444c9a41eb" title="sstmac::event_subscheduler\l::parent" alt="" coords="191,201,380,242"/>
-<area shape="rect" id="node6" href="$namespacesprockit.html#aaaf1619b98e45002bd1b0c6022c29aa0" title="sprockit::printf" alt="" coords="233,267,338,293"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1packet__flow__nic.html#a553cef821e0fdb007c031828a777aafc" title="sstmac::hw::packet\l_flow_nic::~packet_flow_nic" alt="" coords="192,318,379,359"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1nic.html#a65c6b1afa076dbbe1792532c14768db9" title="sstmac::hw::nic::addr" alt="" coords="193,5,341,32"/>
+<area shape="rect" id="node3" href="$namespacesprockit.html#aaaf1619b98e45002bd1b0c6022c29aa0" title="sprockit::printf" alt="" coords="214,56,319,83"/>
 </map>

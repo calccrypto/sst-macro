@@ -1,3 +1,4 @@
 <map id="sstmac::hw::packet_flow_null_arbitrator::clone" name="sstmac::hw::packet_flow_null_arbitrator::clone">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a32d21a602cf12cb6a5488aaf9349e4d6" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::set_outgoing_bw" alt="" coords="192,5,369,61"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__null__arbitrator.html#aebfe454c14ba0b933b3262cdf3262e88" title="sstmac::hw::packet\l_flow_null_arbitrator\l::packet_flow_null_arbitrator" alt="" coords="193,5,378,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a32d21a602cf12cb6a5488aaf9349e4d6" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::set_outgoing_bw" alt="" coords="197,85,374,141"/>
 </map>

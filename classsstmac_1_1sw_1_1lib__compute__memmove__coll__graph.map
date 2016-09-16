@@ -1,5 +1,5 @@
 <map id="sstmac::sw::lib_compute_memmove" name="sstmac::sw::lib_compute_memmove">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ supported()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="41,145,237,340"/>
-<area shape="rect" id="node3" href="$classlib__compute.html" title="{lib_compute\n||}" alt="" coords="5,5,97,83"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="448,182,625,303"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="41,147,236,327"/>
+<area shape="rect" id="node3" href="$classlib__compute.html" title="{lib_compute\n||}" alt="" coords="5,5,96,83"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="447,177,624,298"/>
 </map>

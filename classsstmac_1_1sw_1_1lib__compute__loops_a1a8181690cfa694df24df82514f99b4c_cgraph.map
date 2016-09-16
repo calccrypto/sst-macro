@@ -1,6 +1,0 @@
-<map id="sstmac::sw::lib_compute_loops::supported" name="sstmac::sw::lib_compute_loops::supported">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__loops.html#a2987a180331d28eb653c00219e490bcd" title="sstmac::sw::lib_compute\l_loops::compute_loop_work" alt="" coords="221,5,405,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1lib__compute__loops.html#a98215b63f5af355c0b272c74581adb71" title="sstmac::sw::lib_compute\l_loops::consume_params" alt="" coords="228,71,399,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html#ae8ff8f2dde3445fcd7e70558a697bb49" title="sstmac::sw::lib_compute\l_memmove::supported" alt="" coords="229,136,397,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1lib__compute__inst.html#a8a60be738ab9b8413944455b9aa9d7e2" title="sstmac::sw::lib_compute\l_inst::supported" alt="" coords="229,201,397,243"/>
-</map>

@@ -1,4 +1,4 @@
 <map id="sstmac::tutorial::christopher_guest" name="sstmac::tutorial::christopher_guest">
-<area shape="rect" id="node2" href="$classsstmac_1_1tutorial_1_1actor.html" title="{sstmac::tutorial::actor\n||+ act()\l+ ~actor()\l+ init_factory_params()\l+ clone()\l}" alt="" coords="69,160,225,281"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,161,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1tutorial_1_1actor.html" title="{sstmac::tutorial::actor\n||+ act()\l+ ~actor()\l+ init_factory_params()\l+ clone()\l}" alt="" coords="69,163,224,285"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,6,160,98"/>
 </map>

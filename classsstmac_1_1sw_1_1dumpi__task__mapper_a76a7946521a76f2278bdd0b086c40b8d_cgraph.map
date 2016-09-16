@@ -1,5 +1,0 @@
-<map id="sstmac::sw::dumpi_task_mapper::~dumpi_task_mapper" name="sstmac::sw::dumpi_task_mapper::~dumpi_task_mapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1dumpi__task__mapper.html#a2d7ae2a058aadfbe35cacc56eedb5f80" title="Assign processes to nodes. " alt="" coords="259,5,424,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1dumpi__task__mapper.html#a5ad64145bcefcc60d680fc6b702a92af" title="sstmac::sw::dumpi_task\l_mapper::node_id_from\l_coordinates" alt="" coords="259,70,424,126"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1dumpi__task__mapper.html#afbeb17bc12814e8eab00fa5e4591f23e" title="sstmac::sw::dumpi_task\l_mapper::node_id_from\l_hostname" alt="" coords="259,150,424,206"/>
-</map>

@@ -1,0 +1,6 @@
+<map id="sstmac::hw::sdn_router" name="sstmac::hw::sdn_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="5,627,192,837"/>
+<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="50,331,104,408"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="128,177,337,562"/>
+<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="119,5,189,83"/>
+</map>

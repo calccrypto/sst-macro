@@ -1,8 +1,0 @@
-<map id="sstmac::hw::instruction_processor::~instruction_processor" name="sstmac::hw::instruction_processor::~instruction_processor">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1instruction__processor.html#a2658e0307885beef7458104b02261bc8" title="sstmac::hw::instruction\l_processor::do_compute" alt="" coords="239,5,404,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1instruction__processor.html#abdf50d275284a28ed56a5bda07a3bef5" title="sstmac::hw::instruction\l_processor::finalize_init" alt="" coords="242,71,401,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1instruction__processor.html#aafe424a4df3e1e66e21e1e1a63c7e3d5" title="sstmac::hw::instruction\l_processor::init_factory\l_params" alt="" coords="242,135,401,191"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1instruction__processor.html#a3e3c20ab465c53521b02debc74e8473c" title="sstmac::hw::instruction\l_processor::instruction_time" alt="" coords="228,215,415,256"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1instruction__processor.html#abd85aab0ef34e0602c7a4ee91928a358" title="sstmac::hw::instruction\l_processor::set_flop_distribution" alt="" coords="216,280,427,321"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1instruction__processor.html#a06c64be7058e656950b80df6001127f1" title="sstmac::hw::instruction\l_processor::set_memop\l_distribution" alt="" coords="240,345,403,401"/>
-</map>

@@ -1,14 +1,14 @@
 <map id="sstmac::hw::fat_tree_router" name="sstmac::hw::fat_tree_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="{sstmac::hw::structured\l_router\n||+ set_topology()\l+ finalize_init()\l+ set_switch()\l+ minimal_route_to_node()\l+ minimal_routes_to_node()\l+ minimal_route_to_switch()\l+ productive_paths_to\l_switch()\l}" alt="" coords="167,1247,353,1441"/>
-<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="77,821,131,898"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="155,667,365,1052"/>
-<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="158,417,229,494"/>
-<area shape="rect" id="node8" href="$classRNG_1_1Combo.html" title="A random number generator combining several techniques by George Marsaglia (1999; internet posting)..." alt="" coords="395,1254,504,1434"/>
-<area shape="rect" id="node9" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="797,5,944,229"/>
-<area shape="rect" id="node10" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="662,740,805,979"/>
-<area shape="rect" id="node11" href="$classRNG_1_1CONG.html" title="The congruential random number generator by George Marsaglia (1999; internet posting). " alt="" coords="679,343,788,567"/>
-<area shape="rect" id="node13" href="$classRNG_1_1MWC.html" title="The multiple&#45;with&#45;carry random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="812,336,921,575"/>
-<area shape="rect" id="node14" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="545,358,655,553"/>
-<area shape="rect" id="node16" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="407,402,521,509"/>
-<area shape="rect" id="node15" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="395,769,504,949"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="167,1251,354,1461"/>
+<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="77,824,131,901"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="155,670,365,1055"/>
+<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="159,417,229,495"/>
+<area shape="rect" id="node8" href="$classRNG_1_1Combo.html" title="A random number generator combining several techniques by George Marsaglia (1999; internet posting)..." alt="" coords="395,1266,505,1446"/>
+<area shape="rect" id="node9" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="798,5,945,229"/>
+<area shape="rect" id="node10" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="663,743,805,982"/>
+<area shape="rect" id="node11" href="$classRNG_1_1CONG.html" title="The congruential random number generator by George Marsaglia (1999; internet posting). " alt="" coords="679,344,789,568"/>
+<area shape="rect" id="node13" href="$classRNG_1_1MWC.html" title="The multiple&#45;with&#45;carry random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="813,337,922,575"/>
+<area shape="rect" id="node14" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="546,359,655,553"/>
+<area shape="rect" id="node16" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="408,395,521,517"/>
+<area shape="rect" id="node15" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="395,773,505,953"/>
 </map>

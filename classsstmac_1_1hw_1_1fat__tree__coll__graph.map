@@ -1,5 +1,5 @@
 <map id="sstmac::hw::fat_tree" name="sstmac::hw::fat_tree">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html" title="{sstmac::hw::abstract\l_fat_tree\n||+ name()\l+ l()\l+ k()\l+ init_factory_params()\l+ ndimensions()\l+ diameter()\l+ num_leaf_switches()\l+ nodes_connected_to\l_injection_switch()\l+ nodes_connected_to\l_ejection_switch()\l+ pow()\l# nodes_connected_to\l_switch()\l}" alt="" coords="243,609,399,892"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="77,175,287,560"/>
-<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,76,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__fat__tree.html" title="{sstmac::hw::abstract\l_fat_tree\n||+ l()\l+ k()\l+ init_factory_params()\l+ ndimensions()\l+ diameter()\l+ num_leaf_switches()\l+ nodes_connected_to\l_injection_switch()\l+ nodes_connected_to\l_ejection_switch()\l+ pow()\l# nodes_connected_to\l_switch()\l}" alt="" coords="242,614,397,882"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="76,177,285,562"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,75,83"/>
 </map>

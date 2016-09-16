@@ -1,6 +1,6 @@
 <map id="sstmac/hardware/network/network_id.h" name="sstmac/hardware/network/network_id.h">
-<area shape="rect" id="node2" href="$network__message_8h.html" title="sstmac/hardware/network\l/network_message.h" alt="" coords="82,95,254,136"/>
-<area shape="rect" id="node3" href="$message_8h.html" title="sstmac/libraries/sumi\l/message.h" alt="" coords="5,184,152,225"/>
-<area shape="rect" id="node5" href="$launch__event_8h.html" title="sstmac/software/launch\l/launch_event.h" alt="" coords="177,184,338,225"/>
-<area shape="rect" id="node4" href="$libraries_2sumi_2sumi_8h.html" title="sstmac/libraries/sumi\l/sumi.h" alt="" coords="5,273,152,315"/>
+<area shape="rect" id="node2" href="$network__message_8h.html" title="sstmac/hardware/network\l/network_message.h" alt="" coords="82,97,253,138"/>
+<area shape="rect" id="node3" href="$message_8h.html" title="sstmac/libraries/sumi\l/message.h" alt="" coords="5,187,152,229"/>
+<area shape="rect" id="node5" href="$launch__event_8h.html" title="sstmac/software/launch\l/launch_event.h" alt="" coords="177,187,337,229"/>
+<area shape="rect" id="node4" href="$libraries_2sumi_2sumi_8h.html" title="sstmac/libraries/sumi\l/sumi.h" alt="" coords="5,278,152,319"/>
 </map>

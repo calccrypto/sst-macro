@@ -1,9 +1,0 @@
-<map id="sstmac::sw::thread::set_backtrace" name="sstmac::sw::thread::set_backtrace">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1thread.html#aa7dcd534a35d3a4b88d7404715020cc8" title="sstmac::sw::thread\l::collect_backtrace" alt="" coords="201,5,335,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#ae2be4850832f498182849753a56b330d" title="sstmac::sw::thread\l::init_thread" alt="" coords="201,71,335,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1thread.html#a04252a31c3ad0062df698f9090a9ccf4" title="sstmac::sw::thread\l::join" alt="" coords="201,136,335,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1thread.html#a59d998d76d2800eb5f280c537357c7bb" title="Derived types need to override this method. " alt="" coords="188,202,348,229"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1thread.html#a493253f84c694a0aa5c9dc9b073193f7" title="sstmac::sw::thread\l::stack" alt="" coords="201,253,335,295"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1thread.html#af5e227fd636df4cf35e889eb89d70fdc" title="sstmac::sw::thread\l::stacksize" alt="" coords="201,319,335,360"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1thread.html#a3170d57e832c62a25160c9477f8dc891" title="A convenience request to start a new thread. " alt="" coords="201,384,335,425"/>
-</map>

@@ -1,4 +1,4 @@
 <map id="sstmac::sw::round_robin_task_mapper" name="sstmac::sw::round_robin_task_mapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="18,145,191,340"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="27,5,183,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="17,147,191,327"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="26,6,181,98"/>
 </map>

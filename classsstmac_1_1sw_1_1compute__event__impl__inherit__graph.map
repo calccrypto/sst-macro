@@ -1,0 +1,5 @@
+<map id="sstmac::sw::compute_event_impl&lt; T &gt;" name="sstmac::sw::compute_event_impl&lt; T &gt;">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1compute__event.html" title="Input for processor models that use performance counter data. " alt="" coords="5,376,152,571"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="15,177,141,327"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="8,6,148,127"/>
+</map>

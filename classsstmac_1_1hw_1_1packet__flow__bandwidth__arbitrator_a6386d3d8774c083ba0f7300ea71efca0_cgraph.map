@@ -1,7 +1,0 @@
-<map id="sstmac::hw::packet_flow_bandwidth_arbitrator::credit_delay" name="sstmac::hw::packet_flow_bandwidth_arbitrator::credit_delay">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a7dbfe770386d52ddf70ab5ee3290c62f" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::bytes_sending" alt="" coords="231,5,408,61"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a74f6734b8c5e2bf7c6f23346b5dee02c" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::clone" alt="" coords="231,85,408,141"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#aca43557241d68a2911063ea695198b78" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::init_noise_model" alt="" coords="231,165,408,221"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#a1631417beca390101a6e5fd63b96b1fd" title="sstmac::hw::packet\l_flow_bandwidth_arbitrator\l::packet_flow_bandwidth\l_arbitrator" alt="" coords="231,246,408,317"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1packet__flow__bandwidth__arbitrator.html#ae8d55412d60d70415649259aa33fec7e" title="partition Partition the arbitrator time windows into a series of randomly sized chunks ..." alt="" coords="231,341,408,397"/>
-</map>

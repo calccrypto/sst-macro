@@ -1,4 +1,4 @@
 <map id="sstmac::hw::param_expander" name="sstmac::hw::param_expander">
-<area shape="rect" id="node2" href="$classsstmac_1_1param__expander.html" title="{sstmac::param_expander\n||+ ~param_expander()\l+ expand()\l+ finalize_init()\l}" alt="" coords="27,145,196,252"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="33,5,189,97"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1param__expander.html" title="{sstmac::param_expander\n||+ ~param_expander()\l+ expand()\l+ finalize_init()\l}" alt="" coords="26,147,195,253"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="33,6,188,98"/>
 </map>

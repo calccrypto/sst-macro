@@ -1,4 +1,4 @@
 <map id="sstmac::sw::task_ftq_calendar" name="sstmac::sw::task_ftq_calendar">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1ftq__epoch.html" title="{sstmac::sw::ftq_epoch\n||+ ftq_epoch()\l+ ~ftq_epoch()\l+ collect()\l+ init()\l+ event_time()\l+ set_event_time()\l}" alt="" coords="111,160,266,311"/>
-<area shape="rect" id="node4" href="$structsstmac_1_1sw_1_1event__node.html" title="{sstmac::sw::event_node\n||}" alt="" coords="290,197,455,274"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1ftq__epoch.html" title="{sstmac::sw::ftq_epoch\n||+ ftq_epoch()\l+ ~ftq_epoch()\l+ collect()\l+ init()\l+ event_time()\l+ set_event_time()\l}" alt="" coords="111,161,265,311"/>
+<area shape="rect" id="node4" href="$structsstmac_1_1sw_1_1event__node.html" title="{sstmac::sw::event_node\n||}" alt="" coords="290,197,454,275"/>
 </map>

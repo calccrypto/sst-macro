@@ -1,7 +1,0 @@
-<map id="sstmac::native::event_calendar::empty" name="sstmac::native::event_calendar::empty">
-<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1event__calendar.html#a700c38bf2835d79b4b497d59f75bc88f" title="sstmac::native::event\l_calendar::add_event" alt="" coords="223,5,371,47"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1event__calendar.html#a53cc6b0ee6dc755d6388a115711ec9cb" title="sstmac::native::event\l_calendar::go_do_one_event" alt="" coords="203,71,391,112"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1event__calendar.html#a31858750079c6d8755d765c385ef0cf3" title="sstmac::native::event\l_calendar::go_to_next_epoch" alt="" coords="201,136,393,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1event__calendar.html#a5a948a6b6079e45e69687c5f718100b9" title="sstmac::native::event\l_calendar::pop_next_event" alt="" coords="208,201,387,243"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1native_1_1event__calendar.html#ac0ed90f42807a442fb54024a874e8f8f" title="sstmac::native::event\l_calendar::pop_next_event\l_in_search_window" alt="" coords="208,266,387,322"/>
-</map>

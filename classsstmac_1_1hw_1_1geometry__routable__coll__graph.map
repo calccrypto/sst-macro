@@ -1,4 +1,0 @@
-<map id="sstmac::hw::geometry_routable" name="sstmac::hw::geometry_routable">
-<area shape="rect" id="node6" href="$classsprockit_1_1metadata__bits.html" title="{sprockit::metadata\l_bits\&lt; uint32_t \&gt;\n||+ bit()\l+ clear()\l+ set_bit()\l+ unset_bit()\l+ bit_integer()\l+ set_bit_integer()\l+ metadata_bits()\l+ metadata_bits()\l}" alt="" coords="41,145,171,340"/>
-<area shape="rect" id="node4" href="$structsstmac_1_1hw_1_1geometry__routable_1_1path.html" title="{sstmac::hw::geometry\l_routable::path\n||+ path()\l+ metadata_bit()\l+ set_metadata_bit()\l+ unset_metadata_bit()\l+ clear_metadata()\l}" alt="" coords="113,432,269,583"/>
-</map>
