@@ -32,23 +32,20 @@ sdn_router::~sdn_router()
 
 void
 sdn_router::add_entry(const int table_id,
-                      const Match_Fields & entry)
+                      const Match_Fields & match,
+                      const std::vector <Action> & actions)
 {
-  if (table_id >= tables.size()){
-    tables.resize(table_id + 1);
-  }
-  tables[table_id].first.insert(entry);
+  sdn_router::add_entry(table_id, std::make_pair(match, actions));
 }
 
 void
-sdn_router::add_action(const int table_id,
-                       const Action & action,
-                       const std::string & name)
+sdn_router::add_entry(const int table_id,
+                      const Entry & entry)
 {
   if (table_id >= tables.size()){
     tables.resize(table_id + 1);
   }
-  tables[table_id].second.insert(std::make_pair(action, name));
+  tables[table_id].push_back(entry);
 }
 
 sdn_router::Match_Fields *
@@ -58,32 +55,38 @@ sdn_router::get_packet_metadata(packet * pkt) const
       return nullptr;
   }
 
-  // do something with
-  // pkt->interface<structured_routable>()
   Match_Fields * mf = new Match_Fields;
+  // get match fields from
+  // pkt->interface<structured_routable>()
   return mf;
 }
 
 void
 sdn_router::route(packet* pkt)
 {
-  const Match_Fields * const packet_fields = get_packet_metadata(pkt);
+  const Match_Fields * packet_fields = get_packet_metadata(pkt);
 
   if (!packet_fields){
       return;
   }
 
   // search each table for matches
+  bool found = false;
   for(SDN_Table const & table : tables){
-    // search each entry in the current table for matches
-    Entries::const_iterator it = table.first.find(*packet_fields);
+    // linearly search each entry in the current table for matches
+    for(Entry const & entry : table){
+        // if match found, run the actions on the packet
+        if (entry.first == *packet_fields){
+            // for(auto action : entry.second){
+            //   action(&pkt);
+            // }
+            found = true;
+            break;
+        }
+    }
 
-    // if match found, run the actions on the packet
-    if (it != table.first.end()){
-      // for(std::function & action : table.second){
-      //   action(&pkt);
-      // }
-      break;
+    if (found){
+        break;
     }
   }
 

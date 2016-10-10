@@ -15,7 +15,6 @@
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/topology/coordinates.h>
 
-#include <set>
 #include <vector>
 
 namespace sstmac {
@@ -52,32 +51,24 @@ class sdn_router :
               (src == mf.src) &&
               (dst == mf.dst));
     }
-
-    bool operator<(const Match_Fields & mf) const {
-      return ((flow_id < mf.flow_id)?true:
-              ((src < mf.src)?true:
-               (dst < mf.dst)));
-    }
-
   };
 
-  typedef std::set <Match_Fields> Entries;                      // all patterns to match against
-  typedef void * Action;                                        // functors/std::function/lambdas
-  typedef std::set <std::pair <Action, std::string> > Actions;  // actions and some unique id
-  typedef std::pair <Entries, Actions> SDN_Table;               // a single table of multiple matching patterns and associated actions
+  typedef void * Action;                                         // functor/std::function/lambda
+  typedef std::pair <Match_Fields, std::vector <Action> > Entry; // a single entry with its set of actions
+  typedef std::vector <Entry> SDN_Table;                         // a single table of multiple matching patterns and associated actions
 
   // add entry to table
   void
   add_entry(const int table_id,
-            const Match_Fields & entry);
+            const Match_Fields & match,
+            const std::vector <Action> & actions);
 
-  // add action to table
+  // add entry to table
   void
-  add_action(const int table_id,
-             const Action & action,
-             const std::string & name);
+  add_entry(const int table_id,
+            const Entry & entry);
 
-  // no delete functions
+  // no delete/remove functions provided
 
  private:
   Match_Fields *
@@ -92,7 +83,7 @@ class sdn_router :
       structured_router(algo){}
 
  private:
-  std::vector <SDN_Table> tables;                               // flow tables
+  std::vector <SDN_Table> tables;                                // flow tables
 };
 
 }
