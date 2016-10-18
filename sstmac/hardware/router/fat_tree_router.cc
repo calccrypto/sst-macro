@@ -108,7 +108,6 @@ fat_tree_router::minimal_route_to_switch(
   switch_id ej_addr,
   structured_routable::path& path)
 {
-
   rter_debug("routing from switch %d:%s -> %d:%s on fat tree router",
     int(my_addr_), top_->switch_coords(my_addr_).to_string().c_str(),
     int(ej_addr), top_->switch_coords(ej_addr).to_string().c_str());

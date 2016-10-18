@@ -31,6 +31,15 @@ fat_tree_dmodk_router::~fat_tree_dmodk_router()
 }
 
 void
+fat_tree_dmodk_router::productive_paths_to_switch(
+  switch_id dst, structured_routable::path_set &paths)
+{
+  // only 1 possible path
+  paths.resize(1);
+  minimal_route_to_switch(dst, paths[0]);
+}
+
+void
 fat_tree_dmodk_router::minimal_route_to_switch(
   switch_id ej_addr,
   structured_routable::path& path)

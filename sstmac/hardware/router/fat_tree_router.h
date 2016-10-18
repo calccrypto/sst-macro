@@ -38,8 +38,10 @@ class fat_tree_router :
   virtual void
   finalize_init();
 
-  void
-  productive_paths_to_switch(switch_id dst, structured_routable::path_set &paths);
+  virtual void
+  productive_paths_to_switch(
+    switch_id dst,
+    structured_routable::path_set &paths);
 
   void
   init_factory_params(sprockit::sim_parameters *params);
@@ -63,7 +65,7 @@ class fat_tree_router :
   void
   build_rng();
 
-  void
+  virtual void
   minimal_route_to_switch(
     switch_id sw_addr,
     structured_routable::path& path);
@@ -100,7 +102,6 @@ class fat_tree_router :
   long min_reachable_leaf_id_;
   long max_reachable_leaf_id_;
   long seed_;
-
 
   int numpicked_;
   int pickstart_;

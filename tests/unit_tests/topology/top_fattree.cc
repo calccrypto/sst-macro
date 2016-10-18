@@ -15,10 +15,10 @@ test_fattree(UnitTest& unit)
     topology* top = topology_factory::get_value("fattree", &params);
 
     structured_topology* ftree = test_cast(structured_topology, top);
-    assertTrue(unit, "structured topology cast topology", bool(ftree) );
+    assertTrue(unit, "structured topology cast topology", bool(ftree));
 
     fat_tree * fattree = test_cast(fat_tree, ftree);
-    assertTrue(unit, "fat tree cast structured topology", bool(fattree) );
+    assertTrue(unit, "fat tree cast structured topology", bool(fattree));
 
     /*
       Level 2: 32 (2, 0) - 47 (2, 15)

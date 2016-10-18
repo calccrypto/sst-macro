@@ -39,7 +39,7 @@ class fat_tree_local_adaptive_router :
     return "fattreelarouter";
   }
 
- private:
+ protected:
   void
   minimal_route_to_switch(
     switch_id sw_addr,

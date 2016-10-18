@@ -10,7 +10,7 @@ void
 structured_router::set_topology(topology* top)
 {
   regtop_ = safe_cast(structured_topology, top);
-  router::set_topology(top);  
+  router::set_topology(top);
 }
 
 void

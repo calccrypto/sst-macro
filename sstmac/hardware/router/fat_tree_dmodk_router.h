@@ -33,12 +33,17 @@ class fat_tree_dmodk_router :
   {
   }
 
+  virtual void
+  productive_paths_to_switch(
+    switch_id dst,
+    structured_routable::path_set &paths);
+
   virtual std::string
   to_string() const {
     return "fattreedmodkrouter";
   }
 
- private:
+ protected:
   void
   minimal_route_to_switch(
     switch_id sw_addr,
