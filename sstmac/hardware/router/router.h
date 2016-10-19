@@ -221,10 +221,6 @@ class router :
 
 DeclareFactory(router);
 
-
-
-
-
 }
 }
 #endif

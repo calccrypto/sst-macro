@@ -14,76 +14,34 @@
 
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/topology/coordinates.h>
+#include <sstmac/software/process/app_id.h>
 
+#include <map>
 #include <vector>
 
 namespace sstmac {
 namespace hw {
 
-/**
- * @brief The sdn_router class
- * Router encapsulating the special routing computations that must occur on
- * a fat tree topology.
- */
 class sdn_router :
   public structured_router
 {
  public:
-  virtual ~sdn_router();
+  virtual ~sdn_router() {}
 
   sdn_router() :
-      structured_router(routing::minimal)
-  {}
+      structured_router(routing::sdn) {}
 
   virtual std::string
   to_string() const {
-    return "sdnrouter";
+    return "sdn router";
   }
 
-  // some subset of Packet
-  struct Match_Fields{
-    int flow_id;
-    int src;
-    int dst;
-
-    bool operator==(const Match_Fields & mf) const {
-      return ((flow_id == mf.flow_id) &&
-              (src == mf.src) &&
-              (dst == mf.dst));
-    }
-  };
-
-  typedef void * Action;                                         // functor/std::function/lambda
-  typedef std::pair <Match_Fields, std::vector <Action> > Entry; // a single entry with its set of actions
-  typedef std::vector <Entry> SDN_Table;                         // a single table of multiple matching patterns and associated actions
-
-  // add entry to table
   void
-  add_entry(const int table_id,
-            const Match_Fields & match,
-            const std::vector <Action> & actions);
-
-  // add entry to table
-  void
-  add_entry(const int table_id,
-            const Entry & entry);
-
-  // no delete/remove functions provided
-
- private:
-  Match_Fields *
-  get_packet_metadata(packet * pkt) const;
-
- public:
-  virtual void
   route(packet* pkt);
 
- protected:
-  sdn_router(routing::algorithm_t algo) :
-      structured_router(algo){}
-
- private:
-  std::vector <SDN_Table> tables;                                // flow tables
+  private:
+    // flow_table[app_id][src][dst] -> {path}
+    std::map <sw::app_id, std::map <node_id, std::map <node_id, std::vector <switch_id> > > > flow_table;
 };
 
 }

@@ -9,25 +9,27 @@
  *  SST/macroscale directory.
  */
 
-#include <sstmac/hardware/router/sdn_router.h>
+#include <sstmac/hardware/router/local_adaptive_router.h>
 #include <sstmac/hardware/router/routable.h>
 #include <sstmac/hardware/switch/network_switch.h>
-#include <sstmac/hardware/topology/structured_topology.h>
+#include <sstmac/hardware/topology/fat_tree.h>
 #include <sprockit/util.h>
 #include <sprockit/sim_parameters.h>
 #include <cmath>
+#include <climits>
 
-#define sdn_rter_debug(...) \
-  rter_debug("sdn: %s", sprockit::printf(__VA_ARGS__).c_str())
+#define ftree_la_rter_debug(...) \
+  rter_debug("fat tree (local adaptive): %s", sprockit::printf(__VA_ARGS__).c_str())
 
 namespace sstmac {
 namespace hw {
 
-SpktRegister("sdn", router, sdn_router);
+SpktRegister("local_adaptive", router, local_adaptive_router);
 
 void
-sdn_router::route(packet* pkt)
+local_adaptive_router::set_topology(topology *top)
 {
+  structured_router::set_topology(top);
 }
 
 }

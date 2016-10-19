@@ -12,7 +12,8 @@ namespace sstmac {
     minimal_adaptive,
     valiant,
     ugal,
-    deflt
+    deflt,
+    sdn
   } algorithm_t;
 
   const char*

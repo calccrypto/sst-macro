@@ -26,12 +26,11 @@ class fat_tree_dmodk_router :
   public fat_tree_router
 {
  public:
-  virtual ~fat_tree_dmodk_router();
+  virtual ~fat_tree_dmodk_router()
+  {}
 
   fat_tree_dmodk_router() :
-      fat_tree_router()
-  {
-  }
+      fat_tree_router() {}
 
   virtual void
   productive_paths_to_switch(

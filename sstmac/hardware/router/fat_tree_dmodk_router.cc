@@ -25,11 +25,6 @@ namespace hw {
 
 SpktRegister("fattree_dmodk | ftree_dmodk", router, fat_tree_dmodk_router);
 
-fat_tree_dmodk_router::~fat_tree_dmodk_router()
-{
-  printf("deleteing fat tree dmodk router\n");
-}
-
 void
 fat_tree_dmodk_router::productive_paths_to_switch(
   switch_id dst, structured_routable::path_set &paths)

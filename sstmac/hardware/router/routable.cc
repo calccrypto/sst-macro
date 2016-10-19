@@ -28,9 +28,10 @@ tostr(routing::algorithm_t algo)
       enumcase(valiant);
       enumcase(deflt);
       enumcase(ugal);
+      enumcase(sdn);
     default:
       spkt_throw_printf(sprockit::value_error,
-                       "invalud routing algorithm enum %d",
+                       "invalid routing algorithm enum %d",
                        algo);
   }
   return 0;
