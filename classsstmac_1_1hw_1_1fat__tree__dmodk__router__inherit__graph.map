@@ -1,5 +1,5 @@
 <map id="sstmac::hw::fat_tree_dmodk_router" name="sstmac::hw::fat_tree_dmodk_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="The fat_tree_router class Router encapsulating the special routing computations that must occur on a ..." alt="" coords="5,389,219,819"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="19,131,205,341"/>
-<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="85,5,139,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="The fat_tree_router class Router encapsulating the special routing computations that must occur on a ..." alt="" coords="5,388,220,817"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="19,131,206,340"/>
+<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="85,5,140,83"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="docs/developer/tutorials/programming/basic/diamond.h" name="docs/developer/tutorials/programming/basic/diamond.h">
-<area shape="rect" id="node2" href="$gem_8h.html" title="gem.h" alt="" coords="361,96,419,123"/>
-<area shape="rect" id="node15" href="$mineral_8h.html" title="mineral.h" alt="" coords="444,96,517,123"/>
-<area shape="rect" id="node3" href="$ptr__type_8h.html" title="sprockit/ptr_type.h" alt="" coords="371,171,500,197"/>
-<area shape="rect" id="node4" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="147,245,263,272"/>
-<area shape="rect" id="node9" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="343,395,493,421"/>
-<area shape="rect" id="node12" href="$refcount__ptr_8h.html" title="sprockit/refcount_ptr.h" alt="" coords="417,245,569,272"/>
-<area shape="rect" id="node7" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="196,320,343,347"/>
+<area shape="rect" id="node2" href="$gem_8h.html" title="gem.h" alt="" coords="362,95,421,121"/>
+<area shape="rect" id="node15" href="$mineral_8h.html" title="mineral.h" alt="" coords="445,95,519,121"/>
+<area shape="rect" id="node3" href="$ptr__type_8h.html" title="sprockit/ptr_type.h" alt="" coords="371,169,502,196"/>
+<area shape="rect" id="node4" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="148,244,264,271"/>
+<area shape="rect" id="node9" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="344,393,495,420"/>
+<area shape="rect" id="node12" href="$refcount__ptr_8h.html" title="sprockit/refcount_ptr.h" alt="" coords="418,244,570,271"/>
+<area shape="rect" id="node7" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="197,319,343,345"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="sstmac::sw::service" name="sstmac::sw::service">
-<area shape="rect" id="node3" href="$classsstmac_1_1sumi__server.html" title="{sstmac::sumi_server\n|&#45; appid_\l&#45; procs_\l|+ sumi_server()\l+ register_proc()\l+ incoming_event()\l&#45; get_proc()\l}" alt="" coords="5,544,149,680"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1launcher.html" title="A launcher that can be cooperatively scheduled by a very naive scheduler. " alt="" coords="174,537,332,687"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sumi__server.html" title="{sstmac::sumi_server\n|&#45; appid_\l&#45; procs_\l|+ sumi_server()\l+ register_proc()\l+ incoming_event()\l&#45; get_proc()\l}" alt="" coords="5,542,149,678"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1launcher.html" title="A launcher that can be cooperatively scheduled by a very naive scheduler. " alt="" coords="174,535,333,685"/>
 <area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1library.html" title="{sstmac::sw::library\n|# os_\l# key_cat_\l# sid_\l&#45; libname_\l|+ unregister_all_libs()\l+ to_string()\l+ lib_name()\l+ init_os()\l+ consume_params()\l+ incoming_event()\l+ os()\l+ sid()\l+ ~library()\l# library()\l# library()\l# register_lib()\l}" alt="" coords="92,5,239,288"/>
 </map>

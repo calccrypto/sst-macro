@@ -1,0 +1,8 @@
+<map id="sstmac::hw::structured_router::~structured_router" name="sstmac::hw::structured_router::~structured_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html#ae9b09ebb6ec6718d660dedd75f08b209" title="sstmac::hw::structured\l_router::minimal_route\l_to_node" alt="" coords="236,5,392,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html#abc4ec369883edb62984054b5331d3467" title="sstmac::hw::structured\l_router::minimal_route\l_to_switch" alt="" coords="236,85,392,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__router.html#a1526435285f79328d659d23237885eb7" title="minimal_routes_to_node Special version of routing function that computes all possible minimal paths..." alt="" coords="235,165,393,221"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__router.html#a69c5bf592bf4ed0172bddc83f8c9f118" title="sstmac::hw::structured\l_router::productive_paths\l_to_switch" alt="" coords="229,245,399,301"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__router.html#a25a3244ace2df915816d007e2d7dc208" title="set_switch Set the parent switch using this router to perform route computations " alt="" coords="236,325,392,366"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__router.html#a8c953eb5e27bb79494efe8500fea544c" title="set_topology Set the topology to be used for route computations. " alt="" coords="236,390,392,431"/>
+</map>

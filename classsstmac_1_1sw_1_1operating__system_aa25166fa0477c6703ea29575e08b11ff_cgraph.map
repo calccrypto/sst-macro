@@ -1,4 +1,7 @@
 <map id="sstmac::sw::operating_system::set_addr" name="sstmac::sw::operating_system::set_addr">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a21c7cf2a4dea7311674f0861770019cb" title="sstmac::sw::operating\l_system::addr" alt="" coords="207,5,358,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="205,70,360,111"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a21c7cf2a4dea7311674f0861770019cb" title="sstmac::sw::operating\l_system::addr" alt="" coords="221,5,371,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a96940aa8b44bff021fb5f956e6973a84" title="sstmac::sw::operating\l_system::free_thread_stack" alt="" coords="204,71,388,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="219,136,373,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1operating__system.html#a763f6c85b325b5a19c225ee8750c6d9d" title="sstmac::sw::operating\l_system::schedule_timeout" alt="" coords="205,201,387,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#aefe6bded2e50cb4c38409150fa7ba0ab" title="sstmac::sw::operating\l_system::start_api_call" alt="" coords="217,267,375,308"/>
 </map>

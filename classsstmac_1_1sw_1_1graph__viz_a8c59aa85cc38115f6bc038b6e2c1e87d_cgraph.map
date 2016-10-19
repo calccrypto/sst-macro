@@ -1,7 +1,0 @@
-<map id="sstmac::sw::graph_viz::clone" name="sstmac::sw::graph_viz::clone">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1graph__viz.html#ad87177c4f001853fdbc581bfba8eb7ea" title="sstmac::sw::graph_viz\l::clone_me" alt="" coords="208,70,363,111"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1graph__viz.html#ad2c059d3188758e486cfb14aee25fb1e" title="sstmac::sw::graph_viz\l::graph_viz" alt="" coords="411,5,565,46"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#aca39be080302d18fec73505eba65d748" title="sstmac::stat_collector\l::clone_into" alt="" coords="413,70,563,111"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="413,135,563,177"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="614,143,783,169"/>
-</map>

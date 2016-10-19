@@ -1,0 +1,9 @@
+<map id="sstmac::hw::crossbar::num_leaf_switches" name="sstmac::hw::crossbar::num_leaf_switches">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1crossbar.html#a88bde8e249d842b77ea14446b436773f" title="sstmac::hw::crossbar\l::configure_vc_routing" alt="" coords="213,5,364,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1crossbar.html#ad476188e06d8fb341c0392885ac36034" title="Given a set of connectables, connect them appropriately. " alt="" coords="215,71,363,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1crossbar.html#a4d9bdf607b0fcd1f81eb73bbbc0f7479" title="sstmac::hw::crossbar\l::convert_to_port" alt="" coords="215,136,363,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1crossbar.html#a27186e77e4f540c52001c7a89a6ddce3" title="The function accepts either source or node coordinates. " alt="" coords="215,201,363,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1crossbar.html#ad687b9d13936c3241b57fdc2f9ce605b" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="201,267,376,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1crossbar.html#acc4f1facdb199abc01541c54c92a8765" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="201,332,376,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1crossbar.html#ae3a019b331100f426237ed5a6c6d2110" title="sstmac::hw::crossbar\l::productive_path" alt="" coords="215,397,363,439"/>
+</map>

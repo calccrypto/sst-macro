@@ -1,4 +1,4 @@
 <map id="RNG::MWC::value" name="RNG::MWC::value">
-<area shape="rect" id="node2" href="$classRNG_1_1MWC.html#a7451204280cf5487469f4d884d4be964" title="RNG::MWC::wnew" alt="" coords="187,5,323,32"/>
-<area shape="rect" id="node3" href="$classRNG_1_1MWC.html#a31d08ec20ec73384f5bd1fc2704a8618" title="RNG::MWC::znew" alt="" coords="188,56,321,83"/>
+<area shape="rect" id="node2" href="$classRNG_1_1UniformInteger.html#a903dcae9c7cc366950a35551e5f9f434" title="RNG::UniformInteger\l::nseed" alt="" coords="187,5,333,47"/>
+<area shape="rect" id="node3" href="$classRNG_1_1UniformInteger.html#a8bd9a14f484787dae1ea39fd1a5c1396" title="RNG::UniformInteger\l::vec_reseed" alt="" coords="187,71,333,112"/>
 </map>

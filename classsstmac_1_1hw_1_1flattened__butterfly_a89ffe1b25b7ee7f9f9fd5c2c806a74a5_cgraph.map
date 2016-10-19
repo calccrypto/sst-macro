@@ -1,0 +1,9 @@
+<map id="sstmac::hw::flattened_butterfly::ndimensions" name="sstmac::hw::flattened_butterfly::ndimensions">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#a9ee128d26a885a49fef0b821bfbca7ee" title="Compute coordinates (e.g. " alt="" coords="214,5,393,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#ad9032b37fd5a0fe2572be4ca10455964" title="Given a set of connectables, connect them appropriately. " alt="" coords="214,85,393,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#a7832428f321e2633ba635b9799f05819" title="sstmac::hw::flattened\l_butterfly::convert_to_port" alt="" coords="216,150,391,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#a49ca7334e81c4a1de9bf75cd14d4e12c" title="The function accepts either source or node coordinates. " alt="" coords="211,215,396,257"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#aa92ac423021723e0758321080e7e1c9d" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="221,280,386,336"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#a934f8760a17c651aee8a5a7c5ab058ff" title="sstmac::hw::flattened\l_butterfly::productive_path" alt="" coords="215,359,391,401"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1flattened__butterfly.html#a9ce3b21d29b1b089b451d9ee0f91f413" title="sstmac::hw::flattened\l_butterfly::switch_number" alt="" coords="217,425,389,466"/>
+</map>

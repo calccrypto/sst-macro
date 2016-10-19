@@ -1,0 +1,14 @@
+<map id="sstmac::hw::tiled_dragonfly::~tiled_dragonfly" name="sstmac::hw::tiled_dragonfly::~tiled_dragonfly">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#acff19567088b33659971fa26fb3e80e0" title="configure_geometric_paths For all possible geometric or structure paths, compute their redundances in..." alt="" coords="241,5,428,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a62090c768921de0bb8b634d7fcf3092b" title="Given a set of connectables, connect them appropriately. " alt="" coords="243,71,426,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a8d98260153c5f11e87952e70fbd5e767" title="sstmac::hw::tiled_dragonfly\l::convert_to_port" alt="" coords="243,136,426,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#ae52ec3e27c2e55c989bfb4c1af79d3f3" title="sstmac::hw::tiled_dragonfly\l::eject_paths_on_switch" alt="" coords="243,201,426,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#af17fda61c8531e0af24d5ea43f2aef4a" title="sstmac::hw::tiled_dragonfly\l::endpoint_to_ejection_switch" alt="" coords="237,267,432,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#ab9906521967910762c3fa2b729b72a56" title="sstmac::hw::tiled_dragonfly\l::endpoint_to_injection_switch" alt="" coords="236,332,433,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a859d6c0eefda85512436f44ddd89b65a" title="sstmac::hw::tiled_dragonfly\l::init_factory_params" alt="" coords="243,397,426,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a0d68aaf4108572d35a97b9fe517c73fd" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="243,463,426,504"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a912c69bc2c99b858ace4057166520682" title="sstmac::hw::tiled_dragonfly\l::minimal_routes_to_coords" alt="" coords="243,528,426,569"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#ad05636b1cef04040421f84a858e45724" title="sstmac::hw::tiled_dragonfly\l::minimal_routes_to_switch" alt="" coords="243,593,426,635"/>
+<area shape="rect" id="node12" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#abf00cd37c373b774437252e9cc6d10d8" title="sstmac::hw::tiled_dragonfly\l::port" alt="" coords="243,659,426,700"/>
+<area shape="rect" id="node13" href="$classsstmac_1_1hw_1_1tiled__dragonfly.html#a12863590492528724b03d481fedd69c0" title="sstmac::hw::tiled_dragonfly\l::xy_connected_to_group" alt="" coords="243,724,426,765"/>
+</map>

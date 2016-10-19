@@ -1,4 +1,4 @@
 <map id="sstmac::tutorial::gem" name="sstmac::tutorial::gem">
-<area shape="rect" id="node3" href="$classsstmac_1_1tutorial_1_1diamond.html" title="{sstmac::tutorial::diamond\n|# num_carats_\l|+ diamond()\l+ to_string()\l+ value()\l+ structure()\l}" alt="" coords="5,331,173,453"/>
-<area shape="rect" id="node2" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="28,5,151,141"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1tutorial_1_1diamond.html" title="{sstmac::tutorial::diamond\n|# num_carats_\l|+ diamond()\l+ to_string()\l+ value()\l+ structure()\l}" alt="" coords="5,329,175,451"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n|&#45; references\l|+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="29,5,151,141"/>
 </map>

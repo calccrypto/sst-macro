@@ -1,4 +1,4 @@
 <map id="sprockit::debug" name="sprockit::debug">
-<area shape="rect" id="node4" href="$classsprockit_1_1debug__prefix__fxn.html" title="The debug_prefix_fxn class Produces a string prefix (dynamically, called every time) that can be regi..." alt="" coords="275,183,449,275"/>
-<area shape="rect" id="node5" href="$classsprockit_1_1debug__int.html" title="The debug_int class is an opaque wrapper around an integer used for checking if debug slots are activ..." alt="" coords="474,147,605,312"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1debug__prefix__fxn.html" title="The debug_prefix_fxn class Produces a string prefix (dynamically, called every time) that can be regi..." alt="" coords="275,182,450,274"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1debug__int.html" title="The debug_int class is an opaque wrapper around an integer used for checking if debug slots are activ..." alt="" coords="474,145,606,311"/>
 </map>

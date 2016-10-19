@@ -1,5 +1,5 @@
 <map id="sstmac::hw::hdtorus" name="sstmac::hw::hdtorus">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="42,627,235,763"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="13,177,223,562"/>
-<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,75,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="43,623,236,759"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="14,175,225,560"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,76,83"/>
 </map>

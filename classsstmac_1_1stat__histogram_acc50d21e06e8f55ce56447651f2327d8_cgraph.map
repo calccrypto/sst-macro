@@ -1,6 +1,6 @@
 <map id="sstmac::stat_histogram::clone_me" name="sstmac::stat_histogram::clone_me">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html#a50e666c6efca63c244b4479add288c69" title="sstmac::stat_histogram\l::clone_into" alt="" coords="214,5,373,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="218,70,369,111"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__histogram.html#a4408e6828affb456d95154fdd36720b1" title="sstmac::stat_histogram\l::stat_histogram" alt="" coords="214,135,373,177"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="422,77,591,104"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html#a50e666c6efca63c244b4479add288c69" title="sstmac::stat_histogram\l::clone_into" alt="" coords="212,5,371,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="216,71,367,112"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__histogram.html#a4408e6828affb456d95154fdd36720b1" title="sstmac::stat_histogram\l::stat_histogram" alt="" coords="212,136,371,177"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="419,78,588,105"/>
 </map>

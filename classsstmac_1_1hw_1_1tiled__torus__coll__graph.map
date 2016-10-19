@@ -1,6 +1,6 @@
 <map id="sstmac::hw::tiled_torus" name="sstmac::hw::tiled_torus">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="" coords="330,840,520,1240"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="222,627,415,763"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,177,215,562"/>
-<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="34,5,104,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1hdtorus.html" title="Implements a high dimensional torus network. " alt="" coords="330,836,521,1236"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="222,623,415,759"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,175,216,560"/>
+<area shape="rect" id="node5" href="$classtopology.html" title="{topology\n||}" alt="" coords="34,5,105,83"/>
 </map>

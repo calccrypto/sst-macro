@@ -1,0 +1,8 @@
+<map id="sstmac::sw::threading_interface::~threading_interface" name="sstmac::sw::threading_interface::~threading_interface">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1threading__interface.html#a49f854c996026774e9e3d7ff75e1a604" title="This is called when we have completed running the thread. " alt="" coords="219,5,369,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1threading__interface.html#a2e76064d681fed5d42e26a452d0e1062" title="sstmac::sw::threading\l_interface::copy" alt="" coords="219,85,369,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1threading__interface.html#a17de4f86d6ab2bdbf34e175499202bf4" title="sstmac::sw::threading\l_interface::destroy_context" alt="" coords="204,150,384,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1threading__interface.html#a501fb3d3f01adec35ac0cce42bdc588e" title="sstmac::sw::threading\l_interface::init_context" alt="" coords="217,215,371,257"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1threading__interface.html#ac3a52a0cf9d4e155cc3df941d2ad7fcf" title="Start a new context. " alt="" coords="213,281,375,322"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1threading__interface.html#a8377be0c1258032f6c9b41589c89d48d" title="Swap context. " alt="" coords="210,346,378,387"/>
+</map>

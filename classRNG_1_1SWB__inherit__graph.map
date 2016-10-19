@@ -1,4 +1,4 @@
 <map id="RNG::SWB" name="RNG::SWB">
-<area shape="rect" id="node2" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="22,278,135,429"/>
+<area shape="rect" id="node2" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="22,277,135,428"/>
 <area shape="rect" id="node3" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="5,5,152,229"/>
 </map>

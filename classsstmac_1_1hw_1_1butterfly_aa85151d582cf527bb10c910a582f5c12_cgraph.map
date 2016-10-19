@@ -1,0 +1,7 @@
+<map id="sstmac::hw::butterfly::num_switches" name="sstmac::hw::butterfly::num_switches">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a09b2f8bc54771473d47044b337cc4a55" title="Given a set of connectables, connect them appropriately. " alt="" coords="201,5,383,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#abb2915db7da874713885635da6d80ed4" title="sstmac::hw::structured\l_topology::endpoint_to\l_ejection_switch" alt="" coords="214,70,370,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a18e483fe72cec95a9fe33d0e6b7d12b9" title="The function accepts either source or node coordinates. " alt="" coords="199,149,385,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#ab5cc6236d0e119f71a7251a5269efeb6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="209,214,375,270"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1abstract__butterfly.html#a7f286b493e139bcaeaa04b646704cafb" title="sstmac::hw::abstract\l_butterfly::switch_number" alt="" coords="206,293,378,335"/>
+</map>

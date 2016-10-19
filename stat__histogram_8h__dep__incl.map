@@ -1,5 +1,5 @@
 <map id="sstmac/common/stats/stat_histogram.h" name="sstmac/common/stats/stat_histogram.h">
-<area shape="rect" id="node2" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="4,194,168,235"/>
-<area shape="rect" id="node3" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="124,97,329,138"/>
-<area shape="rect" id="node4" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="193,187,375,243"/>
+<area shape="rect" id="node2" href="$packet__flow__nic_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_nic.h" alt="" coords="5,191,171,233"/>
+<area shape="rect" id="node3" href="$packet__flow__packetizer_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_packetizer.h" alt="" coords="125,95,331,136"/>
+<area shape="rect" id="node4" href="$packet__flow__memory__model_8h.html" title="sstmac/hardware/packet\l_flow/packet_flow_memory\l_model.h" alt="" coords="195,184,376,240"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="sstmac::hw::fat_tree_router::fat_tree_router" name="sstmac::hw::fat_tree_router::fat_tree_router">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1fat__tree__router.html#ac20bcd13469f3f04c1a92907e6681a94" title="sstmac::hw::fat_tree\l_router::finalize_init" alt="" coords="221,5,364,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html#aed0b2df6c9a90f9cab3572206a6853ad" title="sstmac::hw::fat_tree\l_router::init_factory\l_params" alt="" coords="221,70,364,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1fat__tree__router.html#ae7d5839531fd116f4f3a0d3d5830a472" title="sstmac::hw::fat_tree\l_router::productive_paths\l_to_switch" alt="" coords="208,150,377,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1fat__tree__router.html#a015b5a094df3da174d30854f58479eea" title="set_topology Set the topology to be used for route computations. " alt="" coords="221,229,365,271"/>
+</map>

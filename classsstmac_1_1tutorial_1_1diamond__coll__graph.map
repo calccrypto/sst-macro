@@ -1,5 +1,5 @@
 <map id="sstmac::tutorial::diamond" name="sstmac::tutorial::diamond">
-<area shape="rect" id="node2" href="$classsstmac_1_1tutorial_1_1gem.html" title="The gem class. " alt="" coords="42,347,187,439"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n||+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="54,147,176,283"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1tutorial_1_1mineral.html" title="The mineral class. " alt="" coords="212,347,375,439"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1tutorial_1_1gem.html" title="The gem class. " alt="" coords="42,344,188,436"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1ptr__type.html" title="{sprockit::ptr_type\n||+ ptr_type()\l+ nreferences()\l+ ~ptr_type()\l# incref()\l# decref()\l}" alt="" coords="54,145,176,281"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1tutorial_1_1mineral.html" title="The mineral class. " alt="" coords="212,344,375,436"/>
 </map>

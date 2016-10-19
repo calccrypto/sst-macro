@@ -1,3 +1,20 @@
 <map id="sstmac::sw::operating_system::execute" name="sstmac::sw::operating_system::execute">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#adea346e528b6ad7b6e78e0dea958bb6a" title="execute Execute a compute function. " alt="" coords="205,5,373,46"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a69210b5bf75022379dbc774aba5a363f" title="sstmac::sw::operating\l_system::add_application" alt="" coords="211,5,381,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a2d10e4ce90b03446dfe2b8ec9f119dcb" title="sstmac::sw::operating\l_system::app_ptr" alt="" coords="221,71,371,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1operating__system.html#a08855c6c67b81ee1738fcb7525420474" title="sstmac::sw::operating\l_system::app_ptrs" alt="" coords="221,136,371,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1operating__system.html#a24822129095373eb1d6b394c07f4a6b1" title="execute Enqueue an operation to perform This function takes place in &quot;kernel&quot; land and will never blo..." alt="" coords="217,201,375,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#ae2898106a07983aef6524550d8a95a17" title="sstmac::sw::operating\l_system::block" alt="" coords="221,267,371,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1operating__system.html#a844c3b95e26d0e96f6a74edbebd35972" title="sstmac::sw::operating\l_system::complete_thread" alt="" coords="208,332,384,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1operating__system.html#adea346e528b6ad7b6e78e0dea958bb6a" title="execute Execute a compute function. " alt="" coords="212,397,380,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1sw_1_1operating__system.html#adb857e5bfd864f666797e338ee96a47d" title="sstmac::sw::operating\l_system::handle_event" alt="" coords="217,463,375,504"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1sw_1_1operating__system.html#a08b9ac9fa11129ff08bccc349c15e50b" title="sstmac::sw::operating\l_system::join_thread" alt="" coords="221,528,371,569"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1sw_1_1operating__system.html#a003ad695dac5c0a3c562222a92fd0220" title="sstmac::sw::operating\l_system::lib" alt="" coords="221,593,371,635"/>
+<area shape="rect" id="node12" href="$classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="221,659,371,700"/>
+<area shape="rect" id="node13" href="$classsstmac_1_1sw_1_1operating__system.html#a961efea0d62d72b3cd37f4a08b14633e" title="Set the eventmanager for this scheduler. " alt="" coords="206,724,386,765"/>
+<area shape="rect" id="node14" href="$classsstmac_1_1sw_1_1operating__system.html#ae96b6d635a4796d7b8aceb6a7ffcf9ef" title="sstmac::sw::operating\l_system::set_ncores" alt="" coords="221,789,371,831"/>
+<area shape="rect" id="node15" href="$classsstmac_1_1sw_1_1operating__system.html#a307b3813226ecc0f379375aa1fedd886" title="sstmac::sw::operating\l_system::stack_check" alt="" coords="219,855,373,896"/>
+<area shape="rect" id="node16" href="$classsstmac_1_1sw_1_1operating__system.html#a52b5d87308076e7f55700935a96e5e0b" title="sstmac::sw::operating\l_system::start_app" alt="" coords="221,920,371,961"/>
+<area shape="rect" id="node17" href="$classsstmac_1_1sw_1_1operating__system.html#abc09c5048b81ea6accb8904e753e2e7c" title="sstmac::sw::operating\l_system::start_thread" alt="" coords="221,985,371,1027"/>
+<area shape="rect" id="node18" href="$classsstmac_1_1sw_1_1operating__system.html#a47348d8ae17e6caa7bbdfac85ec09217" title="sstmac::sw::operating\l_system::unblock" alt="" coords="221,1051,371,1092"/>
+<area shape="rect" id="node19" href="$classsstmac_1_1sw_1_1operating__system.html#a43801583bcf9b729d5dda943023d3e45" title="sstmac::sw::operating\l_system::unregister_all_libs" alt="" coords="204,1116,388,1157"/>
 </map>

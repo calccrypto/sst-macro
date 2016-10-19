@@ -1,12 +1,12 @@
 <map id="sstmac::hw::structured_router" name="sstmac::hw::structured_router">
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="The fat_tree_router class Router encapsulating the special routing computations that must occur on a ..." alt="" coords="298,389,512,819"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="645,507,787,701"/>
-<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1sdn__router.html" title="The sdn_router class Router encapsulating the special routing computations that must occur on a fat t..." alt="" coords="812,514,975,694"/>
-<area shape="rect" id="node2" href="$classrouter.html" title="{router\n||}" alt="" coords="689,5,743,83"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1fat__tree__dmodk__router.html" title="The fat_tree_dmodk_router class Router encapsulating the special routing computations that must occur..." alt="" coords="5,948,187,1084"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive__router.html" title="The fat_tree_global_adaptive_router class Router encapsulating the special routing computations that ..." alt="" coords="211,919,393,1113"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1fat__tree__local__adaptive__router.html" title="The fat_tree_local_adaptive_router class Router encapsulating the special routing computations that m..." alt="" coords="418,933,600,1099"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="The minimal_adaptive_router class Performs some amount of adaptive routing, choosing between the leas..." alt="" coords="625,948,807,1084"/>
-<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="831,867,1035,1165"/>
-<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1ugal__router.html" title="The ugal_router class Encapsulates a router that performs Univeral Globally Adaptive Load&#45;balanced ro..." alt="" coords="851,1214,1015,1423"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1fat__tree__router.html" title="The fat_tree_router class Router encapsulating the special routing computations that must occur on a ..." alt="" coords="300,388,515,817"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="643,505,785,700"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1sdn__router.html" title="The sdn_router class Router encapsulating the special routing computations that must occur on a fat t..." alt="" coords="810,513,973,693"/>
+<area shape="rect" id="node2" href="$classrouter.html" title="{router\n||}" alt="" coords="687,5,741,83"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1fat__tree__dmodk__router.html" title="The fat_tree_dmodk_router class Router encapsulating the special routing computations that must occur..." alt="" coords="5,931,191,1097"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1fat__tree__global__adaptive__router.html" title="The fat_tree_global_adaptive_router class Router encapsulating the special routing computations that ..." alt="" coords="215,917,397,1111"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1fat__tree__local__adaptive__router.html" title="The fat_tree_local_adaptive_router class Router encapsulating the special routing computations that m..." alt="" coords="422,931,598,1097"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="The minimal_adaptive_router class Performs some amount of adaptive routing, choosing between the leas..." alt="" coords="623,946,805,1082"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="829,865,1033,1163"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1ugal__router.html" title="The ugal_router class Encapsulates a router that performs Univeral Globally Adaptive Load&#45;balanced ro..." alt="" coords="849,1211,1014,1420"/>
 </map>

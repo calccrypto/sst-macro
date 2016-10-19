@@ -1,8 +1,8 @@
 <map id="sstmac::hw::ugal_router" name="sstmac::hw::ugal_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="155,1177,359,1474"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="186,931,328,1125"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="164,627,351,837"/>
-<area shape="rect" id="node5" href="$classrouter.html" title="{router\n||}" alt="" coords="251,331,305,408"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="17,177,227,562"/>
-<area shape="rect" id="node7" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,75,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="156,1168,360,1465"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="187,924,329,1119"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="165,623,351,832"/>
+<area shape="rect" id="node5" href="$classrouter.html" title="{router\n||}" alt="" coords="252,329,307,406"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="18,175,229,560"/>
+<area shape="rect" id="node7" href="$classtopology.html" title="{topology\n||}" alt="" coords="5,5,76,83"/>
 </map>

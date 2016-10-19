@@ -1,0 +1,14 @@
+<map id="sstmac::sw::operating_system::params" name="sstmac::sw::operating_system::params">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a93fee2079f44c72cd724f80a529bc72d" title="sstmac::sw::operating\l_system::add_thread" alt="" coords="221,5,371,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1operating__system.html#a88c114daf923da146c8e2429d1d1e38c" title="sstmac::sw::operating\l_system::compute" alt="" coords="221,71,371,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1operating__system.html#a2b670cf4fcbe3dda2a92688c6bf5a356" title="sstmac::sw::operating\l_system::current_os_thread\l_context" alt="" coords="204,135,388,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sw_1_1operating__system.html#a47dfa43adfde97be65f522b6cb851cbd" title="sstmac::sw::operating\l_system::init_services" alt="" coords="219,215,373,256"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1operating__system.html#a1d27e0e7158b4f4b5772db98cb38c37f" title="sstmac::sw::operating\l_system::init_threading" alt="" coords="217,280,375,321"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1sw_1_1operating__system.html#ae96431f7504f59bc13e6044418a893f8" title="sstmac::sw::operating\l_system::kill_node" alt="" coords="221,345,371,387"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1sw_1_1operating__system.html#a59179c916a68889f02b01c6967edab7f" title="sstmac::sw::operating\l_system::local_shutdown" alt="" coords="211,411,381,452"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1sw_1_1operating__system.html#ae71647a88b537322850720b102e26f5f" title="sstmac::sw::operating\l_system::operating_system" alt="" coords="205,476,387,517"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1sw_1_1operating__system.html#aac3d0d5baf151c749731b274649279ae" title="sstmac::sw::operating\l_system::register_lib" alt="" coords="221,541,371,583"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1sw_1_1operating__system.html#ad643e9db5af77d2d6224217ba915ff8f" title="sstmac::sw::operating\l_system::sleep" alt="" coords="221,607,371,648"/>
+<area shape="rect" id="node12" href="$classsstmac_1_1sw_1_1operating__system.html#ae627e7a18de4203cf77f96d5b8f22308" title="sstmac::sw::operating\l_system::switch_to_thread" alt="" coords="207,672,385,713"/>
+<area shape="rect" id="node13" href="$classsstmac_1_1sw_1_1operating__system.html#a7d1b4e5e2a3fbb835a733c588ad4b22e" title="sstmac::sw::operating\l_system::unregister_lib" alt="" coords="217,737,375,779"/>
+</map>

@@ -1,6 +1,6 @@
 <map id="sstmac::sw::lib_compute_matrix" name="sstmac::sw::lib_compute_matrix">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html" title="{sstmac::sw::lib_compute\l_memmove\n||+ ~lib_compute_memmove()\l+ lib_compute_memmove()\l+ lib_compute_memmove()\l+ unregister_all_libs()\l+ consume_params()\l+ incoming_event()\l+ read()\l+ write()\l+ copy()\l# init()\l# do_access()\l}" alt="" coords="265,406,452,645"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="41,147,236,327"/>
-<area shape="rect" id="node4" href="$classlib__compute.html" title="{lib_compute\n||}" alt="" coords="5,5,96,83"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="447,177,624,298"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1lib__compute__memmove.html" title="{sstmac::sw::lib_compute\l_memmove\n||+ ~lib_compute_memmove()\l+ lib_compute_memmove()\l+ lib_compute_memmove()\l+ unregister_all_libs()\l+ consume_params()\l+ incoming_event()\l+ read()\l+ write()\l+ copy()\l# init()\l# do_access()\l}" alt="" coords="265,403,453,641"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1lib__compute__inst.html" title="{sstmac::sw::lib_compute_inst\n||+ lib_compute_inst()\l+ lib_compute_inst()\l+ ~lib_compute_inst()\l+ compute_inst()\l+ compute_detailed()\l+ compute_loop()\l+ consume_params()\l+ incoming_event()\l}" alt="" coords="41,145,237,325"/>
+<area shape="rect" id="node4" href="$classlib__compute.html" title="{lib_compute\n||}" alt="" coords="5,5,97,83"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1sw_1_1key_1_1category.html" title="{sstmac::sw::key::category\n||+ category()\l+ name()\l+ id()\l&#45; category()\l}" alt="" coords="448,175,625,296"/>
 </map>

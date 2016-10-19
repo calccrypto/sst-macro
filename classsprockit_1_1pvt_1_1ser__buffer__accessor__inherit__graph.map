@@ -1,4 +1,4 @@
 <map id="sprockit::pvt::ser_buffer_accessor" name="sprockit::pvt::ser_buffer_accessor">
-<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__packer.html" title="{sprockit::pvt::ser\l_packer\n||+ pack()\l+ pack_buffer()\l+ pack_string()\l}" alt="" coords="5,294,125,415"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__unpacker.html" title="{sprockit::pvt::ser\l_unpacker\n||+ unpack()\l+ unpack_buffer()\l+ unpack_string()\l}" alt="" coords="150,294,273,415"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__packer.html" title="{sprockit::pvt::ser\l_packer\n||+ pack()\l+ pack_buffer()\l+ pack_string()\l}" alt="" coords="5,292,125,413"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__unpacker.html" title="{sprockit::pvt::ser\l_unpacker\n||+ unpack()\l+ unpack_buffer()\l+ unpack_string()\l}" alt="" coords="150,292,274,413"/>
 </map>

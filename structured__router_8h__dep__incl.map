@@ -1,11 +1,11 @@
 <map id="sstmac/hardware/router/structured_router.h" name="sstmac/hardware/router/structured_router.h">
-<area shape="rect" id="node2" href="$fat__tree__router_8h.html" title="sstmac/hardware/router\l/fat_tree_router.h" alt="" coords="293,97,451,138"/>
-<area shape="rect" id="node6" href="$minimal__routing_8h.html" title="sstmac/hardware/router\l/minimal_routing.h" alt="" coords="571,97,729,138"/>
-<area shape="rect" id="node10" href="$sdn__router_8h.html" title="sstmac/hardware/router\l/sdn_router.h" alt="" coords="754,97,912,138"/>
-<area shape="rect" id="node3" href="$fat__tree__dmodk__router_8h.html" title="sstmac/hardware/router\l/fat_tree_dmodk_router.h" alt="" coords="5,194,171,235"/>
-<area shape="rect" id="node4" href="$fat__tree__global__adaptive__router_8h.html" title="sstmac/hardware/router\l/fat_tree_global_adaptive\l_router.h" alt="" coords="195,187,361,243"/>
-<area shape="rect" id="node5" href="$fat__tree__local__adaptive__router_8h.html" title="sstmac/hardware/router\l/fat_tree_local_adaptive\l_router.h" alt="" coords="387,187,545,243"/>
-<area shape="rect" id="node7" href="$minad__routing_8h.html" title="sstmac/hardware/router\l/minad_routing.h" alt="" coords="571,194,729,235"/>
-<area shape="rect" id="node8" href="$valiant__routing_8h.html" title="sstmac/hardware/router\l/valiant_routing.h" alt="" coords="754,194,912,235"/>
-<area shape="rect" id="node9" href="$ugal__routing_8h.html" title="sstmac/hardware/router\l/ugal_routing.h" alt="" coords="754,291,912,333"/>
+<area shape="rect" id="node2" href="$fat__tree__router_8h.html" title="sstmac/hardware/router\l/fat_tree_router.h" alt="" coords="293,95,452,136"/>
+<area shape="rect" id="node6" href="$minimal__routing_8h.html" title="sstmac/hardware/router\l/minimal_routing.h" alt="" coords="572,95,731,136"/>
+<area shape="rect" id="node10" href="$sdn__router_8h.html" title="sstmac/hardware/router\l/sdn_router.h" alt="" coords="755,95,913,136"/>
+<area shape="rect" id="node3" href="$fat__tree__dmodk__router_8h.html" title="sstmac/hardware/router\l/fat_tree_dmodk_router.h" alt="" coords="5,191,172,233"/>
+<area shape="rect" id="node4" href="$fat__tree__global__adaptive__router_8h.html" title="sstmac/hardware/router\l/fat_tree_global_adaptive\l_router.h" alt="" coords="196,184,363,240"/>
+<area shape="rect" id="node5" href="$fat__tree__local__adaptive__router_8h.html" title="sstmac/hardware/router\l/fat_tree_local_adaptive\l_router.h" alt="" coords="387,184,547,240"/>
+<area shape="rect" id="node7" href="$minad__routing_8h.html" title="sstmac/hardware/router\l/minad_routing.h" alt="" coords="572,191,731,233"/>
+<area shape="rect" id="node8" href="$valiant__routing_8h.html" title="sstmac/hardware/router\l/valiant_routing.h" alt="" coords="755,191,913,233"/>
+<area shape="rect" id="node9" href="$ugal__routing_8h.html" title="sstmac/hardware/router\l/ugal_routing.h" alt="" coords="755,288,913,329"/>
 </map>

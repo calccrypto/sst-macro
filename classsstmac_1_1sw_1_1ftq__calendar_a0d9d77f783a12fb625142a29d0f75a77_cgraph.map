@@ -1,6 +1,4 @@
 <map id="sstmac::sw::ftq_calendar::clone_me" name="sstmac::sw::ftq_calendar::clone_me">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1ftq__calendar.html#a1afb83deab3c84b5de12cf84e97a5210" title="sstmac::sw::ftq_calendar\l::clone_into" alt="" coords="225,5,394,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1ftq__calendar.html#aa9968996da162b0a5f4139eaf8c0d150" title="sstmac::sw::ftq_calendar\l::ftq_calendar" alt="" coords="225,70,394,111"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="234,135,385,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="443,143,613,169"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__collector.html#ad810cd7a8cc8469682c7558377d6ad4d" title="sstmac::stat_collector\l::set_id" alt="" coords="223,5,373,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html#a05c26e8528e4aa319ec875cdbd762494" title="sstmac::stat_collector::id" alt="" coords="421,13,591,39"/>
 </map>

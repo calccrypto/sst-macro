@@ -1,5 +1,5 @@
 <map id="sstmac::stat_time_histogram" name="sstmac::stat_time_histogram">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html" title="{sstmac::stat_histogram\n||+ stat_histogram()\l+ collect()\l+ collect()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ clear()\l+ reduce()\l+ init_factory_params()\l+ clone_me()\l+ clone()\l# dump()\l# clone_into()\l}" alt="" coords="475,510,633,778"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="191,163,347,445"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,6,160,98"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__histogram.html" title="{sstmac::stat_histogram\n||+ stat_histogram()\l+ collect()\l+ collect()\l+ simulation_finished()\l+ dump_local_data()\l+ dump_global_data()\l+ global_reduce()\l+ clear()\l+ reduce()\l+ init_factory_params()\l+ clone_me()\l+ clone()\l# dump()\l# clone_into()\l}" alt="" coords="476,505,635,773"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="192,160,348,443"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,161,97"/>
 </map>

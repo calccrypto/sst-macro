@@ -1,0 +1,8 @@
+<map id="sstmac::hw::structured_topology::~structured_topology" name="sstmac::hw::structured_topology::~structured_topology">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#aa37f84e812c79e64c17e096b8169f509" title="sstmac::hw::structured\l_topology::build_endpoint\l_connectables" alt="" coords="224,5,393,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#ab074f49df7bd9c3b3e0fc7de197785d0" title="sstmac::hw::structured\l_topology::build_interface\l_connectables" alt="" coords="223,85,394,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#ae949b4b3d3b908f4c1846b50cdbac558" title="sstmac::hw::structured\l_topology::build_internal\l_connectables" alt="" coords="227,165,390,221"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a09b2f8bc54771473d47044b337cc4a55" title="Given a set of connectables, connect them appropriately. " alt="" coords="218,245,399,286"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#ab5cc6236d0e119f71a7251a5269efeb6" title="Workhorse function for implementing minimal_route_to_switch and #minimal_route_to_node. " alt="" coords="225,309,392,365"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#ab4d61d1098d2447e63d43b107f467e67" title="Structured topologies can be direct (torus) or indirect (fat tree). " alt="" coords="209,389,408,430"/>
+</map>

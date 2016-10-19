@@ -1,8 +1,8 @@
 <map id="sstmac/hardware/topology/cartesian_topology.h" name="sstmac/hardware/topology/cartesian_topology.h">
-<area shape="rect" id="node2" href="$multipath__routing_8h.html" title="sstmac/hardware/router\l/multipath_routing.h" alt="" coords="5,97,163,138"/>
-<area shape="rect" id="node3" href="$dragonfly_8h.html" title="sstmac/hardware/topology\l/dragonfly.h" alt="" coords="187,97,361,138"/>
-<area shape="rect" id="node5" href="$hdtorus_8h.html" title="sstmac/hardware/topology\l/hdtorus.h" alt="" coords="386,97,560,138"/>
-<area shape="rect" id="node4" href="$tiled__dragonfly_8h.html" title="sstmac/hardware/topology\l/tiled_dragonfly.h" alt="" coords="187,187,361,229"/>
-<area shape="rect" id="node6" href="$hypercube_8h.html" title="sstmac/hardware/topology\l/hypercube.h" alt="" coords="386,187,560,229"/>
-<area shape="rect" id="node7" href="$tiled__torus_8h.html" title="sstmac/hardware/topology\l/tiled_torus.h" alt="" coords="585,187,759,229"/>
+<area shape="rect" id="node2" href="$multipath__routing_8h.html" title="sstmac/hardware/router\l/multipath_routing.h" alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$dragonfly_8h.html" title="sstmac/hardware/topology\l/dragonfly.h" alt="" coords="188,95,363,136"/>
+<area shape="rect" id="node5" href="$hdtorus_8h.html" title="sstmac/hardware/topology\l/hdtorus.h" alt="" coords="387,95,561,136"/>
+<area shape="rect" id="node4" href="$tiled__dragonfly_8h.html" title="sstmac/hardware/topology\l/tiled_dragonfly.h" alt="" coords="188,184,363,225"/>
+<area shape="rect" id="node6" href="$hypercube_8h.html" title="sstmac/hardware/topology\l/hypercube.h" alt="" coords="387,184,561,225"/>
+<area shape="rect" id="node7" href="$tiled__torus_8h.html" title="sstmac/hardware/topology\l/tiled_torus.h" alt="" coords="585,184,760,225"/>
 </map>

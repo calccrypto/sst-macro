@@ -1,0 +1,6 @@
+<map id="sstmac::hw::packet_flow_sender::set_update_vc" name="sstmac::hw::packet_flow_sender::set_update_vc">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#acc74ee2898fc4ed9a4b6da092298627c" title="sstmac::hw::packet\l_flow_sender::do_handle\l_payload" alt="" coords="249,5,416,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#abd8ee8832f64f6e3f003aab9b681db2a" title="sstmac::hw::packet\l_flow_sender::packet\l_flow_sender" alt="" coords="259,85,406,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#a2a9a43b1f7b82d20381375c81be7dc5d" title="sstmac::hw::packet\l_flow_sender::send" alt="" coords="264,165,401,206"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1packet__flow__sender.html#a118f45f2ff815ad5f4949725f73bda99" title="sstmac::hw::packet\l_flow_sender::send_credit" alt="" coords="245,230,420,271"/>
+</map>

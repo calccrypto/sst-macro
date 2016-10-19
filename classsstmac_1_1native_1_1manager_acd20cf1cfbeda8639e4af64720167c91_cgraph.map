@@ -1,0 +1,6 @@
+<map id="sstmac::native::manager::interconn" name="sstmac::native::manager::interconn">
+<area shape="rect" id="node2" href="$classsstmac_1_1native_1_1manager.html#a0ba74d7f66592daef66d48b50995a3cf" title="sstmac::native::manager\l::build_app" alt="" coords="237,5,404,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1native_1_1manager.html#a3561f4d51f404c234631dbd823f319f1" title="sstmac::native::manager\l::build_apps" alt="" coords="237,71,404,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1native_1_1manager.html#a8e959ed7654b2ead06efc0cb4a4be4c0" title="sstmac::native::manager\l::compute_max_nproc" alt="" coords="237,136,404,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1native_1_1manager.html#ad551599f1ac27b71617965feda774d2b" title="sstmac::native::manager\l::compute_max_nproc_for_app" alt="" coords="220,201,421,243"/>
+</map>

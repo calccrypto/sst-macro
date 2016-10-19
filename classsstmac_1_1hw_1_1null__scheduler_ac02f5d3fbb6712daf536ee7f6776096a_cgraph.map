@@ -1,0 +1,5 @@
+<map id="sstmac::hw::null_scheduler::handle" name="sstmac::hw::null_scheduler::handle">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1null__scheduler.html#aea32ac2211f943279a1b4513b7bbac91" title="sstmac::hw::null_scheduler\l::add_suspended" alt="" coords="235,5,416,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1null__scheduler.html#ae3f39b9b78571982eb989c5d3d76c670" title="sstmac::hw::null_scheduler\l::find_open_core" alt="" coords="235,71,416,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1null__scheduler.html#a1d0bfbadd4fc0be38ba116a74e5722cf" title="sstmac::hw::null_scheduler\l::start_next_suspended" alt="" coords="235,136,416,177"/>
+</map>

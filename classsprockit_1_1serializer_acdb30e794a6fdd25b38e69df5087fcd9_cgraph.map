@@ -1,3 +1,6 @@
 <map id="sprockit::serializer::unpack" name="sprockit::serializer::unpack">
-<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#a039df9aa5383d83f924b427c5a71f4a2" title="sprockit::pvt::ser\l_unpacker::unpack" alt="" coords="182,5,314,46"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#a039df9aa5383d83f924b427c5a71f4a2" title="sprockit::pvt::ser\l_unpacker::unpack" alt="" coords="181,71,313,112"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#ac0a13fcb6b64229f027acc96c1e2756f" title="sprockit::pvt::ser\l_unpacker::unpack_buffer" alt="" coords="361,5,533,47"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1pvt_1_1ser__buffer__accessor.html#aafd866cc1d539f75d63a190a259912ce" title="sprockit::pvt::ser\l_buffer_accessor::size" alt="" coords="370,71,525,112"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#ac08cf6c62a294d89f67c2d2e06fe57ca" title="sprockit::pvt::ser\l_unpacker::unpack_string" alt="" coords="362,136,533,177"/>
 </map>

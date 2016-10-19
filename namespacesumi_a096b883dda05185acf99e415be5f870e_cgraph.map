@@ -1,3 +1,5 @@
 <map id="sumi::comm_reduce" name="sumi::comm_reduce">
-<area shape="rect" id="node2" href="$namespacesumi.html#a3f09a2e52fb92db7fdf6bed194bbe6a0" title="sumi::comm_reduce" alt="" coords="195,5,335,32"/>
+<area shape="rect" id="node2" href="$namespacesumi.html#a24139ab7238ddd479c57a7560f15a0fa" title="sumi::comm_barrier" alt="" coords="195,5,332,32"/>
+<area shape="rect" id="node3" href="$namespacesumi.html#a3f09a2e52fb92db7fdf6bed194bbe6a0" title="sumi::comm_reduce" alt="" coords="193,56,333,83"/>
+<area shape="rect" id="node4" href="$namespacesumi.html#a08541291e60cb64ebcc6939cb8f06e7c" title="The total size of the input/result buffer in bytes is nelems*type_size This always run in a fault&#45;tol..." alt="" coords="200,107,327,133"/>
 </map>

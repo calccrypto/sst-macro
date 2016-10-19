@@ -1,11 +1,11 @@
 <map id="sstmac/backends/native/clock_cycle_parallel/thread_barrier.h" name="sstmac/backends/native/clock_cycle_parallel/thread_barrier.h">
-<area shape="rect" id="node2" href="$pthread_8h.html" title="pthread.h" alt="" coords="134,117,209,144"/>
-<area shape="rect" id="node18" href="$sstmac__config_8h.html" title="sstmac/common/sstmac\l_config.h" alt="" coords="316,110,482,151"/>
-<area shape="rect" id="node3" href="$sstmac__pthread_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread.h" alt="" coords="216,201,377,242"/>
-<area shape="rect" id="node4" href="$sstmac__pthread__macro_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_macro.h" alt="" coords="510,291,684,333"/>
-<area shape="rect" id="node6" href="$sstmac__pthread__impl_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_impl.h" alt="" coords="216,291,377,333"/>
-<area shape="rect" id="node5" href="$sstmac__pthread__clear__macros_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_clear_macros.h" alt="" coords="563,382,777,423"/>
-<area shape="rect" id="node9" href="$sstmac__cpu__set_8h.html" title="sstmac/libraries/pthread\l/sstmac_cpu_set.h" alt="" coords="44,382,205,423"/>
-<area shape="rect" id="node10" href="$software_2process_2time_8h.html" title="sstmac/software/process\l/time.h" alt="" coords="370,382,538,423"/>
-<area shape="rect" id="node11" href="$replacements_2sys_2time_8h.html" title="sys/time.h" alt="" coords="413,472,494,499"/>
+<area shape="rect" id="node2" href="$pthread_8h.html" title="pthread.h" alt="" coords="133,117,209,143"/>
+<area shape="rect" id="node18" href="$sstmac__config_8h.html" title="sstmac/common/sstmac\l_config.h" alt="" coords="316,109,483,151"/>
+<area shape="rect" id="node3" href="$sstmac__pthread_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread.h" alt="" coords="216,199,377,240"/>
+<area shape="rect" id="node4" href="$sstmac__pthread__macro_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_macro.h" alt="" coords="510,288,683,329"/>
+<area shape="rect" id="node6" href="$sstmac__pthread__impl_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_impl.h" alt="" coords="216,288,377,329"/>
+<area shape="rect" id="node5" href="$sstmac__pthread__clear__macros_8h.html" title="sstmac/libraries/pthread\l/sstmac_pthread_clear_macros.h" alt="" coords="563,377,777,419"/>
+<area shape="rect" id="node9" href="$sstmac__cpu__set_8h.html" title="sstmac/libraries/pthread\l/sstmac_cpu_set.h" alt="" coords="44,377,205,419"/>
+<area shape="rect" id="node10" href="$software_2process_2time_8h.html" title="sstmac/software/process\l/time.h" alt="" coords="369,377,539,419"/>
+<area shape="rect" id="node11" href="$replacements_2sys_2time_8h.html" title="sys/time.h" alt="" coords="413,467,495,493"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="sstmac::hw::node::allocate_unique_id" name="sstmac::hw::node::allocate_unique_id">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1node.html#a1b8cd90e5d341ebbc5db1db20c210db6" title="sstmac::hw::node::connect_nic" alt="" coords="232,5,436,32"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1node.html#a64e116c92d2b0eb42c3e9bcbc8cac8ff" title="Make the node execute a particular compute function. " alt="" coords="244,56,424,83"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1node.html#ad3104f43870dd1dca21e5232c636032a" title="sstmac::hw::node::handle" alt="" coords="248,107,420,133"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1node.html#a7fa3fb812c2612d30a92e07f255e848f" title="sstmac::hw::node::node" alt="" coords="253,157,415,184"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1node.html#a3593ebf83b6f40fa1b2e80d09994546b" title="Push a network message (operation at the MTL layer) onto the NIC. " alt="" coords="253,209,415,250"/>
+</map>

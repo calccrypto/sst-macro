@@ -1,4 +1,4 @@
 <map id="sstmac::sw::coordinate_task_mapper" name="sstmac::sw::coordinate_task_mapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="15,147,188,327"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="23,6,179,98"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="15,145,188,325"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="23,5,179,97"/>
 </map>

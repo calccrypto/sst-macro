@@ -1,6 +1,4 @@
 <map id="sstmac::event_subscheduler::set_event_parent" name="sstmac::event_subscheduler::set_event_parent">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html#a66d6aeb93aa35629d62bc60d16a1fa5e" title="sstmac::event_handler\l::event_location" alt="" coords="243,5,397,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="243,70,397,111"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1event__handler.html#ab3f644c8bbf4a4358150b007cc190472" title="sstmac::event_handler\l::init_thread_id" alt="" coords="243,135,397,177"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1event__handler.html#a8c1be02573a094fe86dfb22197e59c4a" title="sstmac::event_handler\l::thread_id" alt="" coords="243,201,397,242"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html#ab0f826b20e0de096e54d5986b2057a09" title="sstmac::event_handler\l::init_loc_id" alt="" coords="243,5,397,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html#ab3f644c8bbf4a4358150b007cc190472" title="sstmac::event_handler\l::init_thread_id" alt="" coords="243,71,397,112"/>
 </map>

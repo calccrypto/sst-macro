@@ -1,7 +1,7 @@
 <map id="sstmac::hw::minimal_router" name="sstmac::hw::minimal_router">
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="The minimal_adaptive_router class Performs some amount of adaptive routing, choosing between the leas..." alt="" coords="5,713,187,849"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="211,633,415,930"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="111,131,297,341"/>
-<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="177,5,231,83"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1ugal__router.html" title="The ugal_router class Encapsulates a router that performs Univeral Globally Adaptive Load&#45;balanced ro..." alt="" coords="231,979,395,1189"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1minimal__adaptive__router.html" title="The minimal_adaptive_router class Performs some amount of adaptive routing, choosing between the leas..." alt="" coords="5,711,188,847"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="212,631,416,928"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="111,131,298,340"/>
+<area shape="rect" id="node3" href="$classrouter.html" title="{router\n||}" alt="" coords="177,5,232,83"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1ugal__router.html" title="The ugal_router class Encapsulates a router that performs Univeral Globally Adaptive Load&#45;balanced ro..." alt="" coords="231,976,397,1185"/>
 </map>

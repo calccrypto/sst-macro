@@ -1,4 +1,4 @@
 <map id="sstmac::vector1_payload&lt; Type, VectorType &gt;" name="sstmac::vector1_payload&lt; Type, VectorType &gt;">
-<area shape="rect" id="node2" href="$classpayload.html" title="{payload\n||}" alt="" coords="5,28,72,105"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; vector1_payload\l\&lt; Type, VectorType \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="96,6,301,127"/>
+<area shape="rect" id="node2" href="$classpayload.html" title="{payload\n||}" alt="" coords="5,27,72,105"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1serializable__type.html" title="{sprockit::serializable\l_type\&lt; vector1_payload\l\&lt; Type, VectorType \&gt; \&gt;\n||&#45; you_forgot_to_add_Implement\lSerializable_to_this_class()\l}" alt="" coords="96,5,301,127"/>
 </map>

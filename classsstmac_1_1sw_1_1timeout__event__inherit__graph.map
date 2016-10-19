@@ -1,3 +1,3 @@
 <map id="sstmac::sw::timeout_event" name="sstmac::sw::timeout_event">
-<area shape="rect" id="node2" href="$classsstmac_1_1event__queue__entry.html" title="{sstmac::event_queue\l_entry\n|# time_\l# dst_loc_\l# src_loc_\l# seqnum_\l|&#45; NotSerializable()\l&#45; execute()\l&#45; to_string()\l&#45; event_queue_entry()\l&#45; time()\l&#45; set_time()\l&#45; set_seqnum()\l&#45; seqnum()\l&#45; event_location()\l&#45; src_location()\l}" alt="" coords="5,6,152,274"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__queue__entry.html" title="{sstmac::event_queue\l_entry\n|# time_\l# dst_loc_\l# src_loc_\l# seqnum_\l|&#45; NotSerializable()\l&#45; execute()\l&#45; to_string()\l&#45; event_queue_entry()\l&#45; time()\l&#45; set_time()\l&#45; set_seqnum()\l&#45; seqnum()\l&#45; event_location()\l&#45; src_location()\l}" alt="" coords="5,5,153,273"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="sstmac::hw::butterfly" name="sstmac::hw::butterfly">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html" title="The abstract_butterfly class Encapsulates operations common to both butterfly and flattened_butterfly..." alt="" coords="18,595,200,863"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="4,131,213,546"/>
-<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="74,5,144,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1abstract__butterfly.html" title="The abstract_butterfly class Encapsulates operations common to both butterfly and flattened_butterfly..." alt="" coords="19,593,202,861"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,131,216,545"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="75,5,146,83"/>
 </map>

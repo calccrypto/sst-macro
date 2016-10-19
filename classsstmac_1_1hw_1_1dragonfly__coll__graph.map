@@ -1,5 +1,5 @@
 <map id="sstmac::hw::dragonfly" name="sstmac::hw::dragonfly">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="165,669,358,805"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="190,177,399,562"/>
-<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="216,5,286,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1cartesian__topology.html" title="The cartesian_topology class Encapsulates a topology like torus that can be naturally mapped onto an ..." alt="" coords="165,667,359,803"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="190,175,401,560"/>
+<area shape="rect" id="node4" href="$classtopology.html" title="{topology\n||}" alt="" coords="216,5,287,83"/>
 </map>

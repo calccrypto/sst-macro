@@ -1,3 +1,5 @@
 <map id="sstmac::Simulation::setStats" name="sstmac::Simulation::setStats">
-<area shape="rect" id="node2" href="$classsstmac_1_1Simulation.html#a7ed0d8d15d484dd004b837197ec048c6" title="sstmac::Simulation\l::stats" alt="" coords="190,5,325,46"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1Simulation.html#a7ed0d8d15d484dd004b837197ec048c6" title="sstmac::Simulation\l::stats" alt="" coords="188,39,323,80"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1Simulation.html#a6bf3e6c0c198b55e9f81a2c6a0c1d79c" title="sstmac::Simulation\l::finalize" alt="" coords="371,5,505,47"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1Simulation.html#a1b312042db916f8527af25761192456b" title="sstmac::Simulation\l::waitFork" alt="" coords="371,71,505,112"/>
 </map>

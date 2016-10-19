@@ -1,0 +1,9 @@
+<map id="sstmac::stat_spyplot::to_string" name="sstmac::stat_spyplot::to_string">
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__spyplot.html#af3a87d29d359c447730c130dcb190b91" title="sstmac::stat_spyplot\l::clear" alt="" coords="197,5,341,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1stat__spyplot.html#a8fad55ac47db05542bf0f6b8cdb46dfa" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="197,71,341,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1stat__spyplot.html#aef9cf9d8ea93a0f051799db2f86a0583" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="197,136,341,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1stat__spyplot.html#a28323fb9aeff9578567c30fe3f6fe437" title="sstmac::stat_spyplot\l::dump_to_file" alt="" coords="197,201,341,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1stat__spyplot.html#add5b8432ba88da6cbe414462e41fe32e" title="sstmac::stat_spyplot\l::global_reduce" alt="" coords="197,267,341,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1stat__spyplot.html#a8ab24ee3a37a453473d9446a45de0dd6" title="sstmac::stat_spyplot\l::reduce" alt="" coords="197,332,341,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1stat__spyplot.html#a6e8cd18da0d4d819bd6817e03948d096" title="This is to notify that the statistics collector is done. " alt="" coords="197,397,341,439"/>
+</map>

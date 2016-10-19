@@ -1,5 +1,5 @@
 <map id="RNG::Table256" name="RNG::Table256">
-<area shape="rect" id="node3" href="$classRNG_1_1LFIB4.html" title="A lagged Fibonacci random number generator by George Marsaglia (1999; internet posting). " alt="" coords="5,485,115,665"/>
-<area shape="rect" id="node4" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="139,477,248,672"/>
+<area shape="rect" id="node3" href="$classRNG_1_1LFIB4.html" title="A lagged Fibonacci random number generator by George Marsaglia (1999; internet posting). " alt="" coords="5,483,115,663"/>
+<area shape="rect" id="node4" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="139,476,248,671"/>
 <area shape="rect" id="node2" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="53,5,200,229"/>
 </map>

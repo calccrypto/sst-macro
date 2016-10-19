@@ -1,4 +1,4 @@
 <map id="sstmac::connection_details" name="sstmac::connection_details">
-<area shape="rect" id="node2" href="$structsstmac_1_1hw_1_1connectable_1_1config.html" title="{sstmac::hw::connectable\l::config\n||+ config()\l}" alt="" coords="205,729,373,821"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="231,161,381,605"/>
+<area shape="rect" id="node2" href="$structsstmac_1_1hw_1_1connectable_1_1config.html" title="{sstmac::hw::connectable\l::config\n||+ config()\l}" alt="" coords="206,725,374,817"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="232,160,383,604"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="sstmac::hw::simple_switch" name="sstmac::hw::simple_switch">
-<area shape="rect" id="node2" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,344,117,421"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="406,161,556,605"/>
+<area shape="rect" id="node2" href="$classnetwork__switch.html" title="{network_switch\n||}" alt="" coords="5,343,119,421"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="407,160,557,604"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="sstmac::hw::network_message::clone_injection_ack" name="sstmac::hw::network_message::clone_injection_ack">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#ad8b15494a4db745101eda335142991b8" title="sstmac::hw::network\l_message::clone_into" alt="" coords="283,5,432,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#a21f2471b52d8429f302de0c69faa8dab" title="sstmac::hw::network\l_message::network_message" alt="" coords="259,70,455,111"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1network__message.html#ad8b15494a4db745101eda335142991b8" title="sstmac::hw::network\l_message::clone_into" alt="" coords="281,5,430,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1network__message.html#a836b52dafd66728fe6da1b89243a6087" title="sstmac::hw::network\l_message::is_nic_ack" alt="" coords="279,71,431,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1network__message.html#a21f2471b52d8429f302de0c69faa8dab" title="sstmac::hw::network\l_message::network_message" alt="" coords="257,136,453,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1network__message.html#a759f170693ad1a66b18c76075c79d2a6" title="sstmac::hw::network\l_message::nic_reverse" alt="" coords="277,201,434,243"/>
 </map>

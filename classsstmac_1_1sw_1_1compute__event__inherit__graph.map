@@ -1,5 +1,5 @@
 <map id="sstmac::sw::compute_event" name="sstmac::sw::compute_event">
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1compute__event__impl.html" title="{sstmac::sw::compute\l_event_impl\&lt; T \&gt;\n|&#45; t_\l|&#45; data()\l}" alt="" coords="5,619,152,711"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="15,177,141,327"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="8,6,148,127"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1compute__event__impl.html" title="{sstmac::sw::compute\l_event_impl\&lt; T \&gt;\n|&#45; t_\l|&#45; NotSerializable()\l}" alt="" coords="5,616,153,708"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event.html" title="{sstmac::event\n||+ to_string()\l+ serialize_order()\l+ is_packet()\l+ is_credit()\l+ is_failure()\l+ interface()\l}" alt="" coords="16,175,143,325"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1serializable.html" title="{sprockit::serializable\n||+ cls_name()\l+ serialize_order()\l+ cls_id()\l+ ~serializable()\l}" alt="" coords="9,5,150,127"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="sstmac::hw::spyplot_and_delay_stats" name="sstmac::hw::spyplot_and_delay_stats">
-<area shape="rect" id="node2" href="$classcongestion__spyplot.html" title="{congestion_spyplot\n||}" alt="" coords="5,383,139,460"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__delay__stats.html" title="{sstmac::hw::packet\l_delay_stats\n||+ collect_single_event()\l+ set_event_manager()\l# collect()\l}" alt="" coords="164,361,323,482"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n|&#45; id_\l|+ ~packet_sent_stats()\l+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="164,147,323,312"/>
-<area shape="rect" id="node5" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="166,6,321,98"/>
+<area shape="rect" id="node2" href="$classcongestion__spyplot.html" title="{congestion_spyplot\n||}" alt="" coords="5,381,140,458"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packet__delay__stats.html" title="{sstmac::hw::packet\l_delay_stats\n||+ collect_single_event()\l+ set_event_manager()\l# collect()\l}" alt="" coords="165,359,325,480"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1packet__sent__stats.html" title="{sstmac::hw::packet\l_sent_stats\n|&#45; id_\l|+ ~packet_sent_stats()\l+ collect_single_event()\l+ collect_final_event()\l+ set_event_manager()\l+ init_factory_params()\l+ id()\l}" alt="" coords="165,145,325,311"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="167,5,323,97"/>
 </map>

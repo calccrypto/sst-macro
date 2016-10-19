@@ -1,5 +1,5 @@
 <map id="Variable::~Variable" name="Variable::~Variable">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a178e0d6b6d49bfb2185aa11945e9a01c" title="sstmac::sw::operating\l_system::current_thread" alt="" coords="193,5,356,46"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#ad600cded38ce907a9efe43fc0d79def4" title="sstmac::sw::thread\l::remove_perf_ctr_variable" alt="" coords="187,70,363,111"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1perf__counter__model.html#a0ca30aabef57d5dd63aefb121abe56a2" title="sstmac::sw::perf_counter\l_model::remove_variable" alt="" coords="411,70,581,111"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1operating__system.html#a178e0d6b6d49bfb2185aa11945e9a01c" title="sstmac::sw::operating\l_system::current_thread" alt="" coords="192,5,355,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1thread.html#ad600cded38ce907a9efe43fc0d79def4" title="sstmac::sw::thread\l::remove_perf_ctr_variable" alt="" coords="185,71,361,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1perf__counter__model.html#a0ca30aabef57d5dd63aefb121abe56a2" title="sstmac::sw::perf_counter\l_model::remove_variable" alt="" coords="409,71,580,112"/>
 </map>

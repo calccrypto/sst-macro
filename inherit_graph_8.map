@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcompute__scheduler.html" title="compute_scheduler" alt="" coords="6,64,141,91"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1null__scheduler.html" title="sstmac::hw::null_scheduler" alt="" coords="189,5,371,32"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html" title="sstmac::sw::cpuset\l_compute_scheduler" alt="" coords="209,57,351,98"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1simple__compute__scheduler.html" title="sstmac::sw::simple\l_compute_scheduler" alt="" coords="209,122,351,163"/>
+<area shape="rect" id="node1" href="$classcompute__scheduler.html" title="compute_scheduler" alt="" coords="5,64,140,91"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1null__scheduler.html" title="sstmac::hw::null_scheduler" alt="" coords="188,5,369,32"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1cpuset__compute__scheduler.html" title="sstmac::sw::cpuset\l_compute_scheduler" alt="" coords="207,57,350,98"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1simple__compute__scheduler.html" title="sstmac::sw::simple\l_compute_scheduler" alt="" coords="207,122,350,163"/>
 </map>

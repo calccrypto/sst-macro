@@ -1,9 +1,9 @@
 <map id="sstmac::hw::connectable_subcomponent" name="sstmac::hw::connectable_subcomponent">
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="123,737,280,1269"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n|# parent_\l|+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="5,323,195,547"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="23,6,176,274"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="219,381,387,488"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1packet__flow__nic.html" title="Network interface compatible with sending packet trains. " alt="" coords="33,1317,188,1600"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1simple__nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="213,1325,372,1593"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1null__nic.html" title="{sstmac::hw::null_nic\n||+ null_nic()\l+ ~null_nic()\l+ to_string()\l+ init_factory_params()\l}" alt="" coords="215,1649,371,1770"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="123,733,280,1265"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__subscheduler.html" title="{sstmac::event_subscheduler\n|# parent_\l|+ event_subscheduler()\l+ now()\l+ to_string()\l+ handle()\l+ schedule()\l+ schedule()\l+ schedule_now()\l+ schedule_now()\l+ schedule_delay()\l+ schedule_delay()\land 8 more...\l}" alt="" coords="5,321,195,545"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="23,5,177,273"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1connectable.html" title="{sstmac::hw::connectable\n|+ any_port\l|+ to_string()\l+ connect()\l+ str()\l}" alt="" coords="219,380,387,487"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1packet__flow__nic.html" title="Network interface compatible with sending packet trains. " alt="" coords="33,1313,189,1596"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1simple__nic.html" title="A networkinterface is a delegate between a node and a server module. " alt="" coords="213,1321,373,1589"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1null__nic.html" title="{sstmac::hw::null_nic\n||+ null_nic()\l+ ~null_nic()\l+ to_string()\l+ init_factory_params()\l}" alt="" coords="215,1644,371,1765"/>
 </map>

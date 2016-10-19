@@ -1,0 +1,10 @@
+<map id="sstmac::event_trace::event_trace" name="sstmac::event_trace::event_trace">
+<area shape="rect" id="node2" href="$classsstmac_1_1event__trace.html#a6e35c341dbbb7e43c4211aa64a685ea3" title="sstmac::event_trace\l::clear" alt="" coords="196,5,337,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1event__trace.html#adbf2b167ef4a13c96615a18cf0ea7ad8" title="sstmac::event_trace\l::collect" alt="" coords="196,71,337,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1event__trace.html#a244cd0c1c37e054e1170a8a5d60834b4" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="196,136,337,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1event__trace.html#a8ceef466a67cb6327dc1f99f942e3cfb" title="After post&#45;processing, this notifies the collector to dump data to a file. " alt="" coords="196,201,337,243"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1event__trace.html#ab7c6a8f189f7a69e65588fd7a64b65c3" title="sstmac::event_trace\l::global_reduce" alt="" coords="196,267,337,308"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1event__trace.html#aaf74fc1be776157377788bdc927a096b" title="sstmac::event_trace\l::init_factory_params" alt="" coords="195,332,339,373"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1event__trace.html#a596d167c7374d363bc9b11d42b8b4109" title="sstmac::event_trace\l::reduce" alt="" coords="196,397,337,439"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1event__trace.html#a6acf68e5492e18ed2ede5b15fd8980f9" title="This is to notify that the statistics collector is done. " alt="" coords="196,463,337,504"/>
+</map>

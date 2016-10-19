@@ -1,5 +1,5 @@
 <map id="sstmac::hw::minimal_adaptive_router" name="sstmac::hw::minimal_adaptive_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="27,389,169,584"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="5,131,192,341"/>
-<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="71,5,125,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="27,388,170,583"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="5,131,192,340"/>
+<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="71,5,126,83"/>
 </map>

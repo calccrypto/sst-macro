@@ -1,4 +1,4 @@
 <map id="sstmac::hw::switch_interconnect_base" name="sstmac::hw::switch_interconnect_base">
-<area shape="rect" id="node2" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,344,133,421"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="242,161,392,605"/>
+<area shape="rect" id="node2" href="$classinterconnect__base.html" title="{interconnect_base\n||}" alt="" coords="5,343,133,421"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="242,160,393,604"/>
 </map>

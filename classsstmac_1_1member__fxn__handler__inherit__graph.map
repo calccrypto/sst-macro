@@ -1,4 +1,4 @@
 <map id="sstmac::member_fxn_handler" name="sstmac::member_fxn_handler">
-<area shape="rect" id="node3" href="$classsstmac_1_1member__fxn__handler__impl.html" title="{sstmac::member_fxn\l_handler_impl\&lt; Cls,\l Fxn, Args \&gt;\n|&#45; params_\l&#45; fxn_\l&#45; obj_\l|+ ~member_fxn_handler_impl()\l+ handle()\l+ member_fxn_handler_impl()\l&#45; dispatch()\l}" alt="" coords="5,494,208,674"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="29,6,183,274"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1member__fxn__handler__impl.html" title="{sstmac::member_fxn\l_handler_impl\&lt; Cls,\l Fxn, Args \&gt;\n|&#45; params_\l&#45; fxn_\l&#45; obj_\l|+ ~member_fxn_handler_impl()\l+ handle()\l+ member_fxn_handler_impl()\l&#45; dispatch()\l}" alt="" coords="5,491,208,671"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1event__handler.html" title="The main interface for something that can respond to an event (sst_message). " alt="" coords="29,5,184,273"/>
 </map>

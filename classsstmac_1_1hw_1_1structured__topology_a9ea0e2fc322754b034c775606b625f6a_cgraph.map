@@ -1,3 +1,15 @@
 <map id="sstmac::hw::structured_topology::nodes_connected_to_ejection_switch" name="sstmac::hw::structured_topology::nodes_connected_to_ejection_switch">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="243,4,431,60"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#a68b2616cbf6e9711f0d4a9b12c8f3c8e" title="sstmac::hw::structured\l_topology::bit_complement\l_partners" alt="" coords="249,5,428,61"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a374f83b892f658b2b7bf0121c76403f3" title="Compute coordinates (e.g. " alt="" coords="248,85,429,141"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#ad265792bfbc35ac6fd84b8f52d96e39b" title="sstmac::hw::structured\l_topology::configure_injection\l_geometry" alt="" coords="241,165,436,221"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a047b25477ebf100133b3e9837a6700f2" title="sstmac::hw::structured\l_topology::nearest_neighbor\l_partners" alt="" coords="246,245,431,301"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1hw_1_1structured__topology.html#a9e03a48429fb1862c587fe1c345d8610" title="sstmac::hw::structured\l_topology::neighbor_at_port" alt="" coords="247,325,430,366"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1hw_1_1structured__topology.html#ac9529045aae0ad00d48ec59661c78473" title="sstmac::hw::structured\l_topology::node_addr" alt="" coords="261,390,417,431"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1hw_1_1structured__topology.html#a69cf445138e20911ecc1aa3dc3766b85" title="sstmac::hw::structured\l_topology::nodes_connected\l_to_switch" alt="" coords="245,455,433,511"/>
+<area shape="rect" id="node9" href="$classsstmac_1_1hw_1_1structured__topology.html#a68824aa2f5c0f57c52a2a9498156f590" title="sstmac::hw::structured\l_topology::partners" alt="" coords="261,534,417,575"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1hw_1_1structured__topology.html#a6357faecda58686e23bf7300df55b9fd" title="sstmac::hw::structured\l_topology::recv_partners" alt="" coords="256,599,421,641"/>
+<area shape="rect" id="node11" href="$classsstmac_1_1hw_1_1structured__topology.html#a32b854bf1d01c01c900599b3460216cf" title="sstmac::hw::structured\l_topology::send_partners" alt="" coords="255,665,423,706"/>
+<area shape="rect" id="node12" href="$classsstmac_1_1hw_1_1structured__topology.html#afb6de1cb6531cb9a5bf33b02c9a109cc" title="sstmac::hw::structured\l_topology::structured\l_topology" alt="" coords="261,729,417,785"/>
+<area shape="rect" id="node13" href="$classsstmac_1_1hw_1_1structured__topology.html#a48d8d353bb2508e599be4093c6a182df" title="sstmac::hw::structured\l_topology::tornado_recv\l_partners" alt="" coords="258,809,419,865"/>
+<area shape="rect" id="node14" href="$classsstmac_1_1hw_1_1structured__topology.html#a2b72610c3a4e96ec0a284c45b314b3bb" title="sstmac::hw::structured\l_topology::tornado_send\l_partners" alt="" coords="257,889,421,945"/>
 </map>

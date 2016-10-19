@@ -1,0 +1,6 @@
+<map id="sstmac::sumi_queue::to_string" name="sstmac::sumi_queue::to_string">
+<area shape="rect" id="node2" href="$classsstmac_1_1sumi__queue.html#a8c68a0e48f44354c98b5e36bbbc1d0b6" title="sstmac::sumi_queue\l::poll_until_message" alt="" coords="196,5,339,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sumi__queue.html#ab457049bc89b161d65f08970e21e04b0" title="sstmac::sumi_queue\l::put_message" alt="" coords="196,71,339,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sumi__queue.html#a87b1ea2862e1573718dc5ddb6f3dc410" title="sstmac::sumi_queue\l::sumi_queue" alt="" coords="196,136,339,177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1sumi__queue.html#aed035eefbcb6b3d7cb9d026ac5870337" title="sstmac::sumi_queue\l::~sumi_queue" alt="" coords="196,201,339,243"/>
+</map>

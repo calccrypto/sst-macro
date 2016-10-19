@@ -1,7 +1,7 @@
 <map id="sstmac::block_partition" name="sstmac::block_partition">
-<area shape="rect" id="node2" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="109,368,288,621"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="384,686,573,954"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="247,6,403,98"/>
-<area shape="rect" id="node8" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="985,412,1161,577"/>
-<area shape="rect" id="node7" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="363,449,484,541"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="109,365,288,619"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="384,681,573,949"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="247,5,403,97"/>
+<area shape="rect" id="node8" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="985,409,1162,575"/>
+<area shape="rect" id="node7" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="363,446,485,538"/>
 </map>

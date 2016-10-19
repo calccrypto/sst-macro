@@ -1,4 +1,4 @@
 <map id="sstmac::hw::fake_topology" name="sstmac::hw::fake_topology">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="4,131,213,546"/>
-<area shape="rect" id="node3" href="$classtopology.html" title="{topology\n||}" alt="" coords="74,5,144,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="5,131,216,545"/>
+<area shape="rect" id="node3" href="$classtopology.html" title="{topology\n||}" alt="" coords="75,5,146,83"/>
 </map>

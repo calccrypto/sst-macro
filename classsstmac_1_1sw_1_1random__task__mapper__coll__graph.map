@@ -1,9 +1,9 @@
 <map id="sstmac::sw::random_task_mapper" name="sstmac::sw::random_task_mapper">
-<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="528,972,701,1137"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="827,197,983,289"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="547,595,736,863"/>
-<area shape="rect" id="node10" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="896,928,1075,1181"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="561,197,681,289"/>
-<area shape="rect" id="node6" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="359,160,536,325"/>
-<area shape="rect" id="node14" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="725,943,872,1167"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1task__mapper.html" title="Base class for strategies regarding how to sequentially number nodes in a parallel simulation..." alt="" coords="529,968,702,1133"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="828,197,984,289"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1parallel__runtime.html" title="{sstmac::parallel_runtime\n||+ ~parallel_runtime()\l+ init_factory_params()\l+ finalize_init()\l+ allreduce_min()\l+ allreduce_max()\l+ global_sum()\l+ global_sum()\l+ global_max()\l+ global_max()\l+ send()\land 22 more...\l# parallel_runtime()\l# do_send_message()\l# do_send_recv_messages()\l}" alt="" coords="547,593,737,861"/>
+<area shape="rect" id="node10" href="$classsstmac_1_1partition.html" title="Class for storing all the partitions given to us by METIS. " alt="" coords="897,924,1075,1177"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="561,197,683,289"/>
+<area shape="rect" id="node6" href="$classsstmac_1_1message__buffer__cache.html" title="{sstmac::message_buffer\l_cache\n||+ to_string()\l+ pop()\l+ push()\l+ message_buffer_cache()\l+ message_buffer_cache()\l+ init()\l}" alt="" coords="360,160,537,325"/>
+<area shape="rect" id="node14" href="$classRNG_1_1UniformInteger.html" title="This is a base class for random number generators that return an integer uniformly distributed in a r..." alt="" coords="726,939,873,1163"/>
 </map>

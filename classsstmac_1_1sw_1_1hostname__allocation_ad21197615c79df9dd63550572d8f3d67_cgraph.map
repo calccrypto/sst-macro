@@ -1,0 +1,5 @@
+<map id="sstmac::sw::hostname_allocation::hostname_allocation" name="sstmac::sw::hostname_allocation::hostname_allocation">
+<area shape="rect" id="node2" href="$classsstmac_1_1sw_1_1hostname__allocation.html#a40d220845bdde6acf6d9bc3fb280d222" title="Get nodes. " alt="" coords="217,5,372,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1hostname__allocation.html#a115a6f0f1f329043f8c635669732c847" title="sstmac::sw::hostname\l_allocation::init_factory\l_params" alt="" coords="217,70,373,126"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1hostname__allocation.html#a0f5a6141a8b1e7421b4f65e579ba2b05" title="This function reads in a map file for mapping host names to network coordinates. " alt="" coords="208,149,381,191"/>
+</map>

@@ -4,7 +4,7 @@
 <area shape="rect" id="node4" href="$classRNG_1_1mersenne__twister.html" title="Updated Mersenne twister. " alt="" coords="277,307,440,531"/>
 <area shape="rect" id="node5" href="$classRNG_1_1MWC.html" title="The multiple&#45;with&#45;carry random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="464,277,573,560"/>
 <area shape="rect" id="node6" href="$classRNG_1_1SHR3.html" title="The 3&#45;shift&#45;register random number generator by George Marsaglia (1999; internet posting). " alt="" coords="597,321,707,516"/>
-<area shape="rect" id="node7" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="731,285,873,553"/>
+<area shape="rect" id="node7" href="$classRNG_1_1SimpleCombo.html" title="A simple random generator using MWC, CONG, and SHR3 by George Marsaglia (1999; internet posting)..." alt="" coords="731,285,874,553"/>
 <area shape="rect" id="node8" href="$classRNG_1_1Table256.html" title="A base class for random number generators using a table of 256 32&#45;bit integers. " alt="" coords="898,343,1011,494"/>
 <area shape="rect" id="node9" href="$classRNG_1_1LFIB4.html" title="A lagged Fibonacci random number generator by George Marsaglia (1999; internet posting). " alt="" coords="833,615,943,795"/>
 <area shape="rect" id="node10" href="$classRNG_1_1SWB.html" title="A subtract with borrow random number generator by George Marsaglia (1999; internet posting)..." alt="" coords="967,608,1076,803"/>

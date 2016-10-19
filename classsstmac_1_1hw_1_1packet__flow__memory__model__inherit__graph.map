@@ -1,4 +1,4 @@
 <map id="sstmac::hw::packet_flow_memory_model" name="sstmac::hw::packet_flow_memory_model">
-<area shape="rect" id="node2" href="$classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,20,115,97"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l+ ~packetizer_callback()\l}" alt="" coords="140,5,304,112"/>
+<area shape="rect" id="node2" href="$classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,20,116,97"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1packetizer__callback.html" title="{sstmac::hw::packetizer\l_callback\n||+ notify()\l+ ~packetizer_callback()\l}" alt="" coords="141,5,306,112"/>
 </map>

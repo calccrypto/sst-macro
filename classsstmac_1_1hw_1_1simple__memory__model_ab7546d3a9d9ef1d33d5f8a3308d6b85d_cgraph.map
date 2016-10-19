@@ -1,0 +1,6 @@
+<map id="sstmac::hw::simple_memory_model::simple_memory_model" name="sstmac::hw::simple_memory_model::simple_memory_model">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1simple__memory__model.html#adf35cf0bf8a03e5e588ad040a6aad493" title="sstmac::hw::simple\l_memory_model::access" alt="" coords="229,5,397,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1simple__memory__model.html#a14860c680ffa36a9993530c7f3c114aa" title="sstmac::hw::simple\l_memory_model::finalize_init" alt="" coords="217,71,408,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__memory__model.html#a221ba0b85c1da5892f3c8084b9aa812e" title="sstmac::hw::simple\l_memory_model::init\l_factory_params" alt="" coords="241,135,384,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1simple__memory__model.html#a29a8703ee01707772fef2cf7873c60ae" title="sstmac::hw::simple\l_memory_model::~simple\l_memory_model" alt="" coords="227,215,399,271"/>
+</map>

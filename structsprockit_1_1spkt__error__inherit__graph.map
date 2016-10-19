@@ -1,17 +1,17 @@
 <map id="sprockit::spkt_error" name="sprockit::spkt_error">
-<area shape="rect" id="node3" href="$structsprockit_1_1illformed__error.html" title="An error indicating some format was not correct. " alt="" coords="5,285,136,392"/>
-<area shape="rect" id="node4" href="$structsprockit_1_1input__error.html" title="Invalid user input. " alt="" coords="161,293,297,385"/>
-<area shape="rect" id="node5" href="$structsprockit_1_1invalid__key__error.html" title="Key to a map was not in the map. " alt="" coords="322,285,469,392"/>
-<area shape="rect" id="node6" href="$structsprockit_1_1io__error.html" title="File open, read, or write error. " alt="" coords="494,293,612,385"/>
-<area shape="rect" id="node7" href="$structsprockit_1_1iterator__error.html" title="Something happened when iterating over a collection. " alt="" coords="637,285,760,392"/>
-<area shape="rect" id="node8" href="$structsprockit_1_1library__error.html" title="A general error somewhere from a library. " alt="" coords="784,293,928,385"/>
-<area shape="rect" id="node9" href="$structsprockit_1_1memory__error.html" title="Something happened when allocating, deallocating, or mapping a memory region. " alt="" coords="953,293,1108,385"/>
-<area shape="rect" id="node10" href="$structsprockit_1_1not__ported__error.html" title="Exception indicating that chosen path is not yet ported to new framework. " alt="" coords="1133,285,1277,392"/>
-<area shape="rect" id="node11" href="$structsprockit_1_1null__error.html" title="Error indicating something was null and shouldn&#39;t have been. " alt="" coords="1302,293,1431,385"/>
-<area shape="rect" id="node12" href="$structsprockit_1_1os__error.html" title="An error having to do with an operating system. " alt="" coords="1456,293,1579,385"/>
-<area shape="rect" id="node13" href="$classsprockit_1_1pvt_1_1ser__buffer__overrun.html" title="{sprockit::pvt::ser\l_buffer_overrun\n||+ ser_buffer_overrun()\l}" alt="" coords="1603,293,1753,385"/>
-<area shape="rect" id="node14" href="$structsprockit_1_1range__error.html" title="An index was out of range in a collection. " alt="" coords="1779,293,1919,385"/>
-<area shape="rect" id="node15" href="$structsprockit_1_1time__error.html" title="An error indicating something to do with the advancement of simulation time. " alt="" coords="1945,293,2079,385"/>
-<area shape="rect" id="node16" href="$structsprockit_1_1unimplemented__error.html" title="A function was intentionally unimplemented because it doesn&#39;t make sense, or it is ongoing work..." alt="" coords="2104,285,2275,392"/>
-<area shape="rect" id="node17" href="$structsprockit_1_1value__error.html" title="Error indicating some internal value was unexpected. " alt="" coords="2299,293,2439,385"/>
+<area shape="rect" id="node3" href="$structsprockit_1_1illformed__error.html" title="An error indicating some format was not correct. " alt="" coords="5,285,137,392"/>
+<area shape="rect" id="node4" href="$structsprockit_1_1input__error.html" title="Invalid user input. " alt="" coords="161,293,299,385"/>
+<area shape="rect" id="node5" href="$structsprockit_1_1invalid__key__error.html" title="Key to a map was not in the map. " alt="" coords="323,285,471,392"/>
+<area shape="rect" id="node6" href="$structsprockit_1_1io__error.html" title="File open, read, or write error. " alt="" coords="495,293,613,385"/>
+<area shape="rect" id="node7" href="$structsprockit_1_1iterator__error.html" title="Something happened when iterating over a collection. " alt="" coords="638,285,761,392"/>
+<area shape="rect" id="node8" href="$structsprockit_1_1library__error.html" title="A general error somewhere from a library. " alt="" coords="785,293,929,385"/>
+<area shape="rect" id="node9" href="$structsprockit_1_1memory__error.html" title="Something happened when allocating, deallocating, or mapping a memory region. " alt="" coords="953,293,1109,385"/>
+<area shape="rect" id="node10" href="$structsprockit_1_1not__ported__error.html" title="Exception indicating that chosen path is not yet ported to new framework. " alt="" coords="1134,285,1278,392"/>
+<area shape="rect" id="node11" href="$structsprockit_1_1null__error.html" title="Error indicating something was null and shouldn&#39;t have been. " alt="" coords="1303,293,1432,385"/>
+<area shape="rect" id="node12" href="$structsprockit_1_1os__error.html" title="An error having to do with an operating system. " alt="" coords="1457,293,1579,385"/>
+<area shape="rect" id="node13" href="$classsprockit_1_1pvt_1_1ser__buffer__overrun.html" title="{sprockit::pvt::ser\l_buffer_overrun\n||+ ser_buffer_overrun()\l}" alt="" coords="1604,293,1755,385"/>
+<area shape="rect" id="node14" href="$structsprockit_1_1range__error.html" title="An index was out of range in a collection. " alt="" coords="1779,293,1921,385"/>
+<area shape="rect" id="node15" href="$structsprockit_1_1time__error.html" title="An error indicating something to do with the advancement of simulation time. " alt="" coords="1945,293,2080,385"/>
+<area shape="rect" id="node16" href="$structsprockit_1_1unimplemented__error.html" title="A function was intentionally unimplemented because it doesn&#39;t make sense, or it is ongoing work..." alt="" coords="2105,285,2275,392"/>
+<area shape="rect" id="node17" href="$structsprockit_1_1value__error.html" title="Error indicating some internal value was unexpected. " alt="" coords="2300,293,2440,385"/>
 </map>

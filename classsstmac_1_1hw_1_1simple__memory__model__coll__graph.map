@@ -1,5 +1,5 @@
 <map id="sstmac::hw::simple_memory_model" name="sstmac::hw::simple_memory_model">
-<area shape="rect" id="node2" href="$classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,720,115,797"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__memory__model_1_1link.html" title="{sstmac::hw::simple\l_memory_model::link\n||+ link()\l+ ~link()\l+ to_string()\l+ new_access()\l+ access_done()\l}" alt="" coords="224,683,371,834"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="290,161,440,605"/>
+<area shape="rect" id="node2" href="$classmemory__model.html" title="{memory_model\n||}" alt="" coords="5,718,116,795"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1simple__memory__model_1_1link.html" title="{sstmac::hw::simple\l_memory_model::link\n||+ link()\l+ ~link()\l+ to_string()\l+ new_access()\l+ access_done()\l}" alt="" coords="225,681,371,832"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1timestamp.html" title="A basic container for time (subject to future transplant). " alt="" coords="291,160,441,604"/>
 </map>

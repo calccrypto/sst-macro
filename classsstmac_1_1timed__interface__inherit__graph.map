@@ -1,5 +1,5 @@
 <map id="sstmac::timed_interface" name="sstmac::timed_interface">
-<area shape="rect" id="node2" href="$classsstmac_1_1sleep__event.html" title="{sstmac::sleep_event\n||&#45; NotSerializable()\l&#45; to_string()\l}" alt="" coords="5,265,147,357"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1launch__event.html" title="{sstmac::sw::launch\l_event\n|# tid_\l# apptype_\l# aid_\l# core_affinities_\l|&#45; NotSerializable()\l&#45; to_string()\l&#45; tid()\l&#45; aid()\l&#45; app_template()\l&#45; core_affinity()\l}" alt="" coords="171,206,305,415"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1arrive__message.html" title="{sstmac::sw::arrive\l_message\n||+ to_string()\l}" alt="" coords="173,465,303,557"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1sleep__event.html" title="{sstmac::sleep_event\n||&#45; NotSerializable()\l&#45; to_string()\l}" alt="" coords="5,263,148,355"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1sw_1_1launch__event.html" title="{sstmac::sw::launch\l_event\n|# tid_\l# apptype_\l# aid_\l# core_affinities_\l|&#45; NotSerializable()\l&#45; to_string()\l&#45; tid()\l&#45; aid()\l&#45; app_template()\l&#45; core_affinity()\l}" alt="" coords="171,204,307,413"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1sw_1_1arrive__message.html" title="{sstmac::sw::arrive\l_message\n||+ to_string()\l}" alt="" coords="174,461,305,553"/>
 </map>

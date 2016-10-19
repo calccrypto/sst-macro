@@ -1,0 +1,6 @@
+<map id="sstmac::hw::structured_topology::endpoint_to_switch_port" name="sstmac::hw::structured_topology::endpoint_to_switch_port">
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html#af35c6287320d85a66b30350bef122ccb" title="sstmac::hw::structured\l_topology::finalize_init" alt="" coords="224,5,380,47"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__topology.html#a94c2a2e73c91725c4a7f7729fb7bfe83" title="sstmac::hw::structured\l_topology::label" alt="" coords="224,71,380,112"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__topology.html#a4dfc4efec3fa0116b4ad480083a2ac93" title="Implementation of topology::minimal_route_to_switch. " alt="" coords="219,135,385,191"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html#a1cb22bf66a4f7697ba3328663cf051cb" title="sstmac::hw::structured\l_topology::productive_paths" alt="" coords="209,215,395,256"/>
+</map>

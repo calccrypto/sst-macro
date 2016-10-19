@@ -1,4 +1,4 @@
 <map id="sstmac::event_manager::stats_entry" name="sstmac::event_manager::stats_entry">
-<area shape="rect" id="node2" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="191,163,347,445"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,6,160,98"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1stat__collector.html" title="A type of logger that collects some kind of statistic and outputs to a file during or at the end of a..." alt="" coords="192,160,348,443"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1factory__type.html" title="{sprockit::factory_type\n||+ init_factory_params()\l+ finalize_init()\l}" alt="" coords="5,5,161,97"/>
 </map>

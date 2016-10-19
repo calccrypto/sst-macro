@@ -1,6 +1,6 @@
 <map id="sstmac::hw::ugal_router" name="sstmac::hw::ugal_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="5,633,208,930"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="35,389,177,584"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="13,131,200,341"/>
-<area shape="rect" id="node5" href="$classrouter.html" title="{router\n||}" alt="" coords="79,5,133,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1valiant__router.html" title="The valiant_router class Enacpsulates a router that performs oblivious, global routing according to &quot;..." alt="" coords="5,631,209,928"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="36,388,179,583"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="14,131,201,340"/>
+<area shape="rect" id="node5" href="$classrouter.html" title="{router\n||}" alt="" coords="80,5,135,83"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="sstmac/hardware/noise/noise.h" name="sstmac/hardware/noise/noise.h">
-<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="703,97,825,138"/>
-<area shape="rect" id="node25" href="$rng_8h.html" title="sstmac/common/rng.h" alt="" coords="1303,195,1455,221"/>
-<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="253,195,368,221"/>
-<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="366,352,516,379"/>
-<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="529,195,652,221"/>
-<area shape="rect" id="node15" href="$sim__parameters_8h.html" title="sprockit/sim_parameters.h" alt="" coords="676,195,852,221"/>
-<area shape="rect" id="node23" href="$basic__string__tokenizer_8h.html" title="sprockit/basic_string\l_tokenizer.h" alt="" coords="1135,187,1277,229"/>
-<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="65,277,212,304"/>
-<area shape="rect" id="node16" href="$debug_8h.html" title="sprockit/debug.h" alt="" coords="923,277,1041,304"/>
-<area shape="rect" id="node20" href="$unordered_8h.html" title="sprockit/unordered.h" alt="" coords="593,277,732,304"/>
+<area shape="rect" id="node2" href="$factory_8h.html" title="sprockit/factories\l/factory.h" alt="" coords="703,95,825,136"/>
+<area shape="rect" id="node25" href="$rng_8h.html" title="sstmac/common/rng.h" alt="" coords="1303,191,1455,218"/>
+<area shape="rect" id="node5" href="$errors_8h.html" title="sprockit/errors.h" alt="" coords="253,191,369,218"/>
+<area shape="rect" id="node10" href="$spkt__config_8h.html" title="sprockit/spkt_config.h" alt="" coords="366,348,517,375"/>
+<area shape="rect" id="node13" href="$statics_8h.html" title="sprockit/statics.h" alt="" coords="529,191,652,218"/>
+<area shape="rect" id="node15" href="$sim__parameters_8h.html" title="sprockit/sim_parameters.h" alt="" coords="676,191,852,218"/>
+<area shape="rect" id="node23" href="$basic__string__tokenizer_8h.html" title="sprockit/basic_string\l_tokenizer.h" alt="" coords="1135,184,1278,225"/>
+<area shape="rect" id="node8" href="$spkt__string_8h.html" title="sprockit/spkt_string.h" alt="" coords="65,273,212,300"/>
+<area shape="rect" id="node16" href="$debug_8h.html" title="sprockit/debug.h" alt="" coords="923,273,1042,300"/>
+<area shape="rect" id="node20" href="$unordered_8h.html" title="sprockit/unordered.h" alt="" coords="593,273,733,300"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sstmac::hw::valiant_router" name="sstmac::hw::valiant_router">
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="35,888,177,1083"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="13,627,200,837"/>
-<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="30,331,84,408"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="108,177,317,562"/>
-<area shape="rect" id="node6" href="$classtopology.html" title="{topology\n||}" alt="" coords="99,5,169,83"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1minimal__router.html" title="The minimal_router class Router that performs. " alt="" coords="36,881,179,1076"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1hw_1_1structured__router.html" title="The structured_router class Implements a router that computes path on&#45;the&#45;fly using the geometry of t..." alt="" coords="14,623,201,832"/>
+<area shape="rect" id="node4" href="$classrouter.html" title="{router\n||}" alt="" coords="31,329,85,406"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="109,175,319,560"/>
+<area shape="rect" id="node6" href="$classtopology.html" title="{topology\n||}" alt="" coords="100,5,171,83"/>
 </map>

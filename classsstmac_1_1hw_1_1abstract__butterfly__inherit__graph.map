@@ -1,6 +1,6 @@
 <map id="sstmac::hw::abstract_butterfly" name="sstmac::hw::abstract_butterfly">
-<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1butterfly.html" title="The butterfly class Encapsulates a butterfly topology as described in &quot;High Performance Datacenter Ne..." alt="" coords="5,912,192,1253"/>
-<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1flattened__butterfly.html" title="The flattened_butterfly class Encapsulates a flattened butterfly topology as described in &quot;High Perfo..." alt="" coords="216,956,403,1209"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="99,131,308,546"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1hw_1_1butterfly.html" title="The butterfly class Encapsulates a butterfly topology as described in &quot;High Performance Datacenter Ne..." alt="" coords="5,909,192,1251"/>
+<area shape="rect" id="node5" href="$classsstmac_1_1hw_1_1flattened__butterfly.html" title="The flattened_butterfly class Encapsulates a flattened butterfly topology as described in &quot;High Perfo..." alt="" coords="216,953,403,1207"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1hw_1_1structured__topology.html" title="Encapsulates a topology like torus, fat tree, butterfly which has a regular, well&#45;defined structure..." alt="" coords="99,131,309,545"/>
 <area shape="rect" id="node3" href="$classtopology.html" title="{topology\n||}" alt="" coords="169,5,239,83"/>
 </map>

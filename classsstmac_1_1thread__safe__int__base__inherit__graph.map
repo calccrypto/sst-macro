@@ -1,4 +1,4 @@
 <map id="sstmac::thread_safe_int_base" name="sstmac::thread_safe_int_base">
-<area shape="rect" id="node3" href="$classsstmac_1_1thread__safe__int__t.html" title="{sstmac::thread_safe\l_int_t\&lt; Integer \&gt;\n|# value_\l|+ thread_safe_int_t()\l+ operator=()\l+ operator++()\l+ operator++()\l+ operator Integer()\l}" alt="" coords="5,289,147,439"/>
-<area shape="rect" id="node2" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="15,6,136,98"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1thread__safe__int__t.html" title="{sstmac::thread_safe\l_int_t\&lt; Integer \&gt;\n|# value_\l|+ thread_safe_int_t()\l+ operator=()\l+ operator++()\l+ operator++()\l+ operator Integer()\l}" alt="" coords="5,285,148,436"/>
+<area shape="rect" id="node2" href="$classsstmac_1_1lockable.html" title="{sstmac::lockable\n||+ lock()\l+ unlock()\l}" alt="" coords="16,5,137,97"/>
 </map>

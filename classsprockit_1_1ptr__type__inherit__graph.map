@@ -1,7 +1,7 @@
 <map id="sprockit::ptr_type" name="sprockit::ptr_type">
 <area shape="rect" id="node2" href="$classsprockit_1_1printable__ptr__type.html" title="{sprockit::printable\l_ptr_type\n||+ to_string()\l}" alt="" coords="5,211,131,303"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1tutorial_1_1gem.html" title="The gem class. " alt="" coords="155,211,300,303"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1tutorial_1_1gem.html" title="The gem class. " alt="" coords="155,211,301,303"/>
 <area shape="rect" id="node5" href="$classsstmac_1_1tutorial_1_1illustration.html" title="Basic class structure tutorial. " alt="" coords="325,189,504,325"/>
 <area shape="rect" id="node6" href="$classsstmac_1_1tutorial_1_1mineral.html" title="The mineral class. " alt="" coords="528,211,691,303"/>
-<area shape="rect" id="node4" href="$classsstmac_1_1tutorial_1_1diamond.html" title="{sstmac::tutorial::diamond\n|# num_carats_\l|+ diamond()\l+ to_string()\l+ value()\l+ structure()\l}" alt="" coords="334,374,503,495"/>
+<area shape="rect" id="node4" href="$classsstmac_1_1tutorial_1_1diamond.html" title="{sstmac::tutorial::diamond\n|# num_carats_\l|+ diamond()\l+ to_string()\l+ value()\l+ structure()\l}" alt="" coords="334,373,503,495"/>
 </map>

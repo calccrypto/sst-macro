@@ -1,5 +1,5 @@
 <map id="payload" name="payload">
 <area shape="rect" id="node2" href="$classsstmac_1_1pair__payload.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="5,131,152,487"/>
-<area shape="rect" id="node3" href="$classsstmac_1_1pairpayloadvector.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="177,139,351,480"/>
+<area shape="rect" id="node3" href="$classsstmac_1_1pairpayloadvector.html" title="Network payload consisting of a value with sensible copy semantics. " alt="" coords="177,138,351,479"/>
 <area shape="rect" id="node4" href="$classsstmac_1_1vector1__payload.html" title="Network payload consisting of a boost multiarray. " alt="" coords="376,153,544,465"/>
 </map>

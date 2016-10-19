@@ -1,9 +1,15 @@
 <map id="sprockit::pvt::serialize_set" name="sprockit::pvt::serialize_set">
-<area shape="rect" id="node2" href="$classsprockit_1_1serializer.html#af384996847ab317a2a52b0789e1c1c77" title="sprockit::serializer\l::mode" alt="" coords="229,5,357,46"/>
-<area shape="rect" id="node3" href="$classsprockit_1_1serializer.html#a6d2d5a0c40a6b4d5d88665e8004da7cb" title="sprockit::serializer\l::pack" alt="" coords="229,70,357,111"/>
-<area shape="rect" id="node5" href="$classsprockit_1_1serializer.html#a7fe78df60a703e5f0aa8b0c753962422" title="sprockit::serializer\l::size" alt="" coords="229,135,357,177"/>
-<area shape="rect" id="node7" href="$classsprockit_1_1serializer.html#acdb30e794a6fdd25b38e69df5087fcd9" title="sprockit::serializer\l::unpack" alt="" coords="229,201,357,242"/>
-<area shape="rect" id="node4" href="$classsprockit_1_1pvt_1_1ser__packer.html#a689a9eeb776d14b52404f5fa4bcdad43" title="sprockit::pvt::ser\l_packer::pack" alt="" coords="412,70,532,111"/>
-<area shape="rect" id="node6" href="$classsprockit_1_1pvt_1_1ser__sizer.html#af08fd0ded3c193fb9feaea608d184e44" title="sprockit::pvt::ser\l_sizer::size" alt="" coords="412,135,532,177"/>
-<area shape="rect" id="node8" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#a039df9aa5383d83f924b427c5a71f4a2" title="sprockit::pvt::ser\l_unpacker::unpack" alt="" coords="406,201,538,242"/>
+<area shape="rect" id="node2" href="$classsprockit_1_1serializer.html#af384996847ab317a2a52b0789e1c1c77" title="sprockit::serializer\l::mode" alt="" coords="228,71,356,112"/>
+<area shape="rect" id="node3" href="$classsprockit_1_1serializer.html#a6d2d5a0c40a6b4d5d88665e8004da7cb" title="sprockit::serializer\l::pack" alt="" coords="228,136,356,177"/>
+<area shape="rect" id="node8" href="$classsprockit_1_1serializer.html#a7fe78df60a703e5f0aa8b0c753962422" title="sprockit::serializer\l::size" alt="" coords="228,283,356,324"/>
+<area shape="rect" id="node11" href="$classsprockit_1_1serializer.html#acdb30e794a6fdd25b38e69df5087fcd9" title="sprockit::serializer\l::unpack" alt="" coords="228,201,356,243"/>
+<area shape="rect" id="node4" href="$classsprockit_1_1pvt_1_1ser__packer.html#a689a9eeb776d14b52404f5fa4bcdad43" title="sprockit::pvt::ser\l_packer::pack" alt="" coords="410,104,530,145"/>
+<area shape="rect" id="node5" href="$classsprockit_1_1pvt_1_1ser__packer.html#af825feae599a0d2f815498860642b12d" title="sprockit::pvt::ser\l_packer::pack_buffer" alt="" coords="598,5,742,47"/>
+<area shape="rect" id="node6" href="$classsprockit_1_1pvt_1_1ser__buffer__accessor.html#aafd866cc1d539f75d63a190a259912ce" title="sprockit::pvt::ser\l_buffer_accessor::size" alt="" coords="593,136,747,177"/>
+<area shape="rect" id="node7" href="$classsprockit_1_1pvt_1_1ser__packer.html#a3ba381335a1034d987f43532f583ab30" title="sprockit::pvt::ser\l_packer::pack_string" alt="" coords="599,71,741,112"/>
+<area shape="rect" id="node9" href="$classsprockit_1_1pvt_1_1ser__sizer.html#af08fd0ded3c193fb9feaea608d184e44" title="sprockit::pvt::ser\l_sizer::size" alt="" coords="410,299,530,340"/>
+<area shape="rect" id="node10" href="$classsprockit_1_1pvt_1_1ser__sizer.html#a52bbbfc8c40f35beeb3e1d7b13c5c6db" title="sprockit::pvt::ser\l_sizer::size_string" alt="" coords="606,332,734,373"/>
+<area shape="rect" id="node12" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#a039df9aa5383d83f924b427c5a71f4a2" title="sprockit::pvt::ser\l_unpacker::unpack" alt="" coords="404,201,536,243"/>
+<area shape="rect" id="node13" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#ac0a13fcb6b64229f027acc96c1e2756f" title="sprockit::pvt::ser\l_unpacker::unpack_buffer" alt="" coords="584,201,756,243"/>
+<area shape="rect" id="node14" href="$classsprockit_1_1pvt_1_1ser__unpacker.html#ac08cf6c62a294d89f67c2d2e06fe57ca" title="sprockit::pvt::ser\l_unpacker::unpack_string" alt="" coords="585,267,755,308"/>
 </map>
