@@ -105,18 +105,18 @@ test_fattree_dmodk(UnitTest& unit)
     fat_tree * fattree = test_cast(fat_tree, ftree);
     assertTrue(unit, "fat tree cast structured topology", bool(fattree));
 
-	/*
+    /*
       Level 2: 32 (2, 0) - 47 (2, 15)
       Level 1: 16 (1, 0) - 31 (1, 15)
       Level 0:  0 (0, 0) - 15 (0, 15)
       -------------nodes-------------
     */
 
-	switch_interconnect::switch_map switches;
+    switch_interconnect::switch_map switches;
     init_switches(switches, params, top);
 
     // level 0 -> 1
-	// [(0, 0) -> (1, 3)] -> (0, 3)
+    // [(0, 0) -> (1, 3)] -> (0, 3)
     {
         coordinates coords = get_vector(0, 0);
         switch_id swid = ftree->switch_number(coords);
@@ -128,11 +128,11 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 3) at (0, 0) using port 7", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
     }
 
     // level 1 -> 0
-	// (0, 0) -> [(1, 3) -> (0, 3)]
+    // (0, 0) -> [(1, 3) -> (0, 3)]
     {
         coordinates coords = get_vector(1, 3);
         switch_id swid = ftree->switch_number(coords);
@@ -144,11 +144,11 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 3) at (1, 3) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
     }
 
     // level 0 -> 1
-	// [(0, 0) -> (1, 3)] -> (2, 15) -> (1, 15) -> (0, 15)
+    // [(0, 0) -> (1, 3)] -> (2, 15) -> (1, 15) -> (0, 15)
     {
         coordinates coords = get_vector(0, 0);
         switch_id swid = ftree->switch_number(coords);
@@ -160,11 +160,11 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 15) at (0, 0) using port 7", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
     }
 
     // level 1 -> 2
-	// (0, 0) -> [(1, 3) -> (2, 15)] -> (1, 15) -> (0, 15)
+    // (0, 0) -> [(1, 3) -> (2, 15)] -> (1, 15) -> (0, 15)
     {
         coordinates coords = get_vector(1, 3);
         switch_id swid = ftree->switch_number(coords);
@@ -176,11 +176,11 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 15) at (1, 3) using port 7", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 3));
     }
 
     // level 2 -> 1
-	// (0, 0) -> (1, 3) -> [(2, 15) -> (1, 15)] -> (0, 15)
+    // (0, 0) -> (1, 3) -> [(2, 15) -> (1, 15)] -> (0, 15)
     {
         coordinates coords = get_vector(2, 15);
         switch_id swid = ftree->switch_number(coords);
@@ -192,11 +192,11 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 15) at (2, 15) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
     }
 
     // level 1 -> 0
-	// (0, 0) -> (1, 3) -> (2, 15) -> [(1, 15) -> (0, 15)]
+    // (0, 0) -> (1, 3) -> (2, 15) -> [(1, 15) -> (0, 15)]
     {
         coordinates coords = get_vector(1, 15);
         switch_id swid = ftree->switch_number(coords);
@@ -208,6 +208,6 @@ test_fattree_dmodk(UnitTest& unit)
         structured_routable::path_set paths;
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "num productive ports", paths.size(), 1);
-        assertEqual(unit, "productive port", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
+        assertEqual(unit, "(0, 0) -> (0, 15) at (1, 15) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
     }
 }

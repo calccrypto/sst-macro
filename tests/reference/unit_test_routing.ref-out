@@ -28,17 +28,17 @@ SUCCESS: min distance route_fattree.cc:87
 SUCCESS: structured topology cast topology route_fattree.cc:103
 SUCCESS: fat tree cast structured topology route_fattree.cc:106
 SUCCESS: num productive ports route_fattree.cc:130
-SUCCESS: productive port route_fattree.cc:131
+SUCCESS: (0, 0) -> (0, 3) at (0, 0) using port 7 route_fattree.cc:131
 SUCCESS: num productive ports route_fattree.cc:146
-SUCCESS: productive port route_fattree.cc:147
+SUCCESS: (0, 0) -> (0, 3) at (1, 3) using port 3 route_fattree.cc:147
 SUCCESS: num productive ports route_fattree.cc:162
-SUCCESS: productive port route_fattree.cc:163
+SUCCESS: (0, 0) -> (0, 15) at (0, 0) using port 7 route_fattree.cc:163
 SUCCESS: num productive ports route_fattree.cc:178
-SUCCESS: productive port route_fattree.cc:179
+SUCCESS: (0, 0) -> (0, 15) at (1, 3) using port 7 route_fattree.cc:179
 SUCCESS: num productive ports route_fattree.cc:194
-SUCCESS: productive port route_fattree.cc:195
+SUCCESS: (0, 0) -> (0, 15) at (2, 15) using port 3 route_fattree.cc:195
 SUCCESS: num productive ports route_fattree.cc:210
-SUCCESS: productive port route_fattree.cc:211
+SUCCESS: (0, 0) -> (0, 15) at (1, 15) using port 3 route_fattree.cc:211
 SUCCESS: crossbar cast topology route_crossbar.cc:16
 SUCCESS: num productive ports route_crossbar.cc:32
 SUCCESS: productive port 0 route_crossbar.cc:36
