@@ -5,6 +5,8 @@ void test_torus(UnitTest& unit);
 void test_crossbar(UnitTest& unit);
 void test_fattree(UnitTest& unit);
 void test_fattree_dmodk(UnitTest& unit);
+void test_fattree_la(UnitTest& unit);
+void test_fattree_ga(UnitTest& unit);
 void test_butterfly(UnitTest& unit);
 void test_fbfly(UnitTest& unit);
 void test_dragonfly_v1(UnitTest& unit);
@@ -14,17 +16,18 @@ using namespace sstmac;
 
 int main(int argc, char** argv)
 {
-    sprockit::output::init_out0(&std::cout);
-    sprockit::output::init_err0(&std::cerr);
-    sprockit::output::init_outn(&std::cout);
-    sprockit::output::init_errn(&std::cerr);
     UnitTest unit;
     try{
         std::cout << "Testing torus...\n";
             test_torus(unit);
-        std::cout << "Testing fat tree...\n";
+        std::cout << "Testing fat tree with default routing...\n";
             test_fattree(unit);
+        std::cout << "Testing fat tree with DmodK routing...\n";
             test_fattree_dmodk(unit);
+        std::cout << "Testing fat tree with local adaptive routing...\n";
+            test_fattree_la(unit);
+        std::cout << "Testing fat tree with global adaptive routing...\n";
+            test_fattree_ga(unit);
         std::cout << "Testing crossbar...\n";
             test_crossbar(unit);
         std::cout << "Testing butterfly...\n";
@@ -36,7 +39,7 @@ int main(int argc, char** argv)
             test_dragonfly_v2(unit);
         unit.validate();
     } catch (std::exception& e) {
-        cerrn << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
         return 1;
     }
 
