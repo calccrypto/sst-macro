@@ -28,6 +28,27 @@ SpktRegister("sdn", router, sdn_router);
 void
 sdn_router::route(packet* pkt)
 {
+    const sw::app_id app = 0;//pkt -> appid();
+    const node_id src = pkt -> fromaddr();
+    const node_id dst = pkt -> toaddr();
+
+    structured_routable* rt = pkt->interface<structured_routable>();
+
+    // just read from table
+    rt -> current_path().outport = flow_table[app][src][dst].first;
+    rt -> current_path().vc      = flow_table[app][src][dst].second;
+}
+
+void
+sdn_router::set_flow(
+    const sw::app_id aid,
+    const node_id src,
+    const node_id dst,
+    const int outport,
+    const int vc){
+
+    flow_table[aid][src][dst].first = outport;
+    flow_table[aid][src][dst].second = vc;
 }
 
 }

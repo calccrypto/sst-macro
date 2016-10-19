@@ -29,7 +29,7 @@ class sdn_router :
   virtual ~sdn_router() {}
 
   sdn_router() :
-      structured_router(routing::sdn) {}
+      structured_router(routing::minimal) {}
 
   virtual std::string
   to_string() const {
@@ -39,9 +39,18 @@ class sdn_router :
   void
   route(packet* pkt);
 
+  // paths are calculated during launch
+  void
+  set_flow(
+    const sw::app_id aid,
+    const node_id src,
+    const node_id dst,
+    const int outport,
+    const int vc);
+
   private:
-    // flow_table[app_id][src][dst] -> {path}
-    std::map <sw::app_id, std::map <node_id, std::map <node_id, std::vector <switch_id> > > > flow_table;
+    // flow_table[app_id][src][dst] -> {(outport, vc)}
+    std::map <sw::app_id, std::map <node_id, std::map <node_id, std::pair <int, int> > > > flow_table;
 };
 
 }
