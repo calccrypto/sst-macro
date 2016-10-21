@@ -141,6 +141,8 @@ test_fattree_dmodk(UnitTest& unit)
         assertEqual(unit, "num productive ports for dmodk routing", paths.size(), 1);
     }
 
+    // /////////////////////////////////////////////////////////
+
     // level 0 -> 1
     // [(0, 0) -> (1, 3)] -> (0, 3)
     {
@@ -164,6 +166,8 @@ test_fattree_dmodk(UnitTest& unit)
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "(0, 0) -> (0, 3) at (1, 3) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
     }
+
+    // /////////////////////////////////////////////////////////
 
     // level 0 -> 1
     // [(0, 0) -> (1, 3)] -> (2, 15) -> (1, 15) -> (0, 15)
@@ -212,4 +216,56 @@ test_fattree_dmodk(UnitTest& unit)
         router->productive_paths_to_switch(dst, paths);
         assertEqual(unit, "(0, 0) -> (0, 15) at (1, 15) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
     }
+
+    // /////////////////////////////////////////////////////////
+
+    // level 0 -> 1
+    // [(0, 0) -> (1, 2)] -> (2, 10) -> (1, 14) -> (0, 14)
+    {
+        coordinates coords = get_vector(0, 0);
+        switch_id swid = ftree->switch_number(coords);
+        network_switch* sw = switches[swid];
+        router* router = sw->rter();
+        switch_id dst = ftree->switch_number(get_vector(0, 14));
+        router->productive_paths_to_switch(dst, paths);
+        assertEqual(unit, "(0, 0) -> (0, 14) at (0, 0) using port 2", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 2));
+    }
+
+    // level 1 -> 2
+    // (0, 0) -> [(1, 2) -> (2, 10)] -> (1, 14) -> (0, 14)
+    {
+        coordinates coords = get_vector(1, 2);
+        switch_id swid = ftree->switch_number(coords);
+        network_switch* sw = switches[swid];
+        router* router = sw->rter();
+        switch_id dst = ftree->switch_number(get_vector(0, 14));
+        router->productive_paths_to_switch(dst, paths);
+        assertEqual(unit, "(0, 0) -> (0, 14) at (1, 2) using port 2", paths[0].outport, top->convert_to_port(fat_tree::up_dimension, 2));
+    }
+
+    // level 2 -> 1
+    // (0, 0) -> (1, 2) -> [(2, 10) -> (1, 14)] -> (0, 14)
+    {
+        coordinates coords = get_vector(2, 10);
+        switch_id swid = ftree->switch_number(coords);
+        network_switch* sw = switches[swid];
+        router* router = sw->rter();
+        switch_id dst = ftree->switch_number(get_vector(0, 14));
+        router->productive_paths_to_switch(dst, paths);
+        assertEqual(unit, "(0, 0) -> (0, 14) at (2, 10) using port 3", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 3));
+    }
+
+    // level 1 -> 0
+    // (0, 0) -> (1, 2) -> (2, 10) -> [(1, 14) -> (0, 14)]
+    {
+        coordinates coords = get_vector(1, 14);
+        switch_id swid = ftree->switch_number(coords);
+        network_switch* sw = switches[swid];
+        router* router = sw->rter();
+        switch_id dst = ftree->switch_number(get_vector(0, 14));
+        router->productive_paths_to_switch(dst, paths);
+        assertEqual(unit, "(0, 0) -> (0, 14) at (1, 14) using port 2", paths[0].outport, top->convert_to_port(fat_tree::down_dimension, 2));
+    }
+
+    // /////////////////////////////////////////////////////////
 }

@@ -43,11 +43,23 @@ fat_tree_dmodk_router::minimal_route_to_switch(
     int(my_addr_), top_->switch_coords(my_addr_).to_string().c_str(),
     int(ej_addr), top_->switch_coords(ej_addr).to_string().c_str());
 
-  int pathDim;
-  int pathDir = ej_addr % k_;
+  int pathDim, pathDir;
 
   // route down
   if (ej_addr >= min_reachable_leaf_id_ && ej_addr < max_reachable_leaf_id_) {
+    fat_tree * ftree = test_cast(fat_tree, top_);
+
+    coordinates src_coor(2);
+    ftree -> compute_switch_coords(my_addr_, src_coor);
+    coordinates dst_coor(2);
+    ftree -> compute_switch_coords(ej_addr, dst_coor);
+
+    pathDir = dst_coor[1] % k_;
+
+    if (src_coor[1] != dst_coor[1]){
+        pathDir = dst_coor[1] / k_;
+    }
+
     pathDim = fat_tree::down_dimension;
     path.vc = 1;
     long relative_ej_addr = ej_addr - min_reachable_leaf_id_;
@@ -56,6 +68,7 @@ fat_tree_dmodk_router::minimal_route_to_switch(
   }
   // route up
   else {
+    pathDir = ej_addr % k_;
     pathDim = fat_tree::up_dimension;
     path.vc = 0;
     ftree_dmodk_rter_debug("routing up with dir %d", pathDir);
