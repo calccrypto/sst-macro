@@ -14,13 +14,11 @@
 
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/topology/coordinates.h>
-#include <sstmac/software/process/app_id.h>
-
-#include <map>
-#include <vector>
 
 namespace sstmac {
 namespace hw {
+
+// routes for packets that travel through these routers are pre established by the launcher
 
 class sdn_router :
   public structured_router
@@ -38,19 +36,6 @@ class sdn_router :
 
   void
   route(packet* pkt);
-
-  // paths are calculated during launch
-  void
-  set_flow(
-    const sw::app_id aid,
-    const node_id src,
-    const node_id dst,
-    const int outport,
-    const int vc);
-
-  private:
-    // flow_table[app_id][src][dst] -> {(outport, vc)}
-    std::map <sw::app_id, std::map <node_id, std::map <node_id, std::pair <int, int> > > > flow_table;
 };
 
 }

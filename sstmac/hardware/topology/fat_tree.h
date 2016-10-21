@@ -183,10 +183,8 @@ class fat_tree :
   static int
   downColumnConnection(int k, int myColumn, int downPort, int columnSize);
 
- protected:
   virtual void
   compute_switch_coords(switch_id uid, coordinates& coords) const;
-
 };
 
 class simple_fat_tree : public abstract_fat_tree
@@ -215,10 +213,10 @@ class simple_fat_tree : public abstract_fat_tree
 
   virtual void
   partition(
-    int* switches_per_lp,
-    int *switch_to_lp,
-    int *switch_to_thread,
-    int& local_num_switches,
+    int * switches_per_lp,
+    int * switch_to_lp,
+    int * switch_to_thread,
+    int & local_num_switches,
     int me,
     int nproc,
     int nthread,

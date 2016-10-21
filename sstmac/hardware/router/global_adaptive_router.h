@@ -14,7 +14,7 @@
 
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/interconnect/switch_interconnect.h>
-#include <vector>
+#include <list>
 
 namespace sstmac {
 namespace hw {
@@ -26,8 +26,7 @@ class global_adaptive_router :
   virtual ~global_adaptive_router() {}
 
   global_adaptive_router() :
-      structured_router(routing::minimal_adaptive)
-  {}
+      structured_router(routing::minimal_adaptive) {}
 
   virtual std::string
   to_string() const {
@@ -37,22 +36,12 @@ class global_adaptive_router :
   virtual void
   route(packet* pkt);
 
-  void
-  set_forwarding_table(
-    const node_id dst_node,
-    const int outport,
-    const int vc);
-
  private:
-  std::vector <switch_id>
+  std::list <structured_routable::path>
   all_paths(
     const node_id src,
     const node_id dst,
     const switch_interconnect::switch_map & switches) const;
-
-  // forwarding table
-  // destination from this router -> outport, vc
-  std::map <node_id, std::pair <int, int> > forwarding_table;
 };
 
 }
