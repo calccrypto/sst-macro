@@ -99,7 +99,9 @@ router::minimal_route_to_switch(switch_id node_addr, structured_routable::path& 
 routing::algorithm_t
 router::str_to_algo(const std::string &str)
 {
-  if (str == "minimal") {
+  if ((str == "minimal")        ||
+      (str == "local adaptive") ||
+      (str == "global adaptive")) {
     return routing::minimal;
   }
   else if (str == "valiant") {

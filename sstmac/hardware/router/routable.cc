@@ -25,6 +25,7 @@ tostr(routing::algorithm_t algo)
 {
   switch(algo) {
       enumcase(minimal);
+      enumcase(minimal_adaptive);
       enumcase(valiant);
       enumcase(deflt);
       enumcase(ugal);

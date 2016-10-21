@@ -13,7 +13,6 @@
 #include <sstmac/hardware/router/routable.h>
 #include <sstmac/hardware/switch/network_switch.h>
 #include <sstmac/hardware/packet_flow/packet_flow_switch.h>
-#include <sprockit/util.h>
 #include <sprockit/sim_parameters.h>
 #include <cmath>
 
@@ -25,7 +24,7 @@
 namespace sstmac {
 namespace hw {
 
-SpktRegister("global_adaptive_router", router, global_adaptive_router);
+SpktRegister("global_adaptive", router, global_adaptive_router);
 
 void
 global_adaptive_router::route(packet* pkt)

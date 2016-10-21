@@ -28,11 +28,11 @@ class fat_tree_global_adaptive_router :
   virtual ~fat_tree_global_adaptive_router() {}
 
   fat_tree_global_adaptive_router() :
-      structured_router(routing::minimal_adaptive) {}
+      structured_router(routing::minimal) {}
 
   virtual std::string
   to_string() const {
-    return "fat tree global adaptive router";
+    return "fat tree global adaptive";
   }
 
   virtual void

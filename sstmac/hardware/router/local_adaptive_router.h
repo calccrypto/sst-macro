@@ -25,11 +25,14 @@ class local_adaptive_router :
   virtual ~local_adaptive_router() {}
 
   local_adaptive_router() :
-      minimal_adaptive_router() {}
+      minimal_adaptive_router()
+  {
+      algo_ = routing::minimal;
+  }
 
   virtual std::string
   to_string() const {
-    return "local adaptive router";
+    return "local adaptive";
   }
 
   // override minimal_router's set_topology check

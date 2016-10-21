@@ -14,6 +14,9 @@
 
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/interconnect/switch_interconnect.h>
+#include <sstmac/hardware/topology/fat_tree.h>
+#include <sprockit/util.h>
+
 #include <list>
 
 namespace sstmac {
@@ -26,15 +29,23 @@ class global_adaptive_router :
   virtual ~global_adaptive_router() {}
 
   global_adaptive_router() :
-      structured_router(routing::minimal_adaptive) {}
+      structured_router(routing::minimal) {}
 
   virtual std::string
   to_string() const {
-    return "global adaptive router";
+    return "global adaptive";
   }
 
   virtual void
   route(packet* pkt);
+
+  virtual void
+  set_topology(topology * top){
+      if (test_cast(fat_tree, top)){
+          spkt_throw(sprockit::value_error, "use fat_tree_global_adaptive for with fat tree topologies");
+      }
+      top_ = top;
+  }
 
  private:
   std::list <structured_routable::path>
