@@ -113,7 +113,8 @@ nobase_library_include_HEADERS = \
   router/sdn_router.h \
   router/fat_tree_dmodk_router.h \
   router/global_adaptive_router.h \
-  router/local_adaptive_router.h
+  router/local_adaptive_router.h \
+  router/fat_tree_global_adaptive_router.h
 
 libsstmac_hw_la_SOURCES =  \
   analytic/simple/null_nic.cc \
@@ -184,4 +185,5 @@ libsstmac_hw_la_SOURCES =  \
   router/sdn_router.cc \
   router/fat_tree_dmodk_router.cc \
   router/global_adaptive_router.cc \
-  router/local_adaptive_router.cc
+  router/local_adaptive_router.cc \
+  router/fat_tree_global_adaptive_router.cc

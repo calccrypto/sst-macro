@@ -15,6 +15,7 @@
 #include <sstmac/hardware/router/structured_router.h>
 #include <sstmac/hardware/interconnect/switch_interconnect.h>
 #include <sstmac/hardware/topology/fat_tree.h>
+#include <sprockit/util.h>
 #include <list>
 
 namespace sstmac {
@@ -53,13 +54,13 @@ class fat_tree_global_adaptive_router :
     fat_tree::dimension_t dim,
     std::list <structured_routable::path> & path,
     std::list <std::list <structured_routable::path> > & paths,
-    fat_tree * ftree) const;
+    fat_tree * ftree);
 
   std::list <structured_routable::path>
   cheapest_path(
     const node_id src,
     const node_id dst,
-    const switch_interconnect::switch_map & switches) const;
+    const switch_interconnect::switch_map & switches);
 };
 
 }

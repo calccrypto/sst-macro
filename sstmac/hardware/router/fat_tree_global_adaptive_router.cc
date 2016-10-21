@@ -13,9 +13,9 @@
 #include <sstmac/hardware/router/routable.h>
 #include <sstmac/hardware/switch/network_switch.h>
 #include <sstmac/hardware/packet_flow/packet_flow_switch.h>
-#include <sprockit/util.h>
 #include <sprockit/sim_parameters.h>
-#include <cmath>
+
+#include <climits>
 
 #include <typeinfo>
 
@@ -40,10 +40,8 @@ fat_tree_global_adaptive_router::route(packet* pkt)
         switch_interconnect * sw_ic = dynamic_cast <switch_interconnect*> (interconnect);
         const switch_interconnect::switch_map & switches = sw_ic->switches();
 
-        // figure out egress switch id
-
         // calculate best route for this packet
-        rt -> route() = all_paths(my_addr_, , switches);
+        rt -> route() = cheapest_path(pkt -> fromaddr(), pkt -> toaddr(), switches);
     }
     else{
         // normally no need to check route length since there are always values
@@ -66,7 +64,7 @@ fat_tree_global_adaptive_router::all_paths(
     fat_tree::dimension_t dim,
     std::list <structured_routable::path> & path,
     std::list <std::list <structured_routable::path> > & paths,
-    fat_tree * ftree) const {
+    fat_tree * ftree){
 
     coordinates src_coor;
     ftree -> compute_switch_coords(src, src_coor);
@@ -87,7 +85,7 @@ fat_tree_global_adaptive_router::all_paths(
 
     // if src is at the middle hop, change the direction
     // since routing is up -> down, change it to down
-    if (nearest_common_ancestor_level(src, dst) == src_coor[0]){
+    if (ftree -> nearest_common_ancestor_level(src, dst) == src_coor[0]){
         dim = fat_tree::down_dimension;
     }
 
@@ -97,7 +95,7 @@ fat_tree_global_adaptive_router::all_paths(
         p.outport = ftree -> convert_to_port(dim, k);
         p.vc = dim;
         path.push_back(p);
-        all_paths(ftree -> neighbor_at_port(src, p.outport), dst, dim, path, paths);
+        all_paths(ftree -> switch_number(ftree -> neighbor_at_port(src, p.outport)), dst, dim, path, paths, ftree);
         path.pop_back();
     }
 }
@@ -107,7 +105,7 @@ std::list <structured_routable::path>
 fat_tree_global_adaptive_router::cheapest_path(
     const node_id src,
     const node_id dst,
-    const switch_interconnect::switch_map & switches) const {
+    const switch_interconnect::switch_map & switches){
 
     // get source and destination switches
     int outport;
@@ -116,14 +114,10 @@ fat_tree_global_adaptive_router::cheapest_path(
 
     fat_tree * ftree = test_cast(fat_tree, top_);
 
-    // get switches of entire network
-    hw::switch_interconnect * sw_ic = dynamic_cast<hw::switch_interconnect*>(ftree -> get_interconnect());
-    const hw::macro_switch_interconnect::switch_map & switches = sw_ic -> switches();
-
     // generate all valid paths
     std::list <structured_routable::path> path;
     std::list <std::list <structured_routable::path> > paths;
-    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, free);
+    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree);
 
     // use instantaneous queue lengths
     int queue_length = INT_MAX;
@@ -133,7 +127,7 @@ fat_tree_global_adaptive_router::cheapest_path(
 
         // add up queue lengths
         for(structured_routable::path const & hop : p){
-            this_queue_length += switches[src_sw] -> queue_length(hop.outport);
+            this_queue_length += switches.at(src_sw) -> queue_length(hop.outport);
             coordinates src_coor = ftree -> neighbor_at_port(src_sw, hop.outport);
             src_sw = ftree -> switch_number(src_coor);
         }
