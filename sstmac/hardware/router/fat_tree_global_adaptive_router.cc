@@ -17,8 +17,6 @@
 
 #include <climits>
 
-#include <typeinfo>
-
 #define ftree_ga_rter_debug(...) \
   rter_debug("fat tree (global adaptive): %s", sprockit::printf(__VA_ARGS__).c_str())
 
