@@ -42,13 +42,6 @@ fat_tree_global_adaptive_router::route(packet* pkt)
         rt -> route() = cheapest_path(pkt -> fromaddr(), pkt -> toaddr(), switches);
     }
 
-    // normally no need to check route length since there are always values
-    if (!rt -> route().size()){
-        rt -> current_path().outport = routing::uninitialized;
-        rt -> current_path().vc      = 0;
-        return;
-    }
-
     rt -> current_path().outport = rt -> route().front().outport;
     rt -> current_path().vc      = rt -> route().front().vc;
     rt -> route().pop_front();
@@ -119,7 +112,7 @@ fat_tree_global_adaptive_router::cheapest_path(
     // generate all valid paths
     std::list <structured_routable::path> path;
     std::list <std::list <structured_routable::path> > paths;
-    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree);
+    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree); 
 
     // find path with minimum queue length
     int queue_length = INT_MAX;
