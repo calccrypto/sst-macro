@@ -53,16 +53,10 @@ fat_tree_local_adaptive_router::route(packet* pkt)
     structured_routable::path_set paths;
     productive_paths_to_switch(dst_sw, paths);
 
-    // get instantaneous queue lengths of the entire network
-    interconnect * inter = top_ -> get_interconnect();
-    switch_interconnect * sw_ic = dynamic_cast <switch_interconnect *> (inter);
-    const switch_interconnect::switch_map & switches = sw_ic->switches();
-
     // check queue length of all good ports
-    auto this_switch = switches.at(src_sw);
     rt -> current_path() = paths[0];
     for(int i = 1; i < paths.size(); i++){
-        if (this_switch -> queue_length(rt -> current_path().outport) > this_switch -> queue_length(paths[i].outport)){
+        if (netsw_ -> queue_length(rt -> current_path().outport) > netsw_ -> queue_length(paths[i].outport)){
             rt -> current_path() = paths[i];
         }
     }
