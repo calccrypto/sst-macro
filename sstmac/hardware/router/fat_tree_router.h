@@ -40,20 +40,18 @@ class fat_tree_router :
   number_paths(message* msg) const;
 
   virtual void
-  path_is_good(node_id goingto, int fromport, int toport) {
-  }
+  path_is_good(node_id goingto, int fromport, int toport) {}
 
   void
   productive_paths_to_switch(switch_id dst, geometry_routable::path_set &paths);
 
   virtual void
-  path_teardown(int fromport, int toport) {
-  }
+  path_teardown(int fromport, int toport) {}
 
   void
   init_factory_params(sprockit::sim_parameters *params);
 
-  void
+  virtual void
   set_topology(topology *top);
 
   virtual std::string
@@ -95,15 +93,11 @@ class fat_tree_router :
   long max_reachable_leaf_id_;
   long seed_;
 
-
   int numpicked_;
   int pickstart_;
 
   int numpicktop_;
   int pickstarttop_;
-
-
-
 };
 
 
