@@ -151,6 +151,26 @@ class fat_tree :
     geometry_routable::path& path) const;
 
   int
+  nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const switch_id & dst_sw_addr) const;
+
+  int
+  nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const coordinates & dst_coords) const;
+
+  int
+  nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const switch_id & dst_sw_addr) const;
+
+  int
+  nearest_common_ancestor_level(
+    const coordinates & src_corrds,
+    const coordinates & dst_coords) const;
+
+  int
   minimal_distance(
     const coordinates& src_coords,
     const coordinates& dest_coords) const;
@@ -166,10 +186,8 @@ class fat_tree :
   static int
   downColumnConnection(int k, int myColumn, int downPort, int columnSize);
 
- protected:
   virtual void
   compute_switch_coords(switch_id uid, coordinates& coords) const;
-
 };
 
 class simple_fat_tree : public abstract_fat_tree

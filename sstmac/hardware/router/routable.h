@@ -82,6 +82,11 @@ class geometry_routable
     return path_;
   }
 
+  std::list <path> &
+  route(){
+    return route_;
+  }
+
   void
   assign_path(const path& pth) {
     path_ = pth;
@@ -130,6 +135,9 @@ class geometry_routable
 
   switch_id dest_switch_;
 
+  // do source routing in place of table based routing
+  // read front and pop to forward
+  std::list <path> route_;
 };
 
 }

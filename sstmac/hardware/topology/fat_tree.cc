@@ -265,6 +265,71 @@ fat_tree::convert_to_port(int dim, int dir) const
 }
 
 int
+fat_tree::nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const coordinates & dest_coords) const
+{
+  const int srcRow = src_coords[0];
+  const int dstRow = dest_coords[0];
+  const int startRow = std::min(srcRow, dstRow);
+  const int srcCol = src_coords[1];
+  const int dstCol = dest_coords[1];
+  int branchSize = pow(k_, startRow);
+  int srcBranch = srcCol / branchSize;
+  int dstBranch = dstCol / branchSize;
+  int stopRow = startRow;
+
+  //keep going up until these land in the same branch
+  while (srcBranch != dstBranch){
+    branchSize *= k_;
+    srcBranch = srcCol / branchSize;
+    dstBranch = dstCol / branchSize;
+    ++stopRow;
+  }
+  return stopRow;
+}
+
+int
+fat_tree::nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const switch_id & dst_sw_addr) const {
+
+    // convert source switch id to coordinates
+    coordinates src_coords(2);
+    compute_switch_coords(src_sw_addr, src_coords);
+
+    // convert destination  switch id to coordinates
+    coordinates dst_coords(2);
+    compute_switch_coords(dst_sw_addr, dst_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
+fat_tree::nearest_common_ancestor_level(
+    const coordinates & src_coords,
+    const switch_id & dst_sw_addr) const {
+
+    // convert destination  switch id to coordinates
+    coordinates dst_coords(2);
+    compute_switch_coords(dst_sw_addr, dst_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
+fat_tree::nearest_common_ancestor_level(
+    const switch_id & src_sw_addr,
+    const coordinates & dst_coords) const {
+
+    // convert source switch id to coordinates
+    coordinates src_coords(2);
+    compute_switch_coords(src_sw_addr, src_coords);
+
+    return nearest_common_ancestor_level(src_coords, dst_coords);
+}
+
+int
 fat_tree::minimal_distance(const coordinates &src_coords,
                            const coordinates &dest_coords) const
 {
@@ -327,7 +392,7 @@ simple_fat_tree::partition(
         int thr = worker % nthread;
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -344,7 +409,7 @@ simple_fat_tree::partition(
       if (lp == me){
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
+        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
           swIdx, i, lp, thr, localIdx);
       }
     }

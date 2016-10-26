@@ -3,8 +3,8 @@
 
 void test_torus(UnitTest& unit);
 void test_crossbar(UnitTest& unit);
-// void test_fattree(UnitTest& unit);
-// void test_fattree_dmodk_(UnitTest& unit);
+void test_fattree(UnitTest& unit);
+void test_fattree_dmodk(UnitTest& unit);
 void test_butterfly(UnitTest& unit);
 void test_fbfly(UnitTest& unit);
 void test_dragonfly_v1(UnitTest& unit);
@@ -22,8 +22,10 @@ int main(int argc, char** argv)
     try{
         std::cout << "Testing torus...\n";
             test_torus(unit);
-        // std::cout << "Testing fat tree...\n";
-            // test_fattree(unit);
+        std::cout << "Testing fat tree with default routing...\n";
+            test_fattree(unit);
+        std::cout << "Testing fat tree with DmodK routing...\n";
+            test_fattree_dmodk(unit);
         std::cout << "Testing crossbar...\n";
             test_crossbar(unit);
         std::cout << "Testing butterfly...\n";
