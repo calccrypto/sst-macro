@@ -74,13 +74,14 @@ fat_tree_global_adaptive_router::all_paths(
     }
 
     // ignore bad path (same level but different switch)
+    // don't need to check column since that's implicitly done in the previous check
     if ((dim == fat_tree::down_dimension) && (src_coor[0] == dst_coor[0])){
         return;
     }
 
-    // if src is at the middle hop, change the direction
+    // if current src is at the nearest common ancestor level hop and src is not the leaf switch, change the direction
     // since routing is up -> down, change it to down
-    if (ftree -> nearest_common_ancestor_level(src, dst) == src_coor[0]){
+    if ((ftree -> nearest_common_ancestor_level(src, dst) < 2) && (src_coor[0] != 0)){
         dim = fat_tree::down_dimension;
     }
 
@@ -112,7 +113,7 @@ fat_tree_global_adaptive_router::cheapest_path(
     // generate all valid paths
     std::list <structured_routable::path> path;
     std::list <std::list <structured_routable::path> > paths;
-    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree); 
+    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree);
 
     // find path with minimum queue length
     int queue_length = INT_MAX;

@@ -256,7 +256,7 @@ fat_tree::convert_to_port(int dim, int dir) const
 }
 
 int
-fat_tree::nearest_common_ancestor_level( 
+fat_tree::nearest_common_ancestor_level(
     const coordinates & src_coords,
     const coordinates & dest_coords) const
 {
@@ -269,15 +269,6 @@ fat_tree::nearest_common_ancestor_level(
   int srcBranch = srcCol / branchSize;
   int dstBranch = dstCol / branchSize;
   int stopRow = startRow;
-
-  // if already at correct branch, have the lower side meet the higher side
-  if (srcBranch == dstBranch){
-    const int higher = std::max(srcRow, dstRow);
-    const int lower = std::min(srcRow, dstRow);
-    while (higher != (lower + stopRow)){
-      stopRow++;
-    }
-  }
 
   //keep going up until these land in the same branch
   while (srcBranch != dstBranch){
