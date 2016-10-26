@@ -54,28 +54,7 @@ class geometry_routable
    }
   };
 
- #define MAX_PATHS 32
- class path_set
- {
-  public:
-   path_set() : size_(0) {}
-   int size() const { return size_; }
-   void resize(int s){
-     if (s > MAX_PATHS){
-       spkt_throw_printf(sprockit::value_error,
-         "routable::path_set size exceeds max %d", MAX_PATHS);
-     }
-     size_ = s;
-   }
-
-   path& operator[](int idx){
-     return paths_[idx];
-   }
-
-  private:
-   int size_;
-   path paths_[MAX_PATHS];
- };
+  typedef std::vector <path> path_set;
 
  public:
   node_id
