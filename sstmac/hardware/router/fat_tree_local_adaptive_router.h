@@ -9,8 +9,8 @@
  *  SST/macroscale directory.
  */
 
-#ifndef SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREEGLOBALADAPTIVEROUTER_H_INCLUDED
-#define SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREEGLOBALADAPTIVEROUTER_H_INCLUDED
+#ifndef SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREELOCALADAPTIVEROUTER_H_INCLUDED
+#define SSTMAC_HARDWARE_NETWORK_SWTICHES_ROUTING_FATTREELOCALADAPTIVEROUTER_H_INCLUDED
 
 #include <sstmac/hardware/router/fat_tree_router.h>
 #include <sstmac/hardware/interconnect/switch_interconnect.h>
@@ -21,18 +21,18 @@
 namespace sstmac {
 namespace hw {
 
-class fat_tree_global_adaptive_router :
+class fat_tree_local_adaptive_router :
   public fat_tree_router
 {
  public:
-  virtual ~fat_tree_global_adaptive_router() {}
+  virtual ~fat_tree_local_adaptive_router() {}
 
-  fat_tree_global_adaptive_router() :
+  fat_tree_local_adaptive_router() :
       fat_tree_router() {}
 
   virtual std::string
   to_string() const {
-    return "fat tree global adaptive";
+    return "fat tree local adaptive";
   }
 
   virtual void
@@ -40,24 +40,6 @@ class fat_tree_global_adaptive_router :
 
   virtual void
   set_topology(topology * top);
-
- private:
-  void
-  all_paths(
-    const switch_id src,
-    const switch_id dst,
-    const coordinates & dst_coor,
-    fat_tree::dimension_t dim,
-    std::list <structured_routable::path> & path,
-    std::list <std::list <structured_routable::path> > & paths,
-    fat_tree * ftree,
-    const int num_switches);
-
-  std::list <structured_routable::path>
-  cheapest_path(
-    const node_id src,
-    const node_id dst,
-    const switch_interconnect::switch_map & switches);
 };
 
 }

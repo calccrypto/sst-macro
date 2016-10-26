@@ -46,7 +46,7 @@ class fat_tree_router :
   void
   init_factory_params(sprockit::sim_parameters *params);
 
-  void
+  virtual void
   set_topology(topology *top);
 
   virtual std::string

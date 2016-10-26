@@ -26,6 +26,15 @@ namespace hw {
 SpktRegister("fat_tree_global_adaptive", router, fat_tree_global_adaptive_router);
 
 void
+fat_tree_global_adaptive_router::set_topology(topology * top){
+    if (!test_cast(fat_tree, top)){
+      spkt_throw(sprockit::value_error, "topology is not fat tree");
+    }
+
+    fat_tree_router::set_topology(top);
+}
+
+void
 fat_tree_global_adaptive_router::route(packet* pkt)
 {
     int switch_port; // not used
@@ -47,14 +56,17 @@ fat_tree_global_adaptive_router::route(packet* pkt)
     rt -> route().pop_front();
 }
 
+// be careful when changing ordering of if statements
 void
 fat_tree_global_adaptive_router::all_paths(
     const switch_id src,
     const switch_id dst,
+    const coordinates & dst_coor,  // no point in calculating this multiple times
     fat_tree::dimension_t dim,
     std::list <structured_routable::path> & path,
     std::list <std::list <structured_routable::path> > & paths,
-    fat_tree * ftree){
+    fat_tree * ftree,
+    const int num_switches){       // no point in calculating this multiple times
 
     // save good path
     if (src == dst){
@@ -65,33 +77,50 @@ fat_tree_global_adaptive_router::all_paths(
     coordinates src_coor(2);
     ftree -> compute_switch_coords(src, src_coor);
 
-    coordinates dst_coor(2);
-    ftree -> compute_switch_coords(dst, dst_coor);
-
-    // really bad fix here; not sure what the real fix should be
-    if (src >= ftree -> num_switches()){
-        return;
-    }
-
     // ignore bad path (same level but different switch)
     // don't need to check column since that's implicitly done in the previous check
     if ((dim == fat_tree::down_dimension) && (src_coor[0] == dst_coor[0])){
         return;
     }
 
-    // if current src is at the nearest common ancestor level hop and src is not the leaf switch, change the direction
-    // since routing is up -> down, change it to down
-    if ((ftree -> nearest_common_ancestor_level(src, dst) < 2) && (src_coor[0] != 0)){
-        dim = fat_tree::down_dimension;
+    // really bad fix here; not sure what the real fix should be
+    if (src >= num_switches){
+        return;
     }
 
-    // try all ports
-    for(int k = 0; k < ftree -> k(); k++){
+    if (dim == fat_tree::up_dimension){
+        // if current switch is at the nearest common ancestor level hop and src is not the leaf switch, change the direction
+        // since routing is up -> down, change it to down
+        if ((ftree -> nearest_common_ancestor_level(src, dst) < 2) && (src_coor[0] != 0)){
+            dim = fat_tree::down_dimension;
+        }
+
+        // try all ports
+        for(int k = 0; k < ftree -> k(); k++){
+            structured_routable::path p;
+            p.outport = ftree -> convert_to_port(dim, k);
+            p.vc = dim;
+            path.push_back(p);
+            all_paths(ftree -> switch_number(ftree -> neighbor_at_port(src, p.outport)), dst, dst_coor, dim, path, paths, ftree, num_switches);
+            path.pop_back();
+        }
+    }
+    else{
+        // single route down
         structured_routable::path p;
-        p.outport = ftree -> convert_to_port(dim, k);
-        p.vc = dim;
+
+        // if current switch is 2 levels or more above the destination switch, divide to get port
+        if (src_coor[0] > (dst_coor[0] + 1)){
+            p.outport = ftree -> convert_to_port(fat_tree::down_dimension, dst / ftree -> k());
+        }
+        // if the current switch is 1 level above the destination switch, just mod
+        else{
+            p.outport = ftree -> convert_to_port(fat_tree::down_dimension, dst % ftree -> k());
+        }
+
+        p.vc = fat_tree::down_dimension;
         path.push_back(p);
-        all_paths(ftree -> switch_number(ftree -> neighbor_at_port(src, p.outport)), dst, dim, path, paths, ftree);
+        all_paths(ftree -> switch_number(ftree -> neighbor_at_port(src, p.outport)), dst, dst_coor, fat_tree::down_dimension, path, paths, ftree, num_switches);
         path.pop_back();
     }
 }
@@ -110,10 +139,14 @@ fat_tree_global_adaptive_router::cheapest_path(
 
     fat_tree * ftree = test_cast(fat_tree, top_);
 
+    // cache dst_coor value
+    coordinates dst_coor(2);
+    ftree -> compute_switch_coords(dst_sw, dst_coor);
+
     // generate all valid paths
     std::list <structured_routable::path> path;
     std::list <std::list <structured_routable::path> > paths;
-    all_paths(src_sw, dst_sw, fat_tree::up_dimension, path, paths, ftree);
+    all_paths(src_sw, dst_sw, dst_coor, fat_tree::up_dimension, path, paths, ftree, ftree -> num_switches());
 
     // find path with minimum queue length
     int queue_length = INT_MAX;
