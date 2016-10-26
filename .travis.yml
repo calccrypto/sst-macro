@@ -27,7 +27,7 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10
 
 before_script:
-  - git checkout lanl
+  - git checkout master
   - ./bootstrap.sh
   - ./configure --with-boost --enable-cpp11 --enable-multithread --enable-mpiparallel --enable-spinlock --enable-cpu-affinity LDFLAGS=-Wl,--no-as-needed
 
