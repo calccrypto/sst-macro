@@ -16,7 +16,7 @@
 #include <sprockit/sim_parameters.h>
 
 #define ftree_la_rter_debug(...) \
-  rter_debug("fat tree (global adaptive): %s", sprockit::printf(__VA_ARGS__).c_str())
+  rter_debug("fat tree (local adaptive): %s", sprockit::printf(__VA_ARGS__).c_str())
 
 namespace sstmac {
 namespace hw {
@@ -46,6 +46,7 @@ fat_tree_local_adaptive_router::route(packet* pkt)
     if (dst_sw == my_addr_){
         rt -> current_path().outport = outport;
         rt -> current_path().vc = 1;
+        ftree_la_rter_debug("Ejecting from switch %d port %d", my_addr_, outport);
         return;
     }
 
@@ -60,6 +61,8 @@ fat_tree_local_adaptive_router::route(packet* pkt)
             rt -> current_path() = paths[i];
         }
     }
+
+    ftree_la_rter_debug("Leaving switch %d port %d (Queue Length %d)", my_addr_, rt -> current_path().outport, netsw_ -> queue_length(rt -> current_path().outport));
 }
 
 }

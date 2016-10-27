@@ -16,6 +16,7 @@
 #include <sprockit/sim_parameters.h>
 
 #include <climits>
+#include <sstream>
 
 #define ftree_ga_rter_debug(...) \
   rter_debug("fat tree (global adaptive): %s", sprockit::printf(__VA_ARGS__).c_str())
@@ -43,12 +44,19 @@ fat_tree_global_adaptive_router::route(packet* pkt)
     // if this switch is the injection switch
     if (top_ -> endpoint_to_injection_switch(pkt -> fromaddr(), switch_port) == my_addr_){
         // get instantaneous queue lengths of the entire network
-        interconnect * inter = top_ -> get_interconnect();
-        switch_interconnect * sw_ic = dynamic_cast <switch_interconnect *> (inter);
-        const switch_interconnect::switch_map & switches = sw_ic->switches();
+        interconnect * inter = top_ -> get_interconnect(); // top_ doesn't have an interconnect yet
+        switch_interconnect * sw_ic = test_cast(switch_interconnect, inter);
+        const switch_interconnect::switch_map & switches = sw_ic -> switches();
 
         // calculate best route for this packet
         rt -> route() = cheapest_path(pkt -> fromaddr(), pkt -> toaddr(), switches);
+
+        std::stringstream s;
+        s << "Node " << pkt -> fromaddr() << " to Node " << pkt -> toaddr() << " at switch " << my_addr_ << ". Going out ports";
+        for(geometry_routable::path const & hop : rt -> route()){
+            s << " " << hop.outport;
+        }
+        ftree_ga_rter_debug("%s", s.str().c_str());
     }
 
     rt -> current_path().outport = rt -> route().front().outport;
