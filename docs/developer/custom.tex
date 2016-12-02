@@ -17,6 +17,7 @@ We want to make an experimental topology in a ring.
 Rather than a simple ring with connections to nearest neighbors, though, we will have ``express'' connections that jump to switches far away.
 
 We begin with the standard typedefs.
+
 \begin{CppCode}
 #include <sstmac/hardware/topology/structured_topology.h>
 
@@ -48,10 +49,9 @@ We got some functions for free by inheriting from \inlinecode{structured_topolog
 We start with
 
 \begin{CppCode}
-void
-xpress_ring::init_factory_params(sprockit::sim_parameters* params)
+xpress_ring::xpress_ring(sprockit::sim_parameters* params) :
+  structured_topology(params)
 {
-  structured_topology::init_factory_params(params);
   ring_size_ = params->get_int_param("xpress_ring_size");
   jump_size_ = params->get_int_param("xpress_jump_size");
 }
@@ -126,6 +126,7 @@ xpress_ring::minimal_distance(
 Essentially you compute the number of jumps to get close to the final destination and then the number of remaining single steps.
 
 For computing coordinates, the topology has dimension one.
+
 \begin{CppCode}
 switch_id
 xpress_ring::get_switch_id(const coordinates& coords) const

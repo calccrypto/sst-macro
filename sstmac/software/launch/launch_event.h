@@ -17,38 +17,55 @@
 #include <sstmac/common/messages/timed_event.h>
 #include <sstmac/software/process/app_fwd.h>
 #include <sstmac/software/process/app_id.h>
+#include <sprockit/sim_parameters_fwd.h>
 
 namespace sstmac {
 namespace sw {
 
 class launch_event :
-  public event,
+  public hw::network_message,
   public library_interface,
   public timed_interface
 {
-  NotSerializable(launch_event)
+  ImplementSerializable(launch_event)
 
  public:
-  launch_event(app* apptype,
-               app_id aid,
-               task_id tid,
-               const std::vector<int>& core_affinities) :
+  typedef enum {
+    Start,
+    Stop
+  } type_t;
+
+  std::string
+  to_string() const override {
+    return sprockit::printf("launch event app=%d task=%d node=%d",
+                            aid_, tid_, toaddr_);
+  }
+
+  launch_event(type_t ty,
+     app_id aid,
+     task_id tid,
+     node_id to,
+     node_id from) :
+    network_message(aid, to, from, 0),
     library_interface("launcher"),
     timed_interface(timestamp(0)),
     tid_(tid),
     aid_(aid),
-    apptype_(apptype),
-    core_affinities_(core_affinities)
+    ty_(ty)
   {
+    type_ = payload;
   }
 
-  /**
-   * Stringifier
-   * @return String description
-   */
-  virtual std::string
-  to_string() const {
-    return "launch event";
+  launch_event(){} //for serialization
+
+  void
+  serialize_order(serializer& ser) override {
+    timed_interface::serialize_order(ser);
+    library_interface::serialize_order(ser);
+    hw::network_message::serialize_order(ser);
+    ser & ty_;
+    ser & aid_;
+    ser & tid_;
   }
 
   task_id
@@ -56,24 +73,23 @@ class launch_event :
     return tid_;
   }
 
+  type_t
+  type() const {
+    return ty_;
+  }
+
   app_id
   aid() const {
     return aid_;
-  }
-
-  app*
-  app_template() const {
-    return apptype_;
   }
 
   int
   core_affinity(int intranode_rank) const;
 
  protected:
-  task_id tid_;
-  app* apptype_;
+  type_t ty_;
   app_id aid_;
-  std::vector<int> core_affinities_;
+  task_id tid_;
 };
 
 }

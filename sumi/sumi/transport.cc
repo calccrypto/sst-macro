@@ -17,12 +17,18 @@
 #include <sprockit/sim_parameters.h>
 #include <sprockit/keyword_registration.h>
 
+RegisterKeywords(
+"lazy_watch",
+"eager_cutoff",
+"use_put_protocol",
+"algorithm",
+"comm_sync_stats",
+);
+
+
 RegisterDebugSlot(sumi);
 
 ImplementFactory(sumi::transport)
-
-
-RegisterKeywords("lazy_watch", "eager_cutoff", "use_put_protocol");
 
 #define START_PT2PT_FUNCTION(dst) \
   start_function(); \
@@ -42,19 +48,70 @@ namespace sumi {
 
 const int options::initial_context = -2;
 
-collective_algorithm_selector* transport::allgather_selector_ = 0;
-collective_algorithm_selector* transport::alltoall_selector_ = 0;
-collective_algorithm_selector* transport::alltoallv_selector_ = 0;
-collective_algorithm_selector* transport::allreduce_selector_ = 0;
-collective_algorithm_selector* transport::allgatherv_selector_ = 0;
-collective_algorithm_selector* transport::bcast_selector_ = 0;
-collective_algorithm_selector* transport::gather_selector_ = 0;
-collective_algorithm_selector* transport::gatherv_selector_ = 0;
-collective_algorithm_selector* transport::reduce_selector_ = 0;
-collective_algorithm_selector* transport::scatter_selector_ = 0;
-collective_algorithm_selector* transport::scatterv_selector_ = 0;
+collective_algorithm_selector* transport::allgather_selector_ = nullptr;
+collective_algorithm_selector* transport::alltoall_selector_ = nullptr;
+collective_algorithm_selector* transport::alltoallv_selector_ = nullptr;
+collective_algorithm_selector* transport::allreduce_selector_ = nullptr;
+collective_algorithm_selector* transport::allgatherv_selector_ = nullptr;
+collective_algorithm_selector* transport::bcast_selector_ = nullptr;
+collective_algorithm_selector* transport::gather_selector_ = nullptr;
+collective_algorithm_selector* transport::gatherv_selector_ = nullptr;
+collective_algorithm_selector* transport::reduce_selector_ = nullptr;
+collective_algorithm_selector* transport::scatter_selector_ = nullptr;
+collective_algorithm_selector* transport::scatterv_selector_ = nullptr;
 
-transport::transport() :
+#if SUMI_COMM_SYNC_STATS
+void
+transport::comm_sync_stats::collect(const message::ptr &msg,
+                                    double now,
+                                    double start)
+{
+  collect(msg->time_sent(), msg->time_arrived(), now, start);
+}
+
+void
+transport::comm_sync_stats::collect(double time_sent,
+                                    double time_arrived,
+                                    double now,
+                                    double start)
+{
+  //the time spent waiting here even before the message is sent
+  double sync_start = std::max(start, last_done);
+  double sync_delay = std::max(0., time_sent - sync_start);
+  total_sync_delay += sync_delay;
+
+  //we have to select what time we consider "comm" to have started
+  double comm_start = std::max(last_done, time_sent);
+  //the time spent I spend waiting with the message in-transit
+  double comm_delay = std::max(0., time_arrived - comm_start);
+  total_comm_delay += comm_delay;
+
+  //the time between the message arriving and me actually processing it
+  double busy_start = std::max(time_arrived, last_done);
+  double busy_delay = now - busy_start;
+  total_busy_delay += busy_delay;
+
+  //printf("Computed: \n"
+  //       "out = (%e,%e,%e)\n"
+  //       "int = (%e,%e,%e,%e,%e)\n",
+  //       sync_delay, comm_delay, busy_delay,
+  //       time_sent, time_arrived, now, start, last_done);
+
+  last_done = now;
+}
+
+void
+transport::comm_sync_stats::print(int rank, std::ostream& os)
+{
+  os << sprockit::printf("Rank %5d sync delays: %12.8e %12.8e %12.8e\n",
+                         rank,
+                         total_sync_delay,
+                         total_comm_delay,
+                         total_busy_delay);
+}
+#endif
+
+transport::transport(sprockit::sim_parameters* params) :
   inited_(false),
   finalized_(false),
   eager_cutoff_(512),
@@ -75,6 +132,23 @@ transport::transport() :
   heartbeat_tag_start_ = 1e9;
   heartbeat_tag_stop_ = heartbeat_tag_start_ + 10000;
   heartbeat_tag_ = heartbeat_tag_start_;
+
+  monitor_ = activity_monitor_factory::get_optional_param("activity_monitor", "ping",
+                                        params, this);
+
+  eager_cutoff_ = params->get_optional_int_param("eager_cutoff", 512);
+  use_put_protocol_ = params->get_optional_bool_param("use_put_protocol", false);
+
+  lazy_watch_ = params->get_optional_bool_param("lazy_watch", true);
+
+#if SUMI_COMM_SYNC_STATS
+  bool track_comm_stats = params->get_optional_bool_param("comm_sync_stats", false);
+  if (track_comm_stats){
+    comm_sync_stats_ = new comm_sync_stats;
+  } else {
+    comm_sync_stats_ = nullptr;
+  }
+#endif
 }
 
 void
@@ -134,18 +208,18 @@ transport::init()
 {
   //THIS SHOULD ONLY BE CALLED AFTER RANK and NPROC are known
   inited_ = true;
-  global_domain_ = new global_communicator(this);
   const char* nspare_str = getenv("SUMI_NUM_SPARES");
   if (nspare_str){
     int nspares = atoi(nspare_str);
     init_spares(nspares);
   }
+
+  global_domain_ = new global_communicator(this);
 }
 
 void
 transport::init_spares(int nspares)
 {
-
 }
 
 void
@@ -176,6 +250,10 @@ transport::finalize()
     send_terminate(dst);
   }
   failed_ranks_.end_iteration();
+
+#if SUMI_COMM_SYNC_STATS
+  if (comm_sync_stats_) comm_sync_stats_->print(rank_, std::cout);
+#endif
 }
 
 void
@@ -219,11 +297,11 @@ transport::blocking_poll(message::payload_type_t ty)
 }
 
 message::ptr
-transport::blocking_poll()
+transport::poll(bool blocking)
 {
-  bool empty;
-  message::ptr dmsg = completion_queue_.pop_front_and_return(empty);
-  if (empty){
+  message::ptr dmsg;
+  bool empty = completion_queue_.pop_front_and_return(dmsg);
+  if (empty && blocking){
     debug_printf(sprockit::dbg::sumi,
       "Rank %d blocking_poll: cq empty, blocking", rank_);
     return block_until_message();
@@ -236,10 +314,16 @@ transport::blocking_poll()
 }
 
 message::ptr
+transport::blocking_poll()
+{
+  return poll(true); //blocking
+}
+
+message::ptr
 transport::blocking_poll(double timeout)
 {
-  bool empty;
-  message::ptr dmsg = completion_queue_.pop_front_and_return(empty);
+  message::ptr dmsg;
+  bool empty = completion_queue_.pop_front_and_return(dmsg);
   if (empty){
     debug_printf(sprockit::dbg::sumi,
       "Rank %d blocking_poll: cq empty, blocking until timeout %8.4e",
@@ -311,6 +395,11 @@ transport::handle(const message::ptr& msg)
 
   switch (msg->class_type())
   {
+  case message::bcast:
+    //root initiated global broadcast of some metadata
+    system_bcast(msg);
+    operation_done(msg);
+    break;
   case message::terminate:
   case message::collective_done:
   case message::pt2pt: {
@@ -364,6 +453,41 @@ transport::handle(const message::ptr& msg)
         "transport::handle: got unknown message class %d",
         msg->class_type());
   }
+  }
+}
+
+void
+transport::system_bcast(const message::ptr& msg)
+{
+  auto bmsg = ptr_safe_cast(system_bcast_message, msg);
+  int root = bmsg->root();
+  int my_effective_rank = (rank_ - root + nproc_) % nproc_;
+
+  /**
+   0->1
+   0->2
+   1->3
+   0->4
+   1->5
+   2->6
+   3->7
+   ... and so on
+  */
+
+  int partner_gap = 1;
+  int rank_check = rank_;
+  while (rank_check > 0){
+    partner_gap *= 2;
+    rank_check /= 2;
+  }
+
+  int effective_target = my_effective_rank + partner_gap;
+  while (effective_target < nproc_){
+    int target = (effective_target + root) % nproc_;
+    message::ptr next_msg = new system_bcast_message(bmsg->action(), bmsg->root());
+    send_header(target, next_msg);
+    partner_gap *= 2;
+    effective_target = my_effective_rank + partner_gap;
   }
 }
 
@@ -464,18 +588,9 @@ transport::~transport()
 {
   if (monitor_) delete monitor_;
   if (global_domain_) delete global_domain_;
-}
-
-void
-transport::init_factory_params(sprockit::sim_parameters* params)
-{
-  monitor_ = activity_monitor_factory::get_optional_param("activity_monitor", "ping",
-                                        params, this);
-
-  eager_cutoff_ = params->get_optional_int_param("eager_cutoff", 512);
-  use_put_protocol_ = params->get_optional_bool_param("use_put_protocol", false);
-
-  lazy_watch_ = params->get_optional_bool_param("lazy_watch", true);
+#if SUMI_COMM_SYNC_STATS
+  if (comm_sync_stats_) delete comm_sync_stats_;
+#endif
 }
 
 void
@@ -965,7 +1080,7 @@ transport::failed_ranks(int context) const
     return empty_set;
   }
 
-  vote_map::const_iterator it = votes_done_.find(context);
+  auto it = votes_done_.find(context);
   if (it == votes_done_.end()){
     spkt_throw_printf(sprockit::value_error,
         "sumi_api::failed_rank: unknown or uncommitted context %d on rank %d",
@@ -1027,7 +1142,6 @@ transport::smsg_send(int dst, message::payload_type_t ev,
   configure_send(dst, ev, msg);
   msg->set_needs_send_ack(needs_ack);
 
-
   debug_printf(sprockit::dbg::sumi,
     "Rank %d SUMI sending short message to %d, ack %srequested ",
     rank_, dst,
@@ -1054,7 +1168,8 @@ transport::smsg_send(int dst, message::payload_type_t ev,
 }
 
 void
-transport::rdma_get(int src, const message::ptr &msg, bool needs_send_ack, bool needs_recv_ack)
+transport::rdma_get(int src, const message::ptr &msg,
+                    bool needs_send_ack, bool needs_recv_ack)
 {
 
   CHECK_IF_I_AM_DEAD(return);

@@ -14,8 +14,9 @@
 #include <sstmac/software/launch/app_launch.h>
 #include <sstmac/software/process/operating_system.h>
 #include <sstmac/common/sstmac_env.h>
-#include <sstmac/common/logger.h>
 #include <sstmac/dumpi_util/dumpi_meta.h>
+#include <sstmac/software/launch/job_launcher.h>
+#include <sstmac/software/launch/launch_event.h>
 #include <sprockit/statics.h>
 #include <sprockit/delete.h>
 #include <sprockit/output.h>
@@ -47,56 +48,38 @@ app::allocate_tls_key(destructor_fxn fxn)
   return next;
 }
 
-void
-app::init_factory_params(sprockit::sim_parameters *params)
-{
-  params_ = params;
-  consume_params(params);
-}
-
-app::app() :
+app::app(sprockit::sim_parameters *params, software_id sid,
+         operating_system* os) :
+  thread(params, sid, os),
   compute_inst_(nullptr),
   compute_time_(nullptr),
   compute_mem_move_(nullptr),
   compute_loops_(nullptr),
   sleep_lib_(nullptr),
-  params_(nullptr),
+  params_(params),
   next_tls_key_(0),
   next_condition_(0),
   next_mutex_(0)
 {
 }
 
-app*
-app::clone(software_id newid)
-{
-  app* cln = clone_type();
-  cln->params_ = params_;
-  cln->set_sid(newid);
-  cln->id_ = newid;
-  cln->consume_params(params_);
-  return cln;
-}
-
 app::~app()
 {
   /** These get deleted by unregister */
   //sprockit::delete_vals(apis_);
-  //if (compute_inst_) delete compute_inst_;
-  //if (compute_time_) delete compute_time_;
-  //if (compute_mem_move_) delete compute_mem_move_;
-  //if (compute_loops_) delete compute_loops_;
-  //if (sleep_lib_) delete sleep_lib_;
+  if (compute_inst_) delete compute_inst_;
+  if (compute_time_) delete compute_time_;
+  if (compute_mem_move_) delete compute_mem_move_;
+  if (compute_loops_) delete compute_loops_;
+  if (sleep_lib_) delete sleep_lib_;
 }
 
 lib_compute_loops*
 app::compute_loops_lib()
 {
   if(!compute_loops_) {
-    compute_loops_ = new lib_compute_loops(id_);
-    register_lib(compute_loops_);
+    compute_loops_ = new lib_compute_loops(params_, sid_, os_);
   }
-
   return compute_loops_;
 }
 
@@ -125,8 +108,7 @@ void
 app::sleep(timestamp time)
 {
   if (!sleep_lib_) {
-    sleep_lib_ = new lib_sleep(id_);
-    register_lib(sleep_lib_);
+    sleep_lib_ = new lib_sleep(params_, sid_, os_);
   }
   sleep_lib_->sleep(time);
 }
@@ -135,8 +117,7 @@ void
 app::compute(timestamp time)
 {
   if (!compute_time_) {
-    compute_time_ = new lib_compute_time(id_);
-    register_lib(compute_time_);
+    compute_time_ = new lib_compute_time(params_, sid_, os_);
   }
   compute_time_->compute(time);
 }
@@ -145,8 +126,7 @@ void
 app::compute_inst(compute_event* cmsg)
 {
   if (!compute_inst_) {
-    compute_inst_ = new lib_compute_inst(id_);
-    register_lib(compute_inst_);
+    compute_inst_ = new lib_compute_inst(params_, sid_, os_);
   }
   compute_inst_->compute_inst(cmsg);
 }
@@ -158,8 +138,7 @@ app::compute_loop(uint64_t num_loops,
   int bytes_per_loop)
 {
   if (!compute_inst_){
-    compute_inst_ = new lib_compute_inst(id_);
-    register_lib(compute_inst_);
+    compute_inst_ = new lib_compute_inst(params_, sid_, os_);
   }
   compute_inst_->compute_loop(num_loops, nflops_per_loop, nintops_per_loop, bytes_per_loop);
 }
@@ -168,8 +147,7 @@ void
 app::compute_detailed(long flops, long nintops, long bytes)
 {
   if (!compute_inst_){
-    compute_inst_ = new lib_compute_inst(id_);
-    register_lib(compute_inst_);
+    compute_inst_ = new lib_compute_inst(params_, sid_, os_);
   }
   compute_inst_->compute_detailed(flops, nintops, bytes);
 }
@@ -201,8 +179,7 @@ app::get_params()
 void
 app::init_mem_lib()
 {
-  compute_mem_move_ = new lib_compute_memmove(id_);
-  register_lib(compute_mem_move_);
+  compute_mem_move_ = new lib_compute_memmove(params_, sid_, os_);
 }
 
 void
@@ -224,8 +201,7 @@ app::_get_api(const char* name)
     sprockit::sim_parameters* app_params = params_;
     if (new_params)
       app_params = params_->get_namespace(name);
-    api* new_api = api_factory::get_value(name, app_params, id_);
-    register_lib(new_api);
+    api* new_api = api_factory::get_value(name, app_params, sid_, os_);
     apis_[name] = new_api;
     return new_api;
   }
@@ -237,8 +213,20 @@ app::_get_api(const char* name)
 void
 app::run()
 {
-  logger::check_user_params();
   skeleton_main();
+  for (auto& pair : apis_){
+    delete pair.second;
+  }
+  apis_.clear();
+
+  //now we have to send a message to the job launcher to let it know we are done
+  int launch_root = job_launcher::launch_root();
+  launch_event* lev = new launch_event(launch_event::Stop,
+                            aid(), tid(),
+                            launch_root, os_->addr());
+  os_->execute_kernel(ami::COMM_PMI_SEND, lev);
+
+  os_->decrement_app_refcount();
 }
 
 void
@@ -361,8 +349,9 @@ user_app_cxx_full_main::delete_statics()
   main_fxns_ = nullptr;
 }
 
-void
-user_app_cxx_full_main::consume_params(sprockit::sim_parameters *params)
+user_app_cxx_full_main::user_app_cxx_full_main(sprockit::sim_parameters *params, software_id sid,
+                                               operating_system* os) :
+  app(params, sid, os)
 {
   if (!main_fxns_) main_fxns_ = new std::map<std::string, main_fxn>;
 
@@ -412,16 +401,16 @@ user_app_cxx_full_main::init_argv(argv_entry& entry)
 void
 user_app_cxx_full_main::skeleton_main()
 {
-  argv_entry& entry = argv_map_[id_.app_];
+  argv_entry& entry = argv_map_[sid_.app_];
   if (entry.argv == 0){
     init_argv(entry);
   }
   (*fxn_)(entry.argc, entry.argv);
 }
 
-
-void
-user_app_cxx_empty_main::consume_params(sprockit::sim_parameters *params)
+user_app_cxx_empty_main::user_app_cxx_empty_main(sprockit::sim_parameters *params, software_id sid,
+                                                 operating_system* os) :
+  app(params, sid, os)
 {
   if (!empty_main_fxns_)
     empty_main_fxns_ = new std::map<std::string, empty_main_fxn>;

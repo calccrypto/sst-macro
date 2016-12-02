@@ -94,6 +94,7 @@ message::tostr(class_t ty)
     enumcase(collective);
     enumcase(collective_done);
     enumcase(ping);
+    enumcase(bcast);
     enumcase(terminate);
     enumcase(no_class);
     enumcase(fake);
@@ -109,6 +110,10 @@ message::clone_into(message* cln) const
   cln->class_ = class_;
   cln->sender_ = sender_;
   cln->recver_ = recver_;
+#if SUMI_COMM_SYNC_STATS
+  cln->sent_ = sent_;
+  cln->arrived_ = arrived_;
+#endif
 }
 
 void
@@ -166,6 +171,10 @@ message::buffer_send()
 void
 message::serialize_order(sumi::serializer &ser)
 {
+#if SUMI_COMM_SYNC_STATS
+  ser & sent_;
+  ser & arrived_;
+#endif
   ser & sender_;
   ser & recver_;
   ser & class_;
@@ -192,6 +201,13 @@ message::serialize_order(sumi::serializer &ser)
     default:
       break;
   }
+}
+
+void
+system_bcast_message::serialize_order(serializer& ser)
+{
+  ser & root_;
+  ser & action_;
 }
 
 }

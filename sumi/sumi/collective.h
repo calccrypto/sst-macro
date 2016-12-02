@@ -16,8 +16,7 @@ DeclareDebugSlot(sumi_collective_sendrecv)
 DeclareDebugSlot(sumi_collective_init)
 DeclareDebugSlot(sumi_collective_round)
 
-namespace sumi
-{
+namespace sumi {
 
 class collective
 {
@@ -40,6 +39,9 @@ class collective
     dynamic_tree_vote,
     heartbeat
   } type_t;
+
+  virtual std::string
+  to_string() const = 0;
 
   virtual ~collective();
 
@@ -132,8 +134,7 @@ class collective
 };
 
 class dag_collective :
-  public collective,
-  public sprockit::factory_type
+  public collective
 {
  public:
   void

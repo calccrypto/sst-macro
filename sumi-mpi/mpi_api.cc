@@ -71,7 +71,9 @@ sstmac_mpi()
 //
 // Build a new mpiapi.
 //
-mpi_api::mpi_api(sstmac::sw::software_id sid) :
+mpi_api::mpi_api(sprockit::sim_parameters* params,
+                 sstmac::sw::software_id sid,
+                 sstmac::sw::operating_system* os) :
   status_(is_fresh),
   next_type_id_(0),
   next_op_id_(first_custom_op_id),
@@ -81,41 +83,17 @@ mpi_api::mpi_api(sstmac::sw::software_id sid) :
   comm_factory_(nullptr),
   worldcomm_(nullptr),
   selfcomm_(nullptr),
-  rank_(sid.task_),
-  sumi_transport("mpi", sid)
+  sstmac::sumi_transport(params, "mpi", sid, os)
 {
-}
-
-
-void
-mpi_api::init_factory_params(sprockit::sim_parameters* params)
-{
-  sumi_transport::init_factory_params(params);
   sprockit::sim_parameters* queue_params = params->get_optional_namespace("queue");
-  /**
-    sstkeyword {
-        docstring=Whether MPI runs as an asynchronous progress thread [service] or
-        blocks the application [user] thread.;
-    }
-  */
-  queue_ = new mpi_queue;
-  queue_->init_sid(sid());
-  queue_->init_factory_params(queue_params);
-  queue_->set_api(this);
-}
+  queue_ = new mpi_queue(queue_params, sid, this);
 
-void
-mpi_api::finalize_init()
-{
-}
+  double probe_delay_s = params->get_optional_time_param("iprobe_delay", 0);
+  iprobe_delay_us_ = probe_delay_s * 1e6;
 
-void
-mpi_api::init_os(operating_system* os)
-{
-  api::init_os(os);
-  process_manager::init_os(os);
+  double test_delay_s = params->get_optional_time_param("test_delay", 0);
+  test_delay_us_ = test_delay_s * 1e6;
 }
-
 
 void
 mpi_api::delete_statics()
@@ -186,7 +164,9 @@ mpi_api::do_init(int* argc, char*** argv)
   }
 
   comm_factory_ = new mpi_comm_factory(sid().app_, this);
-  comm_factory_->init(rank_, transport::nproc_);
+  comm_factory_->init(rank_, nproc_);
+
+  //printf("Initialized %p with %p\n", this, comm_factory_);
 
   worldcomm_ = comm_factory_->world();
   selfcomm_ = comm_factory_->self();
@@ -199,13 +179,6 @@ mpi_api::do_init(int* argc, char*** argv)
   /** Make sure all the default types are known */
   commit_builtin_types();
 
-  queue_->init_os(os_);
-
-  sstmac::hw::node* mynode = os_->node();
-#if !SSTMAC_INTEGRATED_SST_CORE
-  queue_->set_event_manager(mynode->event_mgr());
-#endif
-
   status_ = is_initialized;
 
   barrier(MPI_COMM_WORLD);
@@ -217,9 +190,7 @@ void
 mpi_api::check_init()
 {
   if (status_ != is_initialized){
-    spkt_throw_printf(sprockit::value_error,
-      "MPI Rank %d calling functions before calling MPI_Init",
-      rank_);
+    spkt_abort_printf("MPI Rank %d calling functions before calling MPI_Init", rank_);
   }
 }
 
@@ -239,15 +210,13 @@ mpi_api::do_finalize()
     debug_printf(sprockit::dbg::mpi_check,
       "MPI application with ID %s passed barrier in finalize on Rank 0\n"
       "at simulation time %10.6e seconds. This generally validates the \n"
-      "simulation meaning everyhing has cleanly terminate\n",
+      "simulation meaning everyhing has cleanly terminated\n",
       sid().to_string().c_str(),
       os_->now().sec());
   }
 
-  queue_->unregister_all_libs();
-
   delete comm_factory_;
-  comm_factory_ = 0;
+  comm_factory_ = nullptr;
 
   transport::finalize();
 
@@ -260,6 +229,7 @@ mpi_api::do_finalize()
 double
 mpi_api::wtime()
 {
+  start_mpi_call("MPI_Wtime");
   return os_->now().sec();
 }
 

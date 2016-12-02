@@ -29,16 +29,11 @@ class mpi_queue_send_request  {
   friend class mpi_queue;
 
  public:
-  virtual std::string
-  to_string() const {
-    return "mpi queue send request";
-  }
-
   mpi_queue_send_request(const mpi_message::ptr& mess,
               mpi_request* key, mpi_queue* queue);
 
   /// Goodbye.
-  virtual ~mpi_queue_send_request() throw();
+  ~mpi_queue_send_request() throw();
 
   bool matches(const mpi_message::ptr& send_ack) const;
 
@@ -46,6 +41,10 @@ class mpi_queue_send_request  {
   void complete(const mpi_message::ptr& msg);
 
   void wait_for_buffer();
+
+  mpi_request* req() const {
+    return key_;
+  }
 
  protected:
   /// The queue.

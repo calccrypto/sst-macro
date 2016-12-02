@@ -1,6 +1,10 @@
 #ifndef sumi_api_TRANSPORT_H
 #define sumi_api_TRANSPORT_H
 
+#include <sprockit/debug.h>
+#include <sprockit/factories/factory.h>
+#include <sprockit/unordered.h>
+#include <sprockit/util.h>
 #include <sumi/collective_message.h>
 #include <sumi/collective.h>
 #include <sumi/comm_functions.h>
@@ -12,10 +16,6 @@
 #include <sumi/thread_safe_list.h>
 #include <sumi/thread_safe_set.h>
 #include <sumi/thread_lock.h>
-#include <sprockit/debug.h>
-#include <sprockit/factories/factory.h>
-#include <sprockit/unordered.h>
-#include <sprockit/util.h>
 
 DeclareDebugSlot(sumi);
 
@@ -25,8 +25,7 @@ DeclareDebugSlot(sumi);
 
 namespace sumi {
 
-class transport :
-  virtual public sprockit::factory_type
+class transport
 {
 
  public:
@@ -59,9 +58,6 @@ class transport :
   
   virtual void
   finalize();
-
-  virtual void
-  init_factory_params(sprockit::sim_parameters* params);
 
   void
   deadlock_check();
@@ -163,6 +159,15 @@ class transport :
   */
   message::ptr
   blocking_poll();
+
+  /**
+   Check if a message has been received. Return immediately even if empty queue.
+   Message returned is removed from the internal queue.
+   Successive calls to the function do NOT return the same message.
+   @return    The next message to be received, null if no messages
+  */
+  message::ptr
+  poll(bool blocking);
 
   /**
    Block until a message is received.
@@ -419,6 +424,8 @@ class transport :
   void
   bcast(int root, void* buf, int nelems, int type_size, int tag, bool fault_aware, int context=options::initial_context, communicator* dom=0);
   
+  void system_bcast(const message::ptr& msg);
+
   int 
   rank() const {
     return rank_;
@@ -650,7 +657,7 @@ class transport :
 
   
  protected:
-  transport();
+  transport(sprockit::sim_parameters* params);
   
   void
   validate_api();
@@ -786,6 +793,42 @@ class transport :
   static collective_algorithm_selector* reduce_selector_;
   static collective_algorithm_selector* scatter_selector_;
   static collective_algorithm_selector* scatterv_selector_;
+
+
+#if SUMI_COMM_SYNC_STATS
+ public:
+  struct comm_sync_stats {
+    comm_sync_stats() :
+      total_sync_delay(0.),
+      total_comm_delay(0.),
+      total_busy_delay(0.),
+      last_done(0.)
+    {
+    }
+
+    void collect(const message::ptr& msg, double now, double start);
+
+    void collect(double time_sent, double time_arrived,
+                 double now, double start);
+
+    void print(int rank, std::ostream& os);
+
+    double total_sync_delay;
+    double total_comm_delay;
+    double total_busy_delay;
+
+   private:
+    double last_done;
+  };
+
+  comm_sync_stats*
+  sync_stats() const {
+    return comm_sync_stats_;
+  }
+
+ private:
+  comm_sync_stats* comm_sync_stats_;
+#endif
 
 };
 

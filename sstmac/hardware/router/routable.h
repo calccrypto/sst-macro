@@ -7,7 +7,7 @@
 namespace sstmac {
 namespace hw {
 
-class geometry_routable
+class routable
 {
  public:
   typedef enum {
@@ -88,11 +88,6 @@ class geometry_routable
   }
 
   void
-  assign_path(const path& pth) {
-    path_ = pth;
-  }
-
-  void
   check_vc() {
     if (path_.vc == routing::uninitialized)
       path_.vc = 0;
@@ -107,6 +102,7 @@ class geometry_routable
   port() const {
     return path_.outport;
   }
+
   void
   serialize_order(serializer& ser);
 
@@ -122,9 +118,9 @@ class geometry_routable
   }
 
  protected:
-  geometry_routable() {}
+  routable() {}
 
-  geometry_routable(node_id toaddr, node_id fromaddr);
+  routable(node_id toaddr, node_id fromaddr);
 
  private:
   node_id toaddr_;
@@ -145,11 +141,11 @@ class geometry_routable
 
 START_SERIALIZATION_NAMESPACE
 template <>
-class serialize<sstmac::hw::geometry_routable::path>
+class serialize<sstmac::hw::routable::path>
 {
  public:
   void
-  operator()(sstmac::hw::geometry_routable::path& info, serializer& ser){
+  operator()(sstmac::hw::routable::path& info, serializer& ser){
     ser.primitive(info);
   }
 };

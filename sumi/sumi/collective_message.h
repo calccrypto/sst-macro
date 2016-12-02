@@ -20,17 +20,16 @@ class collective_done_message :
 
  public:
   std::string
-  to_string() const {
+  to_string() const override {
     return "collective done message";
   }
 
   collective_done_message(int tag, collective::type_t ty,
                           communicator* dom) :
     tag_(tag), result_(0), vote_(0), type_(ty),
-    all_ranks_know_failure_(false), dom_(dom)
+    all_ranks_know_failure_(false), dom_(dom),
+    message(collective_done)
   {
-    class_ = collective_done;
-    payload_type_ = none;
   }
 
   int
@@ -109,7 +108,7 @@ class collective_done_message :
   }
 
   message*
-  clone() const;
+  clone() const override;
 
   int comm_rank() const {
     return comm_rank_;
@@ -139,7 +138,7 @@ class collective_done_message :
 class collective_work_message :
   public message
 {
-
+  ImplementSerializable(collective_work_message)
  public:
   typedef sprockit::refcount_ptr<collective_work_message> ptr;
 
@@ -164,7 +163,7 @@ class collective_work_message :
     size_t nbytes,
     int tag, int round,
     int src, int dst) :
-    message(nbytes),
+    message(nbytes, collective),
     tag_(tag),
     type_(type),
     round_(round),
@@ -172,7 +171,6 @@ class collective_work_message :
     dense_recver_(dst),
     action_(action)
   {
-    class_ = collective;
   }
 
   collective_work_message(
@@ -180,7 +178,7 @@ class collective_work_message :
     action_t action,
     int tag, int round,
     int src, int dst) :
-    message(),
+    message(collective),
     tag_(tag),
     type_(type),
     round_(round),
@@ -188,20 +186,19 @@ class collective_work_message :
     dense_recver_(dst),
     action_(action)
   {
-    class_ = collective;
   }
 
   collective_work_message(){} //for serialization
 
 
   virtual std::string
-  to_string() const;
+  to_string() const override;
 
   static const char*
   tostr(action_t action);
 
   virtual void
-  serialize_order(sumi::serializer& ser);
+  serialize_order(sumi::serializer& ser) override;
 
   action_t
   action() const {
@@ -234,7 +231,7 @@ class collective_work_message :
   }
 
   void
-  reverse();
+  reverse() override;
 
   collective::type_t
   type() const {
@@ -260,7 +257,7 @@ class collective_work_message :
   }
 
   message*
-  clone() const {
+  clone() const override {
     collective_work_message* cln = new collective_work_message;
     clone_into(cln);
     return cln;

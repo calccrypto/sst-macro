@@ -51,7 +51,7 @@ using sstmac::sw::software_id;
 using sstmac::sw::operating_system;
 
 class mpi_api :
-  public sumi_transport
+  public sstmac::sumi_transport
 {
   ImplementAPI(mpi_api)
 
@@ -64,10 +64,9 @@ class mpi_api :
   static key::category poll_key_category;
   static key::category memcpy_key_category;
 
-  mpi_api(sstmac::sw::software_id sid);
-
-  virtual void
-  finalize_init();
+  mpi_api(sprockit::sim_parameters* params,
+          sstmac::sw::software_id sid,
+          sstmac::sw::operating_system* os);
 
   static void
   delete_statics();
@@ -75,17 +74,6 @@ class mpi_api :
  public:
   virtual
   ~mpi_api();
-
-  void
-  init_os(operating_system* os);
-
-  virtual void
-  init_factory_params(sprockit::sim_parameters* params);
-
-  void
-  incoming_event(sstmac::event *ev){
-    library::incoming_event(ev);
-  }
 
   mpi_queue*
   queue() {
@@ -238,6 +226,8 @@ class mpi_api :
              MPI_Group oldgrp,
              MPI_Group* newgrp);
 
+  int group_free(MPI_Group* grp);
+
   /* Basic point-to-point operations. */
   int sendrecv(const void* sendbuf, int sendcount,
         MPI_Datatype sendtype, int dest, int sendtag,
@@ -364,6 +354,11 @@ class mpi_api :
   gatherv(const void *sendbuf, int sendcount, MPI_Datatype sendtype,
           void *recvbuf, const int *recvcounts, const int *displs,
           MPI_Datatype recvtype, int root, MPI_Comm comm);
+
+  int
+  allgather(int count, MPI_Datatype type, MPI_Comm comm){
+    return allgather(count, type, count, type, comm);
+  }
 
   int
   allgather(int sendcount, MPI_Datatype sendtype,
@@ -526,7 +521,7 @@ class mpi_api :
 
   int
   ialltoall(int sendcount, MPI_Datatype sendtype,
-           int recvcount, MPI_Datatype recvtype,
+            int recvcount, MPI_Datatype recvtype,
             MPI_Comm comm, MPI_Request* req);
 
   int
@@ -610,11 +605,6 @@ class mpi_api :
   int op_free(MPI_Op* op);
 
   int get_count(const MPI_Status* status, MPI_Datatype datatype, int* count);
-
-  int get_address(void* location, MPI_Aint* addr){
-    *addr = (MPI_Aint) location;
-    return MPI_SUCCESS;
-  }
 
   int
   type_dup(MPI_Datatype intype, MPI_Datatype* outtype);
@@ -737,6 +727,10 @@ class mpi_api :
  private:
   int
   do_wait(MPI_Request *request, MPI_Status *status);
+
+  void
+  finalize_wait_request(mpi_request* reqPtr, MPI_Request* request,
+                        MPI_Status* status, sstmac::timestamp wait_start);
 
   int
   do_type_hvector(int count, int blocklength, MPI_Aint stride,
@@ -911,9 +905,6 @@ class mpi_api :
   /// The MPI server.
   mpi_queue* queue_;
 
-  //// My MPI index in the world.
-  int rank_;
-
   MPI_Datatype next_type_id_;
 
   static const MPI_Op first_custom_op_id = 1000;
@@ -921,6 +912,9 @@ class mpi_api :
 
   /// The builder for mpi communicators.
   mpi_comm_factory* comm_factory_;
+
+  int iprobe_delay_us_;
+  int test_delay_us_;
 
   /// The state of this object (initialized or not).
   enum {

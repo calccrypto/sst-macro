@@ -8,9 +8,14 @@
 #include <dlfcn.h>
 #include <signal.h>
 #include <iostream>
+#include <sprockit/keyword_registration.h>
 
 RegisterDebugSlot(multithread_event_manager);
 RegisterDebugSlot(cpu_affinity);
+
+RegisterKeywords(
+  "cpu_affinity",
+);
 
 namespace sstmac {
 namespace native {
@@ -97,8 +102,9 @@ print_backtrace(int sig)
   exit(1);
 }
 
-void
-multithreaded_event_container::init_factory_params(sprockit::sim_parameters* params)
+multithreaded_event_container::multithreaded_event_container(
+  sprockit::sim_parameters* params, parallel_runtime* rt) :
+  clock_cycle_event_map(params, rt)
 {
   //set the signal handler
   signal(SIGSEGV, print_backtrace);
@@ -111,7 +117,6 @@ multithreaded_event_container::init_factory_params(sprockit::sim_parameters* par
   send_recv_functor_.parent = this;
   vote_functor_.parent = this;
 
-  clock_cycle_event_map::init_factory_params(params);
   int nthread_ = nthread();
   me_ = rt_->me();
   nproc_ = rt_->nproc();
@@ -125,8 +130,7 @@ multithreaded_event_container::init_factory_params(sprockit::sim_parameters* par
 
   subthreads_.resize(nthread_);
   for (int i=1; i < nthread_; ++i){
-    multithreaded_subcontainer* ev_man = new multithreaded_subcontainer(rt_, i, this);
-    ev_man->finalize_init();
+    multithreaded_subcontainer* ev_man = new multithreaded_subcontainer(params, rt_, i, this);
     subthreads_[i] = ev_man;
   }
 
@@ -143,12 +147,6 @@ multithreaded_event_container::init_factory_params(sprockit::sim_parameters* par
     }
   }
 
-}
-
-void
-multithreaded_event_container::finalize_init()
-{
-  clock_cycle_event_map::finalize_init();
 }
 
 void
@@ -185,7 +183,7 @@ multithreaded_event_container::run()
   int proc_per_node = cpu_affinity_.size();
   int task_affinity = cpu_affinity_[me_ % proc_per_node];
 
-  debug_printf(sprockit::dbg::event_manager | sprockit::dbg::cpu_affinity,
+  debug_printf(sprockit::dbg::parallel | sprockit::dbg::cpu_affinity,
                "PDES rank %i: setting user-specified task affinity %i",
                me_, task_affinity);
 
@@ -203,7 +201,7 @@ multithreaded_event_container::run()
     //pin the pthread to core base+i
     thread_affinity = task_affinity + i;
 
-    debug_printf(sprockit::dbg::event_manager | sprockit::dbg::cpu_affinity,
+    debug_printf(sprockit::dbg::parallel | sprockit::dbg::cpu_affinity,
                  "PDES rank %i: setting thread %i affinity %i",
                  me_, i, thread_affinity);
 
@@ -243,12 +241,12 @@ multithreaded_event_container::run()
 }
 
 timestamp
-multithreaded_event_container::time_vote_barrier(int thread_id, timestamp time)
+multithreaded_event_container::time_vote_barrier(int thread_id, timestamp time, vote_type_t ty)
 {
   int64_t ticks = time.ticks_int64();
   //std::cout << sprockit::printf("Thread %d epoch %d: voting for t=%lld\n",
   //  thread_id, epoch_, ticks);
-  int64_t final_vote = vote_barrier_.vote(thread_id, ticks, &vote_functor_);
+  int64_t final_vote = vote_barrier_.vote(thread_id, ticks, ty, &vote_functor_);
   timestamp newtime = timestamp(final_vote, timestamp::exact);
   //std::cout << sprockit::printf("Thread %d epoch %d: received t=%lld\n",
   //  thread_id, epoch_, newtime.ticks());
@@ -296,13 +294,13 @@ multithreaded_event_container::schedule_incoming(int thread_id, clock_cycle_even
 }
 
 timestamp
-multithreaded_event_container::vote_next_round(timestamp my_time)
+multithreaded_event_container::vote_next_round(timestamp my_time, vote_type_t ty)
 {
   debug_printf(sprockit::dbg::event_manager | sprockit::dbg::event_manager_time_vote | sprockit::dbg::parallel,
     "Rank %d thread barrier to start vote on thread %d, epoch %d\n",
     rt_->me(), thread_id(), epoch_);
 
-  return time_vote_barrier(thread_id_, my_time);
+  return time_vote_barrier(thread_id_, my_time, ty);
 }
 
 void

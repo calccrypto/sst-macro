@@ -13,10 +13,9 @@
   if (tag_ == 221) std::cout << sprockit::spkt_printf(__VA_ARGS__) << std::endl
 */
 
-RegisterDebugSlot(sumi_collective_buffer)
+RegisterDebugSlot(sumi_collective_buffer);
 
-namespace sumi
-{
+namespace sumi {
 
 using namespace sprockit::dbg;
 
@@ -297,6 +296,7 @@ dag_collective_actor::start()
 void
 dag_collective_actor::start_action(action* ac)
 {
+  ac->start = my_api_->wall_time();
   debug_printf(sumi_collective,
    "Rank %s starting action %s to partner %s on round %d offset %d -> id = %u: %d pending send headers, %d pending recv headers",
     rank_str().c_str(), action::tostr(ac->type),
@@ -413,7 +413,9 @@ dag_collective_actor::send_eager_message(action* ac)
 {
   collective_work_message::ptr msg = new_message(
         ac, collective_work_message::eager_payload);
-
+#if SUMI_COMM_SYNC_STATS
+  msg->set_time_sent(my_api_->wall_time());
+#endif
   debug_printf(sumi_collective | sumi_collective_sendrecv | sumi_failure,
    "Rank %s, collective %s(%p) sending eager message to %d on tag=%d "
    "for buffer %p = %d + %p",
@@ -434,7 +436,9 @@ dag_collective_actor::send_rdma_put_header(action* ac)
 {
   collective_work_message::ptr msg = new_message(
                         ac, collective_work_message::rdma_put_header);
-
+#if SUMI_COMM_SYNC_STATS
+  msg->set_time_sent(my_api_->wall_time());
+#endif
   debug_printf(sumi_collective | sumi_collective_sendrecv | sumi_failure,
    "Rank %s, collective %s(%p) sending put header %p to %s on round=%d tag=%d "
    "for buffer %p = %d + %p",
@@ -683,40 +687,35 @@ dag_collective_actor::deadlock_check() const
   std::cout << sprockit::printf("  deadlocked actor %d of %d on tag %d",
     dense_me_, dense_nproc_, tag_) << std::endl;
 
-  {std::list<action*>::const_iterator it, end = completed_actions_.end();
-  for (it=completed_actions_.begin(); it != end; ++it){
-    action* ac = *it;
+  for (action* ac : completed_actions_){
     std::cout << sprockit::printf("    Rank %s: completed action %s partner %d round %d",
                       rank_str().c_str(), action::tostr(ac->type), ac->partner, ac->round) << std::endl;
-  }}
+  }
 
-  {active_map::const_iterator it, end = active_comms_.end();
-  for (it=active_comms_.begin(); it != end; ++it){
-    action* ac = it->second;
+  for (auto& pair : active_comms_){
+    action* ac = pair.second;
     std::cout << sprockit::printf("    Rank %s: active %s",
                     rank_str().c_str(), ac->to_string().c_str()) << std::endl;
-  }}
+  }
 
-  {std::pair<pending_map::const_iterator, pending_map::const_iterator> range;
-  pending_map::const_iterator it, end = pending_comms_.end();
-  for (it=pending_comms_.begin(); it != end; ++it){
-    uint32_t id = it->first;
+  for (auto& pair  : pending_comms_){
+    uint32_t id = pair.first;
     action::type_t ty;
     int r, p;
     action::details(id, ty, r, p);
-    range = pending_comms_.equal_range(id);
+    auto range = pending_comms_.equal_range(id);
     if (range.first != range.second){
       std::cout << sprockit::printf("    Rank %s: waiting on action %s partner %d round %d",
                       rank_str().c_str(), action::tostr(ty), p, r) << std::endl;
     }
 
-    for (pending_map::const_iterator rit=range.first; rit != range.second; ++rit){
+    for (auto rit=range.first; rit != range.second; ++rit){
       action* ac = rit->second;
       std::cout << sprockit::printf("      Rank %s: pending %s partner %d round %d join counter %d",
                     rank_str().c_str(), action::tostr(ac->type), ac->partner, ac->round, ac->join_counter)
                 << std::endl;
     }
-  }}
+  }
 }
 
 void
@@ -785,8 +784,7 @@ dag_collective_actor::erase_pending(uint32_t id, pending_msg_map& pending)
   }
 }
 
-
-void
+action*
 dag_collective_actor::comm_action_done(action::type_t ty, int round, int partner)
 {
   uint32_t id = action::message_id(ty, round, partner);
@@ -801,13 +799,20 @@ dag_collective_actor::comm_action_done(action::type_t ty, int round, int partner
      "invalid action %s for round %d, partner %d",
      action::tostr(ty), round, partner);
   }
-  comm_action_done(it->second);
+  action* ac = it->second;
+  comm_action_done(ac);
+  return ac;
 }
 
 void
 dag_collective_actor::data_sent(const collective_work_message::ptr& msg)
 {
-  comm_action_done(action::send, msg->round(), msg->dense_recver());
+  action* ac = comm_action_done(action::send, msg->round(), msg->dense_recver());
+#if SUMI_COMM_SYNC_STATS
+  if (my_api_->sync_stats()){
+    my_api_->sync_stats()->collect(msg, my_api_->wall_time(), ac->start);
+  }
+#endif
 }
 
 void
@@ -893,19 +898,25 @@ dag_collective_actor::data_recved(
   const collective_work_message::ptr& msg,
   void* recvd_buffer)
 {
-   debug_printf(sumi_collective | sumi_collective_round | sumi_collective_sendrecv,
-        "Rank %s collective %s(%p) finished recving for round=%d tag=%d buffer=%p msg=%p",
-        rank_str().c_str(), to_string().c_str(),
-        this, msg->round(), tag_,
-        (void*) recv_buffer_, msg.get());
+  debug_printf(sumi_collective | sumi_collective_round | sumi_collective_sendrecv,
+    "Rank %s collective %s(%p) finished recving for round=%d tag=%d buffer=%p msg=%p",
+    rank_str().c_str(), to_string().c_str(),
+    this, msg->round(), tag_,
+    (void*) recv_buffer_, msg.get());
 
   uint32_t id = action::message_id(action::recv, msg->round(), msg->dense_sender());
   action* ac = active_comms_[id];
-  if (ac == 0){
+#if SUMI_COMM_SYNC_STATS
+  if (my_api_->sync_stats()){
+    my_api_->sync_stats()->collect(msg, my_api_->wall_time(), ac->start);
+  }
+#endif
+  if (ac == nullptr){
     spkt_throw_printf(sprockit::value_error,
       "on %d, received data for unknown receive %u from %d on round %d",
       dense_me_, id, msg->dense_sender(), msg->round());
   }
+
   data_recved(ac, msg, recvd_buffer);
 }
 
@@ -1051,6 +1062,9 @@ dag_collective_actor::next_round_ready_to_get(
        ac->round, ac->offset, ac->nelems, type_size_,
        get_req->remote_buffer());
 
+#if SUMI_COMM_SYNC_STATS
+    header->set_time_sent(my_api_->wall_time());
+#endif
 
     my_api_->rdma_get(ac->phys_partner, header,
       true/*need a send ack*/,
@@ -1164,8 +1178,8 @@ dag_collective_actor::done_msg() const
   collective_done_message::ptr msg = new collective_done_message(tag_, type_, comm_);
   msg->set_comm_rank(comm_->my_comm_rank());
   msg->set_result(result_buffer_.ptr);
-  thread_safe_set<int>::const_iterator it, end = failed_ranks_.start_iteration();
-  for (it = failed_ranks_.begin(); it != end; ++it){
+  auto end = failed_ranks_.start_iteration();
+  for (auto it = failed_ranks_.begin(); it != end; ++it){
     msg->append_failed(global_rank(*it));
   }
   failed_ranks_.end_iteration();
@@ -1309,8 +1323,8 @@ collective_actor::failed_proc_string() const
 {
   std::stringstream sstr;
   sstr << "{";
-  thread_safe_set<int>::const_iterator it, end = failed_ranks_.start_iteration();
-  for (it = failed_ranks_.begin(); it != end; ++it){
+  auto end = failed_ranks_.start_iteration();
+  for (auto it = failed_ranks_.begin(); it != end; ++it){
     sstr << " " << *it;
   }
   failed_ranks_.end_iteration();

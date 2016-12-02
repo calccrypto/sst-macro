@@ -26,7 +26,7 @@ typedef void* graphviz_trace[BACKTRACE_NFXN];
 
 static sprockit::need_delete_statics<graph_viz> del_statics;
 
-SpktRegister("graph_viz", stat_collector, graph_viz);
+SpktRegister("graph_viz | call_graph", stat_collector, graph_viz);
 
 graph_viz_increment_stack::graph_viz_increment_stack(const char *fxn) 
 {
@@ -34,8 +34,7 @@ graph_viz_increment_stack::graph_viz_increment_stack(const char *fxn)
   if (thr) {
     thr->append_backtrace(const_cast<char*>(fxn));
   } else {
-   spkt_throw(sprockit::value_error,
-     "graphviz: operating system has no current thread");
+   spkt_abort_printf("graphviz: operating system has no current thread");
   }
 }
 
@@ -79,10 +78,9 @@ graph_viz::trace::summary() const
   std::stringstream sstr;
   sstr << "fn=" << (const char*) fxn_ << "\n";
   sstr << 0 << " " << self_ << "\n";
-  std::map<void*, graphviz_call>::const_iterator it, end = calls_.end();
-  for (it = calls_.begin(); it != end; ++it) {
-    const char* fxn = (const char*) it->first;
-    const graphviz_call& call = it->second;
+  for (auto& pair : calls_) {
+    const char* fxn = (const char*) pair.first;
+    const graphviz_call& call = pair.second;
     sstr << "cfn=" << fxn << "\n";
     sstr << "calls=" << call.first << " " << 0 << "\n";
     sstr << 0 << " " << call.second << "\n";
@@ -123,9 +121,8 @@ graph_viz::dump_global_data()
 
   myfile << "events: Instructions\n\n";
 
-  std::map<void*,trace*>::const_iterator it, end = traces_.end();
-  for (it=traces_.begin(); it != end; ++it) {
-    myfile << it->second->summary();
+  for (auto& pair : traces_) {
+    myfile << pair.second->summary();
     myfile << "\n";
   }
   myfile.close();
@@ -133,10 +130,6 @@ graph_viz::dump_global_data()
 
 void
 graph_viz::simulation_finished(timestamp t)
-{
-}
-
-graph_viz::graph_viz()
 {
 }
 
@@ -208,8 +201,9 @@ graph_viz::count_trace(long count, thread* thr)
   int last_collect_nfxn = thr->last_backtrace_nfxn();
   int nfxn_total = thr->backtrace_nfxn();
   if (nfxn_total == 0){
-    spkt_throw(sprockit::value_error,
-      "graphviz has no backtrace to collect - ensure that at least main exists with SSTMACBacktrace");
+    spkt_abort_printf("graphviz thread %d has no backtrace to collect"
+     " - ensure that at least main exists with SSTMACBacktrace",
+     thr->thread_id());
   }
   int stack_end = nfxn_total - 1;
   int recollect_stop = std::min(stack_end,last_collect_nfxn);
