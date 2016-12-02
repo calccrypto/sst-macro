@@ -1,13 +1,12 @@
 #include <tests/unit_tests/util/util.h>
 #include <sstmac/hardware/topology/fat_tree.h>
 #include <sstmac/hardware/router/fat_tree_router.h>
-#include <sstmac/hardware/router/fat_tree_dmodk_router.h>
 #include <sprockit/util.h>
 
 extern void test_topology(sprockit::sim_parameters& params);
 
 void
-test_fattree(UnitTest& unit)
+test_fattree4(UnitTest& unit)
 {
   sprockit::sim_parameters params;
   sstmac::env::params = &params;
@@ -20,7 +19,7 @@ test_fattree(UnitTest& unit)
 }
 
 void
-test_fattree_dmodk(UnitTest& unit)
+test_fattree2(UnitTest& unit)
 {
   sprockit::sim_parameters params;
   sstmac::env::params = &params;
@@ -32,4 +31,3 @@ test_fattree_dmodk(UnitTest& unit)
   params["name"] = "fattree";
   test_topology(params);
 }
->>>>>>> f615496d6042d4d3e93d7a42e6a009449a364785

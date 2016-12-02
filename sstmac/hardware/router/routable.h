@@ -54,7 +54,28 @@ class routable
    }
   };
 
-  typedef std::vector <path> path_set;
+ #define MAX_PATHS 32
+ class path_set
+ {
+  public:
+   path_set() : size_(0) {}
+   int size() const { return size_; }
+   void resize(int s){
+     if (s > MAX_PATHS){
+       spkt_throw_printf(sprockit::value_error,
+         "routable::path_set size exceeds max %d", MAX_PATHS);
+     }
+     size_ = s;
+   }
+
+   path& operator[](int idx){
+     return paths_[idx];
+   }
+
+  private:
+   int size_;
+   path paths_[MAX_PATHS];
+ };
 
  public:
   node_id
@@ -80,11 +101,6 @@ class routable
   path&
   current_path() {
     return path_;
-  }
-
-  std::list <path> &
-  route(){
-    return route_;
   }
 
   void
@@ -131,9 +147,6 @@ class routable
 
   switch_id dest_switch_;
 
-  // do source routing in place of table based routing
-  // read front and pop to forward
-  std::list <path> route_;
 };
 
 }

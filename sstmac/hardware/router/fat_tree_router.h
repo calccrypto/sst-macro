@@ -95,6 +95,9 @@ class fat_tree_router :
 
   int numpicktop_;
   int pickstarttop_;
+
+
+
 };
 
 
@@ -102,3 +105,4 @@ class fat_tree_router :
 }
 }
 #endif
+

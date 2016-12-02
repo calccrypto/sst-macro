@@ -145,26 +145,6 @@ class fat_tree :
     routable::path& path) const override;
 
   int
-  nearest_common_ancestor_level(
-    const switch_id & src_sw_addr,
-    const switch_id & dst_sw_addr) const;
-
-  int
-  nearest_common_ancestor_level(
-    const switch_id & src_sw_addr,
-    const coordinates & dst_coords) const;
-
-  int
-  nearest_common_ancestor_level(
-    const coordinates & src_coords,
-    const switch_id & dst_sw_addr) const;
-
-  int
-  nearest_common_ancestor_level(
-    const coordinates & src_corrds,
-    const coordinates & dst_coords) const;
-
-  int
   minimal_distance(
     switch_id src,
     switch_id dest) const override;
@@ -315,3 +295,4 @@ class tapered_fat_tree : public abstract_fat_tree
 } //end of namespace sstmac
 
 #endif
+

@@ -151,3 +151,4 @@ fat_tree_router::number_minimal_paths(packet* pkt) const
 
 }
 }
+

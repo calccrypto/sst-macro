@@ -13,7 +13,6 @@
 #define SSTMAC_HARDWARE_NETWORK_SWITCHES_SWITCHTOPOLOGY_H_INCLUDED
 
 #include <sstmac/common/rng.h>
-#include <sstmac/hardware/interconnect/interconnect_fwd.h>
 #include <sstmac/hardware/topology/coordinates.h>
 #include <sstmac/hardware/topology/traffic/traffic.h>
 #include <sstmac/hardware/router/routable.h>
@@ -372,7 +371,7 @@ class topology : public sprockit::printable
      @return A random switch different from current_sw
   */
   virtual switch_id
-  random_intermediate_switch(switch_id current_sw,
+  random_intermediate_switch(switch_id current_sw, 
                              switch_id dest_sw = switch_id(-1));
 
   virtual switch_id
@@ -454,16 +453,6 @@ class topology : public sprockit::printable
   static sprockit::sim_parameters*
   get_port_params(sprockit::sim_parameters* params, int port);
 
-  void
-  set_interconnect(interconnect * ic){
-    interconnect_ = ic;
-  }
-
-  interconnect *
-  get_interconnect() const {
-    return interconnect_;
-  }
-
  protected:
   topology(sprockit::sim_parameters* params);
 
@@ -487,8 +476,6 @@ class topology : public sprockit::printable
   std::string name_;
 
   static topology* main_top_;
-
-  interconnect * interconnect_;
 
  private:
   static topology* static_topology_;

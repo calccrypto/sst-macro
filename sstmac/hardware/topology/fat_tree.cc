@@ -198,6 +198,7 @@ fat_tree::minimal_distance(switch_id src,
   int srcCol = src % numleafswitches_;
   int dstRow = dst / numleafswitches_;
   int dstCol = dst % numleafswitches_;
+
   int startRow = std::min(srcRow, dstRow);
   int branchSize = pow(k_, startRow);
   int srcBranch = srcCol / branchSize;
@@ -255,7 +256,7 @@ tapered_fat_tree::create_partition(
         int thr = worker % nthread;
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
+        top_debug("occupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -272,7 +273,7 @@ tapered_fat_tree::create_partition(
       if (lp == me){
         switch_to_thread[localIdx] = thr;
         ++localIdx;
-        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d",
+        top_debug("unoccupied switch %d(%d) assigned to proc %d, thread %d at local index %d", 
           swIdx, i, lp, thr, localIdx);
       }
     }
@@ -342,7 +343,7 @@ tapered_fat_tree::tapered_fat_tree(sprockit::sim_parameters *params) :
   int max_up_port = std::max(up_port(0), up_port(1));
   int max_core_port = num_agg_subtrees_;
   max_ports_intra_network_ = std::max(max_up_port, max_core_port);
-
+  
   eject_geometric_id_ = max_ports_intra_network_;
 
   num_switches_ = num_inj_switches_ + num_agg_subtrees_ + 1;
@@ -539,3 +540,4 @@ tapered_fat_tree::configure_vc_routing(std::map<routing::algorithm_t, int> &m) c
 
 }
 } //end of namespace sstmac
+
