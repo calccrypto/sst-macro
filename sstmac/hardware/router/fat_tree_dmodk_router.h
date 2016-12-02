@@ -29,13 +29,13 @@ class fat_tree_dmodk_router :
   virtual ~fat_tree_dmodk_router()
   {}
 
-  fat_tree_dmodk_router(sprockit::sim_parameters* params, topology* top, network_switch* netsw) :
-      fat_tree_router(params, top, netsw) {}
+  fat_tree_dmodk_router() :
+      fat_tree_router() {}
 
   virtual void
   productive_paths_to_switch(
     switch_id dst,
-    routable::path_set &paths);
+    geometry_routable::path_set &paths);
 
   virtual std::string
   to_string() const {
@@ -46,7 +46,7 @@ class fat_tree_dmodk_router :
   void
   minimal_route_to_switch(
     switch_id sw_addr,
-    routable::path& path);
+    geometry_routable::path& path);
 };
 
 }
