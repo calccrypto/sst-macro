@@ -20,7 +20,7 @@ install:
 
   # install packages
   - sudo apt-get update -y
-  - sudo apt-get install -y git g++-4.9 automake autoconf libtool libboost1.55-all-dev openmpi-bin libopenmpi-dev python2.7
+  - sudo apt-get install -y git g++-4.9 automake autoconf libtool libboost1.55-all-dev libboost-regex1.55-dev openmpi-bin libopenmpi-dev python2.7
 
   # force g++ to be g++-4.9
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 10
