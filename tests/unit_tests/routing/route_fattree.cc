@@ -32,4 +32,3 @@ test_fattree_dmodk(UnitTest& unit)
   params["name"] = "fattree";
   test_topology(params);
 }
->>>>>>> f615496d6042d4d3e93d7a42e6a009449a364785

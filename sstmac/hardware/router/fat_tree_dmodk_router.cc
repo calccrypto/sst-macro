@@ -27,7 +27,7 @@ SpktRegister("fattree_dmodk | ftree_dmodk", router, fat_tree_dmodk_router);
 
 void
 fat_tree_dmodk_router::productive_paths_to_switch(
-  switch_id dst, geometry_routable::path_set &paths)
+  switch_id dst, routable::path_set &paths)
 {
   // only 1 possible path
   paths.resize(1);
@@ -37,7 +37,7 @@ fat_tree_dmodk_router::productive_paths_to_switch(
 void
 fat_tree_dmodk_router::minimal_route_to_switch(
   switch_id ej_addr,
-  geometry_routable::path& path)
+  routable::path& path)
 {
   rter_debug("routing from switch %d:%s -> %d:%s on fat tree router",
     int(my_addr_), top_->switch_coords(my_addr_).to_string().c_str(),
